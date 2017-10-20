@@ -684,7 +684,7 @@ Pauldusler</system:String>
         <Run Text="This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them."/>
     </TextBlock>
 
-    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if your installed games are not detected by the program."/></TextBlock>
+    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if not all of your installed games are detected by the program."/></TextBlock>
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="When a game is both found by search paths and windows registry then install location found by search path is applied."/></TextBlock>
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Paths which are traversed recursively for finding games."/></TextBlock>
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Triggers a search for finding games based on the search paths you defined."/></TextBlock>
@@ -698,7 +698,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300"><Run Text="Globally set if games should be started via Steam client by calling the Steam App ID."/><LineBreak/><LineBreak/><Run Text="If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead."/></TextBlock>
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client."/><LineBreak/><LineBreak/>
-        <Run Text="Steam games should only be started directly via game exe when you want to bypass a game launcher for example. You can control this behaviour by editing the individual fix profile."/>
+        <Run Text="Steam games should only be started directly via game exe when you want to bypass a game launcher window for example. You can control this behaviour by editing the individual fix profile."/>
     </TextBlock>
     <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disable installation of any driver profiles via Nvidia Profile Inspector."/></TextBlock>
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="User can decide in fix profile settings wether he wants to install a driver profile."/></TextBlock>
