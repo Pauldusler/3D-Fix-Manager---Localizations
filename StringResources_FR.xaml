@@ -3,7 +3,7 @@
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-<!-- test-->
+<!-- test 2-->
     <!-- Misc -->
     <system:String x:Key="LoadingApplicatiopn">Chargement de l'application. Veuillez patienter...</system:String>
     <system:String x:Key="SwitchToCompactGui">Basculer vers l'interface compacte.</system:String>
