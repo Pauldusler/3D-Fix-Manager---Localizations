@@ -28,8 +28,11 @@
     <system:String x:Key="All">Alle</system:String>
     <system:String x:Key="Installed">Installiert</system:String>
     <system:String x:Key="New">Neu</system:String>
+    <system:String x:Key="CreateProfileToolTip">Fix-Profil erstellen</system:String>
     <system:String x:Key="Edit">Editieren</system:String>
+    <system:String x:Key="EditProfileToolTip">Fix-Profil editieren</system:String>
     <system:String x:Key="Delete">Löschen</system:String>
+    <system:String x:Key="DeleteProfileToolTip">Fix-Profil entfernen</system:String>
 
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Keine kompatiblen Spiele installiert.</system:String>

@@ -5,7 +5,7 @@
 
 
     <!-- Misc -->
-    <system:String x:Key="LoadingApplicatiopn">Loading Application. Please wait...</system:String>
+    <system:String x:Key="LoadingApplication">Loading Application. Please wait...</system:String>
     <system:String x:Key="SwitchToCompactGui">Switch to compact gui size.</system:String>
     <system:String x:Key="SwitchToNormalGui">Switch to normal gui size.</system:String>
     <system:String x:Key="MinimizeToTray">Minimize window to system tray.</system:String>
@@ -28,9 +28,12 @@
     <system:String x:Key="All">All</system:String>
     <system:String x:Key="Installed">Installed</system:String>
     <system:String x:Key="New">New</system:String>
+    <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
     <system:String x:Key="Edit">Edit</system:String>
+    <system:String x:Key="EditProfileToolTip">Edit Fix Profile</system:String>
     <system:String x:Key="Delete">Delete</system:String>
-    
+    <system:String x:Key="DeleteProfileToolTip">Remove Fix Profile</system:String>
+
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">No compatible games installed.</system:String>
     <system:String x:Key="Play2D">Play 2D</system:String>

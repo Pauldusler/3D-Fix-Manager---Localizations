@@ -3,9 +3,9 @@
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-<!-- test-->
+
     <!-- Misc -->
-    <system:String x:Key="LoadingApplicatiopn">Chargement de l'application. Veuillez patienter...</system:String>
+    <system:String x:Key="LoadingApplication">Chargement de l'application. Veuillez patienter...</system:String>
     <system:String x:Key="SwitchToCompactGui">Basculer vers l'interface compacte.</system:String>
     <system:String x:Key="SwitchToNormalGui">Basculer vers l'interface normale.</system:String>
     <system:String x:Key="MinimizeToTray">Minimiser la fenêtre dans la barre des tâches.</system:String>
@@ -28,8 +28,11 @@
     <system:String x:Key="All">Tous</system:String>
     <system:String x:Key="Installed">Installé</system:String>
     <system:String x:Key="New">Nouveau</system:String>
+    <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
     <system:String x:Key="Edit">Editer</system:String>
+    <system:String x:Key="EditProfileToolTip">Edit Fix Profile</system:String>
     <system:String x:Key="Delete">Supprimer</system:String>
+    <system:String x:Key="DeleteProfileToolTip">Remove Fix Profile</system:String>
     
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Aucun jeu compatible installé.</system:String>
