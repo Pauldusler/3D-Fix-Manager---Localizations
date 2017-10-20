@@ -8,7 +8,7 @@
     <system:String x:Key="LoadingApplication">Applikation wird geladen. Bitte warten...</system:String>
     <system:String x:Key="SwitchToCompactGui">Zur kleinen GUI-Oberfläche wechseln.</system:String>
     <system:String x:Key="SwitchToNormalGui">Zur normalen GUI-Größe wechseln.</system:String>
-    <system:String x:Key="MinimizeToTray">Fenster in die Taskleiste minimieren.</system:String>
+    <system:String x:Key="MinimizeToTray">Fenster in den Infobereich minimieren.</system:String>
     <system:String x:Key="ChangeLanguage">Sprache wechseln</system:String>
     <system:String x:Key="Close">Schließen</system:String>
     <system:String x:Key="Show">Anzeigen</system:String>
@@ -316,46 +316,46 @@
     <!-- General hotkeys group -->
     <system:String x:Key="GeneralHotkeys">Allgemeine Hotkeys:</system:String>
     <system:String x:Key="StereoToggle">Stereo-Effekte ein-/ausblenden:</system:String>
-    <system:String x:Key="StereoToggleToolTip">Toggles between plain 2D and stereoscopic 3D while gaming.</system:String>
+    <system:String x:Key="StereoToggleToolTip">Schaltet während des Spielens zwischem flachen 2D und stereoskopischem 3D um.</system:String>
     <system:String x:Key="StereoSeparationAdjustLess">3D-Tiefe verringern:</system:String>
-    <system:String x:Key="StereoSeparationAdjustLessToolTip">Decreases 3D depth / separation.</system:String>
+    <system:String x:Key="StereoSeparationAdjustLessToolTip">Verringert die 3D-Tiefe.</system:String>
     <system:String x:Key="StereoSeparationAdjustMore">3D-Tiefe erhöhen:</system:String>
-    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Increases 3D depth / separation.</system:String>
+    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Erhöht die 3D-Tiefe.</system:String>
     <system:String x:Key="ToggleMemo">In-Game Kompat. ein-/ausblenden:</system:String>
-    <system:String x:Key="ToggleMemoToolTip">Shows / hides green text with compatibility information and recommended in-game settings.</system:String>
+    <system:String x:Key="ToggleMemoToolTip">Blendet den grünen Text mit Informationen zur Kompatiblität und empfohlenen Ingame-Einstellungen ein oder aus.</system:String>
 
     <!-- Advanced hotkeys group -->
     <system:String x:Key="AdvancedHotkeys">Erweiterte Hotkeys:</system:String>
     <system:String x:Key="StereoAdvancedHKConfig">Erweitere in-game hotkeys aktivieren</system:String>
-    <system:String x:Key="StereoAdvancedHKConfigToolTip">Enables advanced hotkeys for changing convergence / frustum settings and more.</system:String>
+    <system:String x:Key="StereoAdvancedHKConfigToolTip">Aktiviert erweiterte Hotkeys um Konvergenz- und Frustum-Einstellungen zu ändern.</system:String>
     <system:String x:Key="StereoConvergenceAdjustLess">Konvergenz verringern:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Decreases the pop-out effect in games.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Verringert den Pop-out-Effekt in Spielen.</system:String>
     <system:String x:Key="StereoConvergenceAdjustMore">Konvergenz erhöhen:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Increases the pop-out effect in games.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Verstärkt den Pop-out-Effekt in Spielen.</system:String>
     <system:String x:Key="WriteConfig">Ingame Änderungen speichern:</system:String>
-    <system:String x:Key="WriteConfigToolTip">Saves convergence and frustum adjustments to Nvidia driver profile.</system:String>
+    <system:String x:Key="WriteConfigToolTip">Speichert Konvergenz- und Frustumanpassungen im Nvidia Treiberprofil.</system:String>
     <system:String x:Key="CycleFrustumAdjust">Frustum-Einstellungen wählen:</system:String>
-    <system:String x:Key="CycleFrustumAdjustToolTip">Cycles through three different frustum adjustments.</system:String>
+    <system:String x:Key="CycleFrustumAdjustToolTip">Durch verschiedene Frstum-Einstellungen durchschalten.</system:String>
     <system:String x:Key="StereoToggleMode">3D-Kompatib.-Modus umschalten:</system:String>
-    <system:String x:Key="StereoToggleModeToolTip">Toggles between compatibility mode for DirectX 11 games (Fake 3D) and Real 3D mode.</system:String>
+    <system:String x:Key="StereoToggleModeToolTip">Schaltet zwischen Kompatibitlitätsmodus für DirectX 11 Spiele (Fake 3D) und echtem 3D-Modus um.</system:String>
 
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
     <system:String x:Key="StereoImageType">Stereo Bild-Typ:</system:String>
-    <system:String x:Key="StereoImageTypeToolTip">Sets the format for stereoscopic images (JPS or PNS).</system:String>
+    <system:String x:Key="StereoImageTypeToolTip">Format für stereoskopische Bilder (JPS oder PNS) einstellen.</system:String>
     <system:String x:Key="StereoImageFolder">Ordner öffnen</system:String>
-    <system:String x:Key="StereoImageFolderToolTip">Opens location of screenshots folder in windows explorer.</system:String>
+    <system:String x:Key="StereoImageFolderToolTip">Öffnet den Pfad zu den gespeicherten Screenshots im Windows Explorer.</system:String>
     <system:String x:Key="SnapShotQuality">JPS Qualität:</system:String>
-    <system:String x:Key="SnapShotQualityToolTip">Determines image quality and file size.</system:String>
+    <system:String x:Key="SnapShotQualityToolTip">Legt Bildqualität und Dateigröße fest.</system:String>
     <system:String x:Key="SaveStereoImage">Sreenshot erstellen:</system:String>
-    <system:String x:Key="SaveStereoImageToolTip">Saves a stereoscopic screenshot on the hard drive.</system:String>
+    <system:String x:Key="SaveStereoImageToolTip">Speichert einen stereoskopischen Screenshot auf der Festplatte.</system:String>
 
     <!-- LaserSight group -->
     <system:String x:Key="LaserSightGroup">Laservisier:</system:String>
     <system:String x:Key="LaserSightEnabled">Laservisier aktivieren:</system:String>
-    <system:String x:Key="LaserSightEnabledToolTip">Sets whether 3D laser sight can be enabled with a hotkey or automatically by Nvidia driver profile.</system:String>
+    <system:String x:Key="LaserSightEnabledToolTip">Legt fest, ob das 3D-Laservisier mittels eines Hotkeys oder automatisch durch das Nvidia Treiberprofil aktiviert werden kann.</system:String>
     <system:String x:Key="ToggleLaserSight">Laservisier ein-/ausblenden:</system:String>
-    <system:String x:Key="ToggleLaserSightToolTip">Enables or disables stereoscopic laser sight in-game.</system:String>
+    <system:String x:Key="ToggleLaserSightToolTip">Aktiviert / deaktiviert das stereoskopische Laservisier im Spiel.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Load">Laden</system:String>
@@ -458,7 +458,7 @@ Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:St
     <system:String x:Key="ErrorLicenceNotice">Sorry, es wurde keine Lizenzdatei gefunden.</system:String>
     <system:String x:Key="UpdateMigoto" xml:space="preserve">Möchten Sie 3dmigoto auf die aktuellste Version updaten? &#x0d;&#x0d;Installierte Version:&#x09;</system:String>
     <system:String x:Key="LatestVersion" xml:space="preserve">Neueste Version:&#x09;&#x09;</system:String>
-    <system:String x:Key="MigotoUpdateSuccess">3DMigoto was successfully updated.</system:String>
+    <system:String x:Key="MigotoUpdateSuccess">3DMigoto wurde erfolgreich aktualisiert.</system:String>
     <system:String x:Key="MigotoUpdateFailed">Fehler: 3dmigoto konnte nicht aktualisiert werden.</system:String>
     <system:String x:Key="ErrorEnablingCM">Fehler beim Aktivieren / Deaktivieren des Kompatibilitätsmodus.</system:String>
     <system:String x:Key="UpdateMigoto02" xml:space="preserve">Dieses Feature ist nur für 3dmigoto ab Version 1.2.48 verfügbar &#x0d;&#x0d;Möchten Sie 3dmigoto auf die aktuellste Version updaten? &#x0d;&#x0d;Installierte version: &#x09;</system:String>
@@ -679,51 +679,51 @@ Pauldusler</system:String>
     </TextBlock>
 
     <!-- General Settings Tab -->
-    <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Prüft bei Start des Programms, ob neue Updates für das Programm selbst oder den Fix-Profilen vorliegen."/></TextBlock>
-    <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktivieren Sie das Steam-Overlay, wenn beim Starten des Spiels Abstürze auftreten."/></TextBlock>
+    <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Prüft bei Start des Programms, ob neue Updates für das Programm oder den Fix-Profilen vorliegen."/></TextBlock>
+    <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktivieren Sie das Steam-Overlay, wenn das Spiel beim Starten abstürzt."/></TextBlock>
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Benutzerdefinierte Veränderungen an Fix-Profilen im 'Edit Profil' Tab werden erkannt beim Abspeichern an einen MySQL-Server geschickt."/><LineBreak/><LineBreak/>
-        <Run Text="Dieses Feature hilft dem Author von 3D Fix MAnager fehlende Profildaten zu sammeln oder fehlerhafte zu korrigieren."/>
+        <Run Text="Vom Benutzer durchgeführte Veränderungen an Fix-Profilen werden beim Abspeichern erkannt und an einen MySQL-Server gesendet."/><LineBreak/><LineBreak/>
+        <Run Text="Dieses Feature hilft dem Author von 3D Fix Manager fehlende Profildaten zu sammeln oder Fehlerhafte zu korrigieren."/>
     </TextBlock>
 
-    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktivieren Sie Suchpfade, wenn Ihre installierten Spiele vom Programm nicht erkannt werden."/></TextBlock>
-    <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass derjenige Installationspfad übernommen wird, der durch die Suchpfade ermittelt wurde."/></TextBlock>
+    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden."/></TextBlock>
+    <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass der durch die Supfade ermittelte Installationspfad übernommen wird."/></TextBlock>
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Pfade, die rekursiv durchsucht werden, um installierte Spiele zu finden."/></TextBlock>
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Startet die Suche nach installierten Spielen mit Hilfe der Suchpfade."/></TextBlock>
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300"><Run Text="Limitiert die rekursive Suche auf die gesetzte Tiefe an Unterverzeichnissen, die zum Finden der Spiele durchlaufen werden."/></TextBlock>
-    <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300"><Run Text="When user starts a game RivaTuner Statistics Server is opened or closed depending on the setting in the individual fix profile."/></TextBlock>
-    <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300"><Run Text="Gives the user the opportunity to set up RTSS before game starts. Please make sure fps limiter is set to 60 fps for smooth gameplay / reduced input lag."/></TextBlock>
-    <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Always closes RTSS when a game is started in 2D mode no matter what is defined in fix profile."/></TextBlock>
-    <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Never closes a running instance of RTSS if a game is started in 2D mode no matter what is defined in fix profile."/></TextBlock>
-    <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300"><Run Text="Automatically closes a running instance of RTSS if the user quits 3D Fix Manager."/></TextBlock>
-    <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300"><Run Text="Globally set if games should be started directly with the game exe and not via Steam client."/><LineBreak/><LineBreak/><Run Text="When no Game Launcher Exe is defined in fix profile the game is still started via Steam if available."/></TextBlock>
-    <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300"><Run Text="Globally set if games should be started via Steam client by calling the Steam App ID."/><LineBreak/><LineBreak/><Run Text="If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead."/></TextBlock>
+    <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300"><Run Text="RivaTuner Statistics Server wird bei Spielstart geöffnet oder geschlossen je nachdem welche Einstellung im jeweiligen Fix-Profil getroffen wurde."/></TextBlock>
+    <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300"><Run Text="Gibt dem Benutzer vor Spielstart die Möglichkeit den RTSS zu konfigurieren. Bitte stellen Sie sicher, dass der FPS-Begrenzer für ein flüssiges Spielgeschehen sowie reduzierten Input-Lag auf 60 gestellt ist."/></TextBlock>
+    <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS immer schließen, wennn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist."/></TextBlock>
+    <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS niemals schließen, wenn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist."/></TextBlock>
+    <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS automatisch schließen, wenn 3D Fix Manager beendet wird."/></TextBlock>
+    <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300"><Run Text="Global einstellen, ob Spiele direkt über die Spiel-Exe gestartet werden sollen und nicht über den Steam-Client."/><LineBreak/><LineBreak/><Run Text="Sollte keine Exe zum Starten des Spiels im Profil hinterlegt worden sein, wird das Spiel nach Möglichkeit über Steam gestartet."/></TextBlock>
+    <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300"><Run Text="Global einstellen, ob Spiele über den Steam Client gestartet werden sollen, indem die Steam App ID aufgerufen wird."/><LineBreak/><LineBreak/><Run Text="Sollte ein Spiel nicht über Steam installiert worden sein oder Steam vom 3D Fix Manager nicht gefunden werden kann, wird stattdessen über die Spiel-Exe gestartet."/></TextBlock>
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client."/><LineBreak/><LineBreak/>
-        <Run Text="Steam games should only be started directly via game exe when you want to bypass a game launcher for example. You can control this behaviour by editing the individual fix profile."/>
+        <Run Text="Einstellen, ob der Starttyp eines Spiels individuell durch sein Fix-Profil gesteuert werden soll. Diese Einstellung wird empfohlen, um steuern zu können, ob das Spiel über die Spiel-Exe oder den Steam-Client gestartet werden soll."/><LineBreak/><LineBreak/>
+        <Run Text="Steam-Spiele sollten nur dann direkt über die Exe-Datei gestartet werden, um beispielsweise unerwünschte Launcher-Fenster eines Spiels zu überspringen. Sie können dieses Verhalten durch das editieren des jeweiligen Fix-Profils editieren."/>
     </TextBlock>
-    <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disable installation of any driver profiles via Nvidia Profile Inspector."/></TextBlock>
-    <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="User can decide in fix profile settings wether he wants to install a driver profile."/></TextBlock>
-    <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disables the warning message when installing a driver profile."/></TextBlock>
+    <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Installation von Treiberprofilen über den Nvidia Profile Inspektor deaktivieren."/></TextBlock>
+    <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="Benutzer stellt im Fix-Profil ein, ob er die Installation von Treiberprofilen wünscht."/></TextBlock>
+    <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300"><Run Text="Warnmeldung bei der Installation von Treiberprofilen deaktivieren."/></TextBlock>
 
     <!-- Nvidia 3D Settings Tab -->
-    <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enables / disables Nvidia Stereoscopic 3D. This is the same feature as in Nvidia Control Panel."/></TextBlock>
-    <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager."/></TextBlock>
-    <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode."/></TextBlock>
+    <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktiviert / deaktiviert Nvidia's stereoskopische 3D-Funktion. Es handelt sich dabei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung enthalten ist."/></TextBlock>
+    <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird."/></TextBlock>
+    <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Sorgt beim Aktivieren der stereoskopischen 3D-Funktion oder beim Starten eines Spiels im 3D-Modus automatisch dafür, dass 3D Vision bzw. 3DTV Play als Ausgabemodus genutzt wird statt 3D Vision Discover (anaglyph)"/></TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Enable this option if you want to exceed the maximimum 3D depth of 100% (also known as depth hack)."/><LineBreak/><LineBreak/>
-        <Run Text="To have a greater 3d depth adjust the multiplier slider - a value of 2 for example means that depth will be twice as high."/>
+        <Run Text="Funktion aktivieren, wenn die für gewöhnlich auf 100% limitierte 3D-Tiefe zu überschritten werden soll (auch bekannt als Tiefen-Hack)."/><LineBreak/><LineBreak/>
+        <Run Text="Um eine größere 3D-Tiefe zu erreichen bitte den Multiplikator-Schieberegler betätigen - ein Wert von 2 entspricht beispielsweile einer doppelten 3D-Tiefe."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz."/><LineBreak/><LineBreak/>
-        <Run Text="Set here to run monitor and shutter glasses with the specified frequenzy while gaming. Decreasing frequency to 100 Hz is useful if your computer is only strong enough to hold 100 fps in-game."/>
+        <Run Text="3D Vision Shutter-Brillen können mit verschiedenen Shutter-Frequenzen betrieben werden - die Spanne reicht von 100 Hz bis 120 Hz."/><LineBreak/><LineBreak/>
+        <Run Text="Stellen Sie hier ein, mit welcher Frequenz der Monitor und die Shutter-Brillen beim Spielen laufen sollen. Es empfiehlt sich die Frequenz auf 100 Hz zu setzen, wenn die Leistung Ihres PCs nur für 100 FPS im Spiel ausreicht."/>
     </TextBlock>
     <TextBlock x:Key="Change3dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="This feature is useful for Windows 10 users who experience black screen issues when closing a game (Windows 10 has issues changing back to 144 hz for windows desktop.)."/><LineBreak/><LineBreak/>
-        <Run Text="Setting 120 hz on desktop also fixes high idle clocks on GPU in combination with enabled Nvidia Stereoscopic 3D."/><LineBreak/><LineBreak/>
-        <Run Text="Also don't forget to press STRG + T before closing a game for preventing monitor being stuck in 3D mode."/>
+        <Run Text="Dieses Feature ist für Besitzer von Windows 10 nützlich, die unter dem Problem leiden, dass der Monitor beim Beenden des Spiels noch ein schwarzes Bild zeigt.(Windows 10 hat Schwierigkeiten zurück auf 144 Hz Desktop-Frequenz zurückzuschalten."/><LineBreak/><LineBreak/>
+        <Run Text="Die Frequenz auf 120hz zu setzen beseitigt darüber hinaus hohe Idle-Taktraten der Grafikkarte, die in Kombination mit aktivieretem stereoskopischer 3D-Funktion auftreten."/><LineBreak/><LineBreak/>
+        <Run Text="Vergessen Sie außerdem nicht vor dem Beenden des Spiels STRG + T zu drücken, um zu verhindern, dass der Monitor im 3D-Modus verharrt."/>
     </TextBlock>
-    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="This is useful if you applied the Windows 10 blackscren fix (feature above) and want to change back to higher monitor refresh rates after disabling Nvidia Stereoscopic 3D."/></TextBlock>
+    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="Empfiehlt sich zu setzen, wenn Sie den Windows 10 Blackscreen-Fix anwenden (s. obiges Feature) und nach Deaktivieren der stereoskopischen 3D-Funktion wieder auf höhere Bildwiederholfrequenzen wechseln wollen."/></TextBlock>
 
     <!-- XAML formated ToolTips End -->
 
