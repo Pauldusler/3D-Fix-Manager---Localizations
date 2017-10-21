@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
@@ -36,8 +36,8 @@
     
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Aucun jeu compatible installé.</system:String>
-    <system:String x:Key="Play2D">Jouer en 2D</system:String>
-    <system:String x:Key="Play3D">Jouer en 3D</system:String>
+    <system:String x:Key="Play2D">Jouer 2D</system:String>
+    <system:String x:Key="Play3D">Jouer 3D</system:String>
     <system:String x:Key="InstallFix">Installer le fix 3D</system:String>
     <system:String x:Key="InstallFixCompleted">Installation complété</system:String>
     <system:String x:Key="InstallFixFailed">Installation échouée. Vérifier le chemin d'installation</system:String>
@@ -49,7 +49,7 @@
     <system:String x:Key="UninstallFixCompleted">Désinstallation complété</system:String>
     <system:String x:Key="UninstallFixFailed">Désinstallation échouée</system:String>
     <system:String x:Key="InstallWrapper">Installer le Wrapper</system:String>
-    <system:String x:Key="DeleteDownload">Supprimer téléchargement</system:String>
+    <system:String x:Key="DeleteDownload">Supprimer download</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Deletes downloaded files of a 3D fix from 3D Fix Manager directory.</system:String>
     <system:String x:Key="DeleteSuccess">Success. All downloaded files deleted.</system:String>
     <system:String x:Key="DeleteError" xml:space="preserve">Error: Not all files could be deleted. &#x0d;&#x0d;Please make sure that no file is in use.</system:String>
@@ -393,8 +393,10 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Yes</system:String>
     <system:String x:Key="No">No</system:String>
-    <system:String x:Key="Install3dmigoto">Install 3dmigoto</system:String>
-    <system:String x:Key="InstallHelixMod">Install HelixMod</system:String>
+    <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
+    <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
+    <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
+    <system:String x:Key="InstallHelixModx64">Install HelixMod x64</system:String>
     <system:String x:Key="QuickSetup">Quick Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
     
