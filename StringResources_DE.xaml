@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
@@ -36,8 +36,8 @@
 
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Keine kompatiblen Spiele installiert.</system:String>
-    <system:String x:Key="Play2D">Spiele 2D</system:String>
-    <system:String x:Key="Play3D">Spiele 3D</system:String>
+    <system:String x:Key="Play2D">2D Spielen</system:String>
+    <system:String x:Key="Play3D">3D Spielen</system:String>
     <system:String x:Key="InstallFix">3D Fix installieren</system:String>
     <system:String x:Key="InstallFixCompleted">Installation erfolgreich</system:String>
     <system:String x:Key="InstallFixFailed">Installation fehlgeschlagen (falscher Install-Pfad?)</system:String>
@@ -395,14 +395,16 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Ja</system:String>
     <system:String x:Key="No">Nein</system:String>
-    <system:String x:Key="Install3dmigoto">3dmigoto installieren</system:String>
-    <system:String x:Key="InstallHelixMod">HelixMod installieren</system:String>
+    <system:String x:Key="Install3dmigotox32">3dmigoto x32 installieren</system:String>
+    <system:String x:Key="InstallHelixModx32">HelixMod x32 installieren</system:String>
+    <system:String x:Key="Install3dmigotox64">3dmigoto x64 installieren</system:String>
+    <system:String x:Key="InstallHelixModx64">HelixMod x64 installieren</system:String>
     <system:String x:Key="QuickSetup">Schnelles Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="Install3dmigoto02">Install 3dmigoto:</system:String>
-    <system:String x:Key="InstallHelixMod02">Install HelixMod:</system:String>
+    <system:String x:Key="Install3dmigoto02">3dmigoto installieren:</system:String>
+    <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">Alle Ini-Einstellungen wurden auf die originalen Standardwerte zurückgesetzt. &#x0d;&#x0d;Bitte vergessen Sie nicht die Änderungen abzuspeichern.</system:String>
     <system:String x:Key="GameTitleEmpty">Fehler: Der Spieltitel darf nicht leer sein</system:String>
