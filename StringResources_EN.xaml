@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
@@ -393,8 +393,10 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Yes</system:String>
     <system:String x:Key="No">No</system:String>
-    <system:String x:Key="Install3dmigoto">Install 3dmigoto</system:String>
-    <system:String x:Key="InstallHelixMod">Install HelixMod</system:String>
+    <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
+    <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
+    <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
+    <system:String x:Key="InstallHelixModx64">Install HelixMod x64</system:String>
     <system:String x:Key="QuickSetup">Quick Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
     
