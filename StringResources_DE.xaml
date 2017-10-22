@@ -4,6 +4,10 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
    
+    
+    
+    
+    
     <!-- Misc -->
     <system:String x:Key="LoadingApplication">Applikation wird geladen. Bitte warten...</system:String>
     <system:String x:Key="SwitchToCompactGui">Zur kleinen GUI-Oberfläche wechseln.</system:String>
@@ -309,6 +313,12 @@
     <system:String x:Key="SetStereoTypeTo3DVision">Erzwinge 3D Vision / 3DTV Play Modus</system:String>
     <system:String x:Key="StereoSeparation">3D Tiefe:</system:String>
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden.</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">3D-Modus im Fenstermodus aktivieren.</system:String>
+    <system:String x:Key="StereoWindowedModeEnabledToolTip">Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird.</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
 
     <!-- Refresh rateS settings group -->
     <system:String x:Key="RefreshRateSettingsGroup">Einsellungen zur Bildwiederholrate:</system:String>
@@ -329,7 +339,7 @@
 
     <!-- Advanced hotkeys group -->
     <system:String x:Key="AdvancedHotkeys">Erweiterte Hotkeys:</system:String>
-    <system:String x:Key="StereoAdvancedHKConfig">Erweitere in-game hotkeys aktivieren</system:String>
+    <system:String x:Key="StereoAdvancedHKConfig">Erweiterte Ingame Hotkeys aktivieren</system:String>
     <system:String x:Key="StereoAdvancedHKConfigToolTip">Aktiviert erweiterte Hotkeys um Konvergenz- und Frustum-Einstellungen zu ändern.</system:String>
     <system:String x:Key="StereoConvergenceAdjustLess">Konvergenz verringern:</system:String>
     <system:String x:Key="StereoConvergenceAdjustLessToolTip">Verringert den Pop-out-Effekt in Spielen.</system:String>
@@ -478,22 +488,14 @@ Bitte helfen Sie dabei 3D-Gaming am Leben zu halten.
         
 Vielen Dank, 
 Pauldusler</system:String>
-    <system:String x:Key="DonateMessageShaderHackers" xml:space="preserve">Die 3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.
-        
-Sie sind der Grund dafür, weshalb 3D-Gaming bis heute noch am Leben ist. Wenn Sie HelixMod unterstützen wollen, so zögern Sie bitte nicht eine PayPal-Spende zu senden.
+    <system:String x:Key="DonateShaderHackers01">3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.</system:String>
+    <system:String x:Key="DonateShaderHackers02">Sie sind verantwortlich dafür, dass 3D-Gaming bis heute am Leben gehalten wurde. Wenn Sie HelixMod unterstützen wollen, sind Spenden herzlich willkommen.</system:String>
+    <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhackern, an welche Sie die Spende richten können:</system:String>
+    <system:String x:Key="Thanks">Vielen Dank,</system:String>
+    <system:String x:Key="YourHelixModTeam">Ihr HelixMod-Team</system:String>
+    <system:String x:Key="OpenPaypal">PayPal aufrufen</system:String>
+    <system:String x:Key="OpenPaypalToolTip">Öffnet die PayPal website im Webbrowser auf welcher Sie eine Spende tätigen können.</system:String>
 
-Im Folgendenen finden Sie eine Liste mit PayPal-Adressen der einzelnen Shaderhackern, an welche Sie die Spende richten können: 
-        
-DarkStarSword,&#x09;&#x09;PayPal: www.paypal.me/DarkStarSword
-DHR,&#x09;&#x09;&#x09;PayPal: dhr.donation@gmail.com
-eqzitara,&#x09;&#x09;&#x09;PayPal: eqzitara@YAHOO.COM
-Helifax,&#x09;&#x09;&#x09;PayPal: tavyhome@gmail.com
-masterotaku,&#x09;&#x09;PayPal: masterotakusuko@gmail.com
-sgsrules,&#x09;&#x09;&#x09;PayPal: sgs.rules@gmail.com
-        
-Vielen Dank,
-Ihr HelixMod-Team
-</system:String>
     <system:String x:Key="ReleaseBuildSucces">Erfolg: Release-Dateien wurden erfolgreich erstellt.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Fehler: Release-Prozess fehlgeschlagen.</system:String>
     <system:String x:Key="DuplicateKeyError" xml:space="preserve">Fehler: Dieser Hotkey existiert bereits. &#x0d;&#x0d;Bitte wählen Sie eine andere Taste.</system:String>
