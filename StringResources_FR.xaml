@@ -368,7 +368,10 @@
     
     <!--....................  About Tab Begin .......................... -->
 
-    <system:String x:Key="DevelopedBy">Developed by:</system:String>
+    <system:String x:Key="ProgramDevelopedBy">Program developed by:</system:String>
+    <system:String x:Key="FixesDevelopedBy">3D Fixes developed by:</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
+    <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
     <system:String x:Key="ProgramVersion">Program version:</system:String>
     <system:String x:Key="FixProfiles">Fix Profiles:</system:String>
     <system:String x:Key="CheckUpdate">Check for Updates</system:String>
@@ -471,8 +474,24 @@ By clicking on 'Donate' your webbrowser will open PayPal-website where you can e
         
 Please help to keep 3D gaming alive.
         
-Thanks, 
+Thank you very much, 
 Pauldusler</system:String>
+    <system:String x:Key="DonateMessageShaderHackers" xml:space="preserve">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.
+        
+They are the reason why 3D gaming is still alive today. If you want to support HelixMod please feel free to send a PayPal donation.
+
+Here is a list of PayPal accounts of the individual shaderhackers you can donate to: 
+        
+DarkStarSword,&#x09;&#x09;PayPal: www.paypal.me/DarkStarSword
+DHR,&#x09;&#x09;&#x09;PayPal: dhr.donation@gmail.com
+eqzitara,&#x09;&#x09;&#x09;PayPal: eqzitara@YAHOO.COM
+Helifax,&#x09;&#x09;&#x09;PayPal: tavyhome@gmail.com
+masterotakusuko,&#x09;&#x09;PayPal: masterotakusuko@gmail.com
+sgsrules,&#x09;&#x09;&#x09;PayPal: sgs.rules@gmail.com
+                
+Thanks,
+Your HelixMod Team
+</system:String>
     <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
     <system:String x:Key="DuplicateKeyError" xml:space="preserve">Error: This hotkey already exists. &#x0d;&#x0d;Please choose another key.</system:String>
