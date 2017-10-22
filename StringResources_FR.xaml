@@ -307,6 +307,12 @@
     <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
     <system:String x:Key="StereoSeparation">3D Depth:</system:String>
     <system:String x:Key="DepthMultiplier">3D Depth Multiplier:</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">Enable stereo 3D in windowed mode</system:String>
+    <system:String x:Key="StereoWindowedModeEnabledToolTip">Sets whether 3D Vision can activate 3D mode for windowed applications.</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
 
     <!-- Refresh rate settings group -->
     <system:String x:Key="RefreshRateSettingsGroup">Refresh Rate Settings:</system:String>
@@ -476,22 +482,14 @@ Please help to keep 3D gaming alive.
         
 Thank you very much, 
 Pauldusler</system:String>
-    <system:String x:Key="DonateMessageShaderHackers" xml:space="preserve">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.
-        
-They are the reason why 3D gaming is still alive today. If you want to support HelixMod please feel free to send a PayPal donation.
+    <system:String x:Key="DonateShaderHackers01">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.</system:String>
+    <system:String x:Key="DonateShaderHackers02">HelixMod is the reason why 3D gaming is still alive today. If you want to support them donations are very appreciated.</system:String>
+    <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal accounts of the individual shaderhackers you can donate to:</system:String>
+    <system:String x:Key="Thanks">Thank you very much,</system:String>
+    <system:String x:Key="YourHelixModTeam">Your HelixMod Team</system:String>
+    <system:String x:Key="OpenPaypal">Open PayPal</system:String>
+    <system:String x:Key="OpenPaypalToolTip">Opens PayPal website in webbrowser where you can send a donation.</system:String>
 
-Here is a list of PayPal accounts of the individual shaderhackers you can donate to: 
-        
-DarkStarSword,&#x09;&#x09;PayPal: www.paypal.me/DarkStarSword
-DHR,&#x09;&#x09;&#x09;PayPal: dhr.donation@gmail.com
-eqzitara,&#x09;&#x09;&#x09;PayPal: eqzitara@YAHOO.COM
-Helifax,&#x09;&#x09;&#x09;PayPal: tavyhome@gmail.com
-masterotakusuko,&#x09;&#x09;PayPal: masterotakusuko@gmail.com
-sgsrules,&#x09;&#x09;&#x09;PayPal: sgs.rules@gmail.com
-                
-Thanks,
-Your HelixMod Team
-</system:String>
     <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
     <system:String x:Key="DuplicateKeyError" xml:space="preserve">Error: This hotkey already exists. &#x0d;&#x0d;Please choose another key.</system:String>
