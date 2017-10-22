@@ -370,7 +370,10 @@
     
     <!--....................  About Tab Begin .......................... -->
 
-    <system:String x:Key="DevelopedBy">Entwickelt von:</system:String>
+    <system:String x:Key="ProgramDevelopedBy">Programm entwickelt von:</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Spende an den Entwickler von 3D Fix Manger senden.</system:String>
+    <system:String x:Key="FixesDevelopedBy">3D Fixes entwickelt von:</system:String>
+    <system:String x:Key="DonationShaderHackersToolTip">Spende an die Entwickler der 3D-Fixes senden.</system:String>
     <system:String x:Key="ProgramVersion">Programversion:</system:String>
     <system:String x:Key="FixProfiles">Fix-Profile:</system:String>
     <system:String x:Key="CheckUpdate">Auf Updates prüfen</system:String>
@@ -435,8 +438,8 @@ Anmerkungen:
     <system:String x:Key="NoChangeNotesFound">Sorry, es wurdes keine Versionshinweise gefunden.</system:String>
     <system:String x:Key="ChangeNotesManager">Versionshinweise für 3D Fix Manager:</system:String>
     <system:String x:Key="ChangeNotesProfiles">Versionshinweise für Fix-Profile:</system:String>
-    <system:String x:Key="WarningRootPath">Warnung: Root-Pfade können in sehr lange Ladezeiten resultieren.</system:String>
-    <system:String x:Key="WarningSearchDepth" xml:space="preserve">Warnung: Hohe Werte für die Suchtiefe können in sehr lange Ladezeiten resultieren.&#x0d;&#x0d;Es sollte versucht werden den Wert so gering wie möglich zu halten (nicht größer als 2).</system:String>
+    <system:String x:Key="WarningRootPath">Warnung: Root-Pfade können sehr lange Ladezeiten verursachen.</system:String>
+    <system:String x:Key="WarningSearchDepth" xml:space="preserve">Warnung: Hohe Werte für die Suchtiefe können sehr lange Ladezeiten verursachen.&#x0d;&#x0d;Es sollte versucht werden den Wert so gering wie möglich zu halten (nicht größer als 2).</system:String>
     <system:String x:Key="ErrorNotNumber">Fehler: Eingegebener Wert ist keine Zahl.</system:String>
     <system:String x:Key="RTSSPauseMessage" xml:space="preserve">Spielstart pausiert - Bitte konfigurieren Sie den RivaTuner Statistics Server sofern erforderlich.
 RTSS eliminiert Microstuttering, verringert den Input Lag und verbessert die Frametimes im 3D-Modus.
@@ -475,6 +478,22 @@ Bitte helfen Sie dabei 3D-Gaming am Leben zu halten.
         
 Vielen Dank, 
 Pauldusler</system:String>
+    <system:String x:Key="DonateMessageShaderHackers" xml:space="preserve">Die 3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.
+        
+Sie sind der Grund dafür, weshalb 3D-Gaming bis heute noch am Leben ist. Wenn Sie HelixMod unterstützen wollen, so zögern Sie bitte nicht eine PayPal-Spende zu senden.
+
+Im Folgendenen finden Sie eine Liste mit PayPal-Adressen der einzelnen Shaderhackern, an welche Sie die Spende richten können: 
+        
+DarkStarSword,&#x09;&#x09;PayPal: www.paypal.me/DarkStarSword
+DHR,&#x09;&#x09;&#x09;PayPal: dhr.donation@gmail.com
+eqzitara,&#x09;&#x09;&#x09;PayPal: eqzitara@YAHOO.COM
+Helifax,&#x09;&#x09;&#x09;PayPal: tavyhome@gmail.com
+masterotaku,&#x09;&#x09;PayPal: masterotakusuko@gmail.com
+sgsrules,&#x09;&#x09;&#x09;PayPal: sgs.rules@gmail.com
+        
+Vielen Dank,
+Ihr HelixMod-Team
+</system:String>
     <system:String x:Key="ReleaseBuildSucces">Erfolg: Release-Dateien wurden erfolgreich erstellt.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Fehler: Release-Prozess fehlgeschlagen.</system:String>
     <system:String x:Key="DuplicateKeyError" xml:space="preserve">Fehler: Dieser Hotkey existiert bereits. &#x0d;&#x0d;Bitte wählen Sie eine andere Taste.</system:String>
@@ -617,7 +636,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil für Spiel 'Superhot' sofern Sie Beispiel hierfür benötigen."/><LineBreak/><LineBreak/>
+        <Run Text="Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil 'Superhot' um ein Beispiel hierfür zu sehen)."/><LineBreak/><LineBreak/>
         <Run Text="Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel 'Doom' erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID)."/><LineBreak/><LineBreak/>
         <Run Text="Zu guter Letzt können Sie einstellen, der RivaTuner Statistics Server beim Start des Spiels geöffnet oder geschlossen werden soll."/><LineBreak/><LineBreak/>
         <Run Text="RTSS sorgt für reduzierten Input-Lag und verbessert die Frametimes für ein flüssiges Spielgeschehen."/>
