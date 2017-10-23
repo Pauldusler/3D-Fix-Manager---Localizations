@@ -2,10 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
-
-   
-    
-    
     
     
     <!-- Misc -->
@@ -315,7 +311,7 @@
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden.</system:String>
-    <system:String x:Key="StereoWindowedModeEnabled">3D-Modus im Fenstermodus aktivieren.</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren.</system:String>
     <system:String x:Key="StereoWindowedModeEnabledToolTip">Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird.</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
@@ -381,7 +377,7 @@
     <!--....................  About Tab Begin .......................... -->
 
     <system:String x:Key="ProgramDevelopedBy">Programm entwickelt von:</system:String>
-    <system:String x:Key="DonationDeveloperToolTip">Spende an den Entwickler von 3D Fix Manger senden.</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Spende an den Entwickler von 3D Fix Manager senden.</system:String>
     <system:String x:Key="FixesDevelopedBy">3D Fixes entwickelt von:</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Spende an die Entwickler der 3D-Fixes senden.</system:String>
     <system:String x:Key="ProgramVersion">Programversion:</system:String>
@@ -437,15 +433,15 @@ Anmerkungen:
     <system:String x:Key="GameIconFileNotFound">Fehler: Icon-Datei für Spiel wurde nicht gefunden.</system:String>
     <system:String x:Key="InstallPathNotRelative">Fehler: Instalationspfad ist kein relativer Pfad.</system:String>
     <system:String x:Key="IniPathNotRelative">Fehler: Ini-Pfad des Spiels ist kein relativer Pfad.</system:String>
-    <system:String x:Key="AdditionalIniPathNotRelative">Fehler: Zusätzlicher Ini-Pfad des Spiels ist kein relativer Pfad</system:String>
+    <system:String x:Key="AdditionalIniPathNotRelative">Fehler: Zusätzlicher Ini-Pfad des Spiels ist kein relativer Pfad.</system:String>
     <system:String x:Key="ChangesSaved">Änderungen wurden erfolgreich gespeichert.</system:String>
     <system:String x:Key="FixProfileCreated">Fix-Profil wurde erfolgreich erstellt.</system:String>
     <system:String x:Key="ServerNotAvailable">Server nicht erreichbar. Bitte versuchen Sie es später erneut.</system:String>
     <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie dise updaten?&#x0d;&#x0d;Versionshinweise für Fix-Profile:&#x0d;&#x0d;</system:String>
     <system:String x:Key="NoUpdates" xml:space="preserve">Keine Updates verfügbar. &#x0d;&#x0d;Fix-Profile sind auf dem aktuellsten Stand.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Eine neue Version des 3D Fix Managers ist verfügbar. Möchten Sie updaten?&#x0d;&#x0d;Versionshinweise für 3D Fix Manager:&#x0d;&#x0d;</system:String>
-    <system:String x:Key="BugReportTo" xml:space="preserve">Wenn Sie Bugs melden oder Anregungen für neue Features liefern wollen, so senden Sie bitte eine E-Mai an: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
-    <system:String x:Key="NoChangeNotesFound">Sorry, es wurdes keine Versionshinweise gefunden.</system:String>
+    <system:String x:Key="BugReportTo" xml:space="preserve">Wenn Sie Bugs melden oder Anregungen für neue Features liefern wollen, so senden Sie bitte eine E-Mail an: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
+    <system:String x:Key="NoChangeNotesFound">Sorry, es wurden keine Versionshinweise gefunden.</system:String>
     <system:String x:Key="ChangeNotesManager">Versionshinweise für 3D Fix Manager:</system:String>
     <system:String x:Key="ChangeNotesProfiles">Versionshinweise für Fix-Profile:</system:String>
     <system:String x:Key="WarningRootPath">Warnung: Root-Pfade können sehr lange Ladezeiten verursachen.</system:String>
@@ -482,7 +478,7 @@ Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:St
     <system:String x:Key="UpdateMigoto02" xml:space="preserve">Dieses Feature ist nur für 3dmigoto ab Version 1.2.48 verfügbar &#x0d;&#x0d;Möchten Sie 3dmigoto auf die aktuellste Version updaten? &#x0d;&#x0d;Installierte version: &#x09;</system:String>
     <system:String x:Key="DonateMessage" xml:space="preserve">Wenn Sie dieses Projekt unterstützen möchten, sind Spenden an folgende PayPal-Adresse herzlich willkommen: duselpaul86@gmx.de
 
-Die Schaltfläche 'Spenden' öffnet die PayPal-Webseite auf welcher Sie auf einfache Weise eine Spende senden können. 
+Die unten befindliche Schaltfläche öffnet die PayPal-Webseite auf welcher Sie auf einfache Weise eine Spende senden können. 
         
 Bitte helfen Sie dabei 3D-Gaming am Leben zu halten.
         
@@ -490,11 +486,11 @@ Vielen Dank,
 Pauldusler</system:String>
     <system:String x:Key="DonateShaderHackers01">3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.</system:String>
     <system:String x:Key="DonateShaderHackers02">Sie sind verantwortlich dafür, dass 3D-Gaming bis heute am Leben gehalten wurde. Wenn Sie HelixMod unterstützen wollen, sind Spenden herzlich willkommen.</system:String>
-    <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhackern, an welche Sie die Spende richten können:</system:String>
+    <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhackern an welche Sie eine Spende entrichten können:</system:String>
     <system:String x:Key="Thanks">Vielen Dank,</system:String>
     <system:String x:Key="YourHelixModTeam">Ihr HelixMod-Team</system:String>
     <system:String x:Key="OpenPaypal">PayPal aufrufen</system:String>
-    <system:String x:Key="OpenPaypalToolTip">Öffnet die PayPal website im Webbrowser auf welcher Sie eine Spende tätigen können.</system:String>
+    <system:String x:Key="OpenPaypalToolTip">Öffnet die PayPal-Webseite im Webbrowser auf welcher Spenden getätigt werden können.</system:String>
 
     <system:String x:Key="ReleaseBuildSucces">Erfolg: Release-Dateien wurden erfolgreich erstellt.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Fehler: Release-Prozess fehlgeschlagen.</system:String>
@@ -562,7 +558,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
         <Bold><Run Text="Titel des Spiels"/></Bold><Run Text=" muss genauso lauten wie in der Steam-Bibliothek aufgeführt oder unter den installierten Programmen in "/>
         <Italic><Run Text="&quot;Windows Systemsteuerung / Programme und Features&quot; gelistet."/></Italic><LineBreak/><LineBreak/>
-        <Run Text="Überprüfen Sie die Liste auf der rechten Seite um die Namen aller installierten Programme einzusehen, die der 3D Fix Manager anhand der Windows Registry erkannt hat. Wählen Sie ein Programm aus der Liste aus, um seinen Namen als Spieltitel zu übernehmen."/>
+        <Run Text="Überprüfen Sie die Liste auf der rechten Seite um die Namen aller installierten Programme einzusehen, die 3D Fix Manager anhand der Windows Registry erkannt hat. Wählen Sie ein Programm aus der Liste aus, um seinen Namen als Spieltitel zu übernehmen."/>
     </TextBlock>
 
     <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
