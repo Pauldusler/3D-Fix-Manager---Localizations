@@ -309,7 +309,7 @@
     <system:String x:Key="DepthMultiplier">3D Depth Multiplier:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.</system:String>
-    <system:String x:Key="StereoWindowedModeEnabled">Enable stereo 3D in windowed mode</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode</system:String>
     <system:String x:Key="StereoWindowedModeEnabledToolTip">Sets whether 3D Vision can activate 3D mode for windowed applications.</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
@@ -476,7 +476,7 @@ Click on 'OK' when you're done making changes.</system:String>
     <system:String x:Key="UpdateMigoto02" xml:space="preserve">This feature is only available for 3dmigoto versions higher than 1.2.48. &#x0d;&#x0d;Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version: &#x09;</system:String>
     <system:String x:Key="DonateMessage" xml:space="preserve">If you want to support this project you can donate to this PayPal account: duselpaul86@gmx.de
 
-By clicking on 'Donate' your webbrowser will open PayPal-website where you can easily send a donation. 
+By clicking on the button below your webbrowser will open PayPal-website where you can easily send a donation. 
         
 Please help to keep 3D gaming alive.
         
