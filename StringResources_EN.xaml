@@ -733,7 +733,8 @@ Pauldusler</system:String>
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode."/></TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Enable this option if you want to exceed the maximimum 3D depth of 100% (also known as depth hack)."/><LineBreak/><LineBreak/>
-        <Run Text="To have a greater 3d depth adjust the multiplier slider - a value of 2 for example means that depth will be twice as high."/>
+        <Run Text="Depth hack is active as soon as you set the multiplier higher than a value of 1. For example if you set it to 2 you can achieve a 3D depth which will be twice as high."/><LineBreak/><LineBreak/>
+        <Run Text="Effectively this means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because of the multiplier value of 2. Similarly 80% 3D depth will correspond 160% and so on."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz."/><LineBreak/><LineBreak/>
