@@ -5,51 +5,51 @@
 
 
     <!-- Misc -->
-    <system:String x:Key="LoadingApplication">Chargement de l'application. Veuillez patienter...</system:String>
-    <system:String x:Key="SwitchToCompactGui">Basculer vers l'interface compacte.</system:String>
-    <system:String x:Key="SwitchToNormalGui">Basculer vers l'interface normale.</system:String>
-    <system:String x:Key="MinimizeToTray">Minimiser la fenêtre dans la barre des tâches.</system:String>
-    <system:String x:Key="ChangeLanguage">Changer de langue</system:String>
-    <system:String x:Key="Close">Fermer</system:String>
-    <system:String x:Key="Show">Montrer</system:String>
-    <system:String x:Key="NoMatchFound">Aucune correspondance pour</system:String>
+    <system:String x:Key="LoadingApplication">Loading Application. Please wait...</system:String>
+    <system:String x:Key="SwitchToCompactGui">Switch to compact gui size.</system:String>
+    <system:String x:Key="SwitchToNormalGui">Switch to normal gui size.</system:String>
+    <system:String x:Key="MinimizeToTray">Minimize window to system tray.</system:String>
+    <system:String x:Key="ChangeLanguage">Change Language</system:String>
+    <system:String x:Key="Close">Close</system:String>
+    <system:String x:Key="Show">Show</system:String>
+    <system:String x:Key="NoMatchFound">No Match found for</system:String>
 
     <!-- Tab header title -->
     <system:String x:Key="Installation">Installation</system:String>
-    <system:String x:Key="EditProfile">Editer le Profil</system:String>
-    <system:String x:Key="NewProfile">Nouveau Profil</system:String>
-    <system:String x:Key="Hotkeys">Raccourcis</system:String>
-    <system:String x:Key="Settings">Réglages</system:String>
-    <system:String x:Key="About">A propos</system:String>
-    <system:String x:Key="GeneralSettings">Réglages généraux</system:String>
-    <system:String x:Key="Nvidia3DSettings">Réglages Nvidia 3D</system:String>
+    <system:String x:Key="EditProfile">Edit Profile</system:String>
+    <system:String x:Key="NewProfile">New Profile</system:String>
+    <system:String x:Key="Hotkeys">Hotkeys</system:String>
+    <system:String x:Key="Settings">Settings</system:String>
+    <system:String x:Key="About">About</system:String>
+    <system:String x:Key="GeneralSettings">General Settings</system:String>
+    <system:String x:Key="Nvidia3DSettings">Nvidia 3D Settings</system:String>
 
     <!-- Game list on left column-->
-    <system:String x:Key="All">Tous</system:String>
-    <system:String x:Key="Installed">Installé</system:String>
-    <system:String x:Key="New">Nouveau</system:String>
+    <system:String x:Key="All">All</system:String>
+    <system:String x:Key="Installed">Installed</system:String>
+    <system:String x:Key="New">New</system:String>
     <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
-    <system:String x:Key="Edit">Editer</system:String>
+    <system:String x:Key="Edit">Edit</system:String>
     <system:String x:Key="EditProfileToolTip">Edit Fix Profile</system:String>
-    <system:String x:Key="Delete">Supprimer</system:String>
+    <system:String x:Key="Delete">Delete</system:String>
     <system:String x:Key="DeleteProfileToolTip">Remove Fix Profile</system:String>
-    
+
     <!-- Installation Tab -->
-    <system:String x:Key="NoGamesInstalled">Aucun jeu compatible installé.</system:String>
-    <system:String x:Key="Play2D">Jouer 2D</system:String>
-    <system:String x:Key="Play3D">Jouer 3D</system:String>
-    <system:String x:Key="InstallFix">Installer le fix 3D</system:String>
-    <system:String x:Key="InstallFixCompleted">Installation complété</system:String>
-    <system:String x:Key="InstallFixFailed">Installation échouée. Vérifier le chemin d'installation</system:String>
-    <system:String x:Key="InstallFixFailed02" xml:space="preserve">Erreur: Le Fix n'a pas pu être installé.&#x0d;&#x0d;Soyez sûr que 3D Fix Manager a été démarré avec les droits administrateurs puis rééssayez.</system:String>
-    <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Erreur: Le Wrapper n'a pas pu être installé.&#x0d;&#x0d;Soyez sûr que 3D Fix Manager a été démarré avec les droits administrateurs puis rééssayez.</system:String>
-    <system:String x:Key="FixWrapperOutdated">Ce fix inclus une ancienne version de 3dmigoto.</system:String>
-    <system:String x:Key="DownloadFix">Télécharger le Fix 3D</system:String>
-    <system:String x:Key="UninstallFix">Désinstaller le Fix 3D</system:String>
-    <system:String x:Key="UninstallFixCompleted">Désinstallation complété</system:String>
-    <system:String x:Key="UninstallFixFailed">Désinstallation échouée</system:String>
-    <system:String x:Key="InstallWrapper">Installer le Wrapper</system:String>
-    <system:String x:Key="DeleteDownload">Supprimer download</system:String>
+    <system:String x:Key="NoGamesInstalled">No compatible games installed.</system:String>
+    <system:String x:Key="Play2D">Play 2D</system:String>
+    <system:String x:Key="Play3D">Play 3D</system:String>
+    <system:String x:Key="InstallFix">Install 3D Fix</system:String>
+    <system:String x:Key="InstallFixCompleted">Install completed</system:String>
+    <system:String x:Key="InstallFixFailed">Install failed. Check Install Path</system:String>
+    <system:String x:Key="InstallFixFailed02" xml:space="preserve">Error: Fix could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
+    <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Error: Wrapper could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
+    <system:String x:Key="FixWrapperOutdated">This fix includes an outdated version of 3dmigoto.</system:String>
+    <system:String x:Key="DownloadFix">Download 3D Fix</system:String>
+    <system:String x:Key="UninstallFix">Uninstall 3D Fix</system:String>
+    <system:String x:Key="UninstallFixCompleted">Uninstall completed</system:String>
+    <system:String x:Key="UninstallFixFailed">Uninstall failed</system:String>
+    <system:String x:Key="InstallWrapper">Install Wrapper</system:String>
+    <system:String x:Key="DeleteDownload">Delete Download</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Deletes downloaded files of a 3D fix from 3D Fix Manager directory.</system:String>
     <system:String x:Key="DeleteSuccess">Success. All downloaded files deleted.</system:String>
     <system:String x:Key="DeleteError" xml:space="preserve">Error: Not all files could be deleted. &#x0d;&#x0d;Please make sure that no file is in use.</system:String>
@@ -480,16 +480,16 @@ By clicking on the button below your webbrowser will open PayPal-website where y
         
 Please help to keep 3D gaming alive.
         
-Thank you very much, 
+Thanks,
 Pauldusler</system:String>
     <system:String x:Key="DonateShaderHackers01">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.</system:String>
     <system:String x:Key="DonateShaderHackers02">HelixMod is the reason why 3D gaming is still alive today. If you want to support them donations are very appreciated.</system:String>
-    <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal accounts of the individual shaderhackers you can donate to:</system:String>
+    <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal and Patreon accounts of the individual shaderhackers you can donate to:</system:String>
     <system:String x:Key="Thanks">Thank you very much,</system:String>
     <system:String x:Key="YourHelixModTeam">Your HelixMod Team</system:String>
     <system:String x:Key="OpenPaypal">Open PayPal</system:String>
     <system:String x:Key="OpenPaypalToolTip">Opens PayPal website in webbrowser where you can send a donation.</system:String>
-
+    
     <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
     <system:String x:Key="DuplicateKeyError" xml:space="preserve">Error: This hotkey already exists. &#x0d;&#x0d;Please choose another key.</system:String>
@@ -706,7 +706,7 @@ Pauldusler</system:String>
         <Run Text="This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them."/>
     </TextBlock>
 
-    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if your installed games are not detected by the program."/></TextBlock>
+    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if not all of your installed games are detected by the program."/></TextBlock>
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="When a game is both found by search paths and windows registry then install location found by search path is applied."/></TextBlock>
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Paths which are traversed recursively for finding games."/></TextBlock>
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Triggers a search for finding games based on the search paths you defined."/></TextBlock>
@@ -720,7 +720,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300"><Run Text="Globally set if games should be started via Steam client by calling the Steam App ID."/><LineBreak/><LineBreak/><Run Text="If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead."/></TextBlock>
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client."/><LineBreak/><LineBreak/>
-        <Run Text="Steam games should only be started directly via game exe when you want to bypass a game launcher for example. You can control this behaviour by editing the individual fix profile."/>
+        <Run Text="Steam games should only be started directly via game exe when you want to bypass a game launcher window for example. You can control this behaviour by editing the individual fix profile."/>
     </TextBlock>
     <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disable installation of any driver profiles via Nvidia Profile Inspector."/></TextBlock>
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="User can decide in fix profile settings wether he wants to install a driver profile."/></TextBlock>
@@ -733,7 +733,8 @@ Pauldusler</system:String>
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode."/></TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Enable this option if you want to exceed the maximimum 3D depth of 100% (also known as depth hack)."/><LineBreak/><LineBreak/>
-        <Run Text="To have a greater 3d depth adjust the multiplier slider - a value of 2 for example means that depth will be twice as high."/>
+        <Run Text="Depth hack is active as soon as you set the multiplier higher than a value of 1. For example if you set it to 2 you can achieve a 3D depth which will be twice as high."/><LineBreak/><LineBreak/>
+        <Run Text="Effectively this means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because of the multiplier value of 2. Similarly 80% 3D depth will correspond 160% and so on."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz."/><LineBreak/><LineBreak/>
@@ -747,5 +748,5 @@ Pauldusler</system:String>
     <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="This is useful if you applied the Windows 10 blackscren fix (feature above) and want to change back to higher monitor refresh rates after disabling Nvidia Stereoscopic 3D."/></TextBlock>
 
     <!-- XAML formated ToolTips End -->
-
+              
 </ResourceDictionary>
