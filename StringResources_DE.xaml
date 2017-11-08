@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
@@ -226,6 +226,25 @@
     <system:String x:Key="EnableAlternative3dMode">Alternativen 3D-Modus aktivieren:</system:String>
     <system:String x:Key="EnableAlternative3dModeToolTip">Alternatives 3D-Format für die Nutzung mit 3D-TVs und Projektoren auswählen.</system:String>
     <system:String x:Key="Constant">Konstante</system:String>
+    
+    <system:String x:Key="ResolutionAndRefreshRates">Auflösung und Bildwiederholfrequenz:</system:String>
+    <system:String x:Key="EnableUpscaling">Upscaling aktivieren:</system:String>
+    <system:String x:Key="UpscalingMode">Upscaling - Modus:</system:String>
+    <system:String x:Key="OverrideScreenWidth">Bildschirmbreite überschreiben:</system:String>
+    <system:String x:Key="OverrideScreenHeight">Bildschirmhöhe überschreiben:</system:String>
+    <system:String x:Key="OverrideScreenToolTip">Übeschreiben der Bildschirmauflösung erzwingen.</system:String>
+    <system:String x:Key="UpscalingScreenWidth">Zielbreite für Upscaling:</system:String>
+    <system:String x:Key="UpscalingScreenHeight">Zielhöhe für Upscaling:</system:String>
+    <system:String x:Key="OverrideRefrehRate">Bildwiederholfrequenz überschreiben:</system:String>
+    <system:String x:Key="OverrideRefrehRateToolTip">Überschreibt die im Spiel eingestellte Bildwiederholfrequenz.</system:String>
+    <system:String x:Key="FilterRefreshRates">Bildwiederholfrequenzen filtern:</system:String>
+    <system:String x:Key="ForceFullscreen">Vollbildmodus erzwingen:</system:String>
+    <system:String x:Key="ToggleFullscreen">Vollbildmodus umschalten:</system:String>
+    <system:String x:Key="FlexibleFullscreen">Flexibles Vollbild</system:String>
+    <system:String x:Key="StaticFullscreen">Statisches Vollbild</system:String>
+    <system:String x:Key="TypeInIntegerToolTip">Ganzzahl eingeben.</system:String>
+    <system:String x:Key="TypeInCommaSeparatedListToolTip">Kommaseparierte Liste an Bilderwiederholfrequenzen eingeben.</system:String>
+    
 
     <!-- Driver Profile Settings group -->
     <system:String x:Key="DriverProfileSettings">Treiberprofil - Einstellungen:</system:String>
@@ -289,6 +308,9 @@
     <system:String x:Key="ProfileInstallByFixProfile">Installation von Treiberprofilen wird durch Fix-Profile gesteuert</system:String>
     <system:String x:Key="InstallProfilesSilently">Treiberprofile ohne Warnmeldung installieren</system:String>
     <system:String x:Key="NoNvidiaDetected">Nvidia Treiber nicht erkannt / installiert</system:String>
+    <system:String x:Key="Start">Starten</system:String>
+    <system:String x:Key="StartProfileInspectorToolTip">Startet den Nvidia Profile Inspector.</system:String>
+    <system:String x:Key="StartRtssToolTip">Startet den RivaTuner Statistics Server.</system:String>
     
     <!-- Buttons-->
     <system:String x:Key="Disable">Deaktivieren</system:String>
@@ -316,11 +338,13 @@
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
 
-    <!-- Refresh rateS settings group -->
-    <system:String x:Key="RefreshRateSettingsGroup">Einsellungen zur Bildwiederholrate:</system:String>
+    <!-- Refresh rate settings group -->
+    <system:String x:Key="RefreshRateSettingsGroup">Bildwiederholfrequenzen und globale Treiberprofile:</system:String>
     <system:String x:Key="StereoRefreshRate">Stereo - Bildwiederholrate:</system:String>
     <system:String x:Key="Change3dRefreshRate">Desktop-Bildwiederholrate im 3D Modus:</system:String>
     <system:String x:Key="Change2dRefreshRate">Desktop-Bildwiederholrate im 2D Modus:</system:String>
+    <system:String x:Key="Global2dDriverProfile">2D-Treiberprofil:</system:String>
+    <system:String x:Key="Global3dDriverProfile">3D-Treiberprofil:</system:String>
 
     <!-- General hotkeys group -->
     <system:String x:Key="GeneralHotkeys">Allgemeine Hotkeys:</system:String>
@@ -395,6 +419,7 @@
     <system:String x:Key="UpdateSteamDb">Steam DB updaten</system:String>
     <system:String x:Key="CreateReleases">Releases erstellen</system:String>
     <system:String x:Key="ReferenceDb">Referenz-DB füllen</system:String>
+    <system:String x:Key="GithubLanguages">GitHub Sprachen</system:String>
 
     <!--....................  About Tab End .......................... -->
     
@@ -412,6 +437,7 @@
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">Um bestmögliche Ergebnisse zu erzielen sollte die Zielauflösung für Upscaling auf die native Auflösung des Bildschirms gesetzt werden. &#x0d;&#x0d;Möchten Sie die native Auflösung jetzt setzen?&#x0d;&#x0d;Erkannte native Auflösung: </system:String>
     <system:String x:Key="Install3dmigoto02">3dmigoto installieren:</system:String>
     <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
@@ -728,6 +754,38 @@ Pauldusler</system:String>
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="Benutzer stellt im Fix-Profil ein, ob er die Installation von Treiberprofilen wünscht."/></TextBlock>
     <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300"><Run Text="Warnmeldung bei der Installation von Treiberprofilen deaktivieren."/></TextBlock>
 
+    <!-- Refresh rates and resolution -->
+    <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Skaliert auf beiliebige Auflösungen hoch und ist besonders nützlich für 4K Fernseher oder DSR."/><LineBreak/><LineBreak/>       
+        <Bold><Run Text="Flexibles Vollbild: "/></Bold><Run Text="Aktiviert Upscaling und ermöglicht den Vollbildmodus im Spiel ein- und abzuschalten."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Statisches Vollbild: "/></Bold><Run Text="Aktiviert Upscaling und erzwingt immer den Vollbildmodus. Bitte auswählen wenn Probleme mit dem Mauszeiger auftreten."/>
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
+         <Bold><Run Text="0: "/></Bold><Run Text="3Dmigoto erzeugt eine Textur und stellt Sie dem Spiel als Back-Buffer zur Verfügung. Dies scheint nur für wenige Spiele zu funktionieren, aber führt dazu, dass Spiel flüssiger läuft."/><LineBreak/><LineBreak/>
+         <Bold><Run Text="1: "/></Bold><Run Text="3Dmigoto erzeugt eine zweite Swap-Chain und sorgt dafür, dass das Spiel diese nutzt. Diese Einstellung scheint mit den meisten Spielen zu funktionieren."/>
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
+        <Run Text="Wenn Upscaling aktiviert ist, muss eine Auflösung festgelegt werden, auf die das Spiel hochskaliert werden soll."/><LineBreak/><LineBreak/>
+        <Run Text="Um das bestmögliche Resultat zu erzielen sollte die native Auflösung des TVs oder Monitors gesetzt werden."/>
+    </TextBlock>
+
+    <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Filtert die Videomodi nach den angegebenen Bildwiederholfrequenzen. Manche Spiele setzen die Bildwiederholfrequenz nicht explizit, sondern nutzen den Videomodus."/><LineBreak/><LineBreak/>
+        <Run Text="Aktivieren Sie diese Einstellung, wennn die Option 'Bildwiederholfrequenz überschreiben' nicht funktioniert."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        <Bold><Run Text="1: "/></Bold><Run Text="Erzwingt die Erstellung von Vollbild-Geräten und Swap-Chains."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="2: "/></Bold><Run Text="Diese Einstellung deaktiviert zusätzlich SetWindowPos und könnte in manchen Spielen helfen."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Um aus einem Unity-Spiel herauszuwechseln ohne es zum Absturz zu bringen, sollte Folgendes gemacht werden:"/><LineBreak/><LineBreak/>
+        <Run Text="Option aktivieren und hintereinander F7, Alt+Enter sowie Alt+Tab drücken."/>
+    </TextBlock>
+
     <!-- Nvidia 3D Settings Tab -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktiviert / deaktiviert Nvidia's stereoskopische 3D-Funktion. Es handelt sich dabei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung enthalten ist."/></TextBlock>
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird."/></TextBlock>
@@ -747,6 +805,14 @@ Pauldusler</system:String>
         <Run Text="Vergessen Sie außerdem nicht vor dem Beenden des Spiels STRG + T zu drücken, um zu verhindern, dass der Monitor im 3D-Modus verharrt."/>
     </TextBlock>
     <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="Empfiehlt sich zu setzen, wenn Sie den Windows 10 Blackscreen-Fix anwenden (s. obiges Feature) und nach Deaktivieren der stereoskopischen 3D-Funktion wieder auf höhere Bildwiederholfrequenzen wechseln wollen."/></TextBlock>
+    <TextBlock x:Key="Global2dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Installiert beim Ausschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 2D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Anmerkung: "/></Bold><Run Text="Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden, indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden."/>
+    </TextBlock>
+    <TextBlock x:Key="Global3dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Installiert beim Einschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 3D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Anmerkung: "/></Bold><Run Text="Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden,  indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden."/>
+    </TextBlock>
 
     <!-- XAML formated ToolTips End -->
 
