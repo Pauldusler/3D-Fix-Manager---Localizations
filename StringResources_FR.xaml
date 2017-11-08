@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
@@ -224,6 +224,25 @@
     <system:String x:Key="EnableAlternative3dMode">Enable alternative 3D Mode:</system:String>
     <system:String x:Key="EnableAlternative3dModeToolTip">Choose an alternative 3D Format for use with 3D TVs and projectors.</system:String>
     <system:String x:Key="Constant">Constant</system:String>
+    <system:String x:Key="Upscaling">Upscaling:</system:String>
+
+    <system:String x:Key="ResolutionAndRefreshRates">Resolution and refresh rates:</system:String>
+    <system:String x:Key="EnableUpscaling">Enable upscaling:</system:String>
+    <system:String x:Key="UpscalingMode">Upscaling mode:</system:String>
+    <system:String x:Key="OverrideScreenWidth">Override screen width:</system:String>
+    <system:String x:Key="OverrideScreenHeight">Override screen height:</system:String>
+    <system:String x:Key="OverrideScreenToolTip">Force override the screen resolution.</system:String>
+    <system:String x:Key="UpscalingScreenWidth">Target screen width for upscaling:</system:String>
+    <system:String x:Key="UpscalingScreenHeight">Target screen height for upscaling:</system:String>
+    <system:String x:Key="OverrideRefrehRate">Override refresh rate:</system:String>
+    <system:String x:Key="OverrideRefrehRateToolTip">Overrides refresh rate set by game.</system:String>
+    <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
+    <system:String x:Key="ForceFullscreen">Force fullscreen:</system:String>
+    <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
+    <system:String x:Key="FlexibleFullscreen">Flexible fullscreen</system:String>
+    <system:String x:Key="StaticFullscreen">Static fullscreen</system:String>
+    <system:String x:Key="TypeInIntegerToolTip">Type in an integer value.</system:String>
+    <system:String x:Key="TypeInCommaSeparatedListToolTip">Type in a comma separated list of refresh rates.</system:String>
 
     <!-- Driver Profile Settings group -->
     <system:String x:Key="DriverProfileSettings">Driver Profile Settings:</system:String>
@@ -287,6 +306,9 @@
     <system:String x:Key="ProfileInstallByFixProfile">Installation of driver profiles is controlled by fix profile</system:String>
     <system:String x:Key="InstallProfilesSilently">Install driver profiles silently without warning messages</system:String>
     <system:String x:Key="NoNvidiaDetected">No Nvidia driver detected / installed</system:String>
+    <system:String x:Key="Start">Start</system:String>
+    <system:String x:Key="StartProfileInspectorToolTip">Starts Nvidia Profile Inspector.</system:String>
+    <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Disable">Disable</system:String>
@@ -315,10 +337,12 @@
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
 
     <!-- Refresh rate settings group -->
-    <system:String x:Key="RefreshRateSettingsGroup">Refresh Rate Settings:</system:String>
+    <system:String x:Key="RefreshRateSettingsGroup">Refresh Rates and global Driver Profiles:</system:String>
     <system:String x:Key="StereoRefreshRate">Stereo refresh rate:</system:String>
     <system:String x:Key="Change3dRefreshRate">Desktop refresh rate 3D mode:</system:String>
     <system:String x:Key="Change2dRefreshRate">Desktop refresh rate 2D mode:</system:String>
+    <system:String x:Key="Global2dDriverProfile">2D driver profile:</system:String>
+    <system:String x:Key="Global3dDriverProfile">3D driver profile:</system:String>
 
     <!-- General hotkeys group -->
     <system:String x:Key="GeneralHotkeys">General Hotkeys:</system:String>
@@ -393,6 +417,7 @@
     <system:String x:Key="UpdateSteamDb">Update Steam DB</system:String>
     <system:String x:Key="CreateReleases">Create Releases</system:String>
     <system:String x:Key="ReferenceDb">Fill Reference DB</system:String>
+    <system:String x:Key="GithubLanguages">GitHub Languages</system:String>
 
     <!--....................  About Tab End .......................... -->
 
@@ -410,6 +435,7 @@
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
     
     <!-- Messages -->
+    <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">For best results you should set target resolution for upscaling to the native resolution of your display. &#x0d;&#x0d;Do you want to set native resolution now?&#x0d;&#x0d;Detected native resolution: </system:String>
     <system:String x:Key="Install3dmigoto02">Install 3dmigoto:</system:String>
     <system:String x:Key="InstallHelixMod02">Install HelixMod:</system:String>
     <system:String x:Key="RemoveProfile">Remove Fix Profile?</system:String>
@@ -726,6 +752,37 @@ Pauldusler</system:String>
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="User can decide in fix profile settings wether he wants to install a driver profile."/></TextBlock>
     <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disables the warning message when installing a driver profile."/></TextBlock>
 
+    <!-- Refresh rates and resolution -->
+    <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Perform upscaling to arbitrary resolutions, specifically useful for 4K 3D TVs or for DSR."/><LineBreak/><LineBreak/>       
+        <Bold><Run Text="Flexible fullscreen: "/></Bold><Run Text="Enable upscaling and allows the game to disable and enable fullscreen mode."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Static fullscreen: "/></Bold><Run Text="Enable upscaling and always force fullscreen. Try this if you get issues with the mouse cursor."/>
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
+         <Bold><Run Text="0: "/></Bold><Run Text="3Dmigoto creates a texture and pushes it as the back buffer for the game. Seems to work with only few games but everything seems to run a bit smoother."/><LineBreak/><LineBreak/>
+         <Bold><Run Text="1: "/></Bold><Run Text="3Dmigoto creates a second swap chain and pushes the game to use it. Seems to work with most games."/>
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
+        <Run Text="If upscaling is on, then you MUST specify the resolution the game will be upscaled to."/><LineBreak/><LineBreak/>
+        <Run Text="To achieve the best visual result use the native resolution of your tv or monitor."/>
+    </TextBlock>
+
+    <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Filters available video modes to those providing given refresh rates. Some games don't explicitely set the refresh rate, but use the video mode."/><LineBreak/><LineBreak/>
+        <Run Text="Use this if setting 'Override Refresh Rate' doesn't work."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        <Bold><Run Text="1: "/></Bold><Run Text="Forces creation of full screen devices and swap chains."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="2: "/></Bold><Run Text="Will also disable SetWindowPos which might help in some games."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="To switch out of a Unity game without it crashing:"/><LineBreak/><LineBreak/>
+        <Run Text="Enable this option, Press F7, Alt+Enter, Alt+Tab"/>
+    </TextBlock>
 
     <!-- Nvidia 3D Settings Tab -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enables / disables Nvidia Stereoscopic 3D. This is the same feature as in Nvidia Control Panel."/></TextBlock>
@@ -746,7 +803,15 @@ Pauldusler</system:String>
         <Run Text="Also don't forget to press STRG + T before closing a game for preventing monitor being stuck in 3D mode."/>
     </TextBlock>
     <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="This is useful if you applied the Windows 10 blackscren fix (feature above) and want to change back to higher monitor refresh rates after disabling Nvidia Stereoscopic 3D."/></TextBlock>
-
+    <TextBlock x:Key="Global2dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Installs a global driver profil via Nvidia Profile Inspector when disabling Nvidia stereoscopic 3D or starting a game in 2D mode. For doing this please choose a .nip file."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Note: "/></Bold><Run Text="nip-files can be created via Nvidia Profile Inspector by using export function of single profiles there. In addition you can still install game specific driver profiles which are defined in the individual fix profiles."/>
+    </TextBlock>
+    <TextBlock x:Key="Global3dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Installs a global driver profil via Nvidia Profile Inspector when enabling Nvidia stereoscopic 3D or starting a game in 3D mode. For doing this please choose a .nip file."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Note: "/></Bold><Run Text="nip-files can be created via Nvidia Profile Inspector by using export function of single profiles there. In addition you can still install game specific driver profiles which are defined in the individual fix profiles."/>
+    </TextBlock>
+    
     <!-- XAML formated ToolTips End -->
 
 </ResourceDictionary>
