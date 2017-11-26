@@ -39,7 +39,7 @@
     <system:String x:Key="Play2D">Jouer 2D</system:String>
     <system:String x:Key="Play3D">Jouer 3D</system:String>
     <system:String x:Key="InstallFix">Installer le fix 3D</system:String>
-    <system:String x:Key="InstallFixCompleted">Installation complété</system:String>
+    <system:String x:Key="InstallFixCompleted">Installation terminée</system:String>
     <system:String x:Key="InstallFixFailed">Installation échouée. Vérifier le chemin d'installation</system:String>
     <system:String x:Key="InstallFixFailed02" xml:space="preserve">Erreur: Le Fix n'a pas pu être installé.&#x0d;&#x0d;Soyez sûr que 3D Fix Manager a été démarré avec les droits administrateurs puis rééssayez.</system:String>
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Erreur: Le Wrapper n'a pas pu être installé.&#x0d;&#x0d;Soyez sûr que 3D Fix Manager a été démarré avec les droits administrateurs puis rééssayez.</system:String>
