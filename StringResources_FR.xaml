@@ -85,72 +85,72 @@
     <system:String x:Key="WebLinkHelix">Lien Web Helix / Geforce Forum:</system:String>
 
     <system:String x:Key="IconPath">Icon Path:</system:String>
-    <system:String x:Key="Profile2DMode">Nvidia Inspector Profile for 2D Mode:</system:String>
-    <system:String x:Key="Profile3DMode">Nvidia Inspector Profile for 3D Mode:</system:String>
-    <system:String x:Key="FixState">3D Fix State:</system:String>
-    <system:String x:Key="SteamAppID">Steam App ID:</system:String>
+    <system:String x:Key="Profile2DMode">Profil Nvidia Inspector pour le Mode 2D:</system:String>
+    <system:String x:Key="Profile3DMode">Profil Nvidia Inspector pour le Mode 3D:</system:String>
+    <system:String x:Key="FixState">Etat du 3D Fix:</system:String>
+    <system:String x:Key="SteamAppID">ID de l'App Steam :</system:String>
     
-    <system:String x:Key="GameLauncherExe">Game Launcher Exe:</system:String>
-    <system:String x:Key="GameLauncherOptions">Game Launcher Options:</system:String>
-    <system:String x:Key="FixDescription">Fix Description:</system:String>
+    <system:String x:Key="GameLauncherExe">Lanceur de jeu Exe:</system:String>
+    <system:String x:Key="GameLauncherOptions">Options du Lanceur de Jeu:</system:String>
+    <system:String x:Key="FixDescription">Description du Fix:</system:String>
 
     <!-- ComboBoxes -->   
-    <system:String x:Key="NoProfileInstall">Do not install Profile</system:String>
-    <system:String x:Key="InstallWithDialog">Install with Dialog</system:String>
-    <system:String x:Key="SilentInstallation">Silent Installation</system:String>
+    <system:String x:Key="NoProfileInstall">Ne pas installer le Profil</system:String>
+    <system:String x:Key="InstallWithDialog">Installation avec Dialogue</system:String>
+    <system:String x:Key="SilentInstallation">Installation silencieuse</system:String>
 
-    <system:String x:Key="Unknown">Unknown</system:String>
-    <system:String x:Key="FixBroken">Fix Broken</system:String>
-    <system:String x:Key="FixBrokenToolTip">3D Fix is currently broken.</system:String>
-    <system:String x:Key="RequiresExtraSteps">Requires extra steps by user</system:String>
-    <system:String x:Key="RequiresExtraStepsToolTip">Installation of fix requires additional steps done by the user for completing installation. Please check description below.</system:String>
-    <system:String x:Key="WorksOutOfTheBox">Works out of the box</system:String>
-    <system:String x:Key="WorksOutOfTheBoxToolTip">No additional steps required for installing the fix. This is a simple one click installation.</system:String>
+    <system:String x:Key="Unknown">Inconnu</system:String>
+    <system:String x:Key="FixBroken">Fix Cassé</system:String>
+    <system:String x:Key="FixBrokenToolTip">Le Fix 3D Fix est actuellement cassé.</system:String>
+    <system:String x:Key="RequiresExtraSteps">Requiert des actions par l'utilisateur</system:String>
+    <system:String x:Key="RequiresExtraStepsToolTip">Installation du fix requiert des actions effectuées par l'utilisateur pour la compléter. Svp vérifier la description au-dessous.</system:String>
+    <system:String x:Key="WorksOutOfTheBox">Fonctionne en dehors de la boite</system:String>
+    <system:String x:Key="WorksOutOfTheBoxToolTip">Pas d'actions additionnelles requises pour installer le Fix. Il s'agit d'une simple installation avec un clic.</system:String>
     
-    <system:String x:Key="CloseRTSS">Close RTSS</system:String>
-    <system:String x:Key="StartRTSS">Start RTSS</system:String>
+    <system:String x:Key="CloseRTSS">Fermer RTSS</system:String>
+    <system:String x:Key="StartRTSS">Démarrer RTSS</system:String>
 
-    <system:String x:Key="StartByAppId">Start via Steam App ID</system:String>
-    <system:String x:Key="StartByGameExe">Start via Game Exe</system:String>
+    <system:String x:Key="StartByAppId">Démarrer par l'ID de l'application Steam </system:String>
+    <system:String x:Key="StartByGameExe">Démarrer avec l'Exe du jeu</system:String>
 
-    <system:String x:Key="RunNormal">Run normal</system:String>
-    <system:String x:Key="RunAsAdmin">Run as admin</system:String>
+    <system:String x:Key="RunNormal">Démarrer en normal</system:String>
+    <system:String x:Key="RunAsAdmin">Démarrer en Mode Administrateur</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="ChoosePath">Choose Path</system:String>
-    <system:String x:Key="PickFile">Pick File</system:String>
-    <system:String x:Key="SearchAppID">Search App ID</system:String>
-    <system:String x:Key="SearchInDB">Search in DB</system:String>
-    <system:String x:Key="SearchSteamDb">Search Steam DB</system:String>
-    <system:String x:Key="ValuesFor2D">Values for 2D</system:String>
-    <system:String x:Key="ValuesFor3D">Values for 3D</system:String>
-    <system:String x:Key="Cancel">Cancel</system:String>
-    <system:String x:Key="Save">Save</system:String>
-    <system:String x:Key="SaveChanges">Save Changes</system:String>
-    <system:String x:Key="CreateProfile">Profil erstellen</system:String>
+    <system:String x:Key="ChoosePath">Choisir le répertoire</system:String>
+    <system:String x:Key="PickFile">Sélectionner le fichier</system:String>
+    <system:String x:Key="SearchAppID">Chercher l'ID de l'application</system:String>
+    <system:String x:Key="SearchInDB">Chercher dans la base de données</system:String>
+    <system:String x:Key="SearchSteamDb">Chercher dans la base de données Steam</system:String>
+    <system:String x:Key="ValuesFor2D">Valeurs pour la 2D</system:String>
+    <system:String x:Key="ValuesFor3D">Valeurs pour la 3D</system:String>
+    <system:String x:Key="Cancel">Annuler</system:String>
+    <system:String x:Key="Save">Sauvegarder</system:String>
+    <system:String x:Key="SaveChanges">Sauvegarder les changements</system:String>
+    <system:String x:Key="CreateProfile">Créer un Profil</system:String>
     
     <!--....................  Edit Profile Tab End .......................... -->
 
     
     <!--....................  Hotkeys Tab Begin .......................... -->
 
-    <system:String x:Key="FixInfo">Fix Info:</system:String>
-    <system:String x:Key="Game">Game:</system:String>
-    <system:String x:Key="FixType">Fix Type:</system:String>
-    <system:String x:Key="WrapperVersion">Wrapper Version:</system:String>
-    <system:String x:Key="IniPath">Ini Path:</system:String>
-    <system:String x:Key="IniPath02">Ini Path 2:</system:String>
-    <system:String x:Key="CreateIni">Create Ini</system:String>
-    <system:String x:Key="ResetIniToDefault">Reset Ini to Default:</system:String>
-    <system:String x:Key="DownloadDefaultIni">Download Default Ini</system:String>
-    <system:String x:Key="ManageHotkeys">Manage Hotkeys:</system:String>
-    <system:String x:Key="NoIniProvided">No ini provided by this fix</system:String>
-    <system:String x:Key="ParseError">Sorry, could not parse ini file"</system:String>
-    <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Sorry, could not determine Helix Wrapper Version. &#x0d;Please click on 'Download Default Ini' to get this information</system:String>
-    <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Old Version</system:String>
-    <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Old Version</system:String>
-    <system:String x:Key="HotkeysNotSupportedMigoto">Sorry, hotkey editing not supported with this version of 3dmigoto.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, OpenGL 3D Vision Wrapper is currently not supported.</system:String>
+    <system:String x:Key="FixInfo">Information sur le Fix:</system:String>
+    <system:String x:Key="Game">Jeu:</system:String>
+    <system:String x:Key="FixType">Type de Fix:</system:String>
+    <system:String x:Key="WrapperVersion">Version du Wrapper:</system:String>
+    <system:String x:Key="IniPath">Répertoire de l'Ini:</system:String>
+    <system:String x:Key="IniPath02">Répertoire 2 de l'Ini:</system:String>
+    <system:String x:Key="CreateIni">Créer l'Ini</system:String>
+    <system:String x:Key="ResetIniToDefault">Remettre l'Ini par Default:</system:String>
+    <system:String x:Key="DownloadDefaultIni">Télécharger l'Ini par Défaut</system:String>
+    <system:String x:Key="ManageHotkeys">Manager raccourcis Clavier:</system:String>
+    <system:String x:Key="NoIniProvided">Pas d'Ini fourni par ce Fix</system:String>
+    <system:String x:Key="ParseError">Désolé, ne peut pas analyser le Fichier Ini"</system:String>
+    <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Désolé, ne peut pas déterminer la version du Wrapper Helix. &#x0d;Svp cliquer sur 'Télécharger l'Ini par Défaut' afin d'obtenir cette information</system:String>
+    <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Ancienne Version</system:String>
+    <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Ancienne Version</system:String>
+    <system:String x:Key="HotkeysNotSupportedMigoto">Désolé, Edition du Raccourci clavier non supporté avec cette version de 3dmigoto.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Désolé, le Wrapper OpenGL 3D Vision n'est actuellement pas supporté.</system:String>
 
     <!-- Hotkey Management Group -->
     <system:String x:Key="HotkeyManagement">Hotkey Management:</system:String>
