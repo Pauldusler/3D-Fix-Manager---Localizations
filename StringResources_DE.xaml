@@ -1,6 +1,5 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     
     
@@ -36,8 +35,8 @@
 
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Keine kompatiblen Spiele installiert.</system:String>
-    <system:String x:Key="Play2D">2D Spielen</system:String>
-    <system:String x:Key="Play3D">3D Spielen</system:String>
+    <system:String x:Key="Play2D">2D spielen</system:String>
+    <system:String x:Key="Play3D">3D spielen</system:String>
     <system:String x:Key="InstallFix">3D Fix installieren</system:String>
     <system:String x:Key="InstallFixCompleted">Installation erfolgreich</system:String>
     <system:String x:Key="InstallFixFailed">Installation fehlgeschlagen (falscher Install-Pfad?)</system:String>
@@ -49,15 +48,15 @@
     <system:String x:Key="UninstallFixCompleted">Deinstallation erfolgreich</system:String>
     <system:String x:Key="UninstallFixFailed">Deinstallation fehlgeschlagen</system:String>
     <system:String x:Key="InstallWrapper">Wrapper installieren</system:String>
-    <system:String x:Key="DeleteDownload">Download löschen</system:String>
-    <system:String x:Key="DeleteDownloadToolTip">Löscht die heruntergeladenen Fix-Dateien aus dem 3D Fix Manager-Verzeichnis.</system:String>
+    <system:String x:Key="DeleteDownload">DL-Cache leeren</system:String>
+    <system:String x:Key="DeleteDownloadToolTip">Löscht die heruntergeladenen Dateien des 3D Fixes aus dem 3D Fix Manager-Verzeichnis.</system:String>
     <system:String x:Key="DeleteSuccess">Erfolg! Alle heruntergeladenen Dateien wurden gelöscht.</system:String>
     <system:String x:Key="DeleteError" xml:space="preserve">Fehler: Nicht alle Dateien konnten gelöscht werden. &#x0d;&#x0d;Bitte stellen Sie sicher, dass die Datei nicht in Benutzung ist.</system:String>
-    <system:String x:Key="SourceFolder">Quellenordner</system:String>
-    <system:String x:Key="SourceFolderToolTip">Öffnet das zugehörige Fix-Verzeichnis im Windows Explorer.</system:String>
-    <system:String x:Key="VisitSteamStore">Steam Store</system:String>
-    <system:String x:Key="VisitSteamStoreToolTip">Öffnet den Steam Store im Webbrowser um zusätzliche Informationen zum Spiel anzuzeigen.</system:String>
-    <system:String x:Key="VisitHelixMod">HelixMod</system:String>
+    <system:String x:Key="SourceFolder">Profilordner</system:String>
+    <system:String x:Key="SourceFolderToolTip">Öffnet den Windows Explorer und zeigt alle zu diesem Fix-Profil zugehörigen Dateien an.</system:String>
+    <system:String x:Key="VisitSteamStore">Produktseite</system:String>
+    <system:String x:Key="VisitSteamStoreToolTip">Öffnet den Webbrowser um zusätzliche Informationen zum Spiel anzuzeigen.</system:String>
+    <system:String x:Key="VisitHelixMod">HelixMod-Blog</system:String>
     <system:String x:Key="VisitHelixModToolTip">Öffnet die HelixMod-Seite im Webbrowser um zusätzliche Informationen zum Fix anzuzeigen.</system:String>
     <system:String x:Key="ForceCompatibilityMode">Erzwinge CM</system:String>
     <system:String x:Key="EnableFix">Fix aktivieren</system:String>
@@ -79,14 +78,17 @@
     <system:String x:Key="CustomRootPath">Benuterdefinierter Wurzel- / Spielpfad:</system:String>
     <system:String x:Key="RelativeGameIniPath">Relativer Pfad zur Ini-Datei des Spiels:</system:String>
     <system:String x:Key="AdditionalRelativeGameIniPath">Zusätzlicher relative Pfad zur Spiel-Ini:</system:String>
-    <system:String x:Key="DownloadLinkFix">Download-Link zum Fix:</system:String>
-    <system:String x:Key="AdditionalDownloadLinkFix">Zusätzlicher Download Link:</system:String>
+    <system:String x:Key="DownloadLinkFix">URL zum 3D Fix:</system:String>
+    <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archive:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto wrapper update:</system:String>
     
-    <system:String x:Key="WebLinkHelix">Weblink zum Helix / Geforce Forum:</system:String>
+    <system:String x:Key="WebLinkHelix">URL zum Helix / Geforce Forum:</system:String>
     <system:String x:Key="WebLinkHelixTooltip01">Link zum Helix oder Geforce-Forum aus welchem der Fix entnommen wurde.</system:String>
 
-    <system:String x:Key="IconPath">Icon Pfad:</system:String>
+    <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
+    <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
+    <system:String x:Key="ProductPageUrl">URL zur Produktseite:</system:String>
     <system:String x:Key="Profile2DMode">Nvidia Inspector-Profil für 2D Mode:</system:String>
     <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Mode:</system:String>
     <system:String x:Key="FixState">Zustand des 3D Fixes:</system:String>
@@ -121,6 +123,9 @@
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Pfad auswählen</system:String>
     <system:String x:Key="PickFile">Datei auswählen</system:String>
+    <system:String x:Key="RemoveIcon">Icon entfernen</system:String>
+    <system:String x:Key="OpenUrl">URL öffnen</system:String>
+    <system:String x:Key="SearchUrl">URL suchen</system:String>
     <system:String x:Key="SearchAppID">App ID suchen</system:String>
     <system:String x:Key="SearchInDB">Suche in DB</system:String>
     <system:String x:Key="SearchSteamDb">DB durchsuchen</system:String>
@@ -267,7 +272,10 @@
     <system:String x:Key="CheckForUpdates">Bei Programmstart auf Updates prüfen</system:String>
     <system:String x:Key="EnableSteamOverlay">Steam Overlay aktivieren</system:String>
     <system:String x:Key="SendData">Daten bei Veränderungen an den Fix-Profile senden</system:String>
+    <system:String x:Key="ReinstallFixFromCache">3D Fixes bevorzugt aus dem Download Cache installieren</system:String>
+    <system:String x:Key="PreferIconDownload">Spiele-Icons bevorzugt aus der Internet-Datenbank beziehen</system:String>
     <system:String x:Key="EnableAllFixes">Alle Fixes (de)aktivieren:</system:String>
+    <system:String x:Key="ResetAllIcons">Alle Spiele-Icons zurücksetzen:</system:String>
     <system:String x:Key="UpdateAllWrappers">Alle installierten 3dmigoto-Wrapper aktualisieren:</system:String>
     <system:String x:Key="UpdateAllWrappersToolTip">Aktualisert 3dmigoto-Dateien aller installierten Fixes auf die aktuellste Version.</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam nicht gefunden</system:String>
@@ -281,6 +289,8 @@
     <system:String x:Key="SearchDepth">Suchtiefe:</system:String>
     <system:String x:Key="SearchPaths">Suchpfade:</system:String>
     <system:String x:Key="SearchGames">Spiele suchen</system:String>
+    <system:String x:Key="DetectPaths">Pfade ermitteln</system:String>
+    <system:String x:Key="DetectPathsToolTip">Ermittelt automatisch die Pfade zu den Steam-Bibliotheken und fügt sie als Suchpfade hinzu.</system:String>
     <system:String x:Key="Add">Hinzufügen</system:String>
     <system:String x:Key="AddPathToolTip">Fügt einen Suchpfad hinzu.</system:String>
     <system:String x:Key="Remove">Entfernen</system:String>
@@ -328,7 +338,7 @@
     <!-- General settings group -->
     <system:String x:Key="EnableNvidia3D">Stereoskopische Nvidia 3D-Funktion aktivieren</system:String>
     <system:String x:Key="Disable3dOnClosing">Stereo 3D beim Beenden der Applikation deaktivieren</system:String>
-    <system:String x:Key="SetStereoTypeTo3DVision">Erzwinge 3D Vision / 3DTV Play Modus</system:String>
+    <system:String x:Key="SetStereoTypeTo3DVision">3D Vision / 3DTV Play Modus erzwingen</system:String>
     <system:String x:Key="StereoSeparation">3D Tiefe:</system:String>
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
@@ -442,7 +452,9 @@
     <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">Alle Ini-Einstellungen wurden auf die originalen Standardwerte zurückgesetzt. &#x0d;&#x0d;Bitte vergessen Sie nicht die Änderungen abzuspeichern.</system:String>
-    <system:String x:Key="GameTitleEmpty">Fehler: Der Spieltitel darf nicht leer sein</system:String>
+    <system:String x:Key="GameTitleEmpty">Fehler: Der Titel des Spiels darf nicht leer sein.</system:String>
+    <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Hinweis: Es wurde noch keine SteamApp Id für das Profil gesetzt. Diese ist erforderlich um Steam-Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
+    <system:String x:Key="GameExeNotSet" xml:space="preserve">Hinweis: Es wurde noch keine Game Exe für das Profil gesetzt. Diese ist allgemein erforderlich um Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Wählen Sie einen 3D Wrapper zur Installation aus.
                                          
 Die Installation eines Wrappers schaltet Features wie beispielsweise Stereo Hotkeys, SideBySide / TaB Ausgabemodus, Kompatibilitätsmodus und die automatische Installation von Treiberprofilen frei.
@@ -462,8 +474,9 @@ Anmerkungen:
     <system:String x:Key="AdditionalIniPathNotRelative">Fehler: Zusätzlicher Ini-Pfad des Spiels ist kein relativer Pfad.</system:String>
     <system:String x:Key="ChangesSaved">Änderungen wurden erfolgreich gespeichert.</system:String>
     <system:String x:Key="FixProfileCreated">Fix-Profil wurde erfolgreich erstellt.</system:String>
+    <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Alle Icons wurden erfolgreich zurückgesetzt und im Hintergrund neu heruntergeladen.&#x0d;&#x0d;Anmerkung: Sämtliche alten Icons wurden in einen Backup-Ordner innerhalb der jeweiligen Profilordner gesichert und können bei Bedarf wiederhergestellt werden. </system:String>
     <system:String x:Key="ServerNotAvailable">Server nicht erreichbar. Bitte versuchen Sie es später erneut.</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie dise updaten?&#x0d;&#x0d;Versionshinweise für Fix-Profile:&#x0d;&#x0d;</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie diese updaten?&#x0d;&#x0d;Versionshinweise für Fix-Profile:&#x0d;&#x0d;</system:String>
     <system:String x:Key="NoUpdates" xml:space="preserve">Keine Updates verfügbar. &#x0d;&#x0d;Fix-Profile sind auf dem aktuellsten Stand.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Eine neue Version des 3D Fix Managers ist verfügbar. Möchten Sie updaten?&#x0d;&#x0d;Versionshinweise für 3D Fix Manager:&#x0d;&#x0d;</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">Wenn Sie Bugs melden oder Anregungen für neue Features liefern wollen, so senden Sie bitte eine E-Mail an: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
@@ -539,8 +552,11 @@ Pauldusler</system:String>
     <system:String x:Key="RelativeGameExePath">Relativer Pfad zur Exe:</system:String>
     <system:String x:Key="ApplyData">Möchten Sie diese Daten in das Fix-Profil integrieren?</system:String>
     <system:String x:Key="NotFoundInDb">Kein passendes Spiel in der Steam Datenbank gefunden.</system:String>
+    <system:String x:Key="NoSteamAppId">Fehler: Sie müssen eine gültige SteamApp ID zur Verfügung stellen.</system:String>
+    <system:String x:Key="NotFoundInTheGamesDb">Kein passendes Spiel in der TheGamesDb-Datenbank gefunden.</system:String>
+    <system:String x:Key="IconUrlNotFound">Icon URL wurde nicht gefunden.</system:String>
     <system:String x:Key="WarningMigotoUpdate01">Warnung: Das Updaten von 3dmigoto für</system:String>
-    <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">ist dafür bekannt, den Fix zu zerstören.&#x0d;&#x0d;Möchten Sie den Wrapper für dieses Spiel dennoch aktualisieren?</system:String>
+    <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">ist dafür bekannt den Fix zu zerstören.&#x0d;&#x0d;Möchten Sie den Wrapper für dieses Spiel dennoch aktualisieren?</system:String>
     <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Fehler beim Bearbeiten der Ini-Dateien aufgetreten.&#x0d;&#x0d;Bitte stellen Sie sicher, dass die Dateien nicht auf 'schreibgeschützt' gestellt sind.</system:String>
     <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Warnung: Die Installation von Watch_Dogs2 fix kann bis zu 10 Minuten in Anspruch nehmen. Bitte haben Sie Geduld und wechseln Sie nicht den Tab. &#x0d;&#x0d;Möchten Sie fortfahren?</system:String>
     <system:String x:Key="ErrorInstallingMinecraft">Fehler: Minecraft-Fix konnte nicht installiert werden.</system:String>
@@ -577,7 +593,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Deaktiviert / aktiviert den Fix manuell."/><LineBreak/><LineBreak/>
         <Run Text="Anmerkung: Das De- und Aktivieren von Fixes geschieht automatisch, wenn auf die Schaltflächen"/><Italic>
-        <Run Text="&quot;Spiele 2D&quot;"/></Italic><Run Text=" / "/><Italic><Run Text="&quot;Spiele 3D&quot;"/></Italic><Run Text=" geklickt wird."/>
+        <Run Text="&quot;2D Spielen&quot;"/></Italic><Run Text=" / "/><Italic><Run Text="&quot;3D Spielen&quot;"/></Italic><Run Text=" geklickt wird."/>
     </TextBlock>
 
     <!-- New / Edit Profile Tab -->
@@ -616,6 +632,14 @@ Pauldusler</system:String>
         <Run Text="Stellen Sie einen zusätzlichen Download-Link zur Verügung, wenn der 3D Vision Fix in mehrere Download-Links aufgeteilt wurde."/>
     </TextBlock>
 
+    <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Stellen Sie diese Option auf 'Nein' falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Sie können hier einen Link zu einem Online-Shop mit Produktinformationen zum Spiel zur Verfügung stellen, welcher aufgerufen wird, wenn Sie auf den Button 'Produktseite' im Installations-Tab klicken. Dieses Feld dient als Alternative, falls ein Spiel nicht über den Steam Shop angeboten werden sollte."/>
+    </TextBlock>
+
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Der Fix wird automatisch nach dem Download extrahiert. Wählen Sie hier, welches eingebettete Entapckungstool hierfür verwendet werden soll: SharpCompress oder 7-zip."/>
     </TextBlock>
@@ -628,7 +652,14 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Sie können ein optionales Icon für das Spiel zur Verfügung stellen, welches im &quot;Installation&quot; Tab angezeigt werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="Die empfohlene Auflösung für das Icon liegt bei 128x128 Pixel."/>
+        <Run Text="Die empfohlene Auflösung für das Icon liegt bei 128x128 Pixel."/><LineBreak/><LineBreak/>
+        <Run Text="Um ein innerhalb des Profilordners aktives Icon zu entfernen klicken Sie bitte auf 'Icon entfernen' und anschließend auf 'Speichern'. Eine Sicherung des alten Icons wird hierbei angelegt und in einen Backup-Ordner innerhalb des Profil-Ordners verschoben."/>
+    </TextBlock>
+
+    <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Stellen Sie hier eine URL zu einem Spiele-Icon zur Verfügung, welches automatisch heruntergeladen werden soll, wenn 3D Fix Manager nicht in der Lage war ein lokales Icon für das Spiel zu finden."/><LineBreak/><LineBreak/>
+        <Run Text="Zur einfacheren Icon-Suche wird empfohlen &quot;TheGamesDb Icon&quot; aus der Liste auszuwählen und anschließend auf &quot;URL suchen&quot; zu klicken."/><LineBreak/><LineBreak/>
+        <Run Text="Falls Sie ein neues Icon herunterladen wollen, jedoch aber bereits ein lokales Icon vorhanden ist, so klicken Sie zusätzlich bitte auf die darüberliegende Schaltfläche &quot;Icon entfernen&quot;. Vergessen Sie nicht die Änderungen zu speichern."/>
     </TextBlock>
 
     <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
@@ -732,6 +763,17 @@ Pauldusler</system:String>
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Vom Benutzer durchgeführte Veränderungen an Fix-Profilen werden beim Abspeichern erkannt und an einen MySQL-Server gesendet."/><LineBreak/><LineBreak/>
         <Run Text="Dieses Feature hilft dem Author von 3D Fix Manager fehlende Profildaten zu sammeln oder Fehlerhafte zu korrigieren."/>
+    </TextBlock>
+    <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Mit Hilfe dieser Option können deinstallierte 3D Fixes ohne erneuten Download installiert werden. Hierbei werden die heruntergeladenen Dateien im 3D Fix Manager-Verzeichnis aufbewahrt und zur erneuten Installation des Fixes verwendet."/><LineBreak/><LineBreak/>
+        <Run Text="Um heruntergeladene Fix-Dateien zu löschen und Festplattenspeicher freizugeben wechseln Sie bitte zum 'Installation'-Tab und klicken dort auf 'Cache leeren'."/>
+    </TextBlock>
+    <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Diese Option bewirkt, dass sämtliche Spiele-Icons erneut von der TheGamesDB - or Steam DB heruntergeladen werden."/><LineBreak/><LineBreak/>
+        <Run Text="Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden."/>
+    </TextBlock>
+    <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden."/><LineBreak/><LineBreak/>
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden."/></TextBlock>
