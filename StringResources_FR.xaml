@@ -1,6 +1,5 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:FixManager.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
 
@@ -49,15 +48,15 @@
     <system:String x:Key="UninstallFixCompleted">Désinstallation complétée</system:String>
     <system:String x:Key="UninstallFixFailed">Désinstallation échouée</system:String>
     <system:String x:Key="InstallWrapper">Installer le Wrapper</system:String>
-    <system:String x:Key="DeleteDownload">Supprimer download</system:String>
+    <system:String x:Key="DeleteDownload">Supprimer DL Cache</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Effacer les fichiers téléchargés du fix 3D du répertoire de 3D Fix Manager.</system:String>
     <system:String x:Key="DeleteSuccess">Succès. Tous les fichiers téléchargés ont été effacés.</system:String>
     <system:String x:Key="DeleteError" xml:space="preserve">Erreur : Tous les fichiers ne peuvent être effacés. &#x0d;&#x0d;Please make sure that no file is in use.</system:String>
-    <system:String x:Key="SourceFolder">Répertoire Source</system:String>
+    <system:String x:Key="SourceFolder">Profile Folder</system:String>
     <system:String x:Key="SourceFolderToolTip">Ouvre le répertoire du fix dans windows explorer.</system:String>
-    <system:String x:Key="VisitSteamStore">Boutique Steam</system:String>
-    <system:String x:Key="VisitSteamStoreToolTip">Ouvre la boutique Steam dans le navigateur pour obtenir des informations du jeu.</system:String>
-    <system:String x:Key="VisitHelixMod">HelixMod</system:String>
+    <system:String x:Key="VisitSteamStore">Page Produit</system:String>
+    <system:String x:Key="VisitSteamStoreToolTip">Ouvre la page produit dans le navigateur pour obtenir des informations du jeu.</system:String>
+    <system:String x:Key="VisitHelixMod">HelixMod Blog</system:String>
     <system:String x:Key="VisitHelixModToolTip">Obtenir plus d'informations sur le fix sélectionné sur la page HelixMod.</system:String>
     <system:String x:Key="ForceCompatibilityMode">Forcer le CM</system:String>
     <system:String x:Key="EnableFix">Activer le Fix</system:String>
@@ -77,14 +76,17 @@
     <system:String x:Key="RelativeInstallPath">Chemin d'installation relatif:</system:String>
     <system:String x:Key="CustomRootPath">Customiser Parent / chemin du jeu:</system:String>
     <system:String x:Key="RelativeGameIniPath">Chemin relatif au fichier ini:</system:String>
-    <system:String x:Key="AdditionalRelativeGameIniPath">Chemin relatif additionnel au fichier ini du jeu:</system:String>
+    <system:String x:Key="AdditionalRelativeGameIniPath">Chemin relatif additionnel au fichier ini:</system:String>
     <system:String x:Key="DownloadLinkFix">Télécharger le lien du fix:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">Lien de téléchargement additionnel:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extracteur de l'archive du Fix:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto wrapper update:</system:String>
 
     <system:String x:Key="WebLinkHelix">Lien Web Helix / Geforce Forum:</system:String>
 
-    <system:String x:Key="IconPath">Icon Path:</system:String>
+    <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
+    <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
+    <system:String x:Key="ProductPageUrl">URL to Product Page:</system:String>
     <system:String x:Key="Profile2DMode">Profil Nvidia Inspector pour le Mode 2D:</system:String>
     <system:String x:Key="Profile3DMode">Profil Nvidia Inspector pour le Mode 3D:</system:String>
     <system:String x:Key="FixState">Etat du 3D Fix:</system:String>
@@ -119,6 +121,9 @@
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Choisir le répertoire</system:String>
     <system:String x:Key="PickFile">Sélectionner le fichier</system:String>
+    <system:String x:Key="RemoveIcon">Remove Icon</system:String>
+    <system:String x:Key="OpenUrl">Open URL</system:String>
+    <system:String x:Key="SearchUrl">Search URL</system:String>
     <system:String x:Key="SearchAppID">Chercher l'ID de l'application</system:String>
     <system:String x:Key="SearchInDB">Chercher dans la base de données</system:String>
     <system:String x:Key="SearchSteamDb">Chercher dans la base de données Steam</system:String>
@@ -265,7 +270,10 @@
     <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
     <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
     <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
+    <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
+    <system:String x:Key="PreferIconDownload">Prefer Game icons from internet database</system:String>
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
+    <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
     <system:String x:Key="UpdateAllWrappers">Update all installed 3dmigoto wrappers:</system:String>
     <system:String x:Key="UpdateAllWrappersToolTip">Updates 3dmigoto files of all installed fixes to the latest version.</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
@@ -279,11 +287,13 @@
     <system:String x:Key="SearchDepth">Search depth:</system:String>
     <system:String x:Key="SearchPaths">Search paths:</system:String>
     <system:String x:Key="SearchGames">Search Games</system:String>
+    <system:String x:Key="DetectPaths">Detect paths</system:String>
+    <system:String x:Key="DetectPathsToolTip">Automatically detects paths to Steam libraries and adds them as search paths.</system:String>
     <system:String x:Key="Add">Add</system:String>
     <system:String x:Key="AddPathToolTip">Adds a search path.</system:String>
     <system:String x:Key="Remove">Remove</system:String>
     <system:String x:Key="RemovePathToolTip">Removes the selected search path.</system:String>
-    <system:String x:Key="ChangePathToolTip">Changes the selected search path</system:String>
+    <system:String x:Key="ChangePathToolTip">Changes the selected search path.</system:String>
 
     <!-- RTSS settings group -->
     <system:String x:Key="RtssSettingsGroup">RivaTuner Statistics Server Settings:</system:String>
@@ -425,8 +435,8 @@
     <!--....................  Dialog Window Start .......................... -->
 
     <!-- Buttons-->
-    <system:String x:Key="Yes">Yes</system:String>
-    <system:String x:Key="No">No</system:String>
+    <system:String x:Key="Yes">Oui</system:String>
+    <system:String x:Key="No">Non</system:String>
     <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
     <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
     <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
@@ -441,6 +451,8 @@
     <system:String x:Key="RemoveProfile">Remove Fix Profile?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">All ini settings were reseted to default values. &#x0d;&#x0d;Don't forget to save changes.</system:String>
     <system:String x:Key="GameTitleEmpty">Error: Game Title must not be empty</system:String>
+    <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Note: You haven't set a Steam App ID for this profile yet which is required for starting Steam games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
+    <system:String x:Key="GameExeNotSet" xml:space="preserve">Note: You haven't set a Game Exe for the profile yet. This is generally required for starting games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Choose a 3D wrapper you want to install.
                                          
 Installing a wrapper unlocks some features like stereo hotkeys, SideBySide / TaB output mode, compatibility mode support and automatic driver profile installation.
@@ -460,6 +472,7 @@ Notes:
     <system:String x:Key="AdditionalIniPathNotRelative">Error: additional game ini path is not a relative path.</system:String>
     <system:String x:Key="ChangesSaved">Changes successfully saved.</system:String>
     <system:String x:Key="FixProfileCreated">Fix Profile successfully created.</system:String>
+    <system:String x:Key="IconResetSuccessfull" xml:space="preserve">All icons were successfully reseted and downloaded in the background.&#x0d;&#x0d;Note: All old icons have been moved to a backup folder inside of the individual profile folders for restoring them if needed.</system:String>
     <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
     <system:String x:Key="FixUpdateAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?&#x0d;&#x0d;Change Notes Fix Profiles:&#x0d;&#x0d;</system:String>
     <system:String x:Key="NoUpdates" >No Updates available. Fix profiles up to date.</system:String>
@@ -536,7 +549,10 @@ Pauldusler</system:String>
     <system:String x:Key="GameExe">Game exe:</system:String>
     <system:String x:Key="RelativeGameExePath">Relative Game Exe path:</system:String>
     <system:String x:Key="ApplyData">Do you want to apply this data to the fix profile?</system:String>
-    <system:String x:Key="NotFoundInDb">No game found in Steam Database</system:String>
+    <system:String x:Key="NotFoundInDb">No matching game found in Steam Database</system:String>
+    <system:String x:Key="NoSteamAppId">Error: You must provide a valid SteamApp ID.</system:String>
+    <system:String x:Key="NotFoundInTheGamesDb">No matching game found in TheGamesDb Database.</system:String>
+    <system:String x:Key="IconUrlNotFound">Icon URL has not been found.</system:String>
     <system:String x:Key="WarningMigotoUpdate01">Warning: Updating 3dmigoto for</system:String>
     <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">is known to break the fix.&#x0d;&#x0d;Do you want to update the wrapper for this game anyway?</system:String>
     <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Error occured when making changes to game ini files.&#x0d;&#x0d;Please make sure that the files are not set to 'read only'.</system:String>
@@ -614,6 +630,14 @@ Pauldusler</system:String>
         <Run Text="Provide a second download link if the 3D Vision fix was splitted into several download links."/>
     </TextBlock>
 
+    <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Set this option to 'No' if a new 3dmigoto version should not be compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper."/>
+    </TextBlock>
+
+    <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="You can provide a link to an online shop with informationen to the game which is called if you click on button 'Product Page' in 'Installation' tab. This field is an alternative if a game is not available on Steam store."/>
+    </TextBlock>
+
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="A fix is automatically extracted after downloading. Choose here whether to use built-in SharpCompress or 7-zip for file extractions."/>
     </TextBlock>
@@ -626,7 +650,14 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="You can supply an optional icon for the game which will be displayed on the &quot;Installation&quot; tab."/><LineBreak/><LineBreak/>
-        <Run Text="Recommended resolution is 128x128 pixel."/>
+        <Run Text="Recommended resolution is 128x128 pixel."/><LineBreak/><LineBreak/>
+        <Run Text="For removing an active icon withing the profile folder click on 'Remove Icon' und then on 'Save'. A backup of the old icon is automatically created in a backup folder within the profile folder."/>
+    </TextBlock>
+
+    <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Provide an URL for automatically downloading a game icon if 3D Fix Manager was not able to find a local one for the game."/><LineBreak/><LineBreak/>
+        <Run Text="For easy use just select &quot;TheGamesDb Icon&quot; from the list and click on &quot;Search URL&quot;."/><LineBreak/><LineBreak/>
+        <Run Text="If you want to download a new icon but an old one already exists then additionally click on on the upper button &quot;Remove Icon&quot;. Don't forget to save changes."/>
     </TextBlock>
 
     <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
@@ -730,6 +761,17 @@ Pauldusler</system:String>
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="When the user customizes a fix profile in 'Edit Profil' tab and clicks on 'Save'-button the changes are detected and sent to a MySQL server."/><LineBreak/><LineBreak/>
         <Run Text="This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them."/>
+    </TextBlock>
+    <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Reinstalls 3D fixes without redownloading them. For achieving this downloaded files are kept in the directory of 3D Fix Manager and used for reinstalling 3D fixes."/><LineBreak/><LineBreak/>
+        <Run Text="If you want to delete downloaded files to free up space on your harddrive just go to 'Installation' tab and click on 'Clear cache'."/>
+    </TextBlock>
+    <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Enable this for redownloading all icons from TheGamesDB or Steam DB."/><LineBreak/><LineBreak/>
+        <Run Text="Old icons are not lost by saving them in backup folders inside of the individual profile folders."/>
+    </TextBlock>
+    <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry."/><LineBreak/><LineBreak/>
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if your installed games are not detected by the program."/></TextBlock>
