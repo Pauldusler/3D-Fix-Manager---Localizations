@@ -81,6 +81,7 @@
     <system:String x:Key="AdditionalDownloadLinkFix">Additional URL to 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Fix Archive Extractor:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="StartTool">Start additional Exe:</system:String>
 
     <system:String x:Key="WebLinkHelix">URL to Helix / Geforce Forum:</system:String>
 
@@ -91,7 +92,9 @@
     <system:String x:Key="Profile3DMode">Nvidia Inspector Profile for 3D Mode:</system:String>
     <system:String x:Key="FixState">3D Fix State:</system:String>
     <system:String x:Key="SteamAppID">Steam App ID:</system:String>
-    
+
+    <system:String x:Key="WaitForExit">Wait for exit</system:String>
+    <system:String x:Key="GameExeAsArgument">Game Exe as start parameter</system:String>
     <system:String x:Key="GameLauncherExe">Game Launcher Exe:</system:String>
     <system:String x:Key="GameLauncherOptions">Game Launcher Options:</system:String>
     <system:String x:Key="FixDescription">Fix Description:</system:String>
@@ -270,12 +273,12 @@
     <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
     <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
     <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Auto update 3dmigoto of installed 3D fixes</system:String>
     <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
     <system:String x:Key="PreferIconDownload">Prefer Game icons from internet database</system:String>
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
     <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
-    <system:String x:Key="UpdateAllWrappers">Update all installed 3dmigoto wrappers:</system:String>
-    <system:String x:Key="UpdateAllWrappersToolTip">Updates 3dmigoto files of all installed fixes to the latest version.</system:String>
+    <system:String x:Key="UpdateAllWrappers">Update 3dmigoto of all installed 3D fixes:</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
@@ -339,10 +342,10 @@
     <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
     <system:String x:Key="StereoSeparation">3D Depth:</system:String>
     <system:String x:Key="DepthMultiplier">3D Depth Multiplier:</system:String>
+    <system:String x:Key="Inch">inch</system:String>
+    <system:String x:Key="ResultingMonitorSize">Override Monitor Size:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
-    <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode</system:String>
-    <system:String x:Key="StereoWindowedModeEnabledToolTip">Sets whether 3D Vision can activate 3D mode for windowed applications.</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
 
@@ -498,6 +501,7 @@ For perfect results you have to enable Vsync in game and graphics card must hold
 
 Click on 'OK' when you're done making changes.</system:String>
     <system:String x:Key="MessageProfile2D" xml:space="preserve">It's recommended to use the default driver profile for playing in 2D mode. Do you want to reset the driver profile to original state now? &#x0d;&#x0d;If you have already reset the profile you can skip this step by choosing 'No'.</system:String>
+    <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">It's recommended to install the 3D fix before starting this game. &#x0d;&#x0d;Do you want to install the fix now?</system:String>
     <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">It's recommended to restore the original driver profile when uninstalling the fix.&#x0d;&#x0d;Do you want to reset the driver profile now?</system:String>
     <system:String x:Key="MessageProfile3D" xml:space="preserve">"A driver profile is needed to make the fix work properly. Do you want to install it (via Nvidia Profile Inspector) now? &#x0d;&#x0d;If you have already installed the profile you can skip this step by choosing 'No'.</system:String>
     <system:String x:Key="ErrorGameLaunch">Error: Game could not be launched.</system:String>
@@ -566,6 +570,7 @@ Pauldusler</system:String>
     <system:String x:Key="ErrorDetectingBitVersion">Error: Could not detect if Java 64 bit or 32 bit is installed</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Error occured when installing Minecraft fix.</system:String>
     <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Do you want to keep custom profiles? &#x0d;&#x0d;Choose 'Yes' if you have edited some profiles and want to keep their changes.&#x0d;&#x0d;Choose 'No' to override all old profile settings.</system:String>
+    <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">A new 3dmigoto update is available for one or several installed 3D fixes.&#x0d;&#x0d;Do you want to update now?</system:String>
     <system:String x:Key="BindHotkeyError" xml:space="preserve">Error: One or more hotkeys have no key binding. &#x0d;&#x0d;Please set the keys and try again.</system:String>
     <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download complete! &#x0d;&#x0d;3D Fix Manager will restart now for installing the update.</system:String>
     <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision is not set up on your machine. &#x0d;&#x0d;Option 1: Click on 'Setup Wizard' for launching default Nvidia 3D Vision Setup Wizard. &#x0d;&#x0d;Option 2: Click on 'Quick Setup' for quickly enabling 3D Vision by modifying Windows Registry values.&#x0d;&#x0d;</system:String>
@@ -688,6 +693,11 @@ Pauldusler</system:String>
         <Run Text="Fill in the name of the exe file for launching the game."/>
     </TextBlock>
 
+    <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Fill in the name of an exe file for starting a tool in the game game directory. This tool is executed as soon as the game is launched. This feature is used to fix Mass Effect: Andromeda and INSIDE."/><LineBreak/><LineBreak/>
+        <Run Text="Additionally you can set if the game exe should be passed as start parameter to the tool and if the game start should wait for tool exit."/>
+    </TextBlock>
+
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="If needed set arguments for Game Launcher Exe here (see fix profile for game 'Superhot' if you need an example.)"/><LineBreak/><LineBreak/>
         <Run Text="Additionally you can decide whether to start the game with admin rights (needed for game 'Doom' for example) or how to start games (directly via game exe or indirectly by Steam App ID)."/><LineBreak/><LineBreak/>
@@ -762,6 +772,9 @@ Pauldusler</system:String>
         <Run Text="When the user customizes a fix profile in 'Edit Profil' tab and clicks on 'Save'-button the changes are detected and sent to a MySQL server."/><LineBreak/><LineBreak/>
         <Run Text="This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them."/>
     </TextBlock>
+    <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Updates 3dmigoto of all installed 3D fixes automatically as soon as 3D Fix Manager is being started."/>
+    </TextBlock>
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Reinstalls 3D fixes without redownloading them. For achieving this downloaded files are kept in the directory of 3D Fix Manager and used for reinstalling 3D fixes."/><LineBreak/><LineBreak/>
         <Run Text="If you want to delete downloaded files to free up space on your harddrive just go to 'Installation' tab and click on 'Clear cache'."/>
@@ -771,7 +784,11 @@ Pauldusler</system:String>
         <Run Text="Old icons are not lost by saving them in backup folders inside of the individual profile folders."/>
     </TextBlock>
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry."/><LineBreak/><LineBreak/>
+        <Run Text="Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry."/>
+    </TextBlock>
+    <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Updates 3dmigoto of all installed fixes to the latest version."/><LineBreak/><LineBreak/>
+        <Run Text="Newer versions of 3dmigoto can have a better performance / stability and unlock new features like SideBySide support."/>
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enable search paths if not all of your installed games are detected by the program."/></TextBlock>
@@ -830,10 +847,24 @@ Pauldusler</system:String>
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Enables / disables Nvidia Stereoscopic 3D. This is the same feature as in Nvidia Control Panel."/></TextBlock>
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager."/></TextBlock>
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode."/></TextBlock>
+    <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T."/><LineBreak/><LineBreak/>
+        <Run Text="Technically this option sets windows registry entry "/><Italic><Run Text="'StereoDefaultOn'"/></Italic> <Run Text=" to 0 or 1."/>
+    </TextBlock>
+    <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Sets whether 3D Vision can activate 3D mode for windowed applications."/><LineBreak/><LineBreak/>
+        <Run Text="Technically this option sets windows registry entry "/><Italic><Run Text="'EnableWindowedMode'"/></Italic> <Run Text=" to 0 or 5."/>
+    </TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Enable this option if you want to exceed the maximimum 3D depth of 100% (also known as depth hack)."/><LineBreak/><LineBreak/>
+        <Run Text="Enable this option if you want to exceed the maximimum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximimum 3D depth is often too low for them."/><LineBreak/><LineBreak/>
         <Run Text="Depth hack is active as soon as you set the multiplier higher than a value of 1. For example if you set it to 2 you can achieve a 3D depth which will be twice as high."/><LineBreak/><LineBreak/>
-        <Run Text="Effectively this means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because of the multiplier value of 2. Similarly 80% 3D depth will correspond 160% and so on."/>
+        <Run Text="With regard to this example this effectively means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because multiplier was set to 2. Similarily 80% 3D depth will correspond 160% and so on."/><LineBreak/><LineBreak/>
+        <Run Text="When using the depth hack you make the Nvidia driver think that you play with a smaller display size as it is actually. You can see the display size which was detected by the driver below. The smaller the inch value the greater the maximum 3D depth."/>
+    </TextBlock>
+    <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
+        <Run Text="This is the size of the monitor which is passed to the Nvidia driver.The smaller the value the greater the maximum 3D depth."/><LineBreak/><LineBreak/>
+        <Run Text="For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen."/> <LineBreak/><LineBreak/>
+        <Run Text="Adjust the maximum 3D depth via the 3D depth multiplier or the value in inch. Both depend on another."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz."/><LineBreak/><LineBreak/>
