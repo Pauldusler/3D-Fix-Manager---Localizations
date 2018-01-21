@@ -82,6 +82,7 @@
     <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archive:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
     
     <system:String x:Key="WebLinkHelix">URL zum Helix / Geforce Forum:</system:String>
     <system:String x:Key="WebLinkHelixTooltip01">Link zum Helix oder Geforce-Forum aus welchem der Fix entnommen wurde.</system:String>
@@ -93,7 +94,9 @@
     <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Mode:</system:String>
     <system:String x:Key="FixState">Zustand des 3D Fixes:</system:String>
     <system:String x:Key="SteamAppID">Steam App ID:</system:String>
-    
+
+    <system:String x:Key="WaitForExit">Auf Beendigung warten</system:String>
+    <system:String x:Key="GameExeAsArgument">Game Exe als Startparameter</system:String>
     <system:String x:Key="GameLauncherExe">Exe zum Starten des Spiels:</system:String>
     <system:String x:Key="GameLauncherOptions">Startoptionen für Spiel:</system:String>
     <system:String x:Key="FixDescription">Beschreibung zum Fix:</system:String>
@@ -272,12 +275,12 @@
     <system:String x:Key="CheckForUpdates">Bei Programmstart auf Updates prüfen</system:String>
     <system:String x:Key="EnableSteamOverlay">Steam Overlay aktivieren</system:String>
     <system:String x:Key="SendData">Daten bei Veränderungen an den Fix-Profile senden</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">3dmigoto bei installierten 3D Fixes automatisch aktualisieren</system:String>
     <system:String x:Key="ReinstallFixFromCache">3D Fixes bevorzugt aus dem Download Cache installieren</system:String>
     <system:String x:Key="PreferIconDownload">Spiele-Icons bevorzugt aus der Internet-Datenbank beziehen</system:String>
     <system:String x:Key="EnableAllFixes">Alle Fixes (de)aktivieren:</system:String>
     <system:String x:Key="ResetAllIcons">Alle Spiele-Icons zurücksetzen:</system:String>
-    <system:String x:Key="UpdateAllWrappers">Alle installierten 3dmigoto-Wrapper aktualisieren:</system:String>
-    <system:String x:Key="UpdateAllWrappersToolTip">Aktualisert 3dmigoto-Dateien aller installierten Fixes auf die aktuellste Version.</system:String>
+    <system:String x:Key="UpdateAllWrappers">3dmigoto aller installierter 3D Fixes aktualisieren:</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam nicht gefunden</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Deaktiviert alle installierten 3D-Fixes.</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Aktiviert alle installierten 3D-Fixes.</system:String>
@@ -341,10 +344,10 @@
     <system:String x:Key="SetStereoTypeTo3DVision">3D Vision / 3DTV Play Modus erzwingen</system:String>
     <system:String x:Key="StereoSeparation">3D Tiefe:</system:String>
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
+    <system:String x:Key="Inch">Zoll</system:String>
+    <system:String x:Key="ResultingMonitorSize">Bildschirmgröße überschreiben:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
-    <system:String x:Key="StereoEnabledOnGameLaunchToolTip">Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden.</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren.</system:String>
-    <system:String x:Key="StereoWindowedModeEnabledToolTip">Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird.</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
 
@@ -500,6 +503,7 @@ Für perfekte Ergebnisse sollte Vsync im Spiel aktiviert und die Grafikkarte sta
 
 Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:String>
     <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil zu nutzen.Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
+    <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">Es wird empfohlen den 3D-Fix vor dem Spielstart zu installieren. &#x0d;&#x0d;Möchten Sie diesen jetzt installieren?</system:String>
     <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
     <system:String x:Key="MessageProfile3D" xml:space="preserve">"Ein Treiberprofil ist erforderlich, damit der Fix korrekt funktioniert.Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
     <system:String x:Key="ErrorGameLaunch">Fehler: Spiele konnte nicht gestartet werden.</system:String>
@@ -568,6 +572,7 @@ Pauldusler</system:String>
     <system:String x:Key="ErrorDetectingBitVersion">Fehler: Es konnte nicht erkannt werden, ob die 64 Bit oder 32 Bit-Version von Java installiert ist.</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Fehler bei der Installation des Minecraft-Fixes.</system:String>
     <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Möchten Sie benutzerdefinierte Profile beibehalten? &#x0d;&#x0d;Wählen Sie 'Ja', wenn sie Profile editiert haben und die Änderungen behalten möchten.&#x0d;&#x0d;Wählen Sie 'Nein', um alle alten Profile zu überschreiben.</system:String>
+    <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">Für einen oder mehreren installierten 3D Fixes steht ein 3dmigoto-Update bereit.&#x0d;&#x0d;Möchten Sie diese jetzt aktualisieren?</system:String>
     <system:String x:Key="BindHotkeyError" xml:space="preserve">Fehler: Ein oder mehrere Hotkeys besitzen keine Tastenzuweisung. &#x0d;&#x0d;Bitte weisen Sie die Tasten zu und versuchen Sie den Vorgang erneut.</system:String>
     <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download abgeschlossen! &#x0d;&#x0d;3D Fix Manager wird nun neu gestartet um das Update zu installieren.</system:String>
     <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision ist auf Ihrem System nicht eingerichtet. &#x0d;&#x0d;Option 1: Klicken Sie auf 'Setup Assistent' um den standardmäßigen Nvidia Setup-Assistenten zu starten. &#x0d;&#x0d;Option 2: Klicken Sie auf 'Schnelles Setup' um 3D Vision direkt zu aktivieren, indem Werte in der Windows Registry modifiziert werden.&#x0d;&#x0d;</system:String>
@@ -690,6 +695,11 @@ Pauldusler</system:String>
         <Run Text="Geben Sie den Namen der Exe-Datei ein mit welcher das Spiel gestartet wird."/>
     </TextBlock>
 
+    <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Geben Sie den Namen der Exe-Datei ein mit welcher ein zusätzliches Tool im Spielverzeichnis gestartet werden soll. Dieses Tool wird aufgerufen, sobald das Spiel gestartet wird. Dieses Feature wird beispielsweise von Mass Effect: Andromeda und INSIDE genutzt."/><LineBreak/><LineBreak/>
+        <Run Text="Sie können zusätzlich definieren, ob die Spiel-Exe dem Tool ls Startargument übergeben oder auf die Beendigung des Tools gewartet werden soll bevor das Spiel weiterhin startet."/>
+    </TextBlock>
+
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil 'Superhot' um ein Beispiel hierfür zu sehen)."/><LineBreak/><LineBreak/>
         <Run Text="Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel 'Doom' erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID)."/><LineBreak/><LineBreak/>
@@ -764,6 +774,9 @@ Pauldusler</system:String>
         <Run Text="Vom Benutzer durchgeführte Veränderungen an Fix-Profilen werden beim Abspeichern erkannt und an einen MySQL-Server gesendet."/><LineBreak/><LineBreak/>
         <Run Text="Dieses Feature hilft dem Author von 3D Fix Manager fehlende Profildaten zu sammeln oder Fehlerhafte zu korrigieren."/>
     </TextBlock>
+    <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Aktualisiert 3dmigoto bei allen installierten 3D Fixes automatisch, sobald 3D Fix Manager gestartet wird."/>
+    </TextBlock>
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Mit Hilfe dieser Option können deinstallierte 3D Fixes ohne erneuten Download installiert werden. Hierbei werden die heruntergeladenen Dateien im 3D Fix Manager-Verzeichnis aufbewahrt und zur erneuten Installation des Fixes verwendet."/><LineBreak/><LineBreak/>
         <Run Text="Um heruntergeladene Fix-Dateien zu löschen und Festplattenspeicher freizugeben wechseln Sie bitte zum 'Installation'-Tab und klicken dort auf 'Cache leeren'."/>
@@ -773,7 +786,11 @@ Pauldusler</system:String>
         <Run Text="Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden."/>
     </TextBlock>
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden."/><LineBreak/><LineBreak/>
+        <Run Text="Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden."/>
+    </TextBlock>
+    <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Aktualisert 3dmigoto aller installierten 3D Fixes auf die aktuellste Version."/><LineBreak/><LineBreak/>
+        <Run Text="Aktuellere Versionen von 3dmigoto können zu einer verbesserten Performance und Stabilität führen sowie neue Features wie z.B. SideBySide-Support freischalten."/>
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden."/></TextBlock>
@@ -832,10 +849,24 @@ Pauldusler</system:String>
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktiviert / deaktiviert Nvidia's stereoskopische 3D-Funktion. Es handelt sich dabei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung enthalten ist."/></TextBlock>
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird."/></TextBlock>
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Sorgt beim Aktivieren der stereoskopischen 3D-Funktion oder beim Starten eines Spiels im 3D-Modus automatisch dafür, dass 3D Vision bzw. 3DTV Play als Ausgabemodus genutzt wird statt 3D Vision Discover (anaglyph)"/></TextBlock>
+    <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden."/><LineBreak/><LineBreak/>
+        <Run Text="Technisch gesehen setzt diese Option den Windows Registry-Eintrag "/><Italic><Run Text="'StereoDefaultOn'"/></Italic> <Run Text="auf 0 oder 1."/>
+    </TextBlock>
+    <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird."/><LineBreak/><LineBreak/>
+        <Run Text="Technisch gesehen setzt diese Option den Windows Registry-Eintrag "/><Italic><Run Text="'EnableWindowedMode'"/></Italic> <Run Text="auf 0 oder 5."/>
+    </TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Funktion aktivieren, wenn die 3D-Tiefe über den maximalen Wert von 100% angehoben werden soll (auch bekannt als Tiefen-Hack)."/><LineBreak/><LineBreak/>
-        <Run Text="Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefe erreicht."/><LineBreak/><LineBreak/>
-        <Run Text="Letztendlich bedeutet dies, dass eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen würden aufgrund des auf 2 gesetzten Multiplikatorwertes. Analog dazu würden 80% 3D-Tiefe tatsächlich 160% entsprechen usw."/>
+        <Run Text="Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da hier die maximale 3D-Tiefe oftmals zu gering ist."/><LineBreak/><LineBreak/>
+        <Run Text="Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefenwirkung erreicht werden."/><LineBreak/><LineBreak/>
+        <Run Text="Auf dieses Beispiel bezogen würde das bedeuten, dass eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen würde, da der Multiplikator auf 2 gesetzt wurde. Analog dazu würde aus einer 3D-Tiefe von 80% schlussendlich 160% resultieren."/><LineBreak/><LineBreak/>
+        <Run Text="Durch den Tiefen-Hack täuschen Sie dem Nvidia-Treiber vor, mit einem kleineren Bildschirm zu spielen, als es in Wirklichkeit der Fall ist. Die im Treiber ermittelte Bildschirmgröße können Sie dem unten dargestellten Zoll-Wert entnehmen. Je kleiner der Wert, desto größer fällt die maximale 3D-Tiefe aus."/>
+    </TextBlock>
+    <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
+        <Run Text="Dies ist die Größe des Bildschirms, die dem Nvidia-Treiber mitgeteilt wird. Je kleiner der Wert, desto größer die maximale 3D-Tiefe."/><LineBreak/><LineBreak/>
+        <Run Text="Um die optimale 3D-Tiefe bei Projektoren zu erzielen empfielt es sich die Zollgröße der Leinwand einzutragen."/> <LineBreak/><LineBreak/>
+        <Run Text="Regeln Sie die maximale 3D-Tiefe entweder über den Tiefen-Multiplikator oder den Zollwert. Beide hängen voneinander ab."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="3D Vision Shutter-Brillen können mit verschiedenen Shutter-Frequenzen betrieben werden - die Spanne reicht von 100 Hz bis 120 Hz."/><LineBreak/><LineBreak/>
