@@ -39,6 +39,7 @@
     <system:String x:Key="Play3D">Play 3D</system:String>
     <system:String x:Key="InstallFix">Install 3D Fix</system:String>
     <system:String x:Key="InstallFixCompleted">Install completed</system:String>
+    <system:String x:Key="BackupRecoveryFailed">Backup recovery failed.</system:String>
     <system:String x:Key="InstallFixFailed">Install failed. Check Install Path</system:String>
     <system:String x:Key="InstallFixFailed02" xml:space="preserve">Error: Fix could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Error: Wrapper could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
@@ -67,8 +68,8 @@
     <system:String x:Key="ExtractionFailed">Extraction failed</system:String>
     <system:String x:Key="GameNotInstalled">Game not installed</system:String>
     <system:String x:Key="OpenExplorerError">Error: Could not open path in Windows explorer. Path does not exist</system:String>
-    <system:String x:Key="HotkeyBackupFound">A hotkey backup was found. Do you want to restore it?</system:String>
-    <system:String x:Key="CreateHotkeyBackup">Do you want to create a backup of your hotkeys before uninstall?</system:String>
+    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">A backup for hotkeys and 3d fix configuration has been found. &#x0d;&#x0d;Do you want to restore the backup?</system:String>
+    <system:String x:Key="CreateHotkeyBackup">Do you want to create a backup of your hotkeys and 3D fix configuration before uninstall?</system:String>
 
     <!--....................  New / Edit Profile Tab Start .......................... -->
 
@@ -153,7 +154,7 @@
     <system:String x:Key="DownloadDefaultIni">Download Default Ini</system:String>
     <system:String x:Key="ManageHotkeys">Manage Hotkeys:</system:String>
     <system:String x:Key="NoIniProvided">No ini provided by this fix</system:String>
-    <system:String x:Key="ParseError">Sorry, could not parse ini file"</system:String>
+    <system:String x:Key="ParseError">Sorry, ini file could not be parsed"</system:String>
     <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Sorry, could not determine Helix Wrapper Version. &#x0d;Please click on 'Download Default Ini' to get this information</system:String>
     <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Old Version</system:String>
     <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Old Version</system:String>
@@ -231,6 +232,7 @@
     <system:String x:Key="DefaultValuesConstants">Default Values for Shader Constants:</system:String>
     <system:String x:Key="EnableAlternative3dMode">Enable alternative 3D Mode:</system:String>
     <system:String x:Key="EnableAlternative3dModeToolTip">Choose an alternative 3D Format for use with 3D TVs and projectors.</system:String>
+    <system:String x:Key="EnableSoftwareMouse">Enable Software Mouse Cursor</system:String>
     <system:String x:Key="Constant">Constant</system:String>
     <system:String x:Key="Upscaling">Upscaling:</system:String>
 
@@ -247,8 +249,8 @@
     <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
     <system:String x:Key="ForceFullscreen">Force fullscreen:</system:String>
     <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
-    <system:String x:Key="FlexibleFullscreen">Flexible fullscreen</system:String>
-    <system:String x:Key="StaticFullscreen">Static fullscreen</system:String>
+    <system:String x:Key="ForcedFullscreen">Force fullscreen</system:String>
+    <system:String x:Key="NormalFullscreen">Normal fullscreen</system:String>
     <system:String x:Key="TypeInIntegerToolTip">Type in an integer value.</system:String>
     <system:String x:Key="TypeInCommaSeparatedListToolTip">Type in a comma separated list of refresh rates.</system:String>
 
@@ -273,7 +275,7 @@
     <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
     <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
     <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
-    <system:String x:Key="AutoUpdate3dmigoto">Auto update 3dmigoto of installed 3D fixes</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Update 3dmigoto at startup</system:String>
     <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
     <system:String x:Key="PreferIconDownload">Prefer Game icons from internet database</system:String>
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
@@ -765,6 +767,10 @@ Pauldusler</system:String>
         <Run Text="Don't forget to uncheck this option after you have finished editing the hotkeys for achieving a better gaming performance."/>
     </TextBlock>
 
+    <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Renders the mouse cursor in software and should be used if you want to be able to adjust the stereo depth of the mouse or in conjunction with alternative 3D output formats like side-by-side."/>
+    </TextBlock>
+
     <!-- General Settings Tab -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Check for application / fix updates when the application is being started."/></TextBlock>
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300"><Run Text="Disable Steam overlay if you experience crashes while starting games."/></TextBlock>
@@ -813,9 +819,11 @@ Pauldusler</system:String>
 
     <!-- Refresh rates and resolution -->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Perform upscaling to arbitrary resolutions, specifically useful for 4K 3D TVs or for DSR."/><LineBreak/><LineBreak/>       
-        <Bold><Run Text="Flexible fullscreen: "/></Bold><Run Text="Enable upscaling and allows the game to disable and enable fullscreen mode."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Static fullscreen: "/></Bold><Run Text="Enable upscaling and always force fullscreen. Try this if you get issues with the mouse cursor."/>
+        <Run Text="Upscaling is useful if you want to play with a resolution which is lower than the native one of your monitor."/><LineBreak/><LineBreak/>           
+         <Run Text="This feature performs upscaling to your native resolution for achieving a sharper image quality - specifically useful for 4K 3D TVs or for DSR."/><LineBreak/><LineBreak/>   
+         <Run Text="Please consider that this is still an experimental feature and only works for a few games (like The Witcher 3 for example). When the mouse cursor does not work correctly please set upscaling to 'Force fullscreen' or enable Software Mouse Cursor."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Normal fullscreen: "/></Bold><Run Text="Enables upscaling and allows the game to disable and enable fullscreen mode."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Force fullscreen: "/></Bold><Run Text="Enables upscaling and always forces fullscreen. Try this if you get issues with the mouse cursor."/>
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
@@ -856,15 +864,15 @@ Pauldusler</system:String>
         <Run Text="Technically this option sets windows registry entry "/><Italic><Run Text="'EnableWindowedMode'"/></Italic> <Run Text=" to 0 or 5."/>
     </TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Enable this option if you want to exceed the maximimum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximimum 3D depth is often too low for them."/><LineBreak/><LineBreak/>
-        <Run Text="Depth hack is active as soon as you set the multiplier higher than a value of 1. For example if you set it to 2 you can achieve a 3D depth which will be twice as high."/><LineBreak/><LineBreak/>
+        <Run Text="Enable this option if you want to exceed the maximum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximum 3D depth is often too low for them."/><LineBreak/><LineBreak/>
+        <Run Text="Depth hack is active as soon as you set the multiplier to a value higher than 1. For example if you set it to 2 you can achieve a 3D depth which is twice as high."/><LineBreak/><LineBreak/>
         <Run Text="With regard to this example this effectively means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because multiplier was set to 2. Similarily 80% 3D depth will correspond 160% and so on."/><LineBreak/><LineBreak/>
         <Run Text="When using the depth hack you make the Nvidia driver think that you play with a smaller display size as it is actually. You can see the display size which was detected by the driver below. The smaller the inch value the greater the maximum 3D depth."/>
     </TextBlock>
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
-        <Run Text="This is the size of the monitor which is passed to the Nvidia driver.The smaller the value the greater the maximum 3D depth."/><LineBreak/><LineBreak/>
+        <Run Text="This is the size of the monitor which is passed to the Nvidia driver. The smaller the value the greater the maximum 3D depth."/><LineBreak/><LineBreak/>
         <Run Text="For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen."/> <LineBreak/><LineBreak/>
-        <Run Text="Adjust the maximum 3D depth via the 3D depth multiplier or the value in inch. Both depend on another."/>
+        <Run Text="Adjust the maximum 3D depth via 3D depth multiplier or the value in inch. Both depend on another."/>
     </TextBlock>
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz."/><LineBreak/><LineBreak/>
