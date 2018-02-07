@@ -39,6 +39,7 @@
     <system:String x:Key="Play3D">3D spielen</system:String>
     <system:String x:Key="InstallFix">3D Fix installieren</system:String>
     <system:String x:Key="InstallFixCompleted">Installation erfolgreich</system:String>
+    <system:String x:Key="BackupRecoveryFailed">Backup-Wiederherstellung fehlgeschlagen.</system:String>
     <system:String x:Key="InstallFixFailed">Installation fehlgeschlagen (falscher Install-Pfad?)</system:String>
     <system:String x:Key="InstallFixFailed02" xml:space="preserve">Fehler: Fix konnte nicht installiert werden.&#x0d;&#x0d;Stellen Sie sicher, dass 3D Fix Manager mit Admin-Rechten gestartet ist und versuchen Sie den Vorgang erneut.</system:String>
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Fehler: Wrapper konnte nicht installiert werden.&#x0d;&#x0d;Stellen Sie sicher, dass 3D Fix Manager mit Admin-Rechten gestartet ist und versuchen Sie den Vorgang erneut.</system:String>
@@ -67,8 +68,8 @@
     <system:String x:Key="ExtractionFailed">Entpacken fehlgeschlagen</system:String>
     <system:String x:Key="GameNotInstalled">Spiel nicht installiert</system:String>
     <system:String x:Key="OpenExplorerError">Fehler: Der Pfad konnte nicht im Windows Explorer geöffnet werden, da der Pfad nicht existiert.</system:String>
-    <system:String x:Key="HotkeyBackupFound">Ein Hotkey-Backup wurde gefunden. Möchten Sie dieses wiederherstellen?</system:String>
-    <system:String x:Key="CreateHotkeyBackup">Möchten Sie vor der Deinstallation ein Backup der Hotkeys anlegen?</system:String>
+    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Ein Hotkey- bzw. Konfigurations-Backup wurde für den 3D Fix gefunden.&#x0d;&#x0d;Möchten Sie das Backup wiederherstellen?</system:String>
+    <system:String x:Key="CreateHotkeyBackup">Möchten Sie vor der Deinstallation ein Backup der Hotkeys sowie der Einstellungen des 3D Fixes anlegen?</system:String>
 
 
     <!--....................  New/Edit Profile Tab Begin .......................... -->
@@ -233,6 +234,7 @@
     <system:String x:Key="DefaultValuesConstants">Standardwerte für Shader-Konstanten:</system:String>
     <system:String x:Key="EnableAlternative3dMode">Alternativen 3D-Modus aktivieren:</system:String>
     <system:String x:Key="EnableAlternative3dModeToolTip">Alternatives 3D-Format für die Nutzung mit 3D-TVs und Projektoren auswählen.</system:String>
+    <system:String x:Key="EnableSoftwareMouse">Software Mauszeiger aktivieren</system:String>
     <system:String x:Key="Constant">Konstante</system:String>
     
     <system:String x:Key="ResolutionAndRefreshRates">Auflösung und Bildwiederholfrequenz:</system:String>
@@ -248,8 +250,8 @@
     <system:String x:Key="FilterRefreshRates">Bildwiederholfrequenzen filtern:</system:String>
     <system:String x:Key="ForceFullscreen">Vollbildmodus erzwingen:</system:String>
     <system:String x:Key="ToggleFullscreen">Vollbildmodus umschalten:</system:String>
-    <system:String x:Key="FlexibleFullscreen">Flexibles Vollbild</system:String>
-    <system:String x:Key="StaticFullscreen">Statisches Vollbild</system:String>
+    <system:String x:Key="ForcedFullscreen">Vollbild erzwingen</system:String>
+    <system:String x:Key="NormalFullscreen">Vollbild normal</system:String>
     <system:String x:Key="TypeInIntegerToolTip">Ganzzahl eingeben.</system:String>
     <system:String x:Key="TypeInCommaSeparatedListToolTip">Kommaseparierte Liste an Bilderwiederholfrequenzen eingeben.</system:String>
     
@@ -275,7 +277,7 @@
     <system:String x:Key="CheckForUpdates">Bei Programmstart auf Updates prüfen</system:String>
     <system:String x:Key="EnableSteamOverlay">Steam Overlay aktivieren</system:String>
     <system:String x:Key="SendData">Daten bei Veränderungen an den Fix-Profile senden</system:String>
-    <system:String x:Key="AutoUpdate3dmigoto">3dmigoto bei installierten 3D Fixes automatisch aktualisieren</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">3dmigoto beim Programmstart aktualisieren</system:String>
     <system:String x:Key="ReinstallFixFromCache">3D Fixes bevorzugt aus dem Download Cache installieren</system:String>
     <system:String x:Key="PreferIconDownload">Spiele-Icons bevorzugt aus der Internet-Datenbank beziehen</system:String>
     <system:String x:Key="EnableAllFixes">Alle Fixes (de)aktivieren:</system:String>
@@ -767,6 +769,13 @@ Pauldusler</system:String>
         <Run Text="Um eine bessere Performance zu gewährleisten, sollte nicht vergessen werden die Option wieder zu deaktivieren nachdem die Hotkey-Bearbeitung abgeschlossen ist."/>
     </TextBlock>
 
+    <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Rendert den Maus-Cursor softwareseitig und bietet die Möglichkeit die 3D-Tiefe der Maus anzupassen."/><LineBreak/><LineBreak/>
+        <Run Text="Es empfiehlt sich diese Option in Verbindung mit alternativen 3D-Formaten wie Side-by-Side zu verwenden."/>
+    </TextBlock>
+
+
+
     <!-- General Settings Tab -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Prüft bei Start des Programms, ob neue Updates für das Programm oder den Fix-Profilen vorliegen."/></TextBlock>
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktivieren Sie das Steam-Overlay, wenn das Spiel beim Starten abstürzt."/></TextBlock>
@@ -815,13 +824,16 @@ Pauldusler</system:String>
 
     <!-- Refresh rates and resolution -->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Skaliert auf beiliebige Auflösungen hoch und ist besonders nützlich für 4K Fernseher oder DSR."/><LineBreak/><LineBreak/>       
-        <Bold><Run Text="Flexibles Vollbild: "/></Bold><Run Text="Aktiviert Upscaling und ermöglicht den Vollbildmodus im Spiel ein- und abzuschalten."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Statisches Vollbild: "/></Bold><Run Text="Aktiviert Upscaling und erzwingt immer den Vollbildmodus. Bitte auswählen wenn Probleme mit dem Mauszeiger auftreten."/>
+        <Run Text="Upscaling sollte eingeschaltet werden, wenn sie in einer niedrigeren Auflösung als der Nativen ihres Monitors spielen wollen."/><LineBreak/><LineBreak/>     
+        <Run Text="Diese Funktion skaliert das Bild auf die native Auflösung hoch, um eine schärfere Bildqualität zu erreichen - besonders nützlich für 4K Fernseher oder DSR."/><LineBreak/><LineBreak/>       
+        <Run Text="Beachten Sie bitte, dass diese Funktion noch experimentell ist und nur bei wenigen Spielen ordnungsgemäß funktioniert (wie z.B. The Witcher 3). Häufig verhält sich der Mauszeiger nicht korrekt - in diesem Fall bitte Upscaling auf 'Vollbild erzwingen' stellen oder Software-Mauszeiger aktivieren."/><LineBreak/><LineBreak/>       
+ 
+        <Bold><Run Text="Vollbild normal: "/></Bold><Run Text="Aktiviert Upscaling und ermöglicht den Vollbildmodus im Spiel ein- und abzuschalten."/><LineBreak/><LineBreak/>
+        <Bold><Run Text="Vollbild erzwingen: "/></Bold><Run Text="Aktiviert Upscaling und erzwingt immer den Vollbildmodus. Bitte auswählen, wenn Probleme mit dem Mauszeiger auftreten."/>
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
-         <Bold><Run Text="0: "/></Bold><Run Text="3Dmigoto erzeugt eine Textur und stellt Sie dem Spiel als Back-Buffer zur Verfügung. Dies scheint nur für wenige Spiele zu funktionieren, aber führt dazu, dass Spiel flüssiger läuft."/><LineBreak/><LineBreak/>
+         <Bold><Run Text="0: "/></Bold><Run Text="3Dmigoto erzeugt eine Textur und stellt Sie dem Spiel als Back-Buffer zur Verfügung. Dies scheint nur für wenige Spiele zu funktionieren, aber führt dazu, dass das Spiel flüssiger läuft."/><LineBreak/><LineBreak/>
          <Bold><Run Text="1: "/></Bold><Run Text="3Dmigoto erzeugt eine zweite Swap-Chain und sorgt dafür, dass das Spiel diese nutzt. Diese Einstellung scheint mit den meisten Spielen zu funktionieren."/>
     </TextBlock>
 
@@ -858,9 +870,9 @@ Pauldusler</system:String>
         <Run Text="Technisch gesehen setzt diese Option den Windows Registry-Eintrag "/><Italic><Run Text="'EnableWindowedMode'"/></Italic> <Run Text="auf 0 oder 5."/>
     </TextBlock>
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da hier die maximale 3D-Tiefe oftmals zu gering ist."/><LineBreak/><LineBreak/>
+        <Run Text="Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da bei solchen die maximale 3D-Tiefe oftmals zu gering ist."/><LineBreak/><LineBreak/>
         <Run Text="Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefenwirkung erreicht werden."/><LineBreak/><LineBreak/>
-        <Run Text="Auf dieses Beispiel bezogen würde das bedeuten, dass eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen würde, da der Multiplikator auf 2 gesetzt wurde. Analog dazu würde aus einer 3D-Tiefe von 80% schlussendlich 160% resultieren."/><LineBreak/><LineBreak/>
+        <Run Text="Hinsichtlich dieses Beispiels würde eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen, da der Multiplikator auf 2 gesetzt wurde. Analog dazu würde aus einer 3D-Tiefe von 80% schlussendlich 160% resultieren."/><LineBreak/><LineBreak/>
         <Run Text="Durch den Tiefen-Hack täuschen Sie dem Nvidia-Treiber vor, mit einem kleineren Bildschirm zu spielen, als es in Wirklichkeit der Fall ist. Die im Treiber ermittelte Bildschirmgröße können Sie dem unten dargestellten Zoll-Wert entnehmen. Je kleiner der Wert, desto größer fällt die maximale 3D-Tiefe aus."/>
     </TextBlock>
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
