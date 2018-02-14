@@ -89,6 +89,7 @@
     <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
     <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
     <system:String x:Key="ProductPageUrl">URL to Product Page:</system:String>
+    <system:String x:Key="CmFlag">Flag for Compatibility Mode:</system:String>
     <system:String x:Key="Profile2DMode">Profil Nvidia Inspector pour le Mode 2D:</system:String>
     <system:String x:Key="Profile3DMode">Profil Nvidia Inspector pour le Mode 3D:</system:String>
     <system:String x:Key="FixState">Etat du 3D Fix:</system:String>
@@ -643,6 +644,10 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="You can provide a link to an online shop with informationen to the game which is called if you click on button 'Product Page' in 'Installation' tab. This field is an alternative if a game is not available on Steam store."/>
+    </TextBlock>
+
+    <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text=" Add a hex value for compatibility mode flag (2DDHUDSettings). This value is set in 3dmigoto's ini file when you force CM mode in Installation or Hotkeys tab."/>
     </TextBlock>
 
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
