@@ -91,6 +91,7 @@
     <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
     <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
     <system:String x:Key="ProductPageUrl">URL zur Produktseite:</system:String>
+    <system:String x:Key="CmFlag">Flag für Kompatibilitätsmodus:</system:String>
     <system:String x:Key="Profile2DMode">Nvidia Inspector-Profil für 2D Mode:</system:String>
     <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Mode:</system:String>
     <system:String x:Key="FixState">Zustand des 3D Fixes:</system:String>
@@ -507,7 +508,7 @@ Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:St
     <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil zu nutzen.Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
     <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">Es wird empfohlen den 3D-Fix vor dem Spielstart zu installieren. &#x0d;&#x0d;Möchten Sie diesen jetzt installieren?</system:String>
     <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
-    <system:String x:Key="MessageProfile3D" xml:space="preserve">"Ein Treiberprofil ist erforderlich, damit der Fix korrekt funktioniert.Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">"Ein Treiberprofil ist erforderlich, damit der Fix korrekt funktioniert. Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
     <system:String x:Key="ErrorGameLaunch">Fehler: Spiele konnte nicht gestartet werden.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Fehler: Webseite konnte nicht geöffnet werden.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Referenz-Daten wurden erfolgreich in die Datenbank übertragen.</system:String>
@@ -645,6 +646,10 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Sie können hier einen Link zu einem Online-Shop mit Produktinformationen zum Spiel zur Verfügung stellen, welcher aufgerufen wird, wenn Sie auf den Button 'Produktseite' im Installations-Tab klicken. Dieses Feld dient als Alternative, falls ein Spiel nicht über den Steam Shop angeboten werden sollte."/>
+    </TextBlock>
+
+    <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text=" Fügen Sie heir eine hexadezimale Zahl für den Kompatibilitätsmodus (2DDHUDSettings) ein. Dieser Wert wird automatisch in die Ini-Datei von 3dmigoto übertragen, wenn der Kompatibilitätsmodus im Installations- order Hotkeys Tab erzwungen wird."/>
     </TextBlock>
 
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
