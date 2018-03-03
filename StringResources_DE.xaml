@@ -75,25 +75,30 @@
     <!--....................  New/Edit Profile Tab Begin .......................... -->
     
     <system:String x:Key="GameTitle">Titel des Spiels:</system:String>
+    <system:String x:Key="InstallDir">Installationsordner:</system:String>
+    <system:String x:Key="InstallDirName">Name des Installationsordners:</system:String>
     <system:String x:Key="RelativeInstallPath">Relativer Installationspfad:</system:String>
     <system:String x:Key="CustomRootPath">Benuterdefinierter Wurzel- / Spielpfad:</system:String>
     <system:String x:Key="RelativeGameIniPath">Relativer Pfad zur Ini-Datei des Spiels:</system:String>
     <system:String x:Key="AdditionalRelativeGameIniPath">Zusätzlicher relative Pfad zur Spiel-Ini:</system:String>
+    <system:String x:Key="HelixPostUpdated">Helix Post zuletzt aktualisiert:</system:String>
+    <system:String x:Key="SetDate">Datum setzen</system:String>
+    <system:String x:Key="SetDateTooltip">Fügt das heutige Datum als Zeitstempel ein.</system:String>
     <system:String x:Key="DownloadLinkFix">URL zum 3D Fix:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archive:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto wrapper update:</system:String>
     <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
     
-    <system:String x:Key="WebLinkHelix">URL zum Helix / Geforce Forum:</system:String>
+    <system:String x:Key="WebLinkHelix">URL zum Helix Blog / Geforce Forum:</system:String>
     <system:String x:Key="WebLinkHelixTooltip01">Link zum Helix oder Geforce-Forum aus welchem der Fix entnommen wurde.</system:String>
 
     <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
     <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
     <system:String x:Key="ProductPageUrl">URL zur Produktseite:</system:String>
     <system:String x:Key="CmFlag">Flag für Kompatibilitätsmodus:</system:String>
-    <system:String x:Key="Profile2DMode">Nvidia Inspector-Profil für 2D Mode:</system:String>
-    <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Mode:</system:String>
+    <system:String x:Key="Profile2DMode">Nvidia Inspector-Profil für 2D Modus:</system:String>
+    <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Modus:</system:String>
     <system:String x:Key="FixState">Zustand des 3D Fixes:</system:String>
     <system:String x:Key="SteamAppID">Steam App ID:</system:String>
 
@@ -453,11 +458,23 @@
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="WeblinkInvalid" xml:space="preserve">Fehler: Helix Post konnte nicht abgerufen werden.&#x0d;&#x0d;Der Link zum Blog ist ungültig.</system:String>
+    <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Fehler: Helix Post konnte nicht abgerufen werden. &#x0d;&#x0d;Bitte geben sie einen Weblink zum Helix Post an.</system:String>
+    <system:String x:Key="ViewerNotFound" xml:space="preserve">Fehler: 3D Vision-Photoanzeige konnte nicht gefunden werden.</system:String>
+    <system:String x:Key="HelixPostError" xml:space="preserve">Fehler: Helix Post konnte nicht heruntergeladen werden.</system:String>
     <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">Um bestmögliche Ergebnisse zu erzielen sollte die Zielauflösung für Upscaling auf die native Auflösung des Bildschirms gesetzt werden. &#x0d;&#x0d;Möchten Sie die native Auflösung jetzt setzen?&#x0d;&#x0d;Erkannte native Auflösung: </system:String>
     <system:String x:Key="Install3dmigoto02">3dmigoto installieren:</system:String>
     <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">Alle Ini-Einstellungen wurden auf die originalen Standardwerte zurückgesetzt. &#x0d;&#x0d;Bitte vergessen Sie nicht die Änderungen abzuspeichern.</system:String>
+    <system:String x:Key="EnableStereoWarning" xml:space="preserve">Zum Betrachten dieses Stereo-Bilds ist die Aktivierung der stereoskopischen 3D-Funktion erforderlich.
+
+Möchten Sie diese jetzt aktivieren und fortfahren?
+        
+Anmerkung: Die Desktop-Bildwiederholfrequenz sollte zur Nutzung des Features auf 120 Hz gestellt sein. 
+
+Tipp: Im Tab "Nvidia Settings" finden Sie eine Option zum automatischen Wechsel auf 120 Hz (s."Desktop-Bildwiederholrate im 3D-Modus").</system:String>
+    
     <system:String x:Key="GameTitleEmpty">Fehler: Der Titel des Spiels darf nicht leer sein.</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Hinweis: Es wurde noch keine SteamApp Id für das Profil gesetzt. Diese ist erforderlich um Steam-Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Hinweis: Es wurde noch keine Game Exe für das Profil gesetzt. Diese ist allgemein erforderlich um Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
@@ -482,9 +499,10 @@ Anmerkungen:
     <system:String x:Key="FixProfileCreated">Fix-Profil wurde erfolgreich erstellt.</system:String>
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Alle Icons wurden erfolgreich zurückgesetzt und im Hintergrund neu heruntergeladen.&#x0d;&#x0d;Anmerkung: Sämtliche alten Icons wurden in einen Backup-Ordner innerhalb der jeweiligen Profilordner gesichert und können bei Bedarf wiederhergestellt werden. </system:String>
     <system:String x:Key="ServerNotAvailable">Server nicht erreichbar. Bitte versuchen Sie es später erneut.</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie diese updaten?&#x0d;&#x0d;Versionshinweise für Fix-Profile:&#x0d;&#x0d;</system:String>
+    <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie diese updaten?&#x0d;&#x0d;</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Der installierte 3D Fix ist veraltet. &#x0d;&#x0d;Möchten Sie diesen jetzt auf die aktuellste Version updaten?&#x0d;&#x0d;Hinweis: Bei diesem Vorgang wird der alte Fix deinstalliert bevor der Neue heruntergeladen und installiert wird. Benutzerdefinierte Hotkeys bleiben dabei erhalten.</system:String>
     <system:String x:Key="NoUpdates" xml:space="preserve">Keine Updates verfügbar. &#x0d;&#x0d;Fix-Profile sind auf dem aktuellsten Stand.</system:String>
-    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Eine neue Version des 3D Fix Managers ist verfügbar. Möchten Sie updaten?&#x0d;&#x0d;Versionshinweise für 3D Fix Manager:&#x0d;&#x0d;</system:String>
+    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Eine neue Version des 3D Fix Managers ist verfügbar. Möchten Sie updaten?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">Wenn Sie Bugs melden oder Anregungen für neue Features liefern wollen, so senden Sie bitte eine E-Mail an: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
     <system:String x:Key="NoChangeNotesFound">Sorry, es wurden keine Versionshinweise gefunden.</system:String>
     <system:String x:Key="ChangeNotesManager">Versionshinweise für 3D Fix Manager:</system:String>
@@ -619,6 +637,11 @@ Pauldusler</system:String>
         <Run Text="Feld leer lassen, wenn der Fix in das Wurzelverzeichnis des Spiels kopiert werden soll."/>
     </TextBlock>
 
+    <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Geben Sie hier den Namen des Installations- bzw. Wurzelordners des Spiels an (nur den Ordernamen, keine Pfadangabe)."/><LineBreak/><LineBreak/>
+        <Run Text="Diese Angabe ist für die Erkennung des Spiels anhand von Suchpfaden relevant."/>
+    </TextBlock>
+
     <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Dieses Feld nur ausfüllen, wenn das installierte Spiel nicht automatischt durch den 3D Fix Manager erkannt wird."/><LineBreak/><LineBreak/>
         <Run Text="Wählen Sie den absoluten Pfad zum Wurzelverzeichnis des Spiels."/><LineBreak/><LineBreak/>
@@ -630,6 +653,12 @@ Pauldusler</system:String>
         <Run Text="Sie können sich anhand des Fix-Profils für das Spiel "/><Italic><Run Text="&quot;Outlast&quot;"/></Italic><Run Text=" ein Beispiel hierür ansehen."/><LineBreak/><LineBreak/>
         <Run Text="Klicken Sie auf die Schaltfläche"/><Italic><Run Text="&quot;Werte für 2D&quot;"/></Italic><Run Text=" um Schlüssel/Werte - Paare für die ini oder cfg-Datei zu definieren. Diese werden gesetzt sobald ein Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird."/><LineBreak/><LineBreak/>
         <Run Text ="Analog gilt dies für die Schaltfläche "/><Italic><Run Text="&quot;Werte für 3D&quot;"/></Italic><Run Text=". Die Schlüssel, die hier definiert werden, werden beim Starten des Spiels oder beim Deinstallieren des Fixes gesetzt."/>
+    </TextBlock>
+
+    <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Speichert das Datum der letzten Aktualisierung des Helix Posts."/><LineBreak/><LineBreak/>
+        <Run Text="Der Zeitstempel is notwendig um erkennen zu können, ob ein aktualisierter Helix Post online vorliegt."/><LineBreak/><LineBreak/>
+        <Run Text="Es wird empfohlen den Zeitstempel nicht manuell zu setzen, da dies automatisch geschieht."/>
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
