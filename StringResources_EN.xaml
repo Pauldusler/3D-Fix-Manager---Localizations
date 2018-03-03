@@ -75,16 +75,21 @@
 
     <system:String x:Key="GameTitle">Game Title:</system:String>
     <system:String x:Key="RelativeInstallPath">Relative Install Path:</system:String>
+    <system:String x:Key="InstallDir">Install Folder:</system:String>
+    <system:String x:Key="InstallDirName">Install Folder Name:</system:String>
     <system:String x:Key="CustomRootPath">Custom Root / Game Path:</system:String>
     <system:String x:Key="RelativeGameIniPath">Relative Game Ini Path:</system:String>
     <system:String x:Key="AdditionalRelativeGameIniPath">Additional relative Game Ini Path:</system:String>
+    <system:String x:Key="HelixPostUpdated">Helix Post last updated:</system:String>
+    <system:String x:Key="SetDate">Set Date</system:String>
+    <system:String x:Key="SetDateTooltip">Sets today's date as a timestamp.</system:String>
     <system:String x:Key="DownloadLinkFix">URL to 3D Fix:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">Additional URL to 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Fix Archive Extractor:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto wrapper update:</system:String>
     <system:String x:Key="StartTool">Start additional Exe:</system:String>
 
-    <system:String x:Key="WebLinkHelix">URL to Helix / Geforce Forum:</system:String>
+    <system:String x:Key="WebLinkHelix">URL to Helix Blog / Geforce Forum:</system:String>
 
     <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
     <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
@@ -137,7 +142,7 @@
     <system:String x:Key="Cancel">Cancel</system:String>
     <system:String x:Key="Save">Save</system:String>
     <system:String x:Key="SaveChanges">Save Changes</system:String>
-    <system:String x:Key="CreateProfile">Profil erstellen</system:String>
+    <system:String x:Key="CreateProfile">Create Profile</system:String>
     
     <!--....................  Edit Profile Tab End .......................... -->
 
@@ -451,11 +456,23 @@
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
     
     <!-- Messages -->
+    <system:String x:Key="WeblinkInvalid" xml:space="preserve">Error: Helix Post could not be downloaded.&#x0d;&#x0d;The link to the blog is not valid.</system:String>
+    <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Error: Helix Post could not be downloaded. &#x0d;&#x0d;Please provide a weblink to the Helix Blog first.</system:String>
+    <system:String x:Key="ViewerNotFound" xml:space="preserve">Error: 3D Vision Photo Viewer was not found.</system:String>
+    <system:String x:Key="HelixPostError" xml:space="preserve">Error: Helix Post could not be downloaded.</system:String>
     <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">For best results you should set target resolution for upscaling to the native resolution of your display. &#x0d;&#x0d;Do you want to set native resolution now?&#x0d;&#x0d;Detected native resolution: </system:String>
     <system:String x:Key="Install3dmigoto02">Install 3dmigoto:</system:String>
     <system:String x:Key="InstallHelixMod02">Install HelixMod:</system:String>
     <system:String x:Key="RemoveProfile">Remove Fix Profile?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">All ini settings were reseted to default values. &#x0d;&#x0d;Don't forget to save changes.</system:String>
+    <system:String x:Key="EnableStereoWarning" xml:space="preserve">For viewing this stereo image Nvidia Stereoscopic 3D has to be enabled.
+
+Do you want to enable it now and continue?
+  
+Note: Monitor desktop refresh rate should be set to 120 Hz in order to use this feature.
+        
+Tip: In "Nvidia 3D Settings" tab you'll find an option for automatically switching to 120 Hz (see "Desktop refresh rate 3D mode")</system:String>
+    
     <system:String x:Key="GameTitleEmpty">Error: Game Title must not be empty</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Note: You haven't set a Steam App ID for this profile yet which is required for starting Steam games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Note: You haven't set a Game Exe for the profile yet. This is generally required for starting games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
@@ -480,9 +497,10 @@ Notes:
     <system:String x:Key="FixProfileCreated">Fix Profile successfully created.</system:String>
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">All icons were successfully reseted and downloaded in the background.&#x0d;&#x0d;Note: All old icons have been moved to a backup folder inside of the individual profile folders for restoring them if needed.</system:String>
     <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?&#x0d;&#x0d;Change Notes Fix Profiles:&#x0d;&#x0d;</system:String>
+    <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">The installed 3D fix is outdated.&#x0d;&#x0d;Do you want to update to the latest version?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
     <system:String x:Key="NoUpdates" >No Updates available. Fix profiles up to date.</system:String>
-    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?&#x0d;&#x0d;Change Notes 3D Fix Manager:&#x0d;&#x0d;</system:String>
+    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">If you want to report bugs or have ideas for new features please send an e-mail to: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
     <system:String x:Key="NoChangeNotesFound">Sorry, no Change Notes found.</system:String>
     <system:String x:Key="ChangeNotesManager">Change Notes 3D Fix Manager:</system:String>
@@ -617,6 +635,11 @@ Pauldusler</system:String>
         <Run Text="Leave this field empty if the fix shall be installed to the root folder of the game."/>
     </TextBlock>
 
+    <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Fill in the name of the Install - / root Folder of the game (only the folder name not the path)."/><LineBreak/><LineBreak/>
+        <Run Text="This information is important for detecting the game via search paths."/>
+    </TextBlock>
+
     <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
         <Run Text="Only fill in this field if an installed game is not automatically detected by 3D Fix Manager."/><LineBreak/><LineBreak/>
         <Run Text="Choose the absolute path to the root folder of the game."/><LineBreak/><LineBreak/>
@@ -628,6 +651,12 @@ Pauldusler</system:String>
         <Run Text="Have a look at the fix profile for game "/><Italic><Run Text="&quot;Outlast&quot;"/></Italic><Run Text=" if you need an example."/><LineBreak/><LineBreak/>
         <Run Text="Click on "/><Italic><Run Text="&quot;Values for 2D&quot;"/></Italic><Run Text=" button for defining ini or cfg key-value pairs. These will be set when starting the game in 2D mode or uninstalling the fix."/><LineBreak/><LineBreak/>
         <Run Text ="The same applies when clicking on "/><Italic><Run Text="&quot;Values for 3D&quot;"/></Italic><Run Text=" button. The keys defined there will be set when starting the game in 3D mode or installing the fix."/>
+    </TextBlock>
+
+    <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
+        <Run Text="Saves the date when the helix post was last updated."/><LineBreak/><LineBreak/>
+        <Run Text="The timestamp is necessary for detecting if there is an updated helix post available online."/><LineBreak/><LineBreak/>
+        <Run Text="You should not set this date manually as this is done automatically."/>
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
