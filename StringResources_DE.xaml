@@ -364,6 +364,7 @@
     <system:String x:Key="StereoRefreshRate">Stereo - Bildwiederholrate:</system:String>
     <system:String x:Key="Change3dRefreshRate">Desktop-Bildwiederholrate im 3D Modus:</system:String>
     <system:String x:Key="Change2dRefreshRate">Desktop-Bildwiederholrate im 2D Modus:</system:String>
+    <system:String x:Key="RefreshRateWhenClosing">Desktop-Bildwiederholrate nach Beenden:</system:String>
     <system:String x:Key="Global2dDriverProfile">2D-Treiberprofil:</system:String>
     <system:String x:Key="Global3dDriverProfile">3D-Treiberprofil:</system:String>
 
@@ -523,10 +524,13 @@ Sollte das Spiel beim Start abstürzen oder der Framerate-Limiter keinen Effekt 
 Für perfekte Ergebnisse sollte Vsync im Spiel aktiviert und die Grafikkarte stark genug sein um 60 FPS zu halten.
 
 Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:String>
-    <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil zu nutzen.Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
     <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">Es wird empfohlen den 3D-Fix vor dem Spielstart zu installieren. &#x0d;&#x0d;Möchten Sie diesen jetzt installieren?</system:String>
-    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
-    <system:String x:Key="MessageProfile3D" xml:space="preserve">"Ein Treiberprofil ist erforderlich, damit der Fix korrekt funktioniert. Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt übersprüngen, indem Sie 'Nein' wählen.</system:String>
+    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil von "{0}" wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
+    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil wiederherzustellen. Hierfür muss das aktuell zugewiesene Profil "{0}" mit dem Treiberprofil "{1}" getauscht werden.&#x0d;&#x0d;Möchten Sie diesen Swap nun durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurden können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil von "{0}" zu nutzen.&#x0d;&#x0d;Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil zu nutzen. Hierfür muss das aktuell zugewiesene Profil "{0}" mit dem Treiberprofil "{1}" getauscht werden.&#x0d;&#x0d;Möchten Sie diesen Swap nun durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">Die Installation eines Treiberprofils für "{0}" ist erforderlich, damit der 3D Fix korrekt funktioniert.&#x0d;&#x0d;Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">Es ist erforderlich, dass das aktuell zugewiesene Treiberprofil "{0}" mit dem Profil "{1}" getauscht wird, damit der 3D Fix korrekt funktioniert.&#x0d;&#x0d;Möchten Sie diesen Swap nun mittels Nvidia Profile Inspector durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurden können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
     <system:String x:Key="ErrorGameLaunch">Fehler: Spiele konnte nicht gestartet werden.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Fehler: Webseite konnte nicht geöffnet werden.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Referenz-Daten wurden erfolgreich in die Datenbank übertragen.</system:String>
@@ -550,7 +554,7 @@ Vielen Dank,
 Pauldusler</system:String>
     <system:String x:Key="DonateShaderHackers01">3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.</system:String>
     <system:String x:Key="DonateShaderHackers02">Sie sind verantwortlich dafür, dass 3D-Gaming bis heute am Leben gehalten wurde. Wenn Sie HelixMod unterstützen wollen, sind Spenden herzlich willkommen.</system:String>
-    <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhackern an welche Sie eine Spende entrichten können:</system:String>
+    <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhacker an welche Sie eine Spende entrichten können:</system:String>
     <system:String x:Key="Thanks">Vielen Dank,</system:String>
     <system:String x:Key="YourHelixModTeam">Ihr HelixMod-Team</system:String>
     <system:String x:Key="OpenPaypal">PayPal aufrufen</system:String>
@@ -609,328 +613,410 @@ Pauldusler</system:String>
     
     <!-- XAML formated ToolTips Begin -->
 
-    <!-- Installation Tab -->
+    <!-- Installation Tab ToolTips -->
     <TextBlock x:Key="ForceCMToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Zwingt DirectX 11 Spiele dazu imm Kompatibilitätsmodus (auch bekannt als Fake 3D-Modus) zu starten indem das Treiberprofil automatisch angepasst wird."/><LineBreak/><LineBreak/>
-        <Run Text="Wenn der Kompatiblitätsmodus nicht korrekt aussieht, dann navigieren Sie zum "/>  <Italic><Run Text="&quot;Hotkeys&quot;"/></Italic>  <Run Text=" Tab and wählen einen anderen Wert für "/>
-        <Italic><Run Text="&quot;2DDHUDSettings&quot;"/></Italic> <Run Text=" im Bereich "/>  <Italic><Run Text="&quot;Treiberprofil - Einstellungen&quot;."/></Italic>
+       Zwingt DirectX 11 Spiele dazu imm Kompatibilitätsmodus (auch bekannt als Fake 3D-Modus) zu starten indem das Treiberprofil automatisch angepasst wird.<LineBreak/><LineBreak/>
+       Wenn der Kompatiblitätsmodus nicht korrekt aussieht, dann navigieren Sie zum <Italic><Bold>"Hotkeys"</Bold></Italic> Tab and wählen einen anderen Wert für 
+       <Italic><Bold>"2DDHUDSettings"</Bold></Italic> im Bereich <Italic><Bold>"Treiberprofil - Einstellungen</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Deaktiviert / aktiviert den Fix manuell."/><LineBreak/><LineBreak/>
-        <Run Text="Anmerkung: Das De- und Aktivieren von Fixes geschieht automatisch, wenn auf die Schaltflächen"/><Italic>
-        <Run Text="&quot;2D Spielen&quot;"/></Italic><Run Text=" / "/><Italic><Run Text="&quot;3D Spielen&quot;"/></Italic><Run Text=" geklickt wird."/>
+        Aktiviert / deaktiviert den 3D Fix manuell.<LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> Das De- und Aktivieren von 3D Fixes geschieht automatisch, wenn auf die Schaltflächen <Span FontWeight="Bold" FontStyle="Italic">"2D spielen"</Span> oder <Span FontWeight="Bold" FontStyle="Italic">"3D spielen"</Span> geklickt wird. 
     </TextBlock>
 
-    <!-- New / Edit Profile Tab -->
+
+    <!-- New / Edit Profile Tab ToolTips -->
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
-        <Bold><Run Text="Titel des Spiels"/></Bold><Run Text=" muss genauso lauten wie in der Steam-Bibliothek aufgeführt oder unter den installierten Programmen in "/>
-        <Italic><Run Text="&quot;Windows Systemsteuerung / Programme und Features&quot; gelistet."/></Italic><LineBreak/><LineBreak/>
-        <Run Text="Überprüfen Sie die Liste auf der rechten Seite um die Namen aller installierten Programme einzusehen, die 3D Fix Manager anhand der Windows Registry erkannt hat. Wählen Sie ein Programm aus der Liste aus, um seinen Namen als Spieltitel zu übernehmen."/>
+        Der Titel des Spiels sollte genauso lauten wie er z.B. in der Steam-Bibliothek oder unter den installierten Programmen in der <Italic> Windows Systemsteuerung</Italic> gelistet ist.<LineBreak/><LineBreak/>
+        Sie können anhand der Liste auf der rechten Seite überprüfen, welche installierten Programme der 3D Fix Manager aus der Windows Registry herauslesen konnte. Wählen Sie ein Programm aus der Liste aus, um seinen Namen als Spieltitel zu übernehmen.
     </TextBlock>
 
     <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Relativer Pfad zum Unterverzeichnis des Spiels, in welches der 3D Vision Fix kopiert werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="In den meisten Fällen zeigt der korrekte Installationspfad zu dem Ordner in welchem sich die Exe zum Starten des Spiels befindet."/><LineBreak/><LineBreak/><Bold>
-        <Run Text="Beispiel:"/></Bold><Run Text=" wenn der absolute Pfad "/><Italic><Run Text="&quot;c:\gameTitle\bin\game.exe&quot;"/>
-        </Italic><Run Text=" lautet, dann ist der resultierende relative Pfad "/><Italic><Run Text="&quot;bin&quot;."/></Italic><LineBreak/><LineBreak/>
-        <Run Text="Feld leer lassen, wenn der Fix in das Wurzelverzeichnis des Spiels kopiert werden soll."/>
+        Relativer Pfad zum Unterverzeichnis des Spiels, in welches der 3D Vision Fix kopiert werden soll.<LineBreak/><LineBreak/>
+        In den meisten Fällen zeigt der korrekte Installationspfad zu dem Ordner in welchem sich die Exe zum Starten des Spiels befindet.<LineBreak/><LineBreak/>
+        <Bold>Beispiel:</Bold> wenn der absolute Pfad <Italic>"c:\gameTitle\bin\game.exe"</Italic> lautet, dann ergibt sich als resultierender relativer Pfad: <Italic>"bin"</Italic>.<LineBreak/><LineBreak/>
+        Bitte das Feld leer lassen, wenn der Fix in das Wurzelverzeichnis des Spiels kopiert werden soll.
     </TextBlock>
 
     <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben Sie hier den Namen des Installations- bzw. Wurzelordners des Spiels an (nur den Ordernamen, keine Pfadangabe)."/><LineBreak/><LineBreak/>
-        <Run Text="Diese Angabe ist für die Erkennung des Spiels anhand von Suchpfaden relevant."/>
+       Geben Sie hier den Namen des Installations- bzw. Wurzelordners des Spiels an (nur den Ordernamen, keine Pfadangabe).<LineBreak/><LineBreak/>
+       Diese Angabe ist für die Erkennung des Spiels anhand von Suchpfaden relevant.
     </TextBlock>
 
     <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Dieses Feld nur ausfüllen, wenn das installierte Spiel nicht automatischt durch den 3D Fix Manager erkannt wird."/><LineBreak/><LineBreak/>
-        <Run Text="Wählen Sie den absoluten Pfad zum Wurzelverzeichnis des Spiels."/><LineBreak/><LineBreak/>
-        <Run Text="Anmerkung: der 'Relative Installationspfad' muss weiterhin gesetzt werden, wenn der Fix in einen Unterordner des Spiels installiert werden soll."/>
+       Dieses Feld nur ausfüllen, wenn das installierte Spiel nicht automatischt durch den 3D Fix Manager erkannt wird.<LineBreak/><LineBreak/>
+        Wählen Sie den absoluten Pfad zum Wurzelverzeichnis des Spiels.<LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> der <Italic>"Relative Installationspfad"</Italic> muss weiterhin gesetzt werden, wenn der Fix in einen Unterordner des Spiels installiert werden soll.
     </TextBlock>
 
     <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben Sie den relativen Pfad (ausgehend von C:\Users\Username folder oder dem Wurzelpfad des Spiels) zur ini / cfg-Datei, die bearbeitet werden soll, um die Funktionsfähigkeit des Fixes zu bewerkstelligen oder um Grafik-Einstellungen zu optimieren (z.B. Motion Blur für Stereo 3D deaktivieren)."/><LineBreak/><LineBreak/>
-        <Run Text="Sie können sich anhand des Fix-Profils für das Spiel "/><Italic><Run Text="&quot;Outlast&quot;"/></Italic><Run Text=" ein Beispiel hierür ansehen."/><LineBreak/><LineBreak/>
-        <Run Text="Klicken Sie auf die Schaltfläche"/><Italic><Run Text="&quot;Werte für 2D&quot;"/></Italic><Run Text=" um Schlüssel/Werte - Paare für die ini oder cfg-Datei zu definieren. Diese werden gesetzt sobald ein Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird."/><LineBreak/><LineBreak/>
-        <Run Text ="Analog gilt dies für die Schaltfläche "/><Italic><Run Text="&quot;Werte für 3D&quot;"/></Italic><Run Text=". Die Schlüssel, die hier definiert werden, werden beim Starten des Spiels oder beim Deinstallieren des Fixes gesetzt."/>
+        Geben Sie den relativen Pfad (ausgehend von C:\Users\Username folder oder dem Wurzelpfad des Spiels) zur ini / cfg-Datei, die bearbeitet werden soll, um die Funktionsfähigkeit des Fixes zu bewerkstelligen oder um Grafik-Einstellungen zu optimieren (z.B. Motion Blur für Stereo 3D deaktivieren).<LineBreak/><LineBreak/>
+        Sie können sich anhand des Fix-Profils für das Spiel <Span FontWeight="Bold" FontStyle="Italic">"Outlast"</Span> ein Beispiel hierür ansehen.<LineBreak/><LineBreak/>
+        Klicken Sie auf die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 2D"</Span> um Schlüssel/Werte - Paare für die ini oder cfg-Datei zu definieren. Diese werden gesetzt sobald ein Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird.<LineBreak/><LineBreak/>
+        Analog gilt dies für die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 3D"</Span>. Die Schlüssel, die hier definiert werden, werden beim Starten des Spiels oder beim Deinstallieren des Fixes gesetzt.
     </TextBlock>
 
     <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Speichert das Datum der letzten Aktualisierung des Helix Posts."/><LineBreak/><LineBreak/>
-        <Run Text="Der Zeitstempel is notwendig um erkennen zu können, ob ein aktualisierter Helix Post online vorliegt."/><LineBreak/><LineBreak/>
-        <Run Text="Es wird empfohlen den Zeitstempel nicht manuell zu setzen, da dies automatisch geschieht."/>
+        Speichert das Datum der letzten Aktualisierung des Helix Posts.<LineBreak/><LineBreak/>
+        Der Zeitstempel is notwendig um erkennen zu können, ob ein aktualisierter Helix Post online vorliegt.<LineBreak/><LineBreak/>
+        Es wird empfohlen den Zeitstempel nicht manuell zu setzen, da dies automatisch geschieht.
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Direkter Download-Link zum 3D Vision Fix."/>
+        Direkter Download-Link zum 3D Vision Fix
     </TextBlock>
 
     <TextBlock x:Key="AdditionalDownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Stellen Sie einen zusätzlichen Download-Link zur Verügung, wenn der 3D Vision Fix in mehrere Download-Links aufgeteilt wurde."/>
+       Stellen Sie einen zusätzlichen Download-Link zur Verügung, wenn der 3D Vision Fix in mehrere Download-Links aufgeteilt wurde.
     </TextBlock>
 
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Stellen Sie diese Option auf 'Nein' falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt."/>
+       Stellen Sie diese Option auf 'Nein' falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt.
     </TextBlock>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Sie können hier einen Link zu einem Online-Shop mit Produktinformationen zum Spiel zur Verfügung stellen, welcher aufgerufen wird, wenn Sie auf den Button 'Produktseite' im Installations-Tab klicken. Dieses Feld dient als Alternative, falls ein Spiel nicht über den Steam Shop angeboten werden sollte."/>
+       Sie können hier einen Link zu einem Online-Shop mit Produktinformationen zum Spiel zur Verfügung stellen, welcher aufgerufen wird, wenn Sie auf den Button 'Produktseite' im Installations-Tab klicken. Dieses Feld dient als Alternative, falls ein Spiel nicht über den Steam Shop angeboten werden sollte.
     </TextBlock>
 
     <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text=" Fügen Sie heir eine hexadezimale Zahl für den Kompatibilitätsmodus (2DDHUDSettings) ein. Dieser Wert wird automatisch in die Ini-Datei von 3dmigoto übertragen, wenn der Kompatibilitätsmodus im Installations- order Hotkeys Tab erzwungen wird."/>
+       Fügen Sie heir eine hexadezimale Zahl für den Kompatibilitätsmodus (2DDHUDSettings) ein. Dieser Wert wird automatisch in die Ini-Datei von 3dmigoto übertragen, wenn der Kompatibilitätsmodus im Installations- order Hotkeys Tab erzwungen wird.
     </TextBlock>
 
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Der Fix wird automatisch nach dem Download extrahiert. Wählen Sie hier, welches eingebettete Entapckungstool hierfür verwendet werden soll: SharpCompress oder 7-zip."/>
+        Der Fix wird automatisch nach dem Download extrahiert. Wählen Sie hier, welches eingebettete Entapckungstool hierfür verwendet werden soll: SharpCompress oder 7-zip.
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Link zum Helix- oder Geforce Forum aus welchem der Fix entnommen wurde."/><LineBreak/><LineBreak/>
-        <Run Text="Wenn Sie auf die Schaltfläche "/><Italic><Run Text="&quot;HelixMod&quot;"/></Italic><Run Text="im Tab"/><Italic><Run Text="&quot;Installation&quot;"/></Italic>
-        <Run Text=" klicken, wird der angegebene Link im Webbrowser geöffnet."/>
+        Link zum Helix- oder Geforce Forum aus welchem der Fix entnommen wurde.<LineBreak/><LineBreak/>
+        Wenn Sie auf die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"HelixMod-Blog"</Span> im Tab <Span FontWeight="Bold" FontStyle="Italic">"Installation"</Span> klicken, wird der angegebene Link im Webbrowser geöffnet.
     </TextBlock>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Sie können ein optionales Icon für das Spiel zur Verfügung stellen, welches im &quot;Installation&quot; Tab angezeigt werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="Die empfohlene Auflösung für das Icon liegt bei 128x128 Pixel."/><LineBreak/><LineBreak/>
-        <Run Text="Um ein innerhalb des Profilordners aktives Icon zu entfernen klicken Sie bitte auf 'Icon entfernen' und anschließend auf 'Speichern'. Eine Sicherung des alten Icons wird hierbei angelegt und in einen Backup-Ordner innerhalb des Profil-Ordners verschoben."/>
+       Sie können ein optionales Icon für das Spiel zur Verfügung stellen, welches im <Span FontWeight="Bold" FontStyle="Italic">"Installation"</Span> Tab angezeigt werden soll.<LineBreak/><LineBreak/>
+       Die empfohlene Auflösung für das Icon liegt bei 128x128 Pixel.<LineBreak/><LineBreak/>
+       Um ein innerhalb des Profilordners aktives Icon zu entfernen klicken Sie bitte auf <Span FontWeight="Bold" FontStyle="Italic">"Icon entfernen"</Span> und anschließend auf <Span FontWeight="Bold" FontStyle="Italic">"Speichern"</Span>. 
+       Eine Sicherung des alten Icons wird hierbei angelegt und in einen Backup-Ordner innerhalb des Profil-Ordners verschoben.
     </TextBlock>
 
     <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Stellen Sie hier eine URL zu einem Spiele-Icon zur Verfügung, welches automatisch heruntergeladen werden soll, wenn 3D Fix Manager nicht in der Lage war ein lokales Icon für das Spiel zu finden."/><LineBreak/><LineBreak/>
-        <Run Text="Zur einfacheren Icon-Suche wird empfohlen &quot;TheGamesDb Icon&quot; aus der Liste auszuwählen und anschließend auf &quot;URL suchen&quot; zu klicken."/><LineBreak/><LineBreak/>
-        <Run Text="Falls Sie ein neues Icon herunterladen wollen, jedoch aber bereits ein lokales Icon vorhanden ist, so klicken Sie zusätzlich bitte auf die darüberliegende Schaltfläche &quot;Icon entfernen&quot;. Vergessen Sie nicht die Änderungen zu speichern."/>
+       Stellen Sie hier eine URL zu einem Spiele-Icon zur Verfügung, welches automatisch heruntergeladen werden soll, wenn 3D Fix Manager nicht in der Lage war ein lokales Icon für das Spiel zu finden."/><LineBreak/><LineBreak/>
+       Zur einfacheren Icon-Suche wird empfohlen <Span FontWeight="Bold" FontStyle="Italic">"TheGamesDb Icon"</Span> aus der Liste auszuwählen und anschließend auf <Span FontWeight="Bold" FontStyle="Italic">"URL suchen"</Span> zu klicken.<LineBreak/><LineBreak/>
+       Falls Sie ein neues Icon herunterladen wollen, jedoch aber bereits ein lokales Icon vorhanden ist, so klicken Sie zusätzlich bitte auf die darüberliegende Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Icon entfernen"</Span>. Vergessen Sie nicht die Änderungen zu speichern.
     </TextBlock>
 
     <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text=".Nip-Datei für den Nvidia Profile Inspector auswählen, um den Originalzustand des Treiberprofils für den 2D-Modus wiederherstellen zu können."/><LineBreak/><LineBreak/>
-        <Run Text="Das ausgewählte Profil wird automatisch in den Nvidia Profile Inspector importiert, wen das Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird."/><LineBreak/><LineBreak/>
-        <Run Text="Darüber hinaus können Sie definieren, ob eine Hinweismeldung vor der Installation des Treiberprofils erscheinen soll ('Installation mit Dialog') oder nicht ('Unbeaufsichtigte Installation'). Aktivieren Sie "/><Run Text=" "/>
-        <Italic><Run Text="'Installation von Treiberprofilen wird durch Fix-Profile gesteuert'"/></Italic><Run Text=" im Tab 'Einstellungen' damit diese Konfiguration greift."/>
+        .Nip-Datei für den Nvidia Profile Inspector auswählen, um den Originalzustand des Treiberprofils für den 2D-Modus wiederherstellen zu können.<LineBreak/><LineBreak/>
+        Das ausgewählte Profil wird automatisch in den Nvidia Profile Inspector importiert, wen das Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird.<LineBreak/><LineBreak/>
+        Darüber hinaus können Sie definieren, ob eine Hinweismeldung vor der Installation des Treiberprofils erscheinen soll <Span FontWeight="Bold" FontStyle="Italic">"Installation mit Dialog" </Span> oder nicht <Span FontWeight="Bold" FontStyle="Italic">"Unbeaufsichtigte Installation"</Span>. 
+        Aktivieren Sie <Span FontWeight="Bold" FontStyle="Italic">Installation von Treiberprofilen wird durch Fix-Profile gesteuert"</Span> im Tab <Italic>"Einstellungen"</Italic> damit diese Konfiguration greift.
     </TextBlock>
 
     <TextBlock x:Key="Profile3DModeToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text=".Nip-Datei für den Nvidia Profile Inspector auswählen, um ein benutzerdefiniertes Treiberprofil für den 3D-Modus festlegen zu können."/><LineBreak/><LineBreak/>
-        <Run Text="Das ausgewählte Profil wird automatisch in den Nvidia Profile Inspector importiert, wen das Spiel im 3D-Modus gestartet wird."/><LineBreak/><LineBreak/>
-        <Run Text="Darüber hinaus können Sie definieren, ob eine Hinweismeldung vor der Installation des Treiberprofils erscheinen soll ('Installation mit Dialog') oder nicht ('Unbeaufsichtigte Installation'). Aktivieren Sie "/><Run Text=" "/>
-        <Italic><Run Text="'Installation von Treiberprofilen wird durch Fix-Profile gesteuert'"/></Italic><Run Text=" im Tab 'Einstellungen' damit diese Konfiguration greift."/>
+        .Nip-Datei für den Nvidia Profile Inspector auswählen, um ein benutzerdefiniertes Treiberprofil für den 3D-Modus installieren zu können.<LineBreak/><LineBreak/>
+        Das ausgewählte Profil wird automatisch in den Nvidia Profile Inspector importiert, wen das Spiel im 3D-Modus gestartet wird.<LineBreak/><LineBreak/>
+        Darüber hinaus können Sie definieren, ob eine Hinweismeldung vor der Installation des Treiberprofils erscheinen soll <Span FontWeight="Bold" FontStyle="Italic">"Installation mit Dialog" </Span> oder nicht <Span FontWeight="Bold" FontStyle="Italic">"Unbeaufsichtigte Installation"</Span>. 
+        Aktivieren Sie <Span FontWeight="Bold" FontStyle="Italic">Installation von Treiberprofilen wird durch Fix-Profile gesteuert"</Span> im Tab <Italic>"Einstellungen"</Italic> damit diese Konfiguration greift.
     </TextBlock>
 
     <TextBlock x:Key="FixStateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Information wird repräsentativ als Icon im Installations-Tab dargestellt."/><LineBreak/><LineBreak/>
-        <Run Text="Wählen Sie aus, ob der Fix problemlos nach der Installation durch den 3D Fix Manager funktioniert oder weitere Schritte durch den Benutzer erforderlich sind."/><LineBreak/><LineBreak/>
-        <Run Text="Sie können zusätzliche Informationen im Feld auf der rechten Seite zur Verfügung stellen. Diese werden als ToolTip eingeblendet, wenn über das Icon mit der Maus gefahren wird."/>
+        Diese Information wird repräsentativ als Icon im Installations-Tab dargestellt.<LineBreak/><LineBreak/>
+        Wählen Sie aus, ob der Fix problemlos nach der Installation durch den 3D Fix Manager funktioniert oder weitere Schritte durch den Benutzer erforderlich sind.<LineBreak/><LineBreak/>
+        Sie können zusätzliche Informationen im Feld auf der rechten Seite zur Verfügung stellen. Diese werden als ToolTip eingeblendet, wenn über das Icon mit der Maus gefahren wird.
     </TextBlock>
 
     <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Steam App ID ist zum Starten von Steam-Spielen sowie zum Aufruf des Steam-Shops erforderlich."/>
+        Steam App ID ist zum Starten von Steam-Spielen sowie zum Aufruf des Steam-Shops erforderlich.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben Sie den Namen der Exe-Datei ein mit welcher das Spiel gestartet wird."/>
+        Geben Sie den Namen der Exe-Datei ein mit welcher das Spiel gestartet wird.
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben Sie den Namen der Exe-Datei ein mit welcher ein zusätzliches Tool im Spielverzeichnis gestartet werden soll. Dieses Tool wird aufgerufen, sobald das Spiel gestartet wird. Dieses Feature wird beispielsweise von Mass Effect: Andromeda und INSIDE genutzt."/><LineBreak/><LineBreak/>
-        <Run Text="Sie können zusätzlich definieren, ob die Spiel-Exe dem Tool ls Startargument übergeben oder auf die Beendigung des Tools gewartet werden soll bevor das Spiel weiterhin startet."/>
+        Geben Sie den Namen der Exe-Datei ein mit welcher ein zusätzliches Tool im Spielverzeichnis gestartet werden soll. Dieses Tool wird aufgerufen, sobald das Spiel gestartet wird. Dieses Feature wird beispielsweise von Mass Effect: Andromeda und INSIDE genutzt.<LineBreak/><LineBreak/>
+        Sie können zusätzlich definieren, ob die Spiel-Exe dem Tool ls Startargument übergeben oder auf die Beendigung des Tools gewartet werden soll bevor das Spiel weiterhin startet.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil 'Superhot' um ein Beispiel hierfür zu sehen)."/><LineBreak/><LineBreak/>
-        <Run Text="Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel 'Doom' erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID)."/><LineBreak/><LineBreak/>
-        <Run Text="Zu guter Letzt können Sie einstellen, der RivaTuner Statistics Server beim Start des Spiels geöffnet oder geschlossen werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="RTSS sorgt für reduzierten Input-Lag und verbessert die Frametimes für ein flüssiges Spielgeschehen."/>
+        Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil <Italic><Bold>"Superhot"</Bold></Italic> um ein Beispiel hierfür zu sehen).<LineBreak/><LineBreak/>
+        Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel <Italic><Bold>"Doom"</Bold></Italic> erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID).<LineBreak/><LineBreak/>
+        Zu guter Letzt können Sie einstellen, der RivaTuner Statistics Server beim Start des Spiels geöffnet oder geschlossen werden soll.<LineBreak/><LineBreak/>
+        RTSS sorgt für reduzierten Input-Lag und verbessert die Frametimes für ein flüssiges Spielgeschehen.
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Beschreibung über den 3D Vision Fix verfassen."/><LineBreak/><LineBreak/>
-        <Run Text="Sie können den Text von der HelixMod-Seite kopieren oder einen eigenen Text verfassen."/>
+       Beschreibung über den 3D Vision Fix verfassen.<LineBreak/><LineBreak/>
+       Sie können den Text von der HelixMod-Seite kopieren oder einen eigenen Text verfassen.
     </TextBlock>
 
-    <!-- Hotkeys Tab -->
+    
+    <!-- Hotkeys Tab Tooltips -->
     <TextBlock x:Key="KeyTypeToolTip" TextWrapping="Wrap" Width="300">
-        <Bold><Run Text="Cycle:"/></Bold><Run Text=" wechselt bei Tastendruck des Hotkeys zum nächsten 3D-Preset. Sobald das Letzte Preset erreicht ist, wird wieder zum ersten Preset geschaltet."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Hold:"/></Bold><Run Text=" aktiviert das 3D-Preset nur so lange, wie Sie die Taste gedrückt halten. Bei Loslassen der Taste wird wieder zum ursprünglichen Preset gewechselt. Es wird nur eine maximale Anzahl von 2 Presets bei diesem Hotkey-Typ unterstützt."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Toggle:"/></Bold><Run Text=" Ein / Aus - Schalter für ein 3D-Preset. Es wird maximal 1 Preset bei diesem Hotkey-Typ unterstützt."/>
+        <Bold>Cycle:"</Bold> wechselt bei Tastendruck des Hotkeys zum nächsten 3D-Preset. Sobald das Letzte Preset erreicht ist, wird wieder zum ersten Preset geschaltet.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> aktiviert das 3D-Preset nur so lange, wie Sie die Taste gedrückt halten. Bei Loslassen der Taste wird wieder zum ursprünglichen Preset gewechselt. Es wird nur eine maximale Anzahl von 2 Presets bei diesem Hotkey-Typ unterstützt.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Ein / Aus - Schalter für ein 3D-Preset. Es wird maximal 1 Preset bei diesem Hotkey-Typ unterstützt.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Einstellung wird benötigt um nicht nur einen großen Teil des Stereo 3D-bezogenen Codes im Treiber zu aktivieren, sondern auch um die Konvergenz abspeichern zu können."/><LineBreak/><LineBreak/>
-        <Run Text="Sie sollten diese Einstellung immer auf "/><Italic><Run Text="&quot;Ja&quot;"/></Italic><Run Text=" setzen, wenn Sie ein Treiberprofil bearbeiten."/>
+        Diese Einstellung wird benötigt um nicht nur einen großen Teil des Stereo 3D-bezogenen Codes im Treiber zu aktivieren, sondern auch um die Konvergenz abspeichern zu können.<LineBreak/><LineBreak/>
+        Sie sollten diese Einstellung immer auf <Span FontWeight="Bold" FontStyle="Italic">"Ja"</Span> setzen, wenn Sie ein Treiberprofil bearbeiten.
     </TextBlock>
 
     <TextBlock x:Key="StereoFlagsDX10ToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Einstellung aktiviert Stereo Computer Shader und sorgt dafür, dass Rendering-Fehler behoben werden, die sich dadurch bemerkbar machen, dass Objekte nur auf einem Halbbild in vielen DirectX 11 Spielen erscheinen."/><LineBreak/><LineBreak/>
-        <Run Text="Setzen Sie diese Option auf 0x00004000 um das Problem zu beheben."/>
+        Diese Einstellung aktiviert Stereo Computer Shader und sorgt dafür, dass Rendering-Fehler behoben werden, die sich dadurch bemerkbar machen, dass Objekte nur auf einem Halbbild in vielen DirectX 11 Spielen erscheinen.<LineBreak/><LineBreak/>
+        Setzen Sie diese Option auf 0x00004000 um das Problem zu beheben.
     </TextBlock>
 
     <TextBlock x:Key="StereoConvergenceToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Hiermit wird die Standard-Konvergenz im Profil definiert."/><LineBreak/><LineBreak/>
-        <Run Text="Beachten Sie, dass 3Dmigoto ohne zu zögern den Standardwert im Treiber überschreibt, jedoch aber benutzerdefinierte Kovergenzwerte nur dann überschreibt, wenn es einen driftigen Grund besitzt das Profil zu aktualisieren. (Das Hinzufügen eines Versions-Tags zur Kommentareinstellung wäre z.B. eine Möglichkeit ein Update zu erzwingen)."/>
+        Hiermit wird die Standard-Konvergenz im Profil definiert.<LineBreak/><LineBreak/>
+        Beachten Sie, dass 3Dmigoto ohne zu zögern den Standardwert im Treiber überschreibt, jedoch aber benutzerdefinierte Kovergenzwerte nur dann überschreibt, wenn es einen driftigen Grund besitzt das Profil zu aktualisieren. (Das Hinzufügen eines Versions-Tags zur Kommentareinstellung wäre z.B. eine Möglichkeit ein Update zu erzwingen).
     </TextBlock>
 
     <TextBlock x:Key="CommentsToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Dies verändert den grünen Text, den der Treiber bei Spielstart anzeigt und ist eine gute Stelle um dem Benutzer Hinweise anzuzeigen oder Danksagungen loszuwerden."/>
+        Dies verändert den grünen Text, den der Treiber bei Spielstart anzeigt und ist eine gute Stelle um dem Benutzer Hinweise anzuzeigen oder Danksagungen loszuwerden.
     </TextBlock>
 
     <TextBlock x:Key="StereoMemoEnabledToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Setzen Sie diese Einstellung auf "/><Italic><Run Text="&quot;Ja&quot;,"/></Italic><Run Text=" wenn sie einen Kommentar hinzugefügt haben und diesen beim nächsten Spielstart anzeigen wollen."/><LineBreak/><LineBreak/>
-        <Run Text="Beachten Sie, dass 3DMigoto analog zur Konvergenz die Benutzereinstellung nur dann überschreibt, wenn etwas anderes aktualisiert wurde (wie z.B. Comments). Somit wird der Kommentar nur beim ersten Mal bei Spielstart angezeigt, nachdem der Fix installiert wurde (Stellen Sie sicher StereoProfile zu aktivieren)."/>
+       Setzen Sie diese Einstellung auf <Span FontWeight="Bold" FontStyle="Italic">"Ja"</Span>, wenn sie einen Kommentar hinzugefügt haben und diesen beim nächsten Spielstart anzeigen wollen.<LineBreak/><LineBreak/>
+       Beachten Sie, dass 3DMigoto analog zur Konvergenz die Benutzereinstellung nur dann überschreibt, wenn etwas anderes aktualisiert wurde (wie z.B. Comments). Somit wird der Kommentar nur beim ersten Mal bei Spielstart angezeigt, nachdem der Fix installiert wurde (Stellen Sie sicher StereoProfile zu aktivieren).
     </TextBlock>
 
     <TextBlock x:Key="2DDHUDSettingsToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Einstellung zwingt das Spiel dazu den Kompatibilitätsmodus zu unterstützen, falls dies nicht bereits im Treiberprofil eingestellt ist."/><LineBreak/><LineBreak/>
-        <Run Text="Der Hex-Wert steuert die Einstellungen des Kompatibilitätsmodus - allgemeine 3D-Stärke, Heuristiken, um das HUD in die Screen-Tiefe zu verlagern und die Bewertung."/><LineBreak/><LineBreak/>
-        <Run Text="Sie sollten diese Option entweder auf 0x10000002 oder 0x10000102 setzen. Natürlich können Sie auch andere Werte ausprobieren."/>
+        Diese Einstellung zwingt das Spiel dazu den Kompatibilitätsmodus zu unterstützen, falls dies nicht bereits im Treiberprofil eingestellt ist.<LineBreak/><LineBreak/>
+        Der Hex-Wert steuert die Einstellungen des Kompatibilitätsmodus - allgemeine 3D-Stärke, Heuristiken, um das HUD in die Screen-Tiefe zu verlagern und die Bewertung.<LineBreak/><LineBreak/>
+        Sie sollten diese Option entweder auf 0x10000002 oder 0x10000102 setzen. Natürlich können Sie auch andere Werte ausprobieren.
     </TextBlock>
 
     <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Dies setzt den Standardwert für die Konvergenz im Kompatiblitätsmodus."/>
+       Dies setzt den Standardwert für die Konvergenz im Kompatiblitätsmodus.
     </TextBlock>
 
     <TextBlock x:Key="Disable2DDToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Deaktivieren Sie den Kompatibitlitätsmodus um sicherzustellen, dass der Benutzer den echten 3D-Modus nutzt."/><LineBreak/><LineBreak/>
-        <Run Text="Genauso wie bei der Konvergenz berücksichtigt 3DMigoto an dieser Stelle benutzerdefinierte Einstellungen."/>
+        Deaktivieren Sie den Kompatibitlitätsmodus um sicherzustellen, dass der Benutzer den echten 3D-Modus nutzt.<LineBreak/><LineBreak/>
+        Genauso wie bei der Konvergenz berücksichtigt 3DMigoto an dieser Stelle benutzerdefinierte Einstellungen.
     </TextBlock>
 
     <TextBlock x:Key="TwoDDNotesToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Ergänzen Sie hier einen Erinnerungstext, damit der Benutzer anhand des grünen Texts sieht, dass er sich im Kompatiblitätsmodus und nicht im richtigen 3D-Modus befindet."/>
+        Ergänzen Sie hier einen Erinnerungstext, damit der Benutzer anhand des grünen Texts sieht, dass er sich im Kompatiblitätsmodus und nicht im richtigen 3D-Modus befindet."/>
     </TextBlock>
 
     <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Ingame-Overlay im Spiel aktivieren, um aktuelle Konvergenz- sowie 3D-Tiefenwerte anzuzeigen. Dies aktiviert ebenfalls den Hunting-Modus zum Fixen von Shadern."/><LineBreak/><LineBreak/>
-        <Run Text="Um eine bessere Performance zu gewährleisten, sollte nicht vergessen werden die Option wieder zu deaktivieren nachdem die Hotkey-Bearbeitung abgeschlossen ist."/>
+        Ingame-Overlay im Spiel aktivieren, um aktuelle Konvergenz- sowie 3D-Tiefenwerte anzuzeigen. Dies aktiviert ebenfalls den Hunting-Modus zum Fixen von Shadern.<LineBreak/><LineBreak/>
+        Um eine bessere Performance zu gewährleisten, sollte nicht vergessen werden die Option wieder zu deaktivieren nachdem die Hotkey-Bearbeitung abgeschlossen ist.
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Rendert den Maus-Cursor softwareseitig und bietet die Möglichkeit die 3D-Tiefe der Maus anzupassen."/><LineBreak/><LineBreak/>
-        <Run Text="Es empfiehlt sich diese Option in Verbindung mit alternativen 3D-Formaten wie Side-by-Side zu verwenden."/>
+       Rendert den Maus-Cursor softwareseitig und bietet die Möglichkeit die 3D-Tiefe der Maus anzupassen.<LineBreak/><LineBreak/>
+       Es empfiehlt sich diese Option in Verbindung mit alternativen 3D-Formaten wie Side-by-Side zu verwenden.
     </TextBlock>
 
 
-
-    <!-- General Settings Tab -->
-    <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Prüft bei Start des Programms, ob neue Updates für das Programm oder den Fix-Profilen vorliegen."/></TextBlock>
-    <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktivieren Sie das Steam-Overlay, wenn das Spiel beim Starten abstürzt."/></TextBlock>
+    <!-- General Settings Tab Tooltips -->
+    <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
+        Prüft bei Start des Programms, ob neue Updates für das Programm oder den Fix-Profilen vorliegen.
+    </TextBlock>
+    
+    <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
+       Deaktivieren Sie das Steam-Overlay, wenn das Spiel beim Starten abstürzt.
+    </TextBlock>
+    
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Vom Benutzer durchgeführte Veränderungen an Fix-Profilen werden beim Abspeichern erkannt und an einen MySQL-Server gesendet."/><LineBreak/><LineBreak/>
-        <Run Text="Dieses Feature hilft dem Author von 3D Fix Manager fehlende Profildaten zu sammeln oder Fehlerhafte zu korrigieren."/>
+        Vom Benutzer durchgeführte Veränderungen an Fix-Profilen werden beim Abspeichern erkannt und an einen MySQL-Server gesendet.<LineBreak/><LineBreak/>
+        Dieses Feature hilft dem Author von 3D Fix Manager fehlende Profildaten zu sammeln oder Fehlerhafte zu korrigieren.
     </TextBlock>
+    
     <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Aktualisiert 3dmigoto bei allen installierten 3D Fixes automatisch, sobald 3D Fix Manager gestartet wird."/>
+        Aktualisiert 3dmigoto bei allen installierten 3D Fixes automatisch, sobald 3D Fix Manager gestartet wird. <LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> 3dmigoto ist ein sogenannter Software-Wrapper, der es ermöglicht fehlerhafte stereoskopische Effekte in PC-Spielen zu reparieren. Es empfiehlt sich stets die neueste Version des Wrappers zu benutzen.
     </TextBlock>
+    
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Mit Hilfe dieser Option können deinstallierte 3D Fixes ohne erneuten Download installiert werden. Hierbei werden die heruntergeladenen Dateien im 3D Fix Manager-Verzeichnis aufbewahrt und zur erneuten Installation des Fixes verwendet."/><LineBreak/><LineBreak/>
-        <Run Text="Um heruntergeladene Fix-Dateien zu löschen und Festplattenspeicher freizugeben wechseln Sie bitte zum 'Installation'-Tab und klicken dort auf 'Cache leeren'."/>
+       Mit Hilfe dieser Option können deinstallierte 3D Fixes ohne erneuten Download installiert werden. Hierbei werden die heruntergeladenen Dateien im 3D Fix Manager-Verzeichnis aufbewahrt und zur erneuten Installation des Fixes verwendet.<LineBreak/><LineBreak/>
+       Um heruntergeladene Fix-Dateien zu löschen und Festplattenspeicher freizugeben wechseln Sie bitte zum <Italic><Bold>"Installation"</Bold></Italic>-Tab und klicken dort auf <Italic><Bold>"Cache leeren".</Bold></Italic>
     </TextBlock>
+    
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Option bewirkt, dass sämtliche Spiele-Icons erneut von der TheGamesDB - or Steam DB heruntergeladen werden."/><LineBreak/><LineBreak/>
-        <Run Text="Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden."/>
+        Diese Option bewirkt, dass sämtliche Spiele-Icons erneut von der TheGamesDB - or Steam DB heruntergeladen werden.<LineBreak/><LineBreak/>
+        Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden.
     </TextBlock>
+    
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden."/>
+        Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden.
     </TextBlock>
+    
     <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Aktualisert 3dmigoto aller installierten 3D Fixes auf die aktuellste Version."/><LineBreak/><LineBreak/>
-        <Run Text="Aktuellere Versionen von 3dmigoto können zu einer verbesserten Performance und Stabilität führen sowie neue Features wie z.B. SideBySide-Support freischalten."/>
+        Aktualisert 3dmigoto aller installierten 3D Fixes auf die aktuellste Version.<LineBreak/><LineBreak/>
+        Aktuellere Versionen von 3dmigoto können zu einer verbesserten Performance und Stabilität führen sowie neue Features wie z.B. SideBySide-Support freischalten.
     </TextBlock>
 
-    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden."/></TextBlock>
-    <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass der durch die Supfade ermittelte Installationspfad übernommen wird."/></TextBlock>
-    <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300"><Run Text="Pfade, die rekursiv durchsucht werden, um installierte Spiele zu finden."/></TextBlock>
-    <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Startet die Suche nach installierten Spielen mit Hilfe der Suchpfade."/></TextBlock>
-    <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300"><Run Text="Limitiert die rekursive Suche auf die gesetzte Tiefe an Unterverzeichnissen, die zum Finden der Spiele durchlaufen werden."/></TextBlock>
-    <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300"><Run Text="RivaTuner Statistics Server wird bei Spielstart geöffnet oder geschlossen je nachdem welche Einstellung im jeweiligen Fix-Profil getroffen wurde."/></TextBlock>
-    <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300"><Run Text="Gibt dem Benutzer vor Spielstart die Möglichkeit den RTSS zu konfigurieren. Bitte stellen Sie sicher, dass der FPS-Begrenzer für ein flüssiges Spielgeschehen sowie reduzierten Input-Lag auf 60 gestellt ist."/></TextBlock>
-    <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS immer schließen, wennn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist."/></TextBlock>
-    <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS niemals schließen, wenn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist."/></TextBlock>
-    <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300"><Run Text="RTSS automatisch schließen, wenn 3D Fix Manager beendet wird."/></TextBlock>
-    <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300"><Run Text="Global einstellen, ob Spiele direkt über die Spiel-Exe gestartet werden sollen und nicht über den Steam-Client."/><LineBreak/><LineBreak/><Run Text="Sollte keine Exe zum Starten des Spiels im Profil hinterlegt worden sein, wird das Spiel nach Möglichkeit über Steam gestartet."/></TextBlock>
-    <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300"><Run Text="Global einstellen, ob Spiele über den Steam Client gestartet werden sollen, indem die Steam App ID aufgerufen wird."/><LineBreak/><LineBreak/><Run Text="Sollte ein Spiel nicht über Steam installiert worden sein oder Steam vom 3D Fix Manager nicht gefunden werden kann, wird stattdessen über die Spiel-Exe gestartet."/></TextBlock>
+    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+       Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden.
+    </TextBlock>
+    
+    <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+       Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass der durch die Supfade ermittelte Installationspfad übernommen wird.
+    </TextBlock>
+    
+    <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
+       Pfade, die rekursiv durchsucht werden, um installierte Spiele zu finden.
+    </TextBlock>
+    
+    <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
+        Startet die Suche nach installierten Spielen mit Hilfe der Suchpfade.
+    </TextBlock>
+    
+    <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
+        Limitiert die rekursive Suche auf die gesetzte Tiefe an Unterverzeichnissen, die zum Finden der Spiele durchlaufen werden.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
+       RivaTuner Statistics Server wird bei Spielstart geöffnet oder geschlossen je nachdem welche Einstellung im jeweiligen Fix-Profil getroffen wurde.
+    </TextBlock>
+    
+    <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+        Gibt dem Benutzer vor Spielstart die Möglichkeit den RTSS zu konfigurieren. Bitte stellen Sie sicher, dass der FPS-Begrenzer für ein flüssiges Spielgeschehen sowie reduzierten Input-Lag auf 60 gestellt ist.
+    </TextBlock>
+    
+    <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+       RTSS immer schließen, wennn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist.
+    </TextBlock>
+    
+    <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+        RTSS niemals schließen, wenn ein Spiel im 2D-Modus gestartet wird unabhängig davon, welche Einstellung im Fix-Profil gesetzt ist.
+    </TextBlock>
+    
+    <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
+       RTSS automatisch schließen, wenn 3D Fix Manager beendet wird.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
+        Global einstellen, ob Spiele direkt über die Spiel-Exe gestartet werden sollen und nicht über den Steam-Client.<LineBreak/><LineBreak/>
+        Sollte keine Exe zum Starten des Spiels im Profil hinterlegt worden sein, wird das Spiel nach Möglichkeit über Steam gestartet.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
+        Global einstellen, ob Spiele über den Steam Client gestartet werden sollen, indem die Steam App ID aufgerufen wird.<LineBreak/><LineBreak/>
+        Sollte ein Spiel nicht über Steam installiert worden sein oder Steam vom 3D Fix Manager nicht gefunden werden kann, wird stattdessen über die Spiel-Exe gestartet.
+    </TextBlock>
+    
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Einstellen, ob der Starttyp eines Spiels individuell durch sein Fix-Profil gesteuert werden soll. Diese Einstellung wird empfohlen, um steuern zu können, ob das Spiel über die Spiel-Exe oder den Steam-Client gestartet werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="Steam-Spiele sollten nur dann direkt über die Exe-Datei gestartet werden, um beispielsweise unerwünschte Launcher-Fenster eines Spiels zu überspringen. Sie können dieses Verhalten durch das editieren des jeweiligen Fix-Profils editieren."/>
+        Einstellen, ob der Starttyp eines Spiels individuell durch sein Fix-Profil gesteuert werden soll. Diese Einstellung wird empfohlen, um steuern zu können, ob das Spiel über die Spiel-Exe oder den Steam-Client gestartet werden soll.<LineBreak/><LineBreak/>
+        Steam-Spiele sollten nur dann direkt über die Exe-Datei gestartet werden, um beispielsweise unerwünschte Launcher-Fenster eines Spiels zu überspringen. Sie können dieses Verhalten durch das editieren des jeweiligen Fix-Profils editieren.
     </TextBlock>
-    <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300"><Run Text="Installation von Treiberprofilen über den Nvidia Profile Inspektor deaktivieren."/></TextBlock>
-    <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300"><Run Text="Benutzer stellt im Fix-Profil ein, ob er die Installation von Treiberprofilen wünscht."/></TextBlock>
-    <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300"><Run Text="Warnmeldung bei der Installation von Treiberprofilen deaktivieren."/></TextBlock>
+    
+    <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
+        Installation von Treiberprofilen über den Nvidia Profile Inspektor deaktivieren.
+    </TextBlock>
+    
+    <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
+        Benutzer stellt im Fix-Profil ein, ob er die Installation von Treiberprofilen wünscht.
+    </TextBlock>
+    
+    <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300">
+        Warnmeldung bei der Installation von Treiberprofilen deaktivieren.
+    </TextBlock>
 
-    <!-- Refresh rates and resolution -->
+    
+    <!-- Refresh rates and resolution Tooltips-->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Upscaling sollte eingeschaltet werden, wenn sie in einer niedrigeren Auflösung als der Nativen ihres Monitors spielen wollen."/><LineBreak/><LineBreak/>     
-        <Run Text="Diese Funktion skaliert das Bild auf die native Auflösung hoch, um eine schärfere Bildqualität zu erreichen - besonders nützlich für 4K Fernseher oder DSR."/><LineBreak/><LineBreak/>       
-        <Run Text="Beachten Sie bitte, dass diese Funktion noch experimentell ist und nur bei wenigen Spielen ordnungsgemäß funktioniert (wie z.B. The Witcher 3). Häufig verhält sich der Mauszeiger nicht korrekt - in diesem Fall bitte Upscaling auf 'Vollbild erzwingen' stellen oder Software-Mauszeiger aktivieren."/><LineBreak/><LineBreak/>       
- 
-        <Bold><Run Text="Vollbild normal: "/></Bold><Run Text="Aktiviert Upscaling und ermöglicht den Vollbildmodus im Spiel ein- und abzuschalten."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Vollbild erzwingen: "/></Bold><Run Text="Aktiviert Upscaling und erzwingt immer den Vollbildmodus. Bitte auswählen, wenn Probleme mit dem Mauszeiger auftreten."/>
+        Upscaling sollte eingeschaltet werden, wenn sie in einer niedrigeren Auflösung als der Nativen ihres Monitors spielen wollen.<LineBreak/><LineBreak/>     
+        Diese Funktion skaliert das Bild auf die native Auflösung hoch, um eine schärfere Bildqualität zu erreichen - besonders nützlich für 4K Fernseher oder DSR.<LineBreak/><LineBreak/>       
+        Beachten Sie bitte, dass diese Funktion noch experimentell ist und nur bei wenigen Spielen ordnungsgemäß funktioniert (wie z.B. The Witcher 3). Häufig verhält sich der Mauszeiger nicht korrekt - in diesem Fall bitte Upscaling auf <Italic><Bold>"Vollbild erzwingen"</Bold></Italic> stellen oder Software-Mauszeiger aktivieren.<LineBreak/><LineBreak/>       
+        <Bold>Vollbild normal:</Bold> Aktiviert Upscaling und ermöglicht den Vollbildmodus im Spiel ein- und abzuschalten.<LineBreak/><LineBreak/>
+        <Bold>Vollbild erzwingen:</Bold> Aktiviert Upscaling und erzwingt immer den Vollbildmodus. Bitte auswählen, wenn Probleme mit dem Mauszeiger auftreten.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
-         <Bold><Run Text="0: "/></Bold><Run Text="3Dmigoto erzeugt eine Textur und stellt Sie dem Spiel als Back-Buffer zur Verfügung. Dies scheint nur für wenige Spiele zu funktionieren, aber führt dazu, dass das Spiel flüssiger läuft."/><LineBreak/><LineBreak/>
-         <Bold><Run Text="1: "/></Bold><Run Text="3Dmigoto erzeugt eine zweite Swap-Chain und sorgt dafür, dass das Spiel diese nutzt. Diese Einstellung scheint mit den meisten Spielen zu funktionieren."/>
+         <Bold>0:</Bold> 3Dmigoto erzeugt eine Textur und stellt Sie dem Spiel als Back-Buffer zur Verfügung. Dies scheint nur für wenige Spiele zu funktionieren, aber führt dazu, dass das Spiel flüssiger läuft.<LineBreak/><LineBreak/>
+         <Bold>1:</Bold> 3Dmigoto erzeugt eine zweite Swap-Chain und sorgt dafür, dass das Spiel diese nutzt. Diese Einstellung scheint mit den meisten Spielen zu funktionieren.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
-        <Run Text="Wenn Upscaling aktiviert ist, muss eine Auflösung festgelegt werden, auf die das Spiel hochskaliert werden soll."/><LineBreak/><LineBreak/>
-        <Run Text="Um das bestmögliche Resultat zu erzielen sollte die native Auflösung des TVs oder Monitors gesetzt werden."/>
+        Wenn Upscaling aktiviert ist, muss eine Auflösung festgelegt werden, auf die das Spiel hochskaliert werden soll.<LineBreak/><LineBreak/>
+        Um das bestmögliche Resultat zu erzielen sollte die native Auflösung des TVs oder Monitors gesetzt werden.
     </TextBlock>
 
     <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Filtert die Videomodi nach den angegebenen Bildwiederholfrequenzen. Manche Spiele setzen die Bildwiederholfrequenz nicht explizit, sondern nutzen den Videomodus."/><LineBreak/><LineBreak/>
-        <Run Text="Aktivieren Sie diese Einstellung, wennn die Option 'Bildwiederholfrequenz überschreiben' nicht funktioniert."/>
+        Filtert die Videomodi nach den angegebenen Bildwiederholfrequenzen. Manche Spiele setzen die Bildwiederholfrequenz nicht explizit, sondern nutzen den Videomodus.<LineBreak/><LineBreak/>
+        Aktivieren Sie diese Einstellung, wennn die Option <Italic><Bold>"Bildwiederholfrequenz überschreiben"</Bold></Italic> nicht funktioniert.
     </TextBlock>
 
     <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        <Bold><Run Text="1: "/></Bold><Run Text="Erzwingt die Erstellung von Vollbild-Geräten und Swap-Chains."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="2: "/></Bold><Run Text="Diese Einstellung deaktiviert zusätzlich SetWindowPos und könnte in manchen Spielen helfen."/>
+        <Bold>1:</Bold> Erzwingt die Erstellung von Vollbild-Geräten und Swap-Chains.<LineBreak/><LineBreak/>
+        <Bold>2:</Bold> Diese Einstellung deaktiviert zusätzlich SetWindowPos und könnte in manchen Spielen helfen.
     </TextBlock>
 
     <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Um aus einem Unity-Spiel herauszuwechseln ohne es zum Absturz zu bringen, sollte Folgendes gemacht werden:"/><LineBreak/><LineBreak/>
-        <Run Text="Option aktivieren und hintereinander F7, Alt+Enter sowie Alt+Tab drücken."/>
+        Um aus einem Unity-Spiel herauszuwechseln ohne es zum Absturz zu bringen, sollte Folgendes gemacht werden:<LineBreak/><LineBreak/>
+        Option aktivieren und hintereinander F7, Alt+Enter sowie Alt+Tab drücken.
     </TextBlock>
 
-    <!-- Nvidia 3D Settings Tab -->
-    <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300"><Run Text="Aktiviert / deaktiviert Nvidia's stereoskopische 3D-Funktion. Es handelt sich dabei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung enthalten ist."/></TextBlock>
-    <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300"><Run Text="Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird."/></TextBlock>
-    <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300"><Run Text="Sorgt beim Aktivieren der stereoskopischen 3D-Funktion oder beim Starten eines Spiels im 3D-Modus automatisch dafür, dass 3D Vision bzw. 3DTV Play als Ausgabemodus genutzt wird statt 3D Vision Discover (anaglyph)"/></TextBlock>
+    
+    <!-- Nvidia 3D Settings Tab ToolTips -->
+    <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
+        Aktiviert / deaktiviert <Bold>Nvidia's stereoskopische 3D-Funktion</Bold> manuell.<LineBreak/><LineBreak/>
+        Es handelt sich hierbei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung unter dem Reiter <Italic><Bold>"Stereoskopische 3D-Funktion einrichten"</Bold></Italic> aufzufinden ist.
+    </TextBlock>
+      
+    <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
+        Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird.
+    </TextBlock>
+    
+    <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
+        Sorgt beim Aktivieren der stereoskopischen 3D-Funktion oder beim Starten eines Spiels im 3D-Modus automatisch dafür, dass 3D Vision bzw. 3DTV Play als Ausgabemodus genutzt wird statt 3D Vision Discover (anaglyph).
+    </TextBlock>
+    
     <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden."/><LineBreak/><LineBreak/>
-        <Run Text="Technisch gesehen setzt diese Option den Windows Registry-Eintrag "/><Italic><Run Text="'StereoDefaultOn'"/></Italic> <Run Text="auf 0 oder 1."/>
+        Legt fest, ob automatisch in den 3D-Modus geschaltet wird, wenn ein Spiel bei aktivierter stereoskopischer 3D-Funktion gestartet wird. Ansonsten muss dieser manuell mit STRG + T aktiviert werden.<LineBreak/><LineBreak/>
+        Technisch gesehen setzt diese Option den Windows Registry-Eintrag <Italic><Bold>"StereoDefaultOn"</Bold></Italic> auf 0 oder 1.
     </TextBlock>
+    
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird."/><LineBreak/><LineBreak/>
-        <Run Text="Technisch gesehen setzt diese Option den Windows Registry-Eintrag "/><Italic><Run Text="'EnableWindowedMode'"/></Italic> <Run Text="auf 0 oder 5."/>
+        Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird.<LineBreak/><LineBreak/>
+        Technisch gesehen setzt diese Option den Windows Registry-Eintrag <Italic><Bold>"EnableWindowedMode"</Bold></Italic> auf 0 oder 5.
     </TextBlock>
+    
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da bei solchen die maximale 3D-Tiefe oftmals zu gering ist."/><LineBreak/><LineBreak/>
-        <Run Text="Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefenwirkung erreicht werden."/><LineBreak/><LineBreak/>
-        <Run Text="Hinsichtlich dieses Beispiels würde eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen, da der Multiplikator auf 2 gesetzt wurde. Analog dazu würde aus einer 3D-Tiefe von 80% schlussendlich 160% resultieren."/><LineBreak/><LineBreak/>
-        <Run Text="Durch den Tiefen-Hack täuschen Sie dem Nvidia-Treiber vor, mit einem kleineren Bildschirm zu spielen, als es in Wirklichkeit der Fall ist. Die im Treiber ermittelte Bildschirmgröße können Sie dem unten dargestellten Zoll-Wert entnehmen. Je kleiner der Wert, desto größer fällt die maximale 3D-Tiefe aus."/>
+        Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da bei solchen die maximale 3D-Tiefe oftmals zu gering ist.<LineBreak/><LineBreak/>
+        Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefenwirkung erreicht werden.<LineBreak/><LineBreak/>
+        Hinsichtlich dieses Beispiels würde eine im Spiel gesetzte 3D-Tiefe von 100% einer tatsächlichen Tiefe von 200% entsprechen, da der Multiplikator auf 2 gesetzt wurde. Analog dazu würde aus einer 3D-Tiefe von 80% schlussendlich 160% resultieren.<LineBreak/><LineBreak/>
+        Durch den Tiefen-Hack täuschen Sie dem Nvidia-Treiber vor, mit einem kleineren Bildschirm zu spielen, als es in Wirklichkeit der Fall ist. Die im Treiber ermittelte Bildschirmgröße können Sie dem unten dargestellten Zoll-Wert entnehmen. Je kleiner der Wert, desto größer fällt die maximale 3D-Tiefe aus.
     </TextBlock>
+    
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
-        <Run Text="Dies ist die Größe des Bildschirms, die dem Nvidia-Treiber mitgeteilt wird. Je kleiner der Wert, desto größer die maximale 3D-Tiefe."/><LineBreak/><LineBreak/>
-        <Run Text="Um die optimale 3D-Tiefe bei Projektoren zu erzielen empfielt es sich die Zollgröße der Leinwand einzutragen."/> <LineBreak/><LineBreak/>
-        <Run Text="Regeln Sie die maximale 3D-Tiefe entweder über den Tiefen-Multiplikator oder den Zollwert. Beide hängen voneinander ab."/>
+        Dies ist die Größe des Bildschirms, die dem Nvidia-Treiber mitgeteilt wird. Je kleiner der Wert, desto größer die maximale 3D-Tiefe.<LineBreak/><LineBreak/>
+        Um die optimale 3D-Tiefe bei Projektoren zu erzielen empfielt es sich die Zollgröße der Leinwand einzutragen.<LineBreak/><LineBreak/>
+        Regeln Sie die maximale 3D-Tiefe entweder über den Tiefen-Multiplikator oder den Zollwert. Beide hängen voneinander ab.
     </TextBlock>
+    
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="3D Vision Shutter-Brillen können mit verschiedenen Shutter-Frequenzen betrieben werden - die Spanne reicht von 100 Hz bis 120 Hz."/><LineBreak/><LineBreak/>
-        <Run Text="Stellen Sie hier ein, mit welcher Frequenz der Monitor und die Shutter-Brillen beim Spielen laufen sollen. Es empfiehlt sich die Frequenz auf 100 Hz zu setzen, wenn die Leistung Ihres PCs nur für 100 FPS im Spiel ausreicht."/>
+        3D Vision Shutter-Brillen können mit verschiedenen Shutter-Frequenzen betrieben werden - die Spanne reicht von 100 Hz bis 120 Hz.<LineBreak/><LineBreak/>
+        Stellen Sie hier ein, mit welcher Frequenz der Monitor und die Shutter-Brillen beim Spielen laufen sollen. Es empfiehlt sich die Frequenz auf 100 Hz zu setzen, wenn die Leistung Ihres PCs nur für 100 FPS im Spiel ausreicht.
     </TextBlock>
+    
     <TextBlock x:Key="Change3dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Dieses Feature ist für Besitzer von Windows 10 nützlich, die unter dem Problem leiden, dass der Monitor beim Beenden des Spiels noch ein schwarzes Bild zeigt.(Windows 10 hat Schwierigkeiten zurück auf 144 Hz Desktop-Frequenz zurückzuschalten."/><LineBreak/><LineBreak/>
-        <Run Text="Die Frequenz auf 120hz zu setzen beseitigt darüber hinaus hohe Idle-Taktraten der Grafikkarte, die in Kombination mit aktivieretem stereoskopischer 3D-Funktion auftreten."/><LineBreak/><LineBreak/>
-        <Run Text="Vergessen Sie außerdem nicht vor dem Beenden des Spiels STRG + T zu drücken, um zu verhindern, dass der Monitor im 3D-Modus verharrt."/>
+        Dieses Feature ist für Besitzer von Windows 10 nützlich, die unter dem Problem leiden, dass der Monitor beim Beenden des Spiels nur noch ein schwarzes Bild anzeigt. Der Grund dafür liegt darin, dass Windows 10 Schwierigkeiten damit hat auf 144 Hz Desktop-Frequenz zurückzuschalten.<LineBreak/><LineBreak/>
+        Die Frequenz auf 120hz zu setzen beseitigt darüber hinaus hohe Idle-Taktraten der Grafikkarte, die in Kombination mit aktivieretem stereoskopischer 3D-Funktion auftreten.<LineBreak/><LineBreak/>
+        Vergessen Sie außerdem nicht vor dem Beenden des Spiels STRG + T zu drücken, um zu verhindern, dass der Monitor im 3D-Modus verharrt.
     </TextBlock>
-    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300"><Run Text="Empfiehlt sich zu setzen, wenn Sie den Windows 10 Blackscreen-Fix anwenden (s. obiges Feature) und nach Deaktivieren der stereoskopischen 3D-Funktion wieder auf höhere Bildwiederholfrequenzen wechseln wollen."/></TextBlock>
+    
+    <TextBlock x:Key="Change2dRefreshRateOnClosingToolTip" TextWrapping="Wrap" Width="300">
+        Setzt die Desktop-Bildwiederholfrequenz auf den eingestellten Wert beim Beenden der Applikation.
+    </TextBlock>
+    
+    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Empfiehlt sich zu setzen, wenn Sie den Windows 10 Blackscreen-Fix anwenden (s. obiges Feature) und nach Deaktivieren der stereoskopischen 3D-Funktion wieder auf höhere Bildwiederholfrequenzen wechseln wollen.
+    </TextBlock>
+    
     <TextBlock x:Key="Global2dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Installiert beim Ausschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 2D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Anmerkung: "/></Bold><Run Text="Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden, indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden."/>
+       Installiert beim Ausschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 2D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus.<LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden, indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden.
     </TextBlock>
+    
     <TextBlock x:Key="Global3dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
-        <Run Text="Installiert beim Einschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 3D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus."/><LineBreak/><LineBreak/>
-        <Bold><Run Text="Anmerkung: "/></Bold><Run Text="Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden,  indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden."/>
+        Installiert beim Einschalten der stereoskopischen 3D-Funktion oder Starten eines Spiels im 3D-Modus ein globales Treiberprofil mittels Nvidia Profile Inspector. Bitte wählen Sie hierzu eine .nip-Datei aus.<LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> Nip-Dateien können mittels Nvidia Profile Inspector erstellt werden, indem die dort befindliche Export-Funktion einzelner Profile genutzt wird. Zusätzlich zu den globalen Treiberprofilen können nach wie vor die im Fix-Profil angegebenen spielspezifischen Treiberprofile installiert werden.
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
