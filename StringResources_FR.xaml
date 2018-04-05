@@ -78,8 +78,8 @@
     <system:String x:Key="InstallDir">Install Folder:</system:String>
     <system:String x:Key="InstallDirName">Install Folder Name:</system:String>
     <system:String x:Key="CustomRootPath">Customiser Parent / chemin du jeu:</system:String>
-    <system:String x:Key="RelativeGameIniPath">Chemin relatif au fichier ini:</system:String>
-    <system:String x:Key="AdditionalRelativeGameIniPath">Chemin relatif additionnel au fichier ini:</system:String>
+    <system:String x:Key="RelativeGameIniPath">Relative path to a game config file:</system:String>
+    <system:String x:Key="AdditionalRelativeGameIniPath">Additional relative path to a config file:</system:String>
     <system:String x:Key="HelixPostUpdated">Helix Post last updated:</system:String>
     <system:String x:Key="SetDate">Set Date</system:String>
     <system:String x:Key="SetDateTooltip">Sets today's date as a timestamp.</system:String>
@@ -87,6 +87,7 @@
     <system:String x:Key="AdditionalDownloadLinkFix">Lien de téléchargement additionnel:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extracteur de l'archive du Fix:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="StereoRefreshRateOverride">Stereo Refresh Rate:</system:String>
     <system:String x:Key="StartTool">Start additional Exe:</system:String>
 
     <system:String x:Key="WebLinkHelix">Lien Web Helix Blog / Geforce Forum:</system:String>
@@ -253,7 +254,8 @@
     <system:String x:Key="OverrideRefrehRate">Override refresh rate:</system:String>
     <system:String x:Key="OverrideRefrehRateToolTip">Overrides refresh rate set by game.</system:String>
     <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
-    <system:String x:Key="ForceFullscreen">Force fullscreen:</system:String>
+    <system:String x:Key="ForceFullscreen">Force fullscreen on game start:</system:String>
+    <system:String x:Key="ForceFullscreenOnKeyPress">Force fullscreen on key press:</system:String>
     <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
     <system:String x:Key="ForcedFullscreen">Force fullscreen</system:String>
     <system:String x:Key="NormalFullscreen">Normal fullscreen</system:String>
@@ -331,6 +333,11 @@
     <system:String x:Key="StartProfileInspectorToolTip">Starts Nvidia Profile Inspector.</system:String>
     <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
 
+    <!-- Stereo Refresh Rate Settings Group  group -->
+    <system:String x:Key="StereoRefreshRateSettings">Shutter frequency of Nvidia 3D glasses / Stereo Refresh Rate:</system:String>
+    <system:String x:Key="GlobalStereoRefreshRate">Use refresh rate set in Nvidia driver</system:String>
+    <system:String x:Key="ProfileStereoRefreshRate">Refresh rate is controlled by fix profile</system:String>
+
     <!-- Buttons-->
     <system:String x:Key="Disable">Disable</system:String>
     <system:String x:Key="Enable">Enable</system:String>
@@ -356,6 +363,7 @@
     <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
+    <system:String x:Key="SwapInterleavePattern">Enable reversed line interlacing for passive 3D displays</system:String>
 
     <!-- Refresh rate settings group -->
     <system:String x:Key="RefreshRateSettingsGroup">Refresh Rates and global Driver Profiles:</system:String>
@@ -523,12 +531,12 @@ For perfect results you have to enable Vsync in game and graphics card must hold
 
 Click on 'OK' when you're done making changes.</system:String>
     <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">It's recommended to install the 3D fix before starting this game. &#x0d;&#x0d;Do you want to install the fix now?</system:String>
-    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">It's recommended to restore the original driver profile of "{0}" when uninstalling the fix.&#x0d;&#x0d;Do you want to reset the driver profile now?</system:String>
-    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">It's recommended to restore the original driver profile when uninstalling the fix. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles already have been swapped you can skip this step by chosing "No".</system:String>
-    <system:String x:Key="MessageProfile2D" xml:space="preserve">It's recommended to use the default driver profile of "{0}" for playing in 2D mode.&#x0d;&#x0d;Do you want to reset the driver profile to the original state now? &#x0d;&#x0d;If you have already reset the profile you can skip this step by choosing "No".</system:String>
-    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">It's recommended to use the default driver profile for playing in 2D mode. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles already have been swapped you can skip this step by chosing "No".</system:String>
-    <system:String x:Key="MessageProfile3D" xml:space="preserve">The installation of a driver profile for "{0}" is needed to make the fix work properly.&#x0d;&#x0d;Do you want to install it via Nvidia Profile Inspector now? &#x0d;&#x0d;If you have already installed the profile you can skip this step by choosing "No".</system:String>
-    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">It's required to swap the currently assigned driver profile "{0}" with the profile "{1}" to make the fix work properly.&#x0d;&#x0d;Do you want to swap profiles via Nvidia Profile Inspector now? &#x0d;&#x0d;If profiles already have been swapped you can skip this step by chosing "No".</system:String>
+    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">It's recommended to restore the original driver profile "{0}" when uninstalling the fix.&#x0d;&#x0d;Do you want to reset the driver profile now?</system:String>
+    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">It's recommended to restore the original driver profile when uninstalling the fix. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
+    <system:String x:Key="MessageProfile2D" xml:space="preserve">It's recommended to use the default driver profile "{0}" for playing in 2D mode.&#x0d;&#x0d;Do you want to reset the driver profile to the original state now? &#x0d;&#x0d;If you already have reset the profile you can skip this step by choosing "No".</system:String>
+    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">It's recommended to use the default driver profile for playing in 2D mode. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">The installation of the driver profile "{0}" is needed to make the fix work properly.&#x0d;&#x0d;Do you want to install it via Nvidia Profile Inspector now? &#x0d;&#x0d;If you have already installed the profile you can skip this step by choosing "No".</system:String>
+    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">It's required to swap the currently assigned driver profile "{0}" with the profile "{1}" to make the fix work properly.&#x0d;&#x0d;Do you want to swap profiles via Nvidia Profile Inspector now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
     <system:String x:Key="ErrorGameLaunch">Error: Game could not be launched.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Error: Website could not be opened.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Reference data successfully written in DB.</system:String>
@@ -604,7 +612,9 @@ Pauldusler</system:String>
     <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Default setup wizard successfully skipped and 3D Vision enabled. &#x0d;&#x0d;Do you want to load a backup profile for restoring hotkeys and other stereo 3D related settings?</system:String>
     <system:String x:Key="QuickSetupError">Error while enabling Nvidia stereosopic 3D. Please try to use default setup wizard instead.</system:String>
     <system:String x:Key="OutputModeError">Error: 3D Vision / 3DTV Play output mode could not be forced.</system:String>
+    <system:String x:Key="ReversedInterlacingError">Error: Reversed Interlacing for passive 3D display could not be enabled.</system:String>
     <system:String x:Key="DepthHackError">Error: Depth hack could not be applied / removed.</system:String>
+    <system:String x:Key="WritePermissionError">Error: Write permission for 'System' user could not bet set for Stereo3D key in Windows registry.</system:String>
    
     <!--....................  Dialog Window End .......................... -->
 
@@ -648,11 +658,13 @@ Pauldusler</system:String>
         Note: the 'Relative Install Path' must be still set if you want to install the fix in a subfolder of the game.
     </TextBlock>
 
-    <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="300">
-        Type in the relative path (starting from C:\Users\Username folder or root folder of game) to an ini / cfg file which has to be edited to make the fix work or for optimizing graphics settings (e.g. diable motion blur for stereo 3D).<LineBreak/><LineBreak/>
-        Have a look at the fix profile for game <Italic><Bold>"Outlast"</Bold></Italic> if you need an example.<LineBreak/><LineBreak/>
-        Click on <Italic><Bold>"Values for 2D"</Bold></Italic> button for defining ini or cfg key-value pairs. These will be set when starting the game in 2D mode or uninstalling the fix.<LineBreak/><LineBreak/>
-        The same applies when clicking on <Italic><Bold>"Values for 3D"</Bold></Italic> button. The keys defined there will be set when starting the game in 3D mode or installing the fix.
+    <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
+        Type in the relative path to a <Bold>configuration file</Bold> of the game (e.g. an .ini or .cfg file) which shall be automatically edited based on the defined values for 2D or 3D mode. The relative path must be set starting from the <Bold>root path of the game</Bold> or <Bold>user folder</Bold> in <Italic>C:\Users\USERNAME</Italic> - both directories are searched for the specified configuration file.<LineBreak/><LineBreak/>
+        Main purpose of this feature is to automatically edit graphics settings when starting the game (e.g. deactivation of <Bold>motion blur</Bold> or <Bold>depth of field</Bold> which is unwanted for stereo 3d mode).<LineBreak/><LineBreak/>
+        Generally all config files can be edited which include a listing of key/value - pairs - this might look like this in a file: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
+        Have a look at the fix profile for game <Italic><Bold>"Outlast"</Bold></Italic> to see a sample about how to edit a configuration file.<LineBreak/><LineBreak/>
+        Click on <Italic><Bold>"Values for 2D"</Bold></Italic> button for defining key-value pairs for the configuration file. These will be set when starting the game in 2D mode or uninstalling the fix.<LineBreak/><LineBreak/>
+        The same applies when clicking on <Italic><Bold>"Values for 3D"</Bold></Italic> button. The keys defined there will be set when starting the game in 3D mode or when installing the fix.
     </TextBlock>
 
     <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
@@ -671,6 +683,13 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
         Set this option to 'No' if a new 3dmigoto version should not be compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
+        Set this option 100 Hz if your PC is not strong enough to hold steady 120 frames per second while playing in Stereo 3D. <LineBreak /><LineBreak />
+        When setting this to 100 Hz only 100 fps are required for smooth gameplay.<LineBreak /><LineBreak />
+        This option only takes effect if you enabled <Italic><Bold>Refresh rate is controlled by fix profile</Bold></Italic> in <Italic><Bold>General Settings</Bold></Italic> tab.<LineBreak /><LineBreak />
+        <Bold>Note:</Bold> When reducing refresh rate your Nvidia 3D glasses also work at a reduced shutter frequency. 100 Hz could be perceived as a flickering for some people.
     </TextBlock>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
@@ -912,6 +931,14 @@ Pauldusler</system:String>
         Disables the warning message when installing a driver profile.
     </TextBlock>
 
+    <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        By enabling this option stereo refresh rate and shutter frequency of Nvidia 3D glasses are left untouched and controlled by the settings in Nvidia driver.
+    </TextBlock>
+
+    <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        By enabling this option you can control stereo refresh rate and shutter frequency of Nvidia 3D glasses individually per game.
+    </TextBlock>
+    
 
     <!-- Refresh rates and resolution ToolTips -->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
@@ -947,6 +974,9 @@ Pauldusler</system:String>
         Enable this option, Press F7, Alt+Enter, Alt+Tab
     </TextBlock>
 
+    <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
+        This attempts to force exclusive full screen when this key is pressed and may be useful in games where <Italic><Bold>Force fullscreen on game start</Bold></Italic> doesn't work or has undesirable side effects.
+    </TextBlock>
 
     <!-- Nvidia 3D Settings Tab -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
@@ -969,7 +999,14 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
         Sets whether 3D Vision can activate 3D mode for windowed applications.<LineBreak/><LineBreak/>
-        Technically this option sets windows registry entry<Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
+        Technically this option sets windows registry entry <Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
+    </TextBlock>
+
+    <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
+        Reverses interleave pattern for <Bold>passive 3D displays</Bold>.<LineBreak/><LineBreak/>
+        This fixes the issue when left and right eyes are swapped.<LineBreak/><LineBreak/>
+        Technically this option sets the windows registry entries <Italic><Bold>"InterleavePattern0"</Bold></Italic> and <Italic><Bold>"InterleavePattern1"</Bold></Italic> to <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> In order to prevent the Nvidia driver to override these entries they will be protected from write access for a duration of 120 seconds while starting the game in 3D mode. Once this period elapses or the application is closed write access will be automatically granted again.
     </TextBlock>
 
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
