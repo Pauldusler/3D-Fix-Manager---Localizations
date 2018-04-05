@@ -79,8 +79,8 @@
     <system:String x:Key="InstallDirName">Name des Installationsordners:</system:String>
     <system:String x:Key="RelativeInstallPath">Relativer Installationspfad:</system:String>
     <system:String x:Key="CustomRootPath">Benuterdefinierter Wurzel- / Spielpfad:</system:String>
-    <system:String x:Key="RelativeGameIniPath">Relativer Pfad zur Ini-Datei des Spiels:</system:String>
-    <system:String x:Key="AdditionalRelativeGameIniPath">Zusätzlicher relative Pfad zur Spiel-Ini:</system:String>
+    <system:String x:Key="RelativeGameIniPath">Relativer Pfad zu einer Konfig-Datei:</system:String>
+    <system:String x:Key="AdditionalRelativeGameIniPath">Zusätzlicher relativer Konfig-Dateipfad:</system:String>
     <system:String x:Key="HelixPostUpdated">Helix Post zuletzt aktualisiert:</system:String>
     <system:String x:Key="SetDate">Datum setzen</system:String>
     <system:String x:Key="SetDateTooltip">Fügt das heutige Datum als Zeitstempel ein.</system:String>
@@ -88,6 +88,7 @@
     <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archive:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="StereoRefreshRateOverride">Stereo-Bildwiederholrate:</system:String>
     <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
     
     <system:String x:Key="WebLinkHelix">URL zum Helix Blog / Geforce Forum:</system:String>
@@ -254,7 +255,8 @@
     <system:String x:Key="OverrideRefrehRate">Bildwiederholfrequenz überschreiben:</system:String>
     <system:String x:Key="OverrideRefrehRateToolTip">Überschreibt die im Spiel eingestellte Bildwiederholfrequenz.</system:String>
     <system:String x:Key="FilterRefreshRates">Bildwiederholfrequenzen filtern:</system:String>
-    <system:String x:Key="ForceFullscreen">Vollbildmodus erzwingen:</system:String>
+    <system:String x:Key="ForceFullscreen">Vollbild bei Spielstart erzwingen:</system:String>
+    <system:String x:Key="ForceFullscreenOnKeyPress">Vollbild auf Tastendruck erzwingen:</system:String>
     <system:String x:Key="ToggleFullscreen">Vollbildmodus umschalten:</system:String>
     <system:String x:Key="ForcedFullscreen">Vollbild erzwingen</system:String>
     <system:String x:Key="NormalFullscreen">Vollbild normal</system:String>
@@ -332,7 +334,12 @@
     <system:String x:Key="Start">Starten</system:String>
     <system:String x:Key="StartProfileInspectorToolTip">Startet den Nvidia Profile Inspector.</system:String>
     <system:String x:Key="StartRtssToolTip">Startet den RivaTuner Statistics Server.</system:String>
-    
+
+    <!-- Stereo Refresh Rate Settings Group  group -->
+    <system:String x:Key="StereoRefreshRateSettings">Shutter-Frequenz der Nvidia 3D Brille / Stereo-Bildwiederholrate:</system:String>
+    <system:String x:Key="GlobalStereoRefreshRate">Global eingestellte Bildwiederholrate im Treiber verwenden</system:String>
+    <system:String x:Key="ProfileStereoRefreshRate">Bildwiederholrate wird durch das Fix-Profil gesteuert</system:String>
+
     <!-- Buttons-->
     <system:String x:Key="Disable">Deaktivieren</system:String>
     <system:String x:Key="Enable">Aktivieren</system:String>
@@ -355,10 +362,11 @@
     <system:String x:Key="Inch">Zoll</system:String>
     <system:String x:Key="ResultingMonitorSize">Bildschirmgröße überschreiben:</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
-    <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren.</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
-
+    <system:String x:Key="SwapInterleavePattern">Invertiertes Zeilensprungverfahren aktivieren</system:String>
+    
     <!-- Refresh rate settings group -->
     <system:String x:Key="RefreshRateSettingsGroup">Bildwiederholfrequenzen und globale Treiberprofile:</system:String>
     <system:String x:Key="StereoRefreshRate">Stereo - Bildwiederholrate:</system:String>
@@ -525,11 +533,11 @@ Für perfekte Ergebnisse sollte Vsync im Spiel aktiviert und die Grafikkarte sta
 
 Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:String>
     <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">Es wird empfohlen den 3D-Fix vor dem Spielstart zu installieren. &#x0d;&#x0d;Möchten Sie diesen jetzt installieren?</system:String>
-    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil von "{0}" wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
+    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil "{0}" wiederherzustellen. &#x0d;&#x0d;Möchten Sie das Treiberprofil jetzt zurücksetzen?</system:String>
     <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">Es wird bei der Deinstallation des Fixes empfohlen das originale Treiberprofil wiederherzustellen. Hierfür muss das aktuell zugewiesene Profil "{0}" mit dem Treiberprofil "{1}" getauscht werden.&#x0d;&#x0d;Möchten Sie diesen Swap nun durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurden können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
-    <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil von "{0}" zu nutzen.&#x0d;&#x0d;Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile2D" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil "{0}" zu nutzen.&#x0d;&#x0d;Möchten Sie das Treiberprofil in den ursprünglichen Zustand zurücksetzen? &#x0d;&#x0d;Falls das Profil bereits zurückgesetzt wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
     <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">Es wird empfohlen, zum Spielen im 2D-Modus das Standard-Treiberprofil zu nutzen. Hierfür muss das aktuell zugewiesene Profil "{0}" mit dem Treiberprofil "{1}" getauscht werden.&#x0d;&#x0d;Möchten Sie diesen Swap nun durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
-    <system:String x:Key="MessageProfile3D" xml:space="preserve">Die Installation eines Treiberprofils für "{0}" ist erforderlich, damit der 3D Fix korrekt funktioniert.&#x0d;&#x0d;Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">Die Installation des Treiberprofils "{0}" ist erforderlich, damit der 3D Fix korrekt funktioniert.&#x0d;&#x0d;Möchten Sie dieses nun mittels Nvidia Profile Inspector installieren? &#x0d;&#x0d;Falls das Profil bereits installiert wurde können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
     <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">Es ist erforderlich, dass das aktuell zugewiesene Treiberprofil "{0}" mit dem Profil "{1}" getauscht wird, damit der 3D Fix korrekt funktioniert.&#x0d;&#x0d;Möchten Sie diesen Swap nun mittels Nvidia Profile Inspector durchführen? &#x0d;&#x0d;Falls die Profile bereits getauscht wurden können Sie diesen Schritt überspringen, indem Sie "Nein" wählen.</system:String>
     <system:String x:Key="ErrorGameLaunch">Fehler: Spiele konnte nicht gestartet werden.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Fehler: Webseite konnte nicht geöffnet werden.</system:String>
@@ -606,8 +614,10 @@ Pauldusler</system:String>
     <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Standard-Assistent wurde übersprungen und 3D Vision erfolgreich aktiviert. &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
     <system:String x:Key="QuickSetupError">Fehler beim aktivieren von Nvidias stereoskopischer 3D-Funktion. Bitte versuchen Sie die Einrichtung stattdessen mit dem Setup-Assistenten erneut.</system:String>
     <system:String x:Key="OutputModeError">Fehler: 3D Vision / 3DTV Play-Ausgabemodus konnte nicht erzwungen werden.</system:String>
+    <system:String x:Key="ReversedInterlacingError">Fehler: Invertiertes Zeilensprungverfahren für passiven 3D Bildschirm konnte nicht aktiviert werden.</system:String>
     <system:String x:Key="DepthHackError">Fehler: Tiefen-Hack konnte nicht übernommen oder entfernt werden.</system:String>
-
+    <system:String x:Key="WritePermissionError">Fehler: Schreibzugriff für 'System'-Benutzer konnte nicht für den Stereo 3D Key in der Windows Registry gesetzt werden.</system:String>
+    
     <!--....................  Dialog Window End .......................... -->
 
     
@@ -650,11 +660,13 @@ Pauldusler</system:String>
         <Bold>Anmerkung:</Bold> der <Italic>"Relative Installationspfad"</Italic> muss weiterhin gesetzt werden, wenn der Fix in einen Unterordner des Spiels installiert werden soll.
     </TextBlock>
 
-    <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="300">
-        Geben Sie den relativen Pfad (ausgehend von C:\Users\Username folder oder dem Wurzelpfad des Spiels) zur ini / cfg-Datei, die bearbeitet werden soll, um die Funktionsfähigkeit des Fixes zu bewerkstelligen oder um Grafik-Einstellungen zu optimieren (z.B. Motion Blur für Stereo 3D deaktivieren).<LineBreak/><LineBreak/>
-        Sie können sich anhand des Fix-Profils für das Spiel <Span FontWeight="Bold" FontStyle="Italic">"Outlast"</Span> ein Beispiel hierür ansehen.<LineBreak/><LineBreak/>
-        Klicken Sie auf die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 2D"</Span> um Schlüssel/Werte - Paare für die ini oder cfg-Datei zu definieren. Diese werden gesetzt sobald ein Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird.<LineBreak/><LineBreak/>
-        Analog gilt dies für die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 3D"</Span>. Die Schlüssel, die hier definiert werden, werden beim Starten des Spiels oder beim Deinstallieren des Fixes gesetzt.
+    <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
+        Geben Sie hier einen relativen Pfad zu einer <Bold>Konfigurationsdatei</Bold> des Spiels an (dies kan kann z.B. eine .ini oder .cfg-Datei sein), die anhand der Wertevorgaben für den 2D oder 3D-Modus automatisch editiert werden soll. Der relative Pfad ist hierbei ausgehend vom <Bold>Wurzelpfad des Spiels</Bold> oder dem <Bold>Benutzerordner</Bold> in <Italic>C:\Users\USERNAME</Italic> anzugeben - beide Verzeichnise werden hierbei auf Vorhandensein der angegebenen Datei durchsucht.<LineBreak/><LineBreak/>
+        Der hauptsächliche Zweck dieses Features ist es die Grafik-Einstellungen beim Starten des Spiels automatisch abzuändern (z.B. Abschaltung von unerwünschtem <Bold>Motion Blur</Bold> oder <Bold>Depth of Field</Bold> für den Stereo 3D Modus).<LineBreak/><LineBreak/>
+        Generell können alle Konfigurations-Dateien bearbeitet werden, die eine Auflistung von Schlüssel-Wertepaaren enthalten - dies könnte in der jeweiligen Datei beispielsweise so aussehen: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
+        Sie können sich anhand des Fix-Profils für das Spiel <Span FontWeight="Bold" FontStyle="Italic">"Outlast"</Span> ein fertiges Beispiel ansehen wie eine Konfigurationsdatei editiert werden kann.<LineBreak/><LineBreak/>
+        Klicken Sie auf die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 2D"</Span> um Schlüssel/Werte - Paare für die Konfigurationsdatei vorzugeben. Diese werden gesetzt sobald ein Spiel im 2D-Modus gestartet oder der Fix deinstalliert wird.<LineBreak/><LineBreak/>
+        Analog gilt dies für die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"Werte für 3D"</Span>. Die Schlüssel/Werte - Paare, die an dieser Stelle definiert sind werden bei der Installation des Fixes oder beim Starten des Spiels im 3D-Modus gesetzt.
     </TextBlock>
 
     <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
@@ -675,12 +687,19 @@ Pauldusler</system:String>
        Stellen Sie diese Option auf 'Nein' falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt.
     </TextBlock>
 
+    <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
+        Stellen Sie diese Option auf 100 Hz, wenn die Leistung ihres PCs nicht ausreicht um stabile 120 fps beim Spielen in Stereo 3D auszugeben.<LineBreak /><LineBreak />
+        Wenn Sie dies auf 100 Hz stellen reichen bereits 100 fps für ein flüssiges Spielvergnügen aus.<LineBreak /><LineBreak />
+        Diese Option tritt nur dann in Kraft, wenn Sie <Italic><Bold>Bildwiederholrate wird durch das Fix-Profil gestuert</Bold></Italic> im Tab <Italic><Bold>Allgemeine Einstellungen</Bold></Italic> aktiviert haben.<LineBreak /><LineBreak />
+        <Bold>Anmerkung:</Bold> Wenn Sie die Bildwiederholrate reduzieren, so verringern Sie auch die Shutter-Frequenz mit der Ihre Nvidia 3D-Brille arbeitet. 100 Hz könnten von manchen Leuten als störendes Flimmern wahrgenommen werden.
+    </TextBlock>
+
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
        Sie können hier einen Link zu einem Online-Shop mit Produktinformationen zum Spiel zur Verfügung stellen, welcher aufgerufen wird, wenn Sie auf den Button 'Produktseite' im Installations-Tab klicken. Dieses Feld dient als Alternative, falls ein Spiel nicht über den Steam Shop angeboten werden sollte.
     </TextBlock>
 
     <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
-       Fügen Sie heir eine hexadezimale Zahl für den Kompatibilitätsmodus (2DDHUDSettings) ein. Dieser Wert wird automatisch in die Ini-Datei von 3dmigoto übertragen, wenn der Kompatibilitätsmodus im Installations- order Hotkeys Tab erzwungen wird.
+       Fügen Sie heir eine hexadezimale Zahl für den Kompatibilitätsmodus (2DDHUDSettings) ein. Dieser Wert wird automatisch in die Ini-Datei von 3dmigoto übertragen, wenn der Kompatibilitätsmodus im Installations- oder Hotkeys Tab erzwungen wird.
     </TextBlock>
 
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
@@ -917,7 +936,15 @@ Pauldusler</system:String>
         Warnmeldung bei der Installation von Treiberprofilen deaktivieren.
     </TextBlock>
 
+    <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Bei Aktivierung dieser Option bleiben die Stereo-Bildwiederholrate und Shutter-Frequenz der Nvidia 3D-Brille unberührt und werden weiterhin durch die Einstellungen im Nvidia-Treiber gesteuert.
+    </TextBlock>
+
+    <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Bei Aktivierung dieser Option können Stereo-Bildwiederholrate und Shutter-Frequenz der Nvidia 3D-Brille individuell pro Spiel eingestellt werden.
+    </TextBlock>
     
+
     <!-- Refresh rates and resolution Tooltips-->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
         Upscaling sollte eingeschaltet werden, wenn sie in einer niedrigeren Auflösung als der Nativen ihres Monitors spielen wollen.<LineBreak/><LineBreak/>     
@@ -952,11 +979,14 @@ Pauldusler</system:String>
         Option aktivieren und hintereinander F7, Alt+Enter sowie Alt+Tab drücken.
     </TextBlock>
 
-    
+    <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
+        Bei Tastendruck wird versucht den exklusiven Vollbildmodus zu erzwingen und könnte in Spielen nützlich sein bei denen <Italic><Bold>Vollbild bei Spielstart erzwingen</Bold></Italic> nicht funktioniert oder unerwünschte Nebeneffekte aufweist.
+    </TextBlock>
+
     <!-- Nvidia 3D Settings Tab ToolTips -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
         Aktiviert / deaktiviert <Bold>Nvidia's stereoskopische 3D-Funktion</Bold> manuell.<LineBreak/><LineBreak/>
-        Es handelt sich hierbei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung unter dem Reiter <Italic><Bold>"Stereoskopische 3D-Funktion einrichten"</Bold></Italic> aufzufinden ist.
+        Es handelt sich hierbei um die gleiche Funktionalität, die in der Nvidia Systemsteuerung unter dem Reiter <Italic><Bold>"Stereoskopische 3D-Funktion einrichten"</Bold></Italic> verfügbar ist.
     </TextBlock>
       
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
@@ -976,7 +1006,14 @@ Pauldusler</system:String>
         Legt fest, ob in den 3D-Modus geschaltet werden kann, wenn eine Applikation im Fenstermodus ausgeführt wird.<LineBreak/><LineBreak/>
         Technisch gesehen setzt diese Option den Windows Registry-Eintrag <Italic><Bold>"EnableWindowedMode"</Bold></Italic> auf 0 oder 5.
     </TextBlock>
-    
+
+    <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
+        Invertiert das Zeilensprungverfahren für <Bold>passive 3D Bildschirme</Bold>. <LineBreak/><LineBreak/>
+        Dies löst das Problem, wenn linkes und rechtes stereoskopische Halbbild vertauscht dargestellt werden sollten.<LineBreak/><LineBreak/>
+        Technisch gesehen setzt diese Option die Windows Registry-Einträge <Italic><Bold>"InterleavePattern0"</Bold></Italic> und <Italic><Bold>"InterleavePattern1"</Bold></Italic> auf den Wert <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
+        <Bold>Anmerkung:</Bold> Damit der Nvidia-Treiber diese beiden Werte nicht überschreibt werden diese 120 Sekunden lang während des Spielstarts im 3D-Modus vor Schreibzugriffen geschützt. Der Schreibzugriff wird nach Ablauf dieser Zeitspanne oder beim Beenden der Applikation automatisch wieder gewährt.
+    </TextBlock>
+
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
         Aktivieren Sie diese Funktion, wenn die 3D-Tiefe über den maximal möglichen Wert angehoben werden soll (auch bekannt als Tiefen-Hack). Dieses Feature ist besonders bei Projektoren nützlich, da bei solchen die maximale 3D-Tiefe oftmals zu gering ist.<LineBreak/><LineBreak/>
         Der Tiefen-Hack zeigt Wirkung, wenn der Multiplikator auf einen größeren Wert als 1 gesetzt wird. Ist dieser beispielsweise auf 2 gesetzt, kann eine doppelt so hohe 3D-Tiefenwirkung erreicht werden.<LineBreak/><LineBreak/>
