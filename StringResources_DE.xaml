@@ -48,7 +48,7 @@
     <system:String x:Key="UninstallFix">3D Fix deinstallieren</system:String>
     <system:String x:Key="UninstallFixCompleted">Deinstallation erfolgreich</system:String>
     <system:String x:Key="UninstallFixFailed">Deinstallation fehlgeschlagen</system:String>
-    <system:String x:Key="InstallWrapper">Wrapper installieren</system:String>
+    <system:String x:Key="InstallWrapper">3D Wrapper installieren</system:String>
     <system:String x:Key="DeleteDownload">DL-Cache leeren</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Löscht die heruntergeladenen Dateien des 3D Fixes aus dem 3D Fix Manager-Verzeichnis.</system:String>
     <system:String x:Key="DeleteSuccess">Erfolg! Alle heruntergeladenen Dateien wurden gelöscht.</system:String>
@@ -142,6 +142,7 @@
     <system:String x:Key="SearchSteamDb">DB durchsuchen</system:String>
     <system:String x:Key="ValuesFor2D">Werte für 2D</system:String>
     <system:String x:Key="ValuesFor3D">Werte für 3D</system:String>
+    <system:String x:Key="Open">Pfad öffnen</system:String>
     <system:String x:Key="Cancel">Abbrechen</system:String>
     <system:String x:Key="Save">Speichern</system:String>
     <system:String x:Key="SaveChanges">Speichern</system:String>
@@ -283,6 +284,7 @@
     <!-- General settings group -->
     <system:String x:Key="GeneralSettingsGroup">Allgemeine Einstellungen:</system:String>
     <system:String x:Key="CheckForUpdates">Bei Programmstart auf Updates prüfen</system:String>
+    <system:String x:Key="AllowChangesToGameConfig">Spieleinstellungen für Stereo 3D optimieren</system:String>
     <system:String x:Key="EnableSteamOverlay">Steam Overlay aktivieren</system:String>
     <system:String x:Key="SendData">Daten bei Veränderungen an den Fix-Profile senden</system:String>
     <system:String x:Key="AutoUpdate3dmigoto">3dmigoto beim Programmstart aktualisieren</system:String>
@@ -435,7 +437,7 @@
     <system:String x:Key="FixesDevelopedBy">3D Fixes entwickelt von:</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Spende an die Entwickler der 3D-Fixes senden.</system:String>
     <system:String x:Key="ProgramVersion">Programversion:</system:String>
-    <system:String x:Key="FixProfiles">Fix-Profile:</system:String>
+    <system:String x:Key="FixProfiles">Version Fix-Profile:</system:String>
     <system:String x:Key="CheckUpdate">Auf Updates prüfen</system:String>
     <system:String x:Key="UpdateSuccess">Update erfolgreich</system:String>
     <system:String x:Key="UpdateFailed">Update gescheitert</system:String>
@@ -467,6 +469,8 @@
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Fehler: Der Pfad konnte nicht aufgerufen werden.</system:String>
+    <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Fehler: Der Registry-Key konnte nicht gefunden werden.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Fehler: Helix Post konnte nicht abgerufen werden.&#x0d;&#x0d;Der Link zum Blog ist ungültig.</system:String>
     <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Fehler: Helix Post konnte nicht abgerufen werden. &#x0d;&#x0d;Bitte geben sie einen Weblink zum Helix Post an.</system:String>
     <system:String x:Key="ViewerNotFound" xml:space="preserve">Fehler: 3D Vision-Photoanzeige konnte nicht gefunden werden.</system:String>
@@ -509,7 +513,7 @@ Anmerkungen:
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Alle Icons wurden erfolgreich zurückgesetzt und im Hintergrund neu heruntergeladen.&#x0d;&#x0d;Anmerkung: Sämtliche alten Icons wurden in einen Backup-Ordner innerhalb der jeweiligen Profilordner gesichert und können bei Bedarf wiederhergestellt werden. </system:String>
     <system:String x:Key="ServerNotAvailable">Server nicht erreichbar. Bitte versuchen Sie es später erneut.</system:String>
     <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">Neue Fix-Profile verfügbar. Möchten Sie diese updaten?&#x0d;&#x0d;</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Der installierte 3D Fix ist veraltet. &#x0d;&#x0d;Möchten Sie diesen jetzt auf die aktuellste Version updaten?&#x0d;&#x0d;Hinweis: Bei diesem Vorgang wird der alte Fix deinstalliert bevor der Neue heruntergeladen und installiert wird. Benutzerdefinierte Hotkeys bleiben dabei erhalten.</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Ein aktualisierter 3D Fix ist für für das Spiel "{0}" verfügbar.&#x0d;&#x0d;Möchten Sie diesen jetzt aktualisieren?&#x0d;&#x0d;Hinweis: Bei diesem Vorgang wird der alte Fix deinstalliert bevor der neue Fix heruntergeladen und installiert wird. Benutzerdefinierte Hotkeys bleiben dabei erhalten.</system:String>
     <system:String x:Key="NoUpdates" xml:space="preserve">Keine Updates verfügbar. &#x0d;&#x0d;Fix-Profile sind auf dem aktuellsten Stand.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Eine neue Version des 3D Fix Managers ist verfügbar. Möchten Sie updaten?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">Wenn Sie Bugs melden oder Anregungen für neue Features liefern wollen, so senden Sie bitte eine E-Mail an: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
@@ -604,6 +608,8 @@ Pauldusler</system:String>
     <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Fehler: Optifine für Minecraft wurde nicht erkannt. Sie müssen zunächst Optifine installieren um mit der Installation des 3D-Fixes fortfahren zu können.&#x0d;&#x0d;;Möchten Sie die Download-Seite von Optifine jetzt besuchen?</system:String>
     <system:String x:Key="ErrorDetectingBitVersion">Fehler: Es konnte nicht erkannt werden, ob die 64 Bit oder 32 Bit-Version von Java installiert ist.</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Fehler bei der Installation des Minecraft-Fixes.</system:String>
+    <system:String x:Key="ErrorRenamingHitmanFolder">Fehler: Der Hitman-Ordner konnte nicht umbenannt werden. Bitte stellen Sie sicher, dass der Ordner im Windows Explorer geschlossen ist und versuchen Sie es erneut.</system:String>
+
     <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Möchten Sie benutzerdefinierte Profile beibehalten? &#x0d;&#x0d;Wählen Sie 'Ja', wenn sie Profile editiert haben und die Änderungen behalten möchten.&#x0d;&#x0d;Wählen Sie 'Nein', um alle alten Profile zu überschreiben.</system:String>
     <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">Für einen oder mehreren installierten 3D Fixes steht ein 3dmigoto-Update bereit.&#x0d;&#x0d;Möchten Sie diese jetzt aktualisieren?</system:String>
     <system:String x:Key="BindHotkeyError" xml:space="preserve">Fehler: Ein oder mehrere Hotkeys besitzen keine Tastenzuweisung. &#x0d;&#x0d;Bitte weisen Sie die Tasten zu und versuchen Sie den Vorgang erneut.</system:String>
@@ -835,7 +841,13 @@ Pauldusler</system:String>
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
         Prüft bei Start des Programms, ob neue Updates für das Programm oder den Fix-Profilen vorliegen.
     </TextBlock>
-    
+
+    <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
+        Erlaubt es dem 3D Fix Manager erforderliche Grafik-Einstellungen bzw. die Konfiguration des Spiels automatisch bei Spielstart zu optimieren.<LineBreak/><LineBreak/>
+        Dies ist notwendig um die korrekte Funktionsweise der 3D Fixes und des Stereo 3D-Modus zu bewerkstelligen.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Diese Option sollte nur dann deaktiviert werden, wenn Sie es bevorzugen die erforderlichen Spieleinstellungen manuell zu setzen.
+    </TextBlock>
+
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
        Deaktivieren Sie das Steam-Overlay, wenn das Spiel beim Starten abstürzt.
     </TextBlock>
@@ -1009,7 +1021,7 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
         Invertiert das Zeilensprungverfahren für <Bold>passive 3D Bildschirme</Bold>. <LineBreak/><LineBreak/>
-        Dies löst das Problem, wenn linkes und rechtes stereoskopische Halbbild vertauscht dargestellt werden sollten.<LineBreak/><LineBreak/>
+        Dies löst das Problem, wenn linkes und rechtes stereoskopische Halbbild vertauscht dargestellt werden.<LineBreak/><LineBreak/>
         Technisch gesehen setzt diese Option die Windows Registry-Einträge <Italic><Bold>"InterleavePattern0"</Bold></Italic> und <Italic><Bold>"InterleavePattern1"</Bold></Italic> auf den Wert <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
         <Bold>Anmerkung:</Bold> Damit der Nvidia-Treiber diese beiden Werte nicht überschreibt werden diese 120 Sekunden lang während des Spielstarts im 3D-Modus vor Schreibzugriffen geschützt. Der Schreibzugriff wird nach Ablauf dieser Zeitspanne oder beim Beenden der Applikation automatisch wieder gewährt.
     </TextBlock>
