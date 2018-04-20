@@ -140,6 +140,7 @@
     <system:String x:Key="SearchSteamDb">Chercher dans la base de données Steam</system:String>
     <system:String x:Key="ValuesFor2D">Valeurs pour la 2D</system:String>
     <system:String x:Key="ValuesFor3D">Valeurs pour la 3D</system:String>
+    <system:String x:Key="Open">Open path</system:String>
     <system:String x:Key="Cancel">Annuler</system:String>
     <system:String x:Key="Save">Sauvegarder</system:String>
     <system:String x:Key="SaveChanges">Sauvegarder les changements</system:String>
@@ -281,14 +282,15 @@
     <!-- General Settings group -->
     <system:String x:Key="GeneralSettingsGroup">General Settings:</system:String>
     <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
+    <system:String x:Key="AllowChangesToGameConfig">Optimize game settings for Stereo 3D</system:String>
     <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
     <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
-    <system:String x:Key="AutoUpdate3dmigoto">Auto update 3dmigoto of installed 3D fixes</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Update 3dmigoto at startup</system:String>
     <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
     <system:String x:Key="PreferIconDownload">Prefer Game icons from internet database</system:String>
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
     <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
-    <system:String x:Key="UpdateAllWrappers">Update all installed 3dmigoto wrappers:</system:String>
+    <system:String x:Key="UpdateAllWrappers">Update 3dmigoto of all installed 3D fixes:</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
@@ -433,7 +435,7 @@
     <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
     <system:String x:Key="ProgramVersion">Program version:</system:String>
-    <system:String x:Key="FixProfiles">Fix Profiles:</system:String>
+    <system:String x:Key="FixProfiles">Fix Profiles version:</system:String>
     <system:String x:Key="CheckUpdate">Check for Updates</system:String>
     <system:String x:Key="UpdateSuccess">Update completed</system:String>
     <system:String x:Key="UpdateFailed">Update failed</system:String>
@@ -465,6 +467,8 @@
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
     
     <!-- Messages -->
+    <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Error: Path could not be opened.</system:String>
+    <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Error: Registry path could not be found.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Error: Helix Post could not be downloaded.&#x0d;&#x0d;The link to the blog is not valid.</system:String>
     <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Error: Helix Post could not be downloaded. &#x0d;&#x0d;Please provide a weblink to the Helix Blog first.</system:String>
     <system:String x:Key="ViewerNotFound" xml:space="preserve">Error: 3D Vision Photo Viewer was not found.</system:String>
@@ -507,7 +511,7 @@ Notes:
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">All icons were successfully reseted and downloaded in the background.&#x0d;&#x0d;Note: All old icons have been moved to a backup folder inside of the individual profile folders for restoring them if needed.</system:String>
     <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
     <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">The installed 3D fix is outdated.&#x0d;&#x0d;Do you want to update to the latest version?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">A newer 3D fix is available for the game "{0}".&#x0d;&#x0d;Do you want to update to the latest version now?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
     <system:String x:Key="NoUpdates" >No Updates available. Fix profiles up to date.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">If you want to report bugs or have ideas for new features please send an e-mail to: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
@@ -602,6 +606,8 @@ Pauldusler</system:String>
     <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Error: Optifine for Minecraft could not be detected. You have to install this first to proceed installing the 3D fix.\n\nDo you want to go to the download page for Optifine now?</system:String>
     <system:String x:Key="ErrorDetectingBitVersion">Error: Could not detect if Java 64 bit or 32 bit is installed</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Error occured when installing Minecraft fix.</system:String>
+    <system:String x:Key="ErrorRenamingHitmanFolder">Error: Hitman folder could not be renamed. Please make sure that the folder is closed in Windows Explorer and try again.</system:String>
+
     <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Do you want to keep custom profiles? &#x0d;&#x0d;Choose 'Yes' if you have edited some profiles and want to keep their changes.&#x0d;&#x0d;Choose 'No' to override all old profile settings.</system:String>
     <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">A new 3dmigoto update is available for one or several installed 3D fixes.&#x0d;&#x0d;Do you want to update now?</system:String>
     <system:String x:Key="BindHotkeyError" xml:space="preserve">Error: One or more hotkeys have no key binding. &#x0d;&#x0d;Please set the keys and try again.</system:String>
@@ -830,6 +836,12 @@ Pauldusler</system:String>
     <!-- General Settings Tab ToolTips -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
         Check for application / fix updates when the application is being started.
+    </TextBlock>
+
+    <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
+        This allows 3D Fix Manager to automatically optimize graphics settings / configurations of the games when launching it.<LineBreak/><LineBreak/>
+        This is necessary for making the 3D fixes and stereo 3D mode work and look correctly.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> This option should be only turned off if you prefer to configure the games manually.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
