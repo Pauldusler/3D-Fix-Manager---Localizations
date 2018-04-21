@@ -230,49 +230,49 @@
     <system:String x:Key="RemovePresetToolTip">Enlève le preset entier du fichier INI.</system:String>
     
     <!-- General Ini Settings group -->
-    <system:String x:Key="GeneralIniSettings">General Ini Settings:</system:String>
-    <system:String x:Key="StereoOverlay">Stereo Overlay:</system:String>
-    <system:String x:Key="EnableStereoOverlay">Enable Stereo Overlay in Game</system:String>
-    <system:String x:Key="ShowHideOverlay">Show / Hide Stereo Overlay:</system:String>
-    <system:String x:Key="ShowHideOverlayToolTip">Hotkey for hiding the overlay. Note: this will not disable hunting mode.</system:String>
-    <system:String x:Key="ReloadIniFile">Reload Ini File in Game:</system:String>
-    <system:String x:Key="ReloadIniFileToolTip">Reloads the ini while playing and applies hotkey / preset changes.</system:String>
-    <system:String x:Key="DefaultValuesConstants">Default Values for Shader Constants:</system:String>
-    <system:String x:Key="EnableAlternative3dMode">Enable alternative 3D Mode:</system:String>
-    <system:String x:Key="EnableAlternative3dModeToolTip">Choose an alternative 3D Format for use with 3D TVs and projectors.</system:String>
-    <system:String x:Key="EnableSoftwareMouse">Enable Software Mouse Cursor</system:String>
-    <system:String x:Key="Constant">Constant</system:String>
+    <system:String x:Key="GeneralIniSettings">Réglages de l'Ini General:</system:String>
+    <system:String x:Key="StereoOverlay">Overlay Stereo:</system:String>
+    <system:String x:Key="EnableStereoOverlay">Activer Overlay Stereo en jeu</system:String>
+    <system:String x:Key="ShowHideOverlay">Montrer / Cacher Overlay Stereo:</system:String>
+    <system:String x:Key="ShowHideOverlayToolTip">Hotkey pour cacher l'overlay. Note: cela désactivera le mode Chasseur.</system:String>
+    <system:String x:Key="ReloadIniFile">Recharger le fichier Ini en jeu:</system:String>
+    <system:String x:Key="ReloadIniFileToolTip">Recharge l'Ini en cours de jeu et applique hotkey / changements préconfigurés.</system:String>
+    <system:String x:Key="DefaultValuesConstants">Valeurs par défaut pour les constantes de Shaders:</system:String>
+    <system:String x:Key="EnableAlternative3dMode">Active le mode 3D Alternatif :</system:String>
+    <system:String x:Key="EnableAlternative3dModeToolTip">Choisit un format 3D Alternatif pour utilisation avec TV 3D et projecteurs.</system:String>
+    <system:String x:Key="EnableSoftwareMouse">Active le curseur software de la Souris</system:String>
+    <system:String x:Key="Constant">Constante</system:String>
     <system:String x:Key="Upscaling">Upscaling:</system:String>
 
-    <system:String x:Key="ResolutionAndRefreshRates">Resolution and refresh rates:</system:String>
-    <system:String x:Key="EnableUpscaling">Enable upscaling:</system:String>
-    <system:String x:Key="UpscalingMode">Upscaling mode:</system:String>
-    <system:String x:Key="OverrideScreenWidth">Override screen width:</system:String>
-    <system:String x:Key="OverrideScreenHeight">Override screen height:</system:String>
-    <system:String x:Key="OverrideScreenToolTip">Force override the screen resolution.</system:String>
-    <system:String x:Key="UpscalingScreenWidth">Target screen width for upscaling:</system:String>
-    <system:String x:Key="UpscalingScreenHeight">Target screen height for upscaling:</system:String>
-    <system:String x:Key="OverrideRefrehRate">Override refresh rate:</system:String>
-    <system:String x:Key="OverrideRefrehRateToolTip">Overrides refresh rate set by game.</system:String>
-    <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
-    <system:String x:Key="ForceFullscreen">Force fullscreen on game start:</system:String>
-    <system:String x:Key="ForceFullscreenOnKeyPress">Force fullscreen on key press:</system:String>
-    <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
-    <system:String x:Key="ForcedFullscreen">Force fullscreen</system:String>
-    <system:String x:Key="NormalFullscreen">Normal fullscreen</system:String>
-    <system:String x:Key="TypeInIntegerToolTip">Type in an integer value.</system:String>
-    <system:String x:Key="TypeInCommaSeparatedListToolTip">Type in a comma separated list of refresh rates.</system:String>
+    <system:String x:Key="ResolutionAndRefreshRates">Definition et Taux de rafraichissement:</system:String>
+    <system:String x:Key="EnableUpscaling">Active l'upscaling:</system:String>
+    <system:String x:Key="UpscalingMode">Mode Upscaling:</system:String>
+    <system:String x:Key="OverrideScreenWidth">Outrepasse la largeur de l'écran:</system:String>
+    <system:String x:Key="OverrideScreenHeight">Outrepasse la hauteur de l'écran :</system:String>
+    <system:String x:Key="OverrideScreenToolTip">Force l'outrepassage de la définition de l'écran.</system:String>
+    <system:String x:Key="UpscalingScreenWidth">Cible la largeur d'écran pour l'upscaling:</system:String>
+    <system:String x:Key="UpscalingScreenHeight">Cible la hauteur d'écran pour l'upscaling:</system:String>
+    <system:String x:Key="OverrideRefrehRate">Outrepasse le taux de rafraichissement:</system:String>
+    <system:String x:Key="OverrideRefrehRateToolTip">Outrepasse le réglage du taux de rafraichissement par jeu.</system:String>
+    <system:String x:Key="FilterRefreshRates">Filtre les taux de rafraichissement</system:String>
+    <system:String x:Key="ForceFullscreen">Force le plein écran au démarrage du jeu:</system:String>
+    <system:String x:Key="ForceFullscreenOnKeyPress">Forcer le plein écran en pressant la touche:</system:String>
+    <system:String x:Key="ToggleFullscreen">Bascule en plein écran:</system:String>
+    <system:String x:Key="ForcedFullscreen">Force le plein écran</system:String>
+    <system:String x:Key="NormalFullscreen">Plein écran normal</system:String>
+    <system:String x:Key="TypeInIntegerToolTip">Entrer une valeur entière.</system:String>
+    <system:String x:Key="TypeInCommaSeparatedListToolTip">Tapez une liste de taux de rafraîchissement séparés par des virgules.</system:String>
 
     <!-- Driver Profile Settings group -->
-    <system:String x:Key="DriverProfileSettings">Driver Profile Settings:</system:String>
-    <system:String x:Key="Stereo3DSettings">Stereo 3D Settings:</system:String>
-    <system:String x:Key="CompatibilityModeSettings">3D Compatibility Mode Settings:</system:String>
+    <system:String x:Key="DriverProfileSettings">Paramètres du profil du pilote:</system:String>
+    <system:String x:Key="Stereo3DSettings">Paramètres 3D Stereo:</system:String>
+    <system:String x:Key="CompatibilityModeSettings">Paramètres du Mode Compatibilité 3D:</system:String>
     <system:String x:Key="VisionReady">3D Vision Ready</system:String>
-    <system:String x:Key="VisionReadyToolTip">Changes the rating of the stereoscopic quality.</system:String>
+    <system:String x:Key="VisionReadyToolTip">Change le taux de la qualité stéréoscopique.</system:String>
     <system:String x:Key="Excellent">Excellent</system:String>
-    <system:String x:Key="Good">Good</system:String>
-    <system:String x:Key="Fair">Fair</system:String>
-    <system:String x:Key="Not Recommended">Not Recommended</system:String>
+    <system:String x:Key="Good">bon</system:String>
+    <system:String x:Key="Fair">Correct</system:String>
+    <system:String x:Key="Non Recommandé">Not Recommended</system:String>
     
     <!--....................  Hotkeys Tab End .......................... -->
 
