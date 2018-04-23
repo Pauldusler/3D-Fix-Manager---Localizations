@@ -49,6 +49,7 @@
     <system:String x:Key="UninstallFixCompleted">Deinstallation erfolgreich</system:String>
     <system:String x:Key="UninstallFixFailed">Deinstallation fehlgeschlagen</system:String>
     <system:String x:Key="InstallWrapper">3D Wrapper installieren</system:String>
+    <system:String x:Key="UninstallWrapper">3D Wrapper deinstallieren</system:String>
     <system:String x:Key="DeleteDownload">DL-Cache leeren</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Löscht die heruntergeladenen Dateien des 3D Fixes aus dem 3D Fix Manager-Verzeichnis.</system:String>
     <system:String x:Key="DeleteSuccess">Erfolg! Alle heruntergeladenen Dateien wurden gelöscht.</system:String>
@@ -293,6 +294,7 @@
     <system:String x:Key="EnableAllFixes">Alle Fixes (de)aktivieren:</system:String>
     <system:String x:Key="ResetAllIcons">Alle Spiele-Icons zurücksetzen:</system:String>
     <system:String x:Key="UpdateAllWrappers">3dmigoto aller installierter 3D Fixes aktualisieren:</system:String>
+    <system:String x:Key="ClearAllDownloadCache">Download-Cache für alle Fix-Profile leeren:</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam nicht gefunden</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Deaktiviert alle installierten 3D-Fixes.</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Aktiviert alle installierten 3D-Fixes.</system:String>
@@ -346,6 +348,7 @@
     <system:String x:Key="Disable">Deaktivieren</system:String>
     <system:String x:Key="Enable">Aktivieren</system:String>
     <system:String x:Key="Update">Updaten</system:String>
+    <system:String x:Key="Clear">Leeren</system:String>
 
     <!--....................  General Settings Tab End .......................... -->
 
@@ -437,7 +440,7 @@
     <system:String x:Key="FixesDevelopedBy">3D Fixes entwickelt von:</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Spende an die Entwickler der 3D-Fixes senden.</system:String>
     <system:String x:Key="ProgramVersion">Programversion:</system:String>
-    <system:String x:Key="FixProfiles">Version Fix-Profile:</system:String>
+    <system:String x:Key="FixProfiles">Profilversion:</system:String>
     <system:String x:Key="CheckUpdate">Auf Updates prüfen</system:String>
     <system:String x:Key="UpdateSuccess">Update erfolgreich</system:String>
     <system:String x:Key="UpdateFailed">Update gescheitert</system:String>
@@ -631,7 +634,7 @@ Pauldusler</system:String>
 
     <!-- Installation Tab ToolTips -->
     <TextBlock x:Key="ForceCMToolTip" TextWrapping="Wrap" Width="300">
-       Zwingt DirectX 11 Spiele dazu imm Kompatibilitätsmodus (auch bekannt als Fake 3D-Modus) zu starten indem das Treiberprofil automatisch angepasst wird.<LineBreak/><LineBreak/>
+       Zwingt DirectX 11 Spiele dazu im Kompatibilitätsmodus (auch bekannt als Fake 3D-Modus) zu starten indem das Treiberprofil automatisch angepasst wird.<LineBreak/><LineBreak/>
        Wenn der Kompatiblitätsmodus nicht korrekt aussieht, dann navigieren Sie zum <Italic><Bold>"Hotkeys"</Bold></Italic> Tab and wählen einen anderen Wert für 
        <Italic><Bold>"2DDHUDSettings"</Bold></Italic> im Bereich <Italic><Bold>"Treiberprofil - Einstellungen</Bold></Italic>.
     </TextBlock>
@@ -698,6 +701,12 @@ Pauldusler</system:String>
         Wenn Sie dies auf 100 Hz stellen reichen bereits 100 fps für ein flüssiges Spielvergnügen aus.<LineBreak /><LineBreak />
         Diese Option tritt nur dann in Kraft, wenn Sie <Italic><Bold>Bildwiederholrate wird durch das Fix-Profil gestuert</Bold></Italic> im Tab <Italic><Bold>Allgemeine Einstellungen</Bold></Italic> aktiviert haben.<LineBreak /><LineBreak />
         <Bold>Anmerkung:</Bold> Wenn Sie die Bildwiederholrate reduzieren, so verringern Sie auch die Shutter-Frequenz mit der Ihre Nvidia 3D-Brille arbeitet. 100 Hz könnten von manchen Leuten als störendes Flimmern wahrgenommen werden.
+    </TextBlock>
+
+    <TextBlock x:Key="renderApiToolTip" TextWrapping="Wrap" Width="300">
+        Mit dieser Option können Sie im Fix-Profil hinterlegen, welche Render-API vom Spiel genutzt wird.<LineBreak /><LineBreak />
+        Die Angabe der Render API ermöglicht die automatische Installation des korrekten 3D Wrappers ohne zusätzliche Shaderfixes, wenn auf die Schaltfläche <Italic><Bold>3D Wrapper installieren</Bold></Italic> im Tab <Italic><Bold>Installation</Bold></Italic> geklickt wird. <Bold>3DMigoto</Bold> wird installiert, wenn das Spiel DirectX 11 nutzt und <Bold>HelixMod</Bold> falls das Spiel auf DirectX 9 zurückgreift.<LineBreak /><LineBreak />
+       <Bold>Hinweis:</Bold> Die Installation eines reinen 3D Wrappers ist besonders dann interessant, wenn ein Spiel bereits 3D Vision Ready ist und keinen 3D Fix benötigt. Mit dem Wrapper ist es dann möglich Hotkeys einzurichten um schnell zwischen verschiedenen 3D Tiefen- und Konvergenzwerten zu wechseln (nützlich bei Zwischensequenzen) oder alternative 3D Formate wie "Side-By-Side" zu nutzen, die für TVs und Projektoren relevant sind.
     </TextBlock>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
@@ -871,7 +880,12 @@ Pauldusler</system:String>
         Diese Option bewirkt, dass sämtliche Spiele-Icons erneut von der TheGamesDB - or Steam DB heruntergeladen werden.<LineBreak/><LineBreak/>
         Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden.
     </TextBlock>
-    
+
+    <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
+        Diese Option bewirkt, dass sämtliche heruntergeladene 3D Fixes, die in den Download-Ordner von 3D Fix Manager zwischengespeichert wurden, gelöscht werden.<LineBreak/><LineBreak/>
+       <Bold>Hinweis:</Bold> Dieses Funktion löscht keine installierten 3D Fixes, sondern gibt lediglich Speicherplatz im Verzeichnis der Applikation frei.
+    </TextBlock>
+
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
         Diese Option bewirkt, dass auch dann Icons vom Internet bezogen werden, wenn bereits über die Windows Registry lokale Icons gefunden wurden.
     </TextBlock>
