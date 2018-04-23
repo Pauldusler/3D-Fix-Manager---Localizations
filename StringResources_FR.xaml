@@ -48,7 +48,8 @@
     <system:String x:Key="UninstallFix">Désinstaller le Fix 3D</system:String>
     <system:String x:Key="UninstallFixCompleted">Désinstallation complétée</system:String>
     <system:String x:Key="UninstallFixFailed">Désinstallation échouée</system:String>
-    <system:String x:Key="InstallWrapper">Installer le Wrapper</system:String>
+    <system:String x:Key="InstallWrapper">Installer le Wrapper 3D</system:String>
+    <system:String x:Key="UninstallWrapper">Désinstaller le Wrapper 3D</system:String>
     <system:String x:Key="DeleteDownload">Supprimer DL Cache</system:String>
     <system:String x:Key="DeleteDownloadToolTip">Effacer les fichiers téléchargés du fix 3D du répertoire de 3D Fix Manager.</system:String>
     <system:String x:Key="DeleteSuccess">Succès. Tous les fichiers téléchargés ont été effacés.</system:String>
@@ -270,7 +271,7 @@
     <system:String x:Key="VisionReady">3D Vision Ready</system:String>
     <system:String x:Key="VisionReadyToolTip">Change le taux de la qualité stéréoscopique.</system:String>
     <system:String x:Key="Excellent">Excellent</system:String>
-    <system:String x:Key="Good">bon</system:String>
+    <system:String x:Key="Good">Bon</system:String>
     <system:String x:Key="Fair">Correct</system:String>
     <system:String x:Key="Non Recommandé">Not Recommended</system:String>
     
@@ -291,6 +292,7 @@
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
     <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
     <system:String x:Key="UpdateAllWrappers">Update 3dmigoto of all installed 3D fixes:</system:String>
+    <system:String x:Key="ClearAllDownloadCache">Clear download cache for all fix profiles:</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
@@ -344,6 +346,7 @@
     <system:String x:Key="Disable">Disable</system:String>
     <system:String x:Key="Enable">Enable</system:String>
     <system:String x:Key="Update">Update</system:String>
+    <system:String x:Key="Clear">Clear</system:String>
        
     <!--....................  General Settings Tab End .......................... -->
 
@@ -435,7 +438,7 @@
     <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
     <system:String x:Key="ProgramVersion">Program version:</system:String>
-    <system:String x:Key="FixProfiles">Fix Profiles version:</system:String>
+    <system:String x:Key="FixProfiles">Profiles version:</system:String>
     <system:String x:Key="CheckUpdate">Check for Updates</system:String>
     <system:String x:Key="UpdateSuccess">Update completed</system:String>
     <system:String x:Key="UpdateFailed">Update failed</system:String>
@@ -698,6 +701,12 @@ Pauldusler</system:String>
         <Bold>Note:</Bold> When reducing refresh rate your Nvidia 3D glasses also work at a reduced shutter frequency. 100 Hz could be perceived as a flickering for some people.
     </TextBlock>
 
+    <TextBlock x:Key="renderApiToolTip" TextWrapping="Wrap" Width="300">
+        Choose the render API which is used by the game and save this data to the fix profile.<LineBreak /><LineBreak />
+        By entering this information the correct 3D wrapper can be installed automatically when you click on button <Italic><Bold>Install 3D Wrapper</Bold></Italic> in <Italic><Bold>Installation</Bold></Italic> tab. <Bold>3Dmigoto</Bold> is installed when the game uses DirectX 11 or <Bold>Helixmod</Bold> if it utilizes DirectX 9.<LineBreak /><LineBreak />
+        <Bold>Note:</Bold> Installing a raw wrapper is especially interesting if a game is already 3D Vision Ready and does not need a 3D fix at all. By using the wrapper you can unlock features like hotkeys support for quickly changing separation / convergence in cut scences or for choosing other 3D formats like Side-By-Side for TVs and projectors.
+    </TextBlock>
+
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
         You can provide a link to an online shop with informationen to the game which is called if you click on button <Italic><Bold>Product Page</Bold></Italic> in <Italic><Bold>"Installation"</Bold></Italic> tab. This field is an alternative if a game is not available on Steam store.
     </TextBlock>
@@ -865,6 +874,11 @@ Pauldusler</system:String>
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
         Enable this for redownloading all icons from TheGamesDB or Steam DB.<LineBreak/><LineBreak/>
         Old icons are not lost by saving them in backup folders inside of the individual profile folders.
+    </TextBlock>
+
+    <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
+        Deletes all downloaded 3D fixes which were temporarily cached to the directory of 3D Fix Manager.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> This feature does not delete any installed 3D fixes, it just frees up some disk space in the directory of the application.
     </TextBlock>
 
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
