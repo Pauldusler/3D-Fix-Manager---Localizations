@@ -1,0 +1,1085 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <!-- Misc -->
+    <system:String x:Key="LoadingApplication">Carregando o programa. Por favor, aguarde...</system:String>
+    <system:String x:Key="SwitchToCompactGui">Mude para o tamanho compacto do gui.</system:String>
+    <system:String x:Key="SwitchToNormalGui">Mude para o tamanho normal do gui.</system:String>
+    <system:String x:Key="MinimizeToTray">Minimize a janela para a bandeja do sistema.</system:String>
+    <system:String x:Key="ChangeLanguage">Alterar idioma</system:String>
+    <system:String x:Key="Close">Fechar</system:String>
+    <system:String x:Key="Show">Mostrar</system:String>
+    <system:String x:Key="NoMatchFound">Nenhuma correspondência encontrada para</system:String>
+
+    <!-- Tab header title -->
+    <system:String x:Key="Installation">Instalação</system:String>
+    <system:String x:Key="EditProfile">Editar Perfil</system:String>
+    <system:String x:Key="NewProfile">Novo perfil</system:String>
+    <system:String x:Key="Hotkeys">Teclas de atalho</system:String>
+    <system:String x:Key="Settings">Configurações</system:String>
+    <system:String x:Key="About">Sobre</system:String>
+    <system:String x:Key="GeneralSettings">Configurações gerais</system:String>
+    <system:String x:Key="Nvidia3DSettings">Configurações 3D Nvidia </system:String>
+
+    <!-- Game list on left column-->
+    <system:String x:Key="All">Tudo</system:String>
+    <system:String x:Key="Installed">Instalado</system:String>
+    <system:String x:Key="New">Novo</system:String>
+    <system:String x:Key="CreateProfileToolTip">Criar perfil de correção</system:String>
+    <system:String x:Key="Edit">Edit</system:String>
+    <system:String x:Key="EditProfileToolTip">Editar Perfil de correção</system:String>
+    <system:String x:Key="Delete">Delete</system:String>
+    <system:String x:Key="DeleteProfileToolTip">Remover Perfil de correção</system:String>
+
+    <!-- Installation Tab -->
+    <system:String x:Key="NoGamesInstalled">Não há jogos compatíveis instalados.</system:String>
+    <system:String x:Key="Play2D">Play em 2D</system:String>
+    <system:String x:Key="Play3D">Play em 3D</system:String>
+    <system:String x:Key="InstallFix">Instalar Correção 3D</system:String>
+    <system:String x:Key="InstallFixCompleted">Instalação concluída</system:String>
+    <system:String x:Key="BackupRecoveryFailed">Falha na recuperação do backup.</system:String>
+    <system:String x:Key="InstallFixFailed">Instalação falhou. Verifique o caminho de instalação</system:String>
+    <system:String x:Key="InstallFixFailed02" xml:space="preserve">Erro: a correção não pôde ser instalada.&#x0d;&#x0d;Certifique-se de que o 3D Fix Manager foi iniciado como administrador e tente novamente.</system:String>
+    <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Erro: o empacotador não pôde ser instalado.&#x0d;&#x0d;Certifique-se de que o 3D Fix Manager foi iniciado como administrador e tente novamente.</system:String>
+    <system:String x:Key="FixWrapperOutdated">Esta correção inclui uma versão desatualizada do 3dmigoto.</system:String>
+    <system:String x:Key="DownloadFix">Download da Correção 3D</system:String>
+    <system:String x:Key="UninstallFix">Desinstalar Correção 3D</system:String>
+    <system:String x:Key="UninstallFixCompleted">Desinstalação concluída</system:String>
+    <system:String x:Key="UninstallFixFailed">Desinstalação falhou</system:String>
+    <system:String x:Key="InstallWrapper">Instalar Empacotador 3D</system:String>
+    <system:String x:Key="UninstallWrapper">Desinstalar Empacotador 3D</system:String>
+    <system:String x:Key="DeleteDownload">Limpar Cache DL</system:String>
+    <system:String x:Key="DeleteDownloadToolTip">Exclui os arquivos baixados de uma correção 3D no diretório do 3D Fix Manager.</system:String>
+    <system:String x:Key="DeleteSuccess">Sucesso. Todos os arquivos baixados foram excluídos.</system:String>
+    <system:String x:Key="DeleteError" xml:space="preserve">Erro: Nem todos os arquivos podem ser excluídos. &#x0d;&#x0d;Por favor, certifique-se que nenhum arquivo está em uso.</system:String>
+    <system:String x:Key="SourceFolder">Pasta de Perfil</system:String>
+    <system:String x:Key="SourceFolderToolTip">Abre o Windows Explorer e mostra todos os arquivos relacionados a este perfil de correção 3D.</system:String>
+    <system:String x:Key="VisitSteamStore">Página do Produto</system:String>
+    <system:String x:Key="VisitSteamStoreToolTip">Abre o navegador para mostrar informações adicionais sobre o jogo.</system:String>
+    <system:String x:Key="VisitHelixMod">Blog do HelixMod</system:String>
+    <system:String x:Key="VisitHelixModToolTip">Obtenha mais informações sobre a correção selecionada na página HelixMod.</system:String>
+    <system:String x:Key="ForceCompatibilityMode">Forçar CM</system:String>
+    <system:String x:Key="EnableFix">Ativar Correção</system:String>
+    <system:String x:Key="DownloadCompleted">Download concluído</system:String>
+    <system:String x:Key="Downloading">Baixando...</system:String>
+    <system:String x:Key="DownloadFailed">Falha no download</system:String>
+    <system:String x:Key="Extracting">Extraindo...</system:String>
+    <system:String x:Key="ExtractionFailed">Falha na extração</system:String>
+    <system:String x:Key="GameNotInstalled">Jogo não instalado</system:String>
+    <system:String x:Key="OpenExplorerError">Erro: não foi possível abrir o caminho no Windows Explorer. Caminho não existe</system:String>
+    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Foi encontrado um backup para teclas de atalho e configuração de correção 3d. &#x0d;&#x0d;Deseja restaurar o backup?</system:String>
+    <system:String x:Key="CreateHotkeyBackup">Deseja criar um backup de suas teclas de atalho e configuração de correção 3D antes de desinstalar?</system:String>
+
+    <!--....................  New / Edit Profile Tab Start .......................... -->
+
+    <system:String x:Key="GameTitle">Título do Jogo:</system:String>
+    <system:String x:Key="RelativeInstallPath">Caminho de instalação relativo:</system:String>
+    <system:String x:Key="InstallDir">Pasta de Instalação:</system:String>
+    <system:String x:Key="InstallDirName">Nome da Pasta de Instalação:</system:String>
+    <system:String x:Key="CustomRootPath">Caminho Raiz / Jogo Personalizado:</system:String>
+    <system:String x:Key="RelativeGameIniPath">Caminho relativo para um arquivo de configuração do jogo:</system:String>
+    <system:String x:Key="AdditionalRelativeGameIniPath">Caminho relativo adicional para um arquivo de configuração:</system:String>
+    <system:String x:Key="HelixPostUpdated">Postagem Helix atualizado pela última vez:</system:String>
+    <system:String x:Key="SetDate">Definir Data</system:String>
+    <system:String x:Key="SetDateTooltip">Define a data de hoje como um registro de data e hora.</system:String>
+    <system:String x:Key="DownloadLinkFix">URL para correção 3D:</system:String>
+    <system:String x:Key="AdditionalDownloadLinkFix">URL adicional para correção 3D:</system:String>
+    <system:String x:Key="FixArchiveExtractor">Corrigir Extrator de Arquivo:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Permitir atualização do empacotador do 3dmigoto:</system:String>
+    <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
+    <system:String x:Key="StartTool">Iniciar Exe adicional:</system:String>
+
+    <system:String x:Key="WebLinkHelix">URL para Helix Blog / Geforce Forum:</system:String>
+
+    <system:String x:Key="LocalIconPath">Caminho do ícone local:</system:String>
+    <system:String x:Key="RemoteIconPath">Caminho do ícone remoto:</system:String>
+    <system:String x:Key="ProductPageUrl">URL da Página do Produto:</system:String>
+    <system:String x:Key="CmFlag">Sinalizar para Modo de Compatibilidade:</system:String>
+    <system:String x:Key="Profile2DMode">Perfil do Nvidia Inspector para o Modo 2D:</system:String>
+    <system:String x:Key="Profile3DMode">Perfil do Nvidia Inspector para o Modo 3D:</system:String>
+    <system:String x:Key="FixState">Estado de Correção 3D:</system:String>
+    <system:String x:Key="SteamAppID">ID do App Steam:</system:String>
+
+    <system:String x:Key="WaitForExit">Aguardar a saída</system:String>
+    <system:String x:Key="GameExeAsArgument">Exe do jogo como parâmetro inicial</system:String>
+    <system:String x:Key="GameLauncherExe">Iniciador Exe do Jogo:</system:String>
+    <system:String x:Key="GameLauncherOptions">Opções do Inicializador do Jogo:</system:String>
+    <system:String x:Key="FixDescription">Descrição da Correção:</system:String>
+
+    <!-- ComboBoxes -->   
+    <system:String x:Key="NoProfileInstall">Não instalar o Perfil</system:String>
+    <system:String x:Key="InstallWithDialog">Instalar com Diálogo</system:String>
+    <system:String x:Key="SilentInstallation">Instalação silenciosa</system:String>
+
+    <system:String x:Key="Unknown">Desconhecido</system:String>
+    <system:String x:Key="FixBroken">Correção com Problema</system:String>
+    <system:String x:Key="FixBrokenToolTip">A Correção 3D está atualmente com problema.</system:String>
+    <system:String x:Key="RequiresExtraSteps">Requer etapas extras pelo usuário</system:String>
+    <system:String x:Key="RequiresExtraStepsToolTip">A instalação da correção requer etapas adicionais executadas pelo usuário para concluir a instalação. Por favor, verifique a descrição abaixo.</system:String>
+    <system:String x:Key="WorksOutOfTheBox">Funciona fora da caixa</system:String>
+    <system:String x:Key="WorksOutOfTheBoxToolTip">Nenhuma etapa adicional necessária para instalar a correção. Esta é uma instalação simples de um clique.</system:String>
+    
+    <system:String x:Key="CloseRTSS">Fechar RTSS</system:String>
+    <system:String x:Key="StartRTSS">Iniciar RTSS</system:String>
+
+    <system:String x:Key="StartByAppId">Iniciar via ID do App Steam</system:String>
+    <system:String x:Key="StartByGameExe">Iniciar via executável do Jogo</system:String>
+
+    <system:String x:Key="RunNormal">Executar normal</system:String>
+    <system:String x:Key="RunAsAdmin">Executar como administrador</system:String>
+
+    <!-- Buttons-->
+    <system:String x:Key="ChoosePath">Escolher Caminho</system:String>
+    <system:String x:Key="PickFile">Escolher arquivo</system:String>
+    <system:String x:Key="RemoveIcon">Remover ícone</system:String>
+    <system:String x:Key="OpenUrl">Abrir URL</system:String>
+    <system:String x:Key="SearchUrl">URL de Pesquisa</system:String>
+    <system:String x:Key="SearchAppID">ID do aplicativo de Pesquisa</system:String>
+    <system:String x:Key="SearchInDB">Pesquisar no DB</system:String>
+    <system:String x:Key="SearchSteamDb">Pesquisar no Steam DB</system:String>
+    <system:String x:Key="ValuesFor2D">Valores para 2D</system:String>
+    <system:String x:Key="ValuesFor3D">Valores para 3D</system:String>
+    <system:String x:Key="Open">Abrir caminho</system:String>
+    <system:String x:Key="Cancel">Cancelar</system:String>
+    <system:String x:Key="Save">Salvar</system:String>
+    <system:String x:Key="SaveChanges">Salvar Alterações</system:String>
+    <system:String x:Key="CreateProfile">Criar Perfil</system:String>
+    
+    <!--....................  Edit Profile Tab End .......................... -->
+
+    
+    <!--....................  Hotkeys Tab Begin .......................... -->
+
+    <system:String x:Key="FixInfo">Corrigir Informações:</system:String>
+    <system:String x:Key="Game">Jogo:</system:String>
+    <system:String x:Key="FixType">Tipo de correção:</system:String>
+    <system:String x:Key="WrapperVersion">Versão do Empacotador:</system:String>
+    <system:String x:Key="IniPath">Caminho Ini:</system:String>
+    <system:String x:Key="IniPath02">Caminho Ini 2:</system:String>
+    <system:String x:Key="CreateIni">Criar Ini</system:String>
+    <system:String x:Key="ResetIniToDefault">Redefinir Ini para Padrão:</system:String>
+    <system:String x:Key="DownloadDefaultIni">Baixar Ini Padrão</system:String>
+    <system:String x:Key="ManageHotkeys">Gerenciar Teclas de Atalho:</system:String>
+    <system:String x:Key="NoIniProvided">Nenhuma ini fornecida por essa correção</system:String>
+    <system:String x:Key="ParseError">Desculpe, o arquivo ini não pôde ser analisado"</system:String>
+    <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Desculpe, não foi possível determinar a versão do Empacotador Helix. &#x0d;Por favor, clique em 'Baixar Ini Padrão' para obter esta informação</system:String>
+    <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Versão antiga</system:String>
+    <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Versão antiga</system:String>
+    <system:String x:Key="HotkeysNotSupportedMigoto">Desculpe, a edição de teclas de atalho não é compatível com esta versão do 3dmigoto.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Desculpe, o Empacotador 3D Vision OpenGL atualmente não é suportado.</system:String>
+
+    <!-- Hotkey Management Group -->
+    <system:String x:Key="HotkeyManagement">Gerenciamento de Teclas de Atalho:</system:String>
+    <system:String x:Key="NewHotkey">Nova tecla de atalho</system:String>
+    <system:String x:Key="NewHotkeyToolTip">Cria uma nova tecla de atalho. Não esqueça de atribuir uma tecla.</system:String>
+    <system:String x:Key="DeleteHotkey"> Remover Tecla</system:String>
+    <system:String x:Key="DeleteHotkeyToolTip"> Remove tecla de atalho com todas as predefinições 3D correspondentes.</system:String>
+    <system:String x:Key="SelectedHotkey">Tecla de Atalho Selecionada:</system:String>
+    <system:String x:Key="SelectedHotkeyToolTip">Tecla de atalho selecionada para edição.</system:String>
+    <system:String x:Key="EditKeyBinding">Editar vinculação de Tecla:</system:String>
+    <system:String x:Key="KeyType">Tipo de Tecla:</system:String>
+    <system:String x:Key="PressKeyToolTip">Pressione uma tecla para alterar a associação de teclas.</system:String>
+    <system:String x:Key="ChooseInputDeviceToolTip">Escolher dispositivo de entrada para ligação de tecla.</system:String>
+    <system:String x:Key="Description">Descrição:</system:String>
+    <system:String x:Key="DescriptionToolTip">SBreve resumo sobre o propósito da tecla de atalho.</system:String>
+    <system:String x:Key="ResetIniToolTip">Redefine o ini ao estado original.</system:String>
+    
+    <!-- Preset Management Group -->
+    <system:String x:Key="PresetManagement">Gerenciamento Predefinido:</system:String>
+    <system:String x:Key="NewPreset">Nova Predefinição</system:String>
+    <system:String x:Key="NewPresetToolTip">Cria uma nova predefinição 3D..</system:String>
+    <system:String x:Key="DefaultPreset">Predefinição padrão:</system:String>
+    <system:String x:Key="DefaultPresetToolTip">Habilite isso para definir uma predefinição que já está ativa quando o jogo é iniciado.</system:String>
+    <system:String x:Key="cbDefaultPresetToolTip">Esta é a predefinição ativa quando você inicia o jogo.</system:String>
+    <system:String x:Key="Delay">Atraso:</system:String>
+    <system:String x:Key="DelayToolTip">EAtivar / desativar o atraso para ativar uma predefinição depois que a tecla de atalho foi pressionada.</system:String>
+    <system:String x:Key="DelayMsToolTip">Tempo em [ms] até que a predefinição seja ativada após o pressionamento da tecla de atalho.</system:String>
+    <system:String x:Key="ReleaseDelay">Atraso de Liberação:</system:String>
+    <system:String x:Key="ReleaseDelayToolTip">Ativar / desativar o atraso para desativar a predefinição ativa atual após o lançamento da tecla de atalho.</system:String>
+    <system:String x:Key="ReleaseDelayMsToolTip">Tempo em [ms] até que a predefinição seja desativada após a ativação da tecla de atalho.</system:String>
+    <system:String x:Key="Transition">Transição:</system:String>
+    <system:String x:Key="TransitionToolTip"> Ativar / desativar a transição animada entre as predefinições.</system:String>
+    <system:String x:Key="TransitionMsToolTip">Tempo em [ms] para desaparecer entre as predefinições.</system:String>
+    <system:String x:Key="ReleaseTransition">Transição de Lançamento:</system:String>
+    <system:String x:Key="ReleaseTransitionToolTip">Ativar / desativar a transição animada após o lançamento da tecla de atalho.</system:String>
+    <system:String x:Key="ReleaseTransitionMsToolTip">Tempo em [ms] para desaparecer entre as predefinições depois que a tecla de atalho foi liberada.</system:String>
+    <system:String x:Key="TransitionTypeToolTip">Tipo de animação usada para desaparecer entre as predefinições.</system:String>
+    
+    <!-- Preset Group -->   
+    <system:String x:Key="UseStereoSettings">Usar configurações estéreo</system:String>
+    <system:String x:Key="UseStereoSettingsToolTip">Habilite isso para permitir que esta predefinição altere as configurações de separação e / ou convergência no jogo.</system:String>
+    
+    <system:String x:Key="SaveStereoSettings">Salvar configurações estéreo no jogo com F7:</system:String>
+    <system:String x:Key="SaveStereoSettingsToolTip">Habilite isso para permitir que os presets sejam alterados durante a reprodução. Certifique-se de selecionar a predefinição no jogo pressionando o botão de atalho, altere a Profundidade 3D / Convergência com CTRL + F3 - F6 ao seu gosto e pressione F7 para salvar.</system:String>
+
+    <system:String x:Key="chkStereoSeparationToolTip">Habilite isso para definir a separação 3D. Desmarcar removerá a entrada correspondente do arquivo ini.</system:String>
+    <system:String x:Key="sliderStereoSeparationToolTip">S Definir a separação 3D em porcentagem.</system:String>
+    
+    <system:String x:Key="Convergence">Convergência:</system:String>
+    <system:String x:Key="chkConvergenceToolTip">"Habilite isso para definir a convergência. Desmarcar irá remover a entrada correspondente do arquivo ini."</system:String>
+    <system:String x:Key="tbConvergenceToolTip">Defina Convergência como um número de ponto flutuante.</system:String>
+
+    <system:String x:Key="chkShaderConstToolTip">Habilite isso para definir uma constante de shader e definir seu valor. Desmarcar irá remover a entrada correspondente do arquivo inie</system:String>
+    <system:String x:Key="chbShaderConstToolTip">Escolha uma constante a ser passada para o shader.</system:String>
+    <system:String x:Key="tbShaderConstToolTip">Defina o valor constante como um número de ponto flutuante.</system:String>
+    <system:String x:Key="NewConstant">Nova Constante</system:String>
+    <system:String x:Key="NewConstantToolTip">Cria uma nova constante de shader.</system:String>
+    <system:String x:Key="DefaultConstToolTip">Digite um número de ponto flutuante</system:String>
+
+    <system:String x:Key="RemovePresetToolTip">Remove toda a predefinição do arquivo ini.</system:String>
+
+    <!-- General Ini Settings group -->
+    <system:String x:Key="GeneralIniSettings">Configurações gerais do Ini:</system:String>
+    <system:String x:Key="StereoOverlay">Sobreposição estéreo:</system:String>
+    <system:String x:Key="EnableStereoOverlay">Habilitar Sobreposição Estéreo no Jogo</system:String>
+    <system:String x:Key="ShowHideOverlay">Mostrar / Ocultar Sobreposição Estéreo:</system:String>
+    <system:String x:Key="ShowHideOverlayToolTip">Tecla de atalho para ocultar a sobreposição. Nota: isto não irá desativar o modo de caça.</system:String>
+    <system:String x:Key="ReloadIniFile">Recarregar Arquivo Ini no Jogo:</system:String>
+    <system:String x:Key="ReloadIniFileToolTip">Recarrega o ini durante a reprodução e aplica as alterações de Tecla de Atalho / Predefinição.</system:String>
+    <system:String x:Key="DefaultValuesConstants">Valores Padrão para Constantes do Shader:</system:String>
+    <system:String x:Key="EnableAlternative3dMode">Ativar o modo 3D alternativo:</system:String>
+    <system:String x:Key="EnableAlternative3dModeToolTip">Escolha um formato 3D alternativo para uso com TVs 3D e projetores.</system:String>
+    <system:String x:Key="EnableSoftwareMouse">Ativar o Cursor do Mouse de Software</system:String>
+    <system:String x:Key="Constant">Constante</system:String>
+    <system:String x:Key="Upscaling">Dimensionamento:</system:String>
+
+    <system:String x:Key="ResolutionAndRefreshRates">Taxas de resolução e atualização:</system:String>
+    <system:String x:Key="EnableUpscaling">Habilitar o dimensionamento</system:String>
+    <system:String x:Key="UpscalingMode">Modo de dimensionamento:</system:String>
+    <system:String x:Key="OverrideScreenWidth">Sobrepor a largura da tela:</system:String>
+    <system:String x:Key="OverrideScreenHeight">Sobrepor altura da tela:</system:String>
+    <system:String x:Key="OverrideScreenToolTip">Forçar Sobreposição da Resolução da Tela.</system:String>
+    <system:String x:Key="UpscalingScreenWidth">Largura da tela de destino para dimensionamento:</system:String>
+    <system:String x:Key="UpscalingScreenHeight">Altura da tela de destino para dimensionamento:</system:String>
+    <system:String x:Key="OverrideRefrehRate">Substituir taxa de atualização:</system:String>
+    <system:String x:Key="OverrideRefrehRateToolTip">Substitui a taxa de atualização definida pelo jogo.</system:String>
+    <system:String x:Key="FilterRefreshRates">Filtrar taxas de atualização</system:String>
+    <system:String x:Key="ForceFullscreen">Forçar tela cheia no início do jogo:</system:String>
+    <system:String x:Key="ForceFullscreenOnKeyPress">Forcar tela cheia ao pressionar a tecla:</system:String>
+    <system:String x:Key="ToggleFullscreen">Alternar tela cheia:</system:String>
+    <system:String x:Key="ForcedFullscreen">Forçar tela cheia</system:String>
+    <system:String x:Key="NormalFullscreen">Tela Cheia normal</system:String>
+    <system:String x:Key="TypeInIntegerToolTip">Digite um valor inteiro.</system:String>
+    <system:String x:Key="TypeInCommaSeparatedListToolTip">Digite uma lista separada por vírgulas de taxas de atualização.</system:String>
+
+    <!-- Driver Profile Settings group -->
+    <system:String x:Key="DriverProfileSettings">Configurações do perfil de driver:</system:String>
+    <system:String x:Key="Stereo3DSettings">Configurações 3D Estéreo:</system:String>
+    <system:String x:Key="CompatibilityModeSettings">Configurações do Modo de Compatibilidade 3D:</system:String>
+    <system:String x:Key="VisionReady">Pronto para 3D Vision</system:String>
+    <system:String x:Key="VisionReadyToolTip">Altera a classificação da qualidade estereoscópica.</system:String>
+    <system:String x:Key="Excellent">Excelente</system:String>
+    <system:String x:Key="Good">Bom</system:String>
+    <system:String x:Key="Fair">Regular</system:String>
+    <system:String x:Key="Not Recommended">Não recomendado</system:String>
+    
+    <!--....................  Hotkeys Tab End .......................... -->
+
+    
+    <!--....................  General Settings Tab Start .......................... -->
+    
+    <!-- General Settings group -->
+    <system:String x:Key="GeneralSettingsGroup">Configurações gerais:</system:String>
+    <system:String x:Key="CheckForUpdates">Verificar atualizações na inicialização</system:String>
+    <system:String x:Key="AllowChangesToGameConfig">Otimize as configurações do jogo para 3D estéreo</system:String>
+    <system:String x:Key="EnableSteamOverlay">Ativar a sobreposição do Steam</system:String>
+    <system:String x:Key="SendData">Enviar dados quando o usuário personaliza um perfil de correção</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Atualize o 3dmigoto na inicialização</system:String>
+    <system:String x:Key="ReinstallFixFromCache">Instalar correções 3D do cache de download, se possível</system:String>
+    <system:String x:Key="PreferIconDownload">Prefere ícones de jogos do banco de dados da internet</system:String>
+    <system:String x:Key="EnableAllFixes">Ativar / desativar todas as correções:</system:String>
+    <system:String x:Key="ResetAllIcons">Redefinir todos os ícones de jogos:</system:String>
+    <system:String x:Key="UpdateAllWrappers">Atualize 3dmigoto de todas as correções 3D instaladas:</system:String>
+    <system:String x:Key="ClearAllDownloadCache">Limpar o cache de download para todos os perfis de correção:</system:String>
+    <system:String x:Key="SteamNotDetected">DLLs de Sobreposição / Steam não detectado</system:String>
+    <system:String x:Key="DisableAllFixesToolTip">Desativa todas as correções 3D instaladas.</system:String>
+    <system:String x:Key="EnableAllFixesToolTip">Ativa todas as correções 3D instaladas.</system:String>
+    
+    <!-- Search paths group -->
+    <system:String x:Key="SearchPathsGroup">Caminhos de pesquisa para detectar Jogos instalados:</system:String>
+    <system:String x:Key="EnableSearchPaths">Ativar caminhos de pesquisa</system:String>
+    <system:String x:Key="PrioritizeSearchPaths">Priorizar os caminhos de pesquisa nos caminhos do Registro do Windows</system:String>
+    <system:String x:Key="SearchDepth">Profundidade da pesquisa:</system:String>
+    <system:String x:Key="SearchPaths">Caminhos de pesquisa:</system:String>
+    <system:String x:Key="SearchGames">Pesquisar Jogos</system:String>
+    <system:String x:Key="DetectPaths">Detectar caminhos</system:String>
+    <system:String x:Key="DetectPathsToolTip">Detecta automaticamente os caminhos para as bibliotecas do Steam e adiciona-os como caminhos de pesquisa.</system:String>
+    <system:String x:Key="Add">Adicionar</system:String>
+    <system:String x:Key="AddPathToolTip">Adiciona um caminho de pesquisa.</system:String>
+    <system:String x:Key="Remove">Remover</system:String>
+    <system:String x:Key="RemovePathToolTip">Remove o caminho de pesquisa selecionado.</system:String>
+    <system:String x:Key="ChangePathToolTip">Altera o caminho de pesquisa selecionado</system:String>
+
+    <!-- RTSS settings group -->
+    <system:String x:Key="RtssSettingsGroup">Configurações do Servidor de Estatísticas do RivaTuner:</system:String>
+    <system:String x:Key="StartRTSS_Setting">Iniciar / Fechar o RTSS, dependendo da configuração do perfil de correção</system:String>
+    <system:String x:Key="InterruptGameLaunch">Pausa do início do jogo para configurar o RTSS</system:String>
+    <system:String x:Key="CloseRivaTunerIn2D">Sempre feche o RTSS ao jogar no modo 2D</system:String>
+    <system:String x:Key="NeverCloseRivaTunerIn2D">Nunca feche o RTSS ao jogar no modo 2D</system:String>
+    <system:String x:Key="CloseRtssOnAppClose">Feche o RTSS ao encerrar o 3D Fix Manager</system:String>
+    <system:String x:Key="RivaTunerNotDetected">Servidor de Estatísticas RivaTuner não detectado / não instalado</system:String>
+
+    <!-- Game Launcher Settings group -->
+    <system:String x:Key="GameLauncherSettings">Configurações do Inciador de jogos:</system:String>
+    <system:String x:Key="StartGamesByGameExe">Prefere iniciar jogos através do Inciador de jogos Exe</system:String>
+    <system:String x:Key="StartGamesBySteamAppId">Prefiro iniciar jogos via Cliente Steam (Steam App ID)</system:String>
+    <system:String x:Key="StartGamesByFixProfile">O método de Início é controlado pelo perfil de correção (recomendado)</system:String>
+
+    <!--Nvidia Profile Inspector Settings group -->
+    <system:String x:Key="NvidiaProfileInspectorSettings">Configurações do Nvidia Profile Inspector:</system:String>
+    <system:String x:Key="NeverInstallProfiles">Nunca instale os perfis de driver via Nvidia Profile Inspector</system:String>
+    <system:String x:Key="ProfileInstallByFixProfile">A instalação de perfis de driver é controlada pelo perfil de correção</system:String>
+    <system:String x:Key="InstallProfilesSilently">Instalar perfis de driver silenciosamente sem mensagens de aviso</system:String>
+    <system:String x:Key="NoNvidiaDetected">Nenhum driver da Nvidia detectado / instalado</system:String>
+    <system:String x:Key="Start">Iniciar</system:String>
+    <system:String x:Key="StartProfileInspectorToolTip">Inicia o Nvidia Profile Inspector.</system:String>
+    <system:String x:Key="StartRtssToolTip">Inicia o RivaTuner Statistics Server.</system:String>
+
+    <!-- Stereo Refresh Rate Settings Group  group -->
+    <system:String x:Key="StereoRefreshRateSettings">Frequência do obturador de óculos 3D da Nvidia / Taxa de atualização de estéreo:</system:String>
+    <system:String x:Key="GlobalStereoRefreshRate">Usar taxa de atualização definida no driver da Nvidia</system:String>
+    <system:String x:Key="ProfileStereoRefreshRate">A taxa de atualização é controlada pelo perfil de correção</system:String>
+
+    <!-- Buttons-->
+    <system:String x:Key="Disable">Desativar</system:String>
+    <system:String x:Key="Enable">Ativar</system:String>
+    <system:String x:Key="Update">Atualizar</system:String>
+    <system:String x:Key="Clear">Limpar</system:String>
+
+    <!--....................  General Settings Tab End .......................... -->
+
+    
+    <!--....................  Nvidia 3D Settings Tab Start .......................... -->
+
+    <system:String x:Key="NvidiaNotDetected">Nvidia 3D Estereoscópico não detectado</system:String>
+    <system:String x:Key="PressKeyCombination">Pressione uma combinação de teclas no teclado.</system:String>
+    
+    <!-- General settings group -->
+    <system:String x:Key="EnableNvidia3D">Ativar Nvidia 3D estereoscópico</system:String>
+    <system:String x:Key="Disable3dOnClosing">Desativar automaticamente o Nvidia 3D Estereoscópico ao fechar o aplicativo</system:String>
+    <system:String x:Key="SetStereoTypeTo3DVision">Forçar o modo de reprodução 3D Vision / 3DTV</system:String>
+    <system:String x:Key="StereoSeparation">Profundidade 3D:</system:String>
+    <system:String x:Key="DepthMultiplier">Multiplicador de Profundidade 3D:</system:String>
+    <system:String x:Key="Inch">polegadas</system:String>
+    <system:String x:Key="ResultingMonitorSize">Substituir tamanho do monitor:</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">Ativar 3D no modo de janela</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabled">Modo 3D sempre ativado</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Define se a exibição está permanentemente no modo 3D (o modo com janelas 3D também deve estar ativado).</system:String>
+    <system:String x:Key="SwapInterleavePattern">Ativar entrelaçamento de linha reversa para exibições 3D passivas</system:String>
+
+    <!-- Refresh rate settings group -->
+    <system:String x:Key="RefreshRateSettingsGroup">Atualizar taxas e perfis globais de driver:</system:String>
+    <system:String x:Key="StereoRefreshRate">Taxa de atualização estéreo:</system:String>
+    <system:String x:Key="Change3dRefreshRate">Modo 3D da taxa de atualização da área de trabalho:</system:String>
+    <system:String x:Key="Change2dRefreshRate">Taxa de atualização da área de trabalho Modo 2D:</system:String>
+    <system:String x:Key="RefreshRateWhenClosing">Taxa de atualização da área de trabalho ao fechar a aplicação</system:String>
+    <system:String x:Key="Global2dDriverProfile">Perfil do driver 2D:</system:String>
+    <system:String x:Key="Global3dDriverProfile">Perfil do driver 3D:</system:String>
+
+    <!-- General hotkeys group -->
+    <system:String x:Key="GeneralHotkeys">Teclas de atalho gerais:</system:String>
+    <system:String x:Key="StereoToggle">Mostrar / ocultar efeitos estereoscópicos:</system:String>
+    <system:String x:Key="StereoToggleToolTip">Alterna entre 2D simples e 3D estereoscópico durante jogos.</system:String>
+    <system:String x:Key="StereoSeparationAdjustLess">Diminuir a profundidade 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustLessToolTip">Diminui a profundidade / separação 3D.</system:String>
+    <system:String x:Key="StereoSeparationAdjustMore">Aumentar profundidade 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Aumenta a profundidade / separação em 3D.</system:String>
+    <system:String x:Key="ToggleMemo">Mostrar / ocultar a compatibilidade no jogo:</system:String>
+    <system:String x:Key="ToggleMemoToolTip">Mostra / oculta texto verde com informações de compatibilidade e configurações recomendadas no jogo.</system:String>
+
+    <!-- Advanced hotkeys group -->
+    <system:String x:Key="AdvancedHotkeys">Teclas Avançadas Avançadas:</system:String>
+    <system:String x:Key="StereoAdvancedHKConfig">Ativar teclas de atalho avançadas no jogo</system:String>
+    <system:String x:Key="StereoAdvancedHKConfigToolTip">Habilita teclas de atalho avançadas para alterar as configurações de convergência / tronco e muito mais.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLess">Diminuir convergência:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Diminui o efeito de saltar da tela em jogos.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMore">Aumentar convergência:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Aumenta o efeito de saltar da tela em jogos</system:String>
+    <system:String x:Key="WriteConfig">Salvar alterações no jogo:</system:String>
+    <system:String x:Key="WriteConfigToolTip">Salva os ajustes de convergência e tronco para o perfil do driver da Nvidia.</system:String>
+    <system:String x:Key="CycleFrustumAdjust">Ajuste de ajuste de ciclo:</system:String>
+    <system:String x:Key="CycleFrustumAdjustToolTip">Ciclos através de três diferentes ajustes Tronco.</system:String>
+    <system:String x:Key="StereoToggleMode">Alternar modo de compatibilidade 3D:</system:String>
+    <system:String x:Key="StereoToggleModeToolTip"> Alterna entre o modo de compatibilidade para jogos DirectX 11 (Falso 3D) e Modo Real 3D.</system:String>
+    
+    <!-- Screenshots group -->
+    <system:String x:Key="ScreenshotsGroup">Capturas de tela:</system:String>
+    <system:String x:Key="StereoImageType">Tipo de imagem estéreo:</system:String>
+    <system:String x:Key="StereoImageTypeToolTip">Define o formato das imagens estereoscópicas (JPS ou PNS).</system:String>
+    <system:String x:Key="StereoImageFolder">Abrir Pasta</system:String>
+    <system:String x:Key="StereoImageFolderToolTip">Abre a localização da pasta de capturas de tela no Windows Explorer.</system:String>
+    <system:String x:Key="SnapShotQuality">Qualidade JPS:</system:String>
+    <system:String x:Key="SnapShotQualityToolTip">Determina a qualidade da imagem e o tamanho do arquivo.</system:String>
+    <system:String x:Key="SaveStereoImage">Capturar de tela:</system:String>
+    <system:String x:Key="SaveStereoImageToolTip">Salva uma captura de tela estereoscópica no disco rígido.</system:String>
+
+    <!-- LaserSight group -->
+    <system:String x:Key="LaserSightGroup">Mira Laser:</system:String>
+    <system:String x:Key="LaserSightEnabled">Ativar mira a laser::</system:String>
+    <system:String x:Key="LaserSightEnabledToolTip">Define se a mira a laser 3D pode ser ativada com uma Tecla de Atalho ou automaticamente pelo perfil do driver da Nvidia.</system:String>
+    <system:String x:Key="ToggleLaserSight">Alternar mira do laser:</system:String>
+    <system:String x:Key="ToggleLaserSightToolTip">Habilita ou desabilita a visão estereoscópica do laser no jogo.</system:String>
+
+    <!-- Buttons-->
+    <system:String x:Key="Load">Carregar</system:String>
+    <system:String x:Key="Reset">Redefinir</system:String>
+    <system:String x:Key="Apply">Aplicar</system:String>
+
+    <!--....................  Nvidia 3D Settings Tab End .......................... -->
+
+    
+    <!--....................  About Tab Begin .......................... -->
+
+    <system:String x:Key="ProgramDevelopedBy">Programa desenvolvido por:</system:String>
+    <system:String x:Key="FixesDevelopedBy">Correções 3D desenvolvidas por:</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Envie uma doação para o desenvolvedor do 3D Fix Manager.</system:String>
+    <system:String x:Key="DonationShaderHackersToolTip">Envie uma doação para os desenvolvedores de correções 3D.</system:String>
+    <system:String x:Key="ProgramVersion">Versão do programa:</system:String>
+    <system:String x:Key="FixProfiles">Versão de Perfis:</system:String>
+    <system:String x:Key="CheckUpdate">Verificar Atualizações</system:String>
+    <system:String x:Key="UpdateSuccess">Atualização concluída</system:String>
+    <system:String x:Key="UpdateFailed">Falha na atualização</system:String>
+    <system:String x:Key="ChangeNotes">(Notas das Alterações)</system:String>
+    <system:String x:Key="Donate">Doar</system:String>
+    <system:String x:Key="Installing">Instalando...</system:String>
+
+    <!-- Buttons -->
+    <system:String x:Key="Manual">Manual</system:String>
+    <system:String x:Key="ReportBugs">Reportar Bugs</system:String>
+    <system:String x:Key="UpdateSteamDb">Atualizar o DB do Steam</system:String>
+    <system:String x:Key="CreateReleases">Criar Versões</system:String>
+    <system:String x:Key="ReferenceDb">Preencher BD de Referência</system:String>
+    <system:String x:Key="GithubLanguages">Idiomas GitHub</system:String>
+
+    <!--....................  About Tab End .......................... -->
+
+    
+    <!--....................  Dialog Window Start .......................... -->
+
+    <!-- Buttons-->
+    <system:String x:Key="Yes">Sim</system:String>
+    <system:String x:Key="No">Não</system:String>
+    <system:String x:Key="Install3dmigotox32">Instalar 3dmigoto x32</system:String>
+    <system:String x:Key="InstallHelixModx32">Instalar HelixMod x32</system:String>
+    <system:String x:Key="Install3dmigotox64">Instalar 3dmigoto x64</system:String>
+    <system:String x:Key="InstallHelixModx64">Instalar HelixMod x64</system:String>
+    <system:String x:Key="QuickSetup">Instalação Rápida</system:String>
+    <system:String x:Key="SetupWizard">Assistente de Instalação</system:String>
+    
+    <!-- Messages -->
+    <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
+    <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
+    <system:String x:Key="WeblinkInvalid" xml:space="preserve">Erro: Não foi possível baixar o Helix Post.&#x0d;&#x0d;O link para o blog não é válido.</system:String>
+    <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Erro: o Helix Post não pôde ser baixado. &#x0d;&#x0d;Por favor, forneça primeiro um link para o Helix Blog.</system:String>
+    <system:String x:Key="ViewerNotFound" xml:space="preserve">Erro: o Visualizador de fotos 3D Vision não foi encontrado.</system:String>
+    <system:String x:Key="HelixPostError" xml:space="preserve">Erro: O Helix Post não pôde ser baixado.</system:String>
+    <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">Para obter melhores resultados, você deve definir a resolução de destino para dimensionamento para a resolução nativa da sua tela. &#x0d;&#x0d;Deseja definir a resolução nativa agora?&#x0d;&#x0d;Resolução nativa detectada: </system:String>
+    <system:String x:Key="Install3dmigoto02">Instalar 3dmigoto:</system:String>
+    <system:String x:Key="InstallHelixMod02">Instalar HelixMod:</system:String>
+    <system:String x:Key="RemoveProfile">Remover Perfil de Correção?</system:String>
+    <system:String x:Key="IniReset" xml:space="preserve">Todas as configurações ini foram redefinidas para os valores padrão. &#x0d;&#x0d;Não se esqueça de salvar as alterações.</system:String>
+    <system:String x:Key="EnableStereoWarning" xml:space="preserve">Para visualizar esta imagem estéreo, o NVIDIA Estereoscópico 3D precisa estar ativado.
+
+Quer habilitá-lo agora e continuar?
+  
+Nota: A taxa de atualização da área de trabalho do monitor deve ser definida para 120 Hz para usar esse recurso.
+        
+Dica: Na aba "Nvidia 3D Settings" você encontrará uma opção para alternar automaticamente para 120 Hz (consulte "Modo 3D de taxa de atualização da área de trabalho")</system:String>
+    
+    <system:String x:Key="GameTitleEmpty">Erro: O título do jogo não pode estar vazio</system:String>
+    <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Nota: Você ainda não definiu um ID de App Steam para esse perfil, o que é necessário para iniciar os jogos Steam. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
+    <system:String x:Key="GameExeNotSet" xml:space="preserve">Nota: Você ainda não definiu um Game Exe para o perfil. Isso geralmente é necessário para iniciar jogos. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
+    <system:String x:Key="WrapperChoice" xml:space="preserve">Escolha um 3D Empacotador que você deseja instalar.
+                                         
+Instalar um Empacotador desbloqueia alguns recursos como o Teclas de Atalho estéreo, o modo de saída Lado a Lado / TaB, o modo de compatibilidade e a instalação automática do perfil de driver.
+        
+Notas:
+        
+- Instale o HelixMod para jogos DirectX 9
+- Instale o 3dmigoto para jogos DirectX 11
+- Certifique-se de escolher a versão correta (32 bits ou 64 bits)
+  Se um exe inicializador de jogo foi adicionado ao perfil de correção, esta informação é detectada automaticamente
+- Somente o Empacotador bruto está instalado (sem correções do sombreador)</system:String>
+
+    <system:String x:Key="ErrorGameAlreadyExists">Erro: o perfil com o mesmo título já existe.</system:String>
+    <system:String x:Key="GameIconFileNotFound">​​Erro: O arquivo de ícone do jogo não foi encontrado..</system:String>
+    <system:String x:Key="InstallPathNotRelative"> Erro: o caminho de instalação não é um caminho relativo.</system:String>
+    <system:String x:Key="IniPathNotRelative">Erro: o caminho ini do jogo adicional não é um caminho relativo.</system:String>
+    <system:String x:Key="AdditionalIniPathNotRelative">Error: additional game ini path is not a relative path.</system:String>
+    <system:String x:Key="ChangesSaved">CAlterações salvas com sucesso.</system:String>
+    <system:String x:Key="FixProfileCreated">Perfil de correção criado com êxito.</system:String>
+    <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Todos os ícones foram restaurados e baixados com sucesso em segundo plano.&#x0d;&#x0d;Nota: Todos os ícones antigos foram movidos para uma pasta de backup dentro das pastas de perfil individuais para restaurá-las, se necessário.</system:String>
+    <system:String x:Key="ServerNotAvailable" xml:space="preserve">Servidor não disponível. &#x0d;&#x0d;Por favor, tente novamente mais tarde.</system:String>
+    <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">Novos perfis de correção disponíveis. Deseja atualizar?</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Uma nova correção 3D está disponível para o jogo "{0}".&#x0d;&#x0d;Deseja atualizar para o mais recente versão agora?&#x0d;&#x0d;Nota: Durante este procedimento, a correção antiga é automaticamente desinstalada antes que a nova seja baixada e instalada. Teclas de Atalho personalizadas são mantidas.</system:String>
+    <system:String x:Key="NoUpdates" >Nenhuma atualização disponível. Corrigir os perfis atualizados.</system:String>
+    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Uma nova versão do 3D Fix Manager está disponível. Deseja atualizar?</system:String>
+    <system:String x:Key="BugReportTo" xml:space="preserve">Se você deseja reportar bugs ou ter ideias para novos recursos, envie um e-mail para: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
+    <system:String x:Key="NoChangeNotesFound">Desculpe, não foram encontradas Notas de Mudança.</system:String>
+    <system:String x:Key="ChangeNotesManager">CAlterar Gerenciador de Fixações do Notes:</system:String>
+    <system:String x:Key="ChangeNotesProfiles">Alterar Perfis Corrigir Notas:</system:String>
+    <system:String x:Key="WarningRootPath">Aviso: escolher um caminho raiz do seu disco rígido pode resultar em tempos de carregamento muito longos.</system:String>
+    <system:String x:Key="WarningSearchDepth" xml:space="preserve">WAviso: um número de profundidade de pesquisa alta pode resultar em tempos de carregamento muito longos.&#x0d;&#x0d;Tente manter o número tão baixo quanto possível (não superior a 2).</system:String>
+    <system:String x:Key="ErrorNotNumber">Erro: A entrada não é um número.</system:String>
+    <system:String x:Key="RTSSPauseMessage" xml:space="preserve">Lançamento do jogo pausado - faça as alterações nas configurações do RivaTuner Statistics Server, se necessário.
+O RTSS elimina micro gagueira, reduz o atraso de entrada e melhora os tempos de enquadramento no modo 3D.
+
+Configurações recomendadas para o RivaTuner Statistics Server 6.6.0:
+        
+- Suporte personalizado ao Direct3D: desativado
+- limite de taxa de fotogramas: 60
+
+Quando o jogo falha ou o limitador de frame não entra em ação, ative o suporte ao Custom Direct3D.
+
+Para obter resultados perfeitos, você deve ativar o Vsync no jogo e a placa gráfica deve manter 60 fps fixos.
+
+Clique em "OK" quando terminar de fazer alterações.</system:String>
+    <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">É recomendado instalar a correção 3D antes de iniciar o jogo. &#x0d;&#x0d;Deseja instalar a correção agora?</system:String>
+    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">É recomendado restaurar o perfil do driver original "{0}" ao desinstalar a correção.&#x0d;&#x0d;Você deseja redefinir o perfil do driver agora</system:String>
+    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">É recomendado restaurar o perfil do driver original ao desinstalar a correção. Para fazer isso, o perfil atribuído atualmente "{0}" deve ser trocado com o perfil do driver "{1}".&#x0d;&#x0d;Deseja trocar perfis agora? &#x0d;&#x0d;Se os perfis já foram trocados, você pode pular esta etapa escolhendo "Não".</system:String>
+    <system:String x:Key="MessageProfile2D" xml:space="preserve">É recomendado usar o perfil de driver padrão "{0}" para reproduzir no modo 2D.&#x0d;&#x0d;Deseja redefinir o perfil do driver para o estado original agora? &#x0d;&#x0d;Se você já tiver redefinido o perfil, pule esta etapa escolhendo "Não".</system:String>
+    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">É recomendado usar o perfil de driver padrão para jogar no modo 2D. Para fazer isso, o perfil atribuído atualmente "{0}" deve ser trocado com o perfil do driver "{1}".&#x0d;&#x0d;Deseja trocar perfis agora &#x0d;&#x0d;Se os perfis já foram trocados, você pode pular esta etapa escolhendo "Não".</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">A instalação do perfil de driver "{0}" é necessária para fazer a correção funcionar corretamente.&#x0d;&#x0d;Deseja instalá-lo via Nvidia Profile Inspector agora? &#x0d;&#x0d;Se já instalou o perfil, pode saltar este passo escolhendo "Não"</system:String>
+    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">É necessário trocar o perfil de driver atualmente atribuído "{0}" pelo perfil "{1}" para que a correção funcione corretamente. x0d; & # x0d; Deseja trocar perfis via Nvidia Profile Inspector agora? &#x0d;&#x0d;Se os perfis já foram trocados, você pode pular esta etapa escolhendo "Não".</system:String>
+
+
+    <system:String x:Key="ErrorGameLaunch">Erro: Não foi possível iniciar o jogo.</system:String>
+    <system:String x:Key="ErrorOpenWebsite">Erro: o site não pôde ser aberto.</system:String>
+    <system:String x:Key="ReferenceDataDbSuccess">Dados de referência gravados com êxito no banco de dados.</system:String>
+    <system:String x:Key="DbNoRights">Erro: nenhum direito para acessar o banco de dados..</system:String>
+    <system:String x:Key="WarningRefreshRate">Aviso: a taxa de atualização deve ser um número positivo.</system:String>
+    <system:String x:Key="ErrorInputNotANumber">Erro: a entrada não é um número.</system:String>
+    <system:String x:Key="ErrorLicenceNotice">Desculpe, nenhum arquivo de licença foi encontrado.</system:String>
+    <system:String x:Key="UpdateMigoto" xml:space="preserve">Deseja atualizar o 3dmigoto para a versão mais recente? &#x0d;&#x0d;Versão instalada:&#x09;</system:String>
+    <system:String x:Key="LatestVersion" xml:space="preserve">Última versão:&#x09;</system:String>
+    <system:String x:Key="MigotoUpdateSuccess">O 3DMigoto foi atualizado com sucesso..</system:String>
+    <system:String x:Key="MigotoUpdateFailed">Erro: o 3dmigoto não pôde ser atualizado.</system:String>
+    <system:String x:Key="ErrorEnablingCM">Erro ao ativar / desativar o Modo de Compatibilidade.</system:String>
+    <system:String x:Key="UpdateMigoto02" xml:space="preserve">Este recurso está disponível apenas para versões do 3dmigoto maiores que 1.2.48. &#x0d;&#x0d;Deseja atualizar o 3dmigoto para a versão mais recente? &#x0d;&#x0d;Versão instalada: &#x09;</system:String>
+    <system:String x:Key="DonateMessage" xml:space="preserve">Se você deseja apoiar este projeto, você pode fazer uma doação para esta conta do PayPal: duselpaul86@gmx.de
+
+Ao clicar no botão abaixo, seu navegador abrirá o site do PayPal, no qual você poderá facilmente enviar uma doação.
+        
+Por favor, ajude a manter vivo o jogo em 3D.
+        
+Obrigado,
+Pauldusler</system:String>
+    <system:String x:Key="DonateShaderHackers01">Correções 3D baixadas e instaladas pelo 3D Fix Manager são desenvolvidas por alguns shaderhackers muito talentosos da HelixMod Team.</system:String>
+    <system:String x:Key="DonateShaderHackers02">O HelixMod é a razão pela qual os jogos 3D ainda estão vivos hoje. Se você quiser apoiá-los, as doações são muito apreciadas.</system:String>
+    <system:String x:Key="DonateShaderHackers03">Aqui está uma lista de contas do PayPal e Patreon dos shaderhackers individuais que você pode doar para:</system:String>
+    <system:String x:Key="Thanks">Muito obrigado,</system:String>
+    <system:String x:Key="YourHelixModTeam">Sua equipe do HelixMod</system:String>
+    <system:String x:Key="OpenPaypal">Abrir PayPal</system:String>
+    <system:String x:Key="OpenPaypalToolTip">Abre o site do PayPal no webbrowser, no qual você pode enviar uma doação.</system:String>
+    
+    <system:String x:Key="ReleaseBuildSucces">Sucesso: arquivos de versão foram criados com sucesso.</system:String>
+    <system:String x:Key="ReleaseBuildFailed">Erro: falha no processo de lançamento..</system:String>
+    <system:String x:Key="DuplicateKeyError" xml:space="preserve">Erro: Esta Tecla de Atalho já existe. &#x0d;&#x0d;Por favor, escolha outra tecla.</system:String>
+    <system:String x:Key="FolderNotExistsError">Erro: a pasta não existe.</system:String>
+    <system:String x:Key="SettingsAppliedSuccess">Configurações aplicadas com sucesso</system:String>
+    <system:String x:Key="SettingsAppliedFailed">Erro: falha ao aplicar as configurações.</system:String>
+    <system:String x:Key="ProfileLoadedSuccess" xml:space="preserve">Perfil carregado com sucesso.&#x0d;&#x0d;Por favor, clique em 'Aplicar' para gravar valores importados no Registro do Windows.</system:String>
+    <system:String x:Key="ProfileLoadedSuccess02">Perfil carregado com sucesso.</system:String>
+    <system:String x:Key="ProfileLoadedError">Erro: o perfil não pôde ser carregado.</system:String>
+    <system:String x:Key="ProfileSavedSuccess">Perfil salvo com sucesso.</system:String>
+    <system:String x:Key="ProfileSavedError">Erro: o perfil não pôde ser salvo.</system:String>
+    <system:String x:Key="ValidUrlError">Erro: você deve fornecer uma URL válida.</system:String>
+    <system:String x:Key="MultiRowHyperlinkError">Erro: Não são permitidas seleções de várias linhas para Hiperlinks.</system:String>
+    <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">Isso atualizará todas as correções instaladas do 3dmigoto para a versão mais recente do Empacotador.&#x0d;&#x0d;Deseja prosseguir?</system:String>
+    <system:String x:Key="AllUpdatesInstalled">Todas as atualizações foram instaladas com sucesso.</system:String>
+    <system:String x:Key="TypeTitleError">Erro: Por favor, digite primeiro um título do jogo.</system:String>
+    <system:String x:Key="FoundSteamDbData">Dados do banco de dados do Steam encontrados:</system:String>
+    <system:String x:Key="GameExe">Exe do jogo:</system:String>
+    <system:String x:Key="RelativeGameExePath">Caminho Relativo do Exe do Jogo:</system:String>
+    <system:String x:Key="ApplyData">Deseja aplicar esses dados ao perfil de correção?</system:String>
+    <system:String x:Key="NotFoundInDb">Nenhum jogo correspondente encontrado no Steam Database</system:String>
+    <system:String x:Key="NoSteamAppId">Erro: Você deve fornecer um ID do SteamApp válido.</system:String>
+    <system:String x:Key="NotFoundInTheGamesDb">Nenhum jogo correspondente encontrado no banco de dados TheGamesDb.</system:String>
+    <system:String x:Key="IconUrlNotFound">O URL do ícone não foi encontrado.</system:String><system:String x:Key="IconUrlFound">O URL do ícone não foi encontrado.</system:String>
+    <system:String x:Key="WarningMigotoUpdate01">Aviso: Atualizando o 3dmigoto para</system:String>
+    <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">é conhecido por quebrar a correção.&#x0d;&#x0d;Você quer atualizar o Empacotador para este jogo mesmo assim?</system:String>
+    <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Ocorreu um erro ao fazer alterações nos arquivos ini do jogo.&#x0d;&#x0d;Por favor, certifique-se de que os arquivos não estão definidos como 'somente leitura'.</system:String>
+    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Aviso: a instalação da correção do Watch_Dogs2 pode levar até 10 minutos. Por favor, seja paciente e não mude de abas. &#x0d;&#x0d;Você deseja continuar?</system:String>
+    <system:String x:Key="ErrorInstallingMinecraft">Ocorreu um erro durante a instalação da correção do Minecraft. A correção não pôde ser instalada.</system:String>
+    <system:String x:Key="ErrorDeleting2DNip">Erro: o arquivo .nip para o modo 2D não pôde ser excluído.</system:String>
+    <system:String x:Key="ErrorDeleting3DNip">Erro: o arquivo .nip para o modo 3D não pôde ser excluído.</system:String>
+    <system:String x:Key="ErrorEnablingSteamOverlay">Erro: a sobreposição do Steam não pôde ser ativada / desativada.</system:String>
+    <system:String x:Key="ErrorJavaNotDetected" xml:space="preserve">Erro: o local de instalação do Java não pôde ser detectado. Certifique-se de ter o Java instalado corretamente.&#x0d;&#x0d;Deseja acessar a página de download do Java agora?</system:String>
+    <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Erro: O Optifine para Minecraft não pôde ser detectado. Você precisa instalar isto primeiro para continuar instalando a correção 3D.\n\nVocê quer ir para a página de download do Optifine agora?</system:String>
+    <system:String x:Key="ErrorDetectingBitVersion">Erro: Não foi possível detectar se o Java de 64 bits ou 32 bits está instalado</system:String>
+    <system:String x:Key="ErrorInstallingMinecraftFix">Ocorreu um erro ao instalar a correção do Minecraft.</system:String>
+    <system:String x:Key="ErrorRenamingHitmanFolder">Erro: a pasta do Hitman não pôde ser renomeada. Por favor, certifique-se que a pasta está fechada no Windows Explorer e tente novamente</system:String>
+
+    <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Deseja manter os perfis personalizados? &#x0d;&#x0d;Escolha 'Sim' se tiver editado alguns perfis e quiser manter as alterações.&#x0d;&#x0d;Escolha 'Não' para sobrescrever todas as configurações antigas do perfil.</system:String>
+    <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">Uma nova atualização do 3dmigoto está disponível para uma ou várias correções 3D instaladas.&#x0d;&#x0d;Deseja atualizar agora?</system:String>
+    <system:String x:Key="BindHotkeyError" xml:space="preserve">Erro: Uma ou mais Teclas de Atalho não estão vinculadas. &#x0d;&#x0d;Por favor, defina as teclas e tente novamente.</system:String>
+    <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download completo! &#x0d;&#x0d;3D o 3D Fix Manager será reiniciado agora para instalar a atualização.</system:String>
+    <system:String x:Key="VisionNotSetup" xml:space="preserve">O 3D Vision não está configurado em sua máquina. &#x0d;&#x0d;Opção 1: Clique em 'Setup Wizard' para iniciar o assistente de configuração padrão do Nvidia 3D Vision. &#x0d;&#x0d;Opção 2: Clique em "Configuração rápida" para ativar rapidamente o 3D Vision modificando os valores do Registro do Windows.&#x0d;&#x0d;</system:String>
+    <system:String x:Key="VisionSetupComplete" xml:space="preserve">3O Assistente de Configuração do 3D Vision foi aprovado com sucesso! &#x0d;&#x0d;eseja carregar um perfil de backup para restaurar Teclas de Atalho e outras configurações relacionadas ao Stereo 3D?</system:String>
+    <system:String x:Key="WindowsRegistryWriteError">Erro: falha ao gravar o perfil de configurações carregadas no Registro do Windows</system:String>
+    <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Assistente de configuração padrão ignorado com sucesso e 3D Vision ativado. &#x0d;&#x0d;Deseja carregar um perfil de backup para restaurar Teclas de Atalho e outras configurações relacionadas a estéreo 3D?</system:String>
+    <system:String x:Key="QuickSetupError">Erro ao habilitar o 3D estereoscópico Nvidia. Por favor, tente usar o assistente de configuração padrão.</system:String>
+    <system:String x:Key="OutputModeError">Erro: o modo de saída do 3D Vision / 3DTV Play não pôde ser forçado.</system:String>
+    <system:String x:Key="ReversedInterlacingError">Erro: O entrelaçamento invertido para exibição 3D passiva não pôde ser ativado.</system:String>
+    <system:String x:Key="DepthHackError">Erro: o hack de profundidade não pôde ser aplicado / removido.</system:String>
+    <system:String x:Key="WritePermissionError">Erro: permissão de gravação para o usuário 'Sistema' não pode apostar definido para a chave Stereo3D no registro do Windows.</system:String>
+    
+    <!--....................  Dialog Window End .......................... -->
+
+
+    <!-- XAML formated ToolTips Begin -->
+
+    <!-- Installation Tab ToolTips -->
+    <TextBlock x:Key="ForceCMToolTip" TextWrapping="Wrap" Width="300">
+        Força os jogos do DirectX 11 a iniciarem no Modo de Compatibilidade (também conhecido como Fake 3D) modificando automaticamente o perfil do driver.<LineBreak/><LineBreak/>
+        Quando o Modo de Compatibilidade não parece correto, vá para a guia <Italic><Bold>Tecla de Atalho"</Bold></Italic> tab and choose another value for 
+        <Italic><Bold>2DDHUDSettings"</Bold></Italic> in section <Italic><Bold>"Configurações do perfil de driver</Bold></Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
+        Ativa / desativa a correção 3D manualmente.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Ativar / desativar correções 3D também é feito automaticamente ao clicar em <Italic><Bold>"Jogar 2D"</Bold></Italic> ou <Italic><Bold>"Jogar 3D"</Bold></Italic> Botões.
+    </TextBlock>
+
+    
+    <!-- New / Edit Profile Tab ToolTips -->
+    <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
+        <Bold>Título do jogo</Bold> tem que ser o mesmo listado na biblioteca de vapor ou em programas instalados no <Italic>"painel de controlo / programas e funcionalidades do Windows"</Italic><LineBreak/><LineBreak/>
+        Verifique a lista no lado direito para ver todos os programas instalados que o 3D Fix Manager detectou no registro do Windows. Selecione um programa para aplicar seu nome como título do jogo.
+    </TextBlock>
+
+    <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
+        Caminho relativo para a subpasta do diretório do jogo para o qual a correção do 3D Vision será copiada.<LineBreak/><LineBreak/>
+        Na maioria dos casos, o caminho de instalação correto é onde o exe do jogo está localizado para iniciar o jogo.<LineBreak/><LineBreak/>
+        <Bold>Por exemplo: </Bold> quando o caminho absoluto do exe do jogo é <Italic>"c:\titulodojogo\bin\game.exe"</Italic> o caminho de instalação relativo resultante é <Italic>"bin"</Italic><LineBreak/><LineBreak/>
+        Deixe este campo vazio se a correção for instalada na pasta raiz do jogo.
+    </TextBlock>
+
+    <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
+        Preencha o nome da pasta de Instalação / raiz do jogo (somente o nome da pasta e não o caminho).<LineBreak/><LineBreak/>
+        Esta informação é importante para detectar o jogo através de caminhos de busca.
+    </TextBlock>
+
+    <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
+        Preencha apenas este campo se um jogo instalado não for detectado automaticamente pelo 3D Fix Manager.<LineBreak/><LineBreak/>
+        Escolha o caminho absoluto para a pasta raiz do jogo.<LineBreak/><LineBreak/>
+        Nota: o 'Caminho de instalação relativo' ainda deve ser definido se você deseja instalar a correção em uma subpasta do jogo.
+    </TextBlock>
+
+    <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
+        TDigite o caminho relativo para um arquivo de configuração <Bold>configuration file</Bold> do jogo (por exemplo, um arquivo .ini ou .cfg) que será editado automaticamente com base nos valores definidos para o modo 2D ou 3D. O caminho relativo deve ser definido a partir <Bold>do caminho raiz do jogo</Bold> ou <Bold>da pasta de usuário</Bold> em <Italic>C:\Users\USERNAME</Italic> - bambos os diretórios são pesquisados para o arquivo de configuração especificado.<LineBreak/><LineBreak/>
+        O principal objetivo deste recurso é editar automaticamente as configurações gráficas ao iniciar o jogo (por exemplo, desativação do <Bold>desfoque de movimento</Bold> ou <Bold>profundidade de campo</Bold> que não é desejado para o modo 3D estéreo).<LineBreak/><LineBreak/>
+        Geralmente todos os arquivos de configuração podem ser editados, o que inclui uma lista de pares chave / valor - isso pode se parecer com isso em um arquivo: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
+        Dê uma olhada no perfil de correção do jogo <Italic><Bold>"Outlast"</Bold></Italic> para ver uma amostra sobre como editar um arquivo de configuração.<LineBreak/><LineBreak/>
+        Clique no botão <Italic><Bold>"Valores para 2D</Bold></Italic> para definir pares de valor-chave para o arquivo de configuração. Eles serão definidos ao iniciar o jogo no modo 2D ou desinstalar a correção.<LineBreak/><LineBreak/>
+        O mesmo se aplica ao clicar no botão <Italic><Bold>"Valores para 3D".</Bold></Italic> button. As teclas definidas lá serão definidas ao iniciar o jogo no modo 3D ou ao instalar a correção.
+    </TextBlock>
+
+    <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
+       Salva a data em que a postagem em hélice foi atualizada pela última vez.<LineBreak/><LineBreak/>
+       O registro de data e hora é necessário para detectar se há uma postagem em hélice atualizada disponível online.<LineBreak/><LineBreak/>
+       Você não deve definir essa data manualmente, pois isso é feito automaticamente.
+    </TextBlock>
+
+    <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
+        Link de download direto para a correção do 3D Vision.
+    </TextBlock>
+
+    <TextBlock x:Key="AdditionalDownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
+        Forneça um segundo link de download se a correção do 3D Vision for dividida em vários links de download.
+    </TextBlock>
+
+    <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
+        Defina esta opção como 'Não' se uma nova versão do 3dmigoto não for compatível com uma correção 3D existente. Ao fazer isso, o usuário será avisado antes de atualizar o Empacotador.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
+        Defina esta opção 100 Hz se o seu PC não for forte o suficiente para manter 120 quadros por segundo durante a reprodução em 3D estéreo. <LineBreak /><LineBreak />
+        Ao definir isso para 100 Hz, apenas 100 fps são necessários para uma jogabilidade suave.<LineBreak /><LineBreak />
+        Essa opção só entra em vigor se você ativou <Italic><Bold>A taxa de atualização é controlada pelo perfil de correção</Bold></Italic> na guia <Italic><Bold>Configurações gerais.</Bold></Italic><LineBreak /><LineBreak />
+        <Bold>Nota:</Bold> Ao reduzir a taxa de atualização, seus óculos Nvidia 3D também funcionam com uma freqüência reduzida do obturador. 100 Hz pode ser percebido como um piscar de olhos para algumas pessoas.
+    </TextBlock>
+
+    <TextBlock x:Key="renderApiToolTip" TextWrapping="Wrap" Width="300">
+        Escolha a API de renderização que é usada pelo jogo e salve esses dados no perfil de correção.<LineBreak /><LineBreak />
+        Ao inserir essas informações, o 3D Empacotador correto pode ser instalado automaticamente quando você clica no botão <Italic><Bold>Instalar 3D Empacotador</Bold></Italic> na <Italic>aba</Italic> <Bold>Instalação</Bold>. <Bold>3Dmigoto</Bold> é instalado quando o jogo usa o DirectX 11 ou <Bold>Helixmod</Bold> se utilizar o DirectX 9.<LineBreak /><LineBreak />
+        <Bold>Nota:</Bold> Instalar um Empacotador cru é especialmente interessante se um jogo já estiver pronto para o 3D Vision e não precisar de uma correção 3D. Usando o Empacotador você pode desbloquear recursos como o suporte Teclas de Atalho para alterar rapidamente a separação / convergência em cutscences ou para escolher outros formatos 3D como o Side-By-Side para TVs e projetores.
+    </TextBlock>
+
+    <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
+        Você pode fornecer um link para uma loja online com informações para o jogo que é chamado se você clicar no botão <Italic><Bold>Página do Produto</Bold></Italic> em <Italic><Bold>"Instalação"</Bold></Italic> tab. Este campo é uma alternativa se um jogo não estiver disponível na loja Steam.
+    </TextBlock>
+
+    <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
+       Adicione um valor hexadecimal para o sinalizador de modo de compatibilidade (2DDHUDSettings). Este valor é definido no arquivo ini do 3dmigoto quando você força o modo CM na guia Instalação ou Teclas de Atalho.
+    </TextBlock>
+
+    <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
+       Uma correção é extraída automaticamente após o download. Escolha aqui se deseja usar o SharpCompress interno ou o 7-zip para extrações de arquivos.
+    </TextBlock>
+
+    <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
+        Link para o fórum helix ou geforce de onde a correção foi tirada.<LineBreak/><LineBreak/>
+        Se você clicar em "<Italic><Bold>"Blog do HelixMod"</Bold></Italic> na guia <Italic><Bold>"Instalação"</Bold></Italic> então o link fornecido será aberto em seu navegador.
+    </TextBlock>
+
+    <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
+        Você pode fornecer um ícone opcional para o jogo que será exibido na guia <Italic><Bold>"Instalação"</Bold></Italic><LineBreak/><LineBreak/>
+        A resolução recomendada é de 128 x 128 pixels.<LineBreak/><LineBreak/>
+        Para remover um ícone ativo na pasta de perfil, clique em <Italic><Bold>"Remover ícone"</Bold></Italic> e depois em <Italic><Bold>"Salvar"</Bold></Italic>. Um backup do ícone antigo é criado automaticamente em uma pasta de backup dentro da pasta do perfil.
+    </TextBlock>
+
+    <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
+        Forneça um URL para baixar automaticamente um ícone de jogo se o Gerenciador de Correções 3D não conseguir encontrar um local para o jogo.<LineBreak/><LineBreak/>
+        Para facilitar o uso, selecione <Italic><Bold>"TheGamesDb Icon"</Bold></Italic> fna lista e clique em <Italic><Bold>"URL de pesquisa"</Bold></Italic>.<LineBreak/><LineBreak/>
+        Se você deseja baixar um novo ícone, mas já existe um antigo, clique adicionalmente no botão superior <Italic><Bold>"Remover ícone"</Bold></Italic>. Não esqueça de salvar as alterações.
+    </TextBlock>
+
+    <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
+        Escolha um arquivo .nip para o Nvidia Profile Inspector para restaurar o estado original de um perfil de driver para o modo 2D.<LineBreak/><LineBreak/>
+        Esse perfil será importado automaticamente no Nivida Inspector quando você iniciar um jogo no modo 2D ou desinstalar uma correção.<LineBreak/><LineBreak/>
+        Além disso, você pode definir se deseja ser notificado antes de instalar um perfil de driver <Italic><Bold>"Instalar com caixa de diálogo"</Bold></Italic> ou não <Italic><Bold>"Instalação silenciosa"</Bold></Italic>. 
+        Para fazer isso funcionar, ative <Italic><Bold>"A instalação dos perfis de driver é controlada pelo perfil de correção"</Bold></Italic> na guia <Italic><Bold>"Configurações"</Bold></Italic>
+		</TextBlock>
+
+    <TextBlock x:Key="Profile3DModeToolTip" TextWrapping="Wrap" Width="300">
+        Escolha um arquivo .nip para o Nvidia Profile Inspector em orderset um perfil de driver personalizado para o modo 3D.<LineBreak/><LineBreak/>
+        Esse perfil será importado automaticamente no Nivida Inspector quando você iniciar um jogo no modo 3D.<LineBreak/><LineBreak/>
+        Além disso, você pode definir se deseja ser notificado antes de instalar um perfil de driver <Italic><Bold>"Instalar com caixa de diálogo</Bold></Italic> ou não <Italic><Bold>"Instalação silenciosa"</Bold></Italic>. 
+        Para fazer isso funcionar, ative <Italic><Bold>""A instalação dos perfis de driver é controlada pelo perfil de correção"</Bold></Italic> na guia <Italic><Bold>"Configurações"</Bold></Italic>
+    </TextBlock>
+
+    <TextBlock x:Key="FixStateToolTip" TextWrapping="Wrap" Width="300">
+        Essas informações serão exibidas com um ícone na guia Instalação.<LineBreak/><LineBreak/>
+        Escolha se a correção funcionará imediatamente após a instalação por meio do 3D Fix Manager ou se o usuário precisar realizar algumas etapas adicionais para concluir a instalação.<LineBreak/><LineBreak/>
+        Você pode fornecer informações adicionais no campo à direita. Isso será exibido como uma dica de ferramenta para o ícone.
+    </TextBlock>
+
+    <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
+       O Steam App ID é necessário para iniciar os jogos Steam e visitar a Loja Steam.
+    </TextBlock>
+
+    <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
+        Preencha o nome do arquivo exe para iniciar o jogo.
+    </TextBlock>
+
+    <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
+        Preencha o nome de um arquivo exe para iniciar uma ferramenta no diretório do jogo. Esta ferramenta é executada assim que o jogo é iniciado. Esse recurso é usado para corrigir Mass Effect: Andromeda e INSIDE.<LineBreak/><LineBreak/>
+        Além disso, você pode definir se o exe jogo deve ser passado como parâmetro de início para a ferramenta e se o início do jogo deve aguardar a saída da ferramenta.
+    </TextBlock>
+
+    <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
+        Se necessário, defina os argumentos para o Game Launcher Exe aqui (veja o perfil de correção para o jogo <Italic><Bold>"Superhot"</Bold></Italic> se precisar de um exemplo.)<LineBreak/><LineBreak/>
+        Além disso, você pode decidir se deseja iniciar o jogo com direitos de administrador (necessário para o jogo <Italic><Bold>"Doom"</Bold></Italic> por exemplo) ou como iniciar jogos (diretamente via game exe ou indiretamente pelo Steam ID do aplicativo).<LineBreak/><LineBreak/>
+        Por último, mas não menos importante, você pode definir se o RivaTuner Statistics Server deve ser iniciado ou fechado no início do jogo.<LineBreak/><LineBreak/>
+        O RTSS reduz o atraso de entrada e melhora os tempos de duração para uma jogabilidade mais suave.
+    </TextBlock>
+
+    <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
+        Fornecer uma descrição sobre a correção 3D Vision.<LineBreak/><LineBreak/>
+        Você pode copiar o texto do site da helixmod ou escrever uma descrição.
+    </TextBlock>
+
+    
+    <!-- Hotkeys Tab ToolTips -->
+    <TextBlock x:Key="KeyTypeToolTip" TextWrapping="Wrap" Width="300">
+        <Bold>Ciclo:</Bold> muda para a próxima predefinição 3d toda vez que você pressiona o botão Tecla de Atalho. Depois de atingir o último pré-ajuste, o ciclo começa no primeiro pré-ajuste novamente.<LineBreak/><LineBreak/>
+        <Bold>Sustentar:</Bold> ativa a predefinição 3D enquanto a Tecla de Atalho for mantida. Volta para a predefinição original quando a tecla é liberada. Um número máximo de 2 predefinições é suportado por este tipo de chave.<LineBreak/><LineBreak/>
+        <Bold>Alternar:</Bold> chave liga / desliga para uma predefinição 3D. Um número máximo de 1 preset é suportado por este tipo de chave.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
+        Essa configuração é necessária para habilitar muitos códigos estéreo relacionados no driver, além de permitir que a convergência seja salva.<LineBreak/><LineBreak/>
+        Se você estiver personalizando um perfil, deverá sempre definir isso como <Italic><Bold>"Sim"</Bold></Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoFlagsDX10ToolTip" TextWrapping="Wrap" Width="300">
+        Essa configuração habilita os sombreadores de computação estéreo, o que é necessário para corrigir muitos problemas de renderização do tipo 'olho único' em muitos jogos do DX11<LineBreak/><LineBreak/>
+        Defina esta opção para 0x00004000 para corrigir esse problema.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoConvergenceToolTip" TextWrapping="Wrap" Width="300">
+        Isso define a convergência padrão no perfil.<LineBreak/><LineBreak/>
+        Observe que o 3DMigoto substituirá facilmente o valor padrão do driver, mas substituirá apenas a convergência personalizada do usuário se tiver outro motivo para atualizar o perfil, como uma alteração em outra configuração (adicionar uma tag de versão à configuração Comentários seria um maneira de forçar uma atualização).
+    </TextBlock>
+
+    <TextBlock x:Key="CommentsToolTip" TextWrapping="Wrap" Width="300">
+        Isso altera o texto verde que o driver exibe e é um bom lugar para colocar qualquer lembrete para exibir ao usuário ou apenas levar algum crédito.
+    </TextBlock>
+
+    <TextBlock x:Key="StereoMemoEnabledToolTip" TextWrapping="Wrap" Width="300">
+        Se você adicionou alguns comentários, você provavelmente vai querer forçar o texto verde a aparecer quando o jogo for executado, definindo esta opção para <Italic><Bold>"Sim"</Bold></Italic><LineBreak/><LineBreak/>
+         Note que, assim como a convergência, o 3DMigoto somente substituirá uma configuração do usuário aqui se alguma outra coisa também tiver sido atualizada (como Comentários), então isso normalmente só aparecerá na primeira vez que um usuário executar o jogo após instalar a correção (certifique-se de ativar StereoProfile).
+    </TextBlock>
+
+    <TextBlock x:Key="2DDHUDSettingsToolTip" TextWrapping="Wrap" Width="300">
+        Essa configuração força o jogo a suportar o modo de compatibilidade, se ainda não estiver no perfil do driver.<LineBreak/><LineBreak/>
+        O valor hexadecimal controla as configurações do modo de compatibilidade - força geral em 3D, heurística para fixar o HUD na profundidade e classificação da tela.<LineBreak/><LineBreak/>
+        Você deve definir essa opção como 0x10000002 ou 0x10000102. Claro que você está livre para experimentar outros valores.
+    </TextBlock>
+
+    <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">>
+        Isso define a convergência padrão quando no modo de compatibilidade.
+    </TextBlock>
+
+    <TextBlock x:Key="Disable2DDToolTip" TextWrapping="Wrap" Width="300">
+        DDesative o modo de compatibilidade para garantir que os usuários estejam vendo o negócio real.<LineBreak/><LineBreak/>
+        Como a convergência, o 3DMigoto respeitará as configurações personalizadas dos usuários aqui.
+    </TextBlock>
+
+    <TextBlock x:Key="TwoDDNotesToolTip"  TextWrapping="Wrap" Width="300">
+        Coloque um lembrete no texto verde do modo de compatibilidade que eles não estão vendo o negócio real.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
+        Ativa uma sobreposição no jogo para exibir os valores atuais de convergência / separação. Isso também habilita o modo de caça para a fixação de sombreador.<LineBreak/><LineBreak/>
+        Não se esqueça de desmarcar esta opção depois de terminar de editar as Teclas de Atalho para obter uma melhor performance de jogo.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
+        Renderiza o cursor do mouse no software e deve ser usado se você quiser ajustar a profundidade estéreo do mouse ou em conjunto com formatos de saída 3D alternativos, como lado a lado.
+    </TextBlock>
+
+    
+    <!-- General Settings Tab ToolTips -->
+    <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
+        Verifique se há atualizações de aplicativo / correção quando o aplicativo está sendo iniciado.
+    </TextBlock>
+
+    <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
+        Isso permite que o 3D Fix Manager otimize automaticamente as configurações gráficas / configurações dos jogos ao iniciá-lo.<LineBreak/><LineBreak/>
+        Isso é necessário para que as correções 3D e o modo estéreo 3D funcionem e pareçam corretamente.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Esta opção só deve ser desativada se você preferir configurar os jogos manualmente.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
+        Desative a sobreposição do Steam se você tiver falhas ao iniciar os jogos.
+    </TextBlock>
+    
+    <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
+        Quando o usuário personaliza um perfil de correção na aba 'Edit Profil' e clica no botão <Italic><Bold>"Salvar"</Bold></Italic>, as alterações são detectadas e enviadas para um servidor MySQL.<LineBreak/><LineBreak/>
+        Esse recurso ajuda o autor do 3D Fix Manager a adicionar dados ausentes para corrigir perfis ou corrigi-los.
+    </TextBlock>
+    
+    <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
+        Atualiza o 3dmigoto de todas as correções 3D instaladas automaticamente assim que o 3D Fix Manager é iniciado.
+    </TextBlock>
+    
+    <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
+        Reinstala as correções 3D sem fazer o download novamente delas. Para obter esses arquivos baixados, eles são mantidos no diretório do 3D Fix Manager e usados ​​para reinstalar as correções 3D.<LineBreak/><LineBreak/>
+        Se você quiser excluir arquivos baixados para liberar espaço no seu disco rígido, vá até a guia <Italic><Bold>"Instalação" </Bold></Italic> e clique em <Italic><Bold>"Limpar cache"</Bold></Italic>.
+    </TextBlock>
+    
+    <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
+        Habilite isso para baixar novamente todos os ícones do TheGamesDB ou do Steam DB.<LineBreak/><LineBreak/>
+        Os ícones antigos não são perdidos salvando-os em pastas de backup dentro das pastas de perfil individuais.
+    </TextBlock>
+
+    <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
+        Exclui todas as correções 3D baixadas que foram temporariamente armazenadas em cache no diretório do 3D Fix Manager.<LineBreak/><LineBreak/>
+       <Bold>Nota:</Bold> Este recurso não exclui nenhuma correção 3D instalada, apenas libera algum espaço em disco no diretório do aplicativo.
+    </TextBlock>
+
+    <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
+        Habilite isso se você sempre deseja baixar ícones da Internet, mesmo que os ícones locais já tenham sido encontrados através do Registro do Windows.
+    </TextBlock>
+    
+    <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
+        Atualiza o 3dmigoto de todas as correções instaladas para a versão mais recente.<LineBreak/><LineBreak/>
+        As versões mais recentes do 3dmigoto podem ter um melhor desempenho / estabilidade e desbloquear novos recursos, como o suporte SideBySide.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+        Ative os caminhos de pesquisa, se nem todos os seus jogos instalados forem detectados pelo programa.
+    </TextBlock>
+    
+    <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+        Quando um jogo é encontrado pelos caminhos de pesquisa e pelo registro do Windows, a localização de instalação encontrada pelo caminho de pesquisa é aplicada.
+    </TextBlock>
+    
+    <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
+      Caminhos que são percorridos recursivamente para encontrar jogos.
+    </TextBlock>
+    
+    <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
+       Aciona uma pesquisa para localizar jogos com base nos caminhos de pesquisa que você definiu.
+    </TextBlock>
+    
+    <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
+       Define a profundidade máxima dos subdiretórios que o aplicativo percorre para encontrar um jogo.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
+       Dá ao usuário a oportunidade de configurar o RTSS antes do início do jogo. Por favor, certifique-se de que o limitador fps está definido para 60 fps para uma jogabilidade suave / redução do atraso de entrada.
+    </TextBlock>
+    
+    <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+        Gives the user the opportunity to set up RTSS before game starts. Please make sure fps limiter is set to 60 fps for smooth gameplay / reduced input lag.
+    </TextBlock>
+    
+    <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+       Sempre fecha o RTSS quando um jogo é iniciado no modo 2D, independentemente do que estiver definido no perfil de correção.
+    </TextBlock>
+    
+    <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+        Nunca fecha uma instância em execução do RTSS se um jogo for iniciado no modo 2D, independentemente do que estiver definido no perfil de correção.
+    </TextBlock>
+    
+    <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
+       Fecha automaticamente uma instância em execução do RTSS se o usuário sair do 3D Fix Manager.
+    </ TextBlock>
+    </TextBlock>
+    
+    <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
+        Definido globalmente se os jogos devem ser iniciados diretamente com o exe do jogo e não via cliente Steam.<LineBreak/><LineBreak/>
+        Quando nenhum Game Launcher Exe é definido no perfil de correção, o jogo ainda é iniciado via Steam, se disponível.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
+        Definido globalmente se os jogos devem ser iniciados através do cliente Steam, chamando o ID da App Steam.<LineBreak/><LineBreak/>
+        Se o jogo não está instalado no vapor ou o vapor em si não é detectado, o jogo é iniciado através do Game Launcher Exe.
+    </TextBlock>
+    
+    <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
+        Defina aqui se o tipo de partida de um jogo deve ser controlado individualmente pelo perfil de correção. Esta é a opção recomendada para decidir se o jogo deve ser iniciado chamando diretamente o exe do jogo ou indiretamente chamando o cliente Steam.<LineBreak/><LineBreak/>
+        Os jogos Steam só devem ser iniciados diretamente via jogo exe quando você quiser ignorar uma janela de iniciação de jogo, por exemplo. Você pode controlar esse comportamento editando o perfil de correção individual.
+    </TextBlock>
+    
+    <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
+       Desative a instalação de qualquer perfil de driver através do Nvidia Profile Inspector.
+    </TextBlock>
+    
+    <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
+      O usuário pode decidir em configurações de perfil fixas se deseja instalar um perfil de driver.
+    </TextBlock>
+    
+    <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300">
+        Desativa a mensagem de aviso ao instalar um perfil de driver.
+    </TextBlock>
+
+    <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Ao ativar esta opção, a taxa de atualização estéreo e a frequência do obturador dos óculos 3D da Nvidia são deixados intactos e controlados pelas configurações do driver da Nvidia.
+    </TextBlock>
+
+    <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Ao ativar esta opção, você pode controlar a taxa de atualização estéreo e a frequência do obturador de óculos 3D da Nvidia individualmente por jogo.
+    </TextBlock>
+
+
+    <!-- Refresh rates and resolution ToolTips -->
+    <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
+        Dimensionamento é útil se você quiser jogar com uma resolução menor que a nativa do seu monitor.<LineBreak/><LineBreak/>           
+        TEsse recurso realiza o dimensionamento de sua resolução nativa para obter uma qualidade de imagem mais nítida, especialmente útil para TVs 4K 3D ou para DSR.<LineBreak/><LineBreak/>   
+        Por favor, considere que este ainda é um recurso experimental e funciona apenas para alguns jogos (como o The Witcher 3, por exemplo). Quando o cursor do mouse não funcionar corretamente, defina dimensionamento como <Italic><Bold>"Forçar Tela Cheia" </Bold></Italic> ou ative o Cursor do Mouse de Software.<LineBreak/><LineBreak/>
+        <Bold>Tela inteira normal:</Bold> Ativa o dimensionamento e permite que o jogo desative e ative o modo de tela cheia.<LineBreak/><LineBreak/>
+        <Bold>Forçar tela cheia</Bold> Ativa o dimensionamento e sempre força a tela cheia. Tente isso se você tiver problemas com o cursor do mouse.
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
+         <Bold>0:</Bold> 3Dmigoto cria uma textura e a coloca como o buffer de fundo do jogo. Parece funcionar apenas com alguns jogos, mas tudo parece estar um pouco mais suave.<LineBreak/><LineBreak/>
+         <Bold>1:</Bold> 3Dmigoto cria uma segunda cadeia de troca e empurra o jogo para usá-la. Parece funcionar com a maioria dos jogos.
+    </TextBlock>
+
+    <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
+        Se o dimensionamento estiver ativado, você DEVE especificar a resolução para a qual o jogo será aprimorado.<LineBreak/><LineBreak/>
+        Para obter o melhor resultado visual, use a resolução nativa da sua TV ou monitor.
+    </TextBlock>
+
+    <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
+        Filtra os modos de vídeo disponíveis para aqueles que fornecem determinadas taxas de atualização. Alguns jogos não definem explicitamente a taxa de atualização, mas usam o modo de vídeo.<LineBreak/><LineBreak/>
+        Use isto se a configuração <Italic><Bold>"Substituir Taxa de Atualização"</Bold></Italic> não funcionar.
+    </TextBlock>
+
+    <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        <Bold>1:</Bold> Força a criação de dispositivos de tela inteira e cadeias de troca.<LineBreak/><LineBreak/>
+        <Bold>2:</Bold> Desabilitará também o SetWindowPos, que pode ajudar em alguns jogos.
+    </TextBlock>
+
+    <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
+        Para sair de um jogo Unity sem ele travar: <LineBreak /> <LineBreak />
+        Ative esta opção, pressione F7, Alt + Enter, Alt + Tab
+    </TextBlock>
+
+    <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
+        Isso tenta forçar a tela cheia exclusiva quando essa tecla é pressionada e pode ser útil em jogos em que <Italic><Bold>Forçar tela inteira no início do jogo</Bold></Italic> não funciona ou tem efeitos colaterais indesejáveis.
+    </TextBlock>
+
+    <!-- Nvidia 3D Settings Tab ToolTips -->
+    <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
+        Ativa / desativa o <Bold> 3D estereoscópico da Nvidia</Bold> manualmente.<LineBreak/><LineBreak/>
+        Este é o mesmo recurso que também pode ser encontrado no Painel de Controle Nvidia em <Italic> <Bold> "Instalar Estereoscópica 3D"</Bold></Italic>.
+    </TextBlock>
+     
+    <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
+          Desativa o 3D estereoscópico da Nvidia ao fechar o 3D Fix Manager.
+    </TextBlock>
+    
+    <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
+        ADefine automaticamente o modo de saída 3D para 3D Vision / 3DTV Play em vez do 3D Vision Discover (anaglifo) ao habilitar o Nvidia Stereoscopic 3D ou iniciar um jogo no modo 3D.
+    </TextBlock>
+    
+    <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+        Define se os jogos começam no modo 3D quando o Nvidia Stereoscopic 3D está ativado. Caso contrário, você deve pressionar CTRL + T.<LineBreak/><LineBreak/>
+        Tecnicamente, esta opção define a entrada de registro do Windows <Italic><Bold>"StereoDefaultOn"</Bold></Italic> para 0 ou 1.
+    </TextBlock>
+    
+    <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
+        Define se o 3D Vision pode ativar o modo 3D para aplicativos em janelas.<LineBreak/><LineBreak/>
+        ecnicamente, esta opção define a entrada de registro do Windows <Italic><Bold>"EnableWindowedMode"</Bold></Italic> para 0 ou 5.
+    </TextBlock>
+
+    <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
+        Inverte o padrão de intercalação para <Bold>Telas 3D passivas</Bold>.<LineBreak/><LineBreak/>
+        TIsso corrige o problema quando os olhos esquerdo e direito são trocados.<LineBreak/><LineBreak/>
+        Tecnicamente, esta opção define as entradas de registro do Windows <Italic><Bold>"InterleavePattern0"</Bold></Italic> and <Italic><Bold>"InterleavePattern1"</Bold></Italic> to <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Para evitar que o driver da Nvidia substitua essas entradas, elas ficarão protegidas contra o acesso de gravação por 120 segundos enquanto iniciam o jogo no modo 3D. Quando esse período terminar ou o aplicativo for fechado, o acesso de gravação será automaticamente concedido novamente.
+    </TextBlock>
+
+    <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
+        Ative esta opção se você quiser exceder o valor máximo possível para a profundidade 3D (esse procedimento também é conhecido como hack de profundidade). Esse recurso é especialmente útil para projetores, pois a profundidade máxima em 3D costuma ser baixa demais para eles.<LineBreak/><LineBreak/>
+        O hack de profundidade está ativo assim que você definir o multiplicador para um valor maior que 1. Por exemplo, se você defini-lo como 2, poderá obter uma profundidade 3D que é duas vezes maior.<LineBreak/><LineBreak/>
+        Com relação a este exemplo, isso significa efetivamente que se você definir a profundidade 3D para 100% enquanto estiver jogando, isso corresponderá a uma profundidade de 200% porque o multiplicador foi definido como 2. Similarmente, 80% da profundidade 3D corresponderá a 160% e assim por diante.<LineBreak/><LineBreak/>
+        Ao usar o hack de profundidade você faz o driver da Nvidia pensar que você joga com um tamanho menor de exibição como é na verdade. Você pode ver o tamanho da tela que foi detectada pelo driver abaixo. Quanto menor o valor em polegadas, maior a profundidade máxima em 3D.
+    </TextBlock>
+    
+    <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
+        Este é o tamanho do monitor que é passado para o driver Nvidia. Quanto menor o valor, maior a profundidade máxima em 3D.<LineBreak/><LineBreak/>
+        Para obter a melhor profundidade 3D para projetores, é recomendável digitar o tamanho da tela de projeção.<LineBreak/><LineBreak/>
+        Ajuste a profundidade máxima em 3D por meio do multiplicador de profundidade 3D ou o valor em polegada. Ambos dependem de outro.
+    </TextBlock>
+    
+    <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Os óculos de obturador 3D Vision podem ser executados em diferentes freqüências de obturador que variam de 100 Hz a 120 Hz.<LineBreak/><LineBreak/>
+        Defina aqui para executar os óculos do monitor e do obturador com a frequência especificada durante o jogo. Diminuir a frequência para 100 Hz é útil se o seu computador for forte o suficiente para suportar 100 fps no jogo.
+    </TextBlock>
+    
+    <TextBlock x:Key="Change3dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+       Esse recurso é útil para usuários do Windows 10 que enfrentam problemas de tela preta ao fechar um jogo (o Windows 10 tem problemas para voltar a 144 hz para a área de trabalho do Windows).<LineBreak/><LineBreak/>
+        A configuração de 120 hz na área de trabalho também corrige os clocks de alta ociosidade na GPU em combinação com o Nvidia Stereoscopic 3D ativado.<LineBreak/><LineBreak/>
+        Também não se esqueça de pressionar STRG + T antes de fechar um jogo para evitar que o monitor fique preso no modo 3D.
+    </TextBlock>
+    
+    <TextBlock x:Key="Change2dRefreshRateOnClosingToolTip" TextWrapping="Wrap" Width="300">
+        Define a taxa de atualização da área de trabalho para o valor especificado ao fechar o aplicativo.
+    </TextBlock>
+    
+    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+        Isso é útil se você aplicou a correção de correção de falhas do Windows 10 (recurso acima) e deseja voltar a taxas de atualização de monitor mais altas após desabilitar o Nvidia Stereoscopic 3D.
+    </TextBlock>
+    
+    <TextBlock x:Key="Global2dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        Instala um perfil de driver global através do Nvidia Profile Inspector ao desativar o Nvidia 3D estereoscópico ou iniciar um jogo no modo 2D. Para fazer isso, escolha um arquivo .nip.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> arquivos NIP podem ser criados via Nvidia Profile Inspector usando a função de exportação de perfis individuais. Além disso, você ainda pode instalar perfis de driver específicos do jogo que são definidos nos perfis de correção individuais.
+    </TextBlock>
+    
+    <TextBlock x:Key="Global3dDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+        IInstala um perfil de driver global através do Nvidia Profile Inspector ao habilitar o Nvidia 3D estereoscópico ou iniciar um jogo no modo 3D. Para fazer isso, escolha um arquivo .nip.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> arquivos NIP podem ser criados via Nvidia Profile Inspector usando a função de exportação de perfis individuais. Além disso, você ainda pode instalar perfis de driver específicos do jogo que são definidos nos perfis de correção individuais.
+    </TextBlock>
+
+    <!-- XAML formated ToolTips End -->
+              
+</ResourceDictionary>
