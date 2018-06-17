@@ -98,17 +98,19 @@
     <system:String x:Key="RelativeGameIniPath">1. Caminho Relativo para um Arquivo de Configuração do Jogo:</system:String>
     <system:String x:Key="SecondRelativeGameIniPath">2. Caminho Relativo para um Arquivo de Configuração do Jogo:</system:String>
     <system:String x:Key="ThirdRelativeGameIniPath">3. Caminho Relativo para um Arquivo de Configuração do Jogo:</system:String>
-    <system:String x:Key="HelixPostUpdated">Postagem Helix atualizado pela última vez:</system:String>
     <system:String x:Key="SetDate">Definir Data</system:String>
     <system:String x:Key="SetDateTooltip">Define a data de hoje como um registro de data e hora.</system:String>
     <system:String x:Key="DownloadLinkFix">URL para correção 3D:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">URL adicional para correção 3D:</system:String>
     <system:String x:Key="FixArchiveExtractor">Corrigir Extrator de Arquivo:</system:String>
-    <system:String x:Key="AllowMigotoUpdate">Permitir atualização do empacotador do 3dmigoto:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Permitir atualização do 3dmigoto wrapper:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
     <system:String x:Key="StartTool">Iniciar Exe adicional:</system:String>
 
+    <system:String x:Key="UniversalFixDetectionError">Error: Game Engine could not be detected by searching PC Gaming Wiki and Wikipedia.</system:String>
+    <system:String x:Key="DetectEngine">Detect Engine</system:String>
     <system:String x:Key="WebLinkHelix">URL para Helix Blog / Geforce Forum:</system:String>
+    <system:String x:Key="HelixPostUpdated">Postagem Helix atualizado pela última vez:</system:String>
 
     <system:String x:Key="LocalIconPath">Caminho do ícone local:</system:String>
     <system:String x:Key="RemoteIconPath">Caminho do ícone remoto:</system:String>
@@ -175,6 +177,7 @@
 
     <system:String x:Key="FixInfo">Corrigir Informações:</system:String>
     <system:String x:Key="Game">Jogo:</system:String>
+    <system:String x:Key="GameEngine">Game Engine:</system:String>
     <system:String x:Key="FixType">Tipo de correção:</system:String>
     <system:String x:Key="WrapperVersion">Versão do Empacotador:</system:String>
     <system:String x:Key="IniPath">Caminho Ini:</system:String>
@@ -362,7 +365,7 @@
     <system:String x:Key="StartRtssToolTip">Inicia o RivaTuner Statistics Server.</system:String>
 
     <!-- Stereo Refresh Rate Settings Group  group -->
-    <system:String x:Key="StereoRefreshRateSettings">Frequência do obturador de óculos 3D da Nvidia / Taxa de atualização de estéreo:</system:String>
+    <system:String x:Key="StereoRefreshRateSettings">Frequência do obturador de óculos 3D da Nvidia:</system:String>
     <system:String x:Key="GlobalStereoRefreshRate">Usar taxa de atualização definida no driver da Nvidia</system:String>
     <system:String x:Key="ProfileStereoRefreshRate">A taxa de atualização é controlada pelo perfil de correção</system:String>
 
@@ -383,7 +386,7 @@
     <!-- General settings group -->
     <system:String x:Key="EnableStereoGroup">Enable / set up  3D functionality:</system:String>
     <system:String x:Key="EnableNvidia3D">Ativar Nvidia 3D estereoscópico</system:String>
-    <system:String x:Key="Disable3dOnClosing">Desativar automaticamente o Nvidia 3D Estereoscópico ao fechar o aplicativo</system:String>
+    <system:String x:Key="Disable3dOnClosing">Desativar o Nvidia 3D Estereoscópico ao fechar o aplicativo</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">Forçar o modo de reprodução 3D Vision / 3DTV</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Modo 3D ativado no lançamento do jogo</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">Ativar 3D no modo de janela</system:String>
@@ -532,6 +535,7 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Sim</system:String>
     <system:String x:Key="No">Não</system:String>
+    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Do you want to revert 3dmigoto to the original version which was shipped with this 3D fix? &#x0d;&#x0d;Original version: {0}&#x0d;Installed version: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">Instalar 3dmigoto x32</system:String>
     <system:String x:Key="InstallHelixModx32">Instalar HelixMod x32</system:String>
     <system:String x:Key="Install3dmigotox64">Instalar 3dmigoto x64</system:String>
@@ -540,6 +544,7 @@
     <system:String x:Key="SetupWizard">Assistente de Instalação</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Erro: Não foi possível baixar o Helix Post.&#x0d;&#x0d;O link para o blog não é válido.</system:String>
@@ -562,6 +567,7 @@ Dica: Na aba "Nvidia 3D Settings" você encontrará uma opção para alternar au
     <system:String x:Key="GameTitleEmpty">Erro: O título do jogo não pode estar vazio</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Nota: Você ainda não definiu um ID de App Steam para esse perfil, o que é necessário para iniciar os jogos Steam. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Nota: Você ainda não definiu um Game Exe para o perfil. Isso geralmente é necessário para iniciar jogos. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
+    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Do you want to automatically add a game icon from TheGamesDB.com?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Escolha um 3D Empacotador que você deseja instalar.
                                          
 Instalar um Empacotador desbloqueia alguns recursos como o Teclas de Atalho estéreo, o modo de saída Lado a Lado / TaB, o modo de compatibilidade e a instalação automática do perfil de driver.
@@ -719,6 +725,11 @@ Pauldusler</system:String>
         <Bold>Nota:</Bold> Ativar / desativar correções 3D também é feito automaticamente ao clicar em <Italic><Bold>"Jogar 2D"</Bold></Italic> ou <Italic><Bold>"Jogar 3D"</Bold></Italic> Botões.
     </TextBlock>
 
+    <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
+        <Bold>Left click:</Bold> Installs / uninstalls the 3D fix.<LineBreak/><LineBreak/>
+        <Bold>Right click:</Bold> Resets 3dmigoto to the original version of the 3D fix if it was updated. Use this if updating 3dmigoto broke the fix.
+    </TextBlock>
+
 
     <!-- New / Edit Profile Tab ToolTips -->
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
@@ -797,17 +808,26 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        Link para o fórum helix ou geforce de onde a correção foi tirada.<LineBreak/><LineBreak/>
-        Se você clicar em "<Italic><Bold>"Blog do HelixMod"</Bold></Italic> na guia <Italic><Bold>"Instalação"</Bold></Italic> então o link fornecido será aberto em seu navegador.
+        Insert the link to the helix blog <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> where the 3D fix was taken from.<LineBreak/><LineBreak/>
+        After that click on button <Bold><Italic>Blogger API</Italic></Bold> for automatically inserting info text of the fix, download link and further essential information to the fix profile.<LineBreak/><LineBreak/>
+        If no helix blog exists to a specifc 3D fix then please insert the link to the thread in Geforce forum instead where the fix was taken from. However consider that you cannot automatically get the info text and download link to the fix in this case.<LineBreak/><LineBreak/>
+        Further more the stated link can be opened in web browser by clicking on button <Bold><Italic>Helixmod Blog</Italic></Bold> in tab <Bold><Italic>Installation</Italic></Bold>.
     </TextBlock>
 
+    <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
+        By pressing the button <Bold><Italic>Detect Engine</Italic></Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>    
+        If game engine detection fails you can alternatively press buttons <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>      
+        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
+        <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold><Italic>Search Steam DB</Italic></Bold> next to <Bold><Italic>Game Title</Italic></Bold>.
+    </TextBlock>
+
+    
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
         Você pode fornecer um ícone opcional para o jogo que será exibido na guia <Italic><Bold>"Instalação"</Bold></Italic><LineBreak/><LineBreak/>
         A resolução recomendada é de 128 x 128 pixels.<LineBreak/><LineBreak/>
         Para remover um ícone ativo na pasta de perfil, clique em <Italic><Bold>"Remover ícone"</Bold></Italic> e depois em <Italic><Bold>"Salvar"</Bold></Italic>. Um backup do ícone antigo é criado automaticamente em uma pasta de backup dentro da pasta do perfil.
     </TextBlock>
     
-
     <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
         Forneça um URL para baixar automaticamente um ícone de jogo se o Gerenciador de Correções 3D não conseguir encontrar um local para o jogo.<LineBreak/><LineBreak/>
         Para facilitar o uso, selecione <Italic><Bold>"TheGamesDb Icon"</Bold></Italic> fna lista e clique em <Italic><Bold>"URL de pesquisa"</Bold></Italic>.<LineBreak/><LineBreak/>
@@ -1160,7 +1180,6 @@ Pauldusler</system:String>
 
     <!-- Display Profiles ToolTips -->
 
-
     <TextBlock x:Key="ChangeDisplayProfileToolTip" TextWrapping="Wrap" Width="300">
         Escolha o perfil de tela a ser ativado.<LineBreak/><LineBreak/>  
         <Bold>Nota:</Bold> Você pode configurar cada perfil na guia <Bold><Italic>>"Exibir Perfis"</Italic></Bold> aos seus gostos.
@@ -1223,7 +1242,6 @@ Pauldusler</system:String>
     <TextBlock x:Key="ShowProfileSelectionOnStartupToolTip" TextWrapping="Wrap" Width="300">
         Defina se uma janela de diálogo deve ser aberta ao iniciar o aplicativo, onde você pode escolher o perfil de exibição ativo.
     </TextBlock>
-
 
     <!-- XAML formated ToolTips End -->
 
