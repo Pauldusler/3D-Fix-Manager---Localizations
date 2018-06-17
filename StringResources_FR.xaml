@@ -98,17 +98,19 @@
     <system:String x:Key="RelativeGameIniPath">1. Relative Path to a Game Config File:</system:String>
     <system:String x:Key="SecondRelativeGameIniPath">2. Relative Path to a Game Config File:</system:String>
     <system:String x:Key="ThirdRelativeGameIniPath">3. Relative Path to a Game Config File:</system:String>
-    <system:String x:Key="HelixPostUpdated">Helix Post last updated:</system:String>
     <system:String x:Key="SetDate">Set Date</system:String>
     <system:String x:Key="SetDateTooltip">Sets today's date as a timestamp.</system:String>
     <system:String x:Key="DownloadLinkFix">Télécharger le lien du fix:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">Lien de téléchargement additionnel:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extracteur de l'archive du Fix:</system:String>
-    <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto Wrapper Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo Refresh Rate:</system:String>
     <system:String x:Key="StartTool">Start additional Exe:</system:String>
 
+    <system:String x:Key="UniversalFixDetectionError">Error: Game Engine could not be detected by searching PC Gaming Wiki and Wikipedia.</system:String>
+    <system:String x:Key="DetectEngine">Detect Engine</system:String>
     <system:String x:Key="WebLinkHelix">Lien Web Helix Blog / Geforce Forum:</system:String>
+    <system:String x:Key="HelixPostUpdated">Helix Post last updated:</system:String>
 
     <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
     <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
@@ -175,6 +177,7 @@
 
     <system:String x:Key="FixInfo">Information sur le Fix:</system:String>
     <system:String x:Key="Game">Jeu:</system:String>
+    <system:String x:Key="GameEngine">Game Engine:</system:String>
     <system:String x:Key="FixType">Type de Fix:</system:String>
     <system:String x:Key="WrapperVersion">Version du Wrapper:</system:String>
     <system:String x:Key="IniPath">Répertoire de l'Ini:</system:String>
@@ -195,7 +198,7 @@
     <system:String x:Key="HotkeyManagement">Management des Raccourcis:</system:String>
     <system:String x:Key="NewHotkey">Nouveau Raccourci</system:String>
     <system:String x:Key="NewHotkeyToolTip">Créer un nouveau raccourci. N'oubliez pas d'assigner une touche.</system:String>
-    <system:String x:Key="DeleteHotkey">Ret. la touche</system:String>
+    <system:String x:Key="DeleteHotkey">Retirer la touche</system:String>
     <system:String x:Key="DeleteHotkeyToolTip">Retirer le raccourci avec tous les pré-réglages 3D correspondants.</system:String>
     <system:String x:Key="SelectedHotkey">Raccourcis sélectionnés:</system:String>
     <system:String x:Key="SelectedHotkeyToolTip">Raccourci sélectionné pour l'édition.</system:String>
@@ -264,7 +267,6 @@
     <system:String x:Key="EnableAlternative3dModeToolTip">Choisit un format 3D Alternatif pour utilisation avec TV 3D et projecteurs.</system:String>
     <system:String x:Key="EnableSoftwareMouse">Active le curseur software de la Souris</system:String>
     <system:String x:Key="Constant">Constante</system:String>
-
     <system:String x:Key="ResolutionAndRefreshRates">Definition et Taux de rafraichissement:</system:String>
     <system:String x:Key="EnableUpscaling">Active l'upscaling:</system:String>
     <system:String x:Key="UpscalingMode">Mode Upscaling:</system:String>
@@ -391,12 +393,16 @@
     <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
 
-    <!-- 3D depth / shutter frequency group -->
-    <system:String x:Key="Advanced3dSettingsGroup">3D Depth / Shutter Frequency:</system:String>
+    <!-- 3D depth / 3D Vision shutter glasses group -->
+    <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
     <system:String x:Key="StereoSeparation">3D Depth:</system:String>
     <system:String x:Key="DepthMultiplier">3D Depth Multiplier:</system:String>
     <system:String x:Key="Inch">inch</system:String>
-    <system:String x:Key="StereoRefreshRate">Stereo refresh rate:</system:String>
+    <system:String x:Key="StereoRefreshRate">Shutter Frequency 3D Glasses:</system:String>
+    <system:String x:Key="IROutput">Synchronisation of IR Sender:</system:String>
+    <system:String x:Key="SingleIREnvironment">Single IR Environment</system:String>
+    <system:String x:Key="MixedIREnvironment">Multi IR Environment</system:String>
+    <system:String x:Key="LanEnvironment">3D Vision LAN Environment</system:String>
 
     <!-- Driver settings group -->
     <system:String x:Key="DriverSettings2D">Optimize global driver profile for 2D mode:</system:String>
@@ -481,7 +487,7 @@
     <system:String x:Key="TVProfileGroup">TV Profile:</system:String>
     <system:String x:Key="ProjectorProfileGroup">Projector Profile:</system:String>
     <system:String x:Key="ProfileSettingsGroup">General Profile Settings:</system:String>
-    <system:String x:Key="DisplaySize">Display Size:</system:String>
+    <system:String x:Key="DisplaySize">Display size:</system:String>
     <system:String x:Key="RealScreenSize">Screen size:</system:String>
     <system:String x:Key="DisplayType">3D display type:</system:String>
     <system:String x:Key="Preferred3dFormat">Preferred 3D format:</system:String>
@@ -529,6 +535,7 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Oui</system:String>
     <system:String x:Key="No">Non</system:String>
+    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Do you want to revert 3dmigoto to the original version which was shipped with this 3D fix? &#x0d;&#x0d;Original version: {0}&#x0d;Installed version: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
     <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
     <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
@@ -537,6 +544,7 @@
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Error: Path could not be opened.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Error: Registry path could not be found.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Error: Helix Post could not be downloaded.&#x0d;&#x0d;The link to the blog is not valid.</system:String>
@@ -559,6 +567,7 @@ Tip: In "Nvidia 3D Settings" tab you'll find an option for automatically switchi
     <system:String x:Key="GameTitleEmpty">Error: Game Title must not be empty</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Note: You haven't set a Steam App ID for this profile yet which is required for starting Steam games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Note: You haven't set a Game Exe for the profile yet. This is generally required for starting games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
+    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Do you want to automatically add a game icon from TheGamesDB.com?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Choose a 3D wrapper you want to install.
                                          
 Installing a wrapper unlocks some features like stereo hotkeys, SideBySide / TaB output mode, compatibility mode support and automatic driver profile installation.
@@ -716,6 +725,11 @@ Pauldusler</system:String>
         <Bold>Note:</Bold> Enabling / disabling 3D fixes is also automatically done when clicking on <Italic><Bold>"Play 2D"</Bold></Italic> or <Italic><Bold>"Play 3D"</Bold></Italic> buttons.
     </TextBlock>
 
+    <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
+        <Bold>Left click:</Bold> Installs / uninstalls the 3D fix.<LineBreak/><LineBreak/>
+        <Bold>Right click:</Bold> Resets 3dmigoto to the original version of the 3D fix if it was updated. Use this if updating 3dmigoto broke the fix.
+    </TextBlock>
+
 
     <!-- New / Edit Profile Tab ToolTips -->
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
@@ -794,8 +808,17 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        Link to the helix or geforce forum where the fix was taken from.<LineBreak/><LineBreak/>
-        If you click on "<Italic><Bold>"HelixMod Blog"</Bold></Italic> in <Italic><Bold>"Installation"</Bold></Italic> tab then the provided link will be opened in your webbrowser.
+        Insert the link to the helix blog <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> where the 3D fix was taken from.<LineBreak/><LineBreak/>
+        After that click on button <Bold><Italic>Blogger API</Italic></Bold> for automatically inserting info text of the fix, download link and further essential information to the fix profile.<LineBreak/><LineBreak/>
+        If no helix blog exists to a specifc 3D fix then please insert the link to the thread in Geforce forum instead where the fix was taken from. However consider that you cannot automatically get the info text and download link to the fix in this case.<LineBreak/><LineBreak/>
+        Further more the stated link can be opened in web browser by clicking on button <Bold><Italic>Helixmod Blog</Italic></Bold> in tab <Bold><Italic>Installation</Italic></Bold>.
+    </TextBlock>
+
+    <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
+        By pressing the button <Bold><Italic>Detect Engine</Italic></Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>    
+        If game engine detection fails you can alternatively press buttons <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>      
+        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
+        <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold><Italic>Search Steam DB</Italic></Bold> next to <Bold><Italic>Game Title</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
@@ -1136,6 +1159,13 @@ Pauldusler</system:String>
         This is the size of the monitor which is passed to the Nvidia driver. The smaller the value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
         For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen.<LineBreak/><LineBreak/>
         Adjust the maximum 3D depth via 3D depth multiplier or the value in inch. Both depend on another.
+    </TextBlock>
+
+    <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
+        Set the synchronisation method for your 3D Vision IR sender (3D Vision pyramid).<LineBreak/><LineBreak/>
+        <Bold>Single IR Environment:</Bold> Choose this if you don't use any other IR senders like remote controls in your environment. This is the default setting recommended by Nvidia.<LineBreak/><LineBreak/>
+        <Bold>Multi IR Environment:</Bold> Choose this if you use several IR devices in your environment like remote controls. This ensures that IR devices don't interfere with each other.<LineBreak/><LineBreak/>
+        <Bold>3D Vision LAN Environment:</Bold> Choose this if you have a LAN environment with several 3D Vision IR senders and further IR devices like remote controls. This ensures that IR devices don't interfere with each other.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
