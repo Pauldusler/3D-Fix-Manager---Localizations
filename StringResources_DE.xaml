@@ -91,6 +91,7 @@
     <system:String x:Key="FixDescriptionSettingsGroup">Beschreibung zum 3D Fix / Helix Blog:</system:String>
 
     <system:String x:Key="GameTitle">Titel des Spiels:</system:String>
+    
     <system:String x:Key="InstallDir">Installationsordner:</system:String>
     <system:String x:Key="InstallDirName">Name des Installationsordners:</system:String>
     <system:String x:Key="RelativeInstallPath">Relativer Installationspfad:</system:String>
@@ -98,17 +99,19 @@
     <system:String x:Key="RelativeGameIniPath">1. Relativer Pfad zu einer Konfig-Datei:</system:String>
     <system:String x:Key="SecondRelativeGameIniPath">2. Relativer Pfad zu einer Konfig-Datei:</system:String>
     <system:String x:Key="ThirdRelativeGameIniPath">3. Relativer Pfad zu einer Konfig-Datei:</system:String>
-    <system:String x:Key="HelixPostUpdated">Helix Post zuletzt aktualisiert:</system:String>
     <system:String x:Key="SetDate">Datum setzen</system:String>
     <system:String x:Key="SetDateTooltip">Fügt das heutige Datum als Zeitstempel ein.</system:String>
     <system:String x:Key="DownloadLinkFix">URL zum 3D Fix:</system:String>
     <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
-    <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archive:</system:String>
-    <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto wrapper update:</system:String>
+    <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archiv:</system:String>
+    <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto Wrapper-Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo-Bildwiederholrate:</system:String>
     <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
-    
+
+    <system:String x:Key="UniversalFixDetectionError">Fehler: Es konnte weder auf PC Gaming Wiki noch auf Wikipedia ermittelt werden, welche Engine dieses Spiel nutzt.</system:String>
+    <system:String x:Key="DetectEngine">Engine ermitteln</system:String>
     <system:String x:Key="WebLinkHelix">URL zum Helix Blog / Geforce Forum:</system:String>
+    <system:String x:Key="HelixPostUpdated">Helix Post zuletzt aktualisiert:</system:String>
 
     <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
     <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
@@ -175,6 +178,7 @@
 
     <system:String x:Key="FixInfo">Fix-Info:</system:String>
     <system:String x:Key="Game">Spiel:</system:String>
+    <system:String x:Key="GameEngine">Spiel-Engine:</system:String>
     <system:String x:Key="FixType">Fix-Typ:</system:String>
     <system:String x:Key="WrapperVersion">Wrapper-Version:</system:String>
     <system:String x:Key="IniPath">Ini-Pfad:</system:String>
@@ -217,13 +221,13 @@
     <system:String x:Key="Delay">Verzögerung:</system:String>
     <system:String x:Key="DelayToolTip">Verzögerung de-/aktivieren mit der zu einem 3D-Preset geschaltet wird, nachdem der Hotkey gedrückt wurde.</system:String>
     <system:String x:Key="DelayMsToolTip">Zeit in [ms] bis ein 3D-Preset nach Tastendruck des Hotkeys aktiviert wird.</system:String>
-    <system:String x:Key="ReleaseDelay">Verz. beim Loslassen:</system:String>
+    <system:String x:Key="ReleaseDelay">Verzögerung beim Loslassen:</system:String>
     <system:String x:Key="ReleaseDelayToolTip">Verzögerung de-/aktivieren mit der das aktive Preset deaktiviert wird nachdem der Hotkey losgelassen wird.</system:String>
     <system:String x:Key="ReleaseDelayMsToolTip">Zeit in [ms] bis ein 3D-Preset nach Tastendruck des Hotkeys deaktiviert wird.</system:String>
     <system:String x:Key="Transition">Übergang:</system:String>
     <system:String x:Key="TransitionToolTip">Animierte Übergänge zwischen 3D-Presets de-/aktivieren.</system:String>
     <system:String x:Key="TransitionMsToolTip">Zeitspanne in [ms] innerhalb welcher zwischen den 3D-Presets überblendet wird.</system:String>
-    <system:String x:Key="ReleaseTransition">Überg. beim Loslass.</system:String>
+    <system:String x:Key="ReleaseTransition">Übergang beim Loslassen:</system:String>
     <system:String x:Key="ReleaseTransitionToolTip">Animierte Übergänge zwischen 3D-Presets de/-aktivieren nachdem der Hotkey losgelassen wurde.</system:String>
     <system:String x:Key="ReleaseTransitionMsToolTip">Zeitspanne in [ms] innerhalb welcher zwischen den 3D-Presets überblendet wird nachdem der Hotkey losgelassen wurde.</system:String>
     <system:String x:Key="TransitionTypeToolTip">Aktiver Animationstyp zum Übergang zwischen 3D-Presets.</system:String>
@@ -245,7 +249,7 @@
     <system:String x:Key="chkShaderConstToolTip">Funktion aktivieren, um eine Shader-Konstante und seinen Wert festzulegen. Durch Deaktivieren der Option wird der zugehörige Eintrag aus der Ini-Datei entfernt.</system:String>
     <system:String x:Key="chbShaderConstToolTip">Konstante auswählen, die an den Shader übermittelt werden soll.</system:String>
     <system:String x:Key="tbShaderConstToolTip">Konstante als Fließkommazahl eingeben.</system:String>
-    <system:String x:Key="NewConstant">Konstante</system:String>
+    <system:String x:Key="NewConstant">Neue Konstante</system:String>
     <system:String x:Key="NewConstantToolTip">Erstellt eine neue Shader-Konstante.</system:String>
     <system:String x:Key="DefaultConstToolTip">Wert als Fließkommazahl eingeben.</system:String>
 
@@ -264,7 +268,6 @@
     <system:String x:Key="EnableAlternative3dModeToolTip">Alternatives 3D-Format für die Nutzung mit 3D-TVs und Projektoren auswählen.</system:String>
     <system:String x:Key="EnableSoftwareMouse">Software Mauszeiger aktivieren</system:String>
     <system:String x:Key="Constant">Konstante</system:String>
-    
     <system:String x:Key="ResolutionAndRefreshRates">Auflösung und Bildwiederholfrequenz:</system:String>
     <system:String x:Key="EnableUpscaling">Upscaling aktivieren:</system:String>
     <system:String x:Key="UpscalingMode">Upscaling - Modus:</system:String>
@@ -390,14 +393,18 @@
     <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren (nur DirectX 9)</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
-    
-    <!-- 3D depth / shutter frequency group -->
-    <system:String x:Key="Advanced3dSettingsGroup">3D-Tiefe / Shutter-Frequenz:</system:String>
+
+    <!-- 3D depth / 3D Vision shutter glasses group -->
+    <system:String x:Key="Advanced3dSettingsGroup">3D-Tiefe / 3D Vision Shutter-Brille:</system:String>
     <system:String x:Key="StereoSeparation">3D Tiefe:</system:String>
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
     <system:String x:Key="Inch">Zoll</system:String>
-    <system:String x:Key="StereoRefreshRate">Stereo - Bildwiederholrate:</system:String>
-
+    <system:String x:Key="StereoRefreshRate">Shutter-Frequenz der 3D-Brille:</system:String>
+    <system:String x:Key="IROutput">Synchronisation des IR-Senders:</system:String>
+    <system:String x:Key="SingleIREnvironment">Einzel-IR Umgebung</system:String>
+    <system:String x:Key="MixedIREnvironment">Multi-IR Umgebung</system:String>
+    <system:String x:Key="LanEnvironment">3D Vision LAN-Umgebung</system:String>
+    
     <!-- Driver settings group -->
     <system:String x:Key="DriverSettings2D">Globales Treiberprofil für den 2D-Modus optimieren:</system:String>
     <system:String x:Key="DriverSettings3D">Globales Treiberprofil für den 3D-Modus optimieren:</system:String>
@@ -530,6 +537,7 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Ja</system:String>
     <system:String x:Key="No">Nein</system:String>
+    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Möchten Sie 3dmigoto auf die ursprüngliche Version zurücksetzen, die mit dem 3D Fix ausgeliefert wurde?&#x0d;&#x0d;Ursprüngliche Version: {0}&#x0d;Installierte Version: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">3dmigoto x32 installieren</system:String>
     <system:String x:Key="InstallHelixModx32">HelixMod x32 installieren</system:String>
     <system:String x:Key="Install3dmigotox64">3dmigoto x64 installieren</system:String>
@@ -538,6 +546,7 @@
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Für die {0} steht ein universeller 3D Fix bereit.&#x0d;&#x0d;Möchten Sie diesen zum Fix-Profil hinzufügen?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Fehler: Der Pfad konnte nicht aufgerufen werden.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Fehler: Der Registry-Key konnte nicht gefunden werden.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Fehler: Helix Post konnte nicht abgerufen werden.&#x0d;&#x0d;Der Link zum Blog ist ungültig.</system:String>
@@ -560,6 +569,7 @@ Tipp: Im Tab "Nvidia Settings" finden Sie eine Option zum automatischen Wechsel 
     <system:String x:Key="GameTitleEmpty">Fehler: Der Titel des Spiels darf nicht leer sein.</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Hinweis: Es wurde noch keine SteamApp Id für das Profil gesetzt. Diese ist erforderlich um Steam-Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Hinweis: Es wurde noch keine Game Exe für das Profil gesetzt. Diese ist allgemein erforderlich um Spiele starten zu können. &#x0d;&#x0d;Möchten Sie diese automatisch ermitteln lassen?</system:String>
+    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Möchten Sie automatisch ein Spiele-Icon auf TheGamesDB.com ermitteln?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Wählen Sie einen 3D Wrapper zur Installation aus.
                                          
 Die Installation eines Wrappers schaltet Features wie beispielsweise Stereo Hotkeys, SideBySide / TaB Ausgabemodus, Kompatibilitätsmodus und die automatische Installation von Treiberprofilen frei.
@@ -717,7 +727,12 @@ Pauldusler</system:String>
         <Bold>Anmerkung:</Bold> Das De- und Aktivieren von 3D Fixes geschieht automatisch, wenn auf die Schaltflächen <Span FontWeight="Bold" FontStyle="Italic">"2D spielen"</Span> oder <Span FontWeight="Bold" FontStyle="Italic">"3D spielen"</Span> geklickt wird. 
     </TextBlock>
 
+    <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
+        <Bold>Linksklick:</Bold> Installiert / deinstalliert den 3D Fix.<LineBreak/><LineBreak/>
+        <Bold>Rechtsklick:</Bold> Setzt 3dmigoto auf die ursprüngliche Version des 3D Fixes zurück, sofern dieser geupdated wurde. Nutzen Sie diese Funktion, wenn der 3D Fix nach dem Updaten von 3dmigoto nicht mehr funktionieren sollte.
+    </TextBlock>
 
+    
     <!-- New / Edit Profile Tab ToolTips -->
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
         Der Titel des Spiels sollte genauso lauten wie er z.B. in der Steam-Bibliothek oder unter den installierten Programmen in der <Italic> Windows Systemsteuerung</Italic> gelistet ist.<LineBreak/><LineBreak/>
@@ -795,8 +810,17 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        Link zum Helix- oder Geforce Forum aus welchem der Fix entnommen wurde.<LineBreak/><LineBreak/>
-        Wenn Sie auf die Schaltfläche <Span FontWeight="Bold" FontStyle="Italic">"HelixMod-Blog"</Span> im Tab <Span FontWeight="Bold" FontStyle="Italic">"Installation"</Span> klicken, wird der angegebene Link im Webbrowser geöffnet.
+        Fügen Sie hier die URL zum jeweiligen Helix-Blog <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> hinzu aus welchem der 3D Fix stammt.<LineBreak/><LineBreak/>
+        Anschließend können Sie über die Schaltfläche <Bold><Italic>Blogger API</Italic></Bold> den Beschreibungstext des Blogs, den Download-Link zum 3D Fix sowie weitere notwendige Informationen automatisch in das Fix-Profil einfügen lassen.<LineBreak/><LineBreak/>
+        Falls kein Helix-Blog zu einem 3D Fix existieren sollte, so geben Sie bitte den Link zum Thread im Geforce Forum an aus welchem der 3D Fix stammt. Bedenken Sie jedoch, dass in diesem Fall der Beschreibungstext sowie der Download-Link zum 3D Fix nicht automatisch ermittelt werden können.<LineBreak/><LineBreak/>
+        Der eingetragene Link kann außerdem über die Schaltfläche <Bold><Italic>Helixmod-Blog</Italic></Bold> im Tab <Bold><Italic>Installation</Italic></Bold> im Webbrowser geöffnet werden.
+    </TextBlock>
+
+    <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
+        Mit der Hilfe der Schaltfläche <Bold><Italic>Engine ermitteln</Italic></Bold> können Sie automatisch ermitteln lassen, welche Game Engine das jeweilige Spiel benutzt. Hierbei werden die Wikipedia und PC Gaming Wiki Seite auf Vorhandensein dieser Information durchsucht.<LineBreak/><LineBreak/>
+        Sollte die Engine nicht automatisch ermittelt werden können, können Sie über die Schaltflächen <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> die entsprechenden Seiten aufrufen und manuell durchforsten.<LineBreak/><LineBreak/>
+        Im Falle der <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> und <Bold>Telltale Engine</Bold> stehen universelle 3D Fixes zur Verfügung, die bei Bedarf automatisch in das Fix-Profil eingefügt werden können.<LineBreak/><LineBreak/>       
+        <Bold>Hinweis:</Bold> Um die automatische Erkennung der Game Engine zu verbessern sollten Sie zunächst die Steam App ID ermitteln lassen. Klicken Sie bitte hierzu auf die oben befindliche Schaltfläche <Bold><Italic>DB durchsuchen</Italic></Bold> bei <Bold><Italic>Titel des Spiels</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
@@ -1140,7 +1164,14 @@ Pauldusler</system:String>
         Um die optimale 3D-Tiefe bei Projektoren zu erzielen empfielt es sich die Zollgröße der Leinwand einzutragen.<LineBreak/><LineBreak/>
         Regeln Sie die maximale 3D-Tiefe entweder über den Tiefen-Multiplikator oder den Zollwert. Beide hängen voneinander ab.
     </TextBlock>
-    
+
+    <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier die Synchronisationsmethode für Ihren 3D Vision Infrarot-Sender (3D Vision Pyramide) aus.<LineBreak/><LineBreak/>
+        <Bold>Einzel-IR Umgebung:</Bold> Bitte auswählen, wenn Sie außer des 3D Vision IR-Senders keine weiteren IR-Geräte wie beispielsweise Fernbedienungen in ihrer Umgebung verwenden. Dies ist die Standard-Einstellung, die von Nvidia empfohlen wird.<LineBreak/><LineBreak/>
+        <Bold>Multi-IR Umgebung:</Bold> Bitte auswählen, wenn Sie in Ihrer Umgebung weitere IR-Geräte wie beispielsweise Fernbedienungen verwenden. Dies stellt sicher, dass sich die IR-Geräte nicht untereinander stören.<LineBreak/><LineBreak/>
+        <Bold>3D Vision LAN-Umgebung:</Bold> Bitte auswählen, wenn Sie sich in einer LAN-Umgebung mit mehreren 3D Vision IR-Sendern befinden oder weitere IR-Geräte IR-Geräte wie beispielsweise Fernbedienungen verwenden. Dies stellt sicher, dass sich die IR-Geräte nicht untereinander stören.
+    </TextBlock>
+
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
         3D Vision Shutter-Brillen können mit verschiedenen Shutter-Frequenzen betrieben werden - die Spanne reicht von 100 Hz bis 120 Hz.<LineBreak/><LineBreak/>
         Stellen Sie hier ein, mit welcher Frequenz der Monitor und die Shutter-Brillen beim Spielen laufen sollen. Es empfiehlt sich die Frequenz auf 100 Hz zu setzen, wenn die Leistung Ihres PCs nur für 100 FPS im Spiel ausreicht.
