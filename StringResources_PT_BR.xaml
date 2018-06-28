@@ -107,8 +107,8 @@
     <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
     <system:String x:Key="StartTool">Iniciar Exe adicional:</system:String>
 
-    <system:String x:Key="UniversalFixDetectionError">Error: Game Engine could not be detected by searching PC Gaming Wiki and Wikipedia.</system:String>
-    <system:String x:Key="DetectEngine">Detect Engine</system:String>
+    <system:String x:Key="UniversalFixDetectionError">Erro: O mecanismo de jogos não pôde ser detectado pela pesquisa na PC Gaming Wiki e na Wikipédia.</system:String>
+    <system:String x:Key="DetectEngine">Detectar Motor(Engine)</system:String>
     <system:String x:Key="WebLinkHelix">URL para Helix Blog / Geforce Forum:</system:String>
     <system:String x:Key="HelixPostUpdated">Postagem Helix atualizado pela última vez:</system:String>
 
@@ -150,7 +150,7 @@
     <system:String x:Key="RunNormal">Executar normal</system:String>
     <system:String x:Key="RunAsAdmin">Executar como administrador</system:String>
     <system:String x:Key="ApplyGlobalSetting">Aplicar configuração global</system:String>
-    <system:String x:Key="OverrideGlobalSetting">Override global Setting</system:String>
+    <system:String x:Key="OverrideGlobalSetting">Substituir configuração global</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Escolher Caminho</system:String>
@@ -164,7 +164,7 @@
     <system:String x:Key="ValuesFor2D">Valores para 2D</system:String>
     <system:String x:Key="ValuesFor3D">Valores para 3D</system:String>
     <system:String x:Key="Open">Abrir caminho</system:String>
-    <system:String x:Key="OpenExplorer">Open Explorer</system:String>
+    <system:String x:Key="OpenExplorer">Abrir Explorer</system:String>
     <system:String x:Key="Cancel">Cancelar</system:String>
     <system:String x:Key="Save">Salvar</system:String>
     <system:String x:Key="SaveChanges">Salvar Alterações</system:String>
@@ -307,8 +307,8 @@
     <system:String x:Key="CheckForUpdates">Verificar atualizações na inicialização</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Otimize as configurações do jogo para 3D estéreo</system:String>
     <system:String x:Key="EnableSteamOverlay">Ativar a sobreposição do Steam</system:String>
-    <system:String x:Key="FullscreenOptimizations">Fullscreen Optimizations:</system:String>
-    <system:String x:Key="ControlledByFixProfile">Controlled by Fix Profile</system:String>
+    <system:String x:Key="FullscreenOptimizations">Otimizações de Tela Cheia:</system:String>
+    <system:String x:Key="ControlledByFixProfile">Controlado pelo Perfil de Correção</system:String>
     <system:String x:Key="SteamNotDetected">DLLs de Sobreposição / Steam não detectado</system:String>
     <system:String x:Key="PreferIconDownload">Prefere ícones de jogos do banco de dados da internet</system:String>
     <system:String x:Key="ResetAllIcons">Redefinir todos os ícones de jogos:</system:String>
@@ -384,7 +384,7 @@
     <system:String x:Key="PressKeyCombination">Pressione uma combinação de teclas no teclado.</system:String>
 
     <!-- General settings group -->
-    <system:String x:Key="EnableStereoGroup">Enable / set up  3D functionality:</system:String>
+    <system:String x:Key="EnableStereoGroup">Habilitar/configurar a funcionalidade 3D:</system:String>
     <system:String x:Key="EnableNvidia3D">Ativar Nvidia 3D estereoscópico</system:String>
     <system:String x:Key="Disable3dOnClosing">Desativar o Nvidia 3D Estereoscópico ao fechar o aplicativo</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">Forçar o modo de reprodução 3D Vision / 3DTV</system:String>
@@ -394,7 +394,7 @@
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Define se a exibição está permanentemente no modo 3D (o modo com janelas 3D também deve estar ativado).</system:String>
 
     <!-- 3D depth / 3D Vision shutter glasses group -->
-    <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
+    <system:String x:Key="Advanced3dSettingsGroup">Profundidade 3D / Visão 3D do Óculos Obturador:</system:String>
     <system:String x:Key="StereoSeparation">Profundidade 3D:</system:String>
     <system:String x:Key="DepthMultiplier">Multiplicador de Profundidade 3D:</system:String>
     <system:String x:Key="Inch">polegadas</system:String>
@@ -535,7 +535,7 @@
     <!-- Buttons-->
     <system:String x:Key="Yes">Sim</system:String>
     <system:String x:Key="No">Não</system:String>
-    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Do you want to revert 3dmigoto to the original version which was shipped with this 3D fix? &#x0d;&#x0d;Original version: {0}&#x0d;Installed version: {1}</system:String>
+    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Você quer reverter o 3dmigoto para a versão original que foi enviada com essa correção 3D? &#x0d;&#x0d;Versão Original: {0}&#x0d;Versão Instalada: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">Instalar 3dmigoto x32</system:String>
     <system:String x:Key="InstallHelixModx32">Instalar HelixMod x32</system:String>
     <system:String x:Key="Install3dmigotox64">Instalar 3dmigoto x64</system:String>
@@ -544,7 +544,7 @@
     <system:String x:Key="SetupWizard">Assistente de Instalação</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
+    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
     <system:String x:Key="WeblinkInvalid" xml:space="preserve">Erro: Não foi possível baixar o Helix Post.&#x0d;&#x0d;O link para o blog não é válido.</system:String>
@@ -567,7 +567,7 @@ Dica: Na aba "Nvidia 3D Settings" você encontrará uma opção para alternar au
     <system:String x:Key="GameTitleEmpty">Erro: O título do jogo não pode estar vazio</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Nota: Você ainda não definiu um ID de App Steam para esse perfil, o que é necessário para iniciar os jogos Steam. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Nota: Você ainda não definiu um Game Exe para o perfil. Isso geralmente é necessário para iniciar jogos. &#x0d;&#x0d;Deseja detectá-lo automaticamente agora?</system:String>
-    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Do you want to automatically add a game icon from TheGamesDB.com?</system:String>
+    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Você quer adicionar automaticamente um ícone de jogo do TheGamesDB.com?</system:String>
     <system:String x:Key="WrapperChoice" xml:space="preserve">Escolha um 3D Empacotador que você deseja instalar.
                                          
 Instalar um Empacotador desbloqueia alguns recursos como o Teclas de Atalho estéreo, o modo de saída Lado a Lado / TaB, o modo de compatibilidade e a instalação automática do perfil de driver.
@@ -584,14 +584,14 @@ Notas:
     <system:String x:Key="GameIconFileNotFound">​​Erro: O arquivo de ícone do jogo não foi encontrado..</system:String>
     <system:String x:Key="InstallPathNotRelative">Erro: o caminho de instalação não é um caminho relativo.</system:String>
     <system:String x:Key="IniPathNotRelative">Erro: o caminho ini do jogo adicional não é um caminho relativo.</system:String>
-    <system:String x:Key="AdditionalIniPathNotRelative">Error: additional game ini path is not a relative path.</system:String>
-    <system:String x:Key="ChangesSaved">CAlterações salvas com sucesso.</system:String>
+    <system:String x:Key="AdditionalIniPathNotRelative">Erro: o caminho adicional do jogo ini não é um caminho relativo.</system:String>
+    <system:String x:Key="ChangesSaved">Alterações salvas com sucesso.</system:String>
     <system:String x:Key="FixProfileCreated">Perfil de correção criado com êxito.</system:String>
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Todos os ícones foram restaurados e baixados com sucesso em segundo plano.&#x0d;&#x0d;Nota: Todos os ícones antigos foram movidos para uma pasta de backup dentro das pastas de perfil individuais para restaurá-las, se necessário.</system:String>
     <system:String x:Key="ServerNotAvailable" xml:space="preserve">Servidor não disponível. &#x0d;&#x0d;Por favor, tente novamente mais tarde.</system:String>
     <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">Novos perfis de correção disponíveis. Deseja atualizar?</system:String>
     <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Uma nova correção 3D está disponível para o jogo "{0}".&#x0d;&#x0d;Deseja atualizar para o mais recente versão agora?&#x0d;&#x0d;Nota: Durante este procedimento, a correção antiga é automaticamente desinstalada antes que a nova seja baixada e instalada. Teclas de Atalho personalizadas são mantidas.</system:String>
-    <system:String x:Key="NoUpdates" >Nenhuma atualização disponível. Corrigir os perfis atualizados.</system:String>
+    <system:String x:Key="NoUpdates" >Nenhuma atualização disponível. Perfis de Correção atualizados.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Uma nova versão do 3D Fix Manager está disponível. Deseja atualizar?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">Se você deseja reportar bugs ou ter ideias para novos recursos, envie um e-mail para: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
     <system:String x:Key="NoChangeNotesFound">Desculpe, não foram encontradas Notas de Mudança.</system:String>
@@ -726,8 +726,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
-        <Bold>Left click:</Bold> Installs / uninstalls the 3D fix.<LineBreak/><LineBreak/>
-        <Bold>Right click:</Bold> Resets 3dmigoto to the original version of the 3D fix if it was updated. Use this if updating 3dmigoto broke the fix.
+        <Bold>Clique esquerdo:</Bold> Instala / desinstala a correção 3D.<LineBreak/><LineBreak/>
+        <Bold>Clique direito:</Bold> Redefine 3dmigoto para a versão original da correção 3D, se ela foi atualizada. Use isto se a atualização do 3dmigoto bugar a correção.
     </TextBlock>
 
 
@@ -756,7 +756,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
-        TDigite o caminho relativo para um arquivo de configuração <Bold>configuration file</Bold> do jogo (por exemplo, um arquivo .ini ou .cfg) que será editado automaticamente com base nos valores definidos para o modo 2D ou 3D. O caminho relativo deve ser definido a partir <Bold>do caminho raiz do jogo</Bold> ou <Bold>da pasta de usuário</Bold> em <Italic>C:\Users\USERNAME</Italic> - bambos os diretórios são pesquisados para o arquivo de configuração especificado.<LineBreak/><LineBreak/>
+        Digite o caminho relativo para um arquivo de configuração <Bold>configuration file</Bold> do jogo (por exemplo, um arquivo .ini ou .cfg) que será editado automaticamente com base nos valores definidos para o modo 2D ou 3D. O caminho relativo deve ser definido a partir <Bold>do caminho raiz do jogo</Bold> ou <Bold>da pasta de usuário</Bold> em <Italic>C:\Users\USERNAME</Italic> - bambos os diretórios são pesquisados para o arquivo de configuração especificado.<LineBreak/><LineBreak/>
         O principal objetivo deste recurso é editar automaticamente as configurações gráficas ao iniciar o jogo (por exemplo, desativação do <Bold>desfoque de movimento</Bold> ou <Bold>profundidade de campo</Bold> que não é desejado para o modo 3D estéreo).<LineBreak/><LineBreak/>
         Geralmente todos os arquivos de configuração podem ser editados, o que inclui uma lista de pares chave / valor - isso pode se parecer com isso em um arquivo: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
         Dê uma olhada no perfil de correção do jogo <Italic><Bold>"Outlast"</Bold></Italic> para ver uma amostra sobre como editar um arquivo de configuração.<LineBreak/><LineBreak/>
@@ -808,17 +808,17 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        Insert the link to the helix blog <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> where the 3D fix was taken from.<LineBreak/><LineBreak/>
-        After that click on button <Bold><Italic>Blogger API</Italic></Bold> for automatically inserting info text of the fix, download link and further essential information to the fix profile.<LineBreak/><LineBreak/>
-        If no helix blog exists to a specifc 3D fix then please insert the link to the thread in Geforce forum instead where the fix was taken from. However consider that you cannot automatically get the info text and download link to the fix in this case.<LineBreak/><LineBreak/>
-        Further more the stated link can be opened in web browser by clicking on button <Bold><Italic>Helixmod Blog</Italic></Bold> in tab <Bold><Italic>Installation</Italic></Bold>.
+        Insira o link para o blog Helix <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> onde a correção 3D foi tirada.<LineBreak/><LineBreak/>
+        Depois que clique no botão <Bold><Italic>Blogger API</Italic></Bold> para inserir automaticamente o texto da informação da correção, link de download e outras informações essenciais para o perfil de correção.<LineBreak/><LineBreak/>
+        Se não existir um blog helix para uma correção 3D específica, insira o link para o encadeamento no fórum do Geforce, em vez de onde a correção foi tirada. No entanto, considere que não é possível obter automaticamente o texto de informações e o link de download para a correção neste caso.<LineBreak/><LineBreak/>
+        Ainda mais o link indicado pode ser aberto no navegador da Web clicando no botão <Bold><Italic>Helixmod Blog</Italic></Bold> na Guia <Bold><Italic>Instalação</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
-        By pressing the button <Bold><Italic>Detect Engine</Italic></Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>    
-        If game engine detection fails you can alternatively press buttons <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>      
-        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
-        <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold><Italic>Search Steam DB</Italic></Bold> next to <Bold><Italic>Game Title</Italic></Bold>.
+        Ao pressionar o botão <Bold><Italic>Detectar Motor</Italic></Bold> você pode detectar automaticamente o mecanismo de jogo usado pelo jogo individual. Ao fazer isso, as páginas da Wikipedia e do PC Gaming Wiki são pesquisadas para obter essas informações.<LineBreak/><LineBreak/>    
+        Se a detecção do motor de jogo falhar, você pode, alternativamente, pressionar os botões <Bold><Italic>Wikipedia</Italic></Bold> e <Bold><Italic>PC Gaming Wiki</Italic></Bold> para acessar as páginas da Web para procurar as informações manualmente.<LineBreak/><LineBreak/>      
+        No caso de <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> Estão disponíveis correcções 3D universais que podem ser adicionadas automaticamente ao perfil de correcção.<LineBreak/><LineBreak/>  
+        <Bold>Nota:</Bold> Para melhorar a detecção automática de mecanismos de jogos, você deve primeiro inserir a ID do aplicativo Steam. Você faz isso clicando no botão acima chamado <Bold><Italic>Pesquisar no Steam DB</Italic></Bold> ao lado de <Bold><Italic>Título do Jogo</Italic></Bold>.
     </TextBlock>
 
     
