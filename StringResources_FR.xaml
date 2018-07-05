@@ -82,7 +82,9 @@
 
     <system:String x:Key="MainSettingsGroup">Title and State of the 3D Fix:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
-    <system:String x:Key="InstallFixSettingsGroup">Installation &amp; Download of the 3D Fix:</system:String>
+    <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
+    <system:String x:Key="AlternativeDownloadGroup">Download an alternative version of the 3D Fix:</system:String>
+    <system:String x:Key="InstallFixSettingsGroup">Install 3D Fix:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Game Configuration:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Game Icon:</system:String>
     <system:String x:Key="DriverSettingsGroup">Driver Settings / Profiles for Nvidia Profile Inspector:</system:String>
@@ -100,8 +102,10 @@
     <system:String x:Key="ThirdRelativeGameIniPath">3. Relative Path to a Game Config File:</system:String>
     <system:String x:Key="SetDate">Set Date</system:String>
     <system:String x:Key="SetDateTooltip">Sets today's date as a timestamp.</system:String>
-    <system:String x:Key="DownloadLinkFix">Télécharger le lien du fix:</system:String>
-    <system:String x:Key="AdditionalDownloadLinkFix">Lien de téléchargement additionnel:</system:String>
+    <system:String x:Key="DownloadLink_1">1. Télécharger le lien du fix:</system:String>
+    <system:String x:Key="DownloadLink_2">2. Télécharger le lien du fix:</system:String>
+    <system:String x:Key="DownloadLink_3">3. Télécharger le lien du fix:</system:String>
+    <system:String x:Key="InfoAlternativeUrl">Info about the alternative 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extracteur de l'archive du Fix:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto Wrapper Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo Refresh Rate:</system:String>
@@ -151,6 +155,9 @@
     <system:String x:Key="RunAsAdmin">Démarrer en Mode Administrateur</system:String>
     <system:String x:Key="ApplyGlobalSetting">Apply global Setting</system:String>
     <system:String x:Key="OverrideGlobalSetting">Override global Setting</system:String>
+
+    <system:String x:Key="CustomText">Custom Info Text</system:String>
+    <system:String x:Key="SLI">SLI Info Text</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Choisir le répertoire</system:String>
@@ -326,12 +333,14 @@
     <system:String x:Key="UpdateAllWrappers">Update 3dmigoto of all installed 3D fixes:</system:String>
 
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Search Paths for detecting installed Games:</system:String>
+    <system:String x:Key="SearchPathsGroup">Detecting installed Games:</system:String>
+    <system:String x:Key="EnableCachedPaths">Cache detected game paths for faster app start</system:String>
+    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows Registry</system:String>
     <system:String x:Key="EnableSearchPaths">Enable search paths</system:String>
     <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from windows registry</system:String>
     <system:String x:Key="SearchDepth">Search depth:</system:String>
     <system:String x:Key="SearchPaths">Search paths:</system:String>
-    <system:String x:Key="SearchGames">Search Games</system:String>
+    <system:String x:Key="SearchGames">Search games</system:String>
     <system:String x:Key="DetectPaths">Detect paths</system:String>
     <system:String x:Key="DetectPathsToolTip">Automatically detects paths to Steam libraries and adds them as search paths.</system:String>
     <system:String x:Key="Add">Add</system:String>
@@ -542,8 +551,13 @@
     <system:String x:Key="InstallHelixModx64">Install HelixMod x64</system:String>
     <system:String x:Key="QuickSetup">Quick Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Wizard</system:String>
+    <system:String x:Key="NormalFix">Normal 3D Fix</system:String>
+    <system:String x:Key="SliFix">SLI 3D Fix</system:String>
+    <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Error: Path could not be opened.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Error: Registry path could not be found.</system:String>
@@ -770,12 +784,18 @@ Pauldusler</system:String>
        You should not set this date manually as this is done automatically.
     </TextBlock>
 
+    <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
+        When there is an alternative 3D fix available for the game you can provide additional information about this fix.<LineBreak/><LineBreak/>
+       <Bold>Custom Info Text:</Bold> Shows an info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix. The individual text can be entered in the text field.<LineBreak/><LineBreak/>
+       <Bold>SLI Info Text:</Bold> Shows a predefined info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix which is optimized for SLI systems.
+    </TextBlock>
+
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
         Direct download link to the 3D Vision fix.
     </TextBlock>
 
     <TextBlock x:Key="AdditionalDownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
-        Provide a second download link if the 3D Vision fix was splitted into several download links.
+        Provide an additional download link if the 3D Vision fix was splitted into several download links.
     </TextBlock>
 
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
@@ -1002,8 +1022,22 @@ Pauldusler</system:String>
         Newer versions of 3dmigoto can have a better performance / stability and unlock new features like SideBySide support.
     </TextBlock>
 
+    <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
+        When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
+        It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
+        Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold><Italic>Search games</Italic></Bold> below. The cache is rebuilt automatically then.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
+        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same as the individual fix profiles.<LineBreak/><LineBreak/>
+        These Registry keys contain the information where the game is installed.
+    </TextBlock>
+
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        Enable search paths if not all of your installed games are detected by the program.
+        Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
+        You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
+        For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
     </TextBlock>
 
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
@@ -1015,7 +1049,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
-       Triggers a search for finding games based on the search paths you defined.
+       Triggers a search for finding installed games and updates the list.
     </TextBlock>
 
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
