@@ -82,7 +82,9 @@
 
     <system:String x:Key="MainSettingsGroup">Titel und Zustand des 3D Fixes:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
-    <system:String x:Key="InstallFixSettingsGroup">Installation &amp; Download des 3D Fixes:</system:String>
+    <system:String x:Key="PrimaryDownloadGroup">Download des 3D Fixes:</system:String>
+    <system:String x:Key="AlternativeDownloadGroup">Download eines alternativen 3D Fixes:</system:String>
+    <system:String x:Key="InstallFixSettingsGroup">Installation des 3D Fixes:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Spielkonfiguration:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Spiel-Icon:</system:String>
     <system:String x:Key="DriverSettingsGroup">Treibereinstellungen / Profile für Nvidia Profile Inspector:</system:String>
@@ -101,8 +103,10 @@
     <system:String x:Key="ThirdRelativeGameIniPath">3. Relativer Pfad zu einer Konfig-Datei:</system:String>
     <system:String x:Key="SetDate">Datum setzen</system:String>
     <system:String x:Key="SetDateTooltip">Fügt das heutige Datum als Zeitstempel ein.</system:String>
-    <system:String x:Key="DownloadLinkFix">URL zum 3D Fix:</system:String>
-    <system:String x:Key="AdditionalDownloadLinkFix">Zusätzliche URL zum 3D Fix:</system:String>
+    <system:String x:Key="DownloadLink_1">1. URL zum 3D Fix:</system:String>
+    <system:String x:Key="DownloadLink_2">2. URL zum 3D Fix:</system:String>
+    <system:String x:Key="DownloadLink_3">3. URL zum 3D Fix:</system:String>
+    <system:String x:Key="InfoAlternativeUrl">Info über alternativen 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archiv:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto Wrapper-Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo-Bildwiederholrate:</system:String>
@@ -152,6 +156,9 @@
     <system:String x:Key="RunAsAdmin">Als Admin ausführen</system:String>
     <system:String x:Key="ApplyGlobalSetting">Globale Einstellung verwenden</system:String>
     <system:String x:Key="OverrideGlobalSetting">Globale Einstellung überschreiben</system:String>
+
+    <system:String x:Key="CustomText">Benutzerdefinierter Info-Text</system:String>
+    <system:String x:Key="SLI">SLI Info-Text</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Pfad auswählen</system:String>
@@ -327,7 +334,9 @@
     <system:String x:Key="UpdateAllWrappers">3dmigoto aller installierten 3D Fixes aktualisieren:</system:String>
 
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Suchpfade zur Erkennung installierter Spiele:</system:String>
+    <system:String x:Key="SearchPathsGroup">Erkennung installierter Spiele:</system:String>
+    <system:String x:Key="EnableCachedPaths">Erkannte Spielpfade für schnelleren Programmstart cachen</system:String>
+    <system:String x:Key="EnableRegistrySearch">Spiele in der Windows Registry suchen</system:String>
     <system:String x:Key="EnableSearchPaths">Suchpfade aktivieren</system:String>
     <system:String x:Key="PrioritizeSearchPaths">Suchpfade ersetzen ermittelte Pfade aus der Windows Registry</system:String>
     <system:String x:Key="SearchDepth">Suchtiefe:</system:String>
@@ -544,8 +553,13 @@
     <system:String x:Key="InstallHelixModx64">HelixMod x64 installieren</system:String>
     <system:String x:Key="QuickSetup">Schnelles Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
+    <system:String x:Key="NormalFix">Normaler 3D Fix</system:String>
+    <system:String x:Key="SliFix">SLI 3D Fix</system:String>
+    <system:String x:Key="AlternativeFix">Alternativer 3D Fix</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Für dieses Spiel steht ein alternativer 3D Fix zum Download bereit. &#x0d;&#x0d;Informationen zum alternativen 3D Fix: &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Welche Version des 3D Fixes möchten Sie herunterladen?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">Für dieses Spiel steht ein alternativer 3D Fix bereit, der für SLI-Systeme optimiert ist. &#x0d;&#x0d;&#x0d;Welche Version des 3D Fixes möchten Sie installieren?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Für die {0} steht ein universeller 3D Fix bereit.&#x0d;&#x0d;Möchten Sie diesen zum Fix-Profil hinzufügen?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Fehler: Der Pfad konnte nicht aufgerufen werden.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Fehler: Der Registry-Key konnte nicht gefunden werden.</system:String>
@@ -679,7 +693,7 @@ Pauldusler</system:String>
     <system:String x:Key="WarningMigotoUpdate01">Warnung: Das Updaten von 3dmigoto für</system:String>
     <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">ist dafür bekannt den Fix zu zerstören.&#x0d;&#x0d;Möchten Sie den Wrapper für dieses Spiel dennoch aktualisieren?</system:String>
     <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Fehler beim Bearbeiten der Ini-Dateien aufgetreten.&#x0d;&#x0d;Bitte stellen Sie sicher, dass die Dateien nicht auf 'schreibgeschützt' gestellt sind.</system:String>
-    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Warnung: Die Installation von Watch_Dogs2 fix kann bis zu 10 Minuten in Anspruch nehmen. Bitte haben Sie Geduld und wechseln Sie nicht den Tab. &#x0d;&#x0d;Möchten Sie fortfahren?</system:String>
+    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Warnung: Die Installation des Watch_Dogs2 Fixes kann bis zu 10 Minuten in Anspruch nehmen. &#x0d;&#x0d;Möchten Sie fortfahren?</system:String>
     <system:String x:Key="ErrorInstallingMinecraft">Fehler: Minecraft-Fix konnte nicht installiert werden.</system:String>
     <system:String x:Key="ErrorDeleting2DNip">Fehler: .nip-Datei für den 2D-Modus konnte nicht gelöscht werden.</system:String>
     <system:String x:Key="ErrorDeleting3DNip">Fehler: .nip-Datei für den 3D-Modus konnte nicht gelöscht werden.</system:String>
@@ -770,6 +784,12 @@ Pauldusler</system:String>
         Speichert das Datum der letzten Aktualisierung des Helix Posts.<LineBreak/><LineBreak/>
         Der Zeitstempel is notwendig um erkennen zu können, ob ein aktualisierter Helix Post online vorliegt.<LineBreak/><LineBreak/>
         Es wird empfohlen den Zeitstempel nicht manuell zu setzen, da dies automatisch geschieht.
+    </TextBlock>
+
+    <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
+        Falls für ein Spiel ein alternative Variante eines 3D Fixes zur Verfügung steht können Sie hier zusätzliche Informationen zu diesem zur Verfügung stellen.<LineBreak/><LineBreak/>
+       <Bold>Benutzerdefinierter Info-Text:</Bold> Blendet einen Informationstext beim Installieren des 3D Fixes ein, der den Anwender darüber informiert, dass eine alternative Variante des 3D Fixes zur Verfügung steht. Der jeweilige Informationstext kann dabei im nebenstehenden Feld eingegeben werden.<LineBreak/><LineBreak/>
+       <Bold>SLI Info-Text:</Bold> Blendet einen vordefinierten Informationstext beim Installieren des 3D Fixes ein, der den Anwender darüber informiert, dass eine SLI-Variante des 3D Fixes zur Verfügung steht.
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
@@ -929,7 +949,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="TwoDDNotesToolTip" TextWrapping="Wrap" Width="300">
-        Ergänzen Sie hier einen Erinnerungstext, damit der Benutzer anhand des grünen Texts sieht, dass er sich im Kompatiblitätsmodus und nicht im richtigen 3D-Modus befindet."/>
+        Ergänzen Sie hier einen Erinnerungstext, damit der Benutzer anhand des grünen Texts sieht, dass er sich im Kompatiblitätsmodus und nicht im richtigen 3D-Modus befindet.
     </TextBlock>
 
     <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
@@ -1006,12 +1026,26 @@ Pauldusler</system:String>
         Aktuellere Versionen von 3dmigoto können zu einer verbesserten Performance und Stabilität führen sowie neue Features wie z.B. SideBySide-Support freischalten.
     </TextBlock>
 
+    <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
+        Bei Aktivieren dieser Funktion werden sämtliche gefundene Spielpfade in die Dateien der Fix-Profile gecached. Dadurch kann der Programmstart bei Vorhandensein vieler installierter Spiele beschleunigt werden.<LineBreak/><LineBreak/>
+       Es wird empfohlen diese Feature nur dann zu aktivieren, wenn der Programmstart zu viel Zeit benötigt.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Beachten Sie, dass beim Programmstart die installierten Spiele nicht mehr aktiv über die Windows Registry und den Suchpfaden ermittelt werden, sondern auf auf die Informationen im Cache zurückgegriffen wird.
+        Dadurch kann es vorkommen, dass neu installierte Spiele nicht mehr automatisch erkannt werden. Bitte aktualisieren Sie in diesem Fall die Spieleliste manuell (Refresh-Button) oder klicken Sie unten auf den Button <Bold><Italic>Spiele suchen</Italic></Bold>. Der Cache wird bei diesem Vorgang automatisch neu aufgebaut.       
+    </TextBlock>
+
+    <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
+        Erkennt installierte Spiele, indem eine gewisse Stelle in der Windows Registry auf Vorhandensein von Registry Keys durchsucht wird, welche den selben Namen wie die individuellen Fix-Profile aufweisen.<LineBreak/><LineBreak/>
+        Diese Registry Keys enthalten die Information unter welchem Pfad das Spiel installiert ist.
+    </TextBlock>
+
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-       Aktivieren Sie Suchpfade, wenn nicht alle installierten Spiele vom Programm erkannt werden.
+        Erkennt installierte Spiele, indem die Festplatte auf Vorhandensein von Ordern durchsucht wird, die eine Namensgleichheit zu den Fix-Profilen aufweisen.<LineBreak/><LineBreak/>
+        Welche Ordner dabei zu durchsuchen sind, wird durch die unten aufgeführten Suchpfade gesteuert. Die Suche bricht spätestens dann ab, wenn die eingestellte Suchtiefe erreicht ist.<LineBreak/><LineBreak/>
+        Um ein Spiel erfolgreich als installiert markieren zu können ist es zusätzlich notwendig, dass die Spiele-Exe in den Ordnern gefunden wird. Dadurch wird vermieden, dass leere Ordner unbeabsichtigterweise als installierte Spiele erkannt werden.
     </TextBlock>
     
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-       Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass der durch die Supfade ermittelte Installationspfad übernommen wird.
+       Wenn ein Spiel sowohl per Suchpfade als auch in der Windows Registry gefunden wurde, sorgt diese Einstellung dafür, dass der durch die Suchpfade ermittelte Installationspfad übernommen wird.
     </TextBlock>
     
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
@@ -1019,9 +1053,9 @@ Pauldusler</system:String>
     </TextBlock>
     
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
-        Startet die Suche nach installierten Spielen mit Hilfe der Suchpfade.
+        Startet die Suche nach installierten Spielen und aktualisiert die Spieleliste.
     </TextBlock>
-    
+
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
         Limitiert die rekursive Suche auf die gesetzte Tiefe an Unterverzeichnissen, die zum Finden der Spiele durchlaufen werden.
     </TextBlock>
