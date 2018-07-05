@@ -82,7 +82,9 @@
 
     <system:String x:Key="MainSettingsGroup">Título e Estado da Correção 3D:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
-    <system:String x:Key="InstallFixSettingsGroup">Instalação &amp; Download da Correção 3D:</system:String>
+    <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
+    <system:String x:Key="AlternativeDownloadGroup">Download an alternative version of the 3D Fix:</system:String>
+    <system:String x:Key="InstallFixSettingsGroup">Install 3D Fix:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Configuração do jogo:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Ícone do Jogo:</system:String>
     <system:String x:Key="DriverSettingsGroup">Configurações do Driver / Perfis para Nvidia Profile Inspector:</system:String>
@@ -100,8 +102,10 @@
     <system:String x:Key="ThirdRelativeGameIniPath">3. Caminho Relativo para um Arquivo de Configuração do Jogo:</system:String>
     <system:String x:Key="SetDate">Definir Data</system:String>
     <system:String x:Key="SetDateTooltip">Define a data de hoje como um registro de data e hora.</system:String>
-    <system:String x:Key="DownloadLinkFix">URL para correção 3D:</system:String>
-    <system:String x:Key="AdditionalDownloadLinkFix">URL adicional para correção 3D:</system:String>
+    <system:String x:Key="DownloadLink_1">1. URL para correção 3D:</system:String>
+    <system:String x:Key="DownloadLink_2">2. URL para correção 3D:</system:String>
+    <system:String x:Key="DownloadLink_3">3. URL para correção 3D:</system:String>
+    <system:String x:Key="InfoAlternativeUrl">Info about the alternative 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Corrigir Extrator de Arquivo:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Permitir atualização do 3dmigoto wrapper:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
@@ -151,6 +155,9 @@
     <system:String x:Key="RunAsAdmin">Executar como administrador</system:String>
     <system:String x:Key="ApplyGlobalSetting">Aplicar configuração global</system:String>
     <system:String x:Key="OverrideGlobalSetting">Substituir configuração global</system:String>
+
+    <system:String x:Key="CustomText">Custom Info Text</system:String>
+    <system:String x:Key="SLI">SLI Info Text</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Escolher Caminho</system:String>
@@ -326,7 +333,9 @@
     <system:String x:Key="UpdateAllWrappers">Atualize 3dmigoto de todas as correções 3D instaladas:</system:String>
 
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Caminhos de pesquisa para detectar Jogos instalados:</system:String>
+    <system:String x:Key="SearchPathsGroup">Detect installed games:</system:String>
+    <system:String x:Key="EnableCachedPaths">Cache detected game paths for faster app start</system:String>
+    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows Registry</system:String>
     <system:String x:Key="EnableSearchPaths">Ativar caminhos de pesquisa</system:String>
     <system:String x:Key="PrioritizeSearchPaths">Priorizar os caminhos de pesquisa nos caminhos do Registro do Windows</system:String>
     <system:String x:Key="SearchDepth">Profundidade da pesquisa:</system:String>
@@ -503,7 +512,7 @@
 
     <!--.................... Display Profiles Tab End .......................... -->
 
-    
+
     <!--....................  About Tab Begin .......................... -->
 
     <system:String x:Key="ProgramDevelopedBy">Programa desenvolvido por:</system:String>
@@ -542,8 +551,13 @@
     <system:String x:Key="InstallHelixModx64">Instalar HelixMod x64</system:String>
     <system:String x:Key="QuickSetup">Instalação Rápida</system:String>
     <system:String x:Key="SetupWizard">Assistente de Instalação</system:String>
+    <system:String x:Key="NormalFix">Normal 3D Fix</system:String>
+    <system:String x:Key="SliFix">SLI 3D Fix</system:String>
+    <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
@@ -770,6 +784,12 @@ Pauldusler</system:String>
        Você não deve definir essa data manualmente, pois isso é feito automaticamente.
     </TextBlock>
 
+    <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
+        When there is an alternative 3D fix available for the game you can provide additional information about this fix.<LineBreak/><LineBreak/>
+       <Bold>Custom Info Text:</Bold> Shows an info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix. The individual text can be entered in the text field.<LineBreak/><LineBreak/>
+       <Bold>SLI Info Text:</Bold> Shows a predefined info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix which is optimized for SLI systems.
+    </TextBlock>
+
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
         Link de download direto para a correção do 3D Vision.
     </TextBlock>
@@ -821,13 +841,13 @@ Pauldusler</system:String>
         <Bold>Nota:</Bold> Para melhorar a detecção automática de mecanismos de jogos, você deve primeiro inserir a ID do aplicativo Steam. Você faz isso clicando no botão acima chamado <Bold><Italic>Pesquisar no Steam DB</Italic></Bold> ao lado de <Bold><Italic>Título do Jogo</Italic></Bold>.
     </TextBlock>
 
-    
+
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
         Você pode fornecer um ícone opcional para o jogo que será exibido na guia <Italic><Bold>"Instalação"</Bold></Italic><LineBreak/><LineBreak/>
         A resolução recomendada é de 128 x 128 pixels.<LineBreak/><LineBreak/>
         Para remover um ícone ativo na pasta de perfil, clique em <Italic><Bold>"Remover ícone"</Bold></Italic> e depois em <Italic><Bold>"Salvar"</Bold></Italic>. Um backup do ícone antigo é criado automaticamente em uma pasta de backup dentro da pasta do perfil.
     </TextBlock>
-    
+
     <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
         Forneça um URL para baixar automaticamente um ícone de jogo se o Gerenciador de Correções 3D não conseguir encontrar um local para o jogo.<LineBreak/><LineBreak/>
         Para facilitar o uso, selecione <Italic><Bold>"TheGamesDb Icon"</Bold></Italic> fna lista e clique em <Italic><Bold>"URL de pesquisa"</Bold></Italic>.<LineBreak/><LineBreak/>
@@ -1002,8 +1022,22 @@ Pauldusler</system:String>
         As versões mais recentes do 3dmigoto podem ter um melhor desempenho / estabilidade e desbloquear novos recursos, como o suporte SideBySide.
     </TextBlock>
 
+    <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
+        When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
+        It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
+        Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold><Italic>Search games</Italic></Bold> below. The cache is rebuilt automatically then.             
+    </TextBlock>
+
+    <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
+        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same as the individual fix profiles.<LineBreak/><LineBreak/>
+        These Registry keys contain the information where the game is installed.
+    </TextBlock>
+
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        Ative os caminhos de pesquisa, se nem todos os seus jogos instalados forem detectados pelo programa.
+        Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
+        You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
+        For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
     </TextBlock>
 
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
@@ -1153,7 +1187,7 @@ Pauldusler</system:String>
         Com relação a este exemplo, isso significa efetivamente que se você definir a profundidade 3D para 100% enquanto estiver jogando, isso corresponderá a uma profundidade de 200% porque o multiplicador foi definido como 2. Similarmente, 80% da profundidade 3D corresponderá a 160% e assim por diante.<LineBreak/><LineBreak/>
         Ao usar o hack de profundidade você faz o driver da Nvidia pensar que você joga com um tamanho menor de exibição como é na verdade. Você pode ver o tamanho da tela que foi detectada pelo driver abaixo. Quanto menor o valor em polegadas, maior a profundidade máxima em 3D.
     </TextBlock>
-    
+
 
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
         Este é o tamanho do monitor que é passado para o driver Nvidia. Quanto menor o valor, maior a profundidade máxima em 3D.<LineBreak/><LineBreak/>
