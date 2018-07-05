@@ -691,7 +691,7 @@ Pauldusler</system:String>
     <system:String x:Key="WarningMigotoUpdate01">Aviso: Atualizando o 3dmigoto para</system:String>
     <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">é conhecido por quebrar a correção.&#x0d;&#x0d;Você quer atualizar o Empacotador para este jogo mesmo assim?</system:String>
     <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Ocorreu um erro ao fazer alterações nos arquivos ini do jogo.&#x0d;&#x0d;Por favor, certifique-se de que os arquivos não estão definidos como 'somente leitura'.</system:String>
-    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Aviso: a instalação da correção do Watch_Dogs2 pode levar até 10 minutos. Por favor, seja paciente e não mude de abas. &#x0d;&#x0d;Você deseja continuar?</system:String>
+    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Aviso: a instalação da correção do Watch_Dogs2 pode levar até 10 minutos.&#x0d;&#x0d;Você deseja continuar?</system:String>
     <system:String x:Key="ErrorInstallingMinecraft">Ocorreu um erro durante a instalação da correção do Minecraft. A correção não pôde ser instalada.</system:String>
     <system:String x:Key="ErrorDeleting2DNip">Erro: o arquivo .nip para o modo 2D não pôde ser excluído.</system:String>
     <system:String x:Key="ErrorDeleting3DNip">Erro: o arquivo .nip para o modo 3D não pôde ser excluído.</system:String>
