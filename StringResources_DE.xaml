@@ -200,7 +200,7 @@
     <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Alte Version</system:String>
     <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Alte Version</system:String>
     <system:String x:Key="HotkeysNotSupportedMigoto">Sorry, Hotkey-Verwaltung wird bei dieser 3dmigoto-Version nicht unterstützt.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, OpenGL 3D Vision Wrapper wird derzeit nicht unterstützt.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, Hotkey-Verwaltung wird bei dieser OpenGl Wrapper-Version nicht unterstützt.</system:String>
 
     <!-- Hotkey Management Group -->
     <system:String x:Key="HotkeyManagement">Hotkey Verwaltung:</system:String>
@@ -482,6 +482,10 @@
     <system:String x:Key="LaserSightEnabledToolTip">Legt fest, ob das 3D-Laservisier mittels eines Hotkeys oder automatisch durch das Nvidia Treiberprofil aktiviert werden kann.</system:String>
     <system:String x:Key="ToggleLaserSight">Laservisier ein-/ausblenden:</system:String>
     <system:String x:Key="ToggleLaserSightToolTip">Aktiviert / deaktiviert das stereoskopische Laservisier im Spiel.</system:String>
+    <system:String x:Key="LaserSightTransparency">Transparenz des Laservisiers:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Steuert die Transparenz des Laservisiers.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Laservisier:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Legt das Erscheinungsbild des Laservisiers fest.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Load">Laden</system:String>
@@ -903,10 +907,34 @@ Pauldusler</system:String>
 
     
     <!-- Hotkeys Tab Tooltips -->
-    <TextBlock x:Key="KeyTypeToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>Cycle:"</Bold> wechselt bei Tastendruck des Hotkeys zum nächsten 3D-Preset. Sobald das Letzte Preset erreicht ist, wird wieder zum ersten Preset geschaltet.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> aktiviert das 3D-Preset nur so lange, wie Sie die Taste gedrückt halten. Bei Loslassen der Taste wird wieder zum ursprünglichen Preset gewechselt. Es wird nur eine maximale Anzahl von 2 Presets bei diesem Hotkey-Typ unterstützt.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Ein / Aus - Schalter für ein 3D-Preset. Es wird maximal 1 Preset bei diesem Hotkey-Typ unterstützt.
+    <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier den Typ des Hotkeys aus. Allen Hotkey-Typen ist gemein, dass Sie beim Betätigen der Taste ein 3D-Preset aktivieren. Dieses Preset gibt vor, welche 3D-Einstellungen überschrieben werden sollen (z.B. 3D-Tiefe, Konvergenz oder Shader-Konstanten).<LineBreak/><LineBreak/>
+        Der jeweilige Hotkey-Typ steuert dabei dabei, was genau passieren soll, wenn man die Hotkey-Taste loslässt oder erneut betätigt. Je nach Hotkey-Typ ist es somit möglich unterschiedliche 3D-Presets zu aktivieren oder die ursprünglichen Werte wiederherzustellen.<LineBreak/><LineBreak/>   
+        <Bold>Cycle:</Bold> Erlaubt das Anlegen beliebig vieler 3D-Presets und schaltet bei jedem Tastendruck das nächste Preset, das an der Reihe ist, aktiv. Bei Erreichen des letzten Presets wird wieder zum ersten Preset gewechselt.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es aktiv so lange die Taste gedrückt gehalten wird. Beim Loslassen der Taste wird wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Bei erneutem Tastendruck wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier den Typ des Hotkeys aus. Allen Hotkey-Typen ist gemein, dass Sie beim Betätigen der Taste ein 3D-Preset aktivieren. Dieses Preset gibt vor, welche 3D-Einstellungen überschrieben werden sollen (z.B. 3D-Tiefe, Konvergenz oder Shader-Konstanten).<LineBreak/><LineBreak/>
+        Der jeweilige Hotkey-Typ steuert dabei dabei, was genau passieren soll, wenn man die Hotkey-Taste loslässt oder erneut betätigt. Je nach Hotkey-Typ ist es somit möglich unterschiedliche 3D-Presets zu aktivieren oder die ursprünglichen Werte wiederherzustellen.<LineBreak/><LineBreak/>   
+        <Bold>Cycle:</Bold> Erlaubt das Anlegen beliebig vieler 3D-Presets und schaltet bei jedem Tastendruck das nächste Preset, das an der Reihe ist, aktiv. Bei Erreichen des letzten Presets wird wieder zum ersten Preset gewechselt.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Erlaubt das Anlegen von maximal zwei 3D-Presets und schaltet das erste Preset aktiv so lange die Taste gedrückt gehalten wird. Beim Loslassen der Taste wird das zweite Preset aktiviert oder bei Nichtvorhandesein des zweiten Presets die ursprünglichen 3D-Einstellungen wiederhergestellt.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier den Typ des Hotkeys aus. Allen Hotkey-Typen ist gemein, dass Sie beim Betätigen der Taste ein 3D-Preset aktivieren. Dieses Preset gibt vor, welche 3D-Einstellungen überschrieben werden sollen (z.B. 3D-Tiefe, Konvergenz oder Shader-Konstanten).<LineBreak/><LineBreak/>
+        Der jeweilige Hotkey-Typ steuert dabei dabei, was genau passieren soll, wenn man die Hotkey-Taste loslässt oder erneut betätigt. Je nach Hotkey-Typ ist es somit möglich unterschiedliche 3D-Presets zu aktivieren oder die ursprünglichen Werte wiederherzustellen.<LineBreak/><LineBreak/>   
+        <Bold>Hold:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es aktiv so lange die Taste gedrückt gehalten wird. Beim Loslassen der Taste wird wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Bei erneutem Tastendruck wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier den Typ des Hotkeys aus. Allen Hotkey-Typen ist gemein, dass Sie beim Betätigen der Taste ein 3D-Preset aktivieren. Dieses Preset gibt vor, welche 3D-Einstellungen überschrieben werden sollen (z.B. 3D-Tiefe, Konvergenz oder Shader-Konstanten).<LineBreak/><LineBreak/>
+        Der jeweilige Hotkey-Typ steuert dabei dabei, was genau passieren soll, wenn man die Hotkey-Taste loslässt oder erneut betätigt. Je nach Hotkey-Typ ist es somit möglich unterschiedliche 3D-Presets zu aktivieren oder die ursprünglichen Werte wiederherzustellen.<LineBreak/><LineBreak/>   
+        <Bold>Hold:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es aktiv so lange die Taste gedrückt gehalten wird. Beim Loslassen der Taste wird wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Bei erneutem Tastendruck wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
+        <Bold>One-Time:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Im Unterschied zu den anderen Tastenarten kann nicht mehr zu den vorherigen 3D-Einstellungen zurückgewechselt werden.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
