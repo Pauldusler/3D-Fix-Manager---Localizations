@@ -199,7 +199,7 @@
     <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Versão antiga</system:String>
     <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Versão antiga</system:String>
     <system:String x:Key="HotkeysNotSupportedMigoto">Desculpe, a edição de teclas de atalho não é compatível com esta versão do 3dmigoto.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Desculpe, o Empacotador 3D Vision OpenGL atualmente não é suportado.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, hotkey editing not supported with this version of OpenGl Wrapper.</system:String>
 
     <!-- Hotkey Management Group -->
     <system:String x:Key="HotkeyManagement">Gerenciamento de Teclas de Atalho:</system:String>
@@ -481,6 +481,10 @@
     <system:String x:Key="LaserSightEnabledToolTip">Define se a mira a laser 3D pode ser ativada com uma Tecla de Atalho ou automaticamente pelo perfil do driver da Nvidia.</system:String>
     <system:String x:Key="ToggleLaserSight">Alternar mira do laser:</system:String>
     <system:String x:Key="ToggleLaserSightToolTip">Habilita ou desabilita a visão estereoscópica do laser no jogo.</system:String>
+    <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Load">Carregar</system:String>
@@ -901,10 +905,34 @@ Pauldusler</system:String>
 
 
     <!-- Hotkeys Tab ToolTips -->
-    <TextBlock x:Key="KeyTypeToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>Ciclo:</Bold> muda para a próxima predefinição 3d toda vez que você pressiona o botão Tecla de Atalho. Depois de atingir o último pré-ajuste, o ciclo começa no primeiro pré-ajuste novamente.<LineBreak/><LineBreak/>
-        <Bold>Sustentar:</Bold> ativa a predefinição 3D enquanto a Tecla de Atalho for mantida. Volta para a predefinição original quando a tecla é liberada. Um número máximo de 2 predefinições é suportado por este tipo de chave.<LineBreak/><LineBreak/>
-        <Bold>Alternar:</Bold> chave liga / desliga para uma predefinição 3D. Um número máximo de 1 preset é suportado por este tipo de chave.
+    <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is hold down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
