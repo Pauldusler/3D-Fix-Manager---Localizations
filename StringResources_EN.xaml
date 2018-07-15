@@ -200,7 +200,7 @@
     <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Old Version</system:String>
     <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Old Version</system:String>
     <system:String x:Key="HotkeysNotSupportedMigoto">Sorry, hotkey editing not supported with this version of 3dmigoto.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, OpenGL 3D Vision Wrapper is currently not supported.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, hotkey editing not supported with this version of OpenGl Wrapper.</system:String>
 
     <!-- Hotkey Management Group -->
     <system:String x:Key="HotkeyManagement">Hotkey Management:</system:String>
@@ -315,10 +315,10 @@
     <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Optimize game settings for Stereo 3D</system:String>
     <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
-    <system:String x:Key="FullscreenOptimizations">Fullscreen Optimizations:</system:String>
+    <system:String x:Key="FullscreenOptimizations">Fullscreen optimizations:</system:String>
     <system:String x:Key="ControlledByFixProfile">Controlled by Fix Profile</system:String>
     <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
-    <system:String x:Key="PreferIconDownload">Prefer Game icons from internet database</system:String>
+    <system:String x:Key="PreferIconDownload">Prefer game icons from internet database</system:String>
     <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
     <system:String x:Key="DoNotChangeSetting">Keep current Setting</system:String>
 
@@ -336,9 +336,9 @@
     <!-- Search paths group -->
     <system:String x:Key="SearchPathsGroup">Detecting installed Games:</system:String>
     <system:String x:Key="EnableCachedPaths">Cache detected game paths for faster app start</system:String>
-    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows Registry</system:String>
+    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows registry</system:String>
     <system:String x:Key="EnableSearchPaths">Enable search paths</system:String>
-    <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from windows registry</system:String>
+    <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from Windows registry</system:String>
     <system:String x:Key="SearchDepth">Search depth:</system:String>
     <system:String x:Key="SearchPaths">Search paths:</system:String>
     <system:String x:Key="SearchGames">Search games</system:String>
@@ -360,8 +360,8 @@
 
     <!-- Game Launcher Settings group -->
     <system:String x:Key="GameLauncherSettings">Game Launcher Settings:</system:String>
-    <system:String x:Key="StartGamesByGameExe">Prefer starting games via Game Launcher Exe</system:String>
-    <system:String x:Key="StartGamesBySteamAppId">Prefer starting games via Steam Client (Steam App ID)</system:String>
+    <system:String x:Key="StartGamesByGameExe">Prefer starting games via game launcher exe</system:String>
+    <system:String x:Key="StartGamesBySteamAppId">Prefer starting games via Steam client (Steam app ID)</system:String>
     <system:String x:Key="StartGamesByFixProfile">Start method is controlled by fix profile (recommended)</system:String>
 
     <!--Nvidia Profile Inspector Settings group -->
@@ -375,7 +375,7 @@
     <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
 
     <!-- Stereo Refresh Rate Settings group -->
-    <system:String x:Key="StereoRefreshRateSettings">Shutter frequency of Nvidia 3D glasses / Stereo Refresh Rate:</system:String>
+    <system:String x:Key="StereoRefreshRateSettings">Shutter Frequency of Nvidia 3D Glasses / Stereo Refresh Rate:</system:String>
     <system:String x:Key="GlobalStereoRefreshRate">Use refresh rate set in Nvidia driver</system:String>
     <system:String x:Key="ProfileStereoRefreshRate">Refresh rate is controlled by fix profile</system:String>
 
@@ -394,7 +394,7 @@
     <system:String x:Key="PressKeyCombination">Press a key combination on your keyboard.</system:String>
     
     <!-- General settings group -->
-    <system:String x:Key="EnableStereoGroup">Enable / set up  3D functionality:</system:String>
+    <system:String x:Key="EnableStereoGroup">Enable / set up  3D Functionality:</system:String>
     <system:String x:Key="EnableNvidia3D">Enable Nvidia Stereoscopic 3D</system:String>
     <system:String x:Key="Disable3dOnClosing">Auto disable Nvidia Stereoscopic 3D when closing application</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
@@ -415,8 +415,8 @@
     <system:String x:Key="LanEnvironment">3D Vision LAN Environment</system:String>
 
     <!-- Driver settings group -->
-    <system:String x:Key="DriverSettings2D">Optimize global driver profile for 2D mode:</system:String>
-    <system:String x:Key="DriverSettings3D">Optimize global driver profile for 3D mode:</system:String>
+    <system:String x:Key="DriverSettings2D">Optimize global Driver Profile for 2D Mode:</system:String>
+    <system:String x:Key="DriverSettings3D">Optimize global Driver Profile for 3D Mode:</system:String>
     <system:String x:Key="MaxPreRenderedFrames">Maximum pre-rendered frames:</system:String>
     <system:String x:Key="VerticalSync">Vertical sync:</system:String>
     <system:String x:Key="MonitorTechnology">Monitor technology:</system:String>
@@ -482,6 +482,10 @@
     <system:String x:Key="LaserSightEnabledToolTip">Sets whether 3D laser sight can be enabled with a hotkey or automatically by Nvidia driver profile.</system:String>
     <system:String x:Key="ToggleLaserSight">Toggle laser sight:</system:String>
     <system:String x:Key="ToggleLaserSightToolTip">Enables or disables stereoscopic laser sight in-game.</system:String>
+    <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Load">Load</system:String>
@@ -902,10 +906,34 @@ Pauldusler</system:String>
 
     
     <!-- Hotkeys Tab ToolTips -->
-    <TextBlock x:Key="KeyTypeToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>Cycle:</Bold> switches to the next 3d preset everytime you press the hotkey button. After reaching the last preset the cycle starts at the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> enables the 3D preset as long as the hotkey is held. Switches back to the original preset when the key is released. A maximum number of 2 presets are supported by this key type.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> on / off switch for a 3D preset. A maximum number of 1 preset is supported by this key type.
+    <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is hold down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+    </TextBlock>
+
+    <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
+        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
