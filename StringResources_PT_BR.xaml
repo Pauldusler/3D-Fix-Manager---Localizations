@@ -82,9 +82,9 @@
 
     <system:String x:Key="MainSettingsGroup">Título e Estado da Correção 3D:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
-    <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
-    <system:String x:Key="AlternativeDownloadGroup">Download an alternative version of the 3D Fix:</system:String>
-    <system:String x:Key="InstallFixSettingsGroup">Install 3D Fix:</system:String>
+    <system:String x:Key="PrimaryDownloadGroup">Download da Correção 3D:</system:String>
+    <system:String x:Key="AlternativeDownloadGroup">Baixe uma versão alternativa da Correção 3D:</system:String>
+    <system:String x:Key="InstallFixSettingsGroup">Instalar Correção 3D:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Configuração do jogo:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Ícone do Jogo:</system:String>
     <system:String x:Key="DriverSettingsGroup">Configurações do Driver / Perfis para Nvidia Profile Inspector:</system:String>
@@ -105,7 +105,7 @@
     <system:String x:Key="DownloadLink_1">1. URL para correção 3D:</system:String>
     <system:String x:Key="DownloadLink_2">2. URL para correção 3D:</system:String>
     <system:String x:Key="DownloadLink_3">3. URL para correção 3D:</system:String>
-    <system:String x:Key="InfoAlternativeUrl">Info about the alternative 3D Fix:</system:String>
+    <system:String x:Key="InfoAlternativeUrl">Informações sobre a correção 3D alternativa:</system:String>
     <system:String x:Key="FixArchiveExtractor">Corrigir Extrator de Arquivo:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Permitir atualização do 3dmigoto wrapper:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
@@ -156,8 +156,8 @@
     <system:String x:Key="ApplyGlobalSetting">Aplicar configuração global</system:String>
     <system:String x:Key="OverrideGlobalSetting">Substituir configuração global</system:String>
 
-    <system:String x:Key="CustomText">Custom Info Text</system:String>
-    <system:String x:Key="SLI">SLI Info Text</system:String>
+    <system:String x:Key="CustomText">Texto de informação personalizada</system:String>
+    <system:String x:Key="SLI">Texto de Informação do SLI</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="ChoosePath">Escolher Caminho</system:String>
@@ -199,7 +199,7 @@
     <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Versão antiga</system:String>
     <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Versão antiga</system:String>
     <system:String x:Key="HotkeysNotSupportedMigoto">Desculpe, a edição de teclas de atalho não é compatível com esta versão do 3dmigoto.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, hotkey editing not supported with this version of OpenGl Wrapper.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">Desculpe, a edição de teclas de atalho não é compatível com esta versão do Empacotador OpenGl.</system:String>
 
     <!-- Hotkey Management Group -->
     <system:String x:Key="HotkeyManagement">Gerenciamento de Teclas de Atalho:</system:String>
@@ -333,9 +333,9 @@
     <system:String x:Key="UpdateAllWrappers">Atualize 3dmigoto de todas as correções 3D instaladas:</system:String>
 
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Detect installed games:</system:String>
-    <system:String x:Key="EnableCachedPaths">Cache detected game paths for faster app start</system:String>
-    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows Registry</system:String>
+    <system:String x:Key="SearchPathsGroup">Detectar jogos instalados:</system:String>
+    <system:String x:Key="EnableCachedPaths">Cache detectou caminhos de jogos para um início de aplicativo mais rápido</system:String>
+    <system:String x:Key="EnableRegistrySearch">Pesquisar caminhos de jogos no Registro do Windows</system:String>
     <system:String x:Key="EnableSearchPaths">Ativar caminhos de pesquisa</system:String>
     <system:String x:Key="PrioritizeSearchPaths">Priorizar os caminhos de pesquisa nos caminhos do Registro do Windows</system:String>
     <system:String x:Key="SearchDepth">Profundidade da pesquisa:</system:String>
@@ -481,10 +481,10 @@
     <system:String x:Key="LaserSightEnabledToolTip">Define se a mira a laser 3D pode ser ativada com uma Tecla de Atalho ou automaticamente pelo perfil do driver da Nvidia.</system:String>
     <system:String x:Key="ToggleLaserSight">Alternar mira do laser:</system:String>
     <system:String x:Key="ToggleLaserSightToolTip">Habilita ou desabilita a visão estereoscópica do laser no jogo.</system:String>
-    <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
-    <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
-    <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
-    <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
+    <system:String x:Key="LaserSightTransparency">Transparência de visão a laser:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Controla a transparência da mira a laser.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Mira laser:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Define a aparência da mira a laser.</system:String>
 
     <!-- Buttons-->
     <system:String x:Key="Load">Carregar</system:String>
@@ -555,13 +555,13 @@
     <system:String x:Key="InstallHelixModx64">Instalar HelixMod x64</system:String>
     <system:String x:Key="QuickSetup">Instalação Rápida</system:String>
     <system:String x:Key="SetupWizard">Assistente de Instalação</system:String>
-    <system:String x:Key="NormalFix">Normal 3D Fix</system:String>
-    <system:String x:Key="SliFix">SLI 3D Fix</system:String>
-    <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
+    <system:String x:Key="NormalFix">Correção 3D normal</system:String>
+    <system:String x:Key="SliFix">Correção 3D SLI</system:String>
+    <system:String x:Key="AlternativeFix">Correção 3D alternativa</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
-    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo. &#x0d;&#x0d;Informações sobre a correção alternativa em 3D:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer baixar?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo que é otimizado para sistemas SLI.&#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer instalar?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
@@ -789,9 +789,9 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
-        When there is an alternative 3D fix available for the game you can provide additional information about this fix.<LineBreak/><LineBreak/>
-       <Bold>Custom Info Text:</Bold> Shows an info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix. The individual text can be entered in the text field.<LineBreak/><LineBreak/>
-       <Bold>SLI Info Text:</Bold> Shows a predefined info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix which is optimized for SLI systems.
+        Quando há uma correção 3D alternativa disponível para o jogo, você pode fornecer informações adicionais sobre essa correção.<LineBreak/><LineBreak/>
+       <Bold>Texto de informação personalizada:</Bold> Mostra um texto informativo ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa. O texto individual pode ser inserido no campo de texto.<LineBreak/><LineBreak/>
+       <Bold>Texto de Informação do SLI:</Bold> Mostra um texto de informação predefinido ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa que é otimizada para sistemas SLI.
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
@@ -906,33 +906,33 @@ Pauldusler</system:String>
 
     <!-- Hotkeys Tab ToolTips -->
     <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+        Escolha um tipo de tecla de atalho. Todos os tipos têm em comum o fato de habilitarem uma predefinição 3D ao pressionar a tecla. A predefinição especifica quais configurações 3D devem ser sobrescritas (por exemplo, separação 3D, convergência ou constantes do shader).<LineBreak/><LineBreak/>
+        O tipo de tecla de atalho individual controla o que deve acontecer ao liberar a tecla ou pressioná-la várias vezes. Dependendo do tipo, diferentes predefinições 3D podem definir configurações 3D ativas ou originais que podem ser restauradas.<LineBreak/><LineBreak/>  
+        <Bold>Ciclo:</Bold> Permite adicionar quantas predefinições 3D desejar e ativa a próxima na linha após cada pressionamento de tecla. Ao atingir a última predefinição, a próxima tecla acionaria a primeira predefinição novamente.<LineBreak/><LineBreak/>
+        <Bold>Segurar:</Bold> Permite adicionar exatamente uma predefinição 3D e a ativa enquanto a tecla estiver pressionada. Depois de soltar a tecla, a predefinição 3D está sendo desativada e as configurações 3D originais são restauradas.<LineBreak/><LineBreak/>
+        <Bold>Alternancia:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Depois de pressioná-lo novamente, a predefinição 3D será desativada e as configurações 3D originais serão restauradas.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is hold down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+        Escolha um tipo de tecla de atalho. Todos os tipos têm em comum o fato de habilitarem uma predefinição 3D ao pressionar a tecla. A predefinição especifica quais configurações 3D devem ser sobrescritas (por exemplo, separação 3D, convergência ou constantes do shader).<LineBreak/><LineBreak/>
+        O tipo de tecla de atalho individual controla o que deve acontecer ao liberar a tecla ou pressioná-la várias vezes. Dependendo do tipo, diferentes predefinições 3D podem definir configurações 3D ativas ou originais que podem ser restauradas.<LineBreak/><LineBreak/>  
+        <Bold>Ciclo:</Bold> Permite adicionar quantas predefinições 3D desejar e ativa a próxima na linha após cada pressionamento de tecla. Ao atingir a última predefinição, a próxima tecla acionaria a primeira predefinição novamente.<LineBreak/><LineBreak/>
+        <Bold>Segurar:</Bold> Permite adicionar um número máximo de duas predefinições 3D e define a primeira ativa enquanto a tecla estiver pressionada. Depois de liberar, a segunda predefinição é ativada ou, se essa não existir, as configurações 3D originais serão restauradas.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+        Escolha um tipo de tecla de atalho. Todos os tipos têm em comum o fato de habilitarem uma predefinição 3D ao pressionar a tecla. A predefinição especifica quais configurações 3D devem ser sobrescritas (por exemplo, separação 3D, convergência ou constantes do shader).<LineBreak/><LineBreak/>
+        O tipo de tecla de atalho individual controla o que deve acontecer ao liberar a tecla ou pressioná-la várias vezes. Dependendo do tipo, diferentes predefinições 3D podem definir configurações 3D ativas ou originais que podem ser restauradas.<LineBreak/><LineBreak/>  
+        <Bold>Segurar:</Bold> Permite adicionar exatamente uma predefinição 3D e a ativa enquanto a tecla estiver pressionada. Depois de soltar a tecla, a predefinição 3D está sendo desativada e as configurações 3D originais são restauradas.<LineBreak/><LineBreak/>
+        <Bold>Alternancia:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Depois de pressioná-lo novamente, a predefinição 3D será desativada e as configurações 3D originais serão restauradas.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
+        Escolha um tipo de tecla de atalho. Todos os tipos têm em comum o fato de habilitarem uma predefinição 3D ao pressionar a tecla. A predefinição especifica quais configurações 3D devem ser sobrescritas (por exemplo, separação 3D, convergência ou constantes do shader).<LineBreak/><LineBreak/>
+        O tipo de tecla de atalho individual controla o que deve acontecer ao liberar a tecla ou pressioná-la várias vezes. Dependendo do tipo, diferentes predefinições 3D podem definir configurações 3D ativas ou originais que podem ser restauradas.<LineBreak/><LineBreak/>  
+        <Bold>Segurar:</Bold> Permite adicionar exatamente uma predefinição 3D e a ativa enquanto a tecla estiver pressionada. Depois de soltar a tecla, a predefinição 3D está sendo desativada e as configurações 3D originais são restauradas.<LineBreak/><LineBreak/>
+        <Bold>Alternancia:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Depois de pressioná-lo novamente, a predefinição 3D será desativada e as configurações 3D originais serão restauradas.<LineBreak/><LineBreak/>
+        <Bold>Um tempo:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Em contraste com os outros tipos de teclas de atalho, as configurações 3D anteriores não podem ser restauradas.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
@@ -1051,21 +1051,21 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
-        When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
-        It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
-        Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold><Italic>Search games</Italic></Bold> below. The cache is rebuilt automatically then.             
+        Ao ativar esse recurso, todos os caminhos do jogo serão armazenados em cache nos arquivos dos perfis de correção individuais. Como resultado, o início do aplicativo está sendo acelerado se vários jogos e programas estiverem instalados no computador.<LineBreak/><LineBreak/>
+        É recomendável deixar esse recurso desativado, a menos que o início do aplicativo demore demais em sua máquina.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Tenha em mente que ao iniciar o aplicativo instalado, os jogos não serão mais pesquisados ativamente no Registro do Windows e por meio de caminhos de pesquisa. Em vez disso, todas as informações são obtidas do cache.
+        O efeito colateral disso é que os jogos recém-instalados não são mais detectados automaticamente. Por favor, atualize a lista de jogos (botão de atualização), neste caso, ou clique no botão <Bold><Italic>Pesquisar Jogos</Italic></Bold> abaixo. O cache é reconstruído automaticamente em seguida.             
     </TextBlock>
 
     <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same as the individual fix profiles.<LineBreak/><LineBreak/>
-        These Registry keys contain the information where the game is installed.
+        Detecta jogos instalados pesquisando em um local específico no Registro do Windows a presença de chaves do Registro com o mesmo perfil de correção individual.<LineBreak/><LineBreak/>
+        Essas chaves do Registro contêm as informações em que o jogo está instalado.
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
-        You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
-        For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
+        Detecta jogos instalados procurando pastas no seu disco rígido com o mesmo nome dos perfis de correção individuais. <LineBreak/><LineBreak/>
+        Você pode especificar quais diretórios pesquisar definindo os caminhos de pesquisa (veja abaixo). A pesquisa é cancelada automaticamente se a profundidade máxima de pesquisa for atingida.<LineBreak/><LineBreak/>
+        Para detectar com sucesso os jogos instalados, o exe do jogo também deve ser encontrado nas pastas. Isso evita que os jogos de marcação sejam instalados, embora a pasta do jogo esteja vazia.
     </TextBlock>
 
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
