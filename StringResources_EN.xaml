@@ -342,8 +342,8 @@
     <system:String x:Key="SearchDepth">Search depth:</system:String>
     <system:String x:Key="SearchPaths">Search paths:</system:String>
     <system:String x:Key="SearchGames">Search games</system:String>
-    <system:String x:Key="DetectPaths">Detect paths</system:String>
-    <system:String x:Key="DetectPathsToolTip">Automatically detects paths to Steam libraries and adds them as search paths.</system:String>
+    <system:String x:Key="DetectPaths">Detect libraries</system:String>
+    <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
     <system:String x:Key="Add">Add</system:String>
     <system:String x:Key="AddPathToolTip">Adds a search path.</system:String>
     <system:String x:Key="Remove">Remove</system:String>
@@ -910,7 +910,7 @@ Pauldusler</system:String>
         Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
         The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
         <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
         <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
     </TextBlock>
 
@@ -918,20 +918,20 @@ Pauldusler</system:String>
         Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
         The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
         <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is hold down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is held down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
         Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
         The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
         <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
         Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
         The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is hold down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
         <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
         <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
     </TextBlock>
@@ -1059,7 +1059,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same as the individual fix profiles.<LineBreak/><LineBreak/>
+        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same name as the individual fix profiles.<LineBreak/><LineBreak/>
         These Registry keys contain the information where the game is installed.
     </TextBlock>
     
