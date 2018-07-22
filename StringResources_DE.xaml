@@ -342,8 +342,8 @@
     <system:String x:Key="SearchDepth">Suchtiefe:</system:String>
     <system:String x:Key="SearchPaths">Suchpfade:</system:String>
     <system:String x:Key="SearchGames">Spiele suchen</system:String>
-    <system:String x:Key="DetectPaths">Pfade ermitteln</system:String>
-    <system:String x:Key="DetectPathsToolTip">Ermittelt automatisch die Pfade zu den Steam-Bibliotheken und fügt sie als Suchpfade hinzu.</system:String>
+    <system:String x:Key="DetectPaths">Bibliotheken ermitteln</system:String>
+    <system:String x:Key="DetectPathsToolTip">Ermittelt automatisch die Spiel-Bibliotheken von Steam, Uplay, Origin, Blizzard App sowie GOG Galaxy und fügt diese als Suchpfade hinzu.</system:String>
     <system:String x:Key="Add">Hinzufügen</system:String>
     <system:String x:Key="AddPathToolTip">Fügt einen Suchpfad hinzu.</system:String>
     <system:String x:Key="Remove">Entfernen</system:String>
