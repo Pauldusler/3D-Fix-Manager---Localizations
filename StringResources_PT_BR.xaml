@@ -560,8 +560,8 @@
     <system:String x:Key="AlternativeFix">Correção 3D alternativa</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
-    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo. &#x0d;&#x0d;Informações sobre a correção alternativa em 3D:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer baixar?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo que é otimizado para sistemas SLI.&#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer instalar?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
