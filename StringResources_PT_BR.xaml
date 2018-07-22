@@ -341,8 +341,8 @@
     <system:String x:Key="SearchDepth">Profundidade da pesquisa:</system:String>
     <system:String x:Key="SearchPaths">Caminhos de pesquisa:</system:String>
     <system:String x:Key="SearchGames">Pesquisar Jogos</system:String>
-    <system:String x:Key="DetectPaths">Detectar caminhos</system:String>
-    <system:String x:Key="DetectPathsToolTip">Detecta automaticamente os caminhos para as bibliotecas do Steam e adiciona-os como caminhos de pesquisa.</system:String>
+    <system:String x:Key="DetectPaths">Detect libraries</system:String>
+    <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
     <system:String x:Key="Add">Adicionar</system:String>
     <system:String x:Key="AddPathToolTip">Adiciona um caminho de pesquisa.</system:String>
     <system:String x:Key="Remove">Remover</system:String>
@@ -560,8 +560,8 @@
     <system:String x:Key="AlternativeFix">Correção 3D alternativa</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo. &#x0d;&#x0d;Informações sobre a correção alternativa em 3D:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer baixar?</system:String>
-    <system:String x:Key="SliFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo que é otimizado para sistemas SLI.&#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer instalar?</system:String>
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
     <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Erro: o caminho não pôde ser aberto.</system:String>
     <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Erro: o caminho do registro não foi encontrado.</system:String>
@@ -790,8 +790,8 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
         Quando há uma correção 3D alternativa disponível para o jogo, você pode fornecer informações adicionais sobre essa correção.<LineBreak/><LineBreak/>
-       <Bold>Texto de informação personalizada:</Bold> Mostra um texto informativo ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa. O texto individual pode ser inserido no campo de texto.<LineBreak/><LineBreak/>
-       <Bold>Texto de Informação do SLI:</Bold> Mostra um texto de informação predefinido ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa que é otimizada para sistemas SLI.
+        <Bold>Texto de informação personalizada:</Bold> Mostra um texto informativo ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa. O texto individual pode ser inserido no campo de texto.<LineBreak/><LineBreak/>
+        <Bold>Texto de Informação do SLI:</Bold> Mostra um texto de informação predefinido ao instalar a correção 3D que informa o usuário sobre a existência de uma correção 3D alternativa que é otimizada para sistemas SLI.
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
@@ -1054,7 +1054,7 @@ Pauldusler</system:String>
         Ao ativar esse recurso, todos os caminhos do jogo serão armazenados em cache nos arquivos dos perfis de correção individuais. Como resultado, o início do aplicativo está sendo acelerado se vários jogos e programas estiverem instalados no computador.<LineBreak/><LineBreak/>
         É recomendável deixar esse recurso desativado, a menos que o início do aplicativo demore demais em sua máquina.<LineBreak/><LineBreak/>
         <Bold>Nota:</Bold> Tenha em mente que ao iniciar o aplicativo instalado, os jogos não serão mais pesquisados ativamente no Registro do Windows e por meio de caminhos de pesquisa. Em vez disso, todas as informações são obtidas do cache.
-        O efeito colateral disso é que os jogos recém-instalados não são mais detectados automaticamente. Por favor, atualize a lista de jogos (botão de atualização), neste caso, ou clique no botão <Bold><Italic>Pesquisar Jogos</Italic></Bold> abaixo. O cache é reconstruído automaticamente em seguida.             
+        O efeito colateral disso é que os jogos recém-instalados não são mais detectados automaticamente. Por favor, atualize a lista de jogos (botão de atualização), neste caso, ou clique no botão <Bold><Italic>Pesquisar Jogos</Italic></Bold> abaixo. O cache é reconstruído automaticamente em seguida.
     </TextBlock>
 
     <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
