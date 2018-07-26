@@ -341,8 +341,8 @@
     <system:String x:Key="SearchDepth">Profundidade da pesquisa:</system:String>
     <system:String x:Key="SearchPaths">Caminhos de pesquisa:</system:String>
     <system:String x:Key="SearchGames">Pesquisar Jogos</system:String>
-    <system:String x:Key="DetectPaths">Detect libraries</system:String>
-    <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
+    <system:String x:Key="DetectPaths">Detectar bibliotecas</system:String>
+    <system:String x:Key="DetectPathsToolTip">Detecta automaticamente as bibliotecas de jogos do Steam, Uplay, Origin, Blizzard App e GOG Galaxy e as adiciona como caminhos de pesquisa.</system:String>
     <system:String x:Key="Add">Adicionar</system:String>
     <system:String x:Key="AddPathToolTip">Adiciona um caminho de pesquisa.</system:String>
     <system:String x:Key="Remove">Remover</system:String>
