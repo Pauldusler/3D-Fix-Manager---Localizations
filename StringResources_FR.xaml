@@ -119,6 +119,7 @@
     <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
     <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
     <system:String x:Key="DepthHackOverride">3D Depth Hack:</system:String>
+    <system:String x:Key="DisableFixIn2DMode">Disable 3D fix in 2D mode:</system:String>
     <system:String x:Key="ProductPageUrl">URL to Product Page:</system:String>
     <system:String x:Key="CmFlag">Hex Value for Compatibility Mode:</system:String>
     <system:String x:Key="Profile2DMode">Profil Nvidia Inspector pour le Mode 2D:</system:String>
@@ -325,6 +326,7 @@
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Settings:</system:String>
     <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
     <system:String x:Key="ClearAllDownloadCache">Clear download cache for all fix profiles:</system:String>
+    <system:String x:Key="DisableFixesIn2dMode">Disable 3D fixes in 2D mode:</system:String>
     <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
@@ -1011,6 +1013,17 @@ Pauldusler</system:String>
        Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
        <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
        <Bold>Note:</Bold> This setting is only active if you previously set <Bold><Italic>Fullscreen Optimizations</Italic></Bold> in tab <Bold><Italic>Application Settings</Italic></Bold> to <Italic>"Controlled by Fix Profile"</Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+       Disables the 3D fix automatically when starting a game in 2D mode.<LineBreak/><LineBreak/>
+       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> This setting is only active if you previously set <Italic><Bold>"Disable 3D fixes in 2D mode"</Bold></Italic> in tab <Italic><Bold>Application Settings</Bold></Italic> to <Italic><Bold>"Controlled by fix profile"</Bold></Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+       Disables 3D fixes automatically when starting games in 2D mode.<LineBreak/><LineBreak/>
+       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
