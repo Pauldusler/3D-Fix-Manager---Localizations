@@ -120,6 +120,7 @@
     <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
     <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
     <system:String x:Key="DepthHackOverride">3D Tiefen-Hack:</system:String>
+    <system:String x:Key="DisableFixIn2DMode">3D Fix Im 2D Modus deaktivieren:</system:String>
     <system:String x:Key="ProductPageUrl">URL zur Produktseite:</system:String>
     <system:String x:Key="CmFlag">Hex-Wert für Kompatibilitätsmodus:</system:String>
     <system:String x:Key="Profile2DMode">Nvidia Inspector-Profil für 2D Modus:</system:String>
@@ -324,8 +325,9 @@
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Einstellungen:</system:String>
-    <system:String x:Key="ReinstallFixFromCache">3D Fixes bevorzugt aus dem Download Cache installieren</system:String>
+    <system:String x:Key="ReinstallFixFromCache">3D Fixes bevorzugt aus dem Download-Cache installieren</system:String>
     <system:String x:Key="ClearAllDownloadCache">Download-Cache für alle Fix-Profile leeren:</system:String>
+    <system:String x:Key="DisableFixesIn2dMode">3D Fixes im 2D Modus deaktivieren:</system:String>
     <system:String x:Key="EnableAllFixes">Alle Fixes (de)aktivieren:</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Aktiviert alle installierten 3D-Fixes.</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Deaktiviert alle installierten 3D-Fixes.</system:String>
@@ -1014,6 +1016,17 @@ Pauldusler</system:String>
        Ziel dieses Feature ist es einen rahmenlosen Vollbildmodus zu simulieren, der die gleichen Performance-Vorteile wie die des exklusiven Vollbildmodus bietet.<LineBreak/><LineBreak/>
        <Bold>Wichtig:</Bold> Deaktivieren Sie die Vollbild-Optimierungen, wenn Probleme mit diesen auftreten sollten (z.B. 3D funktioniert nicht, SLI-Skalierung inkorrekt, Ruckeln beim Spielen).<LineBreak/><LineBreak/>
        <Bold>Anmerkung:</Bold> Diese Einstellung greift erst, wenn Sie zuvor <Bold><Italic>Vollbild-Optimierungen</Italic></Bold> im Tab <Bold><Italic>Programm Einstellungen</Italic></Bold> auf <Italic>"Durch Fix-Profil gesteuert"</Italic> gestellt haben.
+    </TextBlock>
+
+    <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+       Legt fest, ob der 3D Fix beim Starten des Spiels im 2D Modus automatisch deaktiviert wird.<LineBreak/><LineBreak/>
+       Stellen Sie diese Option auf <Bold><Italic>Nein</Italic></Bold> wenn Sie 3dmigoto als Modding-Tool für den 2D Modus verwenden möchten.<LineBreak/><LineBreak/>
+       <Bold>Hinweis:</Bold> Diese Einstellung tritt nur dann in Kraft, wenn Sie die Option <Italic><Bold>"3D Fixes im 2D Modus deaktivieren"</Bold></Italic> im Tab <Italic><Bold>Programm Einstellungen</Bold></Italic> auf <Italic><Bold>"Durch Fix-Profil gesteuert"</Bold></Italic> gesetzt haben.
+    </TextBlock>
+    
+    <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+       Legt fest, ob 3D Fixes beim Starten von Spielen im 2D Modus automatisch deaktiviert werden.<LineBreak/><LineBreak/>
+       Stellen Sie diese Option auf <Bold><Italic>Nein</Italic></Bold> wenn Sie 3dmigoto als Modding-Tool für den 2D Modus verwenden möchten.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
