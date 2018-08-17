@@ -118,8 +118,8 @@
 
     <system:String x:Key="LocalIconPath">Caminho do ícone local:</system:String>
     <system:String x:Key="RemoteIconPath">Caminho do ícone remoto:</system:String>
-    <system:String x:Key="DepthHackOverride">3D Depth Hack:</system:String>
-    <system:String x:Key="DisableFixIn2DMode">Disable 3D fix in 2D mode:</system:String>
+    <system:String x:Key="DepthHackOverride">Hack de Profundidade 3D:</system:String>
+    <system:String x:Key="DisableFixIn2DMode">Desativar a correção 3D no modo 2D:</system:String>
     <system:String x:Key="ProductPageUrl">URL da Página do Produto:</system:String>
     <system:String x:Key="CmFlag">Sinalizar para Modo de Compatibilidade:</system:String>
     <system:String x:Key="Profile2DMode">Perfil do Nvidia Inspector para o Modo 2D:</system:String>
@@ -326,7 +326,7 @@
     <system:String x:Key="FixAnd3dmigotoSettings">Configurações 3D Fix / 3dmigoto:</system:String>
     <system:String x:Key="ReinstallFixFromCache">Instalar correções 3D do cache de download, se possível</system:String>
     <system:String x:Key="ClearAllDownloadCache">Limpar o cache de download para todos os perfis de correção:</system:String>
-    <system:String x:Key="DisableFixesIn2dMode">Disable 3D fixes in 2D mode:</system:String>
+    <system:String x:Key="DisableFixesIn2dMode">Desativar correções 3D no modo 2D:</system:String>
     <system:String x:Key="EnableAllFixes">Ativar / desativar todas as correções:</system:String>
     <system:String x:Key="EnableAllFixesToolTip">Ativa todas as correções 3D instaladas.</system:String>
     <system:String x:Key="DisableAllFixesToolTip">Desativa todas as correções 3D instaladas.</system:String>
@@ -508,7 +508,7 @@
     <system:String x:Key="Preferred3dFormat">Formato 3D preferido:</system:String>
     <system:String x:Key="Change2dRefreshRate">Taxa de Atualização da Área de Trabalho Modo 2D:</system:String>
     <system:String x:Key="Change3dRefreshRate">Taxa de Atualização da Área de Trabalho Modo 3D:</system:String>
-    <system:String x:Key="RefreshRateWhenClosing">Taxa de Atualização da Área de Trabalho ao fechar o aplicativo:</system:String>
+    <system:String x:Key="RefreshRateWhenClosing">Taxa de Atualização ao fechar o aplicativo:</system:String>
     <system:String x:Key="ShowProfileSelectionOnStartup">Mostrar diálogo de seleção de perfil no início do aplicação</system:String>
     <system:String x:Key="ShowProfileSelectionOnGameStart">Mostrar diálogo de seleção de perfil no início do jogo</system:String>
     <system:String x:Key="DefaultProfileOnStartup">Perfil padrão na inicialização:</system:String>
@@ -1016,14 +1016,14 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables the 3D fix automatically when starting a game in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This setting is only active if you previously set <Italic><Bold>"Disable 3D fixes in 2D mode"</Bold></Italic> in tab <Italic><Bold>Application Settings</Bold></Italic> to <Italic><Bold>"Controlled by fix profile"</Bold></Italic>.
+       Desativa a correção 3D automaticamente ao iniciar um jogo no modo 2D.<LineBreak/><LineBreak/>
+       Defina esta opção para <Bold><Italic>Não</Italic></Bold> se você quiser usar o 3dmigoto como uma ferramenta de modificação para o modo 2D.<LineBreak/><LineBreak/>
+       <Bold>Nota:</Bold> Esta configuração só está ativa se você definiu anteriormente <Italic><Bold>"Desativar correções 3D no modo 2D"</Bold></Italic> na guia <Italic><Bold>Configurações do Aplicativo</Bold></Italic> para <Italic><Bold>"Controlado pelo Perfil de Correção"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables 3D fixes automatically when starting games in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.
+       Desativa as correções 3D automaticamente ao iniciar jogos no modo 2D.<LineBreak/><LineBreak/>
+       Defina esta opção para <Bold><Italic>Não</Italic></Bold> se você quiser usar o 3dmigoto como uma ferramenta de modificação para o modo 2D.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
