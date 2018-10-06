@@ -27,7 +27,7 @@
     <system:String x:Key="About">Sobre</system:String>
     <system:String x:Key="GeneralSettings">Configurações gerais</system:String>
     <system:String x:Key="Nvidia3DSettings">Configurações 3D Nvidia</system:String>
-    <system:String x:Key="DisplayProfiles">Exibir Perfis</system:String>
+    <system:String x:Key="DisplayProfiles">Perfis de Exibição</system:String>
 
     <!-- Game list on left column-->
     <system:String x:Key="All">Tudo</system:String>
@@ -86,9 +86,9 @@
     <system:String x:Key="AlternativeDownloadGroup">Baixe uma versão alternativa da Correção 3D:</system:String>
     <system:String x:Key="InstallFixSettingsGroup">Instalar Correção 3D:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Configuração do jogo:</system:String>
-    <system:String x:Key="OverrideMonitorProfileGroup">Override Monitor Profile:</system:String>
-    <system:String x:Key="OverrideTVProfileGroup">Override TV Profile:</system:String>
-    <system:String x:Key="OverrideProjectorProfileGroup">Override Projector Profile:</system:String>
+    <system:String x:Key="OverrideMonitorProfileGroup">Substituir o perfil do monitor:</system:String>
+    <system:String x:Key="OverrideTVProfileGroup">Substituir perfil de TV:</system:String>
+    <system:String x:Key="OverrideProjectorProfileGroup">Sobrepor o perfil do projetor:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Ícone do Jogo:</system:String>
     <system:String x:Key="DriverSettingsGroup">Configurações do Driver / Perfis para Nvidia Profile Inspector:</system:String>
     <system:String x:Key="GameLaunchSettingsGroup">Lançamento do Jogo:</system:String>
@@ -110,7 +110,7 @@
     <system:String x:Key="DownloadLink_3">3. URL para correção 3D:</system:String>
     <system:String x:Key="InfoAlternativeUrl">Informações sobre a correção 3D alternativa:</system:String>
     <system:String x:Key="FixArchiveExtractor">Corrigir Extrator de Arquivo:</system:String>
-    <system:String x:Key="AllowFixInstallation">Allow 3D Fix Installation:</system:String>
+    <system:String x:Key="AllowFixInstallation">Permitir instalação de correção 3D:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Permitir atualização do 3dmigoto wrapper:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Taxa de Atualização de Estéreo:</system:String>
     <system:String x:Key="StartTool">Iniciar Exe adicional:</system:String>
@@ -325,7 +325,7 @@
     <system:String x:Key="PreferIconDownload">Prefere ícones de jogos do banco de dados da internet</system:String>
     <system:String x:Key="ResetAllIcons">Redefinir todos os ícones de jogos:</system:String>
     <system:String x:Key="DoNotChangeSetting">Manter configuração atual</system:String>
-    <system:String x:Key="DownloadScreenshots">Download stereoscopic screenshots</system:String>
+    <system:String x:Key="DownloadScreenshots">Baixar Capturas Estereoscópicas</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">Configurações 3D Fix / 3dmigoto:</system:String>
@@ -511,14 +511,14 @@
     <system:String x:Key="RealScreenSize">Tamanho da tela:</system:String>
     <system:String x:Key="DisplayType">Tipo de Tela 3D:</system:String>
     <system:String x:Key="Preferred3dFormat">Formato 3D preferido:</system:String>
-    <system:String x:Key="GameResolution2D">Game resolution 2D mode:</system:String>
-    <system:String x:Key="GameResolution3D">Game resolution 3D mode:</system:String>
-    <system:String x:Key="DesktopResolution2D">Desktop resolution 2D mode:</system:String>
-    <system:String x:Key="DesktopResolution2DClosing">Desktop resolution on closing:</system:String>
-    <system:String x:Key="DesktopResolution3D">Desktop resolution 3D mode:</system:String>
+    <system:String x:Key="GameResolution2D">Modo 2D de resolução de jogo:</system:String>
+    <system:String x:Key="GameResolution3D">Modo 3D de resolução de jogo:</system:String>
+    <system:String x:Key="DesktopResolution2D">Modo 2D de resolução da desktop:</system:String>
+    <system:String x:Key="DesktopResolution2DClosing">Resolução de desktop no fechamento:</system:String>
+    <system:String x:Key="DesktopResolution3D">Modo 3D de resolução da desktop:</system:String>
     <system:String x:Key="ShowProfileSelectionOnStartup">Mostrar diálogo de seleção de perfil no início do aplicação</system:String>
     <system:String x:Key="ShowProfileSelectionOnGameStart">Mostrar diálogo de seleção de perfil no início do jogo</system:String>
-    <system:String x:Key="AllowDisplayProfileOverride">Allow fix profiles to override global display profiles</system:String>
+    <system:String x:Key="AllowDisplayProfileOverride">Permitir que perfis de correção substituam perfis de exibição globais</system:String>
     <system:String x:Key="DefaultProfileOnStartup">Perfil padrão na inicialização:</system:String>
     <system:String x:Key="PleaseChooseProfile">Por favor, escolha um perfil de tela:</system:String>
     <system:String x:Key="ShowProfileDialogOnGameStart">Mostrar esta caixa de diálogo toda vez que um jogo é iniciado</system:String>
@@ -570,9 +570,9 @@
     <system:String x:Key="AlternativeFix">Correção 3D alternativa</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="SearchGamesResult" xml:space="preserve">Search for installed games completed.&#x0d;&#x0d;Found games: {0}</system:String>
-    <system:String x:Key="FixInstallWarning" xml:space="preserve">The installation of the 3D fix is not recommended for this game.&#x0d;&#x0d;Do you want to install the fix anyway?</system:String>
-    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">The installation of the 3D wrapper is not recommended for this game.&#x0d;&#x0d;Do you want to install the wrapper anyway?</system:String>
+    <system:String x:Key="SearchGamesResult" xml:space="preserve">Procura por jogos instalados concluída.&#x0d;&#x0d;Jogos encontrados: {0}</system:String>
+    <system:String x:Key="FixInstallWarning" xml:space="preserve">A instalação da correção 3D não é recomendada para este jogo.&#x0d;&#x0d;Você quer instalar a correção mesmo assim?</system:String>
+    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">A instalação da empacotador 3D não é recomendado para este jogo.&#x0d;&#x0d;Você quer instalar o empacotador mesmo assim?</system:String>
     <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo. &#x0d;&#x0d;Informações sobre a correção alternativa em 3D:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer baixar?</system:String>
     <system:String x:Key="SliFixDialog" xml:space="preserve">Uma correção 3D alternativa está disponível para este jogo que é otimizado para sistemas SLI.&#x0d;&#x0d;&#x0d;Qual versão da correção 3D você quer instalar?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Uma correção 3D universal está disponível para {0}.&#x0d;&#x0d;Você deseja adicioná-lo ao perfil de correção?</system:String>
@@ -655,7 +655,7 @@ Clique em "OK" quando terminar de fazer alterações.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Erro: o site não pôde ser aberto.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Dados de referência gravados com êxito no banco de dados.</system:String>
     <system:String x:Key="DbNoRights">Erro: nenhum direito para acessar o banco de dados..</system:String>
-    <system:String x:Key="WarningPositiveNumber">Warning: Input must be a positive number.</system:String>
+    <system:String x:Key="WarningPositiveNumber">Aviso: A entrada deve ser um número positivo.</system:String>
     <system:String x:Key="ErrorInputNotANumber">Erro: a entrada não é um número.</system:String>
     <system:String x:Key="ErrorLicenceNotice">Desculpe, nenhum arquivo de licença foi encontrado.</system:String>
     <system:String x:Key="UpdateMigoto" xml:space="preserve">Deseja atualizar o 3dmigoto para a versão mais recente? &#x0d;&#x0d;Versão instalada:&#x09;</system:String>
@@ -816,8 +816,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="Allow3dFixInstallationToolTip" TextWrapping="Wrap" Width="300">
-        Set this to <Italic><Bold>"No"</Bold></Italic> to warn the user from installing the 3D fix or 3D wrapper.<LineBreak/><LineBreak/>
-        By doing so the user is informed that the installation of the fix isn't required any more but can still be done if desired.
+        Defina isto para <Italic><Bold>"Não"</Bold></Italic> para avisar o usuário de instalar a correção 3D ou o empacotador 3D.<LineBreak/><LineBreak/>
+        Ao fazer isso, o usuário é informado de que a instalação da correção não é mais necessária, mas ainda pode ser feita se desejado.
     </TextBlock>
 
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
@@ -1066,8 +1066,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
-        Downloads and displays stereoscopic 3D screenshots included in the info text of the 3D fixes.<LineBreak/><LineBreak/>
-        Disable this option if GUI freezes while downloading the images.
+        Baixa e exibe capturas de tela 3D estereoscópicas incluídas no texto informativo das correções 3D.<LineBreak/><LineBreak/>
+        Desative esta opção se a GUI congelar durante o download das imagens.
     </TextBlock>
 
     <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
@@ -1318,29 +1318,29 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Inicia o jogo com a resolução desejada no modo 2D.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Este recurso não é suportado para todos os jogos. Você pode ver se um jogo é suportado procurando pela <Bold><Italic>Resolução: por Perfil de Exibição</Italic></Bold> texto incluído no ícone de informações na Guia <Bold><Italic>Instalação</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Inicia o jogo com a resolução desejada no modo 3D.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Este recurso não é suportado para todos os jogos. Você pode ver se um jogo é suportado procurando pela <Bold><Italic>Resolução: por Perfil de Exibição</Italic></Bold> texto incluído no ícone de informações na Guia <Bold><Italic>Instalação</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the desired resolution when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
-        Whenever possible set different values for 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.
+        Define a área de trabalho para a resolução desejada ao iniciar um jogo no modo 2D ou ao desativar o estéreo 3D.<LineBreak/><LineBreak/>
+        Ao usar essa opção, você pode combinar a resolução da área de trabalho e a taxa de atualização com as configurações de resolução atuais do jogo. A vantagem disso é que você pode minimizar o jogo mais rapidamente, pois o dispositivo de exibição não precisa alterar as freqüências.
+        Sempre que possível, defina valores diferentes para a taxa de atualização da área de trabalho 2D e a taxa de atualização da área de trabalho 3D para evitar o erro de tela preta do Windows 10.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop rate to the desired resolution when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
-        Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+        Define a taxa de área de trabalho para a resolução desejada ao iniciar um jogo no modo 3D ou ao ativar o 3D estéreo.<LineBreak/><LineBreak/>
+        Ao usar essa opção, você pode combinar a resolução da área de trabalho e a taxa de atualização com as configurações de resolução atuais do jogo. A vantagem disso é que você pode minimizar o jogo mais rapidamente, pois o dispositivo de exibição não precisa alterar as freqüências.<LineBreak/><LineBreak/>
+        Além disso, esse recurso é útil para usuários do Windows 10 que experimentam uma tela preta ao fechar um jogo. Isso ocorre porque o Windows 10 tem problemas para voltar a outras freqüências quando o modo 3D estéreo está ativado.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the specified resolution when closing the application.
+        Define a área de trabalho para a resolução especificada ao fechar o aplicativo.
     </TextBlock>
 
     <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
@@ -1352,8 +1352,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
-        When disabling this option the fix profiles aren't allowed to modify game- and desktop resolution any more.<LineBreak/><LineBreak/>
-        Resolution is controlled soley by the global display profiles then if the user has set any option there.
+        Ao desativar essa opção, os perfis de correção não podem mais modificar a resolução de jogos e de desktops.<LineBreak/><LineBreak/>
+        A resolução é controlada apenas pelos perfis de exibição globais, em seguida, se o usuário tiver definido alguma opção.
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
