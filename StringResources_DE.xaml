@@ -86,6 +86,9 @@
     <system:String x:Key="AlternativeDownloadGroup">Download eines alternativen 3D Fixes:</system:String>
     <system:String x:Key="InstallFixSettingsGroup">Installation des 3D Fixes:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Spielkonfiguration:</system:String>
+    <system:String x:Key="OverrideMonitorProfileGroup">Monitor-Profil überschreiben:</system:String>
+    <system:String x:Key="OverrideTVProfileGroup">TV-Profil überschreiben:</system:String>
+    <system:String x:Key="OverrideProjectorProfileGroup">Projektor-Profil überschreiben:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Spiel-Icon:</system:String>
     <system:String x:Key="DriverSettingsGroup">Treibereinstellungen / Profile für Nvidia Profile Inspector:</system:String>
     <system:String x:Key="GameLaunchSettingsGroup">Spielstart:</system:String>
@@ -108,6 +111,7 @@
     <system:String x:Key="DownloadLink_3">3. URL zum 3D Fix:</system:String>
     <system:String x:Key="InfoAlternativeUrl">Info über alternativen 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Extraktionsprogramm für Fix-Archiv:</system:String>
+    <system:String x:Key="AllowFixInstallation">Erlaube 3D Fix Installation:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto Wrapper-Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo-Bildwiederholrate:</system:String>
     <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
@@ -322,6 +326,7 @@
     <system:String x:Key="PreferIconDownload">Spiele-Icons bevorzugt aus der Internet-Datenbank beziehen</system:String>
     <system:String x:Key="ResetAllIcons">Alle Spiele-Icons zurücksetzen:</system:String>
     <system:String x:Key="DoNotChangeSetting">Aktuelle Einstellung beibehalten</system:String>
+    <system:String x:Key="DownloadScreenshots">Stereoskopische Screenshots downloaden</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Einstellungen:</system:String>
@@ -507,11 +512,14 @@
     <system:String x:Key="RealScreenSize">Leinwandgröße:</system:String>
     <system:String x:Key="DisplayType">3D Anzeigetyp:</system:String>
     <system:String x:Key="Preferred3dFormat">Bevorzugtes 3D-Format:</system:String>
-    <system:String x:Key="Change2dRefreshRate">Desktop-Bildwiederholrate im 2D Modus:</system:String>
-    <system:String x:Key="Change3dRefreshRate">Desktop-Bildwiederholrate im 3D Modus:</system:String>
-    <system:String x:Key="RefreshRateWhenClosing">Desktop-Bildwiederholrate nach Beenden:</system:String>
+    <system:String x:Key="GameResolution2D">Spiel-Auflösung 2D Modus:</system:String>
+    <system:String x:Key="GameResolution3D">Spiel-Auflösung 3D Modus:</system:String>
+    <system:String x:Key="DesktopResolution2D">Desktop-Auflösung 2D Modus:</system:String>
+    <system:String x:Key="DesktopResolution2DClosing">Desktop-Auflösung beim Beenden:</system:String>
+    <system:String x:Key="DesktopResolution3D">Desktop-Auflösung 3D Modus:</system:String>
     <system:String x:Key="ShowProfileSelectionOnStartup">Profilauswahl bei Programmstart einblenden</system:String>
     <system:String x:Key="ShowProfileSelectionOnGameStart">Profilauswahl bei Spielstart einblenden</system:String>
+    <system:String x:Key="AllowDisplayProfileOverride">Fix-Profile dürfen Bildschirmprofile überschreiben</system:String>
     <system:String x:Key="DefaultProfileOnStartup">Standard-Profil bei Programmstart:</system:String>
     <system:String x:Key="PleaseChooseProfile">Bitte wählen Sie ein Bildschirm-Profil aus:</system:String>
     <system:String x:Key="DoNotShowProfileSelection">Dieses Dialogfenster nicht mehr anzeigen</system:String>
@@ -564,6 +572,9 @@
     <system:String x:Key="AlternativeFix">Alternativer 3D Fix</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="SearchGamesResult" xml:space="preserve">Die Suche nach installierten Spielen wurde abgeschlossen.&#x0d;&#x0d;Anzahl gefundener Spiele: {0}</system:String>
+    <system:String x:Key="FixInstallWarning" xml:space="preserve">Die Installation des 3D Fixes ist für dieses Spiel nicht empfohlen.&#x0d;&#x0d;Möchten Sie den Fix dennoch installieren?</system:String>
+    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">Die Installation des 3D Wrappers ist für dieses Spiel nicht empfohlen.&#x0d;&#x0d;Möchten Sie den Wrapper dennoch installieren?</system:String>
     <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Für dieses Spiel steht ein alternativer 3D Fix zum Download bereit. &#x0d;&#x0d;Informationen zum alternativen 3D Fix: &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Welche Version des 3D Fixes möchten Sie herunterladen?</system:String>
     <system:String x:Key="SliFixDialog" xml:space="preserve">Für dieses Spiel steht ein alternativer 3D Fix bereit, der für SLI-Systeme optimiert ist. &#x0d;&#x0d;&#x0d;Welche Version des 3D Fixes möchten Sie installieren?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Für die {0} steht ein universeller 3D Fix bereit.&#x0d;&#x0d;Möchten Sie diesen zum Fix-Profil hinzufügen?</system:String>
@@ -646,7 +657,7 @@ Klicken Sie auf 'OK', wenn Sie die Konfiguration abgeschlossen haben.</system:St
     <system:String x:Key="ErrorOpenWebsite">Fehler: Webseite konnte nicht geöffnet werden.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Referenz-Daten wurden erfolgreich in die Datenbank übertragen.</system:String>
     <system:String x:Key="DbNoRights">Fehler: Keine Rechte zum Zugriff auf die Datenbank vorhanden.</system:String>
-    <system:String x:Key="WarningRefreshRate">Warnung: Die Bildwiederholfrequenz muss eine positive Zahl sein.</system:String>
+    <system:String x:Key="WarningPositiveNumber">Warnung: Die Eingabe muss eine positive Zahl sein.</system:String>
     <system:String x:Key="ErrorInputNotANumber">Fehler: Eingabe ist keine Zahl.</system:String>
     <system:String x:Key="ErrorLicenceNotice">Sorry, es wurde keine Lizenzdatei gefunden.</system:String>
     <system:String x:Key="UpdateMigoto" xml:space="preserve">Möchten Sie 3dmigoto auf die aktuellste Version updaten? &#x0d;&#x0d;Installierte Version:&#x09;</system:String>
@@ -806,8 +817,13 @@ Pauldusler</system:String>
        Stellen Sie einen zusätzlichen Download-Link zur Verügung, wenn der 3D Vision Fix in mehrere Download-Links aufgeteilt wurde.
     </TextBlock>
 
+    <TextBlock x:Key="Allow3dFixInstallationToolTip" TextWrapping="Wrap" Width="300">
+        Setzen Sie diese Option auf <Italic><Bold>"Nein"</Bold></Italic> um den Nutzer vor der Installation des 3D Fixes / Wrappers zu warnen.<LineBreak/><LineBreak/>
+        Der Benutzer wird hierbei darüber informiert, dass die Installation des Fixes nicht mehr erforderlich ist, aber auf Wunsch hin dennoch durchgeführt werden kann.
+    </TextBlock>
+
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
-       Stellen Sie diese Option auf 'Nein' falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt.
+       Stellen Sie diese Option auf <Italic><Bold>"Nein"</Bold></Italic> falls eine neue 3dmigoto-Version mit einem bestehenden 3D Fix nicht kompatibel sein sollte. Dadurch wird der User vor dem Update des Wrappers gewarnt.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
@@ -845,7 +861,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
         Mit der Hilfe der Schaltfläche <Bold><Italic>Engine ermitteln</Italic></Bold> können Sie automatisch ermitteln lassen, welche Game Engine das jeweilige Spiel benutzt. Hierbei werden die Wikipedia und PC Gaming Wiki Seite auf Vorhandensein dieser Information durchsucht.<LineBreak/><LineBreak/>
         Sollte die Engine nicht automatisch ermittelt werden können, können Sie über die Schaltflächen <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> die entsprechenden Seiten aufrufen und manuell durchforsten.<LineBreak/><LineBreak/>
-        Im Falle der <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> und <Bold>Telltale Engine</Bold> stehen universelle 3D Fixes zur Verfügung, die bei Bedarf automatisch in das Fix-Profil eingefügt werden können.<LineBreak/><LineBreak/>       
+        Im Falle der <Bold>Frostbite 3</Bold> / <Bold>Unity</Bold> / <Bold>Unreal Engine 4</Bold> und <Bold>Telltale Engine</Bold> stehen universelle 3D Fixes zur Verfügung, die bei Bedarf automatisch in das Fix-Profil eingefügt werden können.<LineBreak/><LineBreak/>       
         <Bold>Hinweis:</Bold> Um die automatische Erkennung der Game Engine zu verbessern sollten Sie zunächst die Steam App ID ermitteln lassen. Klicken Sie bitte hierzu auf die oben befindliche Schaltfläche <Bold><Italic>DB durchsuchen</Italic></Bold> bei <Bold><Italic>Titel des Spiels</Italic></Bold>.
     </TextBlock>
 
@@ -1051,6 +1067,11 @@ Pauldusler</system:String>
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
         Diese Option bewirkt, dass sämtliche Spiele-Icons erneut von der TheGamesDB - or Steam DB heruntergeladen werden.<LineBreak/><LineBreak/>
         Alte Icons gehen hierbei nicht verloren, da sie zuvor in einem Backup-Ordner innerhalb der jeweiligen Profilordner gesichert werden.
+    </TextBlock>
+
+    <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
+        Lädt die im Infotext der 3D Fixes enthaltene stereoskopische 3D Screenshots herunter und zeigt diese an.<LineBreak/><LineBreak/>
+        Deaktivieren Sie diese Funktion, falls die GUI während des Download-Vorgangs der Screenshots einfrieren sollte.
     </TextBlock>
 
     <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
@@ -1300,20 +1321,30 @@ Pauldusler</system:String>
         Beachten Sie bitte, dass das 3D-Format nur für DirectX 11 Spiele gesetzt werden kann. Außerdem muss der 3dmigoto Software-Wrapper bzw. der 3D fix für das jeweilige Spiel installiert sein.
     </TextBlock>
 
-    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        Schaltet die Desktop-Bildwiederholfrequenz beim Deaktivieren von Stereo 3D oder beim Starten eines Spiels im 2D-Modus auf den gewünschten Wert.<LineBreak/><LineBreak/>
-        Mit Hilfe dieser Option können Sie die Desktop-Bildwiederholfrequenz an die Bildwiederholfrequenz im Spiel angleichen. Ein Vorteil hiervon ist, dass Sie schneller auf den Desktop minimieren können, da der Bildschirm dabei seine Frequenz nicht wechseln muss.<LineBreak/><LineBreak/>
+    <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
+        Startet das Spiel im 2D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Dieses Feature wird nicht für jedes Spiel unterstützt. Ob das Spiel unterstützt wird können Sie anhand des Info-Icons im <Bold><Italic>Installation</Italic></Bold> Tab anhand des Schlagworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold> entnehmen.
+    </TextBlock>
+
+    <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
+        Startet das Spiel im 3D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Dieses Feature wird nicht für jedes Spiel unterstützt. Ob das Spiel unterstützt wird können Sie anhand des Info-Icons im <Bold><Italic>Installation</Italic></Bold> Tab anhand des Schlagworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold> entnehmen.
+    </TextBlock>
+
+    <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
+        Schaltet den Desktop beim Deaktivieren von Stereo 3D oder beim Starten eines Spiels im 2D-Modus auf die gewünschte Auflösung.<LineBreak/><LineBreak/>
+        Mit Hilfe dieser Option können Sie die die Desktop-Auflösung sowie -Frequenz an die des Spiels angleichen. Ein Vorteil hiervon ist, dass Sie schneller auf den Desktop minimieren können, da der Bildschirm dabei seine Frequenz und Auflösung nicht wechseln muss.<LineBreak/><LineBreak/>
         Sofern es ihr Anzeigegerät zulässt sollten Sie für die 2D-Desktopfrequenz und 3D-Desktopfrequenz unterschiedliche Werte setzen um den Windows 10 Blackscreen-Bug zu vermeiden.
      </TextBlock>
 
-    <TextBlock x:Key="Change3dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        Schaltet die Desktop-Bildwiederholfrequenz beim Aktivieren von Stereo 3D oder beim Starten eines Spiels im 3D-Modus auf den gewünschten Wert.<LineBreak/><LineBreak/>
-        Mit Hilfe dieser Option können Sie die Desktop-Bildwiederholfrequenz an die Bildwiederholfrequenz im Spiel angleichen. Ein Vorteil hiervon ist, dass Sie schneller auf den Desktop minimieren können, da der Bildschirm dabei seine Frequenz nicht wechseln muss.<LineBreak/><LineBreak/>
+    <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
+        Schaltet den Desktop beim Aktivieren von Stereo 3D oder beim Starten eines Spiels im 3D-Modus auf die gewünschte Auflösung.<LineBreak/><LineBreak/>
+        Mit Hilfe dieser Option können Sie die Desktop-Aufösung sowie -Frequenz an die des Spiels angleichen. Ein Vorteil hiervon ist, dass Sie schneller auf den Desktop minimieren können, da der Bildschirm dabei seine Frequenz und Auflösung nicht wechseln muss.<LineBreak/><LineBreak/>
         Außerdem ist dieses Feature besonders für Besitzer von Windows 10 von Vorteil bei denen der Monitor beim Beenden des Spiels nur noch ein schwarzes Bild anzeigt. Der Grund hierfür liegt darin, dass Windows 10 Schwierigkeiten damit hat bei aktiviertem Stereo 3D auf andere Desktop-Bildwiederholfrequenzen zurückzuschalten.
     </TextBlock>
 
-    <TextBlock x:Key="Change2dRefreshRateOnClosingToolTip" TextWrapping="Wrap" Width="300">
-        Setzt die Desktop-Bildwiederholfrequenz auf den eingestellten Wert beim Beenden der Applikation.
+    <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
+        Setzt den Desktop auf die eingestellte Aufösung beim Beenden der Applikation.
     </TextBlock>
 
     <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
@@ -1328,6 +1359,10 @@ Pauldusler</system:String>
         Festlegen, ob beim Starten eines Spiel ein Dialogfenster angezeigt werden soll, in welchem das aktive Bildschirm-Profil ausgewählt werden kann.
     </TextBlock>
 
+    <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
+        Nach Abschalten dieser Option, ist es den Fix-Profilen nicht mehr erlaubt, Einfluss auf die Desktop- sowie Spielauflösung zu nehmen.<LineBreak/>
+        Die Steuerung erfolgt dann allein durch die globalen Bildschirm-Profile, sofern der Benutzer hier Einstellungen vorgenommen hat.
+    </TextBlock>
 
     <!-- XAML formated ToolTips End -->
     
