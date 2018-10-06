@@ -86,6 +86,9 @@
     <system:String x:Key="AlternativeDownloadGroup">Download an alternative version of the 3D Fix:</system:String>
     <system:String x:Key="InstallFixSettingsGroup">Install 3D Fix:</system:String>
     <system:String x:Key="GameConfigSettingsGroup">Game Configuration:</system:String>
+    <system:String x:Key="OverrideMonitorProfileGroup">Override Monitor Profile:</system:String>
+    <system:String x:Key="OverrideTVProfileGroup">Override TV Profile:</system:String>
+    <system:String x:Key="OverrideProjectorProfileGroup">Override Projector Profile:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Game Icon:</system:String>
     <system:String x:Key="DriverSettingsGroup">Driver Settings / Profiles for Nvidia Profile Inspector:</system:String>
     <system:String x:Key="GameLaunchSettingsGroup">Game Launch:</system:String>
@@ -108,6 +111,7 @@
     <system:String x:Key="DownloadLink_3">3. URL to 3D Fix:</system:String>
     <system:String x:Key="InfoAlternativeUrl">Info about the alternative 3D Fix:</system:String>
     <system:String x:Key="FixArchiveExtractor">Fix Archive Extractor:</system:String>
+    <system:String x:Key="AllowFixInstallation">Allow 3D Fix Installation:</system:String>
     <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto Wrapper Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo Refresh Rate:</system:String>
     <system:String x:Key="StartTool">Start additional Exe:</system:String>
@@ -322,6 +326,7 @@
     <system:String x:Key="PreferIconDownload">Prefer game icons from internet database</system:String>
     <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
     <system:String x:Key="DoNotChangeSetting">Keep current Setting</system:String>
+    <system:String x:Key="DownloadScreenshots">Download stereoscopic screenshots</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Settings:</system:String>
@@ -507,11 +512,14 @@
     <system:String x:Key="RealScreenSize">Screen size:</system:String>
     <system:String x:Key="DisplayType">3D display type:</system:String>
     <system:String x:Key="Preferred3dFormat">Preferred 3D format:</system:String>
-    <system:String x:Key="Change2dRefreshRate">Desktop refresh rate 2D mode:</system:String>
-    <system:String x:Key="Change3dRefreshRate">Desktop refresh rate 3D mode:</system:String>
-    <system:String x:Key="RefreshRateWhenClosing">Desktop refresh rate when closing app:</system:String>
+    <system:String x:Key="GameResolution2D">Game resolution 2D mode:</system:String>
+    <system:String x:Key="GameResolution3D">Game resolution 3D mode:</system:String>
+    <system:String x:Key="DesktopResolution2D">Desktop resolution 2D mode:</system:String>
+    <system:String x:Key="DesktopResolution2DClosing">Desktop resolution on closing:</system:String>
+    <system:String x:Key="DesktopResolution3D">Desktop resolution 3D mode:</system:String>
     <system:String x:Key="ShowProfileSelectionOnStartup">Show profile selection dialog on application start</system:String>
     <system:String x:Key="ShowProfileSelectionOnGameStart">Show profile selection dialog on game start</system:String>
+    <system:String x:Key="AllowDisplayProfileOverride">Allow fix profiles to override global display profiles</system:String>
     <system:String x:Key="DefaultProfileOnStartup">Default profile on startup:</system:String>
     <system:String x:Key="PleaseChooseProfile">Please choose a display profile:</system:String>
     <system:String x:Key="ShowProfileDialogOnGameStart">Show this dialog every time a game is started</system:String>
@@ -563,6 +571,9 @@
     <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="SearchGamesResult" xml:space="preserve">Search for installed games completed.&#x0d;&#x0d;Found games: {0}</system:String>
+    <system:String x:Key="FixInstallWarning" xml:space="preserve">The installation of the 3D fix is not recommended for this game.&#x0d;&#x0d;Do you want to install the fix anyway?</system:String>
+    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">The installation of the 3D wrapper is not recommended for this game.&#x0d;&#x0d;Do you want to install the wrapper anyway?</system:String>
     <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
     <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
     <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
@@ -645,7 +656,7 @@ Click on 'OK' when you're done making changes.</system:String>
     <system:String x:Key="ErrorOpenWebsite">Error: Website could not be opened.</system:String>
     <system:String x:Key="ReferenceDataDbSuccess">Reference data successfully written in DB.</system:String>
     <system:String x:Key="DbNoRights">Error: No rights to access DB.</system:String>
-    <system:String x:Key="WarningRefreshRate">Warning: Refresh rate must be a positive number.</system:String>
+    <system:String x:Key="WarningPositiveNumber">Warning: Input must be a positive number.</system:String>
     <system:String x:Key="ErrorInputNotANumber">Error: Input is not a number.</system:String>
     <system:String x:Key="ErrorLicenceNotice">Sorry, no license file found.</system:String>
     <system:String x:Key="UpdateMigoto" xml:space="preserve">Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version:&#x09;</system:String>
@@ -805,8 +816,13 @@ Pauldusler</system:String>
         Provide an additional download link if the 3D Vision fix was splitted into several download links.
     </TextBlock>
 
+    <TextBlock x:Key="Allow3dFixInstallationToolTip" TextWrapping="Wrap" Width="300">
+        Set this to <Italic><Bold>"No"</Bold></Italic> to warn the user from installing the 3D fix or 3D wrapper.<LineBreak/><LineBreak/>
+        By doing so the user is informed that the installation of the fix isn't required any more but can still be done if desired.
+    </TextBlock>
+
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
-        Set this option to 'No' if a new 3dmigoto version should not be compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper.
+        Set this option to <Italic><Bold>"No"</Bold></Italic> if a new 3dmigoto version isn't compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
@@ -844,7 +860,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
         By pressing the button <Bold><Italic>Detect Engine</Italic></Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>    
         If game engine detection fails you can alternatively press buttons <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>      
-        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5.6</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
+        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
         <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold><Italic>Search Steam DB</Italic></Bold> next to <Bold><Italic>Game Title</Italic></Bold>.
     </TextBlock>
 
@@ -1048,6 +1064,11 @@ Pauldusler</system:String>
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
         Enable this for redownloading all icons from TheGamesDB or Steam DB.<LineBreak/><LineBreak/>
         Old icons are not lost by saving them in backup folders inside of the individual profile folders.
+    </TextBlock>
+
+    <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
+        Downloads and displays stereoscopic 3D screenshots included in the info text of the 3D fixes.<LineBreak/><LineBreak/>
+        Disable this option if GUI freezes while downloading the images.
     </TextBlock>
 
     <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
@@ -1297,20 +1318,30 @@ Pauldusler</system:String>
         Consider that the 3D format can only be set for DirectX 11 games. Furthermore the 3dmigoto software wrapper / the 3D fix has to be installed for the individual game.
     </TextBlock>
 
-    <TextBlock x:Key="Change2dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop refresh rate to the desired value when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop refresh rate to the active refresh rate in the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
-        If possible set different value to 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.       
+    <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
+        Starts the game with the desired resolution in 2D mode.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
     </TextBlock>
 
-    <TextBlock x:Key="Change3dRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop refresh rate to the desired value when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop refresh rate to the active refresh rate in the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
-        Furthermode this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+    <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
+        Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
     </TextBlock>
 
-    <TextBlock x:Key="Change2dRefreshRateOnClosingToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop refresh rate to the specified value when closing the application.
+    <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
+        Sets the desktop to the desired resolution when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
+        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
+        Whenever possible set different values for 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.
+    </TextBlock>
+
+    <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
+        Sets the desktop rate to the desired resolution when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
+        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
+        Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+    </TextBlock>
+
+    <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
+        Sets the desktop to the specified resolution when closing the application.
     </TextBlock>
 
     <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
@@ -1319,6 +1350,11 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ShowProfileSelectionOnStartupToolTip" TextWrapping="Wrap" Width="300">
         Set if a dialog window shall be opened when starting the application where you can choose the active display profile.
+    </TextBlock>
+
+    <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
+        When disabling this option the fix profiles aren't allowed to modify game- and desktop resolution any more.<LineBreak/><LineBreak/>
+        Resolution is controlled soley by the global display profiles then if the user has set any option there.
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
