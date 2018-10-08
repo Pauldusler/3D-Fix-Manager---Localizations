@@ -138,6 +138,9 @@
     <system:String x:Key="GameLauncherOptions">Game Launcher Options:</system:String>
     <system:String x:Key="FixDescription">Fix Description:</system:String>
 
+    <system:String x:Key="CreateEditConfigFile">Create / edit</system:String>
+    <system:String x:Key="EditOnlyConfigFile">Edit only</system:String>
+
     <!-- ComboBoxes -->   
     <system:String x:Key="NoProfileInstall">Do not install Profile</system:String>
     <system:String x:Key="InstallWithDialog">Install with Dialog</system:String>
