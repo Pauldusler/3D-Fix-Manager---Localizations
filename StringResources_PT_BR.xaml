@@ -137,6 +137,9 @@
     <system:String x:Key="GameLauncherOptions">Opções do Inicializador do Jogo:</system:String>
     <system:String x:Key="FixDescription">Descrição da Correção:</system:String>
 
+    <system:String x:Key="CreateEditConfigFile">Create / edit</system:String>
+    <system:String x:Key="EditOnlyConfigFile">Edit only</system:String>
+
     <!-- ComboBoxes -->
     <system:String x:Key="NoProfileInstall">Não instalar o Perfil</system:String>
     <system:String x:Key="InstallWithDialog">Instalar com Diálogo</system:String>
