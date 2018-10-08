@@ -138,6 +138,9 @@
     <system:String x:Key="GameLauncherOptions">Startoptionen für Spiel:</system:String>
     <system:String x:Key="FixDescription">Beschreibungstext:</system:String>
 
+    <system:String x:Key="CreateEditConfigFile">Erstellen / editieren</system:String>
+    <system:String x:Key="EditOnlyConfigFile">Nur editieren</system:String>
+
     <!-- ComboBoxes -->    
     <system:String x:Key="NoProfileInstall">Profil nicht installieren</system:String>
     <system:String x:Key="InstallWithDialog">Installation mit Dialog</system:String>
