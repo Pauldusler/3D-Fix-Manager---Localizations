@@ -134,6 +134,7 @@
 
     <system:String x:Key="WaitForExit">Auf Beendigung warten</system:String>
     <system:String x:Key="GameExeAsArgument">Game Exe als Startparameter</system:String>
+    <system:String x:Key="Create">Erstellen</system:String>
     <system:String x:Key="GameLauncherExe">Exe zum Starten des Spiels:</system:String>
     <system:String x:Key="GameLauncherOptions">Startoptionen für Spiel:</system:String>
     <system:String x:Key="FixDescription">Beschreibungstext:</system:String>
@@ -159,6 +160,8 @@
 
     <system:String x:Key="StartByAppId">Mit Steam App ID starten</system:String>
     <system:String x:Key="StartByGameExe">Mit Game exe starten</system:String>
+    <system:String x:Key="StartByToolExe">Mit Tool exe starten</system:String>
+
 
     <system:String x:Key="RunNormal">Normal ausführen</system:String>
     <system:String x:Key="RunAsAdmin">Als Admin ausführen</system:String>
@@ -910,8 +913,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        Geben Sie den Namen der Exe-Datei ein mit welcher ein zusätzliches Tool im Spielverzeichnis gestartet werden soll. Dieses Tool wird aufgerufen, sobald das Spiel gestartet wird. Dieses Feature wird beispielsweise von Mass Effect: Andromeda und INSIDE genutzt.<LineBreak/><LineBreak/>
-        Sie können zusätzlich definieren, ob die Spiel-Exe dem Tool ls Startargument übergeben oder auf die Beendigung des Tools gewartet werden soll bevor das Spiel weiterhin startet.
+        Geben Sie den Namen einer Exe-Datei im Spieleverzeichnis oder den absoluten Pfad zu dieser an um ein beliebiges Tool vor dem eigentlichen Spielstart aufzurufen. Dieses Feature wird beispielsweise von den Profilen Far Cry 2, F.E.A.R. und INSIDE genutzt.<LineBreak/><LineBreak/>
+        Sie können zusätzlich definieren, ob die Spiele-Exe dem Tool als Startargument übergeben oder auf die Beendigung des Tools gewartet werden soll bevor das Spiel startet. Außerdem kann die Exe-Datei des Tools aus einer umbenannten Kopie der Spiele-Exe erstellt werden.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
