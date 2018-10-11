@@ -133,6 +133,7 @@
 
     <system:String x:Key="WaitForExit">Wait for exit</system:String>
     <system:String x:Key="GameExeAsArgument">Game Exe as start parameter</system:String>
+    <system:String x:Key="Create">Create</system:String>
     <system:String x:Key="GameLauncherExe">Lanceur de jeu Exe:</system:String>
     <system:String x:Key="GameLauncherOptions">Options du Lanceur de Jeu:</system:String>
     <system:String x:Key="FixDescription">Description du Fix:</system:String>
@@ -158,6 +159,7 @@
 
     <system:String x:Key="StartByAppId">Démarrer par l'ID de l'application Steam</system:String>
     <system:String x:Key="StartByGameExe">Démarrer avec l'Exe du jeu</system:String>
+    <system:String x:Key="StartByToolExe">Start via Tool exe</system:String>
 
     <system:String x:Key="RunNormal">Démarrer en normal</system:String>
     <system:String x:Key="RunAsAdmin">Démarrer en Mode Administrateur</system:String>
@@ -909,8 +911,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        Fill in the name of an exe file for starting a tool in the game game directory. This tool is executed as soon as the game is launched. This feature is used to fix Mass Effect: Andromeda and INSIDE.<LineBreak/><LineBreak/>
-        Additionally you can set if the game exe should be passed as start parameter to the tool and if the game start should wait for tool exit.
+        Fill in the name of an exe file located in the game directory or an absolute path for starting an arbitrary program before launching the game. This feature is used by the profiles Far Cry 2, F.E.A.R. and INSIDE where it is required to call another exe file.<LineBreak/><LineBreak/>
+        Additionally you can set if the game exe should be passed as a start parameter to the tool and if the game start should wait for tool exit. Also you can set if you want to create the tool exe by copying the game exe and renaming it.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
