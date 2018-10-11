@@ -133,6 +133,7 @@
 
     <system:String x:Key="WaitForExit">Aguardar a saída</system:String>
     <system:String x:Key="GameExeAsArgument">Exe do jogo como parâmetro inicial</system:String>
+    <system:String x:Key="Create">Create</system:String>
     <system:String x:Key="GameLauncherExe">Iniciador Exe do Jogo:</system:String>
     <system:String x:Key="GameLauncherOptions">Opções do Inicializador do Jogo:</system:String>
     <system:String x:Key="FixDescription">Descrição da Correção:</system:String>
@@ -158,6 +159,7 @@
 
     <system:String x:Key="StartByAppId">Iniciar via ID do App Steam</system:String>
     <system:String x:Key="StartByGameExe">Iniciar via executável do Jogo</system:String>
+    <system:String x:Key="StartByToolExe">Start via Tool exe</system:String>
 
     <system:String x:Key="RunNormal">Executar normal</system:String>
     <system:String x:Key="RunAsAdmin">Executar como administrador</system:String>
@@ -908,8 +910,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        Preencha o nome de um arquivo exe para iniciar uma ferramenta no diretório do jogo. Esta ferramenta é executada assim que o jogo é iniciado. Esse recurso é usado para corrigir Mass Effect: Andromeda e INSIDE.<LineBreak/><LineBreak/>
-        Além disso, você pode definir se o exe jogo deve ser passado como parâmetro de início para a ferramenta e se o início do jogo deve aguardar a saída da ferramenta.
+        Fill in the name of an exe file located in the game directory or an absolute path for starting an arbitrary program before launching the game. This feature is used by the profiles Far Cry 2, F.E.A.R. and INSIDE where it is required to call another exe file.<LineBreak/><LineBreak/>
+        Além disso, você pode definir se o exe jogo deve ser passado como parâmetro de início para a ferramenta e se o início do jogo deve aguardar a saída da ferramenta. Also you can set if you want to create the tool exe by copying the game exe and renaming it.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
