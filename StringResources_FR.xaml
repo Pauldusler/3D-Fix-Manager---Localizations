@@ -159,7 +159,7 @@
 
     <system:String x:Key="StartByAppId">Démarrer par l'ID de l'application Steam</system:String>
     <system:String x:Key="StartByGameExe">Démarrer avec l'Exe du jeu</system:String>
-    <system:String x:Key="StartByToolExe">Start via Tool exe</system:String>
+    <system:String x:Key="StartByToolExe">Start via additional Exe</system:String>
 
     <system:String x:Key="RunNormal">Démarrer en normal</system:String>
     <system:String x:Key="RunAsAdmin">Démarrer en Mode Administrateur</system:String>
@@ -409,6 +409,7 @@
     <system:String x:Key="EnableStereoGroup">Enable / set up  3D Functionality:</system:String>
     <system:String x:Key="EnableNvidia3D">Enable Nvidia Stereoscopic 3D</system:String>
     <system:String x:Key="Disable3dOnClosing">Auto disable Nvidia Stereoscopic 3D when closing application</system:String>
+    <system:String x:Key="Disable3dOnGameClosing">Auto disable Nvidia Stereoscopic 3D when closing games</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode (DirectX 9 only)</system:String>
@@ -1226,6 +1227,10 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
          Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager.
+    </TextBlock>
+
+    <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
+        Disables Nvidia Stereoscopic 3D when closing a running game.
     </TextBlock>
 
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
