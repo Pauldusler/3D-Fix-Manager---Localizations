@@ -159,8 +159,8 @@
     <system:String x:Key="StartRTSS">RTSS starten </system:String>
 
     <system:String x:Key="StartByAppId">Mit Steam App ID starten</system:String>
-    <system:String x:Key="StartByGameExe">Mit Game exe starten</system:String>
-    <system:String x:Key="StartByToolExe">Mit Tool exe starten</system:String>
+    <system:String x:Key="StartByGameExe">Mit Game Exe starten</system:String>
+    <system:String x:Key="StartByToolExe">Mit zusätzlicher Exe starten</system:String>
 
 
     <system:String x:Key="RunNormal">Normal ausführen</system:String>
@@ -410,6 +410,7 @@
     <system:String x:Key="EnableStereoGroup">3D-Funktion aktivieren / einrichten:</system:String>
     <system:String x:Key="EnableNvidia3D">Stereoskopische Nvidia 3D-Funktion aktivieren</system:String>
     <system:String x:Key="Disable3dOnClosing">Stereo 3D beim Beenden der Applikation deaktivieren</system:String>
+    <system:String x:Key="Disable3dOnGameClosing">Stereo 3D beim Beenden von Spielen deaktivieren</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">3D Vision / 3DTV Play Modus erzwingen</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Bei Spielstart automatisch in den 3D-Modus wechseln</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">3D im Fenstermodus aktivieren (nur DirectX 9)</system:String>
@@ -1231,7 +1232,11 @@ Pauldusler</system:String>
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
         Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn 3D Fix Manager beendet wird.
     </TextBlock>
-    
+
+    <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
+        Deaktiviert Nvidia's stereoskopische 3D-Funktion, wenn ein laufendes Spiel beendet wird.
+    </TextBlock>
+
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
         Sorgt beim Aktivieren der stereoskopischen 3D-Funktion oder beim Starten eines Spiels im 3D-Modus automatisch dafür, dass 3D Vision bzw. 3DTV Play als Ausgabemodus genutzt wird statt 3D Vision Discover (anaglyph).
     </TextBlock>
