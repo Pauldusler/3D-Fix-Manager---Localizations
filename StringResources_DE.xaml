@@ -137,6 +137,12 @@
     <system:String x:Key="Create">Erstellen</system:String>
     <system:String x:Key="GameLauncherExe">Exe zum Starten des Spiels:</system:String>
     <system:String x:Key="GameLauncherOptions">Startoptionen für Spiel:</system:String>
+    <system:String x:Key="ModifyGameExe">Game Exe modifizieren:</system:String>
+    <system:String x:Key="GameExeSearchString">Such-String:</system:String>
+    <system:String x:Key="GameExeReplaceString">Ersetzungs-String:</system:String>
+    <system:String x:Key="DoNotModify">Nicht modifizieren</system:String>
+    <system:String x:Key="ModifyNormalGameExe">Game Exe modifizieren</system:String>
+    <system:String x:Key="ModifyAdditionalExe">Zusätzliche Exe modifizieren</system:String>
     <system:String x:Key="FixDescription">Beschreibungstext:</system:String>
 
     <system:String x:Key="CreateEditConfigFile">Erstellen / editieren</system:String>
@@ -569,8 +575,10 @@
     <system:String x:Key="No">Nein</system:String>
     <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Möchten Sie 3dmigoto auf die ursprüngliche Version zurücksetzen, die mit dem 3D Fix ausgeliefert wurde?&#x0d;&#x0d;Ursprüngliche Version: {0}&#x0d;Installierte Version: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">3dmigoto x32 installieren</system:String>
-    <system:String x:Key="InstallHelixModx32">HelixMod x32 installieren</system:String>
     <system:String x:Key="Install3dmigotox64">3dmigoto x64 installieren</system:String>
+    <system:String x:Key="InstallOpenGLwrapperx32">OpenGL x32 installieren</system:String>
+    <system:String x:Key="InstallOpenGLwrapperx64">OpenGL x64 installieren</system:String>
+    <system:String x:Key="InstallHelixModx32">HelixMod x32 installieren</system:String>
     <system:String x:Key="InstallHelixModx64">HelixMod x64 installieren</system:String>
     <system:String x:Key="QuickSetup">Schnelles Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
@@ -593,6 +601,7 @@
     <system:String x:Key="HelixPostError" xml:space="preserve">Fehler: Helix Post konnte nicht heruntergeladen werden.</system:String>
     <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">Um bestmögliche Ergebnisse zu erzielen sollte die Zielauflösung für Upscaling auf die native Auflösung des Bildschirms gesetzt werden. &#x0d;&#x0d;Möchten Sie die native Auflösung jetzt setzen?&#x0d;&#x0d;Erkannte native Auflösung: </system:String>
     <system:String x:Key="Install3dmigoto02">3dmigoto installieren:</system:String>
+    <system:String x:Key="InstallOpenGLwrapper">OpenGL Wrapper installieren:</system:String>
     <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">Alle Ini-Einstellungen wurden auf die originalen Standardwerte zurückgesetzt. &#x0d;&#x0d;Bitte vergessen Sie nicht die Änderungen abzuspeichern.</system:String>
@@ -614,7 +623,8 @@ Die Installation eines Wrappers schaltet Features wie beispielsweise Stereo Hotk
         
 Anmerkungen: 
         
-- HelixMod nur bei DirectX 9 games installieren
+- HelixMod nur bei DirectX 9 Spielen installieren
+- OpenGL Wrapper nur bei OpenGL Spielen installieren
 - 3dmigoto nur bei DirectX 11 Spielen installieren
 - Stellen Sie sicher, die korrekte Version zu nehmen (32 oder 64 bit)
   Falls eine Spiel Launcher Exe zum Fix Profil hinzugefügt wurde, wird diese Information automatisch ermittelt
@@ -923,6 +933,12 @@ Pauldusler</system:String>
         Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel <Italic><Bold>"Doom"</Bold></Italic> erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID).<LineBreak/><LineBreak/>
         Zu guter Letzt können Sie einstellen, der RivaTuner Statistics Server beim Start des Spiels geöffnet oder geschlossen werden soll.<LineBreak/><LineBreak/>
         RTSS sorgt für reduzierten Input-Lag und verbessert die Frametimes für ein flüssiges Spielgeschehen.
+    </TextBlock>
+
+    <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
+        Mit Hilfe dieser Option können Sie den Inhalt einer Exe-Datei modifizieren, damit diese fehlerfrei im stereoskopischen 3D-Modus funktioniert. Diese Maßnahme ist bisher nur bei einigen "LEGO"-Spielen erforderlich.<LineBreak/><LineBreak/>
+        Hierzu wird die Exe-Datei binär eingelesen und nach einer Zeichenkette durchsucht, die Sie in dem benachbarten Feld eintragen können. Der gefundene String wird anschließend durch eine anderen Zeichenkette ersetzt, die Sie in dem dafür vorgesehenen Feld definieren können.<LineBreak/><LineBreak/>
+        Beim Abspeichern der modifizierten Exe wird sicherheitshalber ein Backup der originalen Datei im Spieleordner angelegt.
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
