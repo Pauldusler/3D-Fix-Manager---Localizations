@@ -374,6 +374,7 @@
     <system:String x:Key="CloseRivaTunerIn2D">Sempre feche o RTSS ao jogar no modo 2D</system:String>
     <system:String x:Key="CloseRtssOnAppClose">Feche o RTSS ao encerrar o 3D Fix Manager</system:String>
     <system:String x:Key="RivaTunerNotDetected">Servidor de Estatísticas RivaTuner não detectado / não instalado</system:String>
+    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server older than version 7.2</system:String>
 
     <!-- Game Launcher Settings group -->
     <system:String x:Key="GameLauncherSettings">Configurações do Inciador de jogos:</system:String>
@@ -519,10 +520,16 @@
     <system:String x:Key="TVProfileGroup">Perfil da TV:</system:String>
     <system:String x:Key="ProjectorProfileGroup">Perfil do projetor:</system:String>
     <system:String x:Key="ProfileSettingsGroup">Configurações Gerais do Perfil:</system:String>
+    <system:String x:Key="LinkProfileToDisplay">Link profile to display:</system:String>
     <system:String x:Key="DisplaySize">Tamanho da tela:</system:String>
     <system:String x:Key="RealScreenSize">Tamanho da tela:</system:String>
     <system:String x:Key="DisplayType">Tipo de Tela 3D:</system:String>
     <system:String x:Key="Preferred3dFormat">Formato 3D preferido:</system:String>
+    <system:String x:Key="GameSettings2D">Game settings for 2D mode:</system:String>
+    <system:String x:Key="GameSettings3D">Game settings for 3D mode:</system:String>
+    <system:String x:Key="FramerateLimit">Framerate limit:</system:String>
+    <system:String x:Key="DesktopSettings">Desktop settings:</system:String>
+    <system:String x:Key="GameResolution">Resolução de jogo:</system:String>
     <system:String x:Key="GameResolution2D">Modo 2D de resolução de jogo:</system:String>
     <system:String x:Key="GameResolution3D">Modo 3D de resolução de jogo:</system:String>
     <system:String x:Key="DesktopResolution2D">Modo 2D de resolução da desktop:</system:String>
@@ -1317,9 +1324,19 @@ Pauldusler</system:String>
         <Bold>Nota:</Bold> Você pode reativar a janela de diálogo na guia <Bold><Italic>Exibir Perfis</Italic></Bold>.
     </TextBlock>
 
+    <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
+        Please select a display device from the list which shall be linked to this display profile. When doing so this display profile is automatically chosen when starting a game on the display device.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> It's highly recommended that you link all the display profiles you use to a display device to eliminate the need for choosing the display profile manually when launching a game. Instead the correct display profile is detected automatically then.
+    </TextBlock>
+
+    <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
+        Choose the display device to be linked to the display profile.
+    </TextBlock>
+
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
         Por favor, defina o tamanho real do seu monitor em polegadas. Esse valor é gravado no Registro do Windows assim que você inicia um jogo para obter a profundidade máxima correta em 3D.<LineBreak/><LineBreak/>
-        Se você acha que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
+        Se você ach
+        a que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
@@ -1341,6 +1358,42 @@ Pauldusler</system:String>
     <TextBlock x:Key="Preferred3dFormatToolTip" TextWrapping="Wrap" Width="320">
         Por favor, escolha o seu formato 3D preferido.<LineBreak/><LineBreak/>
         Considere que o formato 3D só pode ser definido para jogos DirectX 11. Além disso, o empacotador de software 3dmigoto / correção 3D precisa ser instalado para o jogo individual.
+    </TextBlock>
+
+    <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
+        Limits the framerate to the specified value when playing in 2D mode.<LineBreak/><LineBreak/>
+        <Bold>Recommended:</Bold> For G-Sync monitors set the framerate just below the maximum refresh rate to prevent vertical sync getting active which would increase input lag.<LineBreak/><LineBreak/>
+        For example when using a 144 Hz monitor you should set the fps limit to 142 (2 fps difference).<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+    </TextBlock>
+
+    <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
+        Limits the framerate to the specified value when playing in 3D mode. By limiting the framerate you can significantly reduce input lag.<LineBreak/><LineBreak/>
+        <Bold>Recommended:</Bold> For 3D Vision certified monitors or Generic CRT display devices you should set framerate to <Bold>"1/2 Stereo Refresh Rate"</Bold>. By doing this the framerate limit cam be detected automatically in dependency of the Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
+        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.
+        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
+        Scanline Sync is a new feature of RivaTuner Statistics Server which does have a similar effect like Vertical Sync on. As well as Vertical Sync, Scanline Sync prevents tearing and makes sure you get a steady clear image. You should use this feature when your display does not support G-Sync or Freesync.<LineBreak/><LineBreak/>
+        Advantage over Vertical Sync on is the ultra low input lag. Disadvantage however is that Scanline Sync does not work with all games and all refresh rates properly so far.<LineBreak/><LineBreak/>
+        Scanline Sync works by limiting the framerate to the refresh rate of your display with a tearline located in a fixed position. This tearline can be moved down via the scanline index until the line is hidden in vertical blanking interval.<LineBreak/><LineBreak/> 
+        <Bold>Note:</Bold> So far it's known that Scanline Sync works best in 2D mode for resolution with 60 hz refresh rate. When using higher refresh rates intermittent tearing can occur or the tearline can be out of control. This depends on the individual game or the game engine it uses.<LineBreak/><LineBreak/> 
+        <Bold>Important:</Bold> Vertical Sync has to be switched off ingame in order to make Scanline Sync work. Additionally Vertical Sync has to be disabled in the global driver profile as well. Turning off Vertical Sync in global driver profile is done automatically by 3D Fix Manager.<LineBreak/><LineBreak/>
+        <Bold>Recommended:</Bold> For 3D mode the best thing is to enable Scanline Sync in the individual fix profile only. By doing so you only use this feature when it actually works for the game. Additionally Scanline Sync should be turned off in the global driver profile then.<LineBreak/><LineBreak/>
+        For 2D mode and non-G-Sync / -Freesync devices you can try to enable Scanline-Sync on a global basis as the chances are higher that Scanline Sync works for that mode. For games where it does not work disable Scanline Sync in the individual fix profile then.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
+        <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
+        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with 2 tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
+        <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
+        This option moves the tearline. Positive numbers move the thearline downwards and negative upwards.<LineBreak/><LineBreak/>
+        <Bold>Off:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
+        <Bold>Auto: </Bold> The tearling is automatically moved downwards by the correct value until it's hidden in the vertical blanking interval. For detecting the correct value you have to set the desired game resolution first.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
