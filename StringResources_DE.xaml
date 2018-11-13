@@ -376,6 +376,7 @@
     <system:String x:Key="CloseRivaTunerIn2D">RTSS beim Spielstart im 2D Modus beenden</system:String>
     <system:String x:Key="CloseRtssOnAppClose">RTSS beim Schließen von 3D Fix Manager beenden</system:String>
     <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server nicht gefunden / nicht installiert</system:String>
+    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server älter als Version 7.2</system:String>
 
     <!-- Game Launcher Settings group -->
     <system:String x:Key="GameLauncherSettings">Spiel Launcher Einstellungen:</system:String>
@@ -521,10 +522,16 @@
     <system:String x:Key="TVProfileGroup">TV-Profil:</system:String>
     <system:String x:Key="ProjectorProfileGroup">Projektor-Profil:</system:String>
     <system:String x:Key="ProfileSettingsGroup">Allgemeine Profil-Einstellungen:</system:String>
+    <system:String x:Key="LinkProfileToDisplay">Profil mit Bildschirm verknüpfen:</system:String>
     <system:String x:Key="DisplaySize">Bildschirmgröße:</system:String>
     <system:String x:Key="RealScreenSize">Leinwandgröße:</system:String>
     <system:String x:Key="DisplayType">3D Anzeigetyp:</system:String>
     <system:String x:Key="Preferred3dFormat">Bevorzugtes 3D-Format:</system:String>
+    <system:String x:Key="GameSettings2D">Spiel-Einstellungen für den 2D-Modus:</system:String>
+    <system:String x:Key="GameSettings3D">Spiel-Einstellungen für den 3D-Modus:</system:String>
+    <system:String x:Key="FramerateLimit">Framerate-Begrenzung:</system:String>
+    <system:String x:Key="DesktopSettings">Desktop-Einstellungen:</system:String>
+    <system:String x:Key="GameResolution">Spiel-Auflösung:</system:String>
     <system:String x:Key="GameResolution2D">Spiel-Auflösung 2D Modus:</system:String>
     <system:String x:Key="GameResolution3D">Spiel-Auflösung 3D Modus:</system:String>
     <system:String x:Key="DesktopResolution2D">Desktop-Auflösung 2D Modus:</system:String>
@@ -937,7 +944,7 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
         Mit Hilfe dieser Option können Sie den Inhalt einer Exe-Datei modifizieren, damit diese fehlerfrei im stereoskopischen 3D-Modus funktioniert. Diese Maßnahme ist bisher nur bei einigen "LEGO"-Spielen erforderlich.<LineBreak/><LineBreak/>
-        Hierzu wird die Exe-Datei binär eingelesen und nach einer Zeichenkette durchsucht, die Sie in dem benachbarten Feld eintragen können. Der gefundene String wird anschließend durch eine anderen Zeichenkette ersetzt, die Sie in dem dafür vorgesehenen Feld definieren können.<LineBreak/><LineBreak/>
+        Hierzu wird die Exe-Datei binär eingelesen und nach einer Zeichenkette durchsucht, die Sie in dem benachbarten Feld eintragen können. Der gefundene String wird anschließend durch eine andere Zeichenkette ersetzt, die Sie in dem dafür vorgesehenen Feld definieren können.<LineBreak/><LineBreak/>
         Beim Abspeichern der modifizierten Exe wird sicherheitshalber ein Backup der originalen Datei im Spieleordner angelegt.
     </TextBlock>
 
@@ -1114,7 +1121,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
         Bei Aktivieren dieser Funktion werden sämtliche gefundene Spielpfade in die Dateien der Fix-Profile gecached. Dadurch kann der Programmstart bei Vorhandensein vieler installierter Spiele beschleunigt werden.<LineBreak/><LineBreak/>
        Es wird empfohlen diese Feature nur dann zu aktivieren, wenn der Programmstart zu viel Zeit benötigt.<LineBreak/><LineBreak/>
-        <Bold>Hinweis:</Bold> Beachten Sie, dass beim Programmstart die installierten Spiele nicht mehr aktiv über die Windows Registry und den Suchpfaden ermittelt werden, sondern auf auf die Informationen im Cache zurückgegriffen wird.
+        <Bold>Hinweis:</Bold> Beachten Sie, dass beim Programmstart die installierten Spiele nicht mehr aktiv über die Windows Registry und den Suchpfaden ermittelt werden, sondern auf die Informationen im Cache zurückgegriffen wird.
         Dadurch kann es vorkommen, dass neu installierte Spiele nicht mehr automatisch erkannt werden. Bitte aktualisieren Sie in diesem Fall die Spieleliste manuell (Refresh-Button) oder klicken Sie unten auf den Button <Bold><Italic>Spiele suchen</Italic></Bold>. Der Cache wird bei diesem Vorgang automatisch neu aufgebaut.       
     </TextBlock>
 
@@ -1322,6 +1329,15 @@ Pauldusler</system:String>
         <Bold>Hinweis:</Bold> Sie können das Dialogfenster im Tab <Bold><Italic>Bildschirm Profile</Italic></Bold> erneut aktivieren.
     </TextBlock>
 
+    <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
+        Wählen Sie aus der nebenstehenden Liste das Anzeigegerät aus, das mit diesem Bildschirm-Profil verknüpft werden soll. Dadurch wird automatisch dieses Bildschirm-Profil ausgewählt, wenn Sie ein Spiel auf diesem Anzeigerät starten.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Es wird dringend empfohlen, alle genutzten Bildschirm-Profile mit einem Anzeigegerät zu verknüpfen, da infolgedessen die manuelle Auswahl des korrekten Bildschirmprofils beim Spielstart entfällt. Stattdessen wird das korrekte Bildschirmprofil automatisch ermittelt. 
+    </TextBlock>
+
+    <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
+        Wählen Sie hier das Anzeigegerät aus, das mit diesem Bildschirm-Profil verknüpft werden soll.
+    </TextBlock>
+
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
         Tragen Sie hier die tatsächliche Größe ihres Monitors in Zoll ein. Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale 3D-Tiefe zu entfalten.<LineBreak/><LineBreak/>
         Wenn Ihnen die maximal mögliche 3D-Tiefe durch den eingetragenen Wert nicht ausreicht, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
@@ -1348,14 +1364,50 @@ Pauldusler</system:String>
         Beachten Sie bitte, dass das 3D-Format nur für DirectX 11 Spiele gesetzt werden kann. Außerdem muss der 3dmigoto Software-Wrapper bzw. der 3D fix für das jeweilige Spiel installiert sein.
     </TextBlock>
 
+    <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
+        Begrenzt die Bildrate beim Spielen im 2D-Modus auf den eingestellten Wert.<LineBreak/><LineBreak/>
+        <Bold>Empfohlen:</Bold> Für G-Sync Monitore sollten Sie die Framerate knapp unterhalb der maximalen Bildwiederholfrequenz setzen, um zu verhindern, dass Vertical Sync greift und somit den Input Lag steigert.<LineBreak/><LineBreak/>
+        Beispielsweise sollten Sie bei einem 144 Hz Monitor die Bildrate auf 142 FPS limitieren (2 FPS Differenz).<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Zur Nutzung dieses Features muss der RivaTuner Stastics Server installiert sein. Der 3D Fix Manager konfiguriert diesen beim Spielstart automatisch anhand ihrer Vorgabe.
+    </TextBlock>
+
+    <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
+        Begrenzt die Bildrate beim Spielen im 3D-Modus auf den eingestellten Wert. Durch die Nutzung des Framerate-Begrenzers kann der Input-Lag beim Spielen im 3D-Modus spürbar gesenkt werden.<LineBreak/><LineBreak/>
+        <Bold>Empfohlen:</Bold> Für 3D Vision zertifizierte Monitore oder Generic CRT Geräte sollten Sie die Framerate unbedingt auf die Option <Bold>"1/2 Stereo Refresh Rate"</Bold> setzen. Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
+        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.  
+        <Bold>Hinweis:</Bold> Zur Nutzung dieses Features muss der RivaTuner Stastics Server installiert sein. Der 3D Fix Manager konfiguriert diesen beim Spielstart automatisch anhand ihrer Vorgabe.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
+        Scanline Sync ist ein neues Feature des RivaTuner Statistics Servers, welches mit den Resultaten von aktiviertem Vertical Sync vergleichbar ist. Ebenso wie Vertical Sync verhindert Scanline Sync Bildzerreißen und sorgt für ein ruhiges, sauberes Bild. Es sollte insbesondere für Bildschirme verwenden werden, die keine G-Sync- oder Freesync Unterstützung aufweisen.<LineBreak/><LineBreak/>
+        Der Vorteil gegenüber aktiviertem Vertical Sync liegt im wesentlich geringeren Input Lag. Nachteilig ist jedoch, dass Scanline Sync bisher noch nicht in jedem Spiel oder allen Bildwiederholfrequenzen zuverlässig funktioniert.<LineBreak/><LineBreak/>
+        Die Arbeitsweise von Scanline Sync besteht darin die Framerate auf die Bildwiederholfrequenz des Bildschirms zu begrenzen und die Linie, an der das Bild zerreißt auf eine feste Position zu fixieren. Diese "Tearline" kann anschließend über den Scanline-Index nach unten verschoben werden bis sie letztendlich in der vertikalen Austastlücke verschwindet und für den Betrachter nicht mehr sichtbar ist.<LineBreak/><LineBreak/>
+        <Bold>Hinweis:</Bold> Nach bisherigen Erkenntnissen funktioniert Scanline Sync am besten im 2D-Modus bei Auflösungen mit 60 Hz Bildwiederholfrequenz. Bei höheren Bildwiederholfrequenzen kann es zu sporadischem Bildzerreißen kommen oder die Tearline nicht mehr kontrollierbar sein. Dies hängt insbesondere vom jeweiligen Spiel bzw. der Engine ab.<LineBreak/><LineBreak/> 
+        <Bold>Wichtig:</Bold> Vertical Sync muss im Spiel manuell abgeschaltet werden, damit Scanline Sync greift. Zudem muss Vertical Sync im globalen Treiberprofil abgeschaltet sein. Die Abschltung im Treiberprofil erfolgt automatisch durch den 3D Fix Manager.<LineBreak/><LineBreak/>
+        <Bold>Empfehlung:</Bold> Aktivieren Sie Scanline Sync für den 3D-Modus am besten nur individuell in den Fix-Profilen, sodass dieses Feature nur dann genutzt wird, wenn es tatsächlich für das jeweilige Spiel funktioniert. Gleichzeitig sollte Scanline Sync im globalen Bildschirmprofil auf "Off" gesetzt werden.<LineBreak/><LineBreak/>
+        Für den 2D-Modus sowie Geräten ohne G-Sync / Freesync Unterstützung bietet es sich an Scanline-Sync global zu aktivieren, da hier die Wahrscheinlichkeit allgemein höher ist, dass Scanline Sync korrekt funktioniert. Im Gegenzug sollten Sie dann bei Spielen, bei denen es nicht funktioniert Scanline Sync im individuellen Fix Profil abschalten.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
+        <Bold>x:</Bold> Begrenzt die Framerate auf die Bildwiederholfrequenz des Bildschirms und fixiert die Tearline in einer festen Position. Diese Einstellung sollte üblicherweise für den 2D-Modus genutzt werden.<LineBreak/><LineBreak/>
+        <Bold>x2:</Bold> Begrenzt die Framerate auf die doppelte Bildwiederholfrequenz des Bildschirms. Dabei entstehen 2 Tearline in festen Positionen, wobei eine davon über den Scanline Index versteckt werden kann.<LineBreak/><LineBreak/>
+        <Bold>x/2:</Bold> Begrenzt die Framerate auf die halbe Bildwiederholfrequenz des Bildschirms und fixiert die Tearline in einer festen Position. Diese Einstellung sollte üblicherweise für den 3D-Modus genutzt werden.
+    </TextBlock>
+
+    <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
+        Diese Option verschiebt die Tearline. Positive Zahlenwerte verschieben die Tearline nach unten und negative nach oben.<LineBreak/><LineBreak/>
+        <Bold>Off:</Bold> Deaktiviert Scanline Sync und aktiviert wieder Vertical Sync, wenn dies im <Bold>Nvidia 3D Einstellungen</Bold> Tab vom Nutzer vorgegeben wurde.<LineBreak/><LineBreak/>
+        <Bold>Auto:</Bold> Die Tearline wird in Abhängigkeit der gewählten Spiel-Auflösung automatisch um den korrekten Betrag nach unten verschoben, um diese in der vertikalen Austastlücke zu verstecken. Bitte stellen Sie hierzu zuvor die gewünschte Spiel-Auflösung ein, damit der Wert korrekt ermittelt werden kann.
+    </TextBlock>
+
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
         Startet das Spiel im 2D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
-        <Bold>Hinweis:</Bold> Dieses Feature wird nicht für jedes Spiel unterstützt. Ob das Spiel unterstützt wird können Sie anhand des Info-Icons im <Bold><Italic>Installation</Italic></Bold> Tab anhand des Schlagworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold> entnehmen.
+        <Bold>Hinweis:</Bold> Dieses Feature wird bislang noch nicht für jedes Spiel unterstützt. Unterstützte Spiele erkennen Sie anhand des Stichworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold>, wenn Sie den Mauszeiger über das Info-Icon im  <Bold><Italic>Installation</Italic></Bold> Tab bewegen.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
         Startet das Spiel im 3D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
-        <Bold>Hinweis:</Bold> Dieses Feature wird nicht für jedes Spiel unterstützt. Ob das Spiel unterstützt wird können Sie anhand des Info-Icons im <Bold><Italic>Installation</Italic></Bold> Tab anhand des Schlagworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold> entnehmen.
+        <Bold>Hinweis:</Bold> Dieses Feature wird bislang noch nicht für jedes Spiel unterstützt. Unterstützte Spiele erkennen Sie anhand des Stichworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold>, wenn Sie den Mauszeiger über das Info-Icon im  <Bold><Italic>Installation</Italic></Bold> Tab bewegen.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
