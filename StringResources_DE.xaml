@@ -30,8 +30,15 @@
     <system:String x:Key="DisplayProfiles">Bildschirm Profile</system:String>
     
     <!-- Game list on left column-->
-    <system:String x:Key="All">Alle</system:String>
-    <system:String x:Key="Installed">Installiert</system:String>
+    <system:String x:Key="All">Alle Spiele</system:String>
+    <system:String x:Key="Installed">Installierte Spiele</system:String>
+    <system:String x:Key="AllFixTypes">Alle Fix-Typen</system:String>
+    <system:String x:Key="_3dmigoto">3dmigoto</system:String>
+    <system:String x:Key="Helixmod">Helixmod</system:String>
+    <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
+    <system:String x:Key="NotFixed">Ohne 3D Fix</system:String>
+    <system:String x:Key="VerifiedFixes">Überprüfte 3D Fixes</system:String>
+    <system:String x:Key="UnverifiedFixes">Ungeprüfte 3D Fixes</system:String>
     <system:String x:Key="New">Neu</system:String>
     <system:String x:Key="CreateProfileToolTip">Fix-Profil erstellen</system:String>
     <system:String x:Key="Edit">Editieren</system:String>
@@ -1374,7 +1381,7 @@ Pauldusler</system:String>
     <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
         Begrenzt die Bildrate beim Spielen im 3D-Modus auf den eingestellten Wert. Durch die Nutzung des Framerate-Begrenzers kann der Input-Lag beim Spielen im 3D-Modus spürbar gesenkt werden.<LineBreak/><LineBreak/>
         <Bold>Empfohlen:</Bold> Für 3D Vision zertifizierte Monitore oder Generic CRT Geräte sollten Sie die Framerate unbedingt auf die Option <Bold>"1/2 Stereo Refresh Rate"</Bold> setzen. Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
-        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.  
+        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.<LineBreak/><LineBreak/>
         <Bold>Hinweis:</Bold> Zur Nutzung dieses Features muss der RivaTuner Stastics Server installiert sein. Der 3D Fix Manager konfiguriert diesen beim Spielstart automatisch anhand ihrer Vorgabe.
     </TextBlock>
 
