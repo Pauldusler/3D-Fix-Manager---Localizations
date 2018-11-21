@@ -30,8 +30,15 @@
     <system:String x:Key="DisplayProfiles">Perfis de Exibição</system:String>
 
     <!-- Game list on left column-->
-    <system:String x:Key="All">Tudo</system:String>
-    <system:String x:Key="Installed">Instalado</system:String>
+    <system:String x:Key="All">All Games</system:String>
+    <system:String x:Key="Installed">Installed Games</system:String>
+    <system:String x:Key="AllFixTypes">All Fix Types</system:String>
+    <system:String x:Key="_3dmigoto">3dmigoto</system:String>
+    <system:String x:Key="Helixmod">Helixmod</system:String>
+    <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
+    <system:String x:Key="NotFixed">Without 3D Fix</system:String>
+    <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
+    <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
     <system:String x:Key="New">Novo</system:String>
     <system:String x:Key="CreateProfileToolTip">Criar perfil de correção</system:String>
     <system:String x:Key="Edit">Editar</system:String>
@@ -1335,8 +1342,7 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
         Por favor, defina o tamanho real do seu monitor em polegadas. Esse valor é gravado no Registro do Windows assim que você inicia um jogo para obter a profundidade máxima correta em 3D.<LineBreak/><LineBreak/>
-        Se você ach
-        a que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
+        Se você ach a que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
