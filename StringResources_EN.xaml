@@ -30,8 +30,15 @@
     <system:String x:Key="DisplayProfiles">Display Profiles</system:String>
 
     <!-- Game list on left column-->
-    <system:String x:Key="All">All</system:String>
-    <system:String x:Key="Installed">Installed</system:String>
+    <system:String x:Key="All">All Games</system:String>
+    <system:String x:Key="Installed">Installed Games</system:String>
+    <system:String x:Key="AllFixTypes">All Fix Types</system:String>
+    <system:String x:Key="_3dmigoto">3dmigoto</system:String>
+    <system:String x:Key="Helixmod">Helixmod</system:String>
+    <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
+    <system:String x:Key="NotFixed">Without 3D Fix</system:String>
+    <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
+    <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
     <system:String x:Key="New">New</system:String>
     <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
     <system:String x:Key="Edit">Edit</system:String>
