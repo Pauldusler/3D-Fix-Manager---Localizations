@@ -287,7 +287,7 @@
     <!-- General Ini Settings group -->
     <system:String x:Key="GeneralIniSettings">Réglages de l'Ini General:</system:String>
     <system:String x:Key="StereoOverlay">Overlay Stereo:</system:String>
-    <system:String x:Key="EnableStereoOverlay">Activer Overlay Stereo en jeu</system:String>
+    <system:String x:Key="EnableStereoOverlay">Stereo Overlay / Hunting Mode:</system:String>
     <system:String x:Key="ShowHideOverlay">Montrer / Cacher Overlay Stereo:</system:String>
     <system:String x:Key="ShowHideOverlayToolTip">Hotkey pour cacher l'overlay. Note: cela désactivera le mode Chasseur.</system:String>
     <system:String x:Key="ReloadIniFile">Recharger le fichier Ini en jeu:</system:String>
@@ -313,6 +313,7 @@
     <system:String x:Key="ToggleFullscreen">Bascule en plein écran:</system:String>
     <system:String x:Key="ForcedFullscreen">Force le plein écran</system:String>
     <system:String x:Key="NormalFullscreen">Plein écran normal</system:String>
+    <system:String x:Key="SoftDisabled">Soft disabled</system:String>
     <system:String x:Key="TypeInIntegerToolTip">Entrer une valeur entière.</system:String>
     <system:String x:Key="TypeInCommaSeparatedListToolTip">Tapez une liste de taux de rafraîchissement séparés par des virgules.</system:String>
 
@@ -960,6 +961,14 @@ Pauldusler</system:String>
 
 
     <!-- Hotkeys Tab ToolTips -->
+    <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
+        Hunting mode is primarily made for shaderhackers. It enables them for searching broken shaders in stereo 3D mode and repairing them.<LineBreak/><LineBreak/>
+        For the end-users hunting mode is interesting for showing an overlay with the current the current 3D depth and convergence. With this the user can finetune 3D hotkeys.<LineBreak/><LineBreak/>
+        <Bold>Off:</Bold> Disables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>
+        <Bold>On:</Bold> Enables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>     
+        <Bold>Soft disabled:</Bold> Hunting mode as well as the stereo 3D overlay aren't completely disabled. By pressing key "0" (default key) you can show the overlay ingame.
+    </TextBlock>
+
     <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
         Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
         The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
