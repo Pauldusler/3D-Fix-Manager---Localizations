@@ -245,21 +245,10 @@
     <system:String x:Key="NewPreset">Nova Predefinição</system:String>
     <system:String x:Key="NewPresetToolTip">Cria uma nova predefinição 3D..</system:String>
     <system:String x:Key="DefaultPreset">Predefinição padrão:</system:String>
-    <system:String x:Key="DefaultPresetToolTip">Habilite isso para definir uma predefinição que já está ativa quando o jogo é iniciado.</system:String>
-    <system:String x:Key="cbDefaultPresetToolTip">Esta é a predefinição ativa quando você inicia o jogo.</system:String>
     <system:String x:Key="Delay">Atraso:</system:String>
-    <system:String x:Key="DelayToolTip">Ativar / desativar o atraso para ativar uma predefinição depois que a tecla de atalho foi pressionada.</system:String>
-    <system:String x:Key="DelayMsToolTip">Tempo em [ms] até que a predefinição seja ativada após o pressionamento da tecla de atalho.</system:String>
     <system:String x:Key="ReleaseDelay">Atraso de Liberação:</system:String>
-    <system:String x:Key="ReleaseDelayToolTip">Ativar / desativar o atraso para desativar a predefinição ativa atual após o lançamento da tecla de atalho.</system:String>
-    <system:String x:Key="ReleaseDelayMsToolTip">Tempo em [ms] até que a predefinição seja desativada após a ativação da tecla de atalho.</system:String>
     <system:String x:Key="Transition">Transição:</system:String>
-    <system:String x:Key="TransitionToolTip">Ativar / desativar a transição animada entre as predefinições.</system:String>
-    <system:String x:Key="TransitionMsToolTip">Tempo em [ms] para desaparecer entre as predefinições.</system:String>
     <system:String x:Key="ReleaseTransition">Transição de Lançamento:</system:String>
-    <system:String x:Key="ReleaseTransitionToolTip">Ativar / desativar a transição animada após o lançamento da tecla de atalho.</system:String>
-    <system:String x:Key="ReleaseTransitionMsToolTip">Tempo em [ms] para desaparecer entre as predefinições depois que a tecla de atalho foi liberada.</system:String>
-    <system:String x:Key="TransitionTypeToolTip">Tipo de animação usada para desaparecer entre as predefinições.</system:String>
 
     <!-- Preset Group -->
     <system:String x:Key="UseStereoSettings">Usar configurações estéreo</system:String>
@@ -436,7 +425,7 @@
     <system:String x:Key="DepthMultiplier">Multiplicador de Profundidade 3D:</system:String>
     <system:String x:Key="Inch">polegadas</system:String>
     <system:String x:Key="StereoRefreshRate">Taxa de atualização estéreo:</system:String>
-    <system:String x:Key="IROutput">Sincronização do emissor IR:</system:String>
+    <system:String x:Key="IROutput">Sync mode of IR sender:</system:String>
     <system:String x:Key="SingleIREnvironment">Ambiente Único IR</system:String>
     <system:String x:Key="MixedIREnvironment">Multi Ambiente IR</system:String>
     <system:String x:Key="LanEnvironment">Ambiente de LAN 3D Vision</system:String>
@@ -726,7 +715,8 @@ Pauldusler</system:String>
     <system:String x:Key="ValidUrlError">Erro: você deve fornecer uma URL válida.</system:String>
     <system:String x:Key="MultiRowHyperlinkError">Erro: Não são permitidas seleções de várias linhas para Hiperlinks.</system:String>
     <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">Isso atualizará todas as correções instaladas do 3dmigoto para a versão mais recente do Empacotador.&#x0d;&#x0d;Deseja prosseguir?</system:String>
-    <system:String x:Key="AllUpdatesInstalled">Todas as atualizações foram instaladas com sucesso.</system:String>
+    <system:String x:Key="AllUpdatesInstalled">Success! 3Dmigoto was updated for {0} games.</system:String>
+    <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto is already up to date for all games. No updates required.</system:String>
     <system:String x:Key="TypeTitleError">Erro: Por favor, digite primeiro um título do jogo.</system:String>
     <system:String x:Key="FoundSteamDbData">Dados do banco de dados do Steam encontrados:</system:String>
     <system:String x:Key="GameExe">Exe do jogo:</system:String>
@@ -996,6 +986,50 @@ Pauldusler</system:String>
         <Bold>Segurar:</Bold> Permite adicionar exatamente uma predefinição 3D e a ativa enquanto a tecla estiver pressionada. Depois de soltar a tecla, a predefinição 3D está sendo desativada e as configurações 3D originais são restauradas.<LineBreak/><LineBreak/>
         <Bold>Alternancia:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Depois de pressioná-lo novamente, a predefinição 3D será desativada e as configurações 3D originais serão restauradas.<LineBreak/><LineBreak/>
         <Bold>Um tempo:</Bold> Permite adicionar exatamente uma predefinição 3D e ativa-a ao pressionar a tecla. Em contraste com os outros tipos de teclas de atalho, as configurações 3D anteriores não podem ser restauradas.
+    </TextBlock>
+
+    <TextBlock x:Key="DefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+        When option is enabled you can define a default preset which is active wenn the game is launched.
+    </TextBlock>
+
+    <TextBlock x:Key="cbDefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+        This is the active preset when launching the game.
+    </TextBlock>
+
+    <TextBlock x:Key="DelayToolTip" TextWrapping="Wrap" Width="300">
+        When option is enabled you can define a duration a key has to be held down until the respective 3D preset is activated.
+    </TextBlock>
+
+    <TextBlock x:Key="DelayMsToolTip" TextWrapping="Wrap" Width="300">
+        Time in [ms] a key has to be held down until the 3D preset is activated.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
+        When option is enabled you can define a duration which has to be elapsed after releasing a key until the original stereo 3D settings are restored which were valid before pressing the key.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseDelayMsToolTip" TextWrapping="Wrap" Width="300">
+        Time in [ms] until the original stereo 3D settings are restored after releasing a key.
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionToolTip" TextWrapping="Wrap" Width="300">
+        When option is enabled 3D presets are cross-faded with a soft transition. Type and duration of the transition can be defined by the user.
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionMsToolTip" TextWrapping="Wrap" Width="300">
+        Time in [ms] a transition takes place between 3D presets.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseTransitionToolTip" TextWrapping="Wrap" Width="300">
+        When option is enabled the original stereo 3D settings are restored with a soft transition. Type and duration of the transition can be defined by the user.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseTransitionMsToolTip" TextWrapping="Wrap" Width="300">
+        Time in [ms] a transition takes place for restoring the original stereo 3D settings after releasing the key.
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionTypeToolTip" TextWrapping="Wrap" Width="300">
+        Transition type which is used for cross-fading between 3D presets.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
