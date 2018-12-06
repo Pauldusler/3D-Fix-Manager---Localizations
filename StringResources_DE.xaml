@@ -247,21 +247,10 @@
     <system:String x:Key="NewPreset">Neues Preset</system:String>
     <system:String x:Key="NewPresetToolTip">Erstellt ein neues 3D-Preset.</system:String>
     <system:String x:Key="DefaultPreset">Standard-Preset:</system:String>
-    <system:String x:Key="DefaultPresetToolTip">Aktivieren um ein Standard-Preset zu definieren, welches bei Spielstart aktiv geschaltet wird.</system:String>
-    <system:String x:Key="cbDefaultPresetToolTip">3D-Preset, welches beim Starten des Spiels aktiv geschaltet wird.</system:String>
     <system:String x:Key="Delay">Verzögerung:</system:String>
-    <system:String x:Key="DelayToolTip">Verzögerung de-/aktivieren mit der zu einem 3D-Preset geschaltet wird, nachdem der Hotkey gedrückt wurde.</system:String>
-    <system:String x:Key="DelayMsToolTip">Zeit in [ms] bis ein 3D-Preset nach Tastendruck des Hotkeys aktiviert wird.</system:String>
     <system:String x:Key="ReleaseDelay">Verzögerung beim Loslassen:</system:String>
-    <system:String x:Key="ReleaseDelayToolTip">Verzögerung de-/aktivieren mit der das aktive Preset deaktiviert wird nachdem der Hotkey losgelassen wird.</system:String>
-    <system:String x:Key="ReleaseDelayMsToolTip">Zeit in [ms] bis ein 3D-Preset nach Tastendruck des Hotkeys deaktiviert wird.</system:String>
     <system:String x:Key="Transition">Übergang:</system:String>
-    <system:String x:Key="TransitionToolTip">Animierte Übergänge zwischen 3D-Presets de-/aktivieren.</system:String>
-    <system:String x:Key="TransitionMsToolTip">Zeitspanne in [ms] innerhalb welcher zwischen den 3D-Presets überblendet wird.</system:String>
     <system:String x:Key="ReleaseTransition">Übergang beim Loslassen:</system:String>
-    <system:String x:Key="ReleaseTransitionToolTip">Animierte Übergänge zwischen 3D-Presets de/-aktivieren nachdem der Hotkey losgelassen wurde.</system:String>
-    <system:String x:Key="ReleaseTransitionMsToolTip">Zeitspanne in [ms] innerhalb welcher zwischen den 3D-Presets überblendet wird nachdem der Hotkey losgelassen wurde.</system:String>
-    <system:String x:Key="TransitionTypeToolTip">Aktiver Animationstyp zum Übergang zwischen 3D-Presets.</system:String>
 
     <!-- Preset Group -->    
     <system:String x:Key="UseStereoSettings">Stereo-Einstellungen nutzen</system:String>
@@ -358,7 +347,7 @@
     <system:String x:Key="DisableAllFixesToolTip">Deaktiviert alle installierten 3D-Fixes.</system:String>
     <system:String x:Key="SendData">Daten bei Veränderungen an den Fix-Profile senden</system:String>
     <system:String x:Key="AutoUpdate3dmigoto">3dmigoto beim Programmstart aktualisieren</system:String>
-    <system:String x:Key="UpdateAllWrappers">3dmigoto aller installierten 3D Fixes aktualisieren:</system:String>
+    <system:String x:Key="UpdateAllWrappers">3dmigoto für alle installierte 3D Fixes aktualisieren:</system:String>
 
     <!-- Search paths group -->
     <system:String x:Key="SearchPathsGroup">Erkennung installierter Spiele:</system:String>
@@ -438,7 +427,7 @@
     <system:String x:Key="DepthMultiplier">3D Tiefen-Multiplikator:</system:String>
     <system:String x:Key="Inch">Zoll</system:String>
     <system:String x:Key="StereoRefreshRate">Shutter-Frequenz der 3D-Brille:</system:String>
-    <system:String x:Key="IROutput">Synchronisation des IR-Senders:</system:String>
+    <system:String x:Key="IROutput">Sync-Modus des IR-Senders:</system:String>
     <system:String x:Key="SingleIREnvironment">Einzel-IR Umgebung</system:String>
     <system:String x:Key="MixedIREnvironment">Multi-IR Umgebung</system:String>
     <system:String x:Key="LanEnvironment">3D Vision LAN-Umgebung</system:String>
@@ -729,7 +718,8 @@ Pauldusler</system:String>
     <system:String x:Key="ValidUrlError">Fehler: Bitte eine gültige Url eingeben.</system:String>
     <system:String x:Key="MultiRowHyperlinkError">Fehler: Mehrzeilige Selektionen für Hyperlinks werden nicht unterstützt.</system:String>
     <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">Dies wird alle installierten 3dmigoto-Fixes auf den neuesten Wrapper aktualisieren. &#x0d;&#x0d;Möchten Sie fortfahren?</system:String>
-    <system:String x:Key="AllUpdatesInstalled">Alle Aktualisierungen wurden erfolgreich installiert.</system:String>
+    <system:String x:Key="AllUpdatesInstalled">Erfolg! 3Dmigoto wurde für insgesamt {0} Spiele aktualisiert.</system:String>
+    <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto ist bereits für alle Spiele auf dem aktuellen Stand. Es sind keine Aktualisierungen notwendig.</system:String>
     <system:String x:Key="TypeTitleError">Fehler: Bitte geben Sie zuerst einen Spieltitel ein.</system:String>
     <system:String x:Key="FoundSteamDbData">Gefundene Steam DB-Daten:</system:String>
     <system:String x:Key="GameExe">Exe für Spielstart:</system:String>
@@ -760,7 +750,7 @@ Pauldusler</system:String>
     <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision ist auf Ihrem System nicht eingerichtet. &#x0d;&#x0d;Option 1: Klicken Sie auf 'Setup Assistent' um den standardmäßigen Nvidia Setup-Assistenten zu starten. &#x0d;&#x0d;Option 2: Klicken Sie auf 'Schnelles Setup' um 3D Vision direkt zu aktivieren, indem Werte in der Windows Registry modifiziert werden.&#x0d;&#x0d;</system:String>
     <system:String x:Key="VisionSetupComplete" xml:space="preserve">3D Vision Setup Wizard erfolgreich abgeschlossen! &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
     <system:String x:Key="WindowsRegistryWriteError">Fehler: Einstellungen im Profil konnten nicht in die Windows Registry geschrieben werden.</system:String>
-    <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Standard-Assistent wurde übersprungen und 3D Vision erfolgreich aktiviert. &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
+    <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Der Standard-Assistent wurde übersprungen und 3D Vision erfolgreich aktiviert. &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
     <system:String x:Key="QuickSetupError">Fehler beim aktivieren von Nvidias stereoskopischer 3D-Funktion. Bitte versuchen Sie die Einrichtung stattdessen mit dem Setup-Assistenten erneut.</system:String>
 
     <system:String x:Key="ForceAnaglyphError">Fehler: 3D Vision Discover (Anaglyph 3D) konnte nicht erzwungen werden.</system:String>
@@ -999,6 +989,50 @@ Pauldusler</system:String>
         <Bold>Hold:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es aktiv so lange die Taste gedrückt gehalten wird. Beim Loslassen der Taste wird wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
         <Bold>Toggle:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Bei erneutem Tastendruck wird das 3D-Preset deaktiviert und die ursprünglichen 3D-Einstellungen wiederhergestellt.<LineBreak/><LineBreak/>
         <Bold>One-Time:</Bold> Erlaubt das Anlegen genau eines 3D-Presets und schaltet es beim Betätigen der Taste aktiv. Im Unterschied zu den anderen Tastenarten kann nicht mehr zu den vorherigen 3D-Einstellungen zurückgewechselt werden.
+    </TextBlock>
+
+    <TextBlock x:Key="DefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+        Durch Aktivieren dieser Option kann ein Standard-Preset definiert werden, welches bei Spielstart aktiv geschaltet wird.
+    </TextBlock>
+
+    <TextBlock x:Key="cbDefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+        3D-Preset, welches beim Starten des Spiels aktiv geschaltet wird.
+    </TextBlock>
+
+    <TextBlock x:Key="DelayToolTip" TextWrapping="Wrap" Width="300">
+        Durch Aktivieren dieser Option können Sie eine Zeitdauer vorgeben, die eine Taste gedrückt gehalten werden muss bis das entsprechende 3D Preset aktiviert wird.
+    </TextBlock>
+
+    <TextBlock x:Key="DelayMsToolTip" TextWrapping="Wrap" Width="300">
+        Dauer in [ms], die eine Taste gedrückt gehalten werden muss bis das 3D Preset aktiviert wird.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
+        Durch Aktivieren dieser Option können Sie eine Zeitdauer vorgeben, die nach Loslassen der Taste verstreichen muss bis die ursprünglichen Stereo 3D-Einstellungen wiederhergestellt werden, die vor dem Tastendruck galten.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseDelayMsToolTip" TextWrapping="Wrap" Width="300">
+        Dauer in [ms] bis die ursprünglichen Stereo 3D Einstellungen nach Loslassen der Taste wiederhergestellt werden.    
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionToolTip" TextWrapping="Wrap" Width="300">
+        Durch Aktivieren dieser Option werden 3D Presets mit Hilfe eines animierten Übergangs weich übergeblendet. Die Art und Dauer des Übergangs kann dabei vom Benutzer festgelegt werden.
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionMsToolTip" TextWrapping="Wrap" Width="300">
+        Dauer in [ms] mit welcher der animierte Übergang zwischen den 3D Presets erfolgt.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseTransitionToolTip" TextWrapping="Wrap" Width="300">
+        Durch Aktivieren dieser Option werden die ursprünglichen Stereo 3D-Einstellungen mit Hilfe eines weichen Übergangs wiederhergestellt. Die Art und Dauer des Übergangs kann dabei vom Benutzer festgelegt werden.
+    </TextBlock>
+
+    <TextBlock x:Key="ReleaseTransitionMsToolTip" TextWrapping="Wrap" Width="300">
+        Dauer in [ms] mit welcher der animierte Übergang zu den ursprünglichen Stereo 3D-Einstellungen nach Loslassen der Taste erfolgt.    
+    </TextBlock>
+
+    <TextBlock x:Key="TransitionTypeToolTip" TextWrapping="Wrap" Width="300">
+        Animationstyp festlegen, der zum überblenden zwischen den 3D Presets genutzt wird.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
