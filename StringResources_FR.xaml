@@ -419,6 +419,7 @@
     <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode (DirectX 9 only)</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
+    <system:String x:Key="Nvida3dDriverOverlay">Enable Nvidia 3D driver overlay</system:String>
 
     <!-- 3D depth / 3D Vision shutter glasses group -->
     <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
@@ -760,7 +761,13 @@ Pauldusler</system:String>
 
     <system:String x:Key="DepthHackError">Error: Depth hack could not be applied / removed.</system:String>
     <system:String x:Key="WritePermissionError">Error: Write permission for 'System' user could not bet set for Stereo3D key in Windows registry.</system:String>
-
+    <system:String x:Key="AllFixesDisabled">Success! All installed 3D fixes have been disabled and are no longer active when starting a game next time.</system:String>
+    <system:String x:Key="AllFixesEnabled">Success! All installed 3D fixes have been enabled.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be enabled.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be disabled.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+    
     <!--.................... Dialog Window End .......................... -->
 
 
@@ -1318,6 +1325,13 @@ Pauldusler</system:String>
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
         Sets whether 3D Vision can activate 3D mode for windowed applications.<LineBreak/><LineBreak/>
         Technically this option sets windows registry entry <Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
+    </TextBlock>
+
+    <TextBlock x:Key="Nvidia3dDriverOverlayToolTip" TextWrapping="Wrap" Width="300">
+        With this option you can completely switch off the overlay which is typcially active when playing in stereo 3D mode.<LineBreak/><LineBreak/>
+        By disabling the overlay both the graphical representation for the 3D depth as well as the info box with the green text aren't shown in games any more.<LineBreak/><LineBreak/>
+        Further more you generally won't see the red warning text <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> any more.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Keep in mind that you need to restart your system after disabling or re-enabling the overlay. In addition the changes are undone after updating the graphics driver.
     </TextBlock>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
