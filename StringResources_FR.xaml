@@ -315,7 +315,7 @@
     <system:String x:Key="Excellent">Excellent</system:String>
     <system:String x:Key="Good">Bon</system:String>
     <system:String x:Key="Fair">Correct</system:String>
-    <system:String x:Key="Non Recommandé">Not Recommended</system:String>
+    <system:String x:Key="Not Recommended">Non Recommandé</system:String>
 
     <!--.................... Hotkeys Tab End .......................... -->
 
@@ -323,165 +323,165 @@
     <!--.................... Application Settings Tab Begin .......................... -->
 
     <!-- General Settings group -->
-    <system:String x:Key="GeneralSettingsGroup">General Settings:</system:String>
-    <system:String x:Key="CheckForUpdates">Check for updates at startup</system:String>
-    <system:String x:Key="AllowChangesToGameConfig">Optimize game settings for Stereo 3D</system:String>
-    <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
-    <system:String x:Key="FullscreenOptimizations">Fullscreen optimizations:</system:String>
-    <system:String x:Key="ControlledByFixProfile">Controlled by Fix Profile</system:String>
-    <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
-    <system:String x:Key="PreferIconDownload">Prefer game icons from internet database</system:String>
-    <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
-    <system:String x:Key="DoNotChangeSetting">Keep current Setting</system:String>
-    <system:String x:Key="DownloadScreenshots">Download stereoscopic screenshots</system:String>
+    <system:String x:Key="GeneralSettingsGroup">Réglages Généraux:</system:String>
+    <system:String x:Key="CheckForUpdates">Vérifier les mises à jour au démarrage</system:String>
+    <system:String x:Key="AllowChangesToGameConfig">Optimise les réglages du jeu pour la 3D Stéréo</system:String>
+    <system:String x:Key="EnableSteamOverlay">Active l'Overlay Steam</system:String>
+    <system:String x:Key="FullscreenOptimizations">Optimisations du Plein Ecran:</system:String>
+    <system:String x:Key="ControlledByFixProfile">Contrôlé par le Profil du Correctif</system:String>
+    <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam non détecté</system:String>
+    <system:String x:Key="PreferIconDownload">Préférer les icônes du jeu de la base de donnéees d'Internet</system:String>
+    <system:String x:Key="ResetAllIcons">Réinitialiser tous les icônes des jeux:</system:String>
+    <system:String x:Key="DoNotChangeSetting">Garder les réglages actuels</system:String>
+    <system:String x:Key="DownloadScreenshots"Télécharger les screenshots stéréoscopiques</system:String>
 
 
     <!-- 3D Fix / 3dmigoto settings group -->
-    <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Settings:</system:String>
-    <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
-    <system:String x:Key="ClearAllDownloadCache">Clear download cache for all fix profiles:</system:String>
-    <system:String x:Key="DisableFixesIn2dMode">Disable 3D fixes in 2D mode:</system:String>
-    <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
-    <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
-    <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
-    <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
-    <system:String x:Key="AutoUpdate3dmigoto">Update 3dmigoto at startup</system:String>
-    <system:String x:Key="UpdateAllWrappers">Update 3dmigoto for all installed 3D fixes:</system:String>
+    <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / Réglages 3dmigoto:</system:String>
+    <system:String x:Key="ReinstallFixFromCache">Installer les correctifs 3D du cache de téléchargement si possible</system:String>
+    <system:String x:Key="ClearAllDownloadCache">Nettoyer le cache de téléchargement de tous les profils de correctifs:</system:String>
+    <system:String x:Key="DisableFixesIn2dMode">Désactiver les correctifs 3D en mode 2D:</system:String>
+    <system:String x:Key="EnableAllFixes">Activer / Désactiver tous les correctifs:</system:String>
+    <system:String x:Key="EnableAllFixesToolTip">Active tous les correctifs 3D installés.</system:String>
+    <system:String x:Key="DisableAllFixesToolTip">Désactive tous les correctifs 3D installés.</system:String>
+    <system:String x:Key="SendData">Envoyer les données lorsque l'utilisateur customise un profil de correctif</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Met à jour 3dMigoto au démarrage</system:String>
+    <system:String x:Key="UpdateAllWrappers">Met à jour 3dmigoto pour tous les correctifs 3D installés:</system:String>
 
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Detecting installed Games:</system:String>
-    <system:String x:Key="EnableCachedPaths">Cache detected game paths for faster app start</system:String>
-    <system:String x:Key="EnableRegistrySearch">Search game paths in Windows registry</system:String>
-    <system:String x:Key="EnableSearchPaths">Enable search paths</system:String>
-    <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from Windows registry</system:String>
-    <system:String x:Key="SearchDepth">Search depth:</system:String>
-    <system:String x:Key="SearchPaths">Search paths:</system:String>
-    <system:String x:Key="SearchGames">Search games</system:String>
-    <system:String x:Key="DetectPaths">Detect libraries</system:String>
-    <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
-    <system:String x:Key="Add">Add</system:String>
-    <system:String x:Key="AddPathToolTip">Adds a search path.</system:String>
-    <system:String x:Key="Remove">Remove</system:String>
-    <system:String x:Key="RemovePathToolTip">Removes the selected search path.</system:String>
-    <system:String x:Key="ChangePathToolTip">Changes the selected search path.</system:String>
+    <system:String x:Key="SearchPathsGroup">Détection en cours des Jeux installés:</system:String>
+    <system:String x:Key="EnableCachedPaths">Détection du Cache des répertoires de jeu pour un démarrage plus rapide de l'application</system:String>
+    <system:String x:Key="EnableRegistrySearch">Rechercher les chemins de jeux dans la Base de Registre Windows</system:String>
+    <system:String x:Key="EnableSearchPaths">Permettre la recherche de répertoires</system:String>
+    <system:String x:Key="PrioritizeSearchPaths">Prioritise la recherche de répertoires sur les répertoires provenant de la base de registre Windows</system:String>
+    <system:String x:Key="SearchDepth">Recherche en profondeur:</system:String>
+    <system:String x:Key="SearchPaths">Recherche les répertoires:</system:String>
+    <system:String x:Key="SearchGames">Recherche les jeux</system:String>
+    <system:String x:Key="DetectPaths">Détecte les librairies</system:String>
+    <system:String x:Key="DetectPathsToolTip">Détecte automatiquement les librairies de jeux Steam, Uplay, Origin, l'application Blizzard, GOG Galaxy et les ajoute en répertoires de recherche.</system:String>
+    <system:String x:Key="Add">Ajouter</system:String>
+    <system:String x:Key="AddPathToolTip">Ajoute un répertoire de recherche.</system:String>
+    <system:String x:Key="Remove">Retirer</system:String>
+    <system:String x:Key="RemovePathToolTip">Retire le répertoire de recherche sélectionné.</system:String>
+    <system:String x:Key="ChangePathToolTip">Change le répertoire de recherche sélectionné.</system:String>
 
     <!-- RTSS settings group -->
-    <system:String x:Key="RtssSettingsGroup">RivaTuner Statistics Server Settings:</system:String>
-    <system:String x:Key="StartRTSS_Setting">Start / close RTSS depending on fix profile setting</system:String>
-    <system:String x:Key="InterruptGameLaunch">Pause game start for setting up RTSS</system:String>
-    <system:String x:Key="CloseRivaTunerIn2D">Close RTSS when starting a game in 2D mode</system:String>
-    <system:String x:Key="CloseRtssOnAppClose">Close RTSS when quitting 3D Fix Manager</system:String>
-    <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server not detected / not installed</system:String>
-    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server older than version 7.2</system:String>
+    <system:String x:Key="RtssSettingsGroup">Réglages de RivaTuner Statistics Server:</system:String>
+    <system:String x:Key="StartRTSS_Setting">Démarre / Ferme RTSS en fonction du réglage du Profil de correctif</system:String>
+    <system:String x:Key="InterruptGameLaunch">Met en Pause le démarrage du jeu pour configurer RTSS</system:String>
+    <system:String x:Key="CloseRivaTunerIn2D">Ferme RTSS lorsque un jeu se lance en mode 2D</system:String>
+    <system:String x:Key="CloseRtssOnAppClose">Ferme RTSS en quittant 3D Fix Manager</system:String>
+    <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server non détecté / not installed</system:String>
+    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server plus ancien que la version 7.2</system:String>
 
     <!-- Game Launcher Settings group -->
-    <system:String x:Key="GameLauncherSettings">Game Launcher Settings:</system:String>
-    <system:String x:Key="StartGamesByGameExe">Prefer starting games via game launcher exe</system:String>
-    <system:String x:Key="StartGamesBySteamAppId">Prefer starting games via Steam client (Steam app ID)</system:String>
-    <system:String x:Key="StartGamesByFixProfile">Start method is controlled by fix profile (recommended)</system:String>
+    <system:String x:Key="GameLauncherSettings">Paramètres du Game Launcher:</system:String>
+    <system:String x:Key="StartGamesByGameExe">Préférer le lancement des jeux par l'exe du game launcher</system:String>
+    <system:String x:Key="StartGamesBySteamAppId">Préférer le lancement des jeux par le client Steam (Steam app ID)</system:String>
+    <system:String x:Key="StartGamesByFixProfile">Méthode de démarrage contrôlée par le profil du correctif (recommandé)</system:String>
 
     <!--Nvidia Profile Inspector Settings group -->
-    <system:String x:Key="NvidiaProfileInspectorSettings">Nvidia Profile Inspector Settings:</system:String>
-    <system:String x:Key="NeverInstallProfiles">Globally disable installation of driver profiles</system:String>
-    <system:String x:Key="ProfileInstallByFixProfile">Installation of driver profiles is controlled by fix profile</system:String>
-    <system:String x:Key="InstallProfilesSilently">Install driver profiles silently without warning messages</system:String>
-    <system:String x:Key="NoNvidiaDetected">No Nvidia driver detected / installed</system:String>
-    <system:String x:Key="Start">Start</system:String>
-    <system:String x:Key="StartProfileInspectorToolTip">Starts Nvidia Profile Inspector.</system:String>
-    <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
+    <system:String x:Key="NvidiaProfileInspectorSettings">Paramètres Nvidia Profile Inspector:</system:String>
+    <system:String x:Key="NeverInstallProfiles">Globalement désactive l'installation des profils de pilotes</system:String>
+    <system:String x:Key="ProfileInstallByFixProfile">Installation des profils de drivers contrôlée par le profil du correctif</system:String>
+    <system:String x:Key="InstallProfilesSilently">Installer les profils de pilotes silencieusement sans messages d'avertissement</system:String>
+    <system:String x:Key="NoNvidiaDetected">Pas de pilote Nvidia driver detecté / installé</system:String>
+    <system:String x:Key="Start">Démarrer</system:String>
+    <system:String x:Key="StartProfileInspectorToolTip">Démarre Nvidia Profile Inspector.</system:String>
+    <system:String x:Key="StartRtssToolTip">Démarre RivaTuner Statistics Server.</system:String>
 
     <!-- Stereo Refresh Rate Settings group -->
-    <system:String x:Key="StereoRefreshRateSettings">Shutter Frequency of Nvidia 3D Glasses / Stereo Refresh Rate:</system:String>
-    <system:String x:Key="GlobalStereoRefreshRate">Use refresh rate set in Nvidia driver</system:String>
-    <system:String x:Key="ProfileStereoRefreshRate">Refresh rate is controlled by fix profile</system:String>
+    <system:String x:Key="StereoRefreshRateSettings">Fréquence d'obturation des lunettes 3D Nvidia / Taux de rafraichissement Stereo:</system:String>
+    <system:String x:Key="GlobalStereoRefreshRate">Utiliser le taux de rafraissiment paramétré dans le pilote Nvidia</system:String>
+    <system:String x:Key="ProfileStereoRefreshRate">Taux de rafraissiment contrôlé par le profil du correctif</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="Disable">Disable</system:String>
-    <system:String x:Key="Enable">Enable</system:String>
-    <system:String x:Key="Update">Update</system:String>
-    <system:String x:Key="Clear">Clear</system:String>
+    <system:String x:Key="Disable">Désactiver</system:String>
+    <system:String x:Key="Enable">Activer</system:String>
+    <system:String x:Key="Update">Mettre à jour</system:String>
+    <system:String x:Key="Clear">Nettoyer</system:String>
 
     <!--.................... General Settings Tab End .......................... -->
 
 
     <!--.................... Nvidia 3D Settings Tab Begin .......................... -->
 
-    <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D not detected</system:String>
-    <system:String x:Key="PressKeyCombination">Press a key combination on your keyboard.</system:String>
+    <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D non détectée</system:String>
+    <system:String x:Key="PressKeyCombination">Pressez une combinaison de touches sur votre clavier.</system:String>
 
     <!-- General settings group -->
-    <system:String x:Key="EnableStereoGroup">Enable / set up  3D Functionality:</system:String>
-    <system:String x:Key="EnableNvidia3D">Enable Nvidia Stereoscopic 3D</system:String>
-    <system:String x:Key="Disable3dOnClosing">Auto disable Nvidia Stereoscopic 3D when closing application</system:String>
-    <system:String x:Key="Disable3dOnGameClosing">Auto disable Nvidia Stereoscopic 3D when closing games</system:String>
-    <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
-    <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
-    <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode (DirectX 9 only)</system:String>
-    <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
-    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
-    <system:String x:Key="Nvida3dDriverOverlay">Enable Nvidia 3D driver overlay</system:String>
+    <system:String x:Key="EnableStereoGroup">Activer / paramétrer la fonctionnalité 3D:</system:String>
+    <system:String x:Key="EnableNvidia3D">Activer la 3D Stéréoscopique Nvidia</system:String>
+    <system:String x:Key="Disable3dOnClosing">Auto désactive la 3D Stéréoscopique Nvidia en fermant l'application</system:String>
+    <system:String x:Key="Disable3dOnGameClosing">Auto désactive la 3D Stéréoscopique Nvidia en fermant les jeux</system:String>
+    <system:String x:Key="SetStereoTypeTo3DVision">Forcer 3D Vision / 3DTV Play mode</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunch">Mode 3D activé au lancement du jeu</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">Active la 3D en mode fenêtré (DirectX 9 seulement)</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabled">Mode 3D mode toujours actif</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Définit si l'affichage est en permanence en mode 3D (la 3D en mode fenêtré doit être aussi actif).</system:String>
+    <system:String x:Key="Nvida3dDriverOverlay">Activer l'overlay du pilote 3D Nvidia</system:String>
 
     <!-- 3D depth / 3D Vision shutter glasses group -->
-    <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
-    <system:String x:Key="StereoSeparation">3D depth:</system:String>
-    <system:String x:Key="DepthMultiplier">3D depth multiplier:</system:String>
-    <system:String x:Key="Inch">inch</system:String>
-    <system:String x:Key="StereoRefreshRate">Shutter frequency 3D glasses:</system:String>
-    <system:String x:Key="IROutput">Sync mode of IR sender:</system:String>
+    <system:String x:Key="Advanced3dSettingsGroup">Profondeur 3D Depth / Obturation des lunettes 3D Vision:</system:String>
+    <system:String x:Key="StereoSeparation">Profondeur 3D:</system:String>
+    <system:String x:Key="DepthMultiplier">Multiplicateur Profondeur 3D:</system:String>
+    <system:String x:Key="Inch">Pouce</system:String>
+    <system:String x:Key="StereoRefreshRate">Obturer la fréquence des lunettes 3D:</system:String>
+    <system:String x:Key="IROutput">Mode de Synchronisation IR Sender:</system:String>
     <system:String x:Key="SingleIREnvironment">Single IR Environment</system:String>
     <system:String x:Key="MixedIREnvironment">Multi IR Environment</system:String>
-    <system:String x:Key="LanEnvironment">3D Vision LAN Environment</system:String>
+    <system:String x:Key="LanEnvironment">Environnement LAN 3D Vision</system:String>
 
     <!-- Driver settings group -->
-    <system:String x:Key="DriverSettings2D">Optimize global Driver Profile for 2D Mode:</system:String>
-    <system:String x:Key="DriverSettings3D">Optimize global Driver Profile for 3D Mode:</system:String>
-    <system:String x:Key="MaxPreRenderedFrames">Maximum pre-rendered frames:</system:String>
-    <system:String x:Key="VerticalSync">Vertical sync:</system:String>
-    <system:String x:Key="MonitorTechnology">Monitor technology:</system:String>
-    <system:String x:Key="GsyncMode">G-Sync Mode:</system:String>
-    <system:String x:Key="PreferredRefreshRate">Preferred refresh rate:</system:String>
-    <system:String x:Key="PowerManagementMode">Power management mode:</system:String>
-    <system:String x:Key="ApplicationControlled">Application controlled</system:String>
+    <system:String x:Key="DriverSettings2D">Optimise le profil de pilote global pour le mode 2D:</system:String>
+    <system:String x:Key="DriverSettings3D">Optimise le profil de pilote global pour le mode 3D:</system:String>
+    <system:String x:Key="MaxPreRenderedFrames">Nombre maximum d'images pré-rendues:</system:String>
+    <system:String x:Key="VerticalSync">Synchronisation verticale:</system:String>
+    <system:String x:Key="MonitorTechnology">Technologie du Moniteur:</system:String>
+    <system:String x:Key="GsyncMode">Mode G-Sync:</system:String>
+    <system:String x:Key="PreferredRefreshRate">Taux de rafraichissement préféré:</system:String>
+    <system:String x:Key="PowerManagementMode">Mode de gestion de l'alimentation:</system:String>
+    <system:String x:Key="ApplicationControlled">Application controlée</system:String>
     <system:String x:Key="Off">Off</system:String>
     <system:String x:Key="On">On</system:String>
-    <system:String x:Key="Fast">Fast</system:String>
-    <system:String x:Key="FixedRefreshRate">Fixed refresh rate</system:String>
+    <system:String x:Key="Fast">Rapide</system:String>
+    <system:String x:Key="FixedRefreshRate">Taux de rafraissement corrigé</system:String>
     <system:String x:Key="G-SYNC">G-SYNC</system:String>
     <system:String x:Key="ULMB">ULMB</system:String>
-    <system:String x:Key="FullscreenOnly">Fullscreen only</system:String>
-    <system:String x:Key="FullscreenAndWindowed">Fullscreen and windowed</system:String>
-    <system:String x:Key="HighestAvailable">Highest available</system:String>
-    <system:String x:Key="MaximumPerformance">Maximum performance</system:String>
-    <system:String x:Key="OptimalPerformance">Optimal performance</system:String>
-    <system:String x:Key="Adaptive">Adaptive</system:String>
-    <system:String x:Key="AdaptiveHalf">Adaptive (half refresh rate)</system:String>
-    <system:String x:Key="GlobalDriverProfileFile">Exported profile:</system:String>
+    <system:String x:Key="FullscreenOnly">Plein Ecran seulement</system:String>
+    <system:String x:Key="FullscreenAndWindowed">Plein Ecran et fenêtré</system:String>
+    <system:String x:Key="HighestAvailable">Plus haut disponible</system:String>
+    <system:String x:Key="MaximumPerformance">Performance Maximale</system:String>
+    <system:String x:Key="OptimalPerformance">Performance Optimale</system:String>
+    <system:String x:Key="Adaptive">Adaptif</system:String>
+    <system:String x:Key="AdaptiveHalf">Adaptif (demi taux de rafraîchissement)</system:String>
+    <system:String x:Key="GlobalDriverProfileFile">Profil exporté:</system:String>
 
     <!-- General hotkeys group -->
-    <system:String x:Key="GeneralHotkeys">General Hotkeys:</system:String>
-    <system:String x:Key="StereoToggle">Show / hide stereoscopic effects:</system:String>
-    <system:String x:Key="StereoToggleToolTip">Toggles between plain 2D and stereoscopic 3D while gaming.</system:String>
-    <system:String x:Key="StereoSeparationAdjustLess">Decrease 3D depth:</system:String>
-    <system:String x:Key="StereoSeparationAdjustLessToolTip">Decreases 3D depth / separation.</system:String>
-    <system:String x:Key="StereoSeparationAdjustMore">Increase 3D depth:</system:String>
-    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Increases 3D depth / separation.</system:String>
-    <system:String x:Key="ToggleMemo">Show / hide in-game compatibility:</system:String>
-    <system:String x:Key="ToggleMemoToolTip">Shows / hides green text with compatibility information and recommended in-game settings.</system:String>
+    <system:String x:Key="GeneralHotkeys">Touches Générales:</system:String>
+    <system:String x:Key="StereoToggle">Montrer / cacher les effets stéréoscopiques:</system:String>
+    <system:String x:Key="StereoToggleToolTip">Bascule entre la 2D simple et la 3D stéréoscopique pendant le jeu.</system:String>
+    <system:String x:Key="StereoSeparationAdjustLess">Diminuer la profondeur 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustLessToolTip">Diminue la profondeur 3D / séparation.</system:String>
+    <system:String x:Key="StereoSeparationAdjustMore">Augmenter la profondeur 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Augmente la profondeur 3D / séparation.</system:String>
+    <system:String x:Key="ToggleMemo">Montrer / Cacher la compatibilité dans le jeu :</system:String>
+    <system:String x:Key="ToggleMemoToolTip">Montre / Cache le texte vert avec informations de compatibilité et paramètres recommandés dans le jeu.</system:String>
 
     <!-- Advanced hotkeys group -->
-    <system:String x:Key="AdvancedHotkeys">Advanced Hotkeys:</system:String>
-    <system:String x:Key="StereoAdvancedHKConfig">Enable advanced in-game hotkeys</system:String>
-    <system:String x:Key="StereoAdvancedHKConfigToolTip">Enables advanced hotkeys for changing convergence / frustum settings and more.</system:String>
-    <system:String x:Key="StereoConvergenceAdjustLess">Decrease convergence:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Decreases the pop-out effect in games.</system:String>
-    <system:String x:Key="StereoConvergenceAdjustMore">Increase convergence:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Increases the pop-out effect in games.</system:String>
-    <system:String x:Key="WriteConfig">Save in-game changes:</system:String>
-    <system:String x:Key="WriteConfigToolTip">Saves convergence and frustum adjustments to Nvidia driver profile.</system:String>
-    <system:String x:Key="CycleFrustumAdjust">Cycle frustum adjustment:</system:String>
-    <system:String x:Key="CycleFrustumAdjustToolTip">Cycles through three different frustum adjustments.</system:String>
-    <system:String x:Key="StereoToggleMode">Toggle 3D compatibility mode:</system:String>
-    <system:String x:Key="StereoToggleModeToolTip">Toggles between compatibility mode for DirectX 11 games (Fake 3D) and Real 3D mode.</system:String>
+    <system:String x:Key="AdvancedHotkeys">Touches avancées:</system:String>
+    <system:String x:Key="StereoAdvancedHKConfig">Activer les touches avancées en jeu</system:String>
+    <system:String x:Key="StereoAdvancedHKConfigToolTip">Active les touches avancées pour changer la convergence / frustum settings and more.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLess">Diminuer la convergence:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Diminue l'effet de pop-out dans les jeux.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMore">Augmenter la convergence:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Augmente l'effet de pop-out dans les jeux.</system:String>
+    <system:String x:Key="WriteConfig">Sauvegarder les changements en jeu:</system:String>
+    <system:String x:Key="WriteConfigToolTip">Sauvegarde la convergence et ajustements Frustrum du profil du pilote Nvidia.</system:String>
+    <system:String x:Key="CycleFrustumAdjust">Parcourir les ajustements Frustum:</system:String>
+    <system:String x:Key="CycleFrustumAdjustToolTip">Parcoure à travers 3 différents ajustements Frustum.</system:String>
+    <system:String x:Key="StereoToggleMode">Basculer en mode de compatibilité 3D:</system:String>
+    <system:String x:Key="StereoToggleModeToolTip">Bascule entre le mode de compatibilité pour les jeux DirectX 11 (Fake 3D) et le mode Real 3D.</system:String>
 
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
