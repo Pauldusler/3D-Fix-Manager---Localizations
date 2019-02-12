@@ -30,15 +30,15 @@
     <system:String x:Key="DisplayProfiles">Perfis de Exibição</system:String>
 
     <!-- Game list on left column-->
-    <system:String x:Key="All">All Games</system:String>
-    <system:String x:Key="Installed">Installed Games</system:String>
-    <system:String x:Key="AllFixTypes">All Fix Types</system:String>
+    <system:String x:Key="All">Todos os Jogos</system:String>
+    <system:String x:Key="Installed">Jogos Instalados</system:String>
+    <system:String x:Key="AllFixTypes">Todos Tipos de Correção</system:String>
     <system:String x:Key="_3dmigoto">3dmigoto</system:String>
     <system:String x:Key="Helixmod">Helixmod</system:String>
     <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
-    <system:String x:Key="NotFixed">Without 3D Fix</system:String>
-    <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
-    <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
+    <system:String x:Key="NotFixed">Sem correção 3D</system:String>
+    <system:String x:Key="VerifiedFixes">Correções 3D Verificadas</system:String>
+    <system:String x:Key="UnverifiedFixes">Correções 3D Não Verificadas</system:String>
     <system:String x:Key="New">Novo</system:String>
     <system:String x:Key="CreateProfileToolTip">Criar perfil de correção</system:String>
     <system:String x:Key="Edit">Editar</system:String>
@@ -140,19 +140,19 @@
 
     <system:String x:Key="WaitForExit">Aguardar a saída</system:String>
     <system:String x:Key="GameExeAsArgument">Exe do jogo como parâmetro inicial</system:String>
-    <system:String x:Key="Create">Create</system:String>
+    <system:String x:Key="Create">Criar</system:String>
     <system:String x:Key="GameLauncherExe">Iniciador Exe do Jogo:</system:String>
     <system:String x:Key="GameLauncherOptions">Opções do Inicializador do Jogo:</system:String>
-    <system:String x:Key="ModifyGameExe">Modify Game Exe:</system:String>
-    <system:String x:Key="GameExeSearchString">Search String:</system:String>
-    <system:String x:Key="GameExeReplaceString">Replacement String:</system:String>
-    <system:String x:Key="DoNotModify">Do not modify</system:String>
-    <system:String x:Key="ModifyNormalGameExe">Modify Game Exe</system:String>
-    <system:String x:Key="ModifyAdditionalExe">Modify additional Exe</system:String>
+    <system:String x:Key="ModifyGameExe">Modificar Exe do Jogo:</system:String>
+    <system:String x:Key="GameExeSearchString">Seqüência de pesquisa:</system:String>
+    <system:String x:Key="GameExeReplaceString">Cadeia de Substituição:</system:String>
+    <system:String x:Key="DoNotModify">Não modifique</system:String>
+    <system:String x:Key="ModifyNormalGameExe">Modificar Exe do Jogo</system:String>
+    <system:String x:Key="ModifyAdditionalExe">Modificar Exe adicional</system:String>
     <system:String x:Key="FixDescription">Descrição da Correção:</system:String>
 
-    <system:String x:Key="CreateEditConfigFile">Create / edit</system:String>
-    <system:String x:Key="EditOnlyConfigFile">Edit only</system:String>
+    <system:String x:Key="CreateEditConfigFile">Criar / Editar</system:String>
+    <system:String x:Key="EditOnlyConfigFile">Editar somente</system:String>
 
     <!-- ComboBoxes -->
     <system:String x:Key="NoProfileInstall">Não instalar o Perfil</system:String>
@@ -172,7 +172,7 @@
 
     <system:String x:Key="StartByAppId">Iniciar via ID do App Steam</system:String>
     <system:String x:Key="StartByGameExe">Iniciar via executável do Jogo</system:String>
-    <system:String x:Key="StartByToolExe">Start via additional Exe</system:String>
+    <system:String x:Key="StartByToolExe">Iniciar via Exe adicional</system:String>
 
     <system:String x:Key="RunNormal">Executar normal</system:String>
     <system:String x:Key="RunAsAdmin">Executar como administrador</system:String>
@@ -276,7 +276,7 @@
     <!-- General Ini Settings group -->
     <system:String x:Key="GeneralIniSettings">Configurações gerais do Ini:</system:String>
     <system:String x:Key="StereoOverlay">Sobreposição estéreo:</system:String>
-    <system:String x:Key="EnableStereoOverlay">Stereo Overlay / Hunting Mode:</system:String>
+    <system:String x:Key="EnableStereoOverlay">Sobreposição Estéreo / Modo de Caça:</system:String>
     <system:String x:Key="ShowHideOverlay">Mostrar / Ocultar Sobreposição Estéreo:</system:String>
     <system:String x:Key="ShowHideOverlayToolTip">Tecla de atalho para ocultar a sobreposição. Nota: isto não irá desativar o modo de caça.</system:String>
     <system:String x:Key="ReloadIniFile">Recarregar Arquivo Ini no Jogo:</system:String>
@@ -302,7 +302,7 @@
     <system:String x:Key="ToggleFullscreen">Alternar tela cheia:</system:String>
     <system:String x:Key="ForcedFullscreen">Forçar tela cheia</system:String>
     <system:String x:Key="NormalFullscreen">Tela Cheia normal</system:String>
-    <system:String x:Key="SoftDisabled">Soft Disabled</system:String>
+    <system:String x:Key="SoftDisabled">Suave Desativado</system:String>
     <system:String x:Key="TypeInIntegerToolTip">Digite um valor inteiro.</system:String>
     <system:String x:Key="TypeInCommaSeparatedListToolTip">Digite uma lista separada por vírgulas de taxas de atualização.</system:String>
 
@@ -371,7 +371,7 @@
     <system:String x:Key="CloseRivaTunerIn2D">Sempre feche o RTSS ao jogar no modo 2D</system:String>
     <system:String x:Key="CloseRtssOnAppClose">Feche o RTSS ao encerrar o 3D Fix Manager</system:String>
     <system:String x:Key="RivaTunerNotDetected">Servidor de Estatísticas RivaTuner não detectado / não instalado</system:String>
-    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server older than version 7.2</system:String>
+    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server mais antigo que a versão 7.2</system:String>
 
     <!-- Game Launcher Settings group -->
     <system:String x:Key="GameLauncherSettings">Configurações do Inciador de jogos:</system:String>
@@ -412,13 +412,13 @@
     <system:String x:Key="EnableStereoGroup">Habilitar/configurar a funcionalidade 3D:</system:String>
     <system:String x:Key="EnableNvidia3D">Ativar Nvidia 3D estereoscópico</system:String>
     <system:String x:Key="Disable3dOnClosing">Desativar o Nvidia 3D Estereoscópico ao fechar o aplicativo</system:String>
-    <system:String x:Key="Disable3dOnGameClosing">Auto disable Nvidia Stereoscopic 3D when closing games</system:String>
+    <system:String x:Key="Disable3dOnGameClosing">Auto desabilitar Nvidia 3D Estereoscópico ao fechar jogos</system:String>
     <system:String x:Key="SetStereoTypeTo3DVision">Forçar o modo de reprodução 3D Vision / 3DTV</system:String>
     <system:String x:Key="StereoEnabledOnGameLaunch">Modo 3D ativado no lançamento do jogo</system:String>
     <system:String x:Key="StereoWindowedModeEnabled">Ativar 3D no modo de janela</system:String>
     <system:String x:Key="StereoModeAlwaysEnabled">Modo 3D sempre ativado</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Define se a exibição está permanentemente no modo 3D (o modo com janelas 3D também deve estar ativado).</system:String>
-    <system:String x:Key="Nvida3dDriverOverlay">Enable Nvidia 3D driver overlay</system:String>
+    <system:String x:Key="Nvida3dDriverOverlay">Ativar sobrescrita de driver da Nvidia 3D</system:String>
 
     <!-- 3D depth / 3D Vision shutter glasses group -->
     <system:String x:Key="Advanced3dSettingsGroup">Profundidade 3D / Visão 3D do Óculos Obturador:</system:String>
@@ -426,7 +426,7 @@
     <system:String x:Key="DepthMultiplier">Multiplicador de Profundidade 3D:</system:String>
     <system:String x:Key="Inch">polegadas</system:String>
     <system:String x:Key="StereoRefreshRate">Taxa de atualização estéreo:</system:String>
-    <system:String x:Key="IROutput">Sync mode of IR sender:</system:String>
+    <system:String x:Key="IROutput">Modo de sincronização do emissor IR</system:String>
     <system:String x:Key="SingleIREnvironment">Ambiente Único IR</system:String>
     <system:String x:Key="MixedIREnvironment">Multi Ambiente IR</system:String>
     <system:String x:Key="LanEnvironment">Ambiente de LAN 3D Vision</system:String>
@@ -518,15 +518,15 @@
     <system:String x:Key="TVProfileGroup">Perfil da TV:</system:String>
     <system:String x:Key="ProjectorProfileGroup">Perfil do projetor:</system:String>
     <system:String x:Key="ProfileSettingsGroup">Configurações Gerais do Perfil:</system:String>
-    <system:String x:Key="LinkProfileToDisplay">Link profile to display:</system:String>
+    <system:String x:Key="LinkProfileToDisplay">Perfil do link para exibir:</system:String>
     <system:String x:Key="DisplaySize">Tamanho da tela:</system:String>
     <system:String x:Key="RealScreenSize">Tamanho da tela:</system:String>
     <system:String x:Key="DisplayType">Tipo de Tela 3D:</system:String>
     <system:String x:Key="Preferred3dFormat">Formato 3D preferido:</system:String>
-    <system:String x:Key="GameSettings2D">Game settings for 2D mode:</system:String>
-    <system:String x:Key="GameSettings3D">Game settings for 3D mode:</system:String>
-    <system:String x:Key="FramerateLimit">Framerate limit:</system:String>
-    <system:String x:Key="DesktopSettings">Desktop settings:</system:String>
+    <system:String x:Key="GameSettings2D">Configurações do jogo para o modo 2D:</system:String>
+    <system:String x:Key="GameSettings3D">Configurações do jogo para o modo 3D:</system:String>
+    <system:String x:Key="FramerateLimit">Limite de taxa de quadros:</system:String>
+    <system:String x:Key="DesktopSettings">Configurações da área de trabalho:</system:String>
     <system:String x:Key="GameResolution">Resolução de jogo:</system:String>
     <system:String x:Key="GameResolution2D">Modo 2D de resolução de jogo:</system:String>
     <system:String x:Key="GameResolution3D">Modo 3D de resolução de jogo:</system:String>
@@ -626,7 +626,7 @@ Instalar um Empacotador desbloqueia alguns recursos como o Teclas de Atalho est�
 Notas:
         
 - Instale o HelixMod para jogos DirectX 9
-- Install OpenGL Wrapper for OpenGL games
+- Instale o OpenGL Wrapper para jogos OpenGL
 - Instale o 3dmigoto para jogos DirectX 11
 - Certifique-se de escolher a versão correta (32 bits ou 64 bits)
   Se um exe inicializador de jogo foi adicionado ao perfil de correção, esta informação é detectada automaticamente
@@ -760,12 +760,12 @@ Pauldusler</system:String>
 
     <system:String x:Key="DepthHackError">Erro: o hack de profundidade não pôde ser aplicado / removido.</system:String>
     <system:String x:Key="WritePermissionError">Erro: permissão de gravação para o usuário 'Sistema' não pode apostar definido para a chave Stereo3D no registro do Windows.</system:String>
-    <system:String x:Key="AllFixesDisabled">Success! All installed 3D fixes have been disabled and are no longer active when starting a game next time.</system:String>
-    <system:String x:Key="AllFixesEnabled">Success! All installed 3D fixes have been enabled.</system:String>
-    <system:String x:Key="EnableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be enabled.</system:String>
-    <system:String x:Key="DisableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be disabled.</system:String>
-    <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
-    <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+    <system:String x:Key="AllFixesDisabled">Sucesso! Todas as correções 3D instaladas foram desativadas e não estão mais ativas ao iniciar um jogo na próxima vez.</system:String>
+    <system:String x:Key="AllFixesEnabled">Sucesso! Todas as correções 3D instaladas foram ativadas.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlayError">Erro: a sobreposição do driver 3D não pôde ser ativada.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlayError">Erro: a sobreposição do driver 3D não pôde ser desativada.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">A sobreposição do driver 3D foi ativada com sucesso. &#x0d;&#x0d;Por favor, reinicie o seu sistema para que as alterações entrem em vigor.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">A sobreposição do driver 3D foi desativada com sucesso. &#x0d;&#x0d;Por favor, reinicie o seu sistema para que as alterações entrem em vigor.</system:String>
     
     <!--....................  Dialog Window End .......................... -->
 
@@ -933,8 +933,8 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        Fill in the name of an exe file located in the game directory or an absolute path for starting an arbitrary program before launching the game. This feature is used by the profiles Far Cry 2, F.E.A.R. and INSIDE where it is required to call another exe file.<LineBreak/><LineBreak/>
-        Além disso, você pode definir se o exe jogo deve ser passado como parâmetro de início para a ferramenta e se o início do jogo deve aguardar a saída da ferramenta. Also you can set if you want to create the tool exe by copying the game exe and renaming it.
+        Preencha o nome de um arquivo exe localizado no diretório do jogo ou um caminho absoluto para iniciar um programa arbitrário antes de iniciar o jogo. Este recurso é usado pelos perfis Far Cry 2, F.E.A.R. e INSIDE onde é necessário chamar outro arquivo exe.<LineBreak/><LineBreak/>
+        Além disso, você pode definir se o exe jogo deve ser passado como parâmetro de início para a ferramenta e se o início do jogo deve aguardar a saída da ferramenta. Além disso, você pode definir se você deseja criar a ferramenta exe, copiando o exe jogo e renomeá-lo.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
@@ -945,9 +945,9 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
-        By using this option you can modify the content of an Exe file in order to make it work correctly in stereo 3D mode. This is only required for some "LEGO" games so far.<LineBreak/><LineBreak/>
-        To do this the exe file is read as a binary data and searched for a string you can define in the field on the right side. Then the found string is replaced by another string you can set in the provided field.<LineBreak/><LineBreak/>
-        For safety reasons the original file is backuped in the game directory before the modified file is saved.
+        Ao usar essa opção, você pode modificar o conteúdo de um arquivo Exe para que ele funcione corretamente no modo 3D estéreo. Isso é necessário apenas para alguns jogos "LEGO" até o momento.<LineBreak/><LineBreak/>
+        Para fazer isso, o arquivo exe é lido como um dado binário e pesquisado por uma string que você pode definir no campo à direita. Em seguida, a string encontrada é substituída por outra string que você pode definir no campo fornecido.<LineBreak/><LineBreak/>
+        Por motivos de segurança, o arquivo original é salvo no diretório do jogo antes que o arquivo modificado seja salvo.
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
@@ -958,11 +958,11 @@ Pauldusler</system:String>
 
     <!-- Hotkeys Tab ToolTips -->
     <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
-        Hunting mode is primarily made for shaderhackers. It enables them for searching broken shaders in stereo 3D mode and repairing them.<LineBreak/><LineBreak/>
-        For the end-users hunting mode is interesting for showing an overlay with the current the current 3D depth and convergence. With this the user can finetune 3D hotkeys.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Disables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>
-        <Bold>On:</Bold> Enables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>     
-        <Bold>Soft disabled:</Bold> Hunting mode as well as the stereo 3D overlay aren't completely disabled. By pressing key "0" (default key) you can show the overlay ingame.
+        O modo de caça é feito principalmente para shaderhackers. Ele permite que eles pesquisem sombreamentos quebrados no modo 3D estéreo e reparem-nos.<LineBreak/><LineBreak/>
+        Para o modo de caça aos usuários finais é interessante para mostrar uma sobreposição com a corrente atual profundidade e convergência 3D. Com isso, o usuário pode afinar as teclas de atalho 3D.<LineBreak/><LineBreak/>
+        <Bold>Desligado:</Bold> Modo de busca desativado e sobreposição 3D estéreo.<LineBreak/><LineBreak/>
+        <Bold>Ligado:</Bold> Ativa o modo de caça e a sobreposição 3D estéreo.<LineBreak/><LineBreak/>     
+        <Bold>Suave Desativado:</Bold> O modo de caça, assim como a sobreposição 3D estéreo, não estão completamente desativados. Ao pressionar a tecla "0" (tecla padrão), você pode mostrar a sobrescrita no jogo.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
@@ -996,19 +996,19 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="DefaultPresetToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled you can define a default preset which is active wenn the game is launched.
+        Quando a opção está ativada, você pode definir uma predefinição que fica ativa quando o jogo é iniciado.
     </TextBlock>
 
     <TextBlock x:Key="cbDefaultPresetToolTip" TextWrapping="Wrap" Width="300">
-        This is the active preset when launching the game.
+        Esta é a predefinição ativa ao iniciar o jogo.
     </TextBlock>
 
     <TextBlock x:Key="DelayToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled you can define a duration a key has to be held down until the respective 3D preset is activated.
+        Quando a opção está ativada, você pode definir uma duração que uma tecla deve manter pressionada até que a respectiva predefinição 3D seja ativada.
     </TextBlock>
 
     <TextBlock x:Key="DelayMsToolTip" TextWrapping="Wrap" Width="300">
-        Time in [ms] a key has to be held down until the 3D preset is activated.
+        Tempo em [ms] uma tecla deve ser pressionada até que a predefinição 3D seja ativada.
     </TextBlock>
 
     <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
@@ -1309,7 +1309,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
-        Disables Nvidia Stereoscopic 3D when closing a running game.
+        Desativa o Nvidia 3D Stereoscopico ao fechar um jogo em execução.
     </TextBlock>
 
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
@@ -1327,10 +1327,10 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="Nvidia3dDriverOverlayToolTip" TextWrapping="Wrap" Width="300">
-        With this option you can completely switch off the overlay which is typcially active when playing in stereo 3D mode.<LineBreak/><LineBreak/>
-        By disabling the overlay both the graphical representation for the 3D depth as well as the info box with the green text aren't shown in games any more.<LineBreak/><LineBreak/>
-        Further more you generally won't see the red warning text <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> any more.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind that you need to restart your system after disabling or re-enabling the overlay. In addition the changes are undone after updating the graphics driver.
+        Com esta opção, você pode desligar completamente a sobreposição, que normalmente é ativada ao reproduzir no modo 3D estéreo.<LineBreak/><LineBreak/>
+        Desabilitando a sobreposição, tanto a representação gráfica da profundidade 3D quanto a caixa de informações com o texto verde não são mais exibidas nos jogos.<LineBreak/><LineBreak/>
+        Ainda mais, você geralmente não verá o texto de aviso vermelho <Italic><Bold>"Aviso: tente executar o estereoscópico no modo de exibição não estéreo"</Bold></Italic> mais.<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Lembre-se de que você precisa reiniciar o sistema depois de desativar ou reativar a sobreposição. Além disso, as alterações são desfeitas após a atualização do driver gráfico.
     </TextBlock>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
@@ -1389,17 +1389,17 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
-        Please select a display device from the list which shall be linked to this display profile. When doing so this display profile is automatically chosen when starting a game on the display device.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> It's highly recommended that you link all the display profiles you use to a display device to eliminate the need for choosing the display profile manually when launching a game. Instead the correct display profile is detected automatically then.
+        Por favor, selecione um dispositivo de exibição da lista que deve ser vinculado a este perfil de exibição. Ao fazer isso, este perfil de exibição é escolhido automaticamente ao iniciar um jogo no dispositivo de exibição.<LineBreak/><LineBreak/>
+       <Bold>Nota:</Bold> É altamente recomendável vincular todos os perfis de exibição que você usa a um dispositivo de exibição para eliminar a necessidade de escolher o perfil de exibição manualmente ao iniciar um jogo. Em vez disso, o perfil de exibição correto é detectado automaticamente.
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
-        Choose the display device to be linked to the display profile.
+        Escolha o dispositivo de exibição a ser vinculado ao perfil de exibição.
     </TextBlock>
 
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
         Por favor, defina o tamanho real do seu monitor em polegadas. Esse valor é gravado no Registro do Windows assim que você inicia um jogo para obter a profundidade máxima correta em 3D.<LineBreak/><LineBreak/>
-        Se você ach a que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
+        Se você acha que a profundidade máxima do 3D não é alta o suficiente vá para a guia <Bold><Italic>Configurações Nvidia 3D</Italic></Bold> e defina o multiplicador 3D Profundidade. Com isso, você pode aumentar a profundidade máxima em 3D de todos os dispositivos de exibição igualmente.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
@@ -1424,39 +1424,39 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For G-Sync monitors set the framerate just below the maximum refresh rate to prevent vertical sync getting active which would increase input lag.<LineBreak/><LineBreak/>
-        For example when using a 144 Hz monitor you should set the fps limit to 142 (2 fps difference).<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+        Limita a taxa de quadros ao valor especificado ao reproduzir no modo 2D.<LineBreak/><LineBreak/>
+        <Bold>Recomendado:</Bold> Para monitores G-Sync, defina a taxa de quadros um pouco abaixo da taxa máxima de atualização para evitar que a sincronização vertical seja ativada, o que aumentaria o atraso de entrada.<LineBreak/><LineBreak/>
+        Por exemplo, ao usar um monitor de 144 Hz, você deve definir o limite de fps para 142 (diferença de 2 fps).<LineBreak/><LineBreak/>
+        <Bold>Nota:</Bold> Para usar este recurso, o RivaTuner Statistics Server deve estar instalado. O 3D Fix Manager configura automaticamente o RTSS com base nas suas demandas.
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 3D mode. By limiting the framerate you can significantly reduce input lag.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D Vision certified monitors or Generic CRT display devices you should set framerate to <Bold>"1/2 Stereo Refresh Rate"</Bold>. By doing this the framerate limit cam be detected automatically in dependency of the Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
-        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.
-        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+        Limita a taxa de quadros ao valor especificado ao reproduzir no modo 3D. Ao limitar o framerate, você pode reduzir significativamente o atraso de entrada.<LineBreak/><LineBreak/>
+        <Bold>Recomendado:</Bold> Para monitores certificados 3D Vision ou dispositivos de exibição CRT genéricos, você deve definir a taxa de quadros como <Bold>"1/2 taxa de atualização estéreo"</Bold>. Ao fazer isso, o limite de taxa de quadros pode ser detectado automaticamente em dependência do limite de taxa de quadros em relação ao automatismo automático em Dependência da taxa de atualização usada do conjunto de monitores. Geralmente o resultado do teste morre em uns 60 FPS-Limit.<LineBreak/><LineBreak/>        
+        Ao usar o 3DTV Play ou o Passive 3D, você deve definir o limite da taxa de quadros para 60.
+        <Bold>Nota:</Bold> Para usar este recurso, o RivaTuner Statistics Server deve estar instalado. O 3D Fix Manager configura automaticamente o RTSS com base nas suas demandas.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
-        Scanline Sync is a new feature of RivaTuner Statistics Server which does have a similar effect like Vertical Sync on. As well as Vertical Sync, Scanline Sync prevents tearing and makes sure you get a steady clear image. You should use this feature when your display does not support G-Sync or Freesync.<LineBreak/><LineBreak/>
-        Advantage over Vertical Sync on is the ultra low input lag. Disadvantage however is that Scanline Sync does not work with all games and all refresh rates properly so far.<LineBreak/><LineBreak/>
-        Scanline Sync works by limiting the framerate to the refresh rate of your display with a tearline located in a fixed position. This tearline can be moved down via the scanline index until the line is hidden in vertical blanking interval.<LineBreak/><LineBreak/> 
-        <Bold>Note:</Bold> So far it's known that Scanline Sync works best in 2D mode for resolution with 60 hz refresh rate. When using higher refresh rates intermittent tearing can occur or the tearline can be out of control. This depends on the individual game or the game engine it uses.<LineBreak/><LineBreak/> 
-        <Bold>Important:</Bold> Vertical Sync has to be switched off ingame in order to make Scanline Sync work. Additionally Vertical Sync has to be disabled in the global driver profile as well. Turning off Vertical Sync in global driver profile is done automatically by 3D Fix Manager.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D mode the best thing is to enable Scanline Sync in the individual fix profile only. By doing so you only use this feature when it actually works for the game. Additionally Scanline Sync should be turned off in the global driver profile then.<LineBreak/><LineBreak/>
-        For 2D mode and non-G-Sync / -Freesync devices you can try to enable Scanline-Sync on a global basis as the chances are higher that Scanline Sync works for that mode. For games where it does not work disable Scanline Sync in the individual fix profile then.
+        O Scanline Sync é um novo recurso do RivaTuner Statistics Server, que tem um efeito similar ao do Vertical Sync. Assim como o Vertical Sync, o Scanline Sync impede o rasgo e garante uma imagem nítida e estável. Você deve usar este recurso quando seu monitor não suportar G-Sync ou Freesync.<LineBreak/><LineBreak/>
+        A vantagem sobre a sincronização vertical é o atraso de entrada ultrabaixo. No entanto, a desvantagem é que o Scanline Sync não funciona com todos os jogos e todas as taxas de atualização corretamente até o momento.<LineBreak/><LineBreak/>
+        O Scanline Sync funciona limitando a taxa de quadros à taxa de atualização de sua exibição com uma linha de rasgo localizada em uma posição fixa. Esta linha de rasgo pode ser movida para baixo através do índice da linha de varredura até que a linha esteja oculta no intervalo de apagamento vertical.<LineBreak/><LineBreak/> 
+        <Bold>Nota:</Bold> Até agora, é sabido que o Scanline Sync funciona melhor no modo 2D para resolução com taxa de atualização de 60 hz. Ao usar taxas de atualização mais altas, pode ocorrer uma ruptura intermitente ou a linha de corte pode ficar fora de controle. Isso depende do jogo individual ou do mecanismo de jogo usado.<LineBreak/><LineBreak/> 
+        <Bold>Importante:</Bold> A sincronização vertical deve ser desativada no jogo para que o Scanline Sync funcione. Além disso, o Vertical Sync também deve ser desativado no perfil do driver global. Desativar a Sincronização Vertical no perfil do driver global é feito automaticamente pelo 3D Fix Manager.<LineBreak/><LineBreak/>
+        <Bold>Recomendado:</Bold> Para o modo 3D, o melhor é ativar o Scanline Sync somente no perfil de correção individual. Ao fazer isso, você só usa esse recurso quando ele realmente funciona para o jogo. Além disso, o Scanline Sync deve ser desativado no perfil do driver global.<LineBreak/><LineBreak/>
+        Para dispositivos de modo 2D e não-G-Sync / -Freesync, você pode tentar ativar o Scanline-Sync em uma base global, pois as chances são maiores de que o Scanline Sync funcione para esse modo. Para jogos em que não funciona, desative o Scanline Sync no perfil de correção individual.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
-        <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
-        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with 2 tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
-        <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
+        <Bold>x:</Bold> Limita a taxa de quadros à taxa de atualização da exibição com uma linha de rasgo localizada em uma posição fixa. Normalmente você deve escolher esta opção para o modo 2D.<LineBreak/><LineBreak/>
+        <Bold>x2</Bold> Limita a taxa de quadros a taxa de atualização dupla da tela com duas linhas de rasgo localizadas em posições fixas. Ambas as linhas de lágrima podem ser movidas para baixo e uma delas escondida em branco invertido vertical.<LineBreak/><LineBreak/>
+        <Bold>x/2:</Bold> Limita a taxa de quadros a metade da taxa de atualização da tela com uma linha de rasgo localizada em uma posição fixa. Normalmente você deve escolher essa opção para o modo 3D.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
-        This option moves the tearline. Positive numbers move the thearline downwards and negative upwards.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
-        <Bold>Auto: </Bold> The tearling is automatically moved downwards by the correct value until it's hidden in the vertical blanking interval. For detecting the correct value you have to set the desired game resolution first.
+        Esta opção move a linha de rasgo. Números positivos movem a linha de baixo para baixo e negativos para cima.<LineBreak/><LineBreak/>
+        <Bold>Desligado:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
+        <Bold>Auto: </Bold> O tearling é movido automaticamente para baixo pelo valor correto até que esteja oculto no intervalo de apagamento vertical. Para detectar o valor correto, você deve definir primeiro a resolução do jogo desejada.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
