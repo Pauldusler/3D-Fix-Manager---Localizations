@@ -479,94 +479,94 @@
     <system:String x:Key="WriteConfig">Sauvegarder les changements en jeu:</system:String>
     <system:String x:Key="WriteConfigToolTip">Sauvegarde la convergence et ajustements Frustrum du profil du pilote Nvidia.</system:String>
     <system:String x:Key="CycleFrustumAdjust">Parcourir les ajustements Frustum:</system:String>
-    <system:String x:Key="CycleFrustumAdjustToolTip">Parcoure à travers 3 différents ajustements Frustum.</system:String>
+    <system:String x:Key="CycleFrustumAdjustToolTip">Parcourir à travers 3 différents ajustements Frustum.</system:String>
     <system:String x:Key="StereoToggleMode">Basculer en mode de compatibilité 3D:</system:String>
     <system:String x:Key="StereoToggleModeToolTip">Bascule entre le mode de compatibilité pour les jeux DirectX 11 (Fake 3D) et le mode Real 3D.</system:String>
 
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
-    <system:String x:Key="StereoImageType">Stereo image type:</system:String>
-    <system:String x:Key="StereoImageTypeToolTip">Sets the format for stereoscopic images (JPS or PNS).</system:String>
-    <system:String x:Key="StereoImageFolder">Open Folder</system:String>
-    <system:String x:Key="StereoImageFolderToolTip">Opens location of screenshots folder in windows explorer.</system:String>
-    <system:String x:Key="SnapShotQuality">JPS quality:</system:String>
-    <system:String x:Key="SnapShotQualityToolTip">Determines image quality and file size.</system:String>
-    <system:String x:Key="SaveStereoImage">Take screenshot:</system:String>
-    <system:String x:Key="SaveStereoImageToolTip">Saves a stereoscopic screenshot on the hard drive.</system:String>
+    <system:String x:Key="StereoImageType">Type d'image Stéréo:</system:String>
+    <system:String x:Key="StereoImageTypeToolTip">Définie le format pour les images stéréoscopiques (JPS ou PNS).</system:String>
+    <system:String x:Key="StereoImageFolder">Ouvrir répertoire</system:String>
+    <system:String x:Key="StereoImageFolderToolTip">Ouvre la localisation du répertoire des screenshots dans l'explorateur Windows.</system:String>
+    <system:String x:Key="SnapShotQuality">Qualité JPS:</system:String>
+    <system:String x:Key="SnapShotQualityToolTip">Détermine la qualité d'image et la taille de fichier.</system:String>
+    <system:String x:Key="SaveStereoImage">Prendre un screenshot:</system:String>
+    <system:String x:Key="SaveStereoImageToolTip">Sauvegarde un screenshot stéréoscopique sur le disque dur.</system:String>
 
     <!-- LaserSight group -->
-    <system:String x:Key="LaserSightGroup">Laser Sight:</system:String>
-    <system:String x:Key="LaserSightEnabled">Enable laser sight:</system:String>
-    <system:String x:Key="LaserSightEnabledToolTip">Sets whether 3D laser sight can be enabled with a hotkey or automatically by Nvidia driver profile.</system:String>
-    <system:String x:Key="ToggleLaserSight">Toggle laser sight:</system:String>
-    <system:String x:Key="ToggleLaserSightToolTip">Enables or disables stereoscopic laser sight in-game.</system:String>
-    <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
-    <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
-    <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
-    <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
+    <system:String x:Key="LaserSightGroup">Visée Laser:</system:String>
+    <system:String x:Key="LaserSightEnabled">Activer la visée Laser:</system:String>
+    <system:String x:Key="LaserSightEnabledToolTip">Définit si la visée laser 3D peut être activée avec un raccourci clavier ou automatiquement par le profil du pilote Nvidia.</system:String>
+    <system:String x:Key="ToggleLaserSight">Basculer la visée Laser:</system:String>
+    <system:String x:Key="ToggleLaserSightToolTip">Active ou désactive la visée Laser stéréoscopique en jeu.</system:String>
+    <system:String x:Key="LaserSightTransparency">Transparence de la visée Laser:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Contrôle la transparence de la visée Laser.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Visée Laser:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Définie l'apparence de la visée Laser.</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="Load">Load</system:String>
-    <system:String x:Key="Reset">Reset</system:String>
-    <system:String x:Key="Apply">Apply</system:String>
+    <system:String x:Key="Load">Charger</system:String>
+    <system:String x:Key="Reset">Réinitialise</system:String>
+    <system:String x:Key="Apply">Applique</system:String>
 
     <!--.................... Nvidia 3D Settings Tab End .......................... -->
 
 
     <!--.................... Display Profiles Tab Begin .......................... -->
 
-    <system:String x:Key="MonitorProfileGroup">Monitor Profile:</system:String>
-    <system:String x:Key="TVProfileGroup">TV Profile:</system:String>
-    <system:String x:Key="ProjectorProfileGroup">Projector Profile:</system:String>
-    <system:String x:Key="ProfileSettingsGroup">General Profile Settings:</system:String>
-    <system:String x:Key="LinkProfileToDisplay">Link profile to display:</system:String>
-    <system:String x:Key="DisplaySize">Display size:</system:String>
-    <system:String x:Key="RealScreenSize">Screen size:</system:String>
-    <system:String x:Key="DisplayType">3D display type:</system:String>
-    <system:String x:Key="Preferred3dFormat">Preferred 3D format:</system:String>
-    <system:String x:Key="GameSettings2D">Game settings for 2D mode:</system:String>
-    <system:String x:Key="GameSettings3D">Game settings for 3D mode:</system:String>
-    <system:String x:Key="FramerateLimit">Framerate limit:</system:String>
-    <system:String x:Key="DesktopSettings">Desktop settings:</system:String>
-    <system:String x:Key="GameResolution">Game resolution:</system:String>
-    <system:String x:Key="GameResolution2D">Game resolution 2D mode:</system:String>
-    <system:String x:Key="GameResolution3D">Game resolution 3D mode:</system:String>
-    <system:String x:Key="DesktopResolution2D">Desktop resolution 2D mode:</system:String>
-    <system:String x:Key="DesktopResolution2DClosing">Desktop resolution on closing:</system:String>
-    <system:String x:Key="DesktopResolution3D">Desktop resolution 3D mode:</system:String>
-    <system:String x:Key="ShowProfileSelectionOnStartup">Show profile selection dialog on application start</system:String>
-    <system:String x:Key="ShowProfileSelectionOnGameStart">Show profile selection dialog on game start</system:String>
-    <system:String x:Key="AllowDisplayProfileOverride">Allow fix profiles to override global display profiles</system:String>
-    <system:String x:Key="DefaultProfileOnStartup">Default profile on startup:</system:String>
-    <system:String x:Key="PleaseChooseProfile">Please choose a display profile:</system:String>
-    <system:String x:Key="ShowProfileDialogOnGameStart">Show this dialog every time a game is started</system:String>
-    <system:String x:Key="ShowProfileDialogOnAppStart">Show this dialog every time the application is started</system:String>
+    <system:String x:Key="MonitorProfileGroup">Profil du moniteur:</system:String>
+    <system:String x:Key="TVProfileGroup">Profil de la TV:</system:String>
+    <system:String x:Key="ProjectorProfileGroup">Profil du projecteur:</system:String>
+    <system:String x:Key="ProfileSettingsGroup">réglages généraux du profil:</system:String>
+    <system:String x:Key="LinkProfileToDisplay">Lie le profil à l'affichage:</system:String>
+    <system:String x:Key="DisplaySize">Taille d'affichage:</system:String>
+    <system:String x:Key="RealScreenSize">Taille de l'écran:</system:String>
+    <system:String x:Key="DisplayType">Type d'affichage 3D:</system:String>
+    <system:String x:Key="Preferred3dFormat">Format 3D préféré:</system:String>
+    <system:String x:Key="GameSettings2D">Réglages du jeu pour le mode 2D:</system:String>
+    <system:String x:Key="GameSettings3D">Réglages du jeu pour le mode 3D:</system:String>
+    <system:String x:Key="FramerateLimit">Limite de framerate:</system:String>
+    <system:String x:Key="DesktopSettings">Réglages du Bureau:</system:String>
+    <system:String x:Key="GameResolution">Définition du jeu:</system:String>
+    <system:String x:Key="GameResolution2D">Définition du jeu en mode 2D:</system:String>
+    <system:String x:Key="GameResolution3D">Définition du jeu en mode 3D:</system:String>
+    <system:String x:Key="DesktopResolution2D">Définition du Bureau en mode 2D:</system:String>
+    <system:String x:Key="DesktopResolution2DClosing">Définition du Bureau à la fermeture:</system:String>
+    <system:String x:Key="DesktopResolution3D">Définition du Bureau en mode 3D:</system:String>
+    <system:String x:Key="ShowProfileSelectionOnStartup">Afficher la boîte de dialogue de sélection de profil au démarrage de l'application</system:String>
+    <system:String x:Key="ShowProfileSelectionOnGameStart">Afficher la boîte de dialogue de sélection de profil au démarrage du jeu</system:String>
+    <system:String x:Key="AllowDisplayProfileOverride">Autoriser les profils de correctifs à remplacer les profils d'affichage globaux</system:String>
+    <system:String x:Key="DefaultProfileOnStartup">Profil par défaut au démarrage:</system:String>
+    <system:String x:Key="PleaseChooseProfile">Svp^choisissez un profil d'affichage:</system:String>
+    <system:String x:Key="ShowProfileDialogOnGameStart">Affiche cette boite de dialogue à chaque fois qu'un jeu est lancé</system:String>
+    <system:String x:Key="ShowProfileDialogOnAppStart">Affiche cette boite de dialogue à chaque fois que l'application est lancée</system:String>
 
     <!--.................... Display Profiles Tab End .......................... -->
 
 
     <!--.................... About Tab Begin .......................... -->
 
-    <system:String x:Key="ProgramDevelopedBy">Program developed by:</system:String>
-    <system:String x:Key="FixesDevelopedBy">3D Fixes developed by:</system:String>
-    <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
-    <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
-    <system:String x:Key="ProgramVersion">Program version:</system:String>
-    <system:String x:Key="FixProfiles">Profiles version:</system:String>
-    <system:String x:Key="CheckUpdate">Check for Updates</system:String>
-    <system:String x:Key="UpdateSuccess">Update completed</system:String>
-    <system:String x:Key="UpdateFailed">Update failed</system:String>
-    <system:String x:Key="ChangeNotes">(Change Notes)</system:String>
-    <system:String x:Key="Donate">Donate</system:String>
-    <system:String x:Key="Installing">Installing...</system:String>
+    <system:String x:Key="ProgramDevelopedBy">Programme développé par:</system:String>
+    <system:String x:Key="FixesDevelopedBy">Correctifs 3D développés par :</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Faire un don au développeur de 3D Fix Manager.</system:String>
+    <system:String x:Key="DonationShaderHackersToolTip">Faire un don aux développeur de correctifs 3D.</system:String>
+    <system:String x:Key="ProgramVersion">Version de programmme:</system:String>
+    <system:String x:Key="FixProfiles">Version des profils:</system:String>
+    <system:String x:Key="CheckUpdate">Vérifie les mises à jour</system:String>
+    <system:String x:Key="UpdateSuccess">Mise à jour complétée</system:String>
+    <system:String x:Key="UpdateFailed">Mise à jour échouée</system:String>
+    <system:String x:Key="ChangeNotes">(Notes de changements)</system:String>
+    <system:String x:Key="Donate">Faire un don</system:String>
+    <system:String x:Key="Installing">Installation en cours...</system:String>
 
     <!-- Buttons -->
-    <system:String x:Key="Manual">Manual</system:String>
-    <system:String x:Key="ReportBugs">Report Bugs</system:String>
-    <system:String x:Key="UpdateSteamDb">Update Steam DB</system:String>
-    <system:String x:Key="CreateReleases">Create Releases</system:String>
-    <system:String x:Key="ReferenceDb">Fill Reference DB</system:String>
-    <system:String x:Key="GithubLanguages">GitHub Languages</system:String>
+    <system:String x:Key="Manual">Manuel</system:String>
+    <system:String x:Key="ReportBugs">Signaler des bugs</system:String>
+    <system:String x:Key="UpdateSteamDb">Mettre à jour la base de données Steam</system:String>
+    <system:String x:Key="CreateReleases">Créer des Releases</system:String>
+    <system:String x:Key="ReferenceDb">Remplir la référence de la base de données</system:String>
+    <system:String x:Key="GithubLanguages">Langues GitHub</system:String>
 
     <!--.................... About Tab End .......................... -->
 
