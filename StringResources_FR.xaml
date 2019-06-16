@@ -20,9 +20,12 @@
 
     <!-- Tab header title -->
     <system:String x:Key="Installation">Installation</system:String>
+    <system:String x:Key="Play">Jouer</system:String>
     <system:String x:Key="EditProfile">Editer le Profil</system:String>
     <system:String x:Key="NewProfile">Nouveau Profil</system:String>
     <system:String x:Key="Hotkeys">Raccourcis</system:String>
+    <system:String x:Key="3dfix">3D Fix</system:String>
+    <system:String x:Key="Profile">Profil</system:String>
     <system:String x:Key="Settings">Réglages</system:String>
     <system:String x:Key="About">A propos</system:String>
     <system:String x:Key="GeneralSettings">Réglages généraux</system:String>
@@ -33,12 +36,13 @@
     <system:String x:Key="All">All Games</system:String>
     <system:String x:Key="Installed">Installed Games</system:String>
     <system:String x:Key="AllFixTypes">All Fix Types</system:String>
-    <system:String x:Key="_3dmigoto">3dmigoto</system:String>
-    <system:String x:Key="Helixmod">Helixmod</system:String>
+    <system:String x:Key="_3dmigoto">3dmigoto (DX 11)</system:String>
+    <system:String x:Key="Helixmod">Helixmod (DX 9)</system:String>
     <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
     <system:String x:Key="NotFixed">Without 3D Fix</system:String>
     <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
     <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
+    <system:String x:Key="VrCompatible">VR compatible</system:String>
     <system:String x:Key="New">Nouveau</system:String>
     <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
     <system:String x:Key="Edit">Editer</system:String>
@@ -50,6 +54,7 @@
     <system:String x:Key="NoGamesInstalled">Aucun jeu compatible installé.</system:String>
     <system:String x:Key="Play2D">Jouer en 2D</system:String>
     <system:String x:Key="Play3D">Jouer en 3D</system:String>
+    <system:String x:Key="PlayVr">Jouer en VR</system:String>
     <system:String x:Key="InstallFix">Installer le fix 3D</system:String>
     <system:String x:Key="InstallFixCompleted">Installation terminée</system:String>
     <system:String x:Key="BackupRecoveryFailed">Backup recovery failed.</system:String>
@@ -73,7 +78,7 @@
     <system:String x:Key="VisitSteamStoreToolTip">Ouvre la page produit dans le navigateur pour obtenir des informations du jeu.</system:String>
     <system:String x:Key="VisitHelixMod">HelixMod Blog</system:String>
     <system:String x:Key="VisitHelixModToolTip">Obtenir plus d'informations sur le fix sélectionné sur la page HelixMod.</system:String>
-    <system:String x:Key="ForceCompatibilityMode">Forcer le CM</system:String>
+    <system:String x:Key="ForceCompatibilityMode">Activer le CMU</system:String>
     <system:String x:Key="EnableFix">Activer le Fix</system:String>
     <system:String x:Key="DownloadCompleted">Téléchargement complété</system:String>
     <system:String x:Key="Downloading">Téléchargement en cours...</system:String>
@@ -87,6 +92,7 @@
 
     <!--.................... New / Edit Profile Tab Begin .......................... -->
 
+    <system:String x:Key="VrCompatibility">Compatible to VR:</system:String>
     <system:String x:Key="MainSettingsGroup">Title and State of the 3D Fix:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
     <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
@@ -204,6 +210,54 @@
 
 
     <!--.................... Hotkeys Tab Begin .......................... -->
+
+    <system:String x:Key="CmuGameExe">Game Exe:</system:String>
+    <system:String x:Key="AutoPatch">Enable auto patching:</system:String>
+    <system:String x:Key="PatchDelay">Patch delay:</system:String>
+    <system:String x:Key="AutoUpdateDriver">Update driver profile:</system:String>
+    <system:String x:Key="CmuSettings">Compatibility Mode Unleashed Settings:</system:String>
+    <system:String x:Key="CmuWarning" xml:space="preserve">Show CMU warning</system:String>
+    <system:String x:Key="CmuWarningDialog" xml:space="preserve">Warning: Although not being a cheat tool CMU might be detected as such in online games. As a result your game account would be banned.
+
+Therefore it's recommended to use CMU for singleplayer or offline games only.</system:String>
+
+    <TextBlock x:Key="CmuWarningToolTip" TextWrapping="Wrap" Width="300">
+        Warns the user that using CMU in online games might lead to a ban of the game account.
+    </TextBlock>
+    
+    <TextBlock x:Key="AutoUpdateDriverToolTip" TextWrapping="Wrap" Width="300">
+        This option controls whether to modify the driver profile of the game.<LineBreak/><LineBreak/>
+        If you have installed 3dmigoto this option is automatically disabled because 3dmigoto will take care of setting the driver profile for Compatibility Mode.<LineBreak/><LineBreak/>
+        When 3dmigoto is not installed CMU is used instead for adjusting the driver profile.
+    </TextBlock>
+
+    <TextBlock x:Key="AutoPatchToolTip" TextWrapping="Wrap" Width="300">
+        Controls whether to enable CMU automatically when starting a game. The activation of CMU is done after a defined period you can adjust in the option below.<LineBreak/><LineBreak/>
+        CMU then patches the Nvidia driver and allows the CMU hotkeys to work in order increase the 3D depth beyond allowed values by pressing F11 (default key binding).<LineBreak/><LineBreak/>       
+        If you leave this option disabled you have to press CTRL + SHIFT + T ingame for enabling CMU manually.
+    </TextBlock>
+
+    <TextBlock x:Key="PatchDelayToolTip" TextWrapping="Wrap" Width="300">
+        Defines the period for automatically enabling CMU after the game was started.
+    </TextBlock>
+
+    <TextBlock x:Key="CmuGameExeToolTip" TextWrapping="Wrap" Width="300">
+        Name of the executable used to start the game.<LineBreak/><LineBreak/>
+        This is automatically set and should only be changed if required.
+    </TextBlock>
+
+    <TextBlock x:Key="CmuConvergenceToolTip" TextWrapping="Wrap" Width="300">
+       Enter the convergence value you want to set when the hotkey is pressed.<LineBreak/><LineBreak/>
+       Valid values range from 0.2 and 1.0. All numbers higher or lower than this are clamped by the Nvidia driver.
+    </TextBlock>
+
+    <TextBlock x:Key="CmuSeparationToolTip" TextWrapping="Wrap" Width="300">
+        Enter a factor to be multiplied with the current 3D depth.<LineBreak/><LineBreak/>
+        In other words with this factor you can exceed the very limited 3D depth of Compatibility Mode to improve the 3D effect.<LineBreak/><LineBreak/>
+        Example: if you choose a value of 2.2 this means that your maximum 3D depth is increased by 220%.<LineBreak/><LineBreak/>
+        You can also use the factor to lower the 3D depth (e.g. with a value of 0.2).<LineBreak/><LineBreak/>
+        This is especially useful in ego shooters where you want to aim by holding the right mouse button. A low 3D depth in this situation makes aiming more comfortable.
+    </TextBlock>
 
     <system:String x:Key="FixInfo">Information sur le Fix:</system:String>
     <system:String x:Key="Game">Jeu:</system:String>
@@ -324,7 +378,9 @@
 
     <!-- General Settings group -->
     <system:String x:Key="GeneralSettingsGroup">Réglages Généraux:</system:String>
+    <system:String x:Key="UseProgramFor">Use program for:</system:String>
     <system:String x:Key="CheckForUpdates">Vérifier les mises à jour au démarrage</system:String>
+    <system:String x:Key="CheckForDriverUpdates">Check for driver updates at startup</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Optimise les réglages du jeu pour la 3D Stéréo</system:String>
     <system:String x:Key="EnableSteamOverlay">Active l'Overlay Steam</system:String>
     <system:String x:Key="FullscreenOptimizations">Optimisations du Plein Ecran:</system:String>
@@ -333,7 +389,7 @@
     <system:String x:Key="PreferIconDownload">Préférer les icônes du jeu de la base de donnéees d'Internet</system:String>
     <system:String x:Key="ResetAllIcons">Réinitialiser tous les icônes des jeux:</system:String>
     <system:String x:Key="DoNotChangeSetting">Garder les réglages actuels</system:String>
-    <system:String x:Key="DownloadScreenshots"Télécharger les screenshots stéréoscopiques</system:String>
+    <system:String x:Key="DownloadScreenshots">Télécharger les screenshots stéréoscopiques</system:String>
 
 
     <!-- 3D Fix / 3dmigoto settings group -->
@@ -509,7 +565,7 @@
     <system:String x:Key="Load">Charger</system:String>
     <system:String x:Key="Reset">Réinitialise</system:String>
     <system:String x:Key="Apply">Applique</system:String>
-
+    
     <!--.................... Nvidia 3D Settings Tab End .......................... -->
 
 
@@ -559,6 +615,13 @@
     <system:String x:Key="ChangeNotes">(Notes de changements)</system:String>
     <system:String x:Key="Donate">Faire un don</system:String>
     <system:String x:Key="Installing">Installation en cours...</system:String>
+    <system:String x:Key="InstallingDrivers">Installing drivers...</system:String>
+    <system:String x:Key="Installing3dVisionDriver">Installing 3D Vision driver...</system:String>
+    <system:String x:Key="InstallFailed">Driver install failed.</system:String>
+    <system:String x:Key="DownloadingDrivers">Downloading driver...</system:String>
+    <system:String x:Key="ExtractingDrivers">Extracting driver. Please wait...</system:String>
+    <system:String x:Key="Extracting3dVisionDriver">Extracting 3D Vision driver. Please wait...</system:String>
+    
 
     <!-- Buttons -->
     <system:String x:Key="Manual">Manuel</system:String>
@@ -590,6 +653,58 @@
     <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
 
     <!-- Messages -->
+
+    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode.&#x0d;&#x0d;Please install 3D Vision driver and try again.</system:String>
+
+    <!-- Driver update dialog -->
+    <system:String x:Key="DriverUpdateHeadline">A new Geforce graphics driver is available. Do you want to update your driver?</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Installed driver:    {0}</system:String>
+    <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Latest driver:        {0}</system:String>
+    <system:String x:Key="DriverUpdateImportantInfoHeadline">Important information:</system:String>
+
+    <system:String x:Key="DriverUpdateImportantInfoExplanation">
+        Nvidia officially dropped support for 3D Vision / stereoscopic 3D in May 2019 which means that the stereo 3D driver isn't included in current Geforce graphics drivers any more.
+        Although not included in the driver package 3D Vision still can be installed and perfectly used like before.
+        3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    </system:String>
+
+    <system:String x:Key="DriverUpdateInstallProcedure">Install notes:</system:String>
+
+    <system:String x:Key="DriverUpdateInstallProcedureExplanation">
+        Just let 3D Fix Manager install the required drivers.
+        For doing so please click on the "continue" button in the install wizards whenever asked and wait until the installation is completed. That's all.
+        Don't worry if you canceled one of the setup wizards by mistake. 3D Fix Manager checks all dependencies and installs missing components automatically.
+    </system:String>
+
+    <system:String x:Key="DriverUpdateSupportedDriversHeadline">Last official 3D Vision driver:</system:String>
+
+    <system:String x:Key="DriverUpdateSupportedDriversExplanation">
+        Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision. 
+        Install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
+    </system:String>
+
+    <system:String x:Key="StereoSetupError">Error: Failed to enable Stereoscopic 3D as 3D Vision driver is missing. &#x0d;&#x0d;Please install older version 425.31 of your graphics driver.</system:String>
+    <system:String x:Key="DriverInstallFailed">Driver install failed.</system:String>
+    <system:String x:Key="ControllerInstallFailed">Failed to install 3D controller driver.</system:String>
+
+    <!-- Driver update dialog simple-->
+    <system:String x:Key="DriverUpdateSimpleHeadline">Do you want to update your graphics driver to the latest version as well?</system:String>
+    <system:String x:Key="DriverUpdatePleaseChoose">Please choose</system:String>
+    <system:String x:Key="DriverUpdateSimpleYesChoice">, if you want to update your Geforce graphics driver to the latest version (recommended)</system:String>
+    <system:String x:Key="DriverUpdateSimpleNoChoice">, if you want to keep your currently installed Geforce drivers.</system:String>
+    <system:String x:Key="DriverUpdateSimpleNote">At any case stereoscopic 3D features of the driver will be restored.</system:String>
+
+    <!-- 3D Vision driver restore dialog -->
+    <system:String x:Key="DriverRestoreHeadline">3D Vision is not installed on your system. Do you want to install the required drivers now?</system:String>
+    
+    <system:String x:Key="DriverRestoreImportantInfoExplanation">The 3D Vision driver is required to show games in stereoscopic 3D.
+        Unfortunately this driver isn't included in the official driver package of the Geforce drivers any more as Nvidia dropped support for 3D Vision in May 2019.
+        Despite this fact 3D Vision still can be installed and perfectly used like before.
+        3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    </system:String>
+
+    <system:String x:Key="DoNoShowDriverUpdateMessage">Do not check for driver updates any more</system:String>
+
     <system:String x:Key="SearchGamesResult" xml:space="preserve">Search for installed games completed.&#x0d;&#x0d;Found games: {0}</system:String>
     <system:String x:Key="FixInstallWarning" xml:space="preserve">The installation of the 3D fix is not recommended for this game.&#x0d;&#x0d;Do you want to install the fix anyway?</system:String>
     <system:String x:Key="WrapperInstallWarning" xml:space="preserve">The installation of the 3D wrapper is not recommended for this game.&#x0d;&#x0d;Do you want to install the wrapper anyway?</system:String>
@@ -644,7 +759,7 @@ Notes:
     <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
     <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?</system:String>
     <system:String x:Key="FixUpdateAvailable" xml:space="preserve">A newer 3D fix is available for the game "{0}".&#x0d;&#x0d;Do you want to update to the latest version now?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
-    <system:String x:Key="NoUpdates" >No Updates available. Fix profiles up to date.</system:String>
+    <system:String x:Key="NoUpdates" xml:space="preserve">No program updates available.&#x0d;&#x0d;Fix profiles up to date.</system:String>
     <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?</system:String>
     <system:String x:Key="BugReportTo" xml:space="preserve">If you want to report bugs or have ideas for new features please send an e-mail to: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
     <system:String x:Key="NoChangeNotesFound">Sorry, no Change Notes found.</system:String>
@@ -700,8 +815,48 @@ Pauldusler</system:String>
     <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal accounts of the individual shaderhackers you can donate to:</system:String>
     <system:String x:Key="Thanks">Thank you very much,</system:String>
     <system:String x:Key="YourHelixModTeam">Your HelixMod Team</system:String>
+    <system:String x:Key="YourHelixModTeam02">Your HelixMod Team</system:String>
     <system:String x:Key="OpenPaypal">Open PayPal</system:String>
     <system:String x:Key="OpenPaypalToolTip">Opens PayPal website in webbrowser where you can send a donation.</system:String>
+
+    <!-- Nvidia 3D Vision announcement - Start -->
+    <system:String x:Key="Announcement_L1">Dear 3D Vision fans,</system:String>
+    <system:String x:Key="Announcement_L2">we have sad news for you. On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
+    <system:String x:Key="Announcement_L3">This means that all graphics drivers released after March 2019 don't support 3D Vision any more.</system:String>
+    <system:String x:Key="Announcement_L4">Driver branch 418 will be the last one to support stereoscopic 3D.</system:String>
+
+    <system:String x:Key="Announcement_L5">What does the announcement mean for us 3D gamers?</system:String>
+    <system:String x:Key="Announcement_L6">We are forced to stick with Geforce drivers of branch 418 or older (v.419.35 still works as it still belongs to branch 418)</system:String>
+    <system:String x:Key="Announcement_L7">We should not update Windows 10 beyond v.1809 (October Update 2018). New feature updates for Win 10 might break the stereo 3D driver.</system:String>
+    <system:String x:Key="Announcement_L8">We have to take good care of our 3D Vision hardware as in the future it will be hard to get a replacement for defective devices</system:String>
+
+    <system:String x:Key="Announcement_L9">What does this mean for 3D Fix Manager?</system:String>
+    <system:String x:Key="Announcement_L10">Nothing. Support for 3D Fix Manager will be continued</system:String>
+    <system:String x:Key="Announcement_L11">3D Fix Manager warns you if you've already installed a Geforce driver beyond driver branch 418</system:String>
+    <system:String x:Key="Announcement_L12">In this case 3D Fix Manager provides download links to the last known driver version which was still compatible to 3D Vision</system:String>
+
+    <system:String x:Key="Announcement_L13">What does this mean for the development of new 3D fixes?</system:String>
+    <system:String x:Key="Announcement_L14">It's very likely that the development of new 3D fixes is continued as long as Shaderhackers have their 3D Vision hardware still working</system:String>
+
+    <system:String x:Key="Announcement_L15">What does this mean for the future of stereo 3D?</system:String>
+    <system:String x:Key="Announcement_L16">Currently our great community developers are discussing about developing an indepentent 3D solution not requiring the 3D Vision driver any more</system:String>
+    <system:String x:Key="Announcement_L17">Chances are not bad as there are already a lot of features implemented into 3dmigoto which are required to achieve this goal</system:String>
+    <system:String x:Key="Announcement_L18">But: At the time of writing no promises can be made!</system:String>
+
+    <system:String x:Key="Announcement_L19">Official announcement from Nvidia:</system:String>
+    <system:String x:Key="Announcement_L20">For additional info we have opened a topic in Geforce forum:</system:String>
+    <system:String x:Key="Announcement_DoNotShow">Do not show this dialog again</system:String>
+    <!-- Nvidia 3D Vision announcement - End -->
+
+    <!-- Nvidia driver check - Start -->
+    <system:String x:Key="Drivercheck_1">Warning: Your Nvidia graphics driver ist not compatible to 3D Vision.</system:String>
+    <system:String x:Key="Drivercheck_2">On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
+    <system:String x:Key="Drivercheck_3">To make 3D Vision work you have to install an older graphics driver.</system:String>
+    <system:String x:Key="Drivercheck_4">Below you find download links for the last Geforce driver which was known to work with 3D Vision:</system:String>
+    <system:String x:Key="Drivercheck_5">Please keep in mind that this driver might not work properly with future versions of Windows 10.  
+                                         The driver was released at the time of Windows 10 v.1809 (October update 2018) so it's not recommended to use a more recent Windows version.
+    </system:String>
+    <!-- Nvidia driver check - End -->
 
     <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
     <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
@@ -767,7 +922,7 @@ Pauldusler</system:String>
     <system:String x:Key="DisableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be disabled.</system:String>
     <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
     <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
-    
+
     <!--.................... Dialog Window End .......................... -->
 
 
@@ -778,6 +933,15 @@ Pauldusler</system:String>
         Forces DirectX 11 games to start in Compatibility Mode (also known as Fake 3D) by automatically modifying the driver profile.<LineBreak/><LineBreak/>
         When Compatibility Mode does not look right then go to <Italic><Bold>"Hotkey"</Bold></Italic> tab and choose another value for 
         <Italic><Bold>2DDHUDSettings"</Bold></Italic> in section <Italic><Bold>"Driver Profile Settings</Bold></Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
+       Enables <Bold>Compatibility Mode Unleashed</Bold> (shortly CMU).<LineBreak/><LineBreak/>    
+       CMU is only available in DirectX 11 games and makes those games playable in stereo 3D even if they aren't fixed for 3D yet.<LineBreak/><LineBreak/>
+       Another advantage of CMU is that it requires less performance for having a smooth gaming experience in 3D.<LineBreak/><LineBreak/>
+       However compared to traditional 3D this mode suffers from 3D artefacts like halos around objects and 3D depth is more limited by default.<LineBreak/><LineBreak/>
+       <Bold>Important information:</Bold> Press <Bold>F11</Bold> or <Bold>F12</Bold> (default configuration) ingame to "unleash" CMU for exceeding maximum 3D depth and improving the 3D effect.<LineBreak/><LineBreak/>
+       Additionally in tab <Bold>"3D Fix"</Bold> you have options to configure CMU.
     </TextBlock>
 
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
@@ -925,6 +1089,11 @@ Pauldusler</system:String>
         You can provide additional information in the field on the right side. This will be displayed as a tooltip for the icon.
     </TextBlock>
 
+    <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
+        With this option you can tag a game to be compatible to Virtual Reality.<LineBreak/><LineBreak/>
+        Tagged games are automatically added to the filter <Italic><Bold>VR compatible</Bold></Italic>.
+    </TextBlock>
+
     <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
        Steam App ID is required for launching Steam games and visiting the Steam Store.
     </TextBlock>
@@ -1070,7 +1239,7 @@ Pauldusler</system:String>
         You should set this option either to 0x10000002 or 0x10000102. Of course you are free to try other values.
     </TextBlock>
 
-    <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">>
+    <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">
         This sets the default convergence when in compatibility mode.
     </TextBlock>
 
@@ -1095,7 +1264,11 @@ Pauldusler</system:String>
 
     <!-- General Settings Tab ToolTips -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
-        Check for application / fix updates when the application is being started.
+        Automatic check for application or fix updates when the application is started.
+    </TextBlock>
+
+    <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
+        Automatic check for Geforce driver updates when the application is started.
     </TextBlock>
 
     <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
@@ -1378,7 +1551,7 @@ Pauldusler</system:String>
         Choose the display profile to be switched to active.<LineBreak/><LineBreak/>  
         <Bold>Note:</Bold> You can configure each profile in tab <Bold><Italic>>"Display Profiles"</Italic></Bold> to your likings.
     </TextBlock>
-    
+
     <TextBlock x:Key="ShowProfileDialogOnGameStartToolTip" TextWrapping="Wrap" Width="300">
         If you disable this option the dialog window won't be shown any more the next time you start a game.<LineBreak/><LineBreak/>       
         <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold><Italic>Display Profiles</Italic></Bold>.
@@ -1450,7 +1623,7 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
         <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
-        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with 2 tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
+        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with two tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
         <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
     </TextBlock>
 
