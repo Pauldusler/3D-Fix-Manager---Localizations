@@ -102,7 +102,7 @@
   <system:String x:Key="GameConfigSettingsGroup">Configuração do jogo:</system:String>
   <system:String x:Key="OverrideMonitorProfileGroup">Substituir o perfil do monitor:</system:String>
   <system:String x:Key="OverrideTVProfileGroup">Substituir perfil de TV:</system:String>
-  <system:String x:Key="OverrideProjectorProfileGroup">Sobrepor o perfil do projetor:</system:String>
+  <system:String x:Key="OverrideProjectorProfileGroup">Subistituir o perfil do projetor:</system:String>
   <system:String x:Key="GameIconSettingsGroup">Ícone do Jogo:</system:String>
   <system:String x:Key="DriverSettingsGroup">Configurações do Driver / Perfis para Nvidia Profile Inspector:</system:String>
   <system:String x:Key="GameLaunchSettingsGroup">Lançamento do Jogo:</system:String>
@@ -212,57 +212,57 @@
 
   <!--....................  Hotkeys Tab Begin .......................... -->
 
-  <system:String x:Key="CmuGameExe">Game Exe:</system:String>
-  <system:String x:Key="AutoPatch">Enable auto patching:</system:String>
-  <system:String x:Key="PatchDelay">Patch delay:</system:String>
-  <system:String x:Key="AutoUpdateDriver">Update driver profile:</system:String>
-  <system:String x:Key="CmuSettings">Compatibility Mode Unleashed Settings:</system:String>
-  <system:String x:Key="CmuWarning" xml:space="preserve">Show CMU warning</system:String>
-  <system:String x:Key="CmuWarningDialog" xml:space="preserve">Warning: Although not being a cheat tool CMU might be detected as such in online games. As a result your game account would be banned.
+  <system:String x:Key="CmuGameExe">Exe do Jogo:</system:String>
+  <system:String x:Key="AutoPatch">Ativar o patch automático:</system:String>
+  <system:String x:Key="PatchDelay">Atraso de patch:</system:String>
+  <system:String x:Key="AutoUpdateDriver">Atualizar o perfil do driver:</system:String>
+  <system:String x:Key="CmuSettings">Configurações de modo de compatibilidade liberadas:</system:String>
+  <system:String x:Key="CmuWarning" xml:space="preserve">Mostrar aviso CMU</system:String>
+  <system:String x:Key="CmuWarningDialog" xml:space="preserve">Atenção: Apesar de não ser uma ferramenta de fraude, o CMU pode ser detectado como tal nos jogos online. Como resultado, sua conta do jogo seria banida.
 
-Therefore it's recommended to use CMU for singleplayer or offline games only.</system:String>
+Portanto, é recomendável usar o CMU apenas para jogos em modo singleplayer ou off-line.</system:String>
 
   <TextBlock x:Key="CmuWarningToolTip" TextWrapping="Wrap" Width="300">
-    Warns the user that using CMU in online games might lead to a ban of the game account.
+    Avisa o usuário que usar o CMU em jogos online pode levar a um banimento da conta do jogo.
   </TextBlock>
 
   <TextBlock x:Key="AutoUpdateDriverToolTip" TextWrapping="Wrap" Width="300">
-    This option controls whether to modify the driver profile of the game.<LineBreak/><LineBreak/>
-    If you have installed 3dmigoto this option is automatically disabled because 3dmigoto will take care of setting the driver profile for Compatibility Mode.<LineBreak/><LineBreak/>
-    When 3dmigoto is not installed CMU is used instead for adjusting the driver profile.
+    Esta opção controla se deve modificar o perfil do driver do jogo.<LineBreak/><LineBreak/>
+    Se você instalou o 3dmigoto, esta opção será desativada automaticamente porque o 3dmigoto se encarregará de configurar o perfil do driver para o Modo de Compatibilidade.<LineBreak/><LineBreak/>
+    Quando o 3dmigoto não está instalado, o CMU é usado para ajustar o perfil do driver.
   </TextBlock>
 
   <TextBlock x:Key="AutoPatchToolTip" TextWrapping="Wrap" Width="300">
-    Controls whether to enable CMU automatically when starting a game. The activation of CMU is done after a defined period you can adjust in the option below.<LineBreak/><LineBreak/>
-    CMU then patches the Nvidia driver and allows the CMU hotkeys to work in order increase the 3D depth beyond allowed values by pressing F11 (default key binding).<LineBreak/><LineBreak/>
-    If you leave this option disabled you have to press CTRL + SHIFT + T ingame for enabling CMU manually.
+    Controla se deve ativar o CMU automaticamente ao iniciar um jogo. A ativação da CMU é feita após um período definido que você pode ajustar na opção abaixo.<LineBreak/><LineBreak/>
+    A CMU então corrige o driver Nvidia e permite que as teclas de atalho da CMU funcionem para aumentar a profundidade 3D além dos valores permitidos, pressionando F11 (atalho de tecla padrão).<LineBreak/><LineBreak/>
+    Se você deixar esta opção desativada, terá que pressionar CTRL + SHIFT + T no jogo para habilitar a CMU manualmente.
   </TextBlock>
 
   <TextBlock x:Key="PatchDelayToolTip" TextWrapping="Wrap" Width="300">
-    Defines the period for automatically enabling CMU after the game was started.
+    Define o período para ativar automaticamente o CMU após o início do jogo.
   </TextBlock>
 
   <TextBlock x:Key="CmuGameExeToolTip" TextWrapping="Wrap" Width="300">
-    Name of the executable used to start the game.<LineBreak/><LineBreak/>
-    This is automatically set and should only be changed if required.
+    Nome do executável usado para iniciar o jogo.<LineBreak/><LineBreak/>
+    Isso é definido automaticamente e só deve ser alterado, se necessário.
   </TextBlock>
 
   <TextBlock x:Key="CmuConvergenceToolTip" TextWrapping="Wrap" Width="300">
-    Enter the convergence value you want to set when the hotkey is pressed.<LineBreak/><LineBreak/>
-    Valid values range from 0.2 and 1.0. All numbers higher or lower than this are clamped by the Nvidia driver.
+    Digite o valor de convergência que você deseja definir quando a tecla de atalho é pressionada.<LineBreak/><LineBreak/>
+    Valores válidos variam de 0,2 e 1,0. Todos os números mais altos ou mais baixos do que isso são corrigidos pelo driver Nvidia.
   </TextBlock>
 
   <TextBlock x:Key="CmuSeparationToolTip" TextWrapping="Wrap" Width="300">
-    Enter a factor to be multiplied with the current 3D depth.<LineBreak/><LineBreak/>
-    In other words with this factor you can exceed the very limited 3D depth of Compatibility Mode to improve the 3D effect.<LineBreak/><LineBreak/>
-    Example: if you choose a value of 2.2 this means that your maximum 3D depth is increased by 220%.<LineBreak/><LineBreak/>
-    You can also use the factor to lower the 3D depth (e.g. with a value of 0.2).<LineBreak/><LineBreak/>
-    This is especially useful in ego shooters where you want to aim by holding the right mouse button. A low 3D depth in this situation makes aiming more comfortable.
+    Digite um fator a ser multiplicado com a profundidade 3D atual.<LineBreak/><LineBreak/>
+    Em outras palavras, com este fator, você pode exceder a profundidade 3D muito limitada do Modo de Compatibilidade para melhorar o efeito 3D.<LineBreak/><LineBreak/>
+    Exemplo: se você escolher um valor de 2,2, isso significa que sua profundidade máxima em 3D é aumentada em 220%.<LineBreak/><LineBreak/>
+    Você também pode usar o fator para diminuir a profundidade 3D (por exemplo, com um valor de 0,2).<LineBreak/><LineBreak/>
+    Isso é especialmente útil em Tiro em primeira pessoa onde você quer mirar segurando o botão direito do mouse. Uma baixa profundidade 3D nesta situação torna o objetivo mais confortável.
   </TextBlock>
 
   <system:String x:Key="FixInfo">Corrigir Informações:</system:String>
   <system:String x:Key="Game">Jogo:</system:String>
-  <system:String x:Key="GameEngine">Game Engine:</system:String>
+  <system:String x:Key="GameEngine">Motor do jogo:</system:String>
   <system:String x:Key="FixType">Tipo de correção:</system:String>
   <system:String x:Key="WrapperVersion">Versão do Empacotador:</system:String>
   <system:String x:Key="IniPath">Caminho Ini:</system:String>
@@ -292,13 +292,13 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="PressKeyToolTip">Pressione uma tecla para alterar a associação de teclas.</system:String>
   <system:String x:Key="ChooseInputDeviceToolTip">Escolher dispositivo de entrada para ligação de tecla.</system:String>
   <system:String x:Key="Description">Descrição:</system:String>
-  <system:String x:Key="DescriptionToolTip">SBreve resumo sobre o propósito da tecla de atalho.</system:String>
+  <system:String x:Key="DescriptionToolTip">Breve resumo sobre o propósito da tecla de atalho.</system:String>
   <system:String x:Key="ResetIniToolTip">Redefine o ini ao estado original.</system:String>
 
   <!-- Preset Management Group -->
   <system:String x:Key="PresetManagement">Gerenciamento Predefinido:</system:String>
   <system:String x:Key="NewPreset">Nova Predefinição</system:String>
-  <system:String x:Key="NewPresetToolTip">Cria uma nova predefinição 3D..</system:String>
+  <system:String x:Key="NewPresetToolTip">Cria uma nova predefinição 3D.</system:String>
   <system:String x:Key="DefaultPreset">Predefinição padrão:</system:String>
   <system:String x:Key="Delay">Atraso:</system:String>
   <system:String x:Key="ReleaseDelay">Atraso de Liberação:</system:String>
@@ -313,7 +313,7 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="SaveStereoSettingsToolTip">Habilite isso para permitir que os presets sejam alterados durante a reprodução. Certifique-se de selecionar a predefinição no jogo pressionando o botão de atalho, altere a Profundidade 3D / Convergência com CTRL + F3 - F6 ao seu gosto e pressione F7 para salvar.</system:String>
 
   <system:String x:Key="chkStereoSeparationToolTip">Habilite isso para definir a separação 3D. Desmarcar removerá a entrada correspondente do arquivo ini.</system:String>
-  <system:String x:Key="sliderStereoSeparationToolTip">S Definir a separação 3D em porcentagem.</system:String>
+  <system:String x:Key="sliderStereoSeparationToolTip">Define a separação 3D em porcentagem.</system:String>
 
   <system:String x:Key="Convergence">Convergência:</system:String>
   <system:String x:Key="chkConvergenceToolTip">"Habilite isso para definir a convergência. Desmarcar irá remover a entrada correspondente do arquivo ini."</system:String>
@@ -344,8 +344,8 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="ResolutionAndRefreshRates">Taxas de resolução e atualização:</system:String>
   <system:String x:Key="EnableUpscaling">Habilitar o dimensionamento</system:String>
   <system:String x:Key="UpscalingMode">Modo de dimensionamento:</system:String>
-  <system:String x:Key="OverrideScreenWidth">Sobrepor a largura da tela:</system:String>
-  <system:String x:Key="OverrideScreenHeight">Sobrepor altura da tela:</system:String>
+  <system:String x:Key="OverrideScreenWidth">Subistituir a largura da tela:</system:String>
+  <system:String x:Key="OverrideScreenHeight">Subistituir altura da tela:</system:String>
   <system:String x:Key="OverrideScreenToolTip">Forçar Sobreposição da Resolução da Tela.</system:String>
   <system:String x:Key="UpscalingScreenWidth">Largura da tela de destino para dimensionamento:</system:String>
   <system:String x:Key="UpscalingScreenHeight">Altura da tela de destino para dimensionamento:</system:String>
@@ -379,9 +379,9 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
 
   <!-- General Settings group -->
   <system:String x:Key="GeneralSettingsGroup">Configurações gerais:</system:String>
-  <system:String x:Key="UseProgramFor">Use program for:</system:String>
+  <system:String x:Key="UseProgramFor">Use o programa para:</system:String>
   <system:String x:Key="CheckForUpdates">Verificar atualizações na inicialização</system:String>
-  <system:String x:Key="CheckForDriverUpdates">Check for driver updates at startup</system:String>
+  <system:String x:Key="CheckForDriverUpdates">Verificar atualizações de driver na inicialização</system:String>
   <system:String x:Key="AllowChangesToGameConfig">Otimize as configurações do jogo para 3D estéreo</system:String>
   <system:String x:Key="EnableSteamOverlay">Ativar a sobreposição do Steam</system:String>
   <system:String x:Key="FullscreenOptimizations">Otimizações de Tela Cheia:</system:String>
@@ -447,7 +447,7 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="StartRtssToolTip">Inicia o RivaTuner Statistics Server.</system:String>
 
   <!-- Stereo Refresh Rate Settings Group  group -->
-  <system:String x:Key="StereoRefreshRateSettings">Frequência do obturador de óculos 3D da Nvidia:</system:String>
+  <system:String x:Key="StereoRefreshRateSettings">Frequência do obturador do óculos 3D da Nvidia:</system:String>
   <system:String x:Key="GlobalStereoRefreshRate">Usar taxa de atualização definida no driver da Nvidia</system:String>
   <system:String x:Key="ProfileStereoRefreshRate">A taxa de atualização é controlada pelo perfil de correção</system:String>
 
@@ -615,11 +615,11 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="ChangeNotes">(Notas das Alterações)</system:String>
   <system:String x:Key="Donate">Doar</system:String>
   <system:String x:Key="Installing">Instalando...</system:String>
-  <system:String x:Key="InstallingDrivers">Installing drivers...</system:String>
-  <system:String x:Key="InstallFailed">Driver install failed.</system:String>
-  <system:String x:Key="DownloadingDrivers">Downloading driver...</system:String>
-  <system:String x:Key="ExtractingDrivers">Extracting driver. Please wait...</system:String>
-  <system:String x:Key="Extracting3dVisionDriver">Extracting 3D Vision driver. Please wait...</system:String>
+  <system:String x:Key="InstallingDrivers">Instalando drivers...</system:String>
+  <system:String x:Key="InstallFailed">A instalação do driver falhou.</system:String>
+  <system:String x:Key="DownloadingDrivers">Baixando driver...</system:String>
+  <system:String x:Key="ExtractingDrivers">Extraindo driver. Por favor, aguarde...</system:String>
+  <system:String x:Key="Extracting3dVisionDriver">Extraindo o driver 3D Vision. Por favor, aguarde...</system:String>
 
   <!-- Buttons -->
   <system:String x:Key="Manual">Manual</system:String>
@@ -627,7 +627,7 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
   <system:String x:Key="UpdateSteamDb">Atualizar o DB do Steam</system:String>
   <system:String x:Key="CreateReleases">Criar Versões</system:String>
   <system:String x:Key="ReferenceDb">Preencher BD de Referência</system:String>
-  <system:String x:Key="GithubLanguages">Idiomas GitHub</system:String>
+  <system:String x:Key="GithubLanguages">Idiomas GitHub)</system:String>
 
   <!--....................  About Tab End .......................... -->
 
@@ -652,61 +652,61 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
 
   <!-- Messages -->
 
-  <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode.&#x0d;&#x0d;Please install 3D Vision driver and try again.</system:String>
+  <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Erro: falha ao iniciar o jogo no modo 3D estereoscópico.&#x0d;&#x0d;Por favor, instale o driver do 3D Vision e tente novamente.</system:String>
 
   <!-- Driver update dialog -->
-  <system:String x:Key="DriverUpdateHeadline">A new Geforce graphics driver is available. Do you want to update your driver?</system:String>
-  <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Installed driver:    {0}</system:String>
-  <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Latest driver:        {0}</system:String>
-  <system:String x:Key="DriverUpdateImportantInfoHeadline">Important information:</system:String>
+  <system:String x:Key="DriverUpdateHeadline">Um novo driver gráfico Geforce está disponível. Você quer atualizar seu driver?</system:String>
+  <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Driver instalado    {0}</system:String>
+  <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Driver mais recente:        {0}</system:String>
+  <system:String x:Key="DriverUpdateImportantInfoHeadline">Informação Importante:</system:String>
 
   <system:String x:Key="DriverUpdateImportantInfoExplanation">
-    Nvidia officially dropped support for 3D Vision / stereoscopic 3D in May 2019 which means that the stereo 3D driver isn't included in current Geforce graphics drivers any more.
-    Although not included in the driver package 3D Vision still can be installed and perfectly used like before.
-    3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    A Nvidia oficialmente abandonou o suporte para o 3D Vision / 3D estereoscópico em maio de 2019, o que significa que o driver 3D estéreo não está mais incluído nos atuais drivers gráficos Geforce.
+    Embora não esteja incluído no pacote do driver, o 3D Vision ainda pode ser instalado e usado perfeitamente como antes.
+    O 3D Fix Manager faz essa parte para você e restaura a funcionalidade do 3D Vision / 3D estereoscópico.
   </system:String>
 
-  <system:String x:Key="DriverUpdateInstallProcedure">Install notes:</system:String>
+  <system:String x:Key="DriverUpdateInstallProcedure">Notas da Instalação</system:String>
 
   <system:String x:Key="DriverUpdateInstallProcedureExplanation">
-    Just let 3D Fix Manager install the required drivers.
-    For doing so please click on the "continue" button in the install wizards whenever asked and wait until the installation is completed. That's all.
-    Don't worry if you canceled one of the setup wizards by mistake. 3D Fix Manager checks all dependencies and installs missing components automatically.
+    Apenas deixe o 3D Fix Manager instalar os drivers necessários.
+    Para fazer isso, clique no botão "continuar" nos assistentes de instalação sempre que solicitado e aguarde até que a instalação seja concluída. Isso é tudo.
+    Não se preocupe se você cancelou um dos assistentes de configuração por engano. O 3D Fix Manager verifica todas as dependências e instala componentes ausentes automaticamente.
   </system:String>
 
-  <system:String x:Key="DriverUpdateSupportedDriversHeadline">Last official 3D Vision driver:</system:String>
+  <system:String x:Key="DriverUpdateSupportedDriversHeadline">Último driver oficial do 3D Vision:</system:String>
 
   <system:String x:Key="DriverUpdateSupportedDriversExplanation">
-    Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision.
-    Install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
+    O Geforce Driver versão 425.31, lançado em abril de 2019, foi o último a suportar oficialmente o 3D Vision.
+    Instale este se os drivers mais recentes não funcionarem com 3D estereoscópico, apesar da instalação automática através do 3D Fix Manager.
   </system:String>
 
-  <system:String x:Key="StereoSetupError">Error: Failed to enable Stereoscopic 3D as 3D Vision driver is missing. &#x0d;&#x0d;Please install older version 425.31 of your graphics driver.</system:String>
-  <system:String x:Key="DriverInstallFailed">Driver install failed.</system:String>
-  <system:String x:Key="ControllerInstallFailed">Failed to install 3D controller driver.</system:String>
+  <system:String x:Key="StereoSetupError">Erro: Falha ao ativar o 3D estereoscópico, pois o driver do 3D Vision está ausente. &#x0d;&#x0d;Por favor, instale a versão mais antiga 425.31 do seu driver gráfico.</system:String>
+  <system:String x:Key="DriverInstallFailed">A instalação do driver falhou.</system:String>
+  <system:String x:Key="ControllerInstallFailed">Falha ao instalar o driver do controlador 3D.</system:String>
 
   <!-- Driver update dialog simple-->
-  <system:String x:Key="DriverUpdateSimpleHeadline">Do you want to update your graphics driver to the latest version as well?</system:String>
-  <system:String x:Key="DriverUpdatePleaseChoose">Please choose</system:String>
-  <system:String x:Key="DriverUpdateSimpleYesChoice">, if you want to update your Geforce graphics driver to the latest version (recommended)</system:String>
-  <system:String x:Key="DriverUpdateSimpleNoChoice">, if you want to keep your currently installed Geforce drivers.</system:String>
-  <system:String x:Key="DriverUpdateSimpleNote">At any case stereoscopic 3D features of the driver will be restored.</system:String>
+  <system:String x:Key="DriverUpdateSimpleHeadline">Você quer atualizar seu driver gráfico para a versão mais recente também?</system:String>
+  <system:String x:Key="DriverUpdatePleaseChoose">Por favor escolha</system:String>
+  <system:String x:Key="DriverUpdateSimpleYesChoice">, se você quiser atualizar seu driver gráfico Geforce para a versão mais recente (recomendado)</system:String>
+  <system:String x:Key="DriverUpdateSimpleNoChoice">, se você quiser manter seus drivers Geforce atualmente instalados.</system:String>
+  <system:String x:Key="DriverUpdateSimpleNote">Em qualquer caso, os recursos 3D estereoscópicos do driver serão restaurados.</system:String>
 
   <!-- 3D Vision driver restore dialog -->
-  <system:String x:Key="DriverRestoreHeadline">3D Vision is not installed on your system. Do you want to install the required drivers now?</system:String>
-  <system:String x:Key="ControllerDriver" xml:space="preserve">3D controller driver:         {0}</system:String>
-  <system:String x:Key="_3dVisionDriver" xml:space="preserve">Stereoscopic 3D driver:    {0}</system:String>
-  <system:String x:Key="DriverInstalled">Installed</system:String>
-  <system:String x:Key="DriverNotInstalled">Not installed</system:String>
+  <system:String x:Key="DriverRestoreHeadline">O 3D Vision não está instalado no seu sistema. Você quer instalar os drivers necessários agora?</system:String>
+  <system:String x:Key="ControllerDriver" xml:space="preserve">Driver Controlador 3D:         {0}</system:String>
+  <system:String x:Key="_3dVisionDriver" xml:space="preserve">Driver 3D estereoscópico:    {0}</system:String>
+  <system:String x:Key="DriverInstalled">Instalado</system:String>
+  <system:String x:Key="DriverNotInstalled">Não Instalado</system:String>
 
   <system:String x:Key="DriverRestoreImportantInfoExplanation">
-    The 3D Vision driver is required to show games in stereoscopic 3D.
-    Unfortunately this driver isn't included in the official driver package of the Geforce drivers any more as Nvidia dropped support for 3D Vision in May 2019.
-    Despite this fact 3D Vision still can be installed and perfectly used like before.
-    3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    O driver 3D Vision é necessário para exibir jogos em 3D estereoscópico.
+    Infelizmente, este driver não está incluído no pacote de drivers oficiais dos drivers Geforce, já que a Nvidia abandonou o suporte para o 3D Vision em maio de 2019.
+    Apesar disso, o 3D Vision ainda pode ser instalado e usado perfeitamente como antes.
+    O 3D Fix Manager faz essa parte para você e restaura a funcionalidade do 3D Vision / 3D estereoscópico.
   </system:String>
 
-  <system:String x:Key="DoNoShowDriverUpdateMessage">Do not check for driver updates any more</system:String>
+  <system:String x:Key="DoNoShowDriverUpdateMessage">Não verifique mais as atualizações do driver</system:String>
 
   <system:String x:Key="SearchGamesResult" xml:space="preserve">Procura por jogos instalados concluída.&#x0d;&#x0d;Jogos encontrados: {0}</system:String>
   <system:String x:Key="FixInstallWarning" xml:space="preserve">A instalação da correção 3D não é recomendada para este jogo.&#x0d;&#x0d;Você quer instalar a correção mesmo assim?</system:String>
@@ -823,42 +823,42 @@ Pauldusler</system:String>
   <system:String x:Key="OpenPaypalToolTip">Abre o site do PayPal no webbrowser, no qual você pode enviar uma doação.</system:String>
 
   <!-- Nvidia 3D Vision announcement - Start -->
-  <system:String x:Key="Announcement_L1">Dear 3D Vision fans,</system:String>
-  <system:String x:Key="Announcement_L2">we have sad news for you. On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
-  <system:String x:Key="Announcement_L3">This means that all graphics drivers released after March 2019 don't support 3D Vision any more.</system:String>
-  <system:String x:Key="Announcement_L4">Driver branch 418 will be the last one to support stereoscopic 3D.</system:String>
+  <system:String x:Key="Announcement_L1">Caros fãs da 3D Vision,</system:String>
+  <system:String x:Key="Announcement_L2">nós temos notícias tristes para você. Em 8 de março de 2019, a Nvidia anunciou oficialmente o fim do suporte para o 3D Vision.</system:String>
+  <system:String x:Key="Announcement_L3">Isso significa que todos os drivers gráficos lançados após março de 2019 não suportam mais o 3D Vision.</system:String>
+  <system:String x:Key="Announcement_L4">O Driver número 418 será o último a suportar 3D estereoscópico.</system:String>
 
-  <system:String x:Key="Announcement_L5">What does the announcement mean for us 3D gamers?</system:String>
-  <system:String x:Key="Announcement_L6">We are forced to stick with Geforce drivers of branch 418 or older (v.419.35 still works as it still belongs to branch 418)</system:String>
-  <system:String x:Key="Announcement_L7">We should not update Windows 10 beyond v.1809 (October Update 2018). New feature updates for Win 10 might break the stereo 3D driver.</system:String>
-  <system:String x:Key="Announcement_L8">We have to take good care of our 3D Vision hardware as in the future it will be hard to get a replacement for defective devices</system:String>
+  <system:String x:Key="Announcement_L5">O que o anúncio significa para nós jogadores 3D?</system:String>
+  <system:String x:Key="Announcement_L6">Somos forçados a ficar com os drivers Geforce da ramificação 418 ou mais antigos (v.419.35 ainda funciona, pois ainda pertence à ramificação 418)</system:String>
+  <system:String x:Key="Announcement_L7">Não devemos atualizar o Windows 10 além do v.1809 (Atualização de outubro de 2018). Novas atualizações de recursos para o Win 10 podem interromper o driver 3D estéreo.</system:String>
+  <system:String x:Key="Announcement_L8">Temos que cuidar bem do nosso hardware 3D Vision, pois no futuro será difícil obter um substituto para dispositivos defeituosos</system:String>
 
-  <system:String x:Key="Announcement_L9">What does this mean for 3D Fix Manager?</system:String>
-  <system:String x:Key="Announcement_L10">Nothing. Support for 3D Fix Manager will be continued</system:String>
-  <system:String x:Key="Announcement_L11">3D Fix Manager warns you if you've already installed a Geforce driver beyond driver branch 418</system:String>
-  <system:String x:Key="Announcement_L12">In this case 3D Fix Manager provides download links to the last known driver version which was still compatible to 3D Vision</system:String>
+  <system:String x:Key="Announcement_L9">O que isso significa para o 3D Fix Manager?</system:String>
+  <system:String x:Key="Announcement_L10">Nada. O suporte para o 3D Fix Manager será continuado</system:String>
+  <system:String x:Key="Announcement_L11">O 3D Fix Manager avisa se você já instalou um driver Geforce além do driver número 418</system:String>
+  <system:String x:Key="Announcement_L12">Neste caso, o 3D Fix Manager fornece links de download para a última versão de driver conhecida que ainda era compatível com o 3D Vision</system:String>
 
-  <system:String x:Key="Announcement_L13">What does this mean for the development of new 3D fixes?</system:String>
-  <system:String x:Key="Announcement_L14">It's very likely that the development of new 3D fixes is continued as long as Shaderhackers have their 3D Vision hardware still working</system:String>
+  <system:String x:Key="Announcement_L13">O que isso significa para o desenvolvimento de novas correções 3D?</system:String>
+  <system:String x:Key="Announcement_L14">É muito provável que o desenvolvimento de novas correções 3D continue enquanto os Shaderhackers tiverem seu hardware 3D Vision ainda funcionando</system:String>
 
-  <system:String x:Key="Announcement_L15">What does this mean for the future of stereo 3D?</system:String>
-  <system:String x:Key="Announcement_L16">Currently our great community developers are discussing about developing an indepentent 3D solution not requiring the 3D Vision driver any more</system:String>
-  <system:String x:Key="Announcement_L17">Chances are not bad as there are already a lot of features implemented into 3dmigoto which are required to achieve this goal</system:String>
-  <system:String x:Key="Announcement_L18">But: At the time of writing no promises can be made!</system:String>
+  <system:String x:Key="Announcement_L15">O que isso significa para o futuro do 3D estéreo?</system:String>
+  <system:String x:Key="Announcement_L16">Atualmente, nossos grandes desenvolvedores de comunidades estão discutindo sobre o desenvolvimento de uma solução 3D independente que não requer mais o driver 3D Vision.</system:String>
+  <system:String x:Key="Announcement_L17">As chances não são ruins, pois já existem muitos recursos implementados no 3dmigoto que são necessários para atingir esse objetivo</system:String>
+  <system:String x:Key="Announcement_L18">Mas: Na hora de escrever, nenhuma promessa pode ser feita!</system:String>
 
-  <system:String x:Key="Announcement_L19">Official announcement from Nvidia:</system:String>
-  <system:String x:Key="Announcement_L20">For additional info we have opened a topic in Geforce forum:</system:String>
-  <system:String x:Key="Announcement_DoNotShow">Do not show this dialog again</system:String>
+  <system:String x:Key="Announcement_L19">Anúncio oficial da Nvidia:</system:String>
+  <system:String x:Key="Announcement_L20">Para informações adicionais, abrimos um tópico no fórum do Geforce:</system:String>
+  <system:String x:Key="Announcement_DoNotShow">Não mostre esse diálogo novamente</system:String>
   <!-- Nvidia 3D Vision announcement - End -->
 
   <!-- Nvidia driver check - Start -->
-  <system:String x:Key="Drivercheck_1">Warning: Your Nvidia graphics driver ist not compatible to 3D Vision.</system:String>
-  <system:String x:Key="Drivercheck_2">On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
-  <system:String x:Key="Drivercheck_3">To make 3D Vision work you have to install an older graphics driver.</system:String>
-  <system:String x:Key="Drivercheck_4">Below you find download links for the last Geforce driver which was known to work with 3D Vision:</system:String>
+  <system:String x:Key="Drivercheck_1">Aviso: o driver gráfico da Nvidia não é compatível com o 3D Vision.</system:String>
+  <system:String x:Key="Drivercheck_2">Em 8 de março de 2019, a Nvidia anunciou oficialmente o fim do suporte para o 3D Vision.</system:String>
+  <system:String x:Key="Drivercheck_3">Para que o 3D Vision funcione, você precisa instalar um driver gráfico mais antigo.</system:String>
+  <system:String x:Key="Drivercheck_4">Abaixo você encontra links de download para o último driver Geforce que era conhecido por trabalhar com o 3D Vision:</system:String>
   <system:String x:Key="Drivercheck_5">
-    Please keep in mind that this driver might not work properly with future versions of Windows 10.
-    The driver was released at the time of Windows 10 v.1809 (October update 2018) so it's not recommended to use a more recent Windows version.
+    Por favor, tenha em mente que este driver pode não funcionar corretamente com futuras versões do Windows 10.
+    O driver foi lançado no momento do Windows 10 v.1809 (atualização de outubro de 2018), por isso não é recomendado usar uma versão mais recente do Windows.
   </system:String>
   <!-- Nvidia driver check - End -->
 
@@ -876,8 +876,8 @@ Pauldusler</system:String>
   <system:String x:Key="ValidUrlError">Erro: você deve fornecer uma URL válida.</system:String>
   <system:String x:Key="MultiRowHyperlinkError">Erro: Não são permitidas seleções de várias linhas para Hiperlinks.</system:String>
   <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">Isso atualizará todas as correções instaladas do 3dmigoto para a versão mais recente do Empacotador.&#x0d;&#x0d;Deseja prosseguir?</system:String>
-  <system:String x:Key="AllUpdatesInstalled">Success! 3Dmigoto was updated for {0} games.</system:String>
-  <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto is already up to date for all games. No updates required.</system:String>
+  <system:String x:Key="AllUpdatesInstalled">Sucesso! 3Dmigoto foi atualizado para {0} jogos.</system:String>
+  <system:String x:Key="MigotoAlreadyUpdated">O 3Dmigoto já está atualizado para todos os jogos. Nenhuma atualização é necessária.</system:String>
   <system:String x:Key="TypeTitleError">Erro: Por favor, digite primeiro um título do jogo.</system:String>
   <system:String x:Key="FoundSteamDbData">Dados do banco de dados do Steam encontrados:</system:String>
   <system:String x:Key="GameExe">Exe do jogo:</system:String>
@@ -946,12 +946,12 @@ Pauldusler</system:String>
   </TextBlock>
 
   <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
-    Enables <Bold>Compatibility Mode Unleashed</Bold> (shortly CMU).<LineBreak/><LineBreak/>
-    CMU is only available in DirectX 11 games and makes those games playable in stereo 3D even if they aren't fixed for 3D yet.<LineBreak/><LineBreak/>
-    Another advantage of CMU is that it requires less performance for having a smooth gaming experience in 3D.<LineBreak/><LineBreak/>
-    However compared to traditional 3D this mode suffers from 3D artefacts like halos around objects and 3D depth is more limited by default.<LineBreak/><LineBreak/>
-    <Bold>Important information:</Bold> Press <Bold>F11</Bold> or <Bold>F12</Bold> (default configuration) ingame to "unleash" CMU for exceeding maximum 3D depth and improving the 3D effect.<LineBreak/><LineBreak/>
-    Additionally in tab <Bold>"3D Fix"</Bold> you have options to configure CMU.
+    Habilita  <Bold>Modo de Compatibilidade Liberado</Bold> (em breve CMU).<LineBreak/><LineBreak/>
+    A CMU está disponível apenas em jogos DirectX 11 e torna esses jogos reproduzíveis em 3D estéreo, mesmo que ainda não estejam fixados para 3D.<LineBreak/><LineBreak/>
+    Outra vantagem do CMU é que ele requer menos desempenho para ter uma experiência de jogo suave em 3D.<LineBreak/><LineBreak/>
+    No entanto, comparado com o 3D tradicional, este modo sofre de artefatos 3D como contornos ao redor de objetos e a profundidade 3D é mais limitada por padrão.<LineBreak/><LineBreak/>
+    <Bold>Informação importante:</Bold> Pressione <Bold>F11</Bold> ou <Bold>F12</Bold> (configuração padrão) no jogo para "desencadear" CMU para exceder a profundidade máxima do 3D e melhorar o efeito 3D.<LineBreak/><LineBreak/>
+    Além disso, na guia <Bold>"3D Fix"</Bold> Você tem opções para configurar o CMU.
   </TextBlock>
 
   <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
@@ -1007,7 +1007,7 @@ Pauldusler</system:String>
     </Italic> para definir pares de valor-chave para o arquivo de configuração. Eles serão definidos ao iniciar o jogo no modo 2D ou desinstalar a correção.<LineBreak/><LineBreak/>
     O mesmo se aplica ao clicar no botão <Italic>
       <Bold>"Valores para 3D".</Bold>
-    </Italic> button. As teclas definidas lá serão definidas ao iniciar o jogo no modo 3D ou ao instalar a correção.
+    </Italic> botão. As teclas definidas lá serão definidas ao iniciar o jogo no modo 3D ou ao instalar a correção.
   </TextBlock>
 
   <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
@@ -1172,9 +1172,9 @@ Pauldusler</system:String>
   </TextBlock>
 
   <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
-    With this option you can tag a game to be compatible to Virtual Reality.<LineBreak/><LineBreak/>
-    Tagged games are automatically added to the filter <Italic>
-      <Bold>VR compatible</Bold>
+    Com esta opção, você pode marcar um jogo para ser compatível com a Realidade Virtual.<LineBreak/><LineBreak/>
+    Jogos marcados são adicionados automaticamente ao filtro <Italic>
+      <Bold>Compatível com VR</Bold>
     </Italic>.
   </TextBlock>
 
@@ -1270,31 +1270,31 @@ Pauldusler</system:String>
   </TextBlock>
 
   <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
-    When option is enabled you can define a duration which has to be elapsed after releasing a key until the original stereo 3D settings are restored which were valid before pressing the key.
+    Quando a opção está ativada, você pode definir uma duração que deve ser transcorrida após a liberação de uma tecla até que as configurações 3D estéreo originais sejam restauradas, o que era válido antes de pressionar a tecla.
   </TextBlock>
 
   <TextBlock x:Key="ReleaseDelayMsToolTip" TextWrapping="Wrap" Width="300">
-    Time in [ms] until the original stereo 3D settings are restored after releasing a key.
+    Tempo em [ms] até que as configurações 3D estéreo originais sejam restauradas após a liberação de uma tecla.
   </TextBlock>
 
   <TextBlock x:Key="TransitionToolTip" TextWrapping="Wrap" Width="300">
-    When option is enabled 3D presets are cross-faded with a soft transition. Type and duration of the transition can be defined by the user.
+    Quando a opção está habilitada, as predefinições 3D são desbotadas com uma transição suave. Tipo e duração da transição podem ser definidos pelo usuário.
   </TextBlock>
 
   <TextBlock x:Key="TransitionMsToolTip" TextWrapping="Wrap" Width="300">
-    Time in [ms] a transition takes place between 3D presets.
+    Tempo em [ms] uma transição ocorre entre as predefinições 3D.
   </TextBlock>
 
   <TextBlock x:Key="ReleaseTransitionToolTip" TextWrapping="Wrap" Width="300">
-    When option is enabled the original stereo 3D settings are restored with a soft transition. Type and duration of the transition can be defined by the user.
+    Quando a opção está ativada, as configurações 3D estéreo originais são restauradas com uma transição suave. Tipo e duração da transição podem ser definidos pelo usuário.
   </TextBlock>
 
   <TextBlock x:Key="ReleaseTransitionMsToolTip" TextWrapping="Wrap" Width="300">
-    Time in [ms] a transition takes place for restoring the original stereo 3D settings after releasing the key.
+    Tempo em [ms] ocorre uma transição para restaurar as configurações 3D estéreo originais depois de soltar a tecla.
   </TextBlock>
 
   <TextBlock x:Key="TransitionTypeToolTip" TextWrapping="Wrap" Width="300">
-    Transition type which is used for cross-fading between 3D presets.
+    Tipo de transição que é usado para cross-fading entre predefinições 3D.
   </TextBlock>
 
   <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
@@ -1360,7 +1360,7 @@ Pauldusler</system:String>
   </TextBlock>
 
   <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
-    Automatic check for Geforce driver updates when the application is started.
+    Verificação automática de atualizações do driver Geforce quando o aplicativo é iniciado.
   </TextBlock>
 
   <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
@@ -1637,7 +1637,7 @@ Pauldusler</system:String>
 
   <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
     Inverte o padrão de intercalação para <Bold>Telas 3D passivas</Bold>.<LineBreak/><LineBreak/>
-    TIsso corrige o problema quando os olhos esquerdo e direito são trocados.<LineBreak/><LineBreak/>
+    Isso corrige o problema quando os olhos esquerdo e direito são trocados.<LineBreak/><LineBreak/>
     Tecnicamente, esta opção define as entradas de registro do Windows <Italic>
       <Bold>"InterleavePattern0"</Bold>
     </Italic> and <Italic>
