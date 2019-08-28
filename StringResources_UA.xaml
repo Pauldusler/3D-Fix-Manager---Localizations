@@ -1,0 +1,1837 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+  <!-- Display Profiles Window Bar -->
+  <system:String x:Key="Monitor">Monitor</system:String>
+  <system:String x:Key="Projector">Projector</system:String>
+  <system:String x:Key="TV">TV</system:String>
+
+  <!-- Misc -->
+  <system:String x:Key="LoadingApplication">Loading Application. Please wait...</system:String>
+  <system:String x:Key="SwitchToCompactGui">Switch to compact gui size.</system:String>
+  <system:String x:Key="SwitchToNormalGui">Switch to normal gui size.</system:String>
+  <system:String x:Key="MinimizeToTray">Minimize window to system tray.</system:String>
+  <system:String x:Key="ChangeLanguage">Change Language</system:String>
+  <system:String x:Key="Close">Close</system:String>
+
+  <system:String x:Key="Show">Show</system:String>
+  <system:String x:Key="NoMatchFound">No Match found for</system:String>
+
+  <!-- Tab header title -->
+  <system:String x:Key="Installation">Installation</system:String>
+  <system:String x:Key="Play">Play</system:String>
+  <system:String x:Key="EditProfile">Edit Profile</system:String>
+  <system:String x:Key="NewProfile">New Profile</system:String>
+  <system:String x:Key="Hotkeys">Hotkeys</system:String>
+  <system:String x:Key="3dfix">3D Fix</system:String>
+  <system:String x:Key="Profile">Profile</system:String>
+  <system:String x:Key="Settings">Settings</system:String>
+  <system:String x:Key="About">About</system:String>
+  <system:String x:Key="GeneralSettings">Application Settings</system:String>
+  <system:String x:Key="Nvidia3DSettings">Nvidia 3D Settings</system:String>
+  <system:String x:Key="DisplayProfiles">Display Profiles</system:String>
+
+  <!-- Game list on left column-->
+  <system:String x:Key="All">All Games</system:String>
+  <system:String x:Key="Installed">Installed Games</system:String>
+  <system:String x:Key="AllFixTypes">All Fix Types</system:String>
+  <system:String x:Key="_3dmigoto">3dmigoto (DX 11)</system:String>
+  <system:String x:Key="Helixmod">Helixmod (DX 9)</system:String>
+  <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
+  <system:String x:Key="NotFixed">Without 3D Fix</system:String>
+  <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
+  <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
+  <system:String x:Key="VrCompatible">VR compatible</system:String>
+  <system:String x:Key="New">New</system:String>
+  <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
+  <system:String x:Key="Edit">Edit</system:String>
+  <system:String x:Key="EditProfileToolTip">Edit Fix Profile</system:String>
+  <system:String x:Key="Delete">Delete</system:String>
+  <system:String x:Key="DeleteProfileToolTip">Remove Fix Profile</system:String>
+
+  <!-- Installation Tab -->
+  <system:String x:Key="NoGamesInstalled">No compatible games installed.</system:String>
+  <system:String x:Key="Play2D">Play 2D</system:String>
+  <system:String x:Key="Play3D">Play 3D</system:String>
+  <system:String x:Key="PlayVr">Play in VR</system:String>
+  <system:String x:Key="InstallFix">Install 3D Fix</system:String>
+  <system:String x:Key="InstallFixCompleted">Install completed</system:String>
+  <system:String x:Key="BackupRecoveryFailed">Backup recovery failed.</system:String>
+  <system:String x:Key="InstallFixFailed">Install failed. Check Install Path</system:String>
+  <system:String x:Key="InstallFixFailed02" xml:space="preserve">Error: Fix could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
+  <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Error: Wrapper could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
+  <system:String x:Key="FixWrapperOutdated">This fix includes an outdated version of 3dmigoto.</system:String>
+  <system:String x:Key="DownloadFix">Download 3D Fix</system:String>
+  <system:String x:Key="UninstallFix">Uninstall 3D Fix</system:String>
+  <system:String x:Key="UninstallFixCompleted">Uninstall completed</system:String>
+  <system:String x:Key="UninstallFixFailed">Uninstall failed</system:String>
+  <system:String x:Key="InstallWrapper">Install 3D Wrapper</system:String>
+  <system:String x:Key="UninstallWrapper">Uninstall 3D Wrapper</system:String>
+  <system:String x:Key="DeleteDownload">Clear DL Cache</system:String>
+  <system:String x:Key="DeleteDownloadToolTip">Deletes downloaded files of a 3D fix from 3D Fix Manager directory.</system:String>
+  <system:String x:Key="DeleteSuccess">Success. All downloaded files deleted.</system:String>
+  <system:String x:Key="DeleteError" xml:space="preserve">Error: Not all files could be deleted. &#x0d;&#x0d;Please make sure that no file is in use.</system:String>
+  <system:String x:Key="SourceFolder">Profile Folder</system:String>
+  <system:String x:Key="SourceFolderToolTip">Opens windows explorer and shows all files related to this 3D fix profile.</system:String>
+  <system:String x:Key="VisitSteamStore">Product Page</system:String>
+  <system:String x:Key="VisitSteamStoreToolTip">Opens webbrowser to show additional information about the game.</system:String>
+  <system:String x:Key="VisitHelixMod">HelixMod Blog</system:String>
+  <system:String x:Key="VisitHelixModToolTip">Get more information about the selected fix on HelixMod Webpage.</system:String>
+  <system:String x:Key="ForceCompatibilityMode">Enable CMU</system:String>
+  <system:String x:Key="EnableFix">Enable Fix</system:String>
+  <system:String x:Key="DownloadCompleted">Download completed</system:String>
+  <system:String x:Key="Downloading">Downloading...</system:String>
+  <system:String x:Key="DownloadFailed">Download failed</system:String>
+  <system:String x:Key="Extracting">Extracting...</system:String>
+  <system:String x:Key="ExtractionFailed">Extraction failed</system:String>
+  <system:String x:Key="GameNotInstalled">Game not installed</system:String>
+  <system:String x:Key="OpenExplorerError">Error: Could not open path in Windows explorer. Path does not exist</system:String>
+  <system:String x:Key="HotkeyBackupFound" xml:space="preserve">A backup for hotkeys and 3d fix configuration has been found. &#x0d;&#x0d;Do you want to restore the backup?</system:String>
+  <system:String x:Key="CreateHotkeyBackup">Do you want to create a backup of your hotkeys and 3D fix configuration before uninstall?</system:String>
+
+  <!--.................... New / Edit Profile Tab Begin .......................... -->
+
+  <system:String x:Key="VrCompatibility">Compatible to VR:</system:String>
+  <system:String x:Key="MainSettingsGroup">Title and State of the 3D Fix:</system:String>
+  <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
+  <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
+  <system:String x:Key="AlternativeDownloadGroup">Download an alternative version of the 3D Fix:</system:String>
+  <system:String x:Key="InstallFixSettingsGroup">Install 3D Fix:</system:String>
+  <system:String x:Key="GameConfigSettingsGroup">Game Configuration:</system:String>
+  <system:String x:Key="OverrideMonitorProfileGroup">Override Monitor Profile:</system:String>
+  <system:String x:Key="OverrideTVProfileGroup">Override TV Profile:</system:String>
+  <system:String x:Key="OverrideProjectorProfileGroup">Override Projector Profile:</system:String>
+  <system:String x:Key="GameIconSettingsGroup">Game Icon:</system:String>
+  <system:String x:Key="DriverSettingsGroup">Driver Settings / Profiles for Nvidia Profile Inspector:</system:String>
+  <system:String x:Key="GameLaunchSettingsGroup">Game Launch:</system:String>
+  <system:String x:Key="MiscSettingsGroup">Misc Settings:</system:String>
+  <system:String x:Key="FixDescriptionSettingsGroup">3D Fix Description / Helix Blog:</system:String>
+
+
+  <system:String x:Key="GameTitle">Game Title:</system:String>
+  <system:String x:Key="RelativeInstallPath">Relative Install Path:</system:String>
+  <system:String x:Key="InstallDir">Install Folder:</system:String>
+  <system:String x:Key="InstallDirName">Install Folder Name:</system:String>
+  <system:String x:Key="CustomRootPath">Custom Root / Game Path:</system:String>
+  <system:String x:Key="RelativeGameIniPath">1. Relative Path to a Game Config File:</system:String>
+  <system:String x:Key="SecondRelativeGameIniPath">2. Relative Path to a Game Config File:</system:String>
+  <system:String x:Key="ThirdRelativeGameIniPath">3. Relative Path to a Game Config File:</system:String>
+  <system:String x:Key="SetDate">Set Date</system:String>
+  <system:String x:Key="SetDateTooltip">Sets today's date as a timestamp.</system:String>
+  <system:String x:Key="DownloadLink_1">1. URL to 3D Fix:</system:String>
+  <system:String x:Key="DownloadLink_2">2. URL to 3D Fix:</system:String>
+  <system:String x:Key="DownloadLink_3">3. URL to 3D Fix:</system:String>
+  <system:String x:Key="InfoAlternativeUrl">Info about the alternative 3D Fix:</system:String>
+  <system:String x:Key="FixArchiveExtractor">Fix Archive Extractor:</system:String>
+  <system:String x:Key="AllowFixInstallation">Allow 3D Fix Installation:</system:String>
+  <system:String x:Key="AllowMigotoUpdate">Allow 3dmigoto Wrapper Update:</system:String>
+  <system:String x:Key="StereoRefreshRateOverride">Stereo Refresh Rate:</system:String>
+  <system:String x:Key="StartTool">Start additional Exe:</system:String>
+
+  <system:String x:Key="UniversalFixDetectionError">Error: Game Engine could not be detected by searching PC Gaming Wiki and Wikipedia.</system:String>
+  <system:String x:Key="DetectEngine">Detect Engine</system:String>
+  <system:String x:Key="WebLinkHelix">URL to Helix Blog / Geforce Forum:</system:String>
+  <system:String x:Key="HelixPostUpdated">Helix Post last updated:</system:String>
+
+  <system:String x:Key="LocalIconPath">Local Icon Path:</system:String>
+  <system:String x:Key="RemoteIconPath">Remote Icon Path:</system:String>
+  <system:String x:Key="DepthHackOverride">3D Depth Hack:</system:String>
+  <system:String x:Key="DisableFixIn2DMode">Disable 3D fix in 2D mode:</system:String>
+  <system:String x:Key="ProductPageUrl">URL to Product Page:</system:String>
+  <system:String x:Key="CmFlag">Hex Value for Compatibility Mode:</system:String>
+  <system:String x:Key="Profile2DMode">Nvidia Inspector Profile for 2D Mode:</system:String>
+  <system:String x:Key="Profile3DMode">Nvidia Inspector Profile for 3D Mode:</system:String>
+  <system:String x:Key="FixState">3D Fix State:</system:String>
+  <system:String x:Key="SteamAppID">Steam App ID:</system:String>
+
+  <system:String x:Key="WaitForExit">Wait for exit</system:String>
+  <system:String x:Key="GameExeAsArgument">Game Exe as start parameter</system:String>
+  <system:String x:Key="Create">Create</system:String>
+  <system:String x:Key="GameLauncherExe">Game Launcher Exe:</system:String>
+  <system:String x:Key="GameLauncherOptions">Game Launcher Options:</system:String>
+  <system:String x:Key="ModifyGameExe">Modify Game Exe:</system:String>
+  <system:String x:Key="GameExeSearchString">Search String:</system:String>
+  <system:String x:Key="GameExeReplaceString">Replacement String:</system:String>
+  <system:String x:Key="DoNotModify">Do not modify</system:String>
+  <system:String x:Key="ModifyNormalGameExe">Modify Game Exe</system:String>
+  <system:String x:Key="ModifyAdditionalExe">Modify additional Exe</system:String>
+  <system:String x:Key="FixDescription">Fix Description:</system:String>
+
+  <system:String x:Key="CreateEditConfigFile">Create / edit</system:String>
+  <system:String x:Key="EditOnlyConfigFile">Edit only</system:String>
+
+  <!-- ComboBoxes -->
+  <system:String x:Key="NoProfileInstall">Do not install Profile</system:String>
+  <system:String x:Key="InstallWithDialog">Install with Dialog</system:String>
+  <system:String x:Key="SilentInstallation">Silent Installation</system:String>
+
+  <system:String x:Key="Unknown">Unknown</system:String>
+  <system:String x:Key="FixBroken">Fix Broken</system:String>
+  <system:String x:Key="FixBrokenToolTip">3D Fix is currently broken.</system:String>
+  <system:String x:Key="RequiresExtraSteps">Requires extra steps by user</system:String>
+  <system:String x:Key="RequiresExtraStepsToolTip">Installation of fix requires additional steps done by the user for completing installation. Please check description below.</system:String>
+  <system:String x:Key="WorksOutOfTheBox">Works out of the box</system:String>
+  <system:String x:Key="WorksOutOfTheBoxToolTip">No additional steps required for installing the fix. This is a simple one click installation.</system:String>
+
+  <system:String x:Key="CloseRTSS">Close RTSS</system:String>
+  <system:String x:Key="StartRTSS">Start RTSS</system:String>
+
+  <system:String x:Key="StartByAppId">Start via Steam App ID</system:String>
+  <system:String x:Key="StartByGameExe">Start via Game Exe</system:String>
+  <system:String x:Key="StartByToolExe">Start via additional Exe</system:String>
+
+  <system:String x:Key="RunNormal">Run normal</system:String>
+  <system:String x:Key="RunAsAdmin">Run as admin</system:String>
+  <system:String x:Key="ApplyGlobalSetting">Apply global Setting</system:String>
+  <system:String x:Key="OverrideGlobalSetting">Override global Setting</system:String>
+
+  <system:String x:Key="CustomText">Custom Info Text</system:String>
+  <system:String x:Key="SLI">SLI Info Text</system:String>
+
+  <!-- Buttons-->
+  <system:String x:Key="ChoosePath">Choose Path</system:String>
+  <system:String x:Key="PickFile">Pick File</system:String>
+  <system:String x:Key="RemoveIcon">Remove Icon</system:String>
+  <system:String x:Key="OpenUrl">Open URL</system:String>
+  <system:String x:Key="SearchUrl">Search URL</system:String>
+  <system:String x:Key="SearchAppID">Search App ID</system:String>
+  <system:String x:Key="SearchInDB">Search in DB</system:String>
+  <system:String x:Key="SearchSteamDb">Search Steam DB</system:String>
+  <system:String x:Key="ValuesFor2D">Values for 2D</system:String>
+  <system:String x:Key="ValuesFor3D">Values for 3D</system:String>
+  <system:String x:Key="Open">Open File</system:String>
+  <system:String x:Key="OpenExplorer">Open Explorer</system:String>
+  <system:String x:Key="Cancel">Cancel</system:String>
+  <system:String x:Key="Save">Save</system:String>
+  <system:String x:Key="SaveChanges">Save Changes</system:String>
+  <system:String x:Key="CreateProfile">Create Profile</system:String>
+
+  <!--.................... Edit Profile Tab End .......................... -->
+
+
+  <!--.................... Hotkeys Tab Begin .......................... -->
+
+  <!-- CMU Management Group-->
+  <system:String x:Key="CmuGameExe">Game Exe:</system:String>
+  <system:String x:Key="AutoPatch">Enable auto patching:</system:String>
+  <system:String x:Key="PatchDelay">Patch delay:</system:String>
+  <system:String x:Key="AutoUpdateDriver">Update driver profile:</system:String>
+  <system:String x:Key="CmuSettings">Compatibility Mode Unleashed Settings:</system:String>
+  <system:String x:Key="CmuWarning" xml:space="preserve">Show CMU warning</system:String>
+  <system:String x:Key="CmuWarningDialog" xml:space="preserve">Warning: Although not being a cheat tool CMU might be detected as such in online games. As a result your game account would be banned.
+
+Therefore it's recommended to use CMU for singleplayer or offline games only.</system:String>
+
+  <TextBlock x:Key="CmuWarningToolTip" TextWrapping="Wrap" Width="300">
+    Warns the user that using CMU in online games might lead to a ban of the game account.
+  </TextBlock>
+
+  <TextBlock x:Key="AutoUpdateDriverToolTip" TextWrapping="Wrap" Width="300">
+    This option controls whether to modify the driver profile of the game.<LineBreak/><LineBreak/>
+    If you have installed 3dmigoto this option is automatically disabled because 3dmigoto will take care of setting the driver profile for Compatibility Mode.<LineBreak/><LineBreak/>
+    When 3dmigoto is not installed CMU is used instead for adjusting the driver profile.
+  </TextBlock>
+
+  <TextBlock x:Key="AutoPatchToolTip" TextWrapping="Wrap" Width="300">
+    Controls whether to enable CMU automatically when starting a game. The activation of CMU is done after a defined period you can adjust in the option below.<LineBreak/><LineBreak/>
+    CMU then patches the Nvidia driver and allows the CMU hotkeys to work in order increase the 3D depth beyond allowed values by pressing F11 (default key binding).<LineBreak/><LineBreak/>
+    If you leave this option disabled you have to press CTRL + SHIFT + T ingame for enabling CMU manually.
+  </TextBlock>
+
+  <TextBlock x:Key="PatchDelayToolTip" TextWrapping="Wrap" Width="300">
+    Defines the period for automatically enabling CMU after the game was started.
+  </TextBlock>
+
+  <TextBlock x:Key="CmuGameExeToolTip" TextWrapping="Wrap" Width="300">
+    Name of the executable used to start the game.<LineBreak/><LineBreak/>
+    This is automatically set and should only be changed if required.
+  </TextBlock>
+
+  <TextBlock x:Key="CmuConvergenceToolTip" TextWrapping="Wrap" Width="300">
+    Enter the convergence value you want to set when the hotkey is pressed.<LineBreak/><LineBreak/>
+    Valid values range from 0.2 and 1.0. All numbers higher or lower than this are clamped by the Nvidia driver.
+  </TextBlock>
+
+  <TextBlock x:Key="CmuSeparationToolTip" TextWrapping="Wrap" Width="300">
+    Enter a factor to be multiplied with the current 3D depth.<LineBreak/><LineBreak/>
+    In other words with this factor you can exceed the very limited 3D depth of Compatibility Mode to improve the 3D effect.<LineBreak/><LineBreak/>
+    Example: if you choose a value of 2.2 this means that your maximum 3D depth is increased by 220%.<LineBreak/><LineBreak/>
+    You can also use the factor to lower the 3D depth (e.g. with a value of 0.2).<LineBreak/><LineBreak/>
+    This is especially useful in ego shooters where you want to aim by holding the right mouse button. A low 3D depth in this situation makes aiming more comfortable.
+  </TextBlock>
+
+  <system:String x:Key="FixInfo">Fix Info:</system:String>
+  <system:String x:Key="Game">Game:</system:String>
+  <system:String x:Key="GameEngine">Game Engine:</system:String>
+  <system:String x:Key="FixType">Fix Type:</system:String>
+  <system:String x:Key="WrapperVersion">Wrapper Version:</system:String>
+  <system:String x:Key="IniPath">Ini Path:</system:String>
+  <system:String x:Key="IniPath02">Ini Path 2:</system:String>
+  <system:String x:Key="CreateIni">Create Ini</system:String>
+  <system:String x:Key="ResetIniToDefault">Reset Ini to Default:</system:String>
+  <system:String x:Key="DownloadDefaultIni">Download Default Ini</system:String>
+  <system:String x:Key="ManageHotkeys">Manage Hotkeys:</system:String>
+  <system:String x:Key="NoIniProvided">No ini provided by this fix</system:String>
+  <system:String x:Key="ParseError">Sorry, ini file could not be parsed"</system:String>
+  <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Sorry, could not determine Helix Wrapper Version. &#x0d;Please click on 'Download Default Ini' to get this information</system:String>
+  <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Old Version</system:String>
+  <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Old Version</system:String>
+  <system:String x:Key="HotkeysNotSupportedMigoto">Sorry, hotkey editing not supported with this version of 3dmigoto.</system:String>
+  <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, hotkey editing not supported with this version of OpenGl Wrapper.</system:String>
+
+  <!-- Hotkey Management Group -->
+  <system:String x:Key="HotkeyManagement">Hotkey Management:</system:String>
+  <system:String x:Key="NewHotkey">New Hotkey</system:String>
+  <system:String x:Key="NewHotkeyToolTip">Creates a new hotkey. Don't forget to assign a key.</system:String>
+  <system:String x:Key="DeleteHotkey"> Remove Key</system:String>
+  <system:String x:Key="DeleteHotkeyToolTip">Removes hotkey with all corresponding 3D presets.</system:String>
+  <system:String x:Key="SelectedHotkey">Selected Hotkey:</system:String>
+  <system:String x:Key="SelectedHotkeyToolTip">Selected Hotkey for editing.</system:String>
+  <system:String x:Key="EditKeyBinding">Edit Key Binding:</system:String>
+  <system:String x:Key="KeyType">Key Type:</system:String>
+  <system:String x:Key="PressKeyToolTip">Press a key to change key binding.</system:String>
+  <system:String x:Key="ChooseInputDeviceToolTip">Choose Input Device for Key Binding.</system:String>
+  <system:String x:Key="Description">Description:</system:String>
+  <system:String x:Key="DescriptionToolTip">Short summary about the purpose of the hotkey.</system:String>
+  <system:String x:Key="ResetIniToolTip">Resets the ini to the original state.</system:String>
+
+  <!-- Preset Management Group -->
+  <system:String x:Key="PresetManagement">Preset Management:</system:String>
+  <system:String x:Key="NewPreset">New Preset</system:String>
+  <system:String x:Key="NewPresetToolTip">Creates a new 3D preset.</system:String>
+  <system:String x:Key="DefaultPreset">Default Preset:</system:String>
+  <system:String x:Key="Delay">Delay:</system:String>
+  <system:String x:Key="ReleaseDelay">Release Delay:</system:String>
+  <system:String x:Key="Transition">Transition:</system:String>
+  <system:String x:Key="ReleaseTransition">Release Transition:</system:String>
+
+  <!-- Preset Group -->
+  <system:String x:Key="UseStereoSettings">Use Stereo Settings</system:String>
+  <system:String x:Key="UseStereoSettingsToolTip">Enable this to allow this preset to change the separation and / or convergence settings in game.</system:String>
+
+  <system:String x:Key="SaveStereoSettings">Save Stereo Settings in Game with F7:</system:String>
+  <system:String x:Key="SaveStereoSettingsToolTip">Enable this to allow presets to be changed while playing. Make sure you select the preset in game by pressing the hotkey button, change 3D Depth / Convergence with CTRL + F3 - F6 to your liking and press F7 to save.</system:String>
+
+  <system:String x:Key="chkStereoSeparationToolTip">Enable this to set the 3D separation. Unchecking will remove the corresponding entry from the ini file.</system:String>
+  <system:String x:Key="sliderStereoSeparationToolTip">Set 3D separation in percent.</system:String>
+
+  <system:String x:Key="Convergence">Convergence:</system:String>
+  <system:String x:Key="chkConvergenceToolTip">"Enable this to set the convergence. Unchecking will remove the corresponding entry from the ini file."</system:String>
+  <system:String x:Key="tbConvergenceToolTip">Set the Convergence as a floating-point number.</system:String>
+
+  <system:String x:Key="chkShaderConstToolTip">Enable this to define a shader constant and set its value. Unchecking will remove the corresponding entry from the ini file</system:String>
+  <system:String x:Key="chbShaderConstToolTip">Choose a constant to be passed to the shader.</system:String>
+  <system:String x:Key="tbShaderConstToolTip">Set the constant value as a floating-point number.</system:String>
+  <system:String x:Key="NewConstant">New Constant</system:String>
+  <system:String x:Key="NewConstantToolTip">Creates a new shader constant.</system:String>
+  <system:String x:Key="DefaultConstToolTip">Type in a floating-point number</system:String>
+
+  <system:String x:Key="RemovePresetToolTip">Removes the entire preset from the ini file.</system:String>
+
+  <!-- General Ini Settings group -->
+  <system:String x:Key="GeneralIniSettings">General Ini Settings:</system:String>
+  <system:String x:Key="StereoOverlay">Stereo Overlay:</system:String>
+  <system:String x:Key="EnableStereoOverlay">Stereo Overlay / Hunting Mode:</system:String>
+  <system:String x:Key="ShowHideOverlay">Show / Hide Stereo Overlay:</system:String>
+  <system:String x:Key="ShowHideOverlayToolTip">Hotkey for hiding the overlay. Note: this will not disable hunting mode.</system:String>
+  <system:String x:Key="ReloadIniFile">Reload Ini File in Game:</system:String>
+  <system:String x:Key="ReloadIniFileToolTip">Reloads the ini while playing and applies hotkey / preset changes.</system:String>
+  <system:String x:Key="DefaultValuesConstants">Default Values for Shader Constants:</system:String>
+  <system:String x:Key="EnableAlternative3dMode">Enable alternative 3D format:</system:String>
+  <system:String x:Key="EnableAlternative3dModeToolTip">Choose an alternative 3D Format for use with 3D TVs and projectors.</system:String>
+  <system:String x:Key="EnableSoftwareMouse">Enable Software Mouse Cursor</system:String>
+  <system:String x:Key="Constant">Constant</system:String>
+  <system:String x:Key="ResolutionAndRefreshRates">Resolution and refresh rates:</system:String>
+  <system:String x:Key="EnableUpscaling">Enable upscaling:</system:String>
+  <system:String x:Key="UpscalingMode">Upscaling mode:</system:String>
+  <system:String x:Key="OverrideScreenWidth">Override screen width:</system:String>
+  <system:String x:Key="OverrideScreenHeight">Override screen height:</system:String>
+  <system:String x:Key="OverrideScreenToolTip">Force override the screen resolution.</system:String>
+  <system:String x:Key="UpscalingScreenWidth">Target screen width for upscaling:</system:String>
+  <system:String x:Key="UpscalingScreenHeight">Target screen height for upscaling:</system:String>
+  <system:String x:Key="OverrideRefrehRate">Override refresh rate:</system:String>
+  <system:String x:Key="OverrideRefrehRateToolTip">Overrides refresh rate set by game.</system:String>
+  <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
+  <system:String x:Key="ForceFullscreen">Force fullscreen on game start:</system:String>
+  <system:String x:Key="ForceFullscreenOnKeyPress">Force fullscreen on key press:</system:String>
+  <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
+  <system:String x:Key="ForcedFullscreen">Force fullscreen</system:String>
+  <system:String x:Key="NormalFullscreen">Normal fullscreen</system:String>
+  <system:String x:Key="SoftDisabled">Soft disabled</system:String>
+  <system:String x:Key="TypeInIntegerToolTip">Type in an integer value.</system:String>
+  <system:String x:Key="TypeInCommaSeparatedListToolTip">Type in a comma separated list of refresh rates.</system:String>
+
+  <!-- Driver Profile Settings group -->
+  <system:String x:Key="DriverProfileSettings">Driver Profile Settings:</system:String>
+  <system:String x:Key="Stereo3DSettings">Stereo 3D Settings:</system:String>
+  <system:String x:Key="CompatibilityModeSettings">3D Compatibility Mode Settings:</system:String>
+  <system:String x:Key="VisionReady">3D Vision Ready</system:String>
+  <system:String x:Key="VisionReadyToolTip">Changes the rating of the stereoscopic quality.</system:String>
+  <system:String x:Key="Excellent">Excellent</system:String>
+  <system:String x:Key="Good">Good</system:String>
+  <system:String x:Key="Fair">Fair</system:String>
+  <system:String x:Key="Not Recommended">Not Recommended</system:String>
+  <!--.................... Hotkeys Tab End .......................... -->
+
+
+  <!--.................... Application Settings Tab Begin .......................... -->
+
+  <!-- General Settings group -->
+  <system:String x:Key="GeneralSettingsGroup">General Settings:</system:String>
+  <system:String x:Key="UseProgramFor">Use program for:</system:String>
+  <system:String x:Key="CheckForUpdates">Check for program updates at startup</system:String>
+  <system:String x:Key="CheckForDriverUpdates">Check for driver updates at startup</system:String>
+  <system:String x:Key="AllowChangesToGameConfig">Optimize game settings for Stereo 3D</system:String>
+  <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
+  <system:String x:Key="FullscreenOptimizations">Fullscreen optimizations:</system:String>
+  <system:String x:Key="ControlledByFixProfile">Controlled by Fix Profile</system:String>
+  <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
+  <system:String x:Key="PreferIconDownload">Prefer game icons from internet database</system:String>
+  <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
+  <system:String x:Key="DoNotChangeSetting">Keep current Setting</system:String>
+  <system:String x:Key="DownloadScreenshots">Download stereoscopic screenshots</system:String>
+
+  <!-- 3D Fix / 3dmigoto settings group -->
+  <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Settings:</system:String>
+  <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
+  <system:String x:Key="ClearAllDownloadCache">Clear download cache for all fix profiles:</system:String>
+  <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
+  <system:String x:Key="DisableFixesIn2dMode">Disable 3D fixes in 2D mode:</system:String>
+  <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
+  <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
+  <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
+  <system:String x:Key="AutoUpdate3dmigoto">Update 3dmigoto at startup</system:String>
+  <system:String x:Key="UpdateAllWrappers">Update 3dmigoto for all installed 3D fixes:</system:String>
+
+  <!-- Search paths group -->
+  <system:String x:Key="SearchPathsGroup">Detecting installed Games:</system:String>
+  <system:String x:Key="EnableCachedPaths">Cache detected games for faster app start</system:String>
+  <system:String x:Key="EnableRegistrySearch">Search games in Windows registry</system:String>
+  <system:String x:Key="EnableSearchPaths">Search games in specified directories (Search paths)</system:String>
+  <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from Windows registry</system:String>
+  <system:String x:Key="SearchDepth">Search depth:</system:String>
+  <system:String x:Key="SearchPaths">Search paths:</system:String>
+  <system:String x:Key="SearchGames">Search games</system:String>
+  <system:String x:Key="DetectPaths">Detect libraries</system:String>
+  <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
+  <system:String x:Key="Add">Add</system:String>
+  <system:String x:Key="AddPathToolTip">Adds a search path.</system:String>
+  <system:String x:Key="Remove">Remove</system:String>
+  <system:String x:Key="RemovePathToolTip">Removes the selected search path.</system:String>
+  <system:String x:Key="ChangePathToolTip">Changes the selected search path</system:String>
+
+  <!-- RTSS settings group -->
+  <system:String x:Key="RtssSettingsGroup">RivaTuner Statistics Server Settings:</system:String>
+  <system:String x:Key="StartRTSS_Setting">Start / close RTSS depending on fix profile setting</system:String>
+  <system:String x:Key="InterruptGameLaunch">Pause game start for setting up RTSS</system:String>
+  <system:String x:Key="CloseRivaTunerIn2D">Close RTSS when starting a game in 2D mode</system:String>
+  <system:String x:Key="CloseRtssOnAppClose">Close RTSS when quitting 3D Fix Manager</system:String>
+  <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server not detected / not installed</system:String>
+  <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server older than version 7.2</system:String>
+
+  <!-- Game Launcher Settings group -->
+  <system:String x:Key="GameLauncherSettings">Game Launcher Settings:</system:String>
+  <system:String x:Key="StartGamesByGameExe">Prefer starting games via game launcher exe</system:String>
+  <system:String x:Key="StartGamesBySteamAppId">Prefer starting games via Steam client (Steam app ID)</system:String>
+  <system:String x:Key="StartGamesByFixProfile">Start method is controlled by fix profile (recommended)</system:String>
+
+  <!--Nvidia Profile Inspector Settings group -->
+  <system:String x:Key="NvidiaProfileInspectorSettings">Nvidia Profile Inspector Settings:</system:String>
+  <system:String x:Key="NeverInstallProfiles">Globally disable installation of driver profiles</system:String>
+  <system:String x:Key="ProfileInstallByFixProfile">Installation of driver profiles is controlled by fix profile</system:String>
+  <system:String x:Key="InstallProfilesSilently">Install driver profiles silently without warning messages</system:String>
+  <system:String x:Key="NoNvidiaDetected">No Nvidia driver detected / installed</system:String>
+  <system:String x:Key="Start">Start</system:String>
+  <system:String x:Key="StartProfileInspectorToolTip">Starts Nvidia Profile Inspector.</system:String>
+  <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
+
+  <!-- Stereo Refresh Rate Settings group -->
+  <system:String x:Key="StereoRefreshRateSettings">Shutter Frequency of Nvidia 3D Glasses / Stereo Refresh Rate:</system:String>
+  <system:String x:Key="GlobalStereoRefreshRate">Use refresh rate set in Nvidia driver</system:String>
+  <system:String x:Key="ProfileStereoRefreshRate">Refresh rate is controlled by fix profile</system:String>
+
+  <!-- Buttons-->
+  <system:String x:Key="Disable">Disable</system:String>
+  <system:String x:Key="Enable">Enable</system:String>
+  <system:String x:Key="Update">Update</system:String>
+  <system:String x:Key="Clear">Clear</system:String>
+
+  <!--.................... General Settings Tab End .......................... -->
+
+
+  <!--.................... Nvidia 3D Settings Tab Begin .......................... -->
+
+  <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D not detected</system:String>
+  <system:String x:Key="PressKeyCombination">Press a key combination on your keyboard.</system:String>
+
+  <!-- General settings group -->
+  <system:String x:Key="EnableStereoGroup">Enable / set up  3D Functionality:</system:String>
+  <system:String x:Key="EnableNvidia3D">Enable Nvidia Stereoscopic 3D</system:String>
+  <system:String x:Key="Disable3dOnClosing">Auto disable Nvidia Stereoscopic 3D when closing application</system:String>
+  <system:String x:Key="Disable3dOnGameClosing">Auto disable Nvidia Stereoscopic 3D when closing games</system:String>
+  <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
+  <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
+  <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode (DirectX 9 only)</system:String>
+  <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
+  <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
+  <system:String x:Key="Nvida3dDriverOverlay">Enable Nvidia 3D driver overlay</system:String>
+
+  <!-- 3D depth / 3D Vision shutter glasses group -->
+  <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
+  <system:String x:Key="StereoSeparation">3D depth:</system:String>
+  <system:String x:Key="DepthMultiplier">3D depth multiplier:</system:String>
+  <system:String x:Key="Inch">inch</system:String>
+  <system:String x:Key="StereoRefreshRate">Shutter frequency 3D glasses:</system:String>
+  <system:String x:Key="IROutput">Sync mode of IR sender:</system:String>
+  <system:String x:Key="SingleIREnvironment">Single IR Environment</system:String>
+  <system:String x:Key="MixedIREnvironment">Multi IR Environment</system:String>
+  <system:String x:Key="LanEnvironment">3D Vision LAN Environment</system:String>
+
+  <!-- Driver settings group -->
+  <system:String x:Key="DriverSettings2D">Optimize global Driver Profile for 2D Mode:</system:String>
+  <system:String x:Key="DriverSettings3D">Optimize global Driver Profile for 3D Mode:</system:String>
+  <system:String x:Key="MaxPreRenderedFrames">Maximum pre-rendered frames:</system:String>
+  <system:String x:Key="VerticalSync">Vertical sync:</system:String>
+  <system:String x:Key="MonitorTechnology">Monitor technology:</system:String>
+  <system:String x:Key="GsyncMode">G-Sync Mode:</system:String>
+  <system:String x:Key="PreferredRefreshRate">Preferred refresh rate:</system:String>
+  <system:String x:Key="PowerManagementMode">Power management mode:</system:String>
+  <system:String x:Key="ApplicationControlled">Application controlled</system:String>
+  <system:String x:Key="Off">Off</system:String>
+  <system:String x:Key="On">On</system:String>
+  <system:String x:Key="Fast">Fast</system:String>
+  <system:String x:Key="FixedRefreshRate">Fixed refresh rate</system:String>
+  <system:String x:Key="G-SYNC">G-SYNC</system:String>
+  <system:String x:Key="ULMB">ULMB</system:String>
+  <system:String x:Key="FullscreenOnly">Fullscreen only</system:String>
+  <system:String x:Key="FullscreenAndWindowed">Fullscreen and windowed</system:String>
+  <system:String x:Key="HighestAvailable">Highest available</system:String>
+  <system:String x:Key="MaximumPerformance">Maximum performance</system:String>
+  <system:String x:Key="OptimalPerformance">Optimal performance</system:String>
+  <system:String x:Key="Adaptive">Adaptive</system:String>
+  <system:String x:Key="AdaptiveHalf">Adaptive (half refresh rate)</system:String>
+  <system:String x:Key="GlobalDriverProfileFile">Exported profile:</system:String>
+
+  <!-- General hotkeys group -->
+  <system:String x:Key="GeneralHotkeys">General Hotkeys:</system:String>
+  <system:String x:Key="StereoToggle">Show / hide stereoscopic effects:</system:String>
+  <system:String x:Key="StereoToggleToolTip">Toggles between plain 2D and stereoscopic 3D while gaming.</system:String>
+  <system:String x:Key="StereoSeparationAdjustLess">Decrease 3D depth:</system:String>
+  <system:String x:Key="StereoSeparationAdjustLessToolTip">Decreases 3D depth / separation.</system:String>
+  <system:String x:Key="StereoSeparationAdjustMore">Increase 3D depth:</system:String>
+  <system:String x:Key="StereoSeparationAdjustMoreToolTip">Increases 3D depth / separation.</system:String>
+  <system:String x:Key="ToggleMemo">Show / hide in-game compatibility:</system:String>
+  <system:String x:Key="ToggleMemoToolTip">Shows / hides green text with compatibility information and recommended in-game settings.</system:String>
+
+  <!-- Advanced hotkeys group -->
+  <system:String x:Key="AdvancedHotkeys">Advanced Hotkeys:</system:String>
+  <system:String x:Key="StereoAdvancedHKConfig">Enable advanced in-game hotkeys</system:String>
+  <system:String x:Key="StereoAdvancedHKConfigToolTip">Enables advanced hotkeys for changing convergence / frustum settings and more.</system:String>
+  <system:String x:Key="StereoConvergenceAdjustLess">Decrease convergence:</system:String>
+  <system:String x:Key="StereoConvergenceAdjustLessToolTip">Decreases the pop-out effect in games.</system:String>
+  <system:String x:Key="StereoConvergenceAdjustMore">Increase convergence:</system:String>
+  <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Increases the pop-out effect in games.</system:String>
+  <system:String x:Key="WriteConfig">Save in-game changes:</system:String>
+  <system:String x:Key="WriteConfigToolTip">Saves convergence and frustum adjustments to Nvidia driver profile.</system:String>
+  <system:String x:Key="CycleFrustumAdjust">Cycle frustum adjustment:</system:String>
+  <system:String x:Key="CycleFrustumAdjustToolTip">Cycles through three different frustum adjustments.</system:String>
+  <system:String x:Key="StereoToggleMode">Toggle 3D compatibility mode:</system:String>
+  <system:String x:Key="StereoToggleModeToolTip">Toggles between compatibility mode for DirectX 11 games (Fake 3D) and Real 3D mode.</system:String>
+
+  <!-- Screenshots group -->
+  <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
+  <system:String x:Key="StereoImageType">Stereo image type:</system:String>
+  <system:String x:Key="StereoImageTypeToolTip">Sets the format for stereoscopic images (JPS or PNS).</system:String>
+  <system:String x:Key="StereoImageFolder">Open Folder</system:String>
+  <system:String x:Key="StereoImageFolderToolTip">Opens location of screenshots folder in windows explorer.</system:String>
+  <system:String x:Key="SnapShotQuality">JPS quality:</system:String>
+  <system:String x:Key="SnapShotQualityToolTip">Determines image quality and file size.</system:String>
+  <system:String x:Key="SaveStereoImage">Take screenshot:</system:String>
+  <system:String x:Key="SaveStereoImageToolTip">Saves a stereoscopic screenshot on the hard drive.</system:String>
+
+  <!-- LaserSight group -->
+  <system:String x:Key="LaserSightGroup">Laser Sight:</system:String>
+  <system:String x:Key="LaserSightEnabled">Enable laser sight:</system:String>
+  <system:String x:Key="LaserSightEnabledToolTip">Sets whether 3D laser sight can be enabled with a hotkey or automatically by Nvidia driver profile.</system:String>
+  <system:String x:Key="ToggleLaserSight">Toggle laser sight:</system:String>
+  <system:String x:Key="ToggleLaserSightToolTip">Enables or disables stereoscopic laser sight in-game.</system:String>
+  <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
+  <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
+  <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
+  <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
+
+  <!-- Buttons-->
+  <system:String x:Key="Load">Load</system:String>
+  <system:String x:Key="Reset">Reset</system:String>
+  <system:String x:Key="Apply">Apply</system:String>
+
+  <!--.................... Nvidia 3D Settings Tab End .......................... -->
+
+
+  <!--.................... Display Profiles Tab Begin .......................... -->
+
+  <system:String x:Key="MonitorProfileGroup">Monitor Profile:</system:String>
+  <system:String x:Key="TVProfileGroup">TV Profile:</system:String>
+  <system:String x:Key="ProjectorProfileGroup">Projector Profile:</system:String>
+  <system:String x:Key="ProfileSettingsGroup">General Profile Settings:</system:String>
+  <system:String x:Key="LinkProfileToDisplay">Link profile to display:</system:String>
+  <system:String x:Key="DisplaySize">Display size:</system:String>
+  <system:String x:Key="RealScreenSize">Screen size:</system:String>
+  <system:String x:Key="DisplayType">3D display type:</system:String>
+  <system:String x:Key="Preferred3dFormat">Preferred 3D format:</system:String>
+  <system:String x:Key="GameSettings2D">Game settings for 2D mode:</system:String>
+  <system:String x:Key="GameSettings3D">Game settings for 3D mode:</system:String>
+  <system:String x:Key="FramerateLimit">Framerate limit:</system:String>
+  <system:String x:Key="DesktopSettings">Desktop settings:</system:String>
+  <system:String x:Key="GameResolution">Game resolution:</system:String>
+  <system:String x:Key="GameResolution2D">Game resolution 2D mode:</system:String>
+  <system:String x:Key="GameResolution3D">Game resolution 3D mode:</system:String>
+  <system:String x:Key="DesktopResolution2D">Desktop resolution 2D mode:</system:String>
+  <system:String x:Key="DesktopResolution2DClosing">Desktop resolution on closing:</system:String>
+  <system:String x:Key="DesktopResolution3D">Desktop resolution 3D mode:</system:String>
+  <system:String x:Key="ShowProfileSelectionOnStartup">Show profile selection dialog on application start</system:String>
+  <system:String x:Key="ShowProfileSelectionOnGameStart">Show profile selection dialog on game start</system:String>
+  <system:String x:Key="AllowDisplayProfileOverride">Allow fix profiles to override global display profiles</system:String>
+  <system:String x:Key="DefaultProfileOnStartup">Default profile on startup:</system:String>
+  <system:String x:Key="PleaseChooseProfile">Please choose a display profile:</system:String>
+  <system:String x:Key="ShowProfileDialogOnGameStart">Show this dialog every time a game is started</system:String>
+  <system:String x:Key="ShowProfileDialogOnAppStart">Show this dialog every time the application is started</system:String>
+
+  <!--.................... Display Profiles Tab End .......................... -->
+
+
+  <!--.................... About Tab Begin .......................... -->
+
+  <system:String x:Key="ProgramDevelopedBy">Program developed by:</system:String>
+  <system:String x:Key="FixesDevelopedBy">3D Fixes developed by:</system:String>
+  <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
+  <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
+  <system:String x:Key="ProgramVersion">Program version:</system:String>
+  <system:String x:Key="FixProfiles">Profiles version:</system:String>
+  <system:String x:Key="CheckUpdate">Check for Updates</system:String>
+  <system:String x:Key="UpdateSuccess">Update completed</system:String>
+  <system:String x:Key="UpdateFailed">Update failed</system:String>
+  <system:String x:Key="ChangeNotes">(Change Notes)</system:String>
+  <system:String x:Key="Donate">Donate</system:String>
+  <system:String x:Key="Installing">Installing...</system:String>
+  <system:String x:Key="InstallingDrivers">Installing drivers...</system:String>
+  <system:String x:Key="Installing3dVisionDriver">Installing 3D Vision driver...</system:String>
+  <system:String x:Key="InstallFailed">Driver install failed.</system:String>
+  <system:String x:Key="DownloadingDrivers">Downloading driver...</system:String>
+  <system:String x:Key="ExtractingDrivers">Extracting driver. Please wait...</system:String>
+  <system:String x:Key="Extracting3dVisionDriver">Extracting 3D Vision driver. Please wait...</system:String>
+
+
+  <!-- Buttons -->
+  <system:String x:Key="Manual">Manual</system:String>
+  <system:String x:Key="ReportBugs">Report Bugs</system:String>
+  <system:String x:Key="UpdateSteamDb">Update Steam DB</system:String>
+  <system:String x:Key="CreateReleases">Create Releases</system:String>
+  <system:String x:Key="ReferenceDb">Fill Reference DB</system:String>
+  <system:String x:Key="GithubLanguages">GitHub Languages</system:String>
+
+  <!--.................... About Tab End .......................... -->
+
+
+  <!--.................... Dialog Window Begin .......................... -->
+
+  <!-- Buttons-->
+  <system:String x:Key="Yes">Yes</system:String>
+  <system:String x:Key="No">No</system:String>
+  <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Do you want to revert 3dmigoto to the original version which was shipped with this 3D fix? &#x0d;&#x0d;Original version: {0}&#x0d;Installed version: {1}</system:String>
+  <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
+  <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
+  <system:String x:Key="InstallOpenGLwrapperx32">Install OpenGL x32</system:String>
+  <system:String x:Key="InstallOpenGLwrapperx64">Install OpenGL x64</system:String>
+  <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
+  <system:String x:Key="InstallHelixModx64">Install HelixMod x64</system:String>
+  <system:String x:Key="QuickSetup">Quick Setup</system:String>
+  <system:String x:Key="SetupWizard">Setup Wizard</system:String>
+  <system:String x:Key="NormalFix">Normal 3D Fix</system:String>
+  <system:String x:Key="SliFix">SLI 3D Fix</system:String>
+  <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
+
+  <!-- Messages -->
+
+  <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode.&#x0d;&#x0d;Please install 3D Vision driver and try again.</system:String>
+
+  <!-- Driver update dialog -->
+  <system:String x:Key="DriverUpdateHeadline">A new Geforce graphics driver is available. Do you want to update your driver?</system:String>
+  <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Installed driver:    {0}</system:String>
+  <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Latest driver:        {0}</system:String>
+  <system:String x:Key="DriverUpdateImportantInfoHeadline">Important information:</system:String>
+
+  <system:String x:Key="DriverUpdateImportantInfoExplanation">
+    Nvidia officially dropped support for 3D Vision / stereoscopic 3D in May 2019 which means that the stereo 3D driver isn't included in current Geforce graphics drivers any more.
+    Although not included in the driver package 3D Vision still can be installed and perfectly used like before.
+    3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+  </system:String>
+
+  <system:String x:Key="DriverUpdateInstallProcedure">Install notes:</system:String>
+
+  <system:String x:Key="DriverUpdateInstallProcedureExplanation">
+    Just let 3D Fix Manager install the required drivers.
+    For doing so please click on the "continue" button in the install wizards whenever asked and wait until the installation is completed. That's all.
+    Don't worry if you canceled one of the setup wizards by mistake. 3D Fix Manager checks all dependencies and installs missing components automatically.
+  </system:String>
+
+  <system:String x:Key="DriverUpdateSupportedDriversHeadline">Last official 3D Vision driver:</system:String>
+
+  <system:String x:Key="DriverUpdateSupportedDriversExplanation">
+    Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision.
+    Install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
+  </system:String>
+
+  <system:String x:Key="StereoSetupError">Error: Failed to enable Stereoscopic 3D as 3D Vision driver is missing. &#x0d;&#x0d;Please install older version 425.31 of your graphics driver.</system:String>
+  <system:String x:Key="DriverInstallFailed">Driver install failed.</system:String>
+  <system:String x:Key="ControllerInstallFailed">Failed to install 3D controller driver.</system:String>
+  <system:String x:Key="_3dVisionNotInstalled">Nvidia 3D Vision driver not installed</system:String>
+
+  <!-- Driver update dialog simple-->
+  <system:String x:Key="DriverUpdateSimpleHeadline">Do you want to update your graphics driver to the latest version as well?</system:String>
+  <system:String x:Key="DriverUpdatePleaseChoose">Please choose</system:String>
+  <system:String x:Key="DriverUpdateSimpleYesChoice">, if you want to update your Geforce graphics driver to the latest version (recommended)</system:String>
+  <system:String x:Key="DriverUpdateSimpleNoChoice">, if you want to keep your currently installed Geforce drivers.</system:String>
+  <system:String x:Key="DriverUpdateSimpleNote">At any case stereoscopic 3D features of the driver will be restored.</system:String>
+
+  <!-- 3D Vision driver restore dialog -->
+  <system:String x:Key="DriverRestoreHeadline">3D Vision is not installed on your system. Do you want to install the required drivers now?</system:String>
+  <system:String x:Key="ControllerDriver" xml:space="preserve">3D controller driver:         {0}</system:String>
+  <system:String x:Key="_3dVisionDriver" xml:space="preserve">Stereoscopic 3D driver:    {0}</system:String>
+  <system:String x:Key="DriverInstalled">Installed</system:String>
+  <system:String x:Key="DriverNotInstalled">Not installed</system:String>
+
+  <system:String x:Key="DriverRestoreImportantInfoExplanation">
+    The 3D Vision driver is required to show games in stereoscopic 3D.
+    Unfortunately this driver isn't included in the official driver package of the Geforce drivers any more as Nvidia dropped support for 3D Vision in May 2019.
+    Despite this fact 3D Vision still can be installed and perfectly used like before.
+    3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+  </system:String>
+
+  <system:String x:Key="DoNoShowDriverUpdateMessage">Do not check for driver updates any more</system:String>
+
+  <system:String x:Key="SearchGamesResult" xml:space="preserve">Search for installed games completed.&#x0d;&#x0d;Found games: {0}</system:String>
+  <system:String x:Key="FixInstallWarning" xml:space="preserve">The installation of the 3D fix is not recommended for this game.&#x0d;&#x0d;Do you want to install the fix anyway?</system:String>
+  <system:String x:Key="WrapperInstallWarning" xml:space="preserve">The installation of the 3D wrapper is not recommended for this game.&#x0d;&#x0d;Do you want to install the wrapper anyway?</system:String>
+  <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
+  <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
+  <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
+  <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Error: Path could not be opened.</system:String>
+  <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Error: Registry path could not be found.</system:String>
+  <system:String x:Key="WeblinkInvalid" xml:space="preserve">Error: Helix Post could not be downloaded.&#x0d;&#x0d;The link to the blog is not valid.</system:String>
+  <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Error: Helix Post could not be downloaded. &#x0d;&#x0d;Please provide a weblink to the Helix Blog first.</system:String>
+  <system:String x:Key="ViewerNotFound" xml:space="preserve">Error: 3D Vision Photo Viewer was not found.</system:String>
+  <system:String x:Key="HelixPostError" xml:space="preserve">Error: Helix Post could not be downloaded.</system:String>
+  <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">For best results you should set target resolution for upscaling to the native resolution of your display. &#x0d;&#x0d;Do you want to set native resolution now?&#x0d;&#x0d;Detected native resolution: </system:String>
+  <system:String x:Key="Install3dmigoto02">Install 3dmigoto:</system:String>
+  <system:String x:Key="InstallOpenGLwrapper">Install OpenGL Wrapper:</system:String>
+  <system:String x:Key="InstallHelixMod02">Install HelixMod:</system:String>
+  <system:String x:Key="RemoveProfile">Remove Fix Profile?</system:String>
+  <system:String x:Key="IniReset" xml:space="preserve">All ini settings were reseted to default values. &#x0d;&#x0d;Don't forget to save changes.</system:String>
+  <system:String x:Key="EnableStereoWarning" xml:space="preserve">For viewing this stereo image Nvidia Stereoscopic 3D has to be enabled.
+
+Do you want to enable it now and continue?
+  
+Note: Monitor desktop refresh rate should be set to 120 Hz in order to use this feature.
+        
+Tip: In "Nvidia 3D Settings" tab you'll find an option for automatically switching to 120 Hz (see "Desktop refresh rate 3D mode")</system:String>
+
+  <system:String x:Key="GameTitleEmpty">Error: Game Title must not be empty</system:String>
+  <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Note: You haven't set a Steam App ID for this profile yet which is required for starting Steam games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
+  <system:String x:Key="GameExeNotSet" xml:space="preserve">Note: You haven't set a Game Exe for the profile yet. This is generally required for starting games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
+  <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Do you want to automatically add a game icon from TheGamesDB.com?</system:String>
+  <system:String x:Key="WrapperChoice" xml:space="preserve">Choose a 3D wrapper you want to install.
+                                         
+Installing a wrapper unlocks some features like stereo hotkeys, SideBySide / TaB output mode, compatibility mode support and automatic driver profile installation.
+        
+Notes: 
+        
+- Install HelixMod for DirectX 9 games
+- Install OpenGL Wrapper for OpenGL games
+- Install 3dmigoto for DirectX 11 games
+- Make sure you choose the correct version (32 bit or 64 bit)
+  If a game launcher exe was added to the fix profile this information is automatically detected
+- Only the raw wrapper is installed (no shader fixes)</system:String>
+
+  <system:String x:Key="ErrorGameAlreadyExists">Error: Profile with the same title already exists.</system:String>
+  <system:String x:Key="GameIconFileNotFound">Error: Game Icon File was not found.</system:String>
+  <system:String x:Key="InstallPathNotRelative">Error: install path is not a relative path.</system:String>
+  <system:String x:Key="IniPathNotRelative">Error: game ini path is not a relative path.</system:String>
+  <system:String x:Key="AdditionalIniPathNotRelative">Error: additional game ini path is not a relative path.</system:String>
+  <system:String x:Key="ChangesSaved">Changes successfully saved.</system:String>
+  <system:String x:Key="FixProfileCreated">Fix Profile successfully created.</system:String>
+  <system:String x:Key="IconResetSuccessfull" xml:space="preserve">All icons were successfully reseted and downloaded in the background.&#x0d;&#x0d;Note: All old icons have been moved to a backup folder inside of the individual profile folders for restoring them if needed.</system:String>
+  <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
+  <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?</system:String>
+  <system:String x:Key="FixUpdateAvailable" xml:space="preserve">A newer 3D fix is available for the game "{0}".&#x0d;&#x0d;Do you want to update to the latest version now?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
+  <system:String x:Key="NoUpdates" xml:space="preserve">No program updates available.&#x0d;&#x0d;Fix profiles up to date.</system:String>
+  <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?</system:String>
+  <system:String x:Key="BugReportTo" xml:space="preserve">If you want to report bugs or have ideas for new features please send an e-mail to: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
+  <system:String x:Key="NoChangeNotesFound">Sorry, no Change Notes found.</system:String>
+  <system:String x:Key="ChangeNotesManager">Change Notes 3D Fix Manager:</system:String>
+  <system:String x:Key="ChangeNotesProfiles">Change Notes Fix Profiles:</system:String>
+  <system:String x:Key="WarningRootPath">Warning: choosing a root path of your hard drive may result in very long loading times.</system:String>
+  <system:String x:Key="WarningSearchDepth" xml:space="preserve">Warning: a high search depth number may result in very long loading times.&#x0d;&#x0d;Try to keep the number as low as possible (not higher than 2).</system:String>
+  <system:String x:Key="ErrorNotNumber">Error: Input is not a number.</system:String>
+  <system:String x:Key="RTSSPauseMessage" xml:space="preserve">Game launch paused - please make changes to RivaTuner Statistics Server settings if required.
+RTSS eliminates micro stuttering, reduces input lag and improves frametimes in 3D mode.
+
+Recommended Settings for RivaTuner Statistics Server 6.6.0:
+        
+- Custom Direct3D support: off
+- Framerate limit: 60
+
+When game crashes or frame limiter does not kick in then enable Custom Direct3D support.
+
+For perfect results you have to enable Vsync in game and graphics card must hold steady 60 fps.
+
+Click on 'OK' when you're done making changes.</system:String>
+  <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">It's recommended to install the 3D fix before starting this game. &#x0d;&#x0d;Do you want to install the fix now?</system:String>
+  <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">It's recommended to restore the original driver profile "{0}" when uninstalling the fix.&#x0d;&#x0d;Do you want to reset the driver profile now?</system:String>
+  <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">It's recommended to restore the original driver profile when uninstalling the fix. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
+  <system:String x:Key="MessageProfile2D" xml:space="preserve">It's recommended to use the default driver profile "{0}" for playing in 2D mode.&#x0d;&#x0d;Do you want to reset the driver profile to the original state now? &#x0d;&#x0d;If you already have reset the profile you can skip this step by choosing "No".</system:String>
+  <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">It's recommended to use the default driver profile for playing in 2D mode. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
+  <system:String x:Key="MessageProfile3D" xml:space="preserve">The installation of the driver profile "{0}" is needed to make the fix work properly.&#x0d;&#x0d;Do you want to install it via Nvidia Profile Inspector now? &#x0d;&#x0d;If you have already installed the profile you can skip this step by choosing "No".</system:String>
+  <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">It's required to swap the currently assigned driver profile "{0}" with the profile "{1}" to make the fix work properly.&#x0d;&#x0d;Do you want to swap profiles via Nvidia Profile Inspector now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
+  <system:String x:Key="ErrorGameLaunch">Error: Game could not be launched.</system:String>
+  <system:String x:Key="ErrorOpenWebsite">Error: Website could not be opened.</system:String>
+  <system:String x:Key="ReferenceDataDbSuccess">Reference data successfully written in DB.</system:String>
+  <system:String x:Key="DbNoRights">Error: No rights to access DB.</system:String>
+  <system:String x:Key="WarningPositiveNumber">Warning: Input must be a positive number.</system:String>
+  <system:String x:Key="ErrorInputNotANumber">Error: Input is not a number.</system:String>
+  <system:String x:Key="ErrorLicenceNotice">Sorry, no license file found.</system:String>
+  <system:String x:Key="UpdateMigoto" xml:space="preserve">Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version:&#x09;</system:String>
+  <system:String x:Key="LatestVersion" xml:space="preserve">Latest version:&#x09;</system:String>
+  <system:String x:Key="MigotoUpdateSuccess">3DMigoto was successfully updated.</system:String>
+  <system:String x:Key="MigotoUpdateFailed">Error: 3dmigoto could not be updated.</system:String>
+  <system:String x:Key="ErrorEnablingCM">Error when enabling / disabling Compatiblity Mode.</system:String>
+  <system:String x:Key="UpdateMigoto02" xml:space="preserve">This feature is only available for 3dmigoto versions higher than 1.2.48. &#x0d;&#x0d;Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version: &#x09;</system:String>
+  <system:String x:Key="UpdateMigotoDueTo3dFormat" xml:space="preserve">In the current active display profile you have chosen a 3D format which is only supported in 3dmigoto version 1.2.65 or higher thus requiring an update of the 3D wrapper. &#x0d;&#x0d;Do you want to update 3dmigoto for enabling this 3D format now?&#x0d;&#x0d;Installed version: &#x09;</system:String>
+  <system:String x:Key="DonateMessage" xml:space="preserve">If you want to support this project you can donate to this PayPal account: duselpaul86@gmx.de
+
+By clicking on the button below your webbrowser will open PayPal-website where you can easily send a donation. 
+        
+Please help to keep 3D gaming alive.
+        
+Thanks,
+Pauldusler</system:String>
+  <system:String x:Key="DonateShaderHackers01">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.</system:String>
+  <system:String x:Key="DonateShaderHackers02">HelixMod is the reason why 3D gaming is still alive today. If you want to support them donations are very appreciated.</system:String>
+  <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal and Patreon accounts of the individual shaderhackers you can donate to:</system:String>
+  <system:String x:Key="Thanks">Thank you very much,</system:String>
+  <system:String x:Key="YourHelixModTeam">Your HelixMod Team</system:String>
+  <system:String x:Key="YourHelixModTeam02">Your HelixMod Team</system:String>
+  <system:String x:Key="OpenPaypal">Open PayPal</system:String>
+  <system:String x:Key="OpenPaypalToolTip">Opens PayPal website in webbrowser where you can send a donation.</system:String>
+
+  <!-- Nvidia 3D Vision announcement - Start -->
+  <system:String x:Key="Announcement_L1">Dear 3D Vision fans,</system:String>
+  <system:String x:Key="Announcement_L2">we have sad news for you. On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
+  <system:String x:Key="Announcement_L3">This means that all graphics drivers released after March 2019 don't support 3D Vision any more.</system:String>
+  <system:String x:Key="Announcement_L4">Driver branch 418 will be the last one to support stereoscopic 3D.</system:String>
+
+  <system:String x:Key="Announcement_L5">What does the announcement mean for us 3D gamers?</system:String>
+  <system:String x:Key="Announcement_L6">We are forced to stick with Geforce drivers of branch 418 or older (v.419.35 still works as it still belongs to branch 418)</system:String>
+  <system:String x:Key="Announcement_L7">We should not update Windows 10 beyond v.1809 (October Update 2018). New feature updates for Win 10 might break the stereo 3D driver.</system:String>
+  <system:String x:Key="Announcement_L8">We have to take good care of our 3D Vision hardware as in the future it will be hard to get a replacement for defective devices</system:String>
+
+  <system:String x:Key="Announcement_L9">What does this mean for 3D Fix Manager?</system:String>
+  <system:String x:Key="Announcement_L10">Nothing. Support for 3D Fix Manager will be continued</system:String>
+  <system:String x:Key="Announcement_L11">3D Fix Manager warns you if you've already installed a Geforce driver beyond driver branch 418</system:String>
+  <system:String x:Key="Announcement_L12">In this case 3D Fix Manager provides download links to the last known driver version which was still compatible to 3D Vision</system:String>
+
+  <system:String x:Key="Announcement_L13">What does this mean for the development of new 3D fixes?</system:String>
+  <system:String x:Key="Announcement_L14">It's very likely that the development of new 3D fixes is continued as long as Shaderhackers have their 3D Vision hardware still working</system:String>
+
+  <system:String x:Key="Announcement_L15">What does this mean for the future of stereo 3D?</system:String>
+  <system:String x:Key="Announcement_L16">Currently our great community developers are discussing about developing an indepentent 3D solution not requiring the 3D Vision driver any more</system:String>
+  <system:String x:Key="Announcement_L17">Chances are not bad as there are already a lot of features implemented into 3dmigoto which are required to achieve this goal</system:String>
+  <system:String x:Key="Announcement_L18">But: At the time of writing no promises can be made!</system:String>
+
+  <system:String x:Key="Announcement_L19">Official announcement from Nvidia:</system:String>
+  <system:String x:Key="Announcement_L20">For additional info we have opened a topic in Geforce forum:</system:String>
+  <system:String x:Key="Announcement_DoNotShow">Do not show this dialog again</system:String>
+  <!-- Nvidia 3D Vision announcement - End -->
+
+  <!-- Nvidia driver check - Start -->
+  <system:String x:Key="Drivercheck_1">Warning: Your Nvidia graphics driver ist not compatible to 3D Vision.</system:String>
+  <system:String x:Key="Drivercheck_2">On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
+  <system:String x:Key="Drivercheck_3">To make 3D Vision work you have to install an older graphics driver.</system:String>
+  <system:String x:Key="Drivercheck_4">Below you find download links for the last Geforce driver which was known to work with 3D Vision:</system:String>
+  <system:String x:Key="Drivercheck_5">
+    Please keep in mind that this driver might not work properly with future versions of Windows 10.
+    The driver was released at the time of Windows 10 v.1809 (October update 2018) so it's not recommended to use a more recent Windows version.
+  </system:String>
+  <!-- Nvidia driver check - End -->
+
+  <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
+  <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
+  <system:String x:Key="DuplicateKeyError" xml:space="preserve">Error: This hotkey already exists. &#x0d;&#x0d;Please choose another key.</system:String>
+  <system:String x:Key="FolderNotExistsError">Error: Folder does not exist.</system:String>
+  <system:String x:Key="SettingsAppliedSuccess">Settings successfully applied</system:String>
+  <system:String x:Key="SettingsAppliedFailed">Error: failed to apply settings.</system:String>
+  <system:String x:Key="ProfileLoadedSuccess" xml:space="preserve">Profile successfully loaded.&#x0d;&#x0d;Please click on 'Apply' for writing imported values to Windows Registry.</system:String>
+  <system:String x:Key="ProfileLoadedSuccess02">Profile successfully loaded.</system:String>
+  <system:String x:Key="ProfileLoadedError">Error: Profile could not be loaded.</system:String>
+  <system:String x:Key="ProfileSavedSuccess">Profile successfully saved.</system:String>
+  <system:String x:Key="ProfileSavedError">Error: Profile could not be saved.</system:String>
+  <system:String x:Key="ValidUrlError">Error: You must supply a valid Url.</system:String>
+  <system:String x:Key="MultiRowHyperlinkError">Error: Multi row selections not allowed for Hyperlinks.</system:String>
+  <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">This will update all installed 3dmigoto fixes to the latest version of the wrapper.&#x0d;&#x0d;Do you want to proceed?</system:String>
+  <system:String x:Key="AllUpdatesInstalled">Success! 3Dmigoto was updated for {0} games.</system:String>
+  <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto is already up to date for all games. No updates required.</system:String>
+  <system:String x:Key="TypeTitleError">Error: Please type in a game title first.</system:String>
+  <system:String x:Key="FoundSteamDbData">Found Steam DB data:</system:String>
+  <system:String x:Key="GameExe">Game exe:</system:String>
+  <system:String x:Key="RelativeGameExePath">Relative Game Exe path:</system:String>
+  <system:String x:Key="ApplyData">Do you want to apply this data to the fix profile?</system:String>
+  <system:String x:Key="NotFoundInDb">No matching game found in Steam Database</system:String>
+  <system:String x:Key="NoSteamAppId">Error: You must provide a valid SteamApp ID.</system:String>
+  <system:String x:Key="NotFoundInTheGamesDb">No matching game found in TheGamesDb Database.</system:String>
+  <system:String x:Key="IconUrlNotFound">Icon URL has not been found.</system:String>
+  <system:String x:Key="WarningMigotoUpdate01">Warning: Updating 3dmigoto for</system:String>
+  <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">is known to break the fix.&#x0d;&#x0d;Do you want to update the wrapper for this game anyway?</system:String>
+  <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Error occured when making changes to game ini files.&#x0d;&#x0d;Please make sure that the files are not set to 'read only'.</system:String>
+  <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Warning: Installation of Watch_Dogs2 fix can take up to 10 minutes. &#x0d;&#x0d;Do you want to proceed?</system:String>
+  <system:String x:Key="ErrorInstallingMinecraft">Error occured when installing Minecraft fix. Fix could not be installed.</system:String>
+  <system:String x:Key="ErrorDeleting2DNip">Error: .nip file for 2D mode could not be deleted.</system:String>
+  <system:String x:Key="ErrorDeleting3DNip">Error: .nip file for 3D mode could not be deleted.</system:String>
+  <system:String x:Key="ErrorEnablingSteamOverlay">Error: Steam overlay could not be enabled / disabled.</system:String>
+  <system:String x:Key="ErrorJavaNotDetected" xml:space="preserve">Error: Java install location could not be detected. Please make sure to have Java correctly installed.&#x0d;&#x0d;Do you want to go to the download page for Java now?</system:String>
+  <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Error: Optifine for Minecraft could not be detected. You have to install this first to proceed installing the 3D fix.\n\nDo you want to go to the download page for Optifine now?</system:String>
+  <system:String x:Key="ErrorDetectingBitVersion">Error: Could not detect if Java 64 bit or 32 bit is installed</system:String>
+  <system:String x:Key="ErrorInstallingMinecraftFix">Error occured when installing Minecraft fix.</system:String>
+  <system:String x:Key="ErrorRenamingHitmanFolder">Error: Hitman folder could not be renamed. Please make sure that the folder is closed in Windows Explorer and try again.</system:String>
+
+  <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Do you want to keep custom profiles? &#x0d;&#x0d;Choose 'Yes' if you have edited some profiles and want to keep their changes.&#x0d;&#x0d;Choose 'No' to override all old profile settings.</system:String>
+  <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">A new 3dmigoto update is available for one or several installed 3D fixes.&#x0d;&#x0d;Do you want to update now?</system:String>
+  <system:String x:Key="BindHotkeyError" xml:space="preserve">Error: One or more hotkeys have no key binding. &#x0d;&#x0d;Please set the keys and try again.</system:String>
+  <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download complete! &#x0d;&#x0d;3D Fix Manager will restart now for installing the update.</system:String>
+  <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision is not set up on your machine. &#x0d;&#x0d;Option 1: Click on 'Setup Wizard' for launching default Nvidia 3D Vision Setup Wizard. &#x0d;&#x0d;Option 2: Click on 'Quick Setup' for quickly enabling 3D Vision by modifying Windows Registry values.&#x0d;&#x0d;</system:String>
+  <system:String x:Key="VisionSetupComplete" xml:space="preserve">3D Vision Setup Wizard succesfully passed! &#x0d;&#x0d;Do you want to load a backup profile for restoring hotkeys and other Stereo 3D related settings?</system:String>
+  <system:String x:Key="WindowsRegistryWriteError">Error: failed to write loaded settings profile to Windows Registry.</system:String>
+  <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Default setup wizard successfully skipped and 3D Vision enabled. &#x0d;&#x0d;Do you want to load a backup profile for restoring hotkeys and other stereo 3D related settings?</system:String>
+  <system:String x:Key="QuickSetupError">Error while enabling Nvidia stereosopic 3D. Please try to use default setup wizard instead.</system:String>
+
+  <system:String x:Key="ForceAnaglyphError">Error: 3D Vision Discover (Anaglyph 3D) could not be forced.</system:String>
+  <system:String x:Key="Force3dVisionError">Error: 3D Vision / 3DTV Play / Generic CRT (Active 3D) could not be forced.</system:String>
+  <system:String x:Key="ForceCheckerboard">Error: Checkerboard (Active 3D) could not be forced.</system:String>
+  <system:String x:Key="ForceReversedCheckerboard">Error: Reversed Checkerboard (Active 3D) could not be forced.</system:String>
+  <system:String x:Key="ForceLineInterlacingError">Error: LineInterlacing (Passive 3D) could not be forced.</system:String>
+  <system:String x:Key="ForceReversedLineInterlacingError">Error: Reversed LineInterlacing (Passive 3D) could not be forced.</system:String>
+
+  <system:String x:Key="DepthHackError">Error: Depth hack could not be applied / removed.</system:String>
+  <system:String x:Key="WritePermissionError">Error: Write permission for 'System' user could not bet set for Stereo3D key in Windows registry.</system:String>
+  <system:String x:Key="AllFixesDisabled">Success! All installed 3D fixes have been disabled and are no longer active when starting a game next time.</system:String>
+  <system:String x:Key="AllFixesEnabled">Success! All installed 3D fixes have been enabled.</system:String>
+  <system:String x:Key="EnableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be enabled.</system:String>
+  <system:String x:Key="DisableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be disabled.</system:String>
+  <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+  <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+
+  <!--....................  Dialog Window End .......................... -->
+
+
+  <!-- XAML formated ToolTips Begin -->
+
+  <!-- Installation Tab ToolTips -->
+  <TextBlock x:Key="ForceCMToolTip" TextWrapping="Wrap" Width="300">
+    Forces DirectX 11 games to start in Compatibility Mode (also known as Fake 3D) by automatically modifying the driver profile.<LineBreak/><LineBreak/>
+    When Compatibility Mode does not look right then go to <Italic>
+      <Bold>"Hotkey"</Bold>
+    </Italic> tab and choose another value for
+    <Italic>
+      <Bold>2DDHUDSettings"</Bold>
+    </Italic> in section <Italic>
+      <Bold>"Driver Profile Settings</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
+    Enables <Bold>Compatibility Mode Unleashed</Bold> (shortly CMU).<LineBreak/><LineBreak/>
+    CMU is only available in DirectX 11 games and makes those games playable in stereo 3D even if they aren't fixed for 3D yet.<LineBreak/><LineBreak/>
+    Another advantage of CMU is that it requires less performance for having a smooth gaming experience in 3D.<LineBreak/><LineBreak/>
+    However compared to traditional 3D this mode suffers from 3D artefacts like halos around objects and 3D depth is more limited by default.<LineBreak/><LineBreak/>
+    <Bold>Important information:</Bold> Press <Bold>F11</Bold> or <Bold>F12</Bold> (default configuration) ingame to "unleash" CMU for exceeding maximum 3D depth and improving the 3D effect.<LineBreak/><LineBreak/>
+    Additionally in tab <Bold>"3D Fix"</Bold> you have options to configure CMU.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
+    Enables / disables the 3D fix manually.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> Enabling / disabling 3D fixes is also automatically done when clicking on <Italic>
+      <Bold>"Play 2D"</Bold>
+    </Italic> or <Italic>
+      <Bold>"Play 3D"</Bold>
+    </Italic> buttons.
+  </TextBlock>
+
+  <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
+    <Bold>Left click:</Bold> Installs / uninstalls the 3D fix.<LineBreak/><LineBreak/>
+    <Bold>Right click:</Bold> Resets 3dmigoto to the original version of the 3D fix if it was updated. Use this if updating 3dmigoto broke the fix.
+  </TextBlock>
+
+
+  <!-- New / Edit Profile Tab ToolTips -->
+  <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
+    <Bold>Game title</Bold> has to be the same as listed in steam library or under installed programs in <Italic>"windows control panel / programs and features"</Italic><LineBreak/><LineBreak/>
+    Check the list on the right side to see all installed programs 3D Fix Manager has detected from Windows registry. Select a program for applying its name as a game title.
+  </TextBlock>
+
+  <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
+    Relative path to the subfolder of the game directory where the 3D Vision fix will be copied to.<LineBreak/><LineBreak/>
+    In most cases the correct install path is where the game exe is located for starting the game.<LineBreak/><LineBreak/>
+    <Bold>For example: </Bold> when the absolute path of the game exe is <Italic>"c:\gameTitle\bin\game.exe"</Italic> then the resulting relative install path is <Italic>"bin"</Italic><LineBreak/><LineBreak/>
+    Leave this field empty if the fix shall be installed to the root folder of the game.
+  </TextBlock>
+
+  <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
+    Fill in the name of the Install - / root Folder of the game (only the folder name not the path).<LineBreak/><LineBreak/>
+    This information is important for detecting the game via search paths.
+  </TextBlock>
+
+  <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
+    Only fill in this field if an installed game is not automatically detected by 3D Fix Manager.<LineBreak/><LineBreak/>
+    Choose the absolute path to the root folder of the game.<LineBreak/><LineBreak/>
+    Note: the 'Relative Install Path' must be still set if you want to install the fix in a subfolder of the game.
+  </TextBlock>
+
+  <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
+    Type in the relative path to a <Bold>configuration file</Bold> of the game (e.g. an .ini or .cfg file) which shall be automatically edited based on the defined values for 2D or 3D mode. The relative path must be set starting from the <Bold>root path of the game</Bold> or <Bold>user folder</Bold> in <Italic>C:\Users\USERNAME</Italic> - both directories are searched for the specified configuration file.<LineBreak/><LineBreak/>
+    Main purpose of this feature is to automatically edit graphics settings when starting the game (e.g. deactivation of <Bold>motion blur</Bold> or <Bold>depth of field</Bold> which is unwanted for stereo 3d mode).<LineBreak/><LineBreak/>
+    Generally all config files can be edited which include a listing of key/value - pairs - this might look like this in a file: <Italic>
+      <Bold>MotionBlur = Off</Bold>
+    </Italic>.<LineBreak/><LineBreak/>
+    Have a look at the fix profile for game <Italic>
+      <Bold>"Outlast"</Bold>
+    </Italic> to see a sample about how to edit a configuration file.<LineBreak/><LineBreak/>
+    Click on <Italic>
+      <Bold>"Values for 2D"</Bold>
+    </Italic> button for defining key-value pairs for the configuration file. These will be set when starting the game in 2D mode or uninstalling the fix.<LineBreak/><LineBreak/>
+    The same applies when clicking on <Italic>
+      <Bold>"Values for 3D"</Bold>
+    </Italic> button. The keys defined there will be set when starting the game in 3D mode or when installing the fix.
+  </TextBlock>
+
+  <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
+    Saves the date when the helix post was last updated.<LineBreak/><LineBreak/>
+    The timestamp is necessary for detecting if there is an updated helix post available online.<LineBreak/><LineBreak/>
+    You should not set this date manually as this is done automatically.
+  </TextBlock>
+
+  <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
+    When there is an alternative 3D fix available for the game you can provide additional information about this fix.<LineBreak/><LineBreak/>
+    <Bold>Custom Info Text:</Bold> Shows an info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix. The individual text can be entered in the text field.<LineBreak/><LineBreak/>
+    <Bold>SLI Info Text:</Bold> Shows a predefined info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix which is optimized for SLI systems.
+  </TextBlock>
+
+  <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
+    Direct download link to the 3D Vision fix.
+  </TextBlock>
+
+  <TextBlock x:Key="AdditionalDownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
+    Provide an additional download link if the 3D Vision fix was splitted into several download links.
+  </TextBlock>
+
+  <TextBlock x:Key="Allow3dFixInstallationToolTip" TextWrapping="Wrap" Width="300">
+    Set this to <Italic>
+      <Bold>"No"</Bold>
+    </Italic> to warn the user from installing the 3D fix or 3D wrapper.<LineBreak/><LineBreak/>
+    By doing so the user is informed that the installation of the fix isn't required any more but can still be done if desired.
+  </TextBlock>
+
+  <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
+    Set this option to <Italic>
+      <Bold>"No"</Bold>
+    </Italic> if a new 3dmigoto version isn't compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
+    Set this option 100 Hz if your PC is not strong enough to hold steady 120 frames per second while playing in Stereo 3D. <LineBreak /><LineBreak />
+    When setting this to 100 Hz only 100 fps are required for smooth gameplay.<LineBreak /><LineBreak />
+    This option only takes effect if you enabled <Italic>
+      <Bold>Refresh rate is controlled by fix profile</Bold>
+    </Italic> in <Italic>
+      <Bold>General Settings</Bold>
+    </Italic> tab.<LineBreak /><LineBreak />
+    <Bold>Note:</Bold> When reducing refresh rate your Nvidia 3D glasses also work at a reduced shutter frequency. 100 Hz could be perceived as a flickering for some people.
+  </TextBlock>
+
+  <TextBlock x:Key="renderApiToolTip" TextWrapping="Wrap" Width="300">
+    Choose the render API which is used by the game and save this data to the fix profile.<LineBreak /><LineBreak />
+    By entering this information the correct 3D wrapper can be installed automatically when you click on button <Italic>
+      <Bold>Install 3D Wrapper</Bold>
+    </Italic> in <Italic>
+      <Bold>Installation</Bold>
+    </Italic> tab. <Bold>3Dmigoto</Bold> is installed when the game uses DirectX 11 or <Bold>Helixmod</Bold> if it utilizes DirectX 9.<LineBreak /><LineBreak />
+    <Bold>Note:</Bold> Installing a raw wrapper is especially interesting if a game is already 3D Vision Ready and does not need a 3D fix at all. By using the wrapper you can unlock features like hotkeys support for quickly changing separation / convergence in cut scences or for choosing other 3D formats like Side-By-Side for TVs and projectors.
+  </TextBlock>
+
+  <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
+    You can provide a link to an online shop with informationen to the game which is called if you click on button <Italic>
+      <Bold>Product Page</Bold>
+    </Italic> in <Italic>
+      <Bold>"Installation"</Bold>
+    </Italic> tab. This field is an alternative if a game is not available on Steam store.
+  </TextBlock>
+
+  <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
+    Add a hex value for compatibility mode flag (2DDHUDSettings). This value is set in 3dmigoto's ini file when you force CM mode in Installation or Hotkeys tab.
+  </TextBlock>
+
+  <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
+    A fix is automatically extracted after downloading. Choose here whether to use built-in SharpCompress or 7-zip for file extractions.
+  </TextBlock>
+
+  <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
+    Insert the link to the helix blog <Bold>
+      <Italic>(http://helixmod.blogspot.com/...)</Italic>
+    </Bold> where the 3D fix was taken from.<LineBreak/><LineBreak/>
+    After that click on button <Bold>
+      <Italic>Blogger API</Italic>
+    </Bold> for automatically inserting info text of the fix, download link and further essential information to the fix profile.<LineBreak/><LineBreak/>
+    If no helix blog exists to a specifc 3D fix then please insert the link to the thread in Geforce forum instead where the fix was taken from. However consider that you cannot automatically get the info text and download link to the fix in this case.<LineBreak/><LineBreak/>
+    Further more the stated link can be opened in web browser by clicking on button <Bold>
+      <Italic>Helixmod Blog</Italic>
+    </Bold> in tab <Bold>
+      <Italic>Installation</Italic>
+    </Bold>.
+  </TextBlock>
+
+  <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
+    By pressing the button <Bold>
+      <Italic>Detect Engine</Italic>
+    </Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>
+    If game engine detection fails you can alternatively press buttons <Bold>
+      <Italic>Wikipedia</Italic>
+    </Bold> und <Bold>
+      <Italic>PC Gaming Wiki</Italic>
+    </Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>
+    In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold>
+      <Italic>Search Steam DB</Italic>
+    </Bold> next to <Bold>
+      <Italic>Game Title</Italic>
+    </Bold>.
+  </TextBlock>
+
+  <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
+    You can supply an optional icon for the game which will be displayed on the <Italic>
+      <Bold>"Installation"</Bold>
+    </Italic> tab.<LineBreak/><LineBreak/>
+    Recommended resolution is 128x128 pixel.<LineBreak/><LineBreak/>
+    For removing an active icon withing the profile folder click on <Italic>
+      <Bold>"Remove Icon"</Bold>
+    </Italic> and then on <Italic>
+      <Bold>"Save"</Bold>
+    </Italic>.
+    A backup of the old icon is automatically created in a backup folder within the profile folder.
+  </TextBlock>
+
+  <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
+    Provide an URL for automatically downloading a game icon if 3D Fix Manager was not able to find a local one for the game.<LineBreak/><LineBreak/>
+    For easy use just select <Italic>
+      <Bold>"TheGamesDb Icon"</Bold>
+    </Italic> from the list and click on <Italic>
+      <Bold>"Search URL"</Bold>
+    </Italic>.<LineBreak/><LineBreak/>
+    If you want to download a new icon but an old one already exists then additionally click on on the upper button <Italic>
+      <Bold>"Remove Icon"</Bold>
+    </Italic>. Don't forget to save changes.
+  </TextBlock>
+
+  <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
+    Choose a .nip file for Nvidia Profile Inspector in order to restore the original state of a driver profile for 2D mode.<LineBreak/><LineBreak/>
+    This profile will be automatically imported in Nivida Inspector when you start a game in 2D mode or uninstall a fix.<LineBreak/><LineBreak/>
+    In addition you can set if you want to be notified before installing a driver profile <Italic>
+      <Bold>"Install with Dialog"</Bold>
+    </Italic> or not <Italic>
+      <Bold>"Silent Installation"</Bold>
+    </Italic>.
+    To make this work please enable <Italic>
+      <Bold>"Installation of driver profiles is controlled by fix profile"</Bold>
+    </Italic> in <Italic>
+      <Bold>"Settings"</Bold>
+    </Italic> tab.
+  </TextBlock>
+
+  <TextBlock x:Key="Profile3DModeToolTip" TextWrapping="Wrap" Width="300">
+    Choose a .nip file for Nvidia Profile Inspector in orderset a customized driver profile for 3D mode.<LineBreak/><LineBreak/>
+    This profile will be automatically imported in Nivida Inspector when you start a game in 3D mode.<LineBreak/><LineBreak/>
+    In addition you can set if you want to be notified before installing a driver profile <Italic>
+      <Bold>"Install with Dialog"</Bold>
+    </Italic> or not <Italic>
+      <Bold>"Silent Installation"</Bold>
+    </Italic>.
+    To make this work please enable <Italic>
+      <Bold>"Installation of driver profiles is controlled by fix profile"</Bold>
+    </Italic> in <Italic>
+      <Bold>"Settings"</Bold>
+    </Italic> tab.
+  </TextBlock>
+
+  <TextBlock x:Key="FixStateToolTip" TextWrapping="Wrap" Width="300">
+    This information will be displayed with an icon on Installation tab.<LineBreak/><LineBreak/>
+    Choose whether the fix works out of the box after installing via 3D Fix Manager or if the user has to do some extra steps for completing installation.<LineBreak/><LineBreak/>
+    You can provide additional information in the field on the right side. This will be displayed as a tooltip for the icon.
+  </TextBlock>
+
+  <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
+    With this option you can tag a game to be compatible to Virtual Reality.<LineBreak/><LineBreak/>
+    Tagged games are automatically added to the filter <Italic>
+      <Bold>VR compatible</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
+    Steam App ID is required for launching Steam games and visiting the Steam Store.
+  </TextBlock>
+
+  <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
+    Fill in the name of the exe file for launching the game.
+  </TextBlock>
+
+  <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
+    Fill in the name of an exe file located in the game directory or an absolute path for starting an arbitrary program before launching the game. This feature is used by the profiles Far Cry 2, F.E.A.R. and INSIDE where it is required to call another exe file.<LineBreak/><LineBreak/>
+    Additionally you can set if the game exe should be passed as a start parameter to the tool and if the game start should wait for tool exit. Also you can set if you want to create the tool exe by copying the game exe and renaming it.
+  </TextBlock>
+
+  <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
+    If needed set arguments for Game Launcher Exe here (see fix profile for game <Italic>
+      <Bold>"Superhot"</Bold>
+    </Italic> if you need an example.)<LineBreak/><LineBreak/>
+    Additionally you can decide whether to start the game with admin rights (needed for game <Italic>
+      <Bold>"Doom"</Bold>
+    </Italic> for example) or how to start games (directly via game exe or indirectly by Steam App ID).<LineBreak/><LineBreak/>
+    Last but not least you can set if RivaTuner Statistics Server should be launched or closed on game start.<LineBreak/><LineBreak/>
+    RTSS reduces input lag and improves frametimes for a smoother gameplay.
+  </TextBlock>
+
+  <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
+    By using this option you can modify the content of an Exe file in order to make it work correctly in stereo 3D mode. This is only required for some "LEGO" games so far.<LineBreak/><LineBreak/>
+    To do this the exe file is read as a binary data and searched for a string you can define in the field on the right side. Then the found string is replaced by another string you can set in the provided field.<LineBreak/><LineBreak/>
+    For safety reasons the original file is backuped in the game directory before the modified file is saved.
+  </TextBlock>
+
+  <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
+    Provide a description about the 3D Vision fix.<LineBreak/><LineBreak/>
+    You can copy the text from the helixmod website or write an own description.
+  </TextBlock>
+
+
+  <!-- Hotkeys Tab ToolTips -->
+  <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
+    Hunting mode is primarily made for shaderhackers. It enables them for searching broken shaders in stereo 3D mode and repairing them.<LineBreak/><LineBreak/>
+    For the end-users hunting mode is interesting for showing an overlay with the current the current 3D depth and convergence. With this the user can finetune 3D hotkeys.<LineBreak/><LineBreak/>
+    <Bold>Off:</Bold> Disables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>
+    <Bold>On:</Bold> Enables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>
+    <Bold>Soft disabled:</Bold> Hunting mode as well as the stereo 3D overlay aren't completely disabled. By pressing key "0" (default key) you can show the overlay ingame.
+  </TextBlock>
+
+  <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
+    Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+    The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>
+    <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+    <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+    <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+  </TextBlock>
+
+  <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
+    Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+    The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>
+    <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
+    <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is held down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+  </TextBlock>
+
+  <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
+    Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+    The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>
+    <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+    <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+  </TextBlock>
+
+  <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
+    Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
+    The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>
+    <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+    <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
+    <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
+  </TextBlock>
+
+  <TextBlock x:Key="DefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+    When option is enabled you can define a default preset which is active wenn the game is launched.
+  </TextBlock>
+
+  <TextBlock x:Key="cbDefaultPresetToolTip" TextWrapping="Wrap" Width="300">
+    This is the active preset when launching the game.
+  </TextBlock>
+
+  <TextBlock x:Key="DelayToolTip" TextWrapping="Wrap" Width="300">
+    When option is enabled you can define a duration a key has to be held down until the respective 3D preset is activated.
+  </TextBlock>
+
+  <TextBlock x:Key="DelayMsToolTip" TextWrapping="Wrap" Width="300">
+    Time in [ms] a key has to be held down until the 3D preset is activated.
+  </TextBlock>
+
+  <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
+    When option is enabled you can define a duration which has to be elapsed after releasing a key until the original stereo 3D settings are restored which were valid before pressing the key.
+  </TextBlock>
+
+  <TextBlock x:Key="ReleaseDelayMsToolTip" TextWrapping="Wrap" Width="300">
+    Time in [ms] until the original stereo 3D settings are restored after releasing a key.
+  </TextBlock>
+
+  <TextBlock x:Key="TransitionToolTip" TextWrapping="Wrap" Width="300">
+    When option is enabled 3D presets are cross-faded with a soft transition. Type and duration of the transition can be defined by the user.
+  </TextBlock>
+
+  <TextBlock x:Key="TransitionMsToolTip" TextWrapping="Wrap" Width="300">
+    Time in [ms] a transition takes place between 3D presets.
+  </TextBlock>
+
+  <TextBlock x:Key="ReleaseTransitionToolTip" TextWrapping="Wrap" Width="300">
+    When option is enabled the original stereo 3D settings are restored with a soft transition. Type and duration of the transition can be defined by the user.
+  </TextBlock>
+
+  <TextBlock x:Key="ReleaseTransitionMsToolTip" TextWrapping="Wrap" Width="300">
+    Time in [ms] a transition takes place for restoring the original stereo 3D settings after releasing the key.
+  </TextBlock>
+
+  <TextBlock x:Key="TransitionTypeToolTip" TextWrapping="Wrap" Width="300">
+    Transition type which is used for cross-fading between 3D presets.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
+    This setting is required to enable a lot of stereo related code in the driver as well as allowing the convergence to be saved.<LineBreak/><LineBreak/>
+    If you are customising a profile you should always set this to <Italic>
+      <Bold>"Yes"</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoFlagsDX10ToolTip" TextWrapping="Wrap" Width="300">
+    This setting enables stereo compute shaders, which is required to fix a lot of 'one eye' type rendering issues in many DX11 games<LineBreak/><LineBreak/>
+    Set this option to 0x00004000 to fix this issue.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoConvergenceToolTip" TextWrapping="Wrap" Width="300">
+    This sets the default convergence in the profile.<LineBreak/><LineBreak/>
+    Note that 3DMigoto will happily override the default value from the driver, but will only override the user's custom convergence if it has another reason to update the profile, such as a change to another setting (adding a version tag to the Comments setting would be one way to force an update).
+  </TextBlock>
+
+  <TextBlock x:Key="CommentsToolTip" TextWrapping="Wrap" Width="300">
+    This changes the green text that the driver displays and is a good place to put any reminders to display to the user or just take some credit.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoMemoEnabledToolTip" TextWrapping="Wrap" Width="300">
+    If you have added some comments, you probably want to force the green text to show up when the game is next run by setting this option to <Italic>
+      <Bold>"Yes"</Bold>
+    </Italic><LineBreak/><LineBreak/>
+    Note that like convergence, 3DMigoto will only override a user setting here if something else has also been updated (such as Comments), so this will usually only show up the first time a user runs the game after installing the fix (be sure to enable StereoProfile).
+  </TextBlock>
+
+  <TextBlock x:Key="2DDHUDSettingsToolTip" TextWrapping="Wrap" Width="300">
+    This setting forces the game to support compatibility mode if not already provided in the driver profile.<LineBreak/><LineBreak/>
+    The hex value controls the compatibility mode settings - overall 3D strength, heuristics to pin the HUD at screen depth and rating.<LineBreak/><LineBreak/>
+    You should set this option either to 0x10000002 or 0x10000102. Of course you are free to try other values.
+  </TextBlock>
+
+  <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">
+    This sets the default convergence when in compatibility mode.
+  </TextBlock>
+
+  <TextBlock x:Key="Disable2DDToolTip" TextWrapping="Wrap" Width="300">
+    Disable compatibility mode to make sure users are seeing the real deal.<LineBreak/><LineBreak/>
+    Like convergence, 3DMigoto will respect the users custom settings here.
+  </TextBlock>
+
+  <TextBlock x:Key="TwoDDNotesToolTip"  TextWrapping="Wrap" Width="300">
+    Put a reminder in the green text of compatibility mode that they are not seeing the real deal.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
+    Enables an ingame overlay for displaying the current convergence / seperation values. This also enables hunting mode for shader fixing.<LineBreak/><LineBreak/>
+    Don't forget to uncheck this option after you have finished editing the hotkeys for achieving a better gaming performance.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
+    Renders the mouse cursor in software and should be used if you want to be able to adjust the stereo depth of the mouse or in conjunction with alternative 3D output formats like side-by-side.
+  </TextBlock>
+
+
+  <!-- General Settings Tab ToolTips -->
+  <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
+    Automatic check for application or fix updates when the application is started.
+  </TextBlock>
+
+  <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
+    Automatic check for Geforce driver updates when the application is started.
+  </TextBlock>
+
+  <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
+    This allows 3D Fix Manager to automatically optimize graphics settings / configurations of the games when launching it.<LineBreak/><LineBreak/>
+    This is necessary for making the 3D fixes and stereo 3D mode work and look correctly.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This option should be only turned off if you prefer to configure the games manually.
+  </TextBlock>
+
+  <TextBlock x:Key="FullscreenOptimizationsToolTip" TextWrapping="Wrap" Width="300">
+    Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
+    Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
+    <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
+    You can either disable fullscreen optimizations globally or only for specific games. If you chose the latter you can control this in the individual fix profile.
+  </TextBlock>
+
+  <TextBlock x:Key="FullscreenOptimizationsProfileToolTip" TextWrapping="Wrap" Width="300">
+    Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
+    Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
+    <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This setting is only active if you previously set <Bold>
+      <Italic>Fullscreen Optimizations</Italic>
+    </Bold> in tab <Bold>
+      <Italic>Application Settings</Italic>
+    </Bold> to <Italic>"Controlled by Fix Profile"</Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+    Disables the 3D fix automatically when starting a game in 2D mode.<LineBreak/><LineBreak/>
+    Set this option to <Bold>
+      <Italic>No</Italic>
+    </Bold> if you want to use 3dmigoto as a modding tool for 2D mode.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This setting is only active if you previously set <Italic>
+      <Bold>"Disable 3D fixes in 2D mode"</Bold>
+    </Italic> in tab <Italic>
+      <Bold>Application Settings</Bold>
+    </Italic> to <Italic>
+      <Bold>"Controlled by fix profile"</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
+    Disables 3D fixes automatically when starting games in 2D mode.<LineBreak/><LineBreak/>
+    Set this option to <Bold>
+      <Italic>No</Italic>
+    </Bold> if you want to use 3dmigoto as a modding tool for 2D mode.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
+    Disable Steam overlay if you experience crashes while starting games.
+  </TextBlock>
+
+  <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
+    When the user customizes a fix profile in 'Edit Profil' tab and clicks on <Italic>
+      <Bold>"Save"</Bold>
+    </Italic> button the changes are detected and sent to a MySQL server.<LineBreak/><LineBreak/>
+    This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them.
+  </TextBlock>
+
+  <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
+    Updates 3dmigoto of all installed 3D fixes automatically as soon as 3D Fix Manager is being started.
+  </TextBlock>
+
+  <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
+    Reinstalls 3D fixes without redownloading them. For achieving this downloaded files are kept in the directory of 3D Fix Manager and used for reinstalling 3D fixes.<LineBreak/><LineBreak/>
+    If you want to delete downloaded files to free up space on your harddrive just go to <Italic>
+      <Bold>"Installation" </Bold>
+    </Italic> tab and click on <Italic>
+      <Bold>"Clear cache"</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
+    Enable this for redownloading all icons from TheGamesDB or Steam DB.<LineBreak/><LineBreak/>
+    Old icons are not lost by saving them in backup folders inside of the individual profile folders.
+  </TextBlock>
+
+  <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
+    Downloads and displays stereoscopic 3D screenshots included in the info text of the 3D fixes.<LineBreak/><LineBreak/>
+    Disable this option if GUI freezes while downloading the images.
+  </TextBlock>
+
+  <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
+    Deletes all downloaded 3D fixes which were temporarily cached to the directory of 3D Fix Manager.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This feature does not delete any installed 3D fixes, it just frees up some disk space in the directory of the application.
+  </TextBlock>
+
+  <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
+    Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry.
+  </TextBlock>
+
+  <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
+    Updates 3dmigoto of all installed fixes to the latest version.<LineBreak/><LineBreak/>
+    Newer versions of 3dmigoto can have a better performance / stability and unlock new features like SideBySide support.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
+    When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
+    It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
+    Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold>
+      <Italic>Search games</Italic>
+    </Bold> below. The cache is rebuilt automatically then.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
+    Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same name as the individual fix profiles.<LineBreak/><LineBreak/>
+    These Registry keys contain the information where the game is installed.
+  </TextBlock>
+
+  <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+    Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
+    You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
+    For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
+  </TextBlock>
+
+  <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
+    When a game is both found by search paths and windows registry then install location found by search path is applied.
+  </TextBlock>
+
+  <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
+    Paths which are traversed recursively for finding games.
+  </TextBlock>
+
+  <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
+    Triggers a search for finding installed games and updates the list.
+  </TextBlock>
+
+  <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
+    Sets the maximal depth of subdirectories the application traverses for finding a game.
+  </TextBlock>
+
+  <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
+    When user starts a game RivaTuner Statistics Server is opened or closed depending on the setting in the individual fix profile.
+  </TextBlock>
+
+  <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+    Gives the user the opportunity to set up RTSS before game starts. Please make sure fps limiter is set to 60 fps for smooth gameplay / reduced input lag.
+  </TextBlock>
+
+  <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+    Always closes RTSS when a game is started in 2D mode no matter what is defined in fix profile.
+  </TextBlock>
+
+  <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
+    Never closes a running instance of RTSS if a game is started in 2D mode no matter what is defined in fix profile.
+  </TextBlock>
+
+  <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
+    Automatically closes a running instance of RTSS if the user quits 3D Fix Manager.
+  </TextBlock>
+
+  <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
+    Globally set if games should be started directly with the game exe and not via Steam client.<LineBreak/><LineBreak/>
+    When no Game Launcher Exe is defined in fix profile the game is still started via Steam if available.
+  </TextBlock>
+
+  <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
+    Globally set if games should be started via Steam client by calling the Steam App ID.<LineBreak/><LineBreak/>
+    If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead.
+  </TextBlock>
+
+  <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
+    Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client.<LineBreak/><LineBreak/>
+    Steam games should only be started directly via game exe when you want to bypass a game launcher window for example. You can control this behaviour by editing the individual fix profile.
+  </TextBlock>
+
+  <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
+    Globally disables installation of driver profiles for all games.
+  </TextBlock>
+
+  <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
+    When enabling this option user can control in individual fix profiles whether to install driver profiles.
+  </TextBlock>
+
+  <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300">
+    By enabling this option 3D Fix Manager is generally allowed to install driver profiles without showing a warning dialog.
+  </TextBlock>
+
+  <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+    By enabling this option stereo refresh rate and shutter frequency of Nvidia 3D glasses are left untouched and controlled by the settings in Nvidia driver.
+  </TextBlock>
+
+  <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+    By enabling this option you can control stereo refresh rate and shutter frequency of Nvidia 3D glasses individually per game.
+  </TextBlock>
+
+
+  <!-- Refresh rates and resolution ToolTips -->
+  <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
+    Upscaling is useful if you want to play with a resolution which is lower than the native one of your monitor.<LineBreak/><LineBreak/>
+    This feature performs upscaling to your native resolution for achieving a sharper image quality - specifically useful for 4K 3D TVs or for DSR.<LineBreak/><LineBreak/>
+    Please consider that this is still an experimental feature and only works for a few games (like The Witcher 3 for example). When the mouse cursor does not work correctly please set upscaling to <Italic>
+      <Bold>"Force fullscreen" </Bold>
+    </Italic> or enable Software Mouse Cursor.<LineBreak/><LineBreak/>
+    <Bold>Normal fullscreen:</Bold> Enables upscaling and allows the game to disable and enable fullscreen mode.<LineBreak/><LineBreak/>
+    <Bold>Force fullscreen:</Bold> Enables upscaling and always forces fullscreen. Try this if you get issues with the mouse cursor.
+  </TextBlock>
+
+  <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
+    <Bold>0:</Bold> 3Dmigoto creates a texture and pushes it as the back buffer for the game. Seems to work with only few games but everything seems to run a bit smoother.<LineBreak/><LineBreak/>
+    <Bold>1:</Bold> 3Dmigoto creates a second swap chain and pushes the game to use it. Seems to work with most games.
+  </TextBlock>
+
+  <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">
+    If upscaling is on, then you MUST specify the resolution the game will be upscaled to.<LineBreak/><LineBreak/>
+    To achieve the best visual result use the native resolution of your tv or monitor.
+  </TextBlock>
+
+  <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
+    Filters available video modes to those providing given refresh rates. Some games don't explicitely set the refresh rate, but use the video mode.<LineBreak/><LineBreak/>
+    Use this if setting <Italic>
+      <Bold>"Override refresh rate"</Bold>
+    </Italic> doesn't work.
+  </TextBlock>
+
+  <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
+    <Bold>1:</Bold> Forces creation of full screen devices and swap chains.<LineBreak/><LineBreak/>
+    <Bold>2:</Bold> Will also disable SetWindowPos which might help in some games.
+  </TextBlock>
+
+  <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
+    To switch out of a Unity game without it crashing:<LineBreak/><LineBreak/>
+    Enable this option, Press F7, Alt+Enter, Alt+Tab
+  </TextBlock>
+
+  <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
+    This attempts to force exclusive full screen when this key is pressed and may be useful in games where <Italic>
+      <Bold>Force fullscreen on game start</Bold>
+    </Italic> doesn't work or has undesirable side effects.
+  </TextBlock>
+
+  <!-- Nvidia 3D Settings Tab ToolTips -->
+  <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
+    Enables / disables <Bold> Nvidia Stereoscopic 3D</Bold> manually.<LineBreak/><LineBreak/>
+    This is the same feature which can be also found in Nvidia Control Panel under <Italic>
+      <Bold>"Set up stereoscopic 3D"</Bold>
+    </Italic>.
+  </TextBlock>
+
+  <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
+    Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager.
+  </TextBlock>
+
+  <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
+    Disables Nvidia Stereoscopic 3D when closing a running game.
+  </TextBlock>
+
+  <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
+    Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
+    Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.<LineBreak/><LineBreak/>
+    Technically this option sets windows registry entry <Italic>
+      <Bold>"StereoDefaultOn"</Bold>
+    </Italic> to 0 or 1.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
+    Sets whether 3D Vision can activate 3D mode for windowed applications.<LineBreak/><LineBreak/>
+    Technically this option sets windows registry entry <Italic>
+      <Bold>"EnableWindowedMode"</Bold>
+    </Italic> to 0 or 5.
+  </TextBlock>
+
+  <TextBlock x:Key="Nvidia3dDriverOverlayToolTip" TextWrapping="Wrap" Width="300">
+    With this option you can completely switch off the overlay which is typcially active when playing in stereo 3D mode.<LineBreak/><LineBreak/>
+    By disabling the overlay both the graphical representation for the 3D depth as well as the info box with the green text aren't shown in games any more.<LineBreak/><LineBreak/>
+    Further more you generally won't see the red warning text <Italic>
+      <Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold>
+    </Italic> any more.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> Keep in mind that you need to restart your system after disabling or re-enabling the overlay. In addition the changes are undone after updating the graphics driver.
+  </TextBlock>
+
+  <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
+    Reverses interleave pattern for <Bold>passive 3D displays</Bold>.<LineBreak/><LineBreak/>
+    This fixes the issue when left and right eyes are swapped.<LineBreak/><LineBreak/>
+    Technically this option sets the windows registry entries <Italic>
+      <Bold>"InterleavePattern0"</Bold>
+    </Italic> and <Italic>
+      <Bold>"InterleavePattern1"</Bold>
+    </Italic> to <Italic>
+      <Bold>0xff00ff00</Bold>
+    </Italic>.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> In order to prevent the Nvidia driver to override these entries they will be protected from write access for a duration of 120 seconds while starting the game in 3D mode. Once this period elapses or the application is closed write access will be automatically granted again.
+  </TextBlock>
+
+  <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
+    Enable this option if you want to exceed the maximum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximum 3D depth is often too low for them.<LineBreak/><LineBreak/>
+    Depth hack is active as soon as you set the multiplier to a value higher than 1. For example if you set it to 2 you can achieve a 3D depth which is twice as high.<LineBreak/><LineBreak/>
+    With regard to this example this effectively means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because multiplier was set to 2. Similarily 80% 3D depth will correspond 160% and so on.<LineBreak/><LineBreak/>
+    When using the depth hack you make the Nvidia driver think that you play with a smaller display size as it is actually. You can see the display size which was detected by the driver below. The smaller the inch value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
+    3D depth hack is applied to all display profiles so you can increase the maximum 3D depth for all display devices equally.
+  </TextBlock>
+
+  <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
+    This is the size of the monitor which is passed to the Nvidia driver. The smaller the value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
+    For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen.<LineBreak/><LineBreak/>
+    Adjust the maximum 3D depth via 3D depth multiplier or the value in inch. Both depend on another.
+  </TextBlock>
+
+  <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
+    Set the synchronisation method for your 3D Vision IR sender (3D Vision pyramid).<LineBreak/><LineBreak/>
+    <Bold>Single IR Environment:</Bold> Choose this if you don't use any other IR senders like remote controls in your environment. This is the default setting recommended by Nvidia.<LineBreak/><LineBreak/>
+    <Bold>Multi IR Environment:</Bold> Choose this if you use several IR devices in your environment like remote controls. This ensures that IR devices don't interfere with each other.<LineBreak/><LineBreak/>
+    <Bold>3D Vision LAN Environment:</Bold> Choose this if you have a LAN environment with several 3D Vision IR senders and further IR devices like remote controls. This ensures that IR devices don't interfere with each other.
+  </TextBlock>
+
+  <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
+    3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz.<LineBreak/><LineBreak/>
+    Set here to run monitor and shutter glasses with the specified frequenzy while gaming. Decreasing frequency to 100 Hz is useful if your computer is only strong enough to hold 100 fps in-game.
+  </TextBlock>
+
+  <TextBlock x:Key="ExportedDriverProfileToolTip" TextWrapping="Wrap" Width="300">
+    If you were unable to find specific driver settings in the GUI you can still set them via a profile file which was previously exported via Nvidia Profile Inspector. Please choose a .nip file for doing so.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> 3D Fix Manager loads the exported profile (.nip file) first and after that it sets the driver settings defined by the GUI. So the driver settings of the GUI have a higher priority than the exported profile.
+  </TextBlock>
+
+  <!-- Display Profiles ToolTips -->
+
+  <TextBlock x:Key="ChangeDisplayProfileToolTip" TextWrapping="Wrap" Width="300">
+    Choose the display profile to be switched to active.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> You can configure each profile in tab <Bold>
+      <Italic>>"Display Profiles"</Italic>
+    </Bold> to your likings.
+  </TextBlock>
+
+  <TextBlock x:Key="ShowProfileDialogOnGameStartToolTip" TextWrapping="Wrap" Width="300">
+    If you disable this option the dialog window won't be shown any more the next time you start a game.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold>
+      <Italic>Display Profiles</Italic>
+    </Bold>.
+  </TextBlock>
+
+  <TextBlock x:Key="ShowProfileDialogOnAppStartToolTip" TextWrapping="Wrap" Width="300">
+    If you disable this option the dialog window won't be shown any more while starting 3D Fix Manager.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold>
+      <Italic>Display Profiles</Italic>
+    </Bold>.
+  </TextBlock>
+
+  <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
+    Please select a display device from the list which shall be linked to this display profile. When doing so this display profile is automatically chosen when starting a game on the display device.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> It's highly recommended that you link all the display profiles you use to a display device to eliminate the need for choosing the display profile manually when launching a game. Instead the correct display profile is detected automatically then.
+  </TextBlock>
+
+  <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
+    Choose the display device to be linked to the display profile.
+  </TextBlock>
+
+  <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
+    Please set the actual size of your monitor in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
+    If you think that the maximum 3D depth is not high enough for you go to <Bold>
+      <Italic>Nvidia 3D Settings</Italic>
+    </Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+  </TextBlock>
+
+  <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
+    Please set the actual size of your projector screen in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
+    If you think that the maximum 3D depth is not high enough for you go to <Bold>
+      <Italic>Nvidia 3D Settings</Italic>
+    </Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+  </TextBlock>
+
+  <TextBlock x:Key="TvSizeToolTip" TextWrapping="Wrap" Width="300">
+    Please set the actual size of your TV in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
+    If you think that the maximum 3D depth is not high enough for you go to <Bold>
+      <Italic>Nvidia 3D Settings</Italic>
+    </Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+  </TextBlock>
+
+  <TextBlock x:Key="DisplayTypeToolTip" TextWrapping="Wrap" Width="300">
+    Please choose the supported 3D technology of your display device.<LineBreak/><LineBreak/>
+    Selecting this is especially useful if you have a passive monitor / TV which only supports reversed line interlacing. The Nvidia Control Panel does not offer any option for this.<LineBreak/><LineBreak/>
+    Furthermore this option makes sure that the correct 3D technology is always set no matter if this setting would be lost by updating the graphics driver.
+  </TextBlock>
+
+  <TextBlock x:Key="Preferred3dFormatToolTip" TextWrapping="Wrap" Width="320">
+    Please choose your preferred 3D format.<LineBreak/><LineBreak/>
+    Consider that the 3D format can only be set for DirectX 11 games. Furthermore the 3dmigoto software wrapper / the 3D fix has to be installed for the individual game.
+  </TextBlock>
+
+  <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
+    Limits the framerate to the specified value when playing in 2D mode.<LineBreak/><LineBreak/>
+    <Bold>Recommended:</Bold> For G-Sync monitors set the framerate just below the maximum refresh rate to prevent vertical sync getting active which would increase input lag.<LineBreak/><LineBreak/>
+    For example when using a 144 Hz monitor you should set the fps limit to 142 (2 fps difference).<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+  </TextBlock>
+
+  <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
+    Limits the framerate to the specified value when playing in 3D mode. By limiting the framerate you can significantly reduce input lag.<LineBreak/><LineBreak/>
+    <Bold>Recommended:</Bold> For 3D Vision certified monitors or Generic CRT display devices you should set framerate to <Bold>"1/2 Stereo Refresh Rate"</Bold>. By doing so the framerate limit cam be detected automatically in dependency of the refresh rate of the display. Typically a fps limit of 60 fps results.<LineBreak/><LineBreak/>
+    When using 3DTV Play or passive 3D you should set the framerate limit to 60.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+  </TextBlock>
+
+  <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
+    Scanline Sync is a new feature of RivaTuner Statistics Server which does have a similar effect like Vertical Sync on. As well as Vertical Sync, Scanline Sync prevents tearing and makes sure you get a steady clear image. You should use this feature when your display does not support G-Sync or Freesync.<LineBreak/><LineBreak/>
+    Advantage over Vertical Sync on is the ultra low input lag. Disadvantage however is that Scanline Sync does not work with all games and all refresh rates properly so far.<LineBreak/><LineBreak/>
+    Scanline Sync works by limiting the framerate to the refresh rate of your display with a tearline located in a fixed position. This tearline can be moved down via the scanline index until the line is hidden in vertical blanking interval.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> So far it's known that Scanline Sync works best in 2D mode for resolution with 60 hz refresh rate. When using higher refresh rates intermittent tearing can occur or the tearline can be out of control. This depends on the individual game or the game engine it uses.<LineBreak/><LineBreak/>
+    <Bold>Important:</Bold> Vertical Sync has to be switched off ingame in order to make Scanline Sync work. Additionally Vertical Sync has to be disabled in the global driver profile as well. Turning off Vertical Sync in global driver profile is done automatically by 3D Fix Manager.<LineBreak/><LineBreak/>
+    <Bold>Recommended:</Bold> For 3D mode the best thing is to enable Scanline Sync in the individual fix profile only. By doing so you only use this feature when it actually works for the game. Additionally Scanline Sync should be turned off in the global driver profile then.<LineBreak/><LineBreak/>
+    For 2D mode and non-G-Sync / -Freesync devices you can try to enable Scanline-Sync on a global basis as the chances are higher that Scanline Sync works for that mode. For games where it does not work disable Scanline Sync in the individual fix profile then.
+  </TextBlock>
+
+  <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
+    <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
+    <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with 2 tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
+    <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
+  </TextBlock>
+
+  <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
+    This option moves the tearline. Positive numbers move the thearline downwards and negative upwards.<LineBreak/><LineBreak/>
+    <Bold>Off:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
+    <Bold>Auto: </Bold> The tearling is automatically moved downwards by the correct value until it's hidden in the vertical blanking interval. For detecting the correct value you have to set the desired game resolution first.
+  </TextBlock>
+
+  <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
+    Starts the game with the desired resolution in 2D mode.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold>
+      <Italic>Resolution: By Display Profile</Italic>
+    </Bold> text included in the info icon in <Bold>
+      <Italic>Installation</Italic>
+    </Bold> Tab.
+  </TextBlock>
+
+  <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
+    Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
+    <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold>
+      <Italic>Resolution: By Display Profile</Italic>
+    </Bold> text included in the info icon in <Bold>
+      <Italic>Installation</Italic>
+    </Bold> Tab.
+  </TextBlock>
+
+  <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
+    Sets the desktop to the desired resolution when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
+    By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
+    Whenever possible set different values for 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.
+  </TextBlock>
+
+  <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
+    Sets the desktop rate to the desired resolution when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
+    By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
+    Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+  </TextBlock>
+
+  <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
+    Sets the desktop to the specified resolution when closing the application.
+  </TextBlock>
+
+  <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
+    Choose a display profile which shall be active when starting the application.
+  </TextBlock>
+
+  <TextBlock x:Key="ShowProfileSelectionOnStartupToolTip" TextWrapping="Wrap" Width="300">
+    Set if a dialog window shall be opened when starting the application where you can choose the active display profile.
+  </TextBlock>
+
+  <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
+    When disabling this option the fix profiles aren't allowed to modify game- and desktop resolution any more.<LineBreak/><LineBreak/>
+    Resolution is controlled soley by the global display profiles then if the user has set any option there.
+  </TextBlock>
+
+  <!-- XAML formated ToolTips End -->
+
+</ResourceDictionary>
