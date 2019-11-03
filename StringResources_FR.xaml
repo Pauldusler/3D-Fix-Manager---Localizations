@@ -54,7 +54,7 @@
     <system:String x:Key="NoGamesInstalled">Aucun jeu compatible installé.</system:String>
     <system:String x:Key="Play2D">Jouer en 2D</system:String>
     <system:String x:Key="Play3D">Jouer en 3D</system:String>
-    <system:String x:Key="PlayVr">Jouer en VR</system:String>
+    <system:String x:Key="PlayVR">Jouer en VR</system:String>
     <system:String x:Key="InstallFix">Installer le fix 3D</system:String>
     <system:String x:Key="InstallFixCompleted">Installation terminée</system:String>
     <system:String x:Key="BackupRecoveryFailed">Backup recovery failed.</system:String>
@@ -93,6 +93,7 @@
     <!--.................... New / Edit Profile Tab Begin .......................... -->
 
     <system:String x:Key="VrCompatibility">Compatible to VR:</system:String>
+    <system:String x:Key="Uses3DDirect">Uses 3D Direct Mode:</system:String>
     <system:String x:Key="MainSettingsGroup">Title and State of the 3D Fix:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
     <system:String x:Key="PrimaryDownloadGroup">Download 3D Fix:</system:String>
@@ -607,7 +608,7 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
     <system:String x:Key="FixesDevelopedBy">Correctifs 3D développés par :</system:String>
     <system:String x:Key="DonationDeveloperToolTip">Faire un don au développeur de 3D Fix Manager.</system:String>
     <system:String x:Key="DonationShaderHackersToolTip">Faire un don aux développeur de correctifs 3D.</system:String>
-    <system:String x:Key="ProgramVersion">Version de programmme:</system:String>
+    <system:String x:Key="ProgramVersion">Version de programme:</system:String>
     <system:String x:Key="FixProfiles">Version des profils:</system:String>
     <system:String x:Key="CheckUpdate">Vérifie les mises à jour</system:String>
     <system:String x:Key="UpdateSuccess">Mise à jour complétée</system:String>
@@ -656,16 +657,34 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
 
     <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode.&#x0d;&#x0d;Please install 3D Vision driver and try again.</system:String>
 
+
     <!-- Driver update dialog -->
     <system:String x:Key="DriverUpdateHeadline">A new Geforce graphics driver is available. Do you want to update your driver?</system:String>
     <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Installed driver:    {0}</system:String>
     <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Latest driver:        {0}</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriverType" xml:space="preserve">Installed driver type:         {0}</system:String>
+    <system:String x:Key="DriverUpdateUsedWindowsVersion" xml:space="preserve">Installed Windows version:         {0}</system:String>
     <system:String x:Key="DriverUpdateImportantInfoHeadline">Important information:</system:String>
 
     <system:String x:Key="DriverUpdateImportantInfoExplanation">
         Nvidia officially dropped support for 3D Vision / stereoscopic 3D in May 2019 which means that the stereo 3D driver isn't included in current Geforce graphics drivers any more.
         Although not included in the driver package 3D Vision still can be installed and perfectly used like before.
         3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    </system:String>
+
+    <system:String x:Key="DriverUpdateImportantInfoExplanationVr">
+        HelixVision requires Nvidia 3D Vision driver which is only included in Geforce driver package up to version 425.31.
+        We recommend to use version 425.31 for best results as newer versions are not officially supported by HelixVision.
+        If you already updated your Geforce drivers beyond version 425.31 HelixVision will automatically install the required 3D Vision driver separately for you and keeps the existing Geforce driver untouched.
+        Please keep in mind that this procedure is not gauranteed to work with future and current Windows 10 v.1903.
+    </system:String>
+
+
+    <system:String x:Key="DriverUpdateInfoWin1903HeadlineVr">Info for users of Windows v.1903 (Spring-Update 2019):</system:String>
+
+    <system:String x:Key="DriverUpdateInfoWin1903ExplanationVr">
+        Unfortunately with Windows 10 version 1903 it's currently not possible to completely restore functionality of 3D Vision driver.
+        In this case we recommend to either use Geforce driver version 425.31 or reverting to Windows 10 version 1809 or older. We apologize for this.
     </system:String>
 
     <system:String x:Key="DriverUpdateInstallProcedure">Install notes:</system:String>
@@ -678,14 +697,22 @@ Therefore it's recommended to use CMU for singleplayer or offline games only.</s
 
     <system:String x:Key="DriverUpdateSupportedDriversHeadline">Last official 3D Vision driver:</system:String>
 
+    <system:String x:Key="DriverUpdateSupportedDriversExplanationVr">
+        Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision. 
+        Please install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
+        Especially when using Windows 10 version 1903 you should definitely install this driver manually.
+    </system:String>
+
     <system:String x:Key="DriverUpdateSupportedDriversExplanation">
         Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision. 
         Install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
     </system:String>
 
+
     <system:String x:Key="StereoSetupError">Error: Failed to enable Stereoscopic 3D as 3D Vision driver is missing. &#x0d;&#x0d;Please install older version 425.31 of your graphics driver.</system:String>
     <system:String x:Key="DriverInstallFailed">Driver install failed.</system:String>
     <system:String x:Key="ControllerInstallFailed">Failed to install 3D controller driver.</system:String>
+    <system:String x:Key="_3dVisionNotInstalled">Nvidia 3D Vision driver not installed</system:String>
 
     <!-- Driver update dialog simple-->
     <system:String x:Key="DriverUpdateSimpleHeadline">Do you want to update your graphics driver to the latest version as well?</system:String>
@@ -923,6 +950,9 @@ Pauldusler</system:String>
     <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
     <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
 
+    <system:String x:Key="SwitchTo3dVisionWarning" xml:space="preserve">Warning: you are switching to 3D Vision mode. &#x0d;&#x0d;This mode is only suited for playing with supported 3D monitors.&#x0d;&#x0d;Please choose "VR" from the list if you want to play in Virtual Reality mode on the big screen.</system:String>
+
+
     <!--.................... Dialog Window End .......................... -->
 
 
@@ -1092,6 +1122,10 @@ Pauldusler</system:String>
     <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
         With this option you can tag a game to be compatible to Virtual Reality.<LineBreak/><LineBreak/>
         Tagged games are automatically added to the filter <Italic><Bold>VR compatible</Bold></Italic>.
+    </TextBlock>
+
+    <TextBlock x:Key="Uses3DDirectToolTip" TextWrapping="Wrap" Width="300">
+        Le jeu utilise NVidia 3D Direct Mode pour créer des images stéréo.
     </TextBlock>
 
     <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
