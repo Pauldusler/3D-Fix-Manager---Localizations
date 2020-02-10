@@ -1151,13 +1151,13 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
         En utilisant cette option, vous pouvez modifier le contenu d'un fichier Exe afin de le faire fonctionner correctement en mode 3D stéréo. Jusqu'à présent, cela n'est requis que pour certains jeux "LEGO".<LineBreak/><LineBreak/>
-        Pour ce faire, le fichier exe est lu comme une donnée binaire et recherché une chaîne que vous pouvez définir dans le champ sur le côté droit. Ensuite, la chaîne trouvée est remplacée par une autre chaîne que vous pouvez définir dans le champ fourni.<LineBreak/><LineBreak/>
+        Pour ce faire, le fichier exe est lu comme une donnée binaire et recherche une chaîne que vous pouvez définir dans le champ sur le côté droit. Ensuite, la chaîne trouvée est remplacée par une autre chaîne que vous pouvez définir dans le champ fourni.<LineBreak/><LineBreak/>
         Pour des raisons de sécurité, le fichier d'origine est sauvegardé dans le répertoire du jeu avant l'enregistrement du fichier modifié.
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
         Fournit une description du correctif 3D Vision.<LineBreak/><LineBreak/>
-        Vous pouvez copier le texte du site Web helixmod ou écrire une propre description.
+        Vous pouvez copier le texte du site Web Helixmod ou écrire votre propre description.
     </TextBlock>
 
 
@@ -1165,9 +1165,9 @@ Pauldusler</system:String>
     <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
         Le mode Hunting est principalement conçu pour les shaderhackers. Il leur permet de rechercher des shaders cassés en mode 3D stéréo et de les réparer.<LineBreak/><LineBreak/>
         Pour les utilisateurs finaux, le mode Hunting est intéressant pour montrer une superposition avec la profondeur et la convergence 3D actuelles. Avec cela, l'utilisateur peut affiner les raccourcis clavier 3D.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Mode de chasse désactivé et superposition 3D stéréo.<LineBreak/><LineBreak/>
-        <Bold>On:</Bold> Active le mode de chasse et la superposition 3D stéréo.<LineBreak/><LineBreak/>     
-        <Bold>Soft disabled:</Bold> Le mode de chasse ainsi que la superposition 3D stéréo ne sont pas complètement désactivés. En appuyant sur la touche "0" (touche par défaut), vous pouvez afficher la superposition en jeu.
+        <Bold>Off:</Bold> Mode Hunting désactivé et superposition 3D stéréo.<LineBreak/><LineBreak/>
+        <Bold>On:</Bold> Active le mode Hunting et la superposition 3D stéréo.<LineBreak/><LineBreak/>     
+        <Bold>Soft disabled:</Bold> Le mode Hunting ainsi que la superposition 3D stéréo ne sont pas complètement désactivés. En appuyant sur la touche "0" (touche par défaut), vous pouvez afficher la superposition en jeu.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
@@ -1279,432 +1279,432 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="Disable2DDToolTip" TextWrapping="Wrap" Width="300">
-        Disable compatibility mode to make sure users are seeing the real deal.<LineBreak/><LineBreak/>
-        Like convergence, 3DMigoto will respect the users custom settings here.
+        Désactivez le mode de compatibilité pour vous assurer que les utilisateurs voient le véritable deal.<LineBreak/><LineBreak/>
+        Comme la convergence, 3DMigoto respectera les paramètres personnalisés des utilisateurs ici.
     </TextBlock>
 
     <TextBlock x:Key="TwoDDNotesToolTip"  TextWrapping="Wrap" Width="300">
-        Put a reminder in the green text of compatibility mode that they are not seeing the real deal.
+        Mettez un rappel dans le texte vert du mode de compatibilité qu'ils ne voient pas le véritable deal.
     </TextBlock>
 
     <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
-        Enables an ingame overlay for displaying the current convergence / seperation values. This also enables hunting mode for shader fixing.<LineBreak/><LineBreak/>
-        Don't forget to uncheck this option after you have finished editing the hotkeys for achieving a better gaming performance.
+        Active un overlay dans le jeu pour afficher les valeurs actuelles de convergence / séparation. Cela permet également le mode de Hunting pour la correction.<LineBreak/><LineBreak/>
+        N'oubliez pas de décocher cette option une fois que vous avez terminé de modifier les raccourcis clavier pour obtenir de meilleures performances de jeu.
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
-        Renders the mouse cursor in software and should be used if you want to be able to adjust the stereo depth of the mouse or in conjunction with alternative 3D output formats like side-by-side.
+        Rend le curseur de la souris dans le logiciel et doit être utilisé si vous voulez pouvoir ajuster la profondeur stéréo de la souris ou en conjonction avec d'autres formats de sortie 3D comme le side-by-side.
     </TextBlock>
 
 
     <!-- General Settings Tab ToolTips -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
-        Automatic check for application or fix updates when the application is started.
+        Vérification automatique de l'application ou correction des mises à jour au démarrage de l'application.
     </TextBlock>
 
     <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
-        Automatic check for Geforce driver updates when the application is started.
+        Vérification automatique des mises à jour du pilote Geforce au démarrage de l'application.
     </TextBlock>
 
     <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
-        This allows 3D Fix Manager to automatically optimize graphics settings / configurations of the games when launching it.<LineBreak/><LineBreak/>
-        This is necessary for making the 3D fixes and stereo 3D mode work and look correctly.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This option should be only turned off if you prefer to configure the games manually.
+        Cela permet à 3D Fix Manager d'optimiser automatiquement les paramètres graphiques / configurations des jeux lors du lancement.<LineBreak/><LineBreak/>
+        Ceci est nécessaire pour que les correctifs 3D et le mode 3D stéréo fonctionnent et soient corrects.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Cette option ne doit être désactivée que si vous préférez configurer les jeux manuellement.
     </TextBlock>
 
     <TextBlock x:Key="FullscreenOptimizationsToolTip" TextWrapping="Wrap" Width="300">
-       Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
-       Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
-       <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
-       You can either disable fullscreen optimizations globally or only for specific games. If you chose the latter you can control this in the individual fix profile.
+       Les optimisations plein écran sont une fonctionnalité introduite avec Windows 10 et activée par défaut depuis la mise à jour Windows 1803 (Mise à jour d'Avril 2018).<LineBreak/><LineBreak/>
+       Le but de cette fonctionnalité est d'avoir un mode plein écran sans bordure qui offre les mêmes avantages de performance que ceux du mode plein écran exclusif.<LineBreak/><LineBreak/>
+       <Bold>Important:</Bold> Vous devez désactiver les optimisations plein écran si vous rencontrez des problèmes tels la 3D qui ne fonctionne pas, la mise à l'échelle du SLI incorrect ou le sluttering pendant le jeu.<LineBreak/><LineBreak/>
+       Vous pouvez désactiver globalement les optimisations plein écran ou uniquement pour des jeux spécifiques. Si vous avez choisi ce dernier, vous pouvez contrôler cela dans le profil de correctif individuel.
     </TextBlock>
 
     <TextBlock x:Key="FullscreenOptimizationsProfileToolTip" TextWrapping="Wrap" Width="300">
-       Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
-       Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
-       <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This setting is only active if you previously set <Bold><Italic>Fullscreen Optimizations</Italic></Bold> in tab <Bold><Italic>Application Settings</Italic></Bold> to <Italic>"Controlled by Fix Profile"</Italic>.
+       Les optimisations plein écran sont une fonctionnalité introduite avec Windows 10 et activée par défaut depuis la mise à jour Windows 1803 (Mise à jour Avril 2018).<LineBreak/><LineBreak/>
+       Le but de cette fonctionnalité est d'avoir un mode plein écran sans bordure qui offre les mêmes avantages de performance que ceux du mode plein écran exclusif.<LineBreak/><LineBreak/>
+       <Bold>Important:</Bold> Vous devez désactiver les optimisations plein écran si vous rencontrez des problèmes tels la 3D qui ne fonctionne pas, la mise à l'échelle du SLI incorrecte ou le sluttering pendant le jeu.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> Ce paramètre n'est actif que si vous avez précédemment défini <Bold><Italic>Optimisations plein écran</Italic></Bold> dans l'onglet <Bold><Italic>Réglages d'application</Italic></Bold> a <Italic>"Controllé par le profil du Correctif"</Italic>.
     </TextBlock>
 
     <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables the 3D fix automatically when starting a game in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This setting is only active if you previously set <Italic><Bold>"Disable 3D fixes in 2D mode"</Bold></Italic> in tab <Italic><Bold>Application Settings</Bold></Italic> to <Italic><Bold>"Controlled by fix profile"</Bold></Italic>.
+       Désactive automatiquement le correctif 3D lors du démarrage d'un jeu en mode 2D.<LineBreak/><LineBreak/>
+       Définissez cette option sur <Bold><Italic>Non</Italic></Bold> si vous souhaitez utiliser 3dmigoto comme outil de modding pour le mode 2D.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> Ce paramètre n'est actif que si vous avez précédemment défini <Italic><Bold>"Désactiver les correctifs 3D en mode 2D"</Bold></Italic> dans l'onglet <Italic><Bold>Réglages d'application</Bold></Italic> a <Italic><Bold>"Controllé par le profil du correctif"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables 3D fixes automatically when starting games in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.
+       Désactive automatiquement les correctifs 3D lors du démarrage des jeux en mode 2D.<LineBreak/><LineBreak/>
+       Définissez cette option sur <Bold><Italic>Non</Italic></Bold> si vous souhaitez utiliser 3dmigoto comme outil de modding pour le mode 2D.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
-        Disable Steam overlay if you experience crashes while starting games.
+        Désactivez la superposition Steam si vous rencontrez des plantages lors du démarrage des jeux.
     </TextBlock>
 
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
-        When the user customizes a fix profile in 'Edit Profil' tab and clicks on <Italic><Bold>"Save"</Bold></Italic> button the changes are detected and sent to a MySQL server.<LineBreak/><LineBreak/>
-        This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them.
+        Lorsque l'utilisateur personnalise un profil de correctif dans l'onglet «Modifier le profil» et clique sur <Italic><Bold>"Sauvegarde"</Bold></Italic> bouton les modifications sont détectées et envoyées à un serveur MySQL.<LineBreak/><LineBreak/>
+        Cette fonctionnalité aide l'auteur de 3D Fix Manager à ajouter des données manquantes pour corriger des profils ou les corriger.
     </TextBlock>
 
     <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
-        Updates 3dmigoto of all installed 3D fixes automatically as soon as 3D Fix Manager is being started.
+        Met à jour 3dmigoto de tous les correctifs 3D installés automatiquement dès le démarrage de 3D Fix Manager.
     </TextBlock>
 
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
-        Reinstalls 3D fixes without redownloading them. For achieving this downloaded files are kept in the directory of 3D Fix Manager and used for reinstalling 3D fixes.<LineBreak/><LineBreak/>
-        If you want to delete downloaded files to free up space on your harddrive just go to <Italic><Bold>"Installation" </Bold></Italic> tab and click on <Italic><Bold>"Clear cache"</Bold></Italic>.
+        Réinstalle les correctifs 3D sans les télécharger à nouveau. Pour y parvenir, les fichiers téléchargés sont conservés dans le répertoire de 3D Fix Manager et utilisés pour réinstaller les correctifs 3D.<LineBreak/><LineBreak/>
+        Si vous souhaitez supprimer des fichiers téléchargés pour libérer de l'espace sur votre disque dur, allez sur<Italic><Bold>"Installation" </Bold></Italic> onglet et cliquez sur <Italic><Bold>"Nettoyer le cache"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
-        Enable this for redownloading all icons from TheGamesDB or Steam DB.<LineBreak/><LineBreak/>
-        Old icons are not lost by saving them in backup folders inside of the individual profile folders.
+        Activez cette option pour télécharger à nouveau toutes les icônes de TheGamesDB ou Steam DB.<LineBreak/><LineBreak/>
+        Les anciennes icônes ne sont pas perdues en les enregistrant dans des dossiers de sauvegarde à l'intérieur des dossiers de profil individuels.
     </TextBlock>
 
     <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
-        Downloads and displays stereoscopic 3D screenshots included in the info text of the 3D fixes.<LineBreak/><LineBreak/>
-        Disable this option if GUI freezes while downloading the images.
+        Télécharge et affiche des captures d'écran 3D stéréoscopiques incluses dans le texte d'information des correctifs 3D.<LineBreak/><LineBreak/>
+        Désactivez cette option si l'interface graphique se bloque lors du téléchargement des images.
     </TextBlock>
 
     <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
-        Deletes all downloaded 3D fixes which were temporarily cached to the directory of 3D Fix Manager.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This feature does not delete any installed 3D fixes, it just frees up some disk space in the directory of the application.
+        Supprime tous les correctifs 3D téléchargés qui ont été temporairement mis en cache dans le répertoire de 3D Fix Manager.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> Cette fonctionnalité ne supprime aucun correctif 3D installé, elle libère simplement de l'espace disque dans le répertoire de l'application.
     </TextBlock>
 
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
-        Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry.
+        Activez cette option si vous souhaitez toujours télécharger des icônes depuis Internet, même si des icônes locales ont déjà été trouvées via le registre Windows.
     </TextBlock>
 
     <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
-        Updates 3dmigoto of all installed fixes to the latest version.<LineBreak/><LineBreak/>
-        Newer versions of 3dmigoto can have a better performance / stability and unlock new features like SideBySide support.
+        Met à jour 3dmigoto des correctifs installés vers la dernière version.<LineBreak/><LineBreak/>
+        Les nouvelles versions de 3dmigoto peuvent avoir une meilleure performance / stabilité et débloquer de nouvelles fonctionnalités comme le support du Side-By-Side.
     </TextBlock>
 
     <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
-        When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
-        It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
-        Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold><Italic>Search games</Italic></Bold> below. The cache is rebuilt automatically then.
+        Lorsque vous activez cette fonctionnalité, tous les chemins de jeu seront mis en cache dans les fichiers des profils de correctifs individuels. En conséquence, le démarrage de l'application est accéléré si de nombreux jeux et programmes sont installés sur l'ordinateur.<LineBreak/><LineBreak/>
+        Il est recommandé de laisser cette fonctionnalité désactivée à moins que le démarrage de l'application ne prenne trop de temps sur votre machine.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Gardez à l'esprit lors du démarrage de l'application que les jeux installés ne seront plus recherchés activement dans le Registre Windows et via les chemins de recherche. Au lieu de cela, toutes les informations sont extraites du cache.
+        L'effet secondaire de cela est que les jeux nouvellement installés ne sont plus détectés automatiquement. Veuillez rafraîchir la liste des jeux (bouton rafraîchir) dans ce cas ou cliquer sur le bouton <Bold><Italic>Rechercher les jeux</Italic></Bold> ci-dessous. Le cache est reconstruit automatiquement puis.
     </TextBlock>
 
     <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same name as the individual fix profiles.<LineBreak/><LineBreak/>
-        These Registry keys contain the information where the game is installed.
+        Détecte les jeux installés en recherchant dans un emplacement spécifique du Registre Windows la présence de clés de Registre portant le même nom que les profils de correctifs individuels.<LineBreak/><LineBreak/>
+        Ces clés de registre contiennent l'information où le jeu est installé.
     </TextBlock>
 
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
-        You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
-        For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
+        Détecte les jeux installés en recherchant sur votre disque dur des dossiers portant le même nom que les profils de correctifs individuels. <LineBreak/><LineBreak/>
+        Vous pouvez spécifier les répertoires à rechercher en définissant des chemins de recherche (voir ci-dessous). La recherche est automatiquement annulée si la profondeur de recherche maximale est atteinte.<LineBreak/><LineBreak/>
+        Pour détecter avec succès les jeux installés, l'exe du jeu doit également être trouvé dans les dossiers. Cela évite de marquer les jeux comme installés bien que le dossier du jeu soit vide.
     </TextBlock>
 
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        When a game is both found by search paths and windows registry then install location found by search path is applied.
+        Lorsqu'un jeu est à la fois trouvé par les chemins de recherche et le registre Windows, l'emplacement d'installation trouvé par le chemin de recherche est appliqué.
     </TextBlock>
 
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
-      Paths which are traversed recursively for finding games.
+      Chemins parcourus récursivement pour trouver les jeux.
     </TextBlock>
 
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
-       Triggers a search for finding installed games and updates the list.
+       Déclenche une recherche pour trouver les jeux installés et met à jour la liste.
     </TextBlock>
 
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
-       Sets the maximal depth of subdirectories the application traverses for finding a game.
+       Définit la profondeur maximale des sous-répertoires que l'application traverse pour trouver un jeu.
     </TextBlock>
 
     <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
-       When user starts a game RivaTuner Statistics Server is opened or closed depending on the setting in the individual fix profile.
+       Lorsque l'utilisateur démarre un jeu, RivaTuner Statistics Server est ouvert ou fermé en fonction du paramètre du profil du correctif individuel.
     </TextBlock>
 
     <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
-        Gives the user the opportunity to set up RTSS before game starts. Please make sure fps limiter is set to 60 fps for smooth gameplay / reduced input lag.
+        Donne à l'utilisateur la possibilité de configurer RTSS avant le début du jeu. Veuillez vous assurer que le limiteur fps est réglé sur 60 fps pour un gameplay fluide / un lag d'entrée réduit.
     </TextBlock>
 
     <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
-       Always closes RTSS when a game is started in 2D mode no matter what is defined in fix profile.
+       Ferme toujours RTSS lorsqu'un jeu démarre en mode 2D, peu importe ce qui est défini dans le profil de correctif.
     </TextBlock>
 
     <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
-        Never closes a running instance of RTSS if a game is started in 2D mode no matter what is defined in fix profile.
+        Ne ferme jamais une instance en cours d'exécution de RTSS si un jeu est démarré en mode 2D, peu importe ce qui est défini dans le profil de correctif.
     </TextBlock>
 
     <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
-        Automatically closes a running instance of RTSS if the user quits 3D Fix Manager.
+        Ferme automatiquement une instance de RTSS en cours d'exécution si l'utilisateur quitte 3D Fix Manager.
     </TextBlock>
 
     <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
-        Globally set if games should be started directly with the game exe and not via Steam client.<LineBreak/><LineBreak/>
-        When no Game Launcher Exe is defined in fix profile the game is still started via Steam if available.
+        Définissez globalement si les jeux doivent être démarrés directement avec l'exe du jeu et non via le client Steam.<LineBreak/><LineBreak/>
+        Lorsqu'aucun exe de lanceur de jeu n'est défini dans le profil de correctif, le jeu est toujours démarré via Steam s'il est disponible.
     </TextBlock>
 
     <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
-        Globally set if games should be started via Steam client by calling the Steam App ID.<LineBreak/><LineBreak/>
-        If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead.
+        Définissez globalement si les jeux doivent être démarrés via le client Steam en appelant l'ID de l'application Steam.<LineBreak/><LineBreak/>
+        Si le jeu n'est pas installé sur Steam ou que Steam lui-même n'est pas détecté, le jeu démarre via l'exe du lanceur de jeu à la place.
     </TextBlock>
 
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client.<LineBreak/><LineBreak/>
-        Steam games should only be started directly via game exe when you want to bypass a game launcher window for example. You can control this behaviour by editing the individual fix profile.
+        Définissez ici si le type de démarrage d'un jeu doit être contrôlé individuellement par le profil de correctif. C'est l'option recommandée pour décider si le jeu devrait être démarré en appelant directement l'exe du jeu ou indirectement en appelant le client Steam.<LineBreak/><LineBreak/>
+        Les jeux Steam devraient être démarrés directement via l'exe du jeu lorsque vous souhaitez contourner la fenêtre du lanceur de jeu par exemple. Vous pouvez contrôler ce comportement en modifiant le profil de correctif individuel.
     </TextBlock>
 
     <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
-       Globally disables installation of driver profiles for all games.
+       Désactive globalement l'installation des profils de pilotes pour tous les jeux.
     </TextBlock>
 
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        When enabling this option user can control in individual fix profiles whether to install driver profiles.
+        Lors de l'activation de cette option, l'utilisateur peut contrôler dans les profils de correctifs individuels s'il faut installer les profils de pilote.
     </TextBlock>
 
     <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option 3D Fix Manager is generally allowed to install driver profiles without showing a warning dialog.
+        En activant cette option, 3D Fix Manager est généralement autorisé à installer des profils de pilote sans afficher de boîte de dialogue d'avertissement.
     </TextBlock>
 
     <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option stereo refresh rate and shutter frequency of Nvidia 3D glasses are left untouched and controlled by the settings in Nvidia driver.
+        En activant cette option, le taux de rafraîchissement stéréo et la fréquence d'obturation des lunettes Nvidia 3D restent inchangés et contrôlés par les paramètres du pilote Nvidia.
     </TextBlock>
 
     <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option you can control stereo refresh rate and shutter frequency of Nvidia 3D glasses individually per game.
+        En activant cette option, vous pouvez contrôler le taux de rafraîchissement stéréo et la fréquence d'obturation des lunettes Nvidia 3D individuellement par jeu.
     </TextBlock>
 
 
     <!-- Refresh rates and resolution ToolTips -->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
-        Upscaling is useful if you want to play with a resolution which is lower than the native one of your monitor.<LineBreak/><LineBreak/>           
-        This feature performs upscaling to your native resolution for achieving a sharper image quality - specifically useful for 4K 3D TVs or for DSR.<LineBreak/><LineBreak/>   
-        Please consider that this is still an experimental feature and only works for a few games (like The Witcher 3 for example). When the mouse cursor does not work correctly please set upscaling to <Italic><Bold>"Force fullscreen" </Bold></Italic> or enable Software Mouse Cursor.<LineBreak/><LineBreak/>
-        <Bold>Normal fullscreen:</Bold> Enables upscaling and allows the game to disable and enable fullscreen mode.<LineBreak/><LineBreak/>
-        <Bold>Force fullscreen:</Bold> Enables upscaling and always forces fullscreen. Try this if you get issues with the mouse cursor.
+        L'upscaling est utile si vous voulez jouer avec une résolution inférieure à celle native de votre moniteur.<LineBreak/><LineBreak/>           
+        Cette fonctionnalité effectue une mise à l'échelle vers votre résolution native pour obtenir une qualité d'image plus nette - particulièrement utile pour la 4K la 3D les TVs ou pour le DSR.<LineBreak/><LineBreak/>   
+        Veuillez considérer que c'est toujours une fonctionnalité expérimentale et ne fonctionne que pour quelques jeux (comme The Witcher 3 par exemple). Lorsque le curseur de la souris ne fonctionne pas correctement, définissez la mise à l'échelle sur <Italic><Bold>"Forcer le plein écran" </Bold></Italic> ou activer le curseur de la souris logicielle.<LineBreak/><LineBreak/>
+        <Bold>Normal Plein Ecran:</Bold> Active la mise à l'échelle et permet au jeu de désactiver et d'activer le mode plein écran.<LineBreak/><LineBreak/>
+        <Bold>Forcer Plein Ecran:</Bold> Permet la mise à l'échelle et force toujours le plein écran. Essayez ceci si vous rencontrez des problèmes avec le curseur de la souris.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
-         <Bold>0:</Bold> 3Dmigoto creates a texture and pushes it as the back buffer for the game. Seems to work with only few games but everything seems to run a bit smoother.<LineBreak/><LineBreak/>
-         <Bold>1:</Bold> 3Dmigoto creates a second swap chain and pushes the game to use it. Seems to work with most games.
+         <Bold>0:</Bold> 3Dmigoto crée une texture et la pousse comme tampon arrière du jeu. Semble fonctionner avec seulement quelques jeux mais tout semble fonctionner un peu plus facilement.<LineBreak/><LineBreak/>
+         <Bold>1:</Bold> 3Dmigoto crée une deuxième chaîne d'échange et pousse le jeu à l'utiliser. Semble fonctionner avec la plupart des jeux.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
-        If upscaling is on, then you MUST specify the resolution the game will be upscaled to.<LineBreak/><LineBreak/>
-        To achieve the best visual result use the native resolution of your tv or monitor.
+        Si la mise à l'échelle est activée, vous DEVEZ alors spécifier la résolution à laquelle le jeu sera mis à l'échelle.<LineBreak/><LineBreak/>
+        Pour obtenir le meilleur résultat visuel, utilisez la résolution native de votre téléviseur ou moniteur.
     </TextBlock>
 
     <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
-        Filters available video modes to those providing given refresh rates. Some games don't explicitely set the refresh rate, but use the video mode.<LineBreak/><LineBreak/>
-        Use this if setting <Italic><Bold>"Override refresh rate"</Bold></Italic> doesn't work.
+        Filtre les modes vidéo disponibles sur ceux fournissant des taux de rafraîchissement donnés. Certains jeux ne définissent pas explicitement le taux de rafraîchissement, mais utilisent le mode vidéo.<LineBreak/><LineBreak/>
+        Utilisez ce paramètre si <Italic><Bold>"Outrepassage du taux de rafraîchissement"</Bold></Italic> ne fonctionne pas.
     </TextBlock>
 
     <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>1:</Bold> Forces creation of full screen devices and swap chains.<LineBreak/><LineBreak/>
-        <Bold>2:</Bold> Will also disable SetWindowPos which might help in some games.
+        <Bold>1:</Bold> Force la création d'appareils en plein écran et de chaînes d'échange.<LineBreak/><LineBreak/>
+        <Bold>2:</Bold> Désactivera également SetWindowPos qui pourrait aider dans certains jeux.
     </TextBlock>
 
     <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        To switch out of a Unity game without it crashing:<LineBreak/><LineBreak/>
-        Enable this option, Press F7, Alt+Enter, Alt+Tab
+        Pour quitter un jeu Unity sans qu'il ne plante:<LineBreak/><LineBreak/>
+        Activez cette option, appuyez sur F7, Alt+Enter, Alt+Tab
     </TextBlock>
 
     <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
-        This attempts to force exclusive full screen when this key is pressed and may be useful in games where <Italic><Bold>Force fullscreen on game start</Bold></Italic> doesn't work or has undesirable side effects.
+        Cela tente de forcer le plein écran exclusif lorsque cette touche est enfoncée et peut être utile dans les jeux où <Italic><Bold>Forcer le plein écran au démarrage du jeu</Bold></Italic> ne fonctionne pas ou a des effets secondaires indésirables.
     </TextBlock>
 
     <!-- Nvidia 3D Settings Tab -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
-        Enables / disables <Bold> Nvidia Stereoscopic 3D</Bold> manually.<LineBreak/><LineBreak/>
-        This is the same feature which can be also found in Nvidia Control Panel under <Italic><Bold>"Set up stereoscopic 3D"</Bold></Italic>.
+        Active / désactive <Bold> la 3D Stereoscopique Nvidia</Bold> manually.<LineBreak/><LineBreak/>
+        Il s'agit de la même fonctionnalité qui se trouve également dans le panneau de configuration Nvidia sous <Italic><Bold>"Configurer la 3D stéréoscopique"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
-         Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager.
+         Désactive la 3D Stereoscopique Nvidia lors de la fermeture de 3D Fix Manager.
     </TextBlock>
 
     <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
-        Disables Nvidia Stereoscopic 3D when closing a running game.
+        Désactive la 3D Stéréoscopique Nvidia lors de la fermeture d'un jeu en cours.
     </TextBlock>
 
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
-        Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode.
+        Définit automatiquement le mode de sortie 3D sur 3D Vision / 3DTV Play au lieu de 3D Vision Discover (anaglyphe) lors de l'activation de la 3D Stéréoscopique Nvidia ou du démarrage d'un jeu en mode 3D.
     </TextBlock>
 
     <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
-        Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.<LineBreak/><LineBreak/>
-        Technically this option sets windows registry entry <Italic><Bold>"StereoDefaultOn"</Bold></Italic> to 0 or 1.
+        Définit si les jeux démarrent en mode 3D lorsque la 3D Stéréoscopique Nvidia est activée. Sinon, vous devez appuyer sur CTRL + T.<LineBreak/><LineBreak/>
+        Techniquement, cette option définit l'entrée de registre Windows <Italic><Bold>"StereoDefaultOn"</Bold></Italic> à 0 ou 1.
     </TextBlock>
 
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether 3D Vision can activate 3D mode for windowed applications.<LineBreak/><LineBreak/>
-        Technically this option sets windows registry entry <Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
+        Définit si 3D Vision peut activer le mode 3D pour les applications fenêtrées.<LineBreak/><LineBreak/>
+        Techniquement, cette option définit l'entrée de registre Windows <Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
     </TextBlock>
 
     <TextBlock x:Key="Nvidia3dDriverOverlayToolTip" TextWrapping="Wrap" Width="300">
-        With this option you can completely switch off the overlay which is typcially active when playing in stereo 3D mode.<LineBreak/><LineBreak/>
-        By disabling the overlay both the graphical representation for the 3D depth as well as the info box with the green text aren't shown in games any more.<LineBreak/><LineBreak/>
-        Further more you generally won't see the red warning text <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> any more.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind that you need to restart your system after disabling or re-enabling the overlay. In addition the changes are undone after updating the graphics driver.
+       Avec cette option, vous pouvez complètement désactiver la superposition qui est généralement active lors de la lecture en mode 3D stéréo.<LineBreak/><LineBreak/>
+        En désactivant la superposition, la représentation graphique de la profondeur 3D ainsi que la boîte d'informations avec le texte vert ne sont plus affichées dans les jeux.<LineBreak/><LineBreak/>
+        De plus, vous ne verrez généralement pas le texte d'avertissement rouge <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> any more.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> N'oubliez pas que vous devez redémarrer votre système après avoir désactivé ou réactivé la superposition. De plus, les modifications sont annulées après la mise à jour du pilote graphique.
     </TextBlock>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
-        Reverses interleave pattern for <Bold>passive 3D displays</Bold>.<LineBreak/><LineBreak/>
-        This fixes the issue when left and right eyes are swapped.<LineBreak/><LineBreak/>
-        Technically this option sets the windows registry entries <Italic><Bold>"InterleavePattern0"</Bold></Italic> and <Italic><Bold>"InterleavePattern1"</Bold></Italic> to <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> In order to prevent the Nvidia driver to override these entries they will be protected from write access for a duration of 120 seconds while starting the game in 3D mode. Once this period elapses or the application is closed write access will be automatically granted again.
+        Inverse le motif d'entrelacement pour <Bold>écrans 3D passifs</Bold>.<LineBreak/><LineBreak/>
+        Cela résout le problème lorsque les yeux gauche et droit sont échangés.<LineBreak/><LineBreak/>
+        Techniquement, cette option définit les entrées de registre Windows <Italic><Bold>"InterleavePattern0"</Bold></Italic> et <Italic><Bold>"InterleavePattern1"</Bold></Italic> vers <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Afin d'empêcher le pilote Nvidia de remplacer ces entrées, elles seront protégées contre l'accès en écriture pendant une durée de 120 secondes lors du démarrage du jeu en mode 3D. Une fois cette période expirée ou l'application fermée, l'accès en écriture sera automatiquement accordé à nouveau.
     </TextBlock>
 
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        Enable this option if you want to exceed the maximum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximum 3D depth is often too low for them.<LineBreak/><LineBreak/>
-        Depth hack is active as soon as you set the multiplier to a value higher than 1. For example if you set it to 2 you can achieve a 3D depth which is twice as high.<LineBreak/><LineBreak/>
-        With regard to this example this effectively means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because multiplier was set to 2. Similarily 80% 3D depth will correspond 160% and so on.<LineBreak/><LineBreak/>
-        When using the depth hack you make the Nvidia driver think that you play with a smaller display size as it is actually. You can see the display size which was detected by the driver below. The smaller the inch value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
-        3D depth hack is applied to all display profiles so you can increase the maximum 3D depth for all display devices equally.
+        Activez cette option si vous souhaitez dépasser la valeur maximale possible pour la profondeur 3D (cette procédure est également appelée hack de profondeur). Cette fonctionnalité est particulièrement utile pour les projecteurs car la profondeur 3D maximale est souvent trop faible pour eux.<LineBreak/><LineBreak/>
+        Le hack de profondeur est actif dès que vous définissez le multiplicateur sur une valeur supérieure à 1. Par exemple, si vous le définissez sur 2, vous pouvez obtenir une profondeur 3D deux fois plus élevée..<LineBreak/><LineBreak/>
+        En ce qui concerne cet exemple, cela signifie effectivement que si vous définissez la profondeur 3D à 100% pendant le jeu, cela correspondra réellement à une profondeur de 200% car le multiplicateur a été défini à 2. De même, une profondeur 3D de 80% correspondra à 160%, etc..<LineBreak/><LineBreak/>
+        Lorsque vous utilisez le hack de profondeur, vous faites croire au pilote Nvidia que vous jouez avec une taille d'affichage plus petite qu'elle ne l'est en réalité. Vous pouvez voir la taille d'affichage détectée par le pilote ci-dessous. Plus la valeur en pouces est petite, plus la profondeur 3D maximale est grande.<LineBreak/><LineBreak/>
+        Le hack de profondeur 3D est appliqué à tous les profils d'affichage afin que vous puissiez augmenter la profondeur 3D maximale pour tous les périphériques d'affichage de manière égale.
     </TextBlock>
 
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
-        This is the size of the monitor which is passed to the Nvidia driver. The smaller the value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
-        For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen.<LineBreak/><LineBreak/>
-        Adjust the maximum 3D depth via 3D depth multiplier or the value in inch. Both depend on another.
+        Il s'agit de la taille du moniteur transmise au pilote Nvidia. Plus la valeur est petite, plus la profondeur 3D maximale est grande.<LineBreak/><LineBreak/>
+        Pour obtenir la meilleure profondeur 3D pour les projecteurs, il est recommandé de saisir la taille de l'écran de projection.<LineBreak/><LineBreak/>
+        Réglez la profondeur 3D maximale via le multiplicateur de profondeur 3D ou la valeur en pouces. Les deux dépendent l'un de l'autre.
     </TextBlock>
 
     <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
-        Set the synchronisation method for your 3D Vision IR sender (3D Vision pyramid).<LineBreak/><LineBreak/>
-        <Bold>Single IR Environment:</Bold> Choose this if you don't use any other IR senders like remote controls in your environment. This is the default setting recommended by Nvidia.<LineBreak/><LineBreak/>
-        <Bold>Multi IR Environment:</Bold> Choose this if you use several IR devices in your environment like remote controls. This ensures that IR devices don't interfere with each other.<LineBreak/><LineBreak/>
-        <Bold>3D Vision LAN Environment:</Bold> Choose this if you have a LAN environment with several 3D Vision IR senders and further IR devices like remote controls. This ensures that IR devices don't interfere with each other.
+        Définissez la méthode de synchronisation pour votre émetteur infrarouge 3D Vision (pyramide 3D Vision).<LineBreak/><LineBreak/>
+        <Bold>Environnement IR unique:</Bold> Choisissez cette option si vous n'utilisez aucun autre émetteur infrarouge comme une télécommande dans votre environnement. Il s'agit du paramètre par défaut recommandé par Nvidia.<LineBreak/><LineBreak/>
+        <Bold>Environnement Multi IR:</Bold> Choisissez ceci si vous utilisez plusieurs appareils IR dans votre environnement comme des télécommandes. Cela garantit que les appareils IR n'interfèrent pas les uns avec les autres.<LineBreak/><LineBreak/>
+        <Bold>Environnement LAN 3D Vision:</Bold> Choisissez cette option si vous disposez d'un environnement LAN avec plusieurs émetteurs IR 3D Vision et d'autres appareils IR tels que des télécommandes. Cela garantit que les appareils IR n'interfèrent pas les uns avec les autres.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz.<LineBreak/><LineBreak/>
-        Set here to run monitor and shutter glasses with the specified frequenzy while gaming. Decreasing frequency to 100 Hz is useful if your computer is only strong enough to hold 100 fps in-game.
+        Les lunettes d'obturation 3D Vision peuvent être exécutées à différentes fréquences d'obturation allant de 100 Hz à 120 Hz.<LineBreak/><LineBreak/>
+        Définissez ici pour exécuter les lunettes de contrôle et d'obturation avec la fréquence spécifiée pendant le jeu. La diminution de la fréquence à 100 Hz est utile si votre ordinateur est suffisamment puissant pour contenir 100 fps en jeu.
     </TextBlock>
 
     <TextBlock x:Key="ExportedDriverProfileToolTip" TextWrapping="Wrap" Width="300">
-        If you were unable to find specific driver settings in the GUI you can still set them via a profile file which was previously exported via Nvidia Profile Inspector. Please choose a .nip file for doing so.<LineBreak/><LineBreak/> 
-        <Bold>Note:</Bold> 3D Fix Manager loads the exported profile (.nip file) first and after that it sets the driver settings defined by the GUI. So the driver settings of the GUI have a higher priority than the exported profile.
+        Si vous n'avez pas pu trouver des paramètres de pilote spécifiques dans l'interface graphique, vous pouvez toujours les définir via un fichier de profil qui a été précédemment exporté via Nvidia Profile Inspector. Veuillez choisir un fichier .nip pour ce faire.<LineBreak/><LineBreak/> 
+        <Bold>Note:</Bold> 3D Fix Manager charge le profil exporté (fichier .nip) en premier et ensuite il définit les paramètres du pilote définis par l'interface graphique. Ainsi, les paramètres du pilote de l'interface graphique ont une priorité plus élevée que le profil exporté.
     </TextBlock>
 
     <!-- Display Profiles ToolTips -->
 
     <TextBlock x:Key="ChangeDisplayProfileToolTip" TextWrapping="Wrap" Width="300">
-        Choose the display profile to be switched to active.<LineBreak/><LineBreak/>  
-        <Bold>Note:</Bold> You can configure each profile in tab <Bold><Italic>>"Display Profiles"</Italic></Bold> to your likings.
+        Choisissez le profil d'affichage à activer.<LineBreak/><LineBreak/>  
+        <Bold>Note:</Bold> Vous pouvez configurer chaque profil dans l'onglet <Bold><Italic>>"Profils d'affichage"</Italic></Bold> à votre guise.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileDialogOnGameStartToolTip" TextWrapping="Wrap" Width="300">
-        If you disable this option the dialog window won't be shown any more the next time you start a game.<LineBreak/><LineBreak/>       
-        <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold><Italic>Display Profiles</Italic></Bold>.
+        Si vous désactivez cette option, la fenêtre de dialogue ne s'affichera plus la prochaine fois que vous lancerez une partie.<LineBreak/><LineBreak/>       
+        <Bold>Note:</Bold> Vous pouvez réactiver la fenêtre de dialogue dans l'onglet <Bold><Italic>Profils d'affichage</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileDialogOnAppStartToolTip" TextWrapping="Wrap" Width="300">
-        If you disable this option the dialog window won't be shown any more while starting 3D Fix Manager.<LineBreak/><LineBreak/>       
-        <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold><Italic>Display Profiles</Italic></Bold>.
+        Si vous désactivez cette option, la boîte de dialogue ne s'affichera plus lors du démarrage de 3D Fix Manager.<LineBreak/><LineBreak/>       
+        <Bold>Note:</Bold> Vous pouvez réactiver la fenêtre de dialogue dans l'onglet <Bold><Italic>Profils d'affichage</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
-        Please select a display device from the list which shall be linked to this display profile. When doing so this display profile is automatically chosen when starting a game on the display device.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> It's highly recommended that you link all the display profiles you use to a display device to eliminate the need for choosing the display profile manually when launching a game. Instead the correct display profile is detected automatically then.
+        Veuillez sélectionner un périphérique d'affichage dans la liste qui sera lié à ce profil d'affichage. Ce faisant, ce profil d'affichage est automatiquement choisi lors du démarrage d'un jeu sur le périphérique d'affichage.<LineBreak/><LineBreak/>
+       <Bold>Note:</Bold> Il est fortement recommandé de lier tous les profils d'affichage que vous utilisez à un périphérique d'affichage pour éliminer la nécessité de choisir le profil d'affichage manuellement lors du lancement d'un jeu. Au lieu de cela, le profil d'affichage correct est alors détecté automatiquement.
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
-        Choose the display device to be linked to the display profile.
+        Choisissez le périphérique d'affichage à lier au profil d'affichage.
     </TextBlock>
 
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your monitor in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+        Veuillez définir la taille réelle de votre moniteur en pouces. Cette valeur est écrite dans le registre Windows dès que vous lancez un jeu pour atteindre la profondeur 3D maximale correcte.<LineBreak/><LineBreak/>
+        Si vous pensez que la profondeur 3D maximale n'est pas suffisamment élevée pour <Bold><Italic>Paramètres 3D Nvidia</Italic></Bold> et définissez le multiplicateur de profondeur 3D. De cette façon, vous pouvez augmenter la profondeur 3D maximale pour tous les périphériques d'affichage de manière égale.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your projector screen in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+        Veuillez définir la taille réelle de votre écran de projection en pouces. Cette valeur est écrite dans le registre Windows dès que vous lancez un jeu pour obtenir la profondeur 3D maximale correcte.<LineBreak/><LineBreak/>
+        Si vous pensez que la profondeur 3D maximale n'est pas suffisamment élevée pour <Bold><Italic>Paramètres 3D Nvidia</Italic></Bold> et définissez le multiplicateur de profondeur 3D. De cette façon, vous pouvez augmenter la profondeur 3D maximale pour tous les périphériques d'affichage de manière égale.
     </TextBlock>
 
     <TextBlock x:Key="TvSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your TV in inches. This value is written to the Windows Registry as soon as you launch a game for achieving the correct maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By this you can increase maximum 3D depth for all display devices equally.
+        Veuillez définir la taille réelle de votre téléviseur en pouces. Cette valeur est écrite dans le registre Windows dès que vous lancez un jeu pour obtenir la profondeur 3D maximale correcte.<LineBreak/><LineBreak/>
+        Si vous pensez que la profondeur 3D maximale n'est pas suffisamment élevée pour <Bold><Italic>Paramètres 3D Nvidia</Italic></Bold> et définissez le multiplicateur de profondeur 3D. De cette façon, vous pouvez augmenter la profondeur 3D maximale pour tous les périphériques d'affichage de manière égale.
     </TextBlock>
 
     <TextBlock x:Key="DisplayTypeToolTip" TextWrapping="Wrap" Width="300">
-        Please choose the supported 3D technology of your display device.<LineBreak/><LineBreak/>
-        Selecting this is especially useful if you have a passive monitor / TV which only supports reversed line interlacing. The Nvidia Control Panel does not offer any option for this.<LineBreak/><LineBreak/>
-        Furthermore this option makes sure that the correct 3D technology is always set no matter if this setting would be lost by updating the graphics driver.
+        Veuillez choisir la technologie 3D prise en charge de votre périphérique d'affichage.<LineBreak/><LineBreak/>
+        Cette sélection est particulièrement utile si vous disposez d'un moniteur / téléviseur passif qui ne prend en charge que l'entrelacement de ligne inversé. Le panneau de configuration Nvidia ne propose aucune option pour cela.<LineBreak/><LineBreak/>
+        De plus, cette option garantit que la technologie 3D correcte est toujours définie, peu importe si ce paramètre est perdu en mettant à jour le pilote graphique.
     </TextBlock>
 
     <TextBlock x:Key="Preferred3dFormatToolTip" TextWrapping="Wrap" Width="320">
-        Please choose your preferred 3D format.<LineBreak/><LineBreak/>
-        Consider that the 3D format can only be set for DirectX 11 games. Furthermore the 3dmigoto software wrapper / the 3D fix has to be installed for the individual game.
+        Veuillez choisir votre format 3D préféré.<LineBreak/><LineBreak/>
+        Sachez que le format 3D ne peut être défini que pour les jeux DirectX 11. De plus, le logiciel wrapper 3dmigoto / le correctif 3D doit être installé pour le jeu individuel.
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For G-Sync monitors set the framerate just below the maximum refresh rate to prevent vertical sync getting active which would increase input lag.<LineBreak/><LineBreak/>
-        For example when using a 144 Hz monitor you should set the fps limit to 142 (2 fps difference).<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+        Limite la fréquence d'images à la valeur spécifiée lors de la lecture en mode 2D.<LineBreak/><LineBreak/>
+        <Bold>Recommandé:</Bold> Pour les moniteurs G-Sync, réglez la fréquence d'images juste en dessous du taux de rafraîchissement maximum pour empêcher la synchronisation verticale de s'activer, ce qui augmenterait le lag d'entrée..<LineBreak/><LineBreak/>
+        Par exemple, lorsque vous utilisez un moniteur à 144 Hz, vous devez définir la limite de fps sur 142 (différence de 2 fps).<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Pour utiliser cette fonction, RivaTuner Statistics Server doit être installé. 3D Fix Manager configure automatiquement RTSS alors en fonction de vos demandes.
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 3D mode. By limiting the framerate you can significantly reduce input lag.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D Vision certified monitors or Generic CRT display devices you should set framerate to <Bold>"1/2 Stereo Refresh Rate"</Bold>. By doing this the framerate limit cam be detected automatically in dependency of the Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
-        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.
-        <Bold>Note:</Bold> For using this feature RivaTuner Statistics Server must be installed. 3D Fix Manager automatically configures RTSS based on your demands then.
+        Limite la fréquence d'images à la valeur spécifiée lors de la lecture en mode 3D. En limitant le débit d'images, vous pouvez réduire considérablement le décalage d'entrée.<LineBreak/><LineBreak/>
+        <Bold>Recommandé:</Bold> Pour les moniteurs certifiés 3D Vision ou les dispositifs d'affichage CRT génériques, vous devez définir la fréquence d'images sur <Bold>"1/2 fréquence de rafraîchissement stéréo"</Bold>. Ce faisant, la limite de fréquence d'images peut être détectée automatiquement en fonction de la limite de fréquence d'images. Il est ensuite réglé automatiquement en fonction du taux de rafraîchissement du moniteur utilisé. Habituellement, cela se traduit par une limite de 60 FPS.<LineBreak/><LineBreak/>        
+        Lorsque vous utilisez 3DTV Play ou 3D passif, vous devez définir la limite de fréquence d'images à 60.
+        <Bold>Note:</Bold> Pour utiliser cette fonction, RivaTuner Statistics Server doit être installé. 3D Fix Manager configure alors automatiquement RTSS en fonction de vos demandes.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
-        Scanline Sync is a new feature of RivaTuner Statistics Server which does have a similar effect like Vertical Sync on. As well as Vertical Sync, Scanline Sync prevents tearing and makes sure you get a steady clear image. You should use this feature when your display does not support G-Sync or Freesync.<LineBreak/><LineBreak/>
-        Advantage over Vertical Sync on is the ultra low input lag. Disadvantage however is that Scanline Sync does not work with all games and all refresh rates properly so far.<LineBreak/><LineBreak/>
-        Scanline Sync works by limiting the framerate to the refresh rate of your display with a tearline located in a fixed position. This tearline can be moved down via the scanline index until the line is hidden in vertical blanking interval.<LineBreak/><LineBreak/> 
-        <Bold>Note:</Bold> So far it's known that Scanline Sync works best in 2D mode for resolution with 60 hz refresh rate. When using higher refresh rates intermittent tearing can occur or the tearline can be out of control. This depends on the individual game or the game engine it uses.<LineBreak/><LineBreak/> 
-        <Bold>Important:</Bold> Vertical Sync has to be switched off ingame in order to make Scanline Sync work. Additionally Vertical Sync has to be disabled in the global driver profile as well. Turning off Vertical Sync in global driver profile is done automatically by 3D Fix Manager.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D mode the best thing is to enable Scanline Sync in the individual fix profile only. By doing so you only use this feature when it actually works for the game. Additionally Scanline Sync should be turned off in the global driver profile then.<LineBreak/><LineBreak/>
-        For 2D mode and non-G-Sync / -Freesync devices you can try to enable Scanline-Sync on a global basis as the chances are higher that Scanline Sync works for that mode. For games where it does not work disable Scanline Sync in the individual fix profile then.
+        Scanline Sync est une nouvelle fonctionnalité de RivaTuner Statistics Server qui a un effet similaire à celui de Vertical Sync. En plus de la synchronisation verticale, Scanline Sync empêche la déchirure et garantit une image nette et stable. Vous devez utiliser cette fonction lorsque votre écran ne prend pas en charge G-Sync ou Freesync.<LineBreak/><LineBreak/>
+        L'avantage par rapport à la synchronisation verticale est le décalage d'entrée ultra faible. Cependant, l'inconvénient est que Scanline Sync ne fonctionne pas correctement avec tous les jeux et tous les taux de rafraîchissement jusqu'à présent..<LineBreak/><LineBreak/>
+        Scanline Sync fonctionne en limitant le taux de rafraîchissement au taux de rafraîchissement de votre écran avec une ligne de déchirure située dans une position fixe. Cette ligne de déchirure peut être déplacée vers le bas via l'index de ligne de balayage jusqu'à ce que la ligne soit masquée dans l'intervalle de suppression verticale.<LineBreak/><LineBreak/> 
+        <Bold>Note:</Bold> Jusqu'à présent, il est connu que Scanline Sync fonctionne mieux en mode 2D pour une résolution avec un taux de rafraîchissement de 60 Hz. Lorsque vous utilisez des taux de rafraîchissement plus élevés, une déchirure intermittente peut se produire ou la ligne de déchirure peut être hors de contrôle. Cela dépend du jeu individuel ou du moteur de jeu qu'il utilise.<LineBreak/><LineBreak/> 
+        <Bold>Important:</Bold> La synchronisation verticale doit être désactivée dans le jeu pour que Scanline Sync fonctionne. De plus, la synchronisation verticale doit également être désactivée dans le profil de pilote global. La désactivation de la synchronisation verticale dans le profil de pilote global se fait automatiquement par 3D Fix Manager.<LineBreak/><LineBreak/>
+        <Bold>Recommandé:</Bold> Pour le mode 3D, la meilleure chose à faire est d'activer Scanline Sync dans le profil de correction individuel uniquement. Ce faisant, vous n'utilisez cette fonctionnalité que lorsqu'elle fonctionne réellement pour le jeu. De plus, Scanline Sync doit être alors désactivé dans le profil de pilote global.<LineBreak/><LineBreak/>
+        Pour le mode 2D et les périphériques non G-Sync / -Freesync, vous pouvez essayer d'activer Scanline-Sync sur une base globale car les chances sont plus élevées que Scanline Sync fonctionne pour ce mode. Pour les jeux où cela ne fonctionne pas, désactivez alors Scanline Sync dans le profil de correctif individuel.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
-        <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
-        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with two tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
-        <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
+        <Bold>x:</Bold> Limite la fréquence d'images à la fréquence de rafraîchissement de l'affichage avec une ligne de déchirure située dans une position fixe. En règle générale, vous devez choisir cette option pour le mode 2D.<LineBreak/><LineBreak/>
+        <Bold>x2</Bold> Limite le taux de rafraîchissement du framerate au double de l'affichage avec deux lignes de déchirure situées dans des positions fixes. Les deux lignes de déchirure peuvent être déplacées vers le bas et l'une d'elles cachée dans le masquage vertical.<LineBreak/><LineBreak/>
+        <Bold>x/2:</Bold> Limite la fréquence d'images à la moitié du taux de rafraîchissement de l'écran avec une ligne de déchirure située dans une position fixe. En règle générale, vous devez choisir cette option pour le mode 3D.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
-        This option moves the tearline. Positive numbers move the thearline downwards and negative upwards.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
-        <Bold>Auto: </Bold> The tearling is automatically moved downwards by the correct value until it's hidden in the vertical blanking interval. For detecting the correct value you have to set the desired game resolution first.
+        Cette option déplace la larme. Les nombres positifs déplacent la ligne descendante vers le bas et les négatifs vers le haut.<LineBreak/><LineBreak/>
+        <Bold>Off:</Bold> Désactivé Scanline Sync et réactivez la synchronisation verticale lorsque l'utilisateur l'a défini dans <Bold>Paramètres 3D Nvidia</Bold> Onglet.<LineBreak/><LineBreak/>
+        <Bold>Auto: </Bold> Le déchirement est automatiquement déplacé vers le bas de la valeur correcte jusqu'à ce qu'il soit caché dans l'intervalle de suppression vertical. Pour détecter la valeur correcte, vous devez d'abord définir la résolution de jeu souhaitée.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Démarre le jeu avec la résolution souhaitée en mode 2D.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Cette fonctionnalité n'est pas prise en charge pour tous les jeux. Vous pouvez voir si un jeu est pris en charge en recherchant <Bold><Italic>Définition: par profil d'affichage</Italic></Bold> texte inclus dans l'icône d'informations dans<Bold><Italic>Installation</Italic></Bold> Onglet.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Démarre le jeu avec la résolution souhaitée en mode 3D.<LineBreak/><LineBreak/>
+        <Bold>Note:</Bold> Cette fonctionnalité n'est pas prise en charge pour tous les jeux. Vous pouvez voir si un jeu est pris en charge en recherchant <Bold><Italic>Définition: par profil d'affichage</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Onglet.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the desired resolution when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
-        Whenever possible set different values for 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.
+        Définit le bureau à la résolution souhaitée lors du démarrage d'un jeu en mode 2D ou lors de la désactivation de la 3D stéréo.<LineBreak/><LineBreak/>
+        En utilisant cette option, vous pouvez faire correspondre la résolution du bureau et le taux de rafraîchissement aux paramètres de résolution actuels du jeu. L'avantage est que vous pouvez minimiser le jeu plus rapidement car le dispositif d'affichage n'a pas à changer de fréquence.
+        Dans la mesure du possible, définissez des valeurs différentes pour le taux de rafraîchissement du bureau 2D et le taux de rafraîchissement du bureau 3D pour éviter le bogue d'écran noir de Windows 10.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop rate to the desired resolution when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
-        Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+        Définit la fréquence du bureau à la résolution souhaitée lors du démarrage d'un jeu en mode 3D ou lors de l'activation de la 3D stéréo.<LineBreak/><LineBreak/>
+        En utilisant cette option, vous pouvez faire correspondre la résolution du bureau et le taux de rafraîchissement aux paramètres de résolution actuels du jeu. L'avantage est que vous pouvez minimiser le jeu plus rapidement car le dispositif d'affichage n'a pas à changer de fréquence.<LineBreak/><LineBreak/>
+        De plus, cette fonctionnalité est utile pour les utilisateurs de Windows 10 qui rencontrent un écran noir lors de la fermeture d'un jeu. En effet, Windows 10 a des problèmes pour revenir à d'autres fréquences lorsque le mode 3D stéréo est activé.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the specified resolution when closing the application.
+        Définit le bureau à la résolution spécifiée lors de la fermeture de l'application.
     </TextBlock>
 
     <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
-        Choose a display profile which shall be active when starting the application.
+        Choisissez un profil d'affichage qui sera actif au démarrage de l'application.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileSelectionOnStartupToolTip" TextWrapping="Wrap" Width="300">
-        Set if a dialog window shall be opened when starting the application where you can choose the active display profile.
+        Définissez si une fenêtre de dialogue doit être ouverte au démarrage de l'application où vous pouvez choisir le profil d'affichage actif.
     </TextBlock>
 
     <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
-        When disabling this option the fix profiles aren't allowed to modify game- and desktop resolution any more.<LineBreak/><LineBreak/>
-        Resolution is controlled soley by the global display profiles then if the user has set any option there.
+        Lorsque vous désactivez cette option, les profils de correctif ne sont plus autorisés à modifier la définition du jeu et du bureau.<LineBreak/><LineBreak/>
+        La définition est contrôlée uniquement par les profils d'affichage globaux, puis si l'utilisateur y a défini une option.
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
