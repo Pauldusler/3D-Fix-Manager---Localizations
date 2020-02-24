@@ -4,7 +4,7 @@
 
 
     <!-- Display Profiles Window Bar -->
-    <system:String x:Key="Monitor">Monitor</system:String>
+    <system:String x:Key="Monitor">Монітор</system:String>
     <system:String x:Key="Projector">Projector</system:String>
     <system:String x:Key="TV">TV</system:String>
 
