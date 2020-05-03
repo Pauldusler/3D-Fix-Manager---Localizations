@@ -16,6 +16,10 @@
     <system:String x:Key="ChangeLanguage">Sprache wechseln</system:String>
     <system:String x:Key="Close">Schließen</system:String>
     <system:String x:Key="Show">Anzeigen</system:String>
+    <system:String x:Key="Enable3D">3D aktivieren</system:String>
+    <system:String x:Key="Disable3D">3D deaktivieren</system:String>
+    <system:String x:Key="EnableDriverMod">Treibermod aktivieren</system:String>
+    <system:String x:Key="DisableDriverMod">Treibermod deaktivieren</system:String>
     <system:String x:Key="NoMatchFound">Keine Übereinstimmung gefunden für</system:String>
 
     <!-- Tab header title -->
@@ -110,7 +114,6 @@
     <system:String x:Key="FixDescriptionSettingsGroup">Beschreibung zum 3D Fix / Helix Blog:</system:String>
 
     <system:String x:Key="GameTitle">Titel des Spiels:</system:String>
-    
     <system:String x:Key="InstallDir">Installationsordner:</system:String>
     <system:String x:Key="InstallDirName">Name des Installationsordners:</system:String>
     <system:String x:Key="RelativeInstallPath">Relativer Installationspfad:</system:String>
@@ -145,6 +148,7 @@
     <system:String x:Key="Profile3DMode">Nvidia Inspector-Profil für 3D Modus:</system:String>
     <system:String x:Key="FixState">Zustand des 3D Fixes:</system:String>
     <system:String x:Key="SteamAppID">Steam App ID:</system:String>
+    <system:String x:Key="EpicAppID">Epic App ID:</system:String>
 
     <system:String x:Key="WaitForExit">Auf Beendigung warten</system:String>
     <system:String x:Key="GameExeAsArgument">Game Exe als Startparameter</system:String>
@@ -181,7 +185,6 @@
     <system:String x:Key="StartByAppId">Mit Steam App ID starten</system:String>
     <system:String x:Key="StartByGameExe">Mit Game Exe starten</system:String>
     <system:String x:Key="StartByToolExe">Mit zusätzlicher Exe starten</system:String>
-
 
     <system:String x:Key="RunNormal">Normal ausführen</system:String>
     <system:String x:Key="RunAsAdmin">Als Admin ausführen</system:String>
@@ -479,7 +482,11 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
     <system:String x:Key="Nvida3dDriverOverlay">Nvidia 3D Treiber Overlay aktivieren</system:String>
-    
+    <system:String x:Key="EnableGeforceDllHack">Geforce Treibermodifkation aktivieren (Windows 10 only)</system:String>
+    <system:String x:Key="ShowDriverHackDialog">Warnmeldung vor Modifizierung des Geforce-Treibers anzeigen</system:String>
+    <system:String x:Key="EnableWmrFix">Crash-Fix für Windows Mixed Reality aktivieren</system:String>
+    <system:String x:Key="InstallRecommendedGeforceDriver">Empfohlenen Geforce-Treiber installieren:</system:String>
+
     <!-- 3D depth / 3D Vision shutter glasses group -->
     <system:String x:Key="Advanced3dSettingsGroup">3D-Tiefe / 3D Vision Shutter-Brille:</system:String>
     <system:String x:Key="StereoSeparation">3D Tiefe:</system:String>
@@ -654,15 +661,46 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="NormalFix">Normaler 3D Fix</system:String>
     <system:String x:Key="SliFix">SLI 3D Fix</system:String>
     <system:String x:Key="AlternativeFix">Alternativer 3D Fix</system:String>
+    <system:String x:Key="DriverType">Treibertyp</system:String>
 
     <!-- Messages -->
+    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Fehler: Das Spiel konnte nicht im Stereoskopischen 3D-Modus gestartet werden, da eine oder mehrere 3D-Komponenten nicht installiert oder eingerichtet sind.</system:String>
+    <system:String x:Key="WizardCrashWarning" xml:space="preserve">Achtung: "RivaTuner Statistics Server" wird derzeit auf Ihrem System ausgeführt. Dieses Programm ist dafür bekannt einen Absturz des 3D Vision Setup Wizards zu verursachen, wenn Overlays aktiviert sind. &#x0d;&#x0d;Bitte schließen Sie RTSS / MSI Afterburner sofern erforderlich und klicken anschließend auf "OK" um fortzufahren.</system:String>
+    <system:String x:Key="FailedToFindGeforceDriver">Fehler: Konnte den Geforce-Treiber nicht im Windows Driver Store finden.</system:String>
 
-    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Fehler: Spiel konnte nicht im Stereoskopischen 3D-Modus gestartet werden.&#x0d;&#x0d;Bitte installieren Sie den 3D Vision-Treiber und versuchen Sie es erneut.</system:String>
+    <!-- DCH Warning dialog -->
+    <system:String x:Key="DchWarningHeadline">Warnung: Der aktuell installierte Geforce Grafikkartentreiber ist vom Typ "DCH", welcher nicht für Stereoskopisches 3D empfohlen ist.</system:String>
+
+    <system:String x:Key="DchWarningDchExplanationTitle">Was bedeutet der Begriff "DCH"?</system:String>
+    <system:String x:Key="DchWarningDchExplanation">DCH ist ein neues Paketformat für Treiber, welches mit Windows 10 eingeführt wurde. Microsoft's langfristige Absicht ist es, DCH als neuen Standardtyp für Treiber zu etablieren und installierte "Standard"-Treiber nach und nach durch DCH zu ersetzen. DCH und Standard-Treiber sind im Grunde genommen die gleichen Treiber. Nur die Art und Weise wie die Treiber gepackt und installiert werden unterscheidet sich.</system:String>
+
+    <system:String x:Key="DchWarningDchWhyUnrecommendedTitle">Wieso sind DCH-Treiber nicht empfohlen für Stereoskopisches 3D?</system:String>
+    <system:String x:Key="DchWarningDchWhyUnrecommended">Die Kompatibilität für Stereo 3D ist im Falle von aktuellen DCH-Treibern nur über Workarounds möglich, was zur Konsequenz hat, dass sich die Ladezeiten von Spielen und Applikationen im 3D-Modus massiv verlängern. Daher wird von der Verwendung aktueller DCH-Treibern derzeit abgeraten und stattdessen den Standard-Treibern den Vorzug gegeben.</system:String>
+
+    <system:String x:Key="DchWarningDchWhereToGetDefaultTitle">Wo können die "Standard" Geforce-Treiber bezogen werden?</system:String>
+    <system:String x:Key="DchWarningDchWhereToGetDefault">Nvidia hat damit begonnen, die Standard-Treiber auf der eigenen Webseite zu verstecken, da sie Microsoft bei ihrem Plan unterstützen wollen, DCH-Treiber für Windows 10 in Umlauf zu bekommen. Nichts desto trotz sind aktuelle Standard-Treiber weiterhin erhältlich und zwar im Bereich "Beta-Treiber und Archiv". Klicken Sie bitte einfach auf den unten stehenden Link und stellen Sie sicher, dass auf der Webseite die Option "Standard" für den "Windows Treibertyp" ausgewählt ist.</system:String>
+
+    <system:String x:Key="DchWarningDchHowToReplaceTitle">Wie können DCH-Treiber mit Standard-Treibern ersetzt werden?</system:String>
+    <system:String x:Key="DchWarningDchHowToReplace">Leider ist es nicht möglich, die Standard-Treiber über die DCH-Treiber zu installieren. Stattdessen müssen die DCH-Treiber zunächst komplett vom System entfernt werden wobei das Tool "Display Driver Uninstaller" (kurz DDU) zum Einsatz kommt. Es sei an dieser Stelle darauf hingewiesen, dass die Verwendung von DDU möglicherweise Schäden am System verursachen kann. Vorbereitend zur Deinstallation des Treibers sollte zunächst das Internetkabel gezogen werden, um Windows Update daran zu hindern, den DCH-Treiber erneut zu installieren. Anschließend muss in den "abgesicherten Modus" von Windows gebootet werden und dort der Nvidia-Treiber mit DDU deinstalliert werden. Nach einem abschließenden Neustart ist es nun möglich den Standardtreiber zu installieren.</system:String>
+
+    <system:String x:Key="DchWarningDchEasierWayTitle">Gibt es eine simplere Möglichkeit, auf den Standardtreiber zu wechseln?</system:String>
+    <system:String x:Key="DchWarningDchEasierWay">Leider nein. Falls der Wechsel auf den Standardtreiber nicht klappen sollte bleibt noch die Möglichkeit auf einen älteren DCH-Treiber (Version 425.31 vom Mai 2019) auszuweichen, der weiterhin einwandfrei im 3D-Modus funktioniert. Diesen Treiber können Sie bequem automatisiert installieren, indem Sie auf die Schaltfläche "Geforce-Treiber 425.31 installieren (DCH)" betätigen. Bitte beachten Sie, dass der Treiber leider nicht mit den Grafikkartenmodellen RTX 2070 Super / RTX 2080 Super kompatibel sind.</system:String>
+
+    <system:String x:Key="DownloadDDU">DDU herunterladen (Display Driver Uninstaller)</system:String>
+    <system:String x:Key="DownloadStandardDriver">Standard-Treiber herunterladen</system:String>
+    <system:String x:Key="InstallDch42531">Geforce-Treiber 425.31 installieren (DCH)</system:String>
+    <system:String x:Key="InstallDriver42531">Geforce-Treiber 425.31 installieren</system:String>
+
+    <!-- Recommended Driver dialog -->
+    <system:String x:Key="DriverUpdateRecommendedVersion" xml:space="preserve">Der Geforce Grafikkartentreiber 425.31 is der letzte Treiber, der noch offizielle 3D Vision Unterstützung bietet. Die Verwendung dieses Treibers sorgt für die beste Erfahrung, da nicht mit Treiber-Hacks und weiteren Tricks gearbeitet werden muss, um Stereoskopisches 3D auf aktuelleren Treibern zum Laufen zu bekommen. &#x0d;&#x0d;Möchten Sie die Geforce Treiberversion 425.31 jetzt installieren?</system:String>
+    <system:String x:Key="DriverAlreadyInstalled" xml:space="preserve">Die Geforce Grafikkartentreiber 425.31 sind bereits auf Ihrem System installiert und derzeit die empfohlenen Treiber für Stereoskopisches 3D. &#x0d;&#x0d;Möchten Sie den Treiber jetzt neu installieren?</system:String>
 
     <!-- Driver update dialog -->
     <system:String x:Key="DriverUpdateHeadline">Ein neuer Geforce Grafikkartentreiber ist verfügbar. Möchten Sie ihren Treiber aktualisieren?</system:String>
-    <system:String x:Key="DriverUpdateInstalledDriver" xml:space="preserve">Installierter Geforce-Treiber:      {0}</system:String>
-    <system:String x:Key="DriverUpdateLatestDriver" xml:space="preserve">Neuester Geforce-Treiber:         {0}</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriver">Installierter Geforce-Treiber:</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriverValue">Placeholder</system:String>
+    <system:String x:Key="DriverUpdateLatestDriver">Neuester Geforce-Treiber:</system:String>
+    <system:String x:Key="DriverUpdateLatestDriverValue">Placeholder</system:String>
     <system:String x:Key="DriverUpdateInstalledDriverType" xml:space="preserve">Installierter Treiber-Typ:         {0}</system:String>
     <system:String x:Key="DriverUpdateUsedWindowsVersion" xml:space="preserve">Installierte Windows Version:         {0}</system:String>
     <system:String x:Key="DriverUpdateImportantInfoHeadline">Wichtige information:</system:String>
@@ -674,16 +712,16 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     </system:String>
 
     <system:String x:Key="DriverUpdateImportantInfoExplanationVr">
-        HelixVision erfordert zum Spielen den 3D Vision-Treiber, der nur bis einschließlich Version 425.31 Teil des Nvidia Geforce Treibers war.
-        Wir empfehlen diesen Treiber zu verwenden, um bestmögliche Ergebnisse zu erzielen.
-        Dennoch ist auch die Nutzung neuerer Treiber möglich. Falls Sie bereits einen neueren Geforce-Treiber verwenden wird HelixVision den 3D Vision nachträglich installieren und die stereoskopischen Funktionalitäten des Treibers wiederherstellen.
+        HelixVision erfordert zum Spielen den 3D Vision-Treiber, der nur bis einschließlich Version 425.31 Teil des Nvidia Geforce Treibers ist.
+        Wir empfehlen Version 425.31 des Treibers zu verwenden, um bestmögliche Ergebnisse zu erzielen. Neuere Versionen funktionieren, aber wurden nicht vollends getestet.
+        Bei der Benutzung neuerer Treiber mit HelixVision ist es nicht ausgeschlossen, dass Sie auf Kompatibilitätsprobleme oder Spiele stoßen werden, die nicht funktionieren.
     </system:String>
 
     <system:String x:Key="DriverUpdateInfoWin1903HeadlineVr">Info für Nutzer von Windows 10 v.1903 (Frühlings-Update 2019):</system:String>
 
     <system:String x:Key="DriverUpdateInfoWin1903ExplanationVr">
        Leider ist es unter Windows 10 v.1903 derzeit nicht möglich neuere Geforce-Treiber als Version 425.31 zu verwenden.
-       Wir empfehlen für all diejenigen, die bereits Windows auf Version 1903 aktualisiert haben, den Geforce-Treiber 425.31 zu isntallieren. Alternativ kann auch eine ältere Version von Windows 10 wiederhergestellt werden. Wir bitten diesen Umstand zu entschuldigen.
+       Wir empfehlen für all diejenigen, die bereits Windows auf Version 1903 aktualisiert haben, den Geforce-Treiber 425.31 zu installieren. Alternativ kann auch eine ältere Version von Windows 10 wiederhergestellt werden. Wir bitten diesen Umstand zu entschuldigen.
     </system:String>
 
     <system:String x:Key="DriverUpdateInstallProcedure">Installationshinweise:</system:String>
@@ -697,9 +735,10 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="DriverUpdateSupportedDriversHeadline">Letzter offizieller 3D Vision Treiber:</system:String>
 
     <system:String x:Key="DriverUpdateSupportedDriversExplanationVr">
-        Der letzte bekannte Geforce Treiber, der noch offizielle 3D Unterstützung bot, trug die Versionsnummer 425.31 und wurde im April 2019 veröffentlicht. 
-        Bitte installieren Sie diese Version, falls die Wiederherstellung der 3D-Funktion bei neueren Treibern trotz der automatisierten Installation durch den 3D Fix Manager scheitern sollte.
-        Insbesondere bei Verwendung von Windows 10 Version 1903 oder neuer wird die manuelle Installation dieses Treibers empfohlen.
+        Der letzte Geforce Treiber, der noch offizielle 3D Unterstützung bot, trägt die Versionsnummer 425.31 und wurde im April 2019 veröffentlicht. 
+        Bitte installieren Sie diesen Treiber, falls neuere Treiber trotz der automatischen Installation durch HelixVision nicht funktionieren. Passende Download-Links finden Sie unten aufgeführt.
+        Wenn Sie sich nicht sicher sind, welchen Treiber sie genau benötigen (DCH, Standard, Windows 7, 8 oder 10) dann klicken Sie bitte auf die Schaltfläche "Geforce-Treiber 425.31 installieren".
+        Dadurch wird der passende Treiber automatisch heruntergeladen und das Setup zur Installation des Treibers gestartet.
     </system:String>
 
     <system:String x:Key="DriverUpdateSupportedDriversExplanation">
@@ -709,7 +748,8 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
 
     <system:String x:Key="StereoSetupError">Fehler: Stereo 3D konnte nicht aktiviert werden, da der 3D Vision-Treiber nicht installiert ist. &#x0d;&#x0d;Bitte installieren Sie die ältere Version 425.31 Ihres Grafikkartentreibers.</system:String>
     <system:String x:Key="DriverInstallFailed">Treiberinstallation fehlgeschlagen.</system:String>
-    <system:String x:Key="ControllerInstallFailed">Installation des 3D Controller-Treibers fehlgeschlagen.</system:String>
+    <system:String x:Key="ControllerInstallFailed">Die Installation des 3D Controller-Treibers fehlgeschlagen.</system:String>
+    <system:String x:Key="DchFixInstallFailed">Die Installation des DCH-Fixes ist fehlgeschlagen.</system:String>
     
     <!-- Driver update dialog simple-->
     <system:String x:Key="DriverUpdateSimpleHeadline">Möchten Sie bei dieser Gelegenheit Ihren Grafikkartentreiber auf die neueste Version aktualisieren?</system:String>
@@ -718,11 +758,35 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="DriverUpdateSimpleNoChoice">, wenn Sie den aktuell installierten Geforce-Treiber beibehalten möchten</system:String>
     <system:String x:Key="DriverUpdateSimpleNote">In jedem Fall wird die stereoskopische 3D-Funktionalität des Treibers wiederhergestellt.</system:String>
 
+    <system:String x:Key="DriverRestore2d" xml:space="preserve">Für den 2D-Modus wird empfohlen den Originalzustand des Geforce Grafikkartentreibers wiederherzustellen. Dies bedeutet, dass die für Stereo 3D durchgeführte Treibermodifikation rückgängig gemacht wird. &#x0d;&#x0d;Die Wiederherstellung des ursprünglichen Zustands ist für manche Spiele erforderlich, die Anti-Cheat Software wie z.B. "Esy Anti-Cheat" einsetzen. Solche Spiele verweigern möglicherweise den Spielstart oder könnten im schlimmsten Falle gesperrt werden, da ein modifizierter Grafikkartentreiber genutzt wird. &#x0d;&#x0d;Möchten Sie den Originalzustand des Geforce-Treibers jetzt wiederherstellen?</system:String>
+    <system:String x:Key="DriverRestoreCloseApp" xml:space="preserve">Vor dem Schließen der Applikation wird empfohlen den Originalzustand des Geforce Grafikkartentreibers wiederherzustellen. Dies bedeutet, dass die für Stereo 3D durchgeführte Treibermodifikation rückgängig gemacht werden. &#x0d;&#x0d;Die Wiederherstellung des ursprünglichen Zustands ist für manche Spiele erforderlich, die Anti-Cheat Software wie z.B. "Esy Anti-Cheat" einsetzen. Solche Spiele verweigern möglicherweise den Spielstart oder könnten im schlimmsten Falle gesperrt werden, da ein modifizierter Grafikkartentreiber genutzt wird. &#x0d;&#x0d;Möchten Sie den Originalzustand des Geforce-Treibers jetzt wiederherstellen?</system:String>
+    <system:String x:Key="DriverRestorePlay3d" xml:space="preserve">Zum Spielen im 3D-Modus ist die Installation einer kleinen Modifikation für den Geforce Grafikkartentreiber erforderlich. Die Modifikation ersetzt jeweils eine Zeile in den Treiberdateien "nvwgf2um.dll" und "nvwgf2umx.dll" und führt dazu, dass die volle Kompatibilität zu Stereo 3D unter Windows 10 v.1903 oder höher wiederhergestellt wird. &#x0d;&#x0d;Bitte beachten Sie, dass das Modifizieren von Treiberdateien in Online-Spielen, die auf Anti-Cheat Maßnahmen wie z.B. "Easy AntiCheat" setzen, nicht erlaubt ist. Um einer Sperrung Ihres Spiele-Accounts vorzubeugen, ist es ratsam den modifizierten Treiber ausschließlich in Spielen mit Einzelspielermodus zu verwenden. &#x0d;&#x0d;Die Modifikation des Treibers wird automatisch rückgängig gemacht, sobald 3D ausgeschaltet oder die Applikation beendet wird. Des Weiteren ist im rechten oberen Fensterbereich eine neue Option zu finden mit der die Treibermodifikation manuell aus- oder wieder eingeschaltet werden kann. &#x0d;&#x0d;Möchten Sie den Geforce Grafikkartentreiber nun modifieren, um volle 3D Kompatibilität zu erhalten?</system:String>
 
     <!-- 3D Vision driver restore dialog -->
     <system:String x:Key="DriverRestoreHeadline">3D Vision ist nicht auf Ihrem System installiert. Möchten Sie die erforderlichen Treiber jetzt installieren?</system:String>
-    <system:String x:Key="ControllerDriver" xml:space="preserve">3D Controller Treiber:               {0}</system:String>
-    <system:String x:Key="_3dVisionDriver" xml:space="preserve">Stereoskopischer 3D Treiber:    {0}</system:String>
+    <system:String x:Key="StereoDependencyMissing">Eine oder mehrere Treiberkomponenten sind auf Ihrem System nicht installiert, die für Stereoskopisches 3D erforderlich sind. Möchten Sie diese jetzt installieren?</system:String>
+    <system:String x:Key="StereoDriver">Stereoskopischer 3D Treiber:</system:String>
+    <system:String x:Key="StereoDriverValue">Placeholder</system:String>
+    <system:String x:Key="StereoDllPatched">DLL-Fix für Stereo 3D-Treiber:</system:String>
+    <system:String x:Key="StereoDllPatchedValue">Placeholder</system:String>
+    <system:String x:Key="DchDriverFixInstalled">DCH-Fix für Stereo 3D-Treiber:</system:String>
+    <system:String x:Key="DchDriverFixInstalledValue">Placeholder</system:String>
+    <system:String x:Key="ControllerDriver">3D Controller Treiber:</system:String>
+    <system:String x:Key="ControllerDriverValue">Placeholder</system:String>
+    <system:String x:Key="Win10GeforceFixInstalled">DLL-Fix für Geforce-Treiber:</system:String>
+    <system:String x:Key="Win10GeforceFixInstalledValue">Placeholder</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationFailed" xml:space="preserve">Fehler:&#x0d;&#x0d;Bei der Installation der für Stereo 3D erforderlichen Modifikation am Geforce-Grafikkartentreiber ist ein Fehler aufgetreten.</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationCanceled" xml:space="preserve">Die Installation der für Stereo 3D erforderlichen Modifikation am Geforce-Grafikkartentreiber wurde durch den Benutzer abgebrochen.</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationProcessKillFailed" xml:space="preserve">Fehler:&#x0d;&#x0d;Die Installation der für Stereo 3D erforderlichen Modifikation am Geforce-Grafikkartentreiber konnte nicht erfolgreich durchgeführt werden. &#x0d;&#x0d;Fehlerursache: Es konnten nicht all blockierenden Prozesse beendet werden, die noch auf die Treiber-DLLs zugriffen.</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreProcessKillFailed" xml:space="preserve">Fehler:&#x0d;&#x0d;Der Geforce Grafikkartentreiber konnten nicht auf den ursprünglichen Originalzustand zurückgesetzt werden, da nicht alle blockierenden Prozesse beendet werden konnten.</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreCanceled" xml:space="preserve">Das Zurücksetzen des Geforce Grafikkartentreibers auf den ursprünglichen Originalzustand wurde durch den Benutzer abgebrochen</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreFailed" xml:space="preserve">Fehler:&#x0d;&#x0d;Der Geforce Grafikkartentreiber konnten nicht auf den ursprünglichen Originalzustand zurückgesetzt werden.</system:String>
+
+    <system:String x:Key="CloseBlockingProcessesForGeforceFix">Um die Modifikation des Geforce Grafikkartentreibers durchzuführen zu können müssen folgende Prozesse geschlossen werden:</system:String>
+    <system:String x:Key="CloseBlockingProcessesForRestore">Um den Originalzustand des Geforce Grafikkartentreibers wiederherstellen zu können müssen folgende Prozesse geschlossen werden:</system:String>
+    <system:String x:Key="CloseProcessesConfirmation">Möchten Sie, dass die Prozesse jetzt geschlossen werden?</system:String>
+    
+    <system:String x:Key="FixNotRequired">Nicht erforderlich</system:String>
     <system:String x:Key="DriverInstalled">Installiert</system:String>
     <system:String x:Key="DriverNotInstalled">Nicht installiert</system:String>
 
@@ -1133,6 +1197,10 @@ Pauldusler</system:String>
         Steam App ID ist zum Starten von Steam-Spielen sowie zum Aufruf des Steam-Shops erforderlich.
     </TextBlock>
 
+    <TextBlock x:Key="EpicAppIDToolTip" TextWrapping="Wrap" Width="300">
+        Epic App ID ist zum Starten von Epic Store-Spielen erforderlich.
+    </TextBlock>
+
     <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
         Geben Sie den Namen der Exe-Datei ein mit welcher das Spiel gestartet wird.
     </TextBlock>
@@ -1293,8 +1361,7 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
-       Rendert den Maus-Cursor softwareseitig und bietet die Möglichkeit die 3D-Tiefe der Maus anzupassen.<LineBreak/><LineBreak/>
-       Es empfiehlt sich diese Option in Verbindung mit alternativen 3D-Formaten wie Side-by-Side zu verwenden.
+       Rendert den Maus-Cursor softwareseitig und bietet die Möglichkeit die 3D-Tiefe der Maus anzupassen.<LineBreak/><LineBreak/>Es empfiehlt sich diese Option in Verbindung mit alternativen 3D-Formaten wie Side-by-Side zu verwenden.
     </TextBlock>
 
 
@@ -1542,6 +1609,26 @@ Pauldusler</system:String>
         Die Deaktivierung des Overlays sorgt dafür, dass sowohl die grafische Einblendung für die aktuelle 3D-Tiefe als auch der Info-Kasten mit dem grünen Text in Spielen nicht mehr sichtbar sind.<LineBreak/><LineBreak/>
         Außerdem wird auch generell verhindert, dass der rote Warntext <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> angezeigt wird.<LineBreak/><LineBreak/>
         <Bold>Hinweis:</Bold> Bitte beachten Sie, dass das Ein- oder Abschalten des Overlays einen Windows-Neustart erfordert. Außerdem werden die durchgeführten Änderungen nach jedem Grafikkartentreiber-Update rückgängig gemacht.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableGeforceDllHackToolTip" TextWrapping="Wrap" Width="300">
+        Modifiziert den Grafikkartentreiber unter Windows 10 v.1903 oder höher oder macht die Änderung rückgängig.<LineBreak/><LineBreak/>
+        Erforderlich zum Spielen von DirectX 11-Titeln in stereoskopischem 3D unter Nutzung von aktuellen Geforce-Treibern.
+    </TextBlock>
+
+    <TextBlock x:Key="DriverStoreToolTip" TextWrapping="Wrap" Width="300">
+        Sucht nach dem Speicherort des Geforce-Treibers im Windows Driver Store und öffnet diesen im Windows Explorer.<LineBreak/><LineBreak/>
+        Dies dient als Hilfestellung um manuell ermitteln zu können, ob die benötigten Adminrechte für den Geforce Ordner vergeben wurden.   
+    </TextBlock>
+
+    <TextBlock x:Key="ShowDriverHackDialogToolTip" TextWrapping="Wrap" Width="300">
+        Blendet eine Warnmeldung ein bevor die Modifikation des Geforce-Treibers durchgeführt oder rückgängig gemacht wird.<LineBreak/><LineBreak/>
+        Mit diesem Dialogfenster hat der Benutzer die Möglichkeit dem Vorgang zuzustimen oder abzubrechen.
+    </TextBlock>
+
+    <TextBlock x:Key="EnableWmrFixToolTip" TextWrapping="Wrap" Width="300">
+        Behebt einen Absturz, wenn versucht wird 3D Vision und Windows Mixed Reality gleichzeitig zu nutzen.<LineBreak/><LineBreak/>
+        Diese Option bitte nicht aktivieren, wenn kein Windows Mixed Reality Headset vorhanden ist.
     </TextBlock>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
