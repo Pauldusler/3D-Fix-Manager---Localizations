@@ -1,12 +1,16 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    
-    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Styles/FlowDocument.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
     <!-- Display Profiles Window Bar -->
     <system:String x:Key="Monitor">Monitor</system:String>
     <system:String x:Key="Projector">Projektor</system:String>
     <system:String x:Key="TV">TV</system:String>
+    <system:String x:Key="VrHeadset">VR Headset</system:String>
     
     <!-- Misc -->
     <system:String x:Key="LoadingApplication">Applikation wird geladen. Bitte warten...</system:String>
@@ -37,15 +41,19 @@
     <system:String x:Key="DisplayProfiles">Bildschirm Profile</system:String>
     
     <!-- Game list on left column-->
-    <system:String x:Key="All">Alle Spiele</system:String>
-    <system:String x:Key="Installed">Installierte Spiele</system:String>
+    <system:String x:Key="AllGames">Alle Spiele</system:String>
+    <system:String x:Key="InstalledGames">Installierte Spiele</system:String>
     <system:String x:Key="AllFixTypes">Alle Fix-Typen</system:String>
     <system:String x:Key="_3dmigoto">3dmigoto (DX 11)</system:String>
     <system:String x:Key="Helixmod">Helixmod (DX 9)</system:String>
     <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
+    <system:String x:Key="VulkanWrapper">Vulkan Wrapper</system:String>
     <system:String x:Key="NotFixed">Ohne 3D Fix</system:String>
     <system:String x:Key="VerifiedFixes">Überprüfte 3D Fixes</system:String>
     <system:String x:Key="UnverifiedFixes">Ungeprüfte 3D Fixes</system:String>
+    <system:String x:Key="UE3">Unreal Engine 3</system:String>
+    <system:String x:Key="UE4">Unreal Engine 4</system:String>
+    <system:String x:Key="Unity">Unity</system:String>
     <system:String x:Key="VrCompatible">VR kompatibel</system:String>
     <system:String x:Key="New">Neu</system:String>
     <system:String x:Key="CreateProfileToolTip">Fix-Profil erstellen</system:String>
@@ -53,6 +61,7 @@
     <system:String x:Key="EditProfileToolTip">Fix-Profil editieren</system:String>
     <system:String x:Key="Delete">Löschen</system:String>
     <system:String x:Key="DeleteProfileToolTip">Fix-Profil entfernen</system:String>
+    <system:String x:Key="FoundGames">Gelistete Spiele:</system:String>
 
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Keine kompatiblen Spiele installiert.</system:String>
@@ -86,19 +95,24 @@
     <system:String x:Key="EnableFix">Fix aktivieren</system:String>
     <system:String x:Key="DownloadCompleted">Download erfolgreich</system:String>
     <system:String x:Key="Downloading">Downloade...</system:String>
-    <system:String x:Key="DownloadFailed">Download gescheitert</system:String>
+    <system:String x:Key="DownloadFailed">Download gescheitert.</system:String>
     <system:String x:Key="Extracting">Entpacke...</system:String>
-    <system:String x:Key="ExtractionFailed">Entpacken fehlgeschlagen</system:String>
+    <system:String x:Key="ExtractionFailed">Entpacken fehlgeschlagen.</system:String>
     <system:String x:Key="GameNotInstalled">Spiel nicht installiert</system:String>
     <system:String x:Key="OpenExplorerError">Fehler: Der Pfad konnte nicht im Windows Explorer geöffnet werden, da der Pfad nicht existiert.</system:String>
     <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Ein Hotkey- bzw. Konfigurations-Backup wurde für den 3D Fix gefunden.&#x0d;&#x0d;Möchten Sie das Backup wiederherstellen?</system:String>
     <system:String x:Key="CreateHotkeyBackup">Möchten Sie vor der Deinstallation ein Backup der Hotkeys sowie der Einstellungen des 3D Fixes anlegen?</system:String>
+    <system:String x:Key="ThirdPartyDllError" xml:space="preserve">Warnung: Im Spieleverzeichnis befindet sich bereits eine gleichnamige DLL eines Fremdanbieters. &#x0d;&#x0d;DLL-Pfad: {0}&#x0d;&#x0d;Möchten Sie diese vor Installation des 3D Fixes sichern? </system:String>
 
     <!--.................... New / Edit Profile Tab Begin .......................... -->
 
     <system:String x:Key="VrCompatibility">VR kompatibel:</system:String>
+    <system:String x:Key="VrWarnMultiplayerOnline">Multiplayer-Warnmeldung anzeigen:</system:String>
     <system:String x:Key="Uses3DDirect">Verwendet 3D-Direktmodus:</system:String>
+    <system:String x:Key="OptimizedConvergenceValue">Optimierter Konvergenzwert:</system:String>
+    <system:String x:Key="MaxConvergenceValue">Maximaler Konvergenzwert:</system:String>
     <system:String x:Key="MainSettingsGroup">Titel und Zustand des 3D Fixes:</system:String>
+    <system:String x:Key="VrSettingsGroup">Virtual Reality:</system:String>
     <system:String x:Key="HelixApiSettingsGroup">Helix / Google Blogger API:</system:String>
     <system:String x:Key="PrimaryDownloadGroup">Download des 3D Fixes:</system:String>
     <system:String x:Key="AlternativeDownloadGroup">Download eines alternativen 3D Fixes:</system:String>
@@ -113,10 +127,10 @@
     <system:String x:Key="MiscSettingsGroup">Sonstige Einstellungen:</system:String>
     <system:String x:Key="FixDescriptionSettingsGroup">Beschreibung zum 3D Fix / Helix Blog:</system:String>
 
-    <system:String x:Key="GameTitle">Titel des Spiels:</system:String>
+    <system:String x:Key="GameTitle">*Titel des Spiels:</system:String>
     <system:String x:Key="InstallDir">Installationsordner:</system:String>
-    <system:String x:Key="InstallDirName">Name des Installationsordners:</system:String>
-    <system:String x:Key="RelativeInstallPath">Relativer Installationspfad:</system:String>
+    <system:String x:Key="InstallDirName">*Name des Installationsordners:</system:String>
+    <system:String x:Key="RelativeInstallPath">*Relativer Installationspfad:</system:String>
     <system:String x:Key="CustomRootPath">Benuterdefinierter Wurzel- / Spielpfad:</system:String>
     <system:String x:Key="RelativeGameIniPath">1. Relativer Pfad zu einer Konfig-Datei:</system:String>
     <system:String x:Key="SecondRelativeGameIniPath">2. Relativer Pfad zu einer Konfig-Datei:</system:String>
@@ -132,11 +146,13 @@
     <system:String x:Key="AllowMigotoUpdate">Erlaube 3dmigoto Wrapper-Update:</system:String>
     <system:String x:Key="StereoRefreshRateOverride">Stereo-Bildwiederholrate:</system:String>
     <system:String x:Key="StartTool">Zusätzliche Exe starten:</system:String>
+    <system:String x:Key="RequiresSwCursor">Software Mouse Cursor erforderlich:</system:String>
 
     <system:String x:Key="UniversalFixDetectionError">Fehler: Es konnte weder auf PC Gaming Wiki noch auf Wikipedia ermittelt werden, welche Engine dieses Spiel nutzt.</system:String>
     <system:String x:Key="DetectEngine">Engine ermitteln</system:String>
     <system:String x:Key="WebLinkHelix">URL zum Helix Blog / Geforce Forum:</system:String>
     <system:String x:Key="HelixPostUpdated">Helix Post zuletzt aktualisiert:</system:String>
+    <system:String x:Key="AllowHelixPostUpdate">Erlaube automatisches Post-Update:</system:String>
 
     <system:String x:Key="LocalIconPath">Lokaler Icon Pfad:</system:String>
     <system:String x:Key="RemoteIconPath">Entfernter Icon Pfad:</system:String>
@@ -153,8 +169,8 @@
     <system:String x:Key="WaitForExit">Auf Beendigung warten</system:String>
     <system:String x:Key="GameExeAsArgument">Game Exe als Startparameter</system:String>
     <system:String x:Key="Create">Erstellen</system:String>
-    <system:String x:Key="GameLauncherExe">Exe zum Starten des Spiels:</system:String>
-    <system:String x:Key="GameLauncherOptions">Startoptionen für Spiel:</system:String>
+    <system:String x:Key="GameLauncherExe">*Exe zum Starten des Spiels:</system:String>
+    <system:String x:Key="GameLauncherOptions">Startparameter:</system:String>
     <system:String x:Key="ModifyGameExe">Game Exe modifizieren:</system:String>
     <system:String x:Key="GameExeSearchString">Such-String:</system:String>
     <system:String x:Key="GameExeReplaceString">Ersetzungs-String:</system:String>
@@ -166,7 +182,10 @@
     <system:String x:Key="CreateEditConfigFile">Erstellen / editieren</system:String>
     <system:String x:Key="EditOnlyConfigFile">Nur editieren</system:String>
 
-    <!-- ComboBoxes -->    
+    <!-- ComboBoxes -->
+    <system:String x:Key="SimpleView">Einfache Ansicht</system:String>
+    <system:String x:Key="DetailedView">Detaillierter Ansicht</system:String>
+    
     <system:String x:Key="NoProfileInstall">Profil nicht installieren</system:String>
     <system:String x:Key="InstallWithDialog">Installation mit Dialog</system:String>
     <system:String x:Key="SilentInstallation">Unbeaufsichtigte Installation</system:String>
@@ -381,6 +400,138 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <!--.................... Hotkeys Tab End .......................... -->
 
 
+    <!--.................... Drivers View Begin ....................-->
+
+    <system:String x:Key="Drivers">Treiber</system:String>
+    <system:String x:Key="Stereo3dDriver">STEREOSKOPISCHER 3D-TREIBER:</system:String>
+    <system:String x:Key="3dDriver">3D-Treiber:</system:String>
+    <system:String x:Key="DriverVersion">Treiber-Version:</system:String>
+    <system:String x:Key="DriverIntegrity">Treiber-Integrität:</system:String>
+    <system:String x:Key="IrEmitterDriver">IR Emitter-Treiber:</system:String>
+    <system:String x:Key="Stereo3d">Stereo 3D:</system:String>
+    <system:String x:Key="3dSetup">3D Setup:</system:String>
+    <system:String x:Key="Details">Details:</system:String>
+
+    <system:String x:Key="GraphicsDriver">GRAFIKKARTEN-TREIBER:</system:String>
+    <system:String x:Key="GeforceDriver">GeForce-Treiber:</system:String>
+    <system:String x:Key="GeforceDriverType">Treiber-Typ:</system:String>
+
+    <system:String x:Key="VirtualReality">VIRTUAL REALITY:</system:String>
+    <system:String x:Key="SteamVR">SteamVR:</system:String>
+    <system:String x:Key="WmrCompatibility">WMR Crash-Fix:</system:String>
+    <system:String x:Key="Installed">Installiert</system:String>
+    <system:String x:Key="NotInstalled">Nicht installiert</system:String>
+    <system:String x:Key="Enabled">Aktiviert</system:String>
+    <system:String x:Key="Disabled">Deaktiviert</system:String>
+    <system:String x:Key="InitFailed">Initialisierung fehlgeschlagen</system:String>
+    <system:String x:Key="VrHealthOk">Alle erforderlichen Komponenten für VR sind installiert und das VR Headset am Computer angeschlossen.</system:String>
+    <system:String x:Key="VrHealthOkDetails">SteamVR wurde erfolgreich gestartet. Ihr System ist einsatzbereit für VR.</system:String>
+    <system:String x:Key="SteamVrNotInstalled">Steam VR ist nicht installiert.</system:String>
+    <system:String x:Key="SteamVrNotInstalledDetails">Bitte installieren Sie SteamVR, um im VR-Modus spielen zu können.</system:String>
+    <system:String x:Key="SteamVrInitializationFailed">Steam VR konnte nicht initialisiert werden.</system:String>
+    <system:String x:Key="SteamVrInitializationFailedDetails">Bitte überprüfen Sie ihre derzeitige SteamVR-Installation und starten Sie dieses gegebenenfalls neu.</system:String>
+    <system:String x:Key="VrHeadsetNotConnected">VR Headset ist nicht angeschlossen.</system:String>
+    <system:String x:Key="VrHeadsetNotConnectedDetails">Bitte schließen Sie ihr VR Headset an den Computer an und starten anschließend SteamVR neu.</system:String>
+    <system:String x:Key="WmrFixNotInstalled">Crash-Fix für Windows Mixed Reality ist nicht installiert.</system:String>
+    <system:String x:Key="WmrFixNotInstalledDetails">Bitte installieren Sie den Crash-Fix um gleichzeitig VR und die 3D-Funktion des Treibers nutzen zu können.</system:String>
+    <system:String x:Key="FramerateLimiterDisabled">Der Framerate-Limiter für VR-Spiele ist deaktiviert.</system:String>
+    <system:String x:Key="FramerateLimiterDisabledDetails">Bitte aktivieren Sie die Framerate-Begrenzung im VR-Bildschirmprofil, um Ruckler in Spielen zu vermeiden.</system:String>
+    <system:String x:Key="FramerateLimiterSetWrong">Framerate-Begrenzung übersteigt die maximal mögliche Bildrate des VR Headsets.</system:String>
+    <system:String x:Key="FramerateLimiterSetWrongDetails">Bitte reduzieren Sie das Framerate-Limit unter die maximale Bildrate des VR Headsets um Ruckler in Spielen zu vermeiden.</system:String>
+    <system:String x:Key="InstallSteamVr">SteamVR installieren</system:String>
+    <system:String x:Key="InstallWmrCrashFix">WMR Crash-Fix installieren</system:String>
+    <system:String x:Key="EnableFramerateLimiter">Framerate-Limit aktivieren</system:String>
+    <system:String x:Key="SetFramerateLimiter">Framerate-Limit einstellen</system:String>
+    <system:String x:Key="GameStartFailedVrMissing" xml:space="preserve">Fehler: Das Spiel konnte nicht im VR-Modus gestartet werden, da eine oder mehrere VR-Komponenten nicht installiert oder eingerichtet sind. &#x0d;&#x0d;Bitte überprüfen Sie den Status der VR-Komponenten und installieren Sie diese sofern erforderlich.</system:String>
+    <system:String x:Key="Loading">Lade... Bitte warten.</system:String>
+    <system:String x:Key="LaptopMonitor">Laptop Monitor</system:String>
+    
+    <system:String x:Key="DetectedHardware">ERKANNTE HARDWARE:</system:String>
+    <system:String x:Key="ComputerType">Computer-Typ:</system:String>
+    <system:String x:Key="GraphicsCard">Grafikkarte:</system:String>
+    <system:String x:Key="PrimaryDisplay">Primärer Bildschirm:</system:String>
+    <system:String x:Key="IrEmitter">IR-Emitter:</system:String>
+
+    <system:String x:Key="Connected">Verbunden</system:String>
+    <system:String x:Key="NotConnected">Nicht verbunden</system:String>
+    <system:String x:Key="DllVersionInvalid">DLL-Version ungültig</system:String>
+    <system:String x:Key="DchStereoFileMissing">DCH Stereo-Datei fehlt</system:String>
+    <system:String x:Key="NoNvidiaCardInstalled">Keine Nvidia Grafikkarte installiert</system:String>
+    <system:String x:Key="Completed">Abgeschlossen</system:String>
+    <system:String x:Key="NotCompleted">Nicht abgeschlossen</system:String>
+
+    <system:String x:Key="IrEmitterDriverNotInstalled">IR Emitter-Treiber ist nicht installiert.</system:String>
+    <system:String x:Key="IrEmitterDriverNotInstalledDetails">Bitte installieren Sie den Treiber, um Ihre 3D Vision Brille nutzen zu können.</system:String>
+
+    <system:String x:Key="GraphicsCardNotSupported">Stereoskopisches 3D wird nicht für Ihre Grafikkarte unterstützt.</system:String>
+    <system:String x:Key="GraphicsCardNotSupportedDetails">Voraussetzung ist eine Grafikkarte von Nvidia, um Spiele im 3D-Modus starten zu können. AMD oder Intel-Grafikkarten werden nicht unterstützt.</system:String>
+
+    <system:String x:Key="GeforceDriverNotInstalled">Video-Treiber ist nicht installiert.</system:String>
+    <system:String x:Key="GeforceDriverNotInstalledDetails">Bitte installieren Sie den Nvidia GeForce-Grafikkartentreiber, um in Stereo 3D spielen zu können.</system:String>
+
+    <system:String x:Key="NativeLaptopMonitorUsed">Stereoskopisches 3D wird nicht für Laptop-Monitore unterstützt.</system:String>
+    <system:String x:Key="NativeLaptopMonitorUsedDetails">Bitte schließen Sie einen externen Monitor an und konfigurieren diesen als primären Bildschirm.</system:String>
+    
+    <system:String x:Key="StereoDriverNotInstalled">3D Treiber ist nicht installiert.</system:String>
+    <system:String x:Key="StereoDriverNotInstalledDetails">Bitte installieren Sie den erforderlichen Treiber, um in Stereo 3D spielen zu können.</system:String>
+    
+    <system:String x:Key="StereoSetupNotCompleted">3D Setup ist nicht abgeschlossen.</system:String>
+    <system:String x:Key="StereoSetupNotCompletedDetails">Bitte beenden Sie das Setup jetzt, um in Stereo 3D spielen zu können.</system:String>
+    
+    <system:String x:Key="StereoNotEnabled">3D ist im Treiber nicht aktiviert.</system:String>
+    <system:String x:Key="StereoNotEnabledDetails">Bitte aktivieren, um in Stereo 3D spielen zu können.</system:String>
+    
+    <system:String x:Key="StereoDriverCorrupt">3D Treiber ist beschädigt.</system:String>
+    <system:String x:Key="StereoDriverCorruptDetails">Bitte reparieren Sie den Treiber um in Stereo 3D spielen zu können.</system:String>
+      
+    <system:String x:Key="StereoDriverOk">Alle erforderlichen Stereo-Treiberkomponenten installiert.</system:String>
+    <system:String x:Key="StereoDriverOkDetails">Ihr System ist einsatzbereit für stereoskopisches 3D.</system:String>
+       
+    <system:String x:Key="InstallStereoDriver">3D Treiber installieren</system:String>
+    <system:String x:Key="InstallIrEmitterDriver">IR Emitter Treiber installieren</system:String>
+    <system:String x:Key="RepairStereoDriver">3D Treiber reparieren</system:String>
+    <system:String x:Key="CompleteStereoSetup">3D Setup abschließen</system:String>
+    <system:String x:Key="EnableStereo3D">3D aktivieren</system:String>
+
+    <system:String x:Key="ExtractingStereoDriver">3D Treiber wird entpackt. Bitte warten...</system:String>
+    <system:String x:Key="InstallingStereoDriver">3D Treiber wird installiert. Bitte warten...</system:String>
+    <system:String x:Key="InstallingIrDriver">IR Emitter-Treiber wird installiert. Bitte warten...</system:String>
+    <system:String x:Key="CompletingStereoSetup">3D Setup wird abgeschlossen. Bitte warten...</system:String>
+    <system:String x:Key="LoadingStereoSettings">Stereo 3D-Profil wird geladen...</system:String>
+    <system:String x:Key="EnablingStereo3D">Stereo 3D wird aktiviert. Bitte warten...</system:String>
+
+    <system:String x:Key="InstallFailed">Treiberinstallation fehlgeschlagen.</system:String>
+    <system:String x:Key="StereoActivationError">Stereo 3D-Aktivierung fehlgeschlagen. Ursache unbekannt.</system:String>
+    <system:String x:Key="StereoActivationFailed" xml:space="preserve">Fehler: Stereo 3D konnte nicht aktiviert werden, da eine oder mehrere 3D-Treiberkomponenten nicht installiert oder eingerichtet sind. &#x0d;&#x0d;Bitte überprüfen Sie den Status der Treiberkonponenten und installieren Sie diese sofern erforderlich.</system:String>
+    <system:String x:Key="StereoActivationErrorLaptop">Stereo 3D-Aktivierung fehlgeschlagen. Bitte verbinden Sie einen externen Monitor mit dem Laptop und konfigurieren diesen als primären Bildschirm.</system:String>
+    <system:String x:Key="StereoSetupFailed">Stereo 3D Setup gescheitert.</system:String>
+    <system:String x:Key="DownloadingDrivers">Downloade Treiber...</system:String>
+    <system:String x:Key="ExtractingDrivers">Treiber wird entpackt. Bitte warten...</system:String>
+    <system:String x:Key="InstallingDrivers">Installiere Treiber...</system:String>
+
+    <system:String x:Key="GeforceDriverNoDx11Support">Der installierte Grafikkarten-Treiber ist nicht kompatibel zu DirectX 11-Spielen im stereoskopischen 3D-Modus.</system:String>
+    <system:String x:Key="GeforceDriverNoDx11SupportDetails">Bitte installieren Sie GeForce Treiberversion 452.06 oder älter um die volle Kompatibilität zu Stereo 3D wiederherzustellen.</system:String>
+    <system:String x:Key="InstallGeforceDriverVersion">Standard GeForce-Treiber {0} installieren</system:String>
+    <system:String x:Key="InstallDchGeforceDriverVersion">DCH GeForce-Treiber {0} installieren</system:String>
+    <system:String x:Key="OfficialNvidiaDownload">(Download von offiziellem Nvidia Server)</system:String>
+    <system:String x:Key="DriverUpdateAvailable">Ein neuer Geforce-Treiber steht zum Download bereit.</system:String>
+    <system:String x:Key="DriverUpdateAvailableDetails">Das Aktualisieren des Treibers ist optional und keine Voraussetzung für die Nutzung von Stereo 3D.</system:String>
+    <system:String x:Key="LatestDriverInstalled">Der beste GeForce-Treiber ist bereits installiert um Spiele in Stereo 3D zu spielen.</system:String>
+    <system:String x:Key="LatestDriverInstalledDetails">Sie werden an dieser Stelle benachrichtigt, sobald ein neuer Grafikkartentreiber erhältlich ist.</system:String>
+
+    <system:String x:Key="DchDriverInstalled">DCH Version des GeForce-Treibers installiert.</system:String>
+    <system:String x:Key="DchDriverInstalledDetails">Bitte installieren Sie die "Standard"-Version des GeForce-Treibers für ein optimales stereoskopisches 3D-Erlebnis.</system:String>
+    <system:String x:Key="ShowMoreInformation">Zeige mehr Informationen</system:String>
+    <system:String x:Key="CancelDownload">Download abbrechen</system:String>
+    <system:String x:Key="Remaining">Übrig:</system:String>
+    <system:String x:Key="DownloadUrlInvalid">Download fehlgeschlagen. Keine Internetverbindung oder Server nicht erreichbar.</system:String>
+    <system:String x:Key="ExtractingGeforceDriver">GeForce-Treiber wird entpackt. Bitte warten...</system:String>
+    <system:String x:Key="InstallingGeforceDriver">GeForce-Treiber wird installiert. Bitte Warten...</system:String>
+
+
+    <!--.................... Drivers View End -->
+
+    
     <!--.................... Application Settings Tab Begin .......................... -->
 
     <!-- General settings group -->
@@ -388,6 +539,7 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="UseProgramFor">Programm verwenden für:</system:String>
     <system:String x:Key="CheckForUpdates">Bei Start auf Programm-Updates prüfen</system:String>
     <system:String x:Key="CheckForDriverUpdates">Bei Start auf Treiber-Updates prüfen</system:String>
+    <system:String x:Key="UseHwAcceleration">Hardware-Beschleunigung für die GUI aktivieren</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Spieleinstellungen für Stereo 3D optimieren</system:String>
     <system:String x:Key="EnableSteamOverlay">Steam Overlay aktivieren</system:String>
     <system:String x:Key="FullscreenOptimizations">Vollbild-Optimierungen:</system:String>
@@ -482,6 +634,8 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="StereoModeAlwaysEnabled">3D-Modus immer aktiviert halten</system:String>
     <system:String x:Key="StereoModeAlwaysEnabledToolTip">Legt fest, ob der Bildschirm dauerhaft im 3D-Modus verbleibt (3D windowed mode must be also enabled).</system:String>
     <system:String x:Key="Nvida3dDriverOverlay">Nvidia 3D Treiber Overlay aktivieren</system:String>
+    <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Geforce-Treibermodifikation mittels 3dmigoto anwenden</system:String>
+    <system:String x:Key="UseGlobalDrickerHack">Schaltfläche für globalen Treiber-Hack anzeigen</system:String>
     <system:String x:Key="EnableGeforceDllHack">Geforce Treibermodifkation aktivieren (Windows 10 only)</system:String>
     <system:String x:Key="ShowDriverHackDialog">Warnmeldung vor Modifizierung des Geforce-Treibers anzeigen</system:String>
     <system:String x:Key="EnableWmrFix">Crash-Fix für Windows Mixed Reality aktivieren</system:String>
@@ -584,14 +738,16 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="MonitorProfileGroup">Monitor-Profil:</system:String>
     <system:String x:Key="TVProfileGroup">TV-Profil:</system:String>
     <system:String x:Key="ProjectorProfileGroup">Projektor-Profil:</system:String>
+    <system:String x:Key="VrProfileGroup">VR-Profil:</system:String>
     <system:String x:Key="ProfileSettingsGroup">Allgemeine Profil-Einstellungen:</system:String>
     <system:String x:Key="LinkProfileToDisplay">Profil mit Bildschirm verknüpfen:</system:String>
     <system:String x:Key="DisplaySize">Bildschirmgröße:</system:String>
     <system:String x:Key="RealScreenSize">Leinwandgröße:</system:String>
     <system:String x:Key="DisplayType">3D Anzeigetyp:</system:String>
-    <system:String x:Key="Preferred3dFormat">Bevorzugtes 3D-Format:</system:String>
+    <system:String x:Key="Preferred3dFormat">3dmigoto 3D-Format:</system:String>
     <system:String x:Key="GameSettings2D">Spiel-Einstellungen für den 2D-Modus:</system:String>
     <system:String x:Key="GameSettings3D">Spiel-Einstellungen für den 3D-Modus:</system:String>
+    <system:String x:Key="GameSettingsVR">Spiel-Einstellungen für den VR-Modus:</system:String>
     <system:String x:Key="FramerateLimit">Framerate-Begrenzung:</system:String>
     <system:String x:Key="DesktopSettings">Desktop-Einstellungen:</system:String>
     <system:String x:Key="GameResolution">Spiel-Auflösung:</system:String>
@@ -600,6 +756,7 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="DesktopResolution2D">Desktop-Auflösung 2D Modus:</system:String>
     <system:String x:Key="DesktopResolution2DClosing">Desktop-Auflösung beim Beenden:</system:String>
     <system:String x:Key="DesktopResolution3D">Desktop-Auflösung 3D Modus:</system:String>
+    <system:String x:Key="DesktopResolutionVr">Desktop-Auflösung</system:String>
     <system:String x:Key="ShowProfileSelectionOnStartup">Profilauswahl bei Programmstart einblenden</system:String>
     <system:String x:Key="ShowProfileSelectionOnGameStart">Profilauswahl bei Spielstart einblenden</system:String>
     <system:String x:Key="AllowDisplayProfileOverride">Fix-Profile dürfen Bildschirmprofile überschreiben</system:String>
@@ -626,12 +783,6 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="ChangeNotes">Versionshinweise</system:String>
     <system:String x:Key="Donate">Spenden</system:String>
     <system:String x:Key="Installing">Installiere...</system:String>
-    <system:String x:Key="InstallingDrivers">Installiere Treiber...</system:String>
-    <system:String x:Key="Installing3dVisionDriver">Installiere 3D Vision Treiber...</system:String>
-    <system:String x:Key="InstallFailed">Treiberinstallation fehlgeschlagen.</system:String>
-    <system:String x:Key="DownloadingDrivers">Downloade Treiber...</system:String>
-    <system:String x:Key="ExtractingDrivers">Entpacke Treiber. Bitte warten...</system:String>
-    <system:String x:Key="Extracting3dVisionDriver">Entpacke 3D Vision-Treiber. Bitte warten...</system:String>
 
     <!-- Buttons -->
     <system:String x:Key="Manual">Hilfeseite</system:String>
@@ -658,38 +809,40 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="InstallHelixModx64">HelixMod x64 installieren</system:String>
     <system:String x:Key="QuickSetup">Schnelles Setup</system:String>
     <system:String x:Key="SetupWizard">Setup Assistent</system:String>
-    <system:String x:Key="NormalFix">Normaler 3D Fix</system:String>
+    <system:String x:Key="NormalFix">Regulärer 3D Fix</system:String>
     <system:String x:Key="SliFix">SLI 3D Fix</system:String>
     <system:String x:Key="AlternativeFix">Alternativer 3D Fix</system:String>
     <system:String x:Key="DriverType">Treibertyp</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Fehler: Das Spiel konnte nicht im Stereoskopischen 3D-Modus gestartet werden, da eine oder mehrere 3D-Komponenten nicht installiert oder eingerichtet sind.</system:String>
-    <system:String x:Key="WizardCrashWarning" xml:space="preserve">Achtung: "RivaTuner Statistics Server" wird derzeit auf Ihrem System ausgeführt. Dieses Programm ist dafür bekannt einen Absturz des 3D Vision Setup Wizards zu verursachen, wenn Overlays aktiviert sind. &#x0d;&#x0d;Bitte schließen Sie RTSS / MSI Afterburner sofern erforderlich und klicken anschließend auf "OK" um fortzufahren.</system:String>
+    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Fehler: Das Spiel konnte nicht im Stereoskopischen 3D-Modus gestartet werden, da eine oder mehrere 3D-Treiberkomponenten nicht installiert oder eingerichtet sind. &#x0d;&#x0d;Bitte überprüfen Sie den Status der Treiberkonponenten und installieren Sie diese sofern erforderlich.</system:String>
+    <system:String x:Key="GeforceDriverIncompatible" xml:space="preserve">Fehler: Das Spiel konnte nicht im Stereoskopischen 3D-Modus gestartet werden, da der aktuell installierte Grafikkartentreiber keine Stereo 3D-Kompatibilität unter Nutzung von DirectX 11 aufweist.&#x0d;&#x0d;Info: Sämtliche GeForce Treiber ab Version 456.38 sind von diesem Problem betroffen. Wir arbeiten bereits an einer Lösung zu diesem Problem und entschuldigen uns für diesen Umstand.</system:String>
+    
+    <system:String x:Key="WizardCrashWarning" xml:space="preserve">Achtung: Folgende Programme werden derzeit ausgeführt: &#x0d;&#x0d;{0}&#x0d;&#x0d;Diese Programme sind dafür bekannt einen Absturz des 3D Vision Setup Wizards zu verursachen. &#x0d;&#x0d;Bitte schließen Sie die genannten Programme und klicken anschließend auf "OK" um fortzufahren.</system:String>
     <system:String x:Key="FailedToFindGeforceDriver">Fehler: Konnte den Geforce-Treiber nicht im Windows Driver Store finden.</system:String>
 
     <!-- DCH Warning dialog -->
-    <system:String x:Key="DchWarningHeadline">Warnung: Der aktuell installierte Geforce Grafikkartentreiber ist vom Typ "DCH", welcher nicht für Stereoskopisches 3D empfohlen ist.</system:String>
+    <system:String x:Key="DchWarningHeadline">Warnung: Der aktuell installierte Geforce Grafikkartentreiber ist vom Treiber-Typ "DCH", welcher nicht für Stereoskopisches 3D empfohlen ist. Möchten Sie jetzt auf den Standard-Treiber wechseln? (höchst empfohlen)</system:String>
 
     <system:String x:Key="DchWarningDchExplanationTitle">Was bedeutet der Begriff "DCH"?</system:String>
     <system:String x:Key="DchWarningDchExplanation">DCH ist ein neues Paketformat für Treiber, welches mit Windows 10 eingeführt wurde. Microsoft's langfristige Absicht ist es, DCH als neuen Standardtyp für Treiber zu etablieren und installierte "Standard"-Treiber nach und nach durch DCH zu ersetzen. DCH und Standard-Treiber sind im Grunde genommen die gleichen Treiber. Nur die Art und Weise wie die Treiber gepackt und installiert werden unterscheidet sich.</system:String>
 
     <system:String x:Key="DchWarningDchWhyUnrecommendedTitle">Wieso sind DCH-Treiber nicht empfohlen für Stereoskopisches 3D?</system:String>
-    <system:String x:Key="DchWarningDchWhyUnrecommended">Die Kompatibilität für Stereo 3D ist im Falle von aktuellen DCH-Treibern nur über Workarounds möglich, was zur Konsequenz hat, dass sich die Ladezeiten von Spielen und Applikationen im 3D-Modus massiv verlängern. Daher wird von der Verwendung aktueller DCH-Treibern derzeit abgeraten und stattdessen den Standard-Treibern den Vorzug gegeben.</system:String>
+    <system:String x:Key="DchWarningDchWhyUnrecommended">Die Kompatibilität für Stereo 3D ist im Falle von aktuellen DCH-Treibern nur über Workarounds möglich, was zur Konsequenz hat, dass sich die Ladezeiten von Spielen und Applikationen im 3D-Modus massiv verlängern. Daher wird derzeit von der Verwendung aktueller DCH-Treibern abgeraten und stattdessen empfohlen den Standard-Treiber zu verwenden.</system:String>
 
     <system:String x:Key="DchWarningDchWhereToGetDefaultTitle">Wo können die "Standard" Geforce-Treiber bezogen werden?</system:String>
-    <system:String x:Key="DchWarningDchWhereToGetDefault">Nvidia hat damit begonnen, die Standard-Treiber auf der eigenen Webseite zu verstecken, da sie Microsoft bei ihrem Plan unterstützen wollen, DCH-Treiber für Windows 10 in Umlauf zu bekommen. Nichts desto trotz sind aktuelle Standard-Treiber weiterhin erhältlich und zwar im Bereich "Beta-Treiber und Archiv". Klicken Sie bitte einfach auf den unten stehenden Link und stellen Sie sicher, dass auf der Webseite die Option "Standard" für den "Windows Treibertyp" ausgewählt ist.</system:String>
+    <system:String x:Key="DchWarningDchWhereToGetDefault">Nvidia hat damit begonnen, die Standard-Treiber auf der eigenen Webseite zu verstecken, da sie Microsoft bei ihrem Plan unterstützen wollen DCH-Treiber für Windows 10 in Umlauf zu bringen. Nichts desto trotz sind aktuelle Standard-Treiber weiterhin erhältlich und zwar im Bereich "Beta-Treiber und Archiv". Wenn Sie den Treiber manuell installieren wollen, so klicken Sie bitte einfach auf den unten stehenden Link und stellen sicher, dass auf der Webseite die Option "Standard" für den "Windows Treibertyp" ausgewählt ist.</system:String>
 
     <system:String x:Key="DchWarningDchHowToReplaceTitle">Wie können DCH-Treiber mit Standard-Treibern ersetzt werden?</system:String>
-    <system:String x:Key="DchWarningDchHowToReplace">Leider ist es nicht möglich, die Standard-Treiber über die DCH-Treiber zu installieren. Stattdessen müssen die DCH-Treiber zunächst komplett vom System entfernt werden wobei das Tool "Display Driver Uninstaller" (kurz DDU) zum Einsatz kommt. Es sei an dieser Stelle darauf hingewiesen, dass die Verwendung von DDU möglicherweise Schäden am System verursachen kann. Vorbereitend zur Deinstallation des Treibers sollte zunächst das Internetkabel gezogen werden, um Windows Update daran zu hindern, den DCH-Treiber erneut zu installieren. Anschließend muss in den "abgesicherten Modus" von Windows gebootet werden und dort der Nvidia-Treiber mit DDU deinstalliert werden. Nach einem abschließenden Neustart ist es nun möglich den Standardtreiber zu installieren.</system:String>
+    <system:String x:Key="DchWarningDchHowToReplace">Seit Geforce Treiber-Version 441.12 ist es möglich, die Standard-Treiber über die DCH-Treiber zu installieren um den Treibertyp zu wechseln.</system:String>
 
     <system:String x:Key="DchWarningDchEasierWayTitle">Gibt es eine simplere Möglichkeit, auf den Standardtreiber zu wechseln?</system:String>
     <system:String x:Key="DchWarningDchEasierWay">Leider nein. Falls der Wechsel auf den Standardtreiber nicht klappen sollte bleibt noch die Möglichkeit auf einen älteren DCH-Treiber (Version 425.31 vom Mai 2019) auszuweichen, der weiterhin einwandfrei im 3D-Modus funktioniert. Diesen Treiber können Sie bequem automatisiert installieren, indem Sie auf die Schaltfläche "Geforce-Treiber 425.31 installieren (DCH)" betätigen. Bitte beachten Sie, dass der Treiber leider nicht mit den Grafikkartenmodellen RTX 2070 Super / RTX 2080 Super kompatibel sind.</system:String>
 
     <system:String x:Key="DownloadDDU">DDU herunterladen (Display Driver Uninstaller)</system:String>
-    <system:String x:Key="DownloadStandardDriver">Standard-Treiber herunterladen</system:String>
+    <system:String x:Key="DownloadStandardDriver">Standard-Treiber manuell herunterladen</system:String>
     <system:String x:Key="InstallDch42531">Geforce-Treiber 425.31 installieren (DCH)</system:String>
-    <system:String x:Key="InstallDriver42531">Geforce-Treiber 425.31 installieren</system:String>
+    <system:String x:Key="Install3DVisionDriver">Nvidia 3D Vision Treiber installieren</system:String>
 
     <!-- Recommended Driver dialog -->
     <system:String x:Key="DriverUpdateRecommendedVersion" xml:space="preserve">Der Geforce Grafikkartentreiber 425.31 is der letzte Treiber, der noch offizielle 3D Vision Unterstützung bietet. Die Verwendung dieses Treibers sorgt für die beste Erfahrung, da nicht mit Treiber-Hacks und weiteren Tricks gearbeitet werden muss, um Stereoskopisches 3D auf aktuelleren Treibern zum Laufen zu bekommen. &#x0d;&#x0d;Möchten Sie die Geforce Treiberversion 425.31 jetzt installieren?</system:String>
@@ -711,18 +864,71 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
         Der 3D Fix Manager übernimmt diese Aufgabe und sorgt dafür, dass die 3D-Funktionalität in neueren Treibern wiederhergestellt wird und weiterhin genossen werden kann.
     </system:String>
 
-    <system:String x:Key="DriverUpdateImportantInfoExplanationVr">
-        HelixVision erfordert zum Spielen den 3D Vision-Treiber, der nur bis einschließlich Version 425.31 Teil des Nvidia Geforce Treibers ist.
-        Wir empfehlen Version 425.31 des Treibers zu verwenden, um bestmögliche Ergebnisse zu erzielen. Neuere Versionen funktionieren, aber wurden nicht vollends getestet.
-        Bei der Benutzung neuerer Treiber mit HelixVision ist es nicht ausgeschlossen, dass Sie auf Kompatibilitätsprobleme oder Spiele stoßen werden, die nicht funktionieren.
-    </system:String>
+    <system:String x:Key="StereoDriverAlreadyInstalled">Der stereoskopische 3D-Treiber ist bereits auf Ihrem System installiert. Sie können jetzt in VR spielen!</system:String>
 
-    <system:String x:Key="DriverUpdateInfoWin1903HeadlineVr">Info für Nutzer von Windows 10 v.1903 (Frühlings-Update 2019):</system:String>
+    <system:String x:Key="SaveProfileToRepo">Möchten Sie die Änderungen am Profil ebenfalls in die Arbeitskopie des Git Repositories übertragen?</system:String>
 
-    <system:String x:Key="DriverUpdateInfoWin1903ExplanationVr">
-       Leider ist es unter Windows 10 v.1903 derzeit nicht möglich neuere Geforce-Treiber als Version 425.31 zu verwenden.
-       Wir empfehlen für all diejenigen, die bereits Windows auf Version 1903 aktualisiert haben, den Geforce-Treiber 425.31 zu installieren. Alternativ kann auch eine ältere Version von Windows 10 wiederhergestellt werden. Wir bitten diesen Umstand zu entschuldigen.
-    </system:String>
+    <!-- VR Splash Dialog -->
+    <FlowDocument x:Key="VrSplashDialog" FontFamily="SegeUI" FontSize="16" PagePadding="5">
+        <Paragraph Style="{DynamicResource LargeGreenTitle}">Willkommen bei HelixVision!</Paragraph>
+
+        <Paragraph>Vielen Dank, dass Sie sich gemeinsam mit uns auf ein episches stereoskopisches Abenteuer begeben. Wir hoffen, dass Sie dieses Abenteuer gleichermaßen genießen wie wir!</Paragraph>
+
+        <Paragraph>HelixVision hat seinen Ursprung in der Nvidia 3D Vision Technologie, die dazu dient beliebige Spiele in Stereoskopischem 3D darzustellen. 
+            Die entstehenden stereoskopischen 3D-Bilder werden durch Mods repariert, die vom
+            <Hyperlink NavigateUri="http://helixmod.blogspot.com">HelixModBlog</Hyperlink> heruntergeladen und in das jeweilige Spieleverzeichnis installiert werden.
+            Das Spiel wird zudem mit den empfohlenen Einstellungen optimiert und der Videotreiber vorübergehend modifiziert so lange das Spiel ausgeführt wird.
+        </Paragraph>
+
+        <Paragraph Margin="0,0,0,28">Bitte beachten Sie, dass wie allgemein beim Modding üblich Fehler und Probleme auftreten können, insbesondere wenn das Spiel, der Treiber oder das Betriebssystem aktualisiert werden.</Paragraph>
+
+        <Paragraph><Italic>Wir stehen Ihnen in Problemfällen unterstützend zur Seite.</Italic> Bitte zögern Sie nicht in den Steam-Foren nach unserer Hilfe zu fragen.</Paragraph>
+
+        <Paragraph>
+            <Hyperlink NavigateUri="https://steamcommunity.com/app/1127310/discussions/">Support Link: HelixVision Steam Forums</Hyperlink>
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource LargeGreenTitle}">Erste Schritte:</Paragraph>
+
+        <List MarkerStyle="Decimal">
+            <ListItem>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Nvidia 3D Vision-Treiber installieren durch Klicken auf die unten befindliche Schaltfläche</Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph Style="{DynamicResource ParagraphInList}">SteamVR starten. Sofern erforderlich werden Mixed Reality oder Oculus Home nun automatisch geladen.</Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Gewünschtes Spiel in der Liste auf der linken Seite selektieren. Installierte Spiele sind mit Fettschrift hervorgehoben.</Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Auf die Schaltfläche "Play VR" klicken. Das Spiel wird nun in anagylphem 3D auf Ihrem Monitor dargestellt und gleichzeitig in VR gespiegelt.</Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Setzen Sie Ihr VR Headset und genießen glorreiches Stereoskopisches 3D!</Paragraph>
+            </ListItem>
+        </List>
+    </FlowDocument>
+
+
+    <!-- Close to System Tray Warning -->
+    <FlowDocument x:Key="CloseToTrayWarning">
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Info:</Paragraph>
+
+        <Paragraph>Die Applikation wird jetzt in die Infoleiste minimiert und dort als Icon repräsentiert. Das Icon enthält entweder die Bezeichnung
+            <Image Source="..\Images\Tray Icons\2d_icon.ico" Height="20" Width="20" VerticalAlignment="Bottom" RenderOptions.BitmapScalingMode="HighQuality"/>
+            oder
+            <Image Source="..\Images\Tray Icons\3d_icon.ico" Height="20" Width="20 " VerticalAlignment="Bottom" RenderOptions.BitmapScalingMode="HighQuality"/>
+            und gibt Aufschluss darüber, ob der 3D-Modus derzeit aktiviert ist.
+        </Paragraph>
+       
+        <Paragraph>Um die Anwendung zu beenden, klicken Sie bitte mit der rechten Maustaste auf das Icon und gehen dann auf
+            <Bold>
+                <Italic>"Schließen".</Italic>
+            </Bold>
+        </Paragraph>
+
+        <Paragraph>Mit einem Linksklick auf das Icon kann die Applikation wieder in den Vordergrund gebracht werden.</Paragraph>
+    </FlowDocument>
 
     <system:String x:Key="DriverUpdateInstallProcedure">Installationshinweise:</system:String>
     
@@ -733,13 +939,6 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     </system:String>
     
     <system:String x:Key="DriverUpdateSupportedDriversHeadline">Letzter offizieller 3D Vision Treiber:</system:String>
-
-    <system:String x:Key="DriverUpdateSupportedDriversExplanationVr">
-        Der letzte Geforce Treiber, der noch offizielle 3D Unterstützung bot, trägt die Versionsnummer 425.31 und wurde im April 2019 veröffentlicht. 
-        Bitte installieren Sie diesen Treiber, falls neuere Treiber trotz der automatischen Installation durch HelixVision nicht funktionieren. Passende Download-Links finden Sie unten aufgeführt.
-        Wenn Sie sich nicht sicher sind, welchen Treiber sie genau benötigen (DCH, Standard, Windows 7, 8 oder 10) dann klicken Sie bitte auf die Schaltfläche "Geforce-Treiber 425.31 installieren".
-        Dadurch wird der passende Treiber automatisch heruntergeladen und das Setup zur Installation des Treibers gestartet.
-    </system:String>
 
     <system:String x:Key="DriverUpdateSupportedDriversExplanation">
         Der letzte bekannte Geforce Treiber, der noch offizielle 3D Vision-Unterstützung bot, trug die Versionsnummer 425.31 und wurde im April 2019 veröffentlicht. 
@@ -758,9 +957,15 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="DriverUpdateSimpleNoChoice">, wenn Sie den aktuell installierten Geforce-Treiber beibehalten möchten</system:String>
     <system:String x:Key="DriverUpdateSimpleNote">In jedem Fall wird die stereoskopische 3D-Funktionalität des Treibers wiederhergestellt.</system:String>
 
-    <system:String x:Key="DriverRestore2d" xml:space="preserve">Für den 2D-Modus wird empfohlen den Originalzustand des Geforce Grafikkartentreibers wiederherzustellen. Dies bedeutet, dass die für Stereo 3D durchgeführte Treibermodifikation rückgängig gemacht wird. &#x0d;&#x0d;Die Wiederherstellung des ursprünglichen Zustands ist für manche Spiele erforderlich, die Anti-Cheat Software wie z.B. "Esy Anti-Cheat" einsetzen. Solche Spiele verweigern möglicherweise den Spielstart oder könnten im schlimmsten Falle gesperrt werden, da ein modifizierter Grafikkartentreiber genutzt wird. &#x0d;&#x0d;Möchten Sie den Originalzustand des Geforce-Treibers jetzt wiederherstellen?</system:String>
+    <system:String x:Key="DriverRestore2d" xml:space="preserve">Für den 2D-Modus wird empfohlen den Originalzustand des Geforce Grafikkartentreibers wiederherzustellen. Dies bedeutet, dass die für Stereo 3D durchgeführte Treibermodifikation rückgängig gemacht wird. &#x0d;&#x0d;Die Wiederherstellung des ursprünglichen Zustands ist für manche Spiele erforderlich, die Anti-Cheat Software wie z.B. "Esy Anti-Cheat" einsetzen. Solche Spiele verweigern möglicherweise den Spielstart oder könnten im schlimmsten Fall zu einer Sperrung führen, da ein modifizierter Grafikkartentreiber genutzt wird. &#x0d;&#x0d;Möchten Sie den Originalzustand des Geforce-Treibers jetzt wiederherstellen?</system:String>
     <system:String x:Key="DriverRestoreCloseApp" xml:space="preserve">Vor dem Schließen der Applikation wird empfohlen den Originalzustand des Geforce Grafikkartentreibers wiederherzustellen. Dies bedeutet, dass die für Stereo 3D durchgeführte Treibermodifikation rückgängig gemacht werden. &#x0d;&#x0d;Die Wiederherstellung des ursprünglichen Zustands ist für manche Spiele erforderlich, die Anti-Cheat Software wie z.B. "Esy Anti-Cheat" einsetzen. Solche Spiele verweigern möglicherweise den Spielstart oder könnten im schlimmsten Falle gesperrt werden, da ein modifizierter Grafikkartentreiber genutzt wird. &#x0d;&#x0d;Möchten Sie den Originalzustand des Geforce-Treibers jetzt wiederherstellen?</system:String>
-    <system:String x:Key="DriverRestorePlay3d" xml:space="preserve">Zum Spielen im 3D-Modus ist die Installation einer kleinen Modifikation für den Geforce Grafikkartentreiber erforderlich. Die Modifikation ersetzt jeweils eine Zeile in den Treiberdateien "nvwgf2um.dll" und "nvwgf2umx.dll" und führt dazu, dass die volle Kompatibilität zu Stereo 3D unter Windows 10 v.1903 oder höher wiederhergestellt wird. &#x0d;&#x0d;Bitte beachten Sie, dass das Modifizieren von Treiberdateien in Online-Spielen, die auf Anti-Cheat Maßnahmen wie z.B. "Easy AntiCheat" setzen, nicht erlaubt ist. Um einer Sperrung Ihres Spiele-Accounts vorzubeugen, ist es ratsam den modifizierten Treiber ausschließlich in Spielen mit Einzelspielermodus zu verwenden. &#x0d;&#x0d;Die Modifikation des Treibers wird automatisch rückgängig gemacht, sobald 3D ausgeschaltet oder die Applikation beendet wird. Des Weiteren ist im rechten oberen Fensterbereich eine neue Option zu finden mit der die Treibermodifikation manuell aus- oder wieder eingeschaltet werden kann. &#x0d;&#x0d;Möchten Sie den Geforce Grafikkartentreiber nun modifieren, um volle 3D Kompatibilität zu erhalten?</system:String>
+    <system:String x:Key="DriverHackPlay3d" xml:space="preserve">Zum Spielen dieses Spiels im 3D Modus ist die Installation einer Grafikkartentreiber-Modifikation erforderlich. &#x0d;&#x0d;Die Treibermodifikation wird ausschließlich bei Spielen angewandt, die die Modifikation erfordern und ist nur während der Ausführung des Spiel aktiv. Der ursprüngliche Treiber verbleibt im Originalzustand, da lediglich eine veränderte Kopie der Treiberdatei im Spieleverzeichnis abgelegt wird. Die Modifikation ersetzt lediglich eine Anweisung des Videotreibers und führt dazu, dass die volle Kompatibilität zu Stereoskopischem 3D wiederhergestellt wird und zwar unabhängig davon welche Windows 10- oder Grafikkartentreiberversion verwendet wird.&#x0d;&#x0d;Warnung: Bitte beachten Sie, dass das Modifizieren von Treiberdateien von Online-Spielen für gewöhnlich nicht toleriert wird - insbesondere dann nicht wenn das Spiel auf einen Anti-Cheat Mechanismus wie beispielweise "Easy AntiCheat" setzt. Um einer Sperrung Ihres Spiele-Accounts vorzubeugen wird daher ausdrücklich empfohlen den modifizierten Treiber ausschließlich in Einzelspieler-Spielen einzusetzen. &#x0d;&#x0d;&#x0d;Möchten Sie den Treiber jetzt modifizieren, um volle Stereo 3D-Kompatibilität zu erhalten?</system:String>
+    <system:String x:Key="DriverHack3d" xml:space="preserve">Zum Spielen im 3D Modus ist die Installation einer Grafikkartentreiber-Modifikation erforderlich. &#x0d;&#x0d;Die Modifikation ersetzt lediglich eine Anweisung des Videotreibers und führt dazu, dass die volle Kompatibilität zu Stereoskopischem 3D wiederhergestellt wird und zwar unabhängig davon welche Windows 10- (inklusive v.1903 oder höher) oder Grafikkartentreiberversion installiert ist.&#x0d;&#x0d;Warnung: Bitte beachten Sie, dass das Modifizieren von Treiberdateien von Online-Spielen für gewöhnlich nicht toleriert wird - insbesonders dann nicht wenn das Spiel auf einen Anti-Cheat Mechanismus wie beispielweise "Easy AntiCheat" setzt. Um einer Sperrung Ihres Spiele-Accounts vorzubeugen wird daher ausdrücklich empfohlen den modifizierten Treiber nur in Einzelspieler-Spielen einzusetzen. &#x0d;&#x0d;&#x0d;Möchten Sie den Treiber jetzt modifizieren, um volle Stereo 3D-Kompatibilität zu erhalten?</system:String>
+    <system:String x:Key="FallBackToLocalDriverHack" xml:space="preserve">Fehler: Die Installation der globalen Treibermodifikation in den Windows Driver Store ist fehlgeschlagen.&#x0d;&#x0d;Möchten Sie stattdessen die Treibermodifikation lokal in das jeweilige Spielverzeichnis installieren und beim Spielstart automatisch laden lassen? (empfohlen) &#x0d;&#x0d;Hinweis: Sie können jederzeit zwischen lokaler und globaler Treibermodifikation umschalten, indem Sie im Tab "Nvidia 3D Einstellung" die Option "Geforce-Treibermodifikation mittels 3dmigoto anwenden" ein- oder ausschalten.</system:String>
+    <system:String x:Key="DriverHackErrorFixNotInstalled" xml:space="preserve">Fehler: Der 3D Fix ist nicht installiert, welcher für das Laden der Treibermodifikation erforderlich ist. &#x0d;&#x0d;Bitte installieren Sie den 3D Fix und wiederholen anschließend den Vorgang erneut.</system:String>
+    <system:String x:Key="GlobalDriverHackNotRecommended" xml:space="preserve">Es wurde eine Modifikation an Ihrem Videotreiber erkannt, die den Zweck hat die volle Kompatibilität zu Stereoskopischen 3D-Inhalten unter Windows 10 wiederherzustellen. &#x0d;&#x0d;Die Treibermodifikation ist derzeit global installiert und wirkt sich daher auf alle installierten Spiele aus inklusive solcher, die die Modifikation nicht benötigen. Es wird daher empfohlen die Änderungen am Video-Treiber zurückzusetzen und die Modifikation stattdessen in das jeweilige Spielverzeichnis zu installieren sowie von dort zu laden. &#x0d;&#x0d;Möchten Sie den Treiber jetzt auf seinen Originalzustand zurücksetzen?</system:String>
+    <system:String x:Key="GlobalDriverHackNotRecommendedNoneDx11" xml:space="preserve">Es wurde eine Modifikation an Ihrem Videotreiber erkannt, die den Zweck hat die volle Kompatibilität zu Stereoskopischen 3D-Inhalten unter Windows 10 wiederherzustellen. &#x0d;&#x0d;Zum Spielen diese Spiels im 3D-Modus wird diese Modifkation nicht benötigt und empfohlen die Änderungen am Video-Treiber zurückzusetzen. &#x0d;&#x0d;Möchten Sie den Treiber jetzt auf seinen Originalzustand zurücksetzen?</system:String>
+    <system:String x:Key="LocalDriverHackNotPossibleForHelixVision" xml:space="preserve">Derzeit ist es nicht möglich die Modifkation für den Videotreiber zu installieren, welche erforderlich ist um das Spiel auf der großen VR-Leinwand unter Windows 10 v.1903 oder neuer sowie aktuellen Grafikkartentreiber jenseits der Version 425.31 spielen zu können. &#x0d;&#x0d;Bislang stellt nur die Installation der älteren 425.31 Treiber die Funktionalität wieder her.&#x0d;&#x0d;Wir arbeiten an einer Lösung zu diesem Problem und bitten um Entschuldigung für die Unannehmlichkeiten.</system:String>
 
     <!-- 3D Vision driver restore dialog -->
     <system:String x:Key="DriverRestoreHeadline">3D Vision ist nicht auf Ihrem System installiert. Möchten Sie die erforderlichen Treiber jetzt installieren?</system:String>
@@ -786,7 +991,7 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="CloseBlockingProcessesForRestore">Um den Originalzustand des Geforce Grafikkartentreibers wiederherstellen zu können müssen folgende Prozesse geschlossen werden:</system:String>
     <system:String x:Key="CloseProcessesConfirmation">Möchten Sie, dass die Prozesse jetzt geschlossen werden?</system:String>
     
-    <system:String x:Key="FixNotRequired">Nicht erforderlich</system:String>
+    <system:String x:Key="DriverNotRequired">Nicht benötigt</system:String>
     <system:String x:Key="DriverInstalled">Installiert</system:String>
     <system:String x:Key="DriverNotInstalled">Nicht installiert</system:String>
 
@@ -815,6 +1020,7 @@ Aus diesem Grund wird empfohlen CMU nur in Einzelspieler oder Offline-Spielen zu
     <system:String x:Key="InstallOpenGLwrapper">OpenGL Wrapper installieren:</system:String>
     <system:String x:Key="InstallHelixMod02">HelixMod installieren:</system:String>
     <system:String x:Key="RemoveProfile">Fix-Profil entfernen?</system:String>
+    <system:String x:Key="RemoveRepoProfile">Möchten Sie das Profil auch aus der Arbeitskopie des Git-Repositories entfernen?</system:String>
     <system:String x:Key="IniReset" xml:space="preserve">Alle Ini-Einstellungen wurden auf die originalen Standardwerte zurückgesetzt. &#x0d;&#x0d;Bitte vergessen Sie nicht die Änderungen abzuspeichern.</system:String>
     <system:String x:Key="EnableStereoWarning" xml:space="preserve">Zum Betrachten dieses Stereo-Bilds ist die Aktivierung der stereoskopischen 3D-Funktion erforderlich.
 
@@ -847,6 +1053,7 @@ Anmerkungen:
     <system:String x:Key="IniPathNotRelative">Fehler: Ini-Pfad des Spiels ist kein relativer Pfad.</system:String>
     <system:String x:Key="AdditionalIniPathNotRelative">Fehler: Zusätzlicher Ini-Pfad des Spiels ist kein relativer Pfad.</system:String>
     <system:String x:Key="ChangesSaved">Änderungen wurden erfolgreich gespeichert.</system:String>
+    <system:String x:Key="ErrorSavingProfile">Fehler: Beim Speichern des Profils ist ein unerwarter Fehler aufgetreten.</system:String>
     <system:String x:Key="FixProfileCreated">Fix-Profil wurde erfolgreich erstellt.</system:String>
     <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Alle Icons wurden erfolgreich zurückgesetzt und im Hintergrund neu heruntergeladen.&#x0d;&#x0d;Anmerkung: Sämtliche alten Icons wurden in einen Backup-Ordner innerhalb der jeweiligen Profilordner gesichert und können bei Bedarf wiederhergestellt werden. </system:String>
     <system:String x:Key="ServerNotAvailable">Server nicht erreichbar. Bitte versuchen Sie es später erneut.</system:String>
@@ -902,7 +1109,7 @@ Die unten befindliche Schaltfläche öffnet die PayPal-Webseite auf welcher Sie 
 Bitte helfen Sie dabei 3D-Gaming am Leben zu halten.
         
 Vielen Dank, 
-Pauldusler</system:String>
+Markus Gündert (Pauldusler)</system:String>
     <system:String x:Key="DonateShaderHackers01">3D Fixes, die über den 3D Fix Manager heruntergeladen und installiert werden können, werden von talentierten Shaderhackern des HelixMod-Teams entwickelt.</system:String>
     <system:String x:Key="DonateShaderHackers02">Sie sind verantwortlich dafür, dass 3D-Gaming bis heute am Leben gehalten wurde. Wenn Sie HelixMod unterstützen wollen, sind Spenden herzlich willkommen.</system:String>
     <system:String x:Key="DonateShaderHackers03">Im Folgendenen finden Sie eine Liste mit PayPal- und Patreon Adressen der einzelnen Shaderhacker an welche Sie eine Spende entrichten können:</system:String>
@@ -996,12 +1203,14 @@ Pauldusler</system:String>
     <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download abgeschlossen! &#x0d;&#x0d;3D Fix Manager wird nun neu gestartet um das Update zu installieren.</system:String>
     <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision ist auf Ihrem System nicht eingerichtet. &#x0d;&#x0d;Option 1: Klicken Sie auf 'Setup Assistent' um den standardmäßigen Nvidia Setup-Assistenten zu starten. &#x0d;&#x0d;Option 2: Klicken Sie auf 'Schnelles Setup' um 3D Vision direkt zu aktivieren, indem Werte in der Windows Registry modifiziert werden.&#x0d;&#x0d;</system:String>
     <system:String x:Key="VisionSetupComplete" xml:space="preserve">3D Vision Setup Wizard erfolgreich abgeschlossen! &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
+    <system:String x:Key="LoadStereoProfile" xml:space="preserve">Möchten Sie jetzt ein zuvor gesichertes Profil ihrer Stereo 3D-Einstellungen laden?</system:String>
     <system:String x:Key="WindowsRegistryWriteError">Fehler: Einstellungen im Profil konnten nicht in die Windows Registry geschrieben werden.</system:String>
     <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Der Standard-Assistent wurde übersprungen und 3D Vision erfolgreich aktiviert. &#x0d;&#x0d;Möchten Sie ein Backup-Profil laden, um Hotkeys und andere Stereo 3D-relevante Einstellungen wiederherzustellen?</system:String>
     <system:String x:Key="QuickSetupError">Fehler beim aktivieren von Nvidias stereoskopischer 3D-Funktion. Bitte versuchen Sie die Einrichtung stattdessen mit dem Setup-Assistenten erneut.</system:String>
 
     <system:String x:Key="ForceAnaglyphError">Fehler: 3D Vision Discover (Anaglyph 3D) konnte nicht erzwungen werden.</system:String>
-    <system:String x:Key="Force3dVisionError">Fehler: 3D Vision / 3DTV Play / Generic CRT (Active 3D) konnte nicht erzwungen werden.</system:String>
+    <system:String x:Key="Force3dVisionError">Fehler: 3D Vision / Generic CRT (Active 3D) konnte nicht erzwungen werden.</system:String>
+    <system:String x:Key="Force3dtvPlayError">Fehler: 3DTV Play konnte nicht erzwungen werden.</system:String>
     <system:String x:Key="ForceCheckerboard">Fehler: Checkerboard (Active 3D) konnte nicht erzwungen werden.</system:String>
     <system:String x:Key="ForceReversedCheckerboard">Fehler: Invertiertes Checkerboard (Active 3D) konnte nicht erzwungen werden.</system:String>
     <system:String x:Key="ForceLineInterlacingError">Fehler: Zeilensprungverfahren für passiven 3D Bildschirm konnte nicht erzwungen werden.</system:String>
@@ -1057,10 +1266,11 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
-        Relativer Pfad zum Unterverzeichnis des Spiels, in welches der 3D Vision Fix kopiert werden soll.<LineBreak/><LineBreak/>
+        Relativer Pfad zum Unterverzeichnis des Spiels, in welches der 3D Vision Fix installiert werden soll.<LineBreak/><LineBreak/>
         In den meisten Fällen zeigt der korrekte Installationspfad zu dem Ordner in welchem sich die Exe zum Starten des Spiels befindet.<LineBreak/><LineBreak/>
         <Bold>Beispiel:</Bold> wenn der absolute Pfad <Italic>"c:\gameTitle\bin\game.exe"</Italic> lautet, dann ergibt sich als resultierender relativer Pfad: <Italic>"bin"</Italic>.<LineBreak/><LineBreak/>
-        Bitte das Feld leer lassen, wenn der Fix in das Wurzelverzeichnis des Spiels kopiert werden soll.
+        Das Feld ist leer zu lassen, wenn der Fix in das Wurzelverzeichnis des Spiels installiert werden soll.<LineBreak/><LineBreak/>
+        <Bold>Wichtig:</Bold> Der relative Installationspfad dient auch zum Auffinden der Game-Exe, sofern sich diese in einem Unterverzeichnis des Spiels befinden sollte. Ist dies der Fall, muss dieses Feld auch dann ausgefüllt werden, wenn kein 3D Fix installiert werden soll.
     </TextBlock>
 
     <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
@@ -1087,6 +1297,10 @@ Pauldusler</system:String>
         Speichert das Datum der letzten Aktualisierung des Helix Posts.<LineBreak/><LineBreak/>
         Der Zeitstempel is notwendig um erkennen zu können, ob ein aktualisierter Helix Post online vorliegt.<LineBreak/><LineBreak/>
         Es wird empfohlen den Zeitstempel nicht manuell zu setzen, da dies automatisch geschieht.
+    </TextBlock>
+
+    <TextBlock x:Key="AllowHelixPostUpdateToolTip" TextWrapping="Wrap" Width="300">
+        Legt fest, ob der lokale Beschreibungstext des Profils automatisch aktualisiert werden soll, sobald der Blog-Eintrag auf <Italic>helixmod.blogspot.com</Italic> bearbeitet wurde.
     </TextBlock>
 
     <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
@@ -1185,12 +1399,40 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
-        Mit dieser Option können Sie ein Spiel als kompatibel zu Virtual Reality markieren.<LineBreak/><LineBreak/>
-        Markierte Spiele tauchen automatisch im Filter <Italic><Bold>VR kompatibel</Bold></Italic> auf.
+        Markiert das Spiel als kompatibel zu Virtual Reality.<LineBreak/><LineBreak/>
+        Ermöglich die Spielliste nach VR kompatiblen Spiele zu filtern. Hierzu muss der Filter auf <Italic><Bold>"VR kompatibel"</Bold></Italic> gestellt werden.
     </TextBlock>
 
     <TextBlock x:Key="Uses3DDirectToolTip" TextWrapping="Wrap" Width="300">
-        Das Spiel verwendet den NVidia 3D Direct-Modus, um Stereobilder zu erstellen.
+        Legt fest, dass das Spiel den Nvidia 3D Direct-Modus verwendet um Stereobilder zu erstellen.
+    </TextBlock>
+
+    <TextBlock x:Key="VrRequiresSwCursorToolTip" TextWrapping="Wrap" Width="300">
+        Legt fest, ob für das Spiel der Software Mouse-Cursor genutzt werden soll. (Nur für DirectX 11-Spiele verfügbar).<LineBreak/><LineBreak/>
+        
+        Diese Option sollte immer dann aktiviert werden, wenn der Mouse-Cursor im VR-Modus nicht dargestellt wird.  
+    </TextBlock>
+
+    <TextBlock x:Key="RequiresSwCursorToolTip" TextWrapping="Wrap" Width="300">
+        Legt fest, ob für das Spiel der Software Mouse-Cursor genutzt werden soll. (Nur für DirectX 11-Spiele verfügbar).<LineBreak/><LineBreak/>
+        
+        Diese Option sollte immer dann aktiviert werden, wenn der Mouse Cursor unter Nutzung des Side by Side oder Top/Bottom - Formats nur auf einem Auge sichtbar ist.<LineBreak/><LineBreak/>
+        
+        Im HelixVision VR-Modus sollten Sie den Software Mouse-Cursor aktivieren, wenn Sie überhaupt keinen Cursor auf der virtuellen Leinwand sehen.
+    </TextBlock>
+
+    <TextBlock x:Key="MultiplayerOnlineWarningToolTip" TextWrapping="Wrap" Width="300">
+        Legt fest, ob eine Warnmeldung vor Installation der Treibermodifikation bei Online-Spielen angezeigt werden soll.<LineBreak/><LineBreak/>
+        Die Warnung beinhaltet die Info, dass Multiplayer-Spiele typischerweise auf Anti-Cheat Maßnahmen setzen, welche Änderungen am Videotreiber womöglich verbieten.
+    </TextBlock>
+
+    <TextBlock x:Key="OptimizedConvergenceValueToolTip" TextWrapping="Wrap" Width="300">
+        Legt den Konvergenzwert fest, der beim Spielstart in das Treiberprofil des Spiels geschrieben werden soll.<LineBreak/><LineBreak/>
+        Der Wert ist dahingehend optimiert um den bestmöglichen 3D-Effekt auf der virtuellen Leinwand zu erhalten. 
+    </TextBlock>
+
+    <TextBlock x:Key="MaxConvergenceValueToolTip" TextWrapping="Wrap" Width="300">
+        Legt den maximalen Konvergenzwert fest, der für das Spielen in VR noch geeignet ist.
     </TextBlock>
 
     <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
@@ -1202,7 +1444,10 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
-        Geben Sie den Namen der Exe-Datei ein mit welcher das Spiel gestartet wird.
+         Name der Exe-Datei mit welcher das Spiel gestartet wird.<LineBreak/><LineBreak/>
+        
+        <Bold>Wichtig:</Bold> Dieses Feld muss zwingend ausgefüllt werden, damit das Spiel auf der Festplatte gefunden werden kann.<LineBreak/><LineBreak/>
+        Falls sich die Exe-Datei in einem Unterverzeichnis des Spiels befinden sollte, müssen Sie zusätzlich den relativen Pfad zu dieser angeben. Füllen Sie bitte hierzu das obige separate Feld <Italic><Bold>Relativer Installationspfad</Bold></Italic> aus.
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
@@ -1212,9 +1457,7 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
         Geben sie erforderliche Startparameter für die Exe-Datei des Spiels ein (s. Fix-Profil <Italic><Bold>"Superhot"</Bold></Italic> um ein Beispiel hierfür zu sehen).<LineBreak/><LineBreak/>
-        Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel <Italic><Bold>"Doom"</Bold></Italic> erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID).<LineBreak/><LineBreak/>
-        Zu guter Letzt können Sie einstellen, der RivaTuner Statistics Server beim Start des Spiels geöffnet oder geschlossen werden soll.<LineBreak/><LineBreak/>
-        RTSS sorgt für reduzierten Input-Lag und verbessert die Frametimes für ein flüssiges Spielgeschehen.
+        Darüber hinaus kann definiert werden, ob das Spiel mit Admin-Rechten gestartet werdne soll (z.B. für das Spiel <Italic><Bold>"Doom"</Bold></Italic> erforderlich) oder wie das Spiel gestartet werden soll (direkt durch die Exe-Datei des Spiels oder indirekt über die Steam App ID).
     </TextBlock>
 
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
@@ -1372,6 +1615,12 @@ Pauldusler</system:String>
 
     <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
         Prüft bei Start des Programms, ob ein neues Update für den Grafikkartentreiber vorliegt.
+    </TextBlock>
+
+    <TextBlock x:Key="UseHwAccelerationToolTip" TextWrapping="Wrap" Width="300">
+        Legt fest, ob die grafische Benutzeroberfläche des Programms mit Hilfe der Grafikkarte gezeichnet werden soll.<LineBreak/><LineBreak/>
+        Das Aktivieren der Hardware-Beschleunigung wirkt sich positiv auf die Reaktionsfähigkeit des Programms aus.<LineBreak/><LineBreak/>
+        Deaktivieren Sie diese Option, falls das Programm abrupt abstürzen sollte.
     </TextBlock>
 
     <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
@@ -1696,18 +1945,21 @@ Pauldusler</system:String>
     </TextBlock>
 
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
-        Tragen Sie hier die tatsächliche Größe ihres Monitors in Zoll ein. Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale 3D-Tiefe zu entfalten.<LineBreak/><LineBreak/>
-        Wenn Ihnen die maximal mögliche 3D-Tiefe durch den eingetragenen Wert nicht ausreicht, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
+        Tragen Sie hier die tatsächliche Größe ihres Monitors in Zoll ein.<LineBreak/><LineBreak/>       
+        Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale einstellbare 3D-Tiefe zu setzen.<LineBreak/><LineBreak/>
+        Wenn Ihnen die maximal einstellbare 3D-Tiefe beim Spielen nicht genügen sollte, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
-        Tragen Sie hier die tatsächliche Größe ihrer Leinwand in Zoll ein. Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale 3D-Tiefe zu entfalten.<LineBreak/><LineBreak/>
-        Wenn Ihnen die maximal mögliche 3D-Tiefe durch den eingetragenen Wert nicht ausreicht, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
+        Tragen Sie hier die tatsächliche Größe ihrer Leinwand in Zoll ein.<LineBreak/><LineBreak/>     
+        Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale einstellbare 3D-Tiefe zu setzen.<LineBreak/><LineBreak/>
+        Wenn Ihnen die maximal einstellbare 3D-Tiefe beim Spielen nicht genügen sollte, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
     </TextBlock>
 
     <TextBlock x:Key="TvSizeToolTip" TextWrapping="Wrap" Width="300">
-        Tragen Sie hier die tatsächliche Größe ihres TVs in Zoll ein. Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale 3D-Tiefe zu entfalten.<LineBreak/><LineBreak/>
-        Wenn Ihnen die maximal mögliche 3D-Tiefe durch den eingetragenen Wert nicht ausreicht, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
+        Tragen Sie hier die tatsächliche Größe ihres TVs in Zoll ein.<LineBreak/><LineBreak/>     
+        Dieser Wert wird bei Spielstart in die Windows Registry geschrieben, um die korrekte maximale einstellbare 3D-Tiefe zu setzen.<LineBreak/><LineBreak/>
+        Wenn Ihnen die maximal einstellbare 3D-Tiefe beim Spielen nicht genügen sollte, dann erhöhen Sie bitte zusätzlich den Wert für den 3D Tiefen-Multiplikator im <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab. Auf diese Weise wird die maximale 3D-Tiefe für alle Anzeigegeräte gleichermaßen erhöht.
     </TextBlock>
 
     <TextBlock x:Key="DisplayTypeToolTip" TextWrapping="Wrap" Width="300">
@@ -1724,15 +1976,13 @@ Pauldusler</system:String>
     <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
         Begrenzt die Bildrate beim Spielen im 2D-Modus auf den eingestellten Wert.<LineBreak/><LineBreak/>
         <Bold>Empfohlen:</Bold> Für G-Sync Monitore sollten Sie die Framerate knapp unterhalb der maximalen Bildwiederholfrequenz setzen, um zu verhindern, dass Vertical Sync greift und somit den Input Lag steigert.<LineBreak/><LineBreak/>
-        Beispielsweise sollten Sie bei einem 144 Hz Monitor die Bildrate auf 142 FPS limitieren (2 FPS Differenz).<LineBreak/><LineBreak/>
-        <Bold>Hinweis:</Bold> Zur Nutzung dieses Features muss der RivaTuner Stastics Server installiert sein. Der 3D Fix Manager konfiguriert diesen beim Spielstart automatisch anhand ihrer Vorgabe.
+        Beispielsweise sollten Sie bei einem 144 Hz Monitor die Bildrate auf 142 FPS limitieren (2 FPS Differenz).
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
         Begrenzt die Bildrate beim Spielen im 3D-Modus auf den eingestellten Wert. Durch die Nutzung des Framerate-Begrenzers kann der Input-Lag beim Spielen im 3D-Modus spürbar gesenkt werden.<LineBreak/><LineBreak/>
         <Bold>Empfohlen:</Bold> Für 3D Vision zertifizierte Monitore oder Generic CRT Geräte sollten Sie die Framerate unbedingt auf die Option <Bold>"1/2 Stereo Refresh Rate"</Bold> setzen. Das Framerate Limit wird daraufhin automatisch in Abhängigkeit der genutzten Bildwiederholfrequenz des Monitors gesetzt. Üblicherweise resultiert dies in einem 60 FPS-Limit.<LineBreak/><LineBreak/>        
-        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.<LineBreak/><LineBreak/>
-        <Bold>Hinweis:</Bold> Zur Nutzung dieses Features muss der RivaTuner Stastics Server installiert sein. Der 3D Fix Manager konfiguriert diesen beim Spielstart automatisch anhand ihrer Vorgabe.
+        Bei der Nutzung von 3DTV Play oder Passiv 3D sollten Sie das Framerate-Limit auf 60 setzen.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
@@ -1765,6 +2015,42 @@ Pauldusler</system:String>
     <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
         Startet das Spiel im 3D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
         <Bold>Hinweis:</Bold> Dieses Feature wird bislang noch nicht für jedes Spiel unterstützt. Unterstützte Spiele erkennen Sie anhand des Stichworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold>, wenn Sie den Mauszeiger über das Info-Icon im  <Bold><Italic>Installation</Italic></Bold> Tab bewegen.
+    </TextBlock>
+
+    <TextBlock x:Key="GameResolutionVrToolTip" TextWrapping="Wrap" Width="300">
+        Startet das Spiel im 3D Modus automatisch mit der gewünschten Auflösung.<LineBreak/><LineBreak/>
+        1920x1080 ist die empfohlene Auflösung für HelixVision, da sie eine gute Balance zwischen Leistung und Bildqualität schafft. Wir raten davon ab die Auflösung über 1920x1080 hinaus zu erhöhen, da dies zu einer starken Beeinträchtigung der Spielleistung führen kann während die Bildqualität kaum sichtbar besser wird.<LineBreak/><LineBreak/>
+
+        <Bold>Hinweis:</Bold> Das automatische Setzen der Spiel-Auflösung wird bislang noch nicht für jedes Spiel unterstützt. Unterstützte Spiele erkennen Sie anhand des Stichworts <Bold><Italic>Resolution: By Display Profile</Italic></Bold>, wenn Sie den Mauszeiger über das Info-Icon im Tab <Bold><Italic>Spielen</Italic></Bold> bewegen.
+    </TextBlock>
+
+    <TextBlock x:Key="FramerateLimitVrToolTip" TextWrapping="Wrap" Width="300">
+        Begrenzt die Bildrate im VR-Modus auf den gewünschten Wert.<LineBreak/><LineBreak/>
+        
+        Wir empfehlen die Framerate-Begrenzung auf den voreingestellten Wert <Italic><Bold>Half Display Frequency</Bold></Italic> zu belassen.
+        Je nachdem welches VR-Headset zum Einsatz kommt erhält man eine resultierende Bildrate von 40 oder 45 FPS.
+        Der Einsatz des Framerate-Begrenzers bewirkt, dass das Spiel bei einer konstanten Bildrate läuft und sich somit wesentlich flüssiger anfühlt. Ruckler werden dadurch erfolgreich eliminiert.<LineBreak/><LineBreak/>
+        
+        <Bold>Warnung:</Bold> Das Limitieren der Framerate auf jegliche andere Werte als <Italic><Bold>Half Display Frequency</Bold></Italic> kann zu Rucklern im Spiel führen. Das Entfernen des Framerate Limiters wird ausdrücklich nicht empfohlen, da dies zu einem sehr starken Performance-Verlust der VR-Applikation führen kann.<LineBreak/><LineBreak/>
+
+        <Bold>Hinweis:</Bold> Für extrem leistungsfähige Rechner kann dennoch in Betracht gezogen werden die Framerate-Begrenzung auf <Italic><Bold>Full Display Frequency</Bold></Italic> zu setzen. Dies bedeutet, dass die Framerate des Spiels mit der Bildwiederholfrequenz des VR-Headsets synchronisiert wird.
+        Unter der Voraussetzung, dass der PC die sehr hohe Bildrate konstant halten kann, entsteht hierdurch ein ultra flüssiges Spielerlebnis. Leider sind derzeit selbst High-End Rechner überfordert dies bei aktuellen Spielen zu bewerkstelligen. Für ältere Spiele ist dieses Feature daher wesentlich interessanter.
+    </TextBlock>
+
+    <TextBlock x:Key="VrScreenSizeToolTip" TextWrapping="Wrap" Width="300">
+        Größe der virtuellen VR-Leinwand in Zoll.<LineBreak/><LineBreak/>
+       
+       Der Wert legt fest, wie intensiv die 3D-Tiefe für das menschliche Auge empfunden wird, wenn im Spiel die maximal mögliche 3D-Tiefe von 100% gesetzt wird. Kleinere Werte für die Leinwandgröße verstärken den Effekt während größere Werte ihn abschwächen.<LineBreak/><LineBreak/>
+       Für HelixVision ist ein Wert von 80 Zoll optimal, da selbst eine maximale 3D-Tiefe von 100% noch als angenehm für die Augen empfunden werden.<LineBreak/><LineBreak/>
+        
+       Wir empfehlen den voreingestellten Wert beizubehalten es sei denn Sie skalieren die VR-Leinwand auf eine andere Größe während des Spielen.
+    </TextBlock>
+
+
+    <TextBlock x:Key="DesktopResolutionVrToolTip" TextWrapping="Wrap" Width="300">
+        Schaltet den Desktop beim Aktivieren von Stereo 3D oder beim Starten eines Spiels im VR-Modus auf die gewünschte Auflösung.<LineBreak/><LineBreak/>
+        Mit Hilfe dieser Option können Sie die Desktop-Aufösung sowie -Frequenz an die des Spiels angleichen. Ein Vorteil hiervon ist, dass Sie schneller auf den Desktop minimieren können, da der Bildschirm dabei seine Frequenz und Auflösung nicht wechseln muss.<LineBreak/><LineBreak/>
+        Außerdem ist dieses Feature besonders für Besitzer von Windows 10 von Vorteil bei denen der Monitor beim Beenden des Spiels nur noch ein schwarzes Bild anzeigt. Der Grund hierfür liegt darin, dass Windows 10 Schwierigkeiten damit hat bei aktiviertem Stereo 3D auf andere Desktop-Bildwiederholfrequenzen zurückzuschalten.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
