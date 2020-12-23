@@ -6,102 +6,102 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!-- Display Profiles Window Bar -->
-    <system:String x:Key="Monitor">Monitor</system:String>
-    <system:String x:Key="Projector">Projector</system:String>
-    <system:String x:Key="TV">TV</system:String>
-    <system:String x:Key="VrHeadset">VR Headset</system:String>
+    <system:String x:Key="Monitor">Монитор</system:String>
+    <system:String x:Key="Projector">Проектор</system:String>
+    <system:String x:Key="TV">ТВ</system:String>
+    <system:String x:Key="VrHeadset">VR-гарнитура</system:String>
 
     <!-- Misc -->
-    <system:String x:Key="LoadingApplication">Loading Application. Please wait...</system:String>
-    <system:String x:Key="SwitchToCompactGui">Switch to compact gui size.</system:String>
-    <system:String x:Key="SwitchToNormalGui">Switch to normal gui size.</system:String>
-    <system:String x:Key="MinimizeToTray">Minimize window to system tray.</system:String>
-    <system:String x:Key="ChangeLanguage">Change Language</system:String>
-    <system:String x:Key="Close">Close</system:String>
-    <system:String x:Key="Show">Show</system:String>
-    <system:String x:Key="Enable3D">Enable 3D</system:String>
-    <system:String x:Key="Disable3D">Disable 3D</system:String>
-    <system:String x:Key="EnableDriverMod">Enable driver mod</system:String>
-    <system:String x:Key="DisableDriverMod">Disable driver mod</system:String>
-    <system:String x:Key="NoMatchFound">No Match found for</system:String>
+    <system:String x:Key="LoadingApplication">Загрузка приложения. Пожалуйста, подождите...</system:String>
+    <system:String x:Key="SwitchToCompactGui">Перейти к компактному размеру графического интерфейса.</system:String>
+    <system:String x:Key="SwitchToNormalGui">Перейти к нормальному размеру графического интерфейса.</system:String>
+    <system:String x:Key="MinimizeToTray">Свернуть окно в системный трей.</system:String>
+    <system:String x:Key="ChangeLanguage">Изменить язык</system:String>
+    <system:String x:Key="Close">Закрыть</system:String>
+    <system:String x:Key="Show">Показать</system:String>
+    <system:String x:Key="Enable3D">Включить 3D</system:String>
+    <system:String x:Key="Disable3D">Отключить 3D</system:String>
+    <system:String x:Key="EnableDriverMod">Включить мод драйвера</system:String>
+    <system:String x:Key="DisableDriverMod">Отключить мод драйвера</system:String>
+    <system:String x:Key="NoMatchFound">Не найдено совпадений для</system:String>
 
     <!-- Tab header title -->
-    <system:String x:Key="Installation">Installation</system:String>
-    <system:String x:Key="Play">Play</system:String>
-    <system:String x:Key="EditProfile">Edit Profile</system:String>
-    <system:String x:Key="NewProfile">New Profile</system:String>
-    <system:String x:Key="Hotkeys">Hotkeys</system:String>
+    <system:String x:Key="Installation">Установка</system:String>
+    <system:String x:Key="Play">Игра</system:String>
+    <system:String x:Key="EditProfile">Редактировать профиль</system:String>
+    <system:String x:Key="NewProfile">Новый профиль</system:String>
+    <system:String x:Key="Hotkeys">Горячие клавиши</system:String>
     <system:String x:Key="3dfix">3D Fix</system:String>
-    <system:String x:Key="Profile">Profile</system:String>
-    <system:String x:Key="Settings">Settings</system:String>
-    <system:String x:Key="About">About</system:String>
-    <system:String x:Key="GeneralSettings">Application Settings</system:String>
-    <system:String x:Key="Nvidia3DSettings">Nvidia 3D Settings</system:String>
-    <system:String x:Key="DisplayProfiles">Display Profiles</system:String>
+    <system:String x:Key="Profile">Профиль</system:String>
+    <system:String x:Key="Settings">Настройки</system:String>
+    <system:String x:Key="About">О программе</system:String>
+    <system:String x:Key="GeneralSettings">Настройки приложения</system:String>
+    <system:String x:Key="Nvidia3DSettings">Настройки Nvidia 3D</system:String>
+    <system:String x:Key="DisplayProfiles">Профили Дисплея</system:String>
 
     <!-- Game list on left column-->
-    <system:String x:Key="AllGames">All Games</system:String>
-    <system:String x:Key="InstalledGames">Installed Games</system:String>
-    <system:String x:Key="AllFixTypes">All Fix Types</system:String>
+    <system:String x:Key="AllGames">Все игры</system:String>
+    <system:String x:Key="InstalledGames">Установленные игры</system:String>
+    <system:String x:Key="AllFixTypes">Все типы исправлений</system:String>
     <system:String x:Key="_3dmigoto">3dmigoto (DX 11)</system:String>
     <system:String x:Key="Helixmod">Helixmod (DX 9)</system:String>
     <system:String x:Key="OpenGLwrapper">OpenGL Wrapper</system:String>
     <system:String x:Key="VulkanWrapper">Vulkan Wrapper</system:String>
-    <system:String x:Key="NotFixed">Without 3D Fix</system:String>
-    <system:String x:Key="VerifiedFixes">Verified 3D Fixes</system:String>
-    <system:String x:Key="UnverifiedFixes">Unverified 3D Fixes</system:String>
+    <system:String x:Key="NotFixed">Без 3D исправлений</system:String>
+    <system:String x:Key="VerifiedFixes">Проверенные исправления 3D</system:String>
+    <system:String x:Key="UnverifiedFixes">Непроверенные исправления 3D</system:String>
     <system:String x:Key="UE3">Unreal Engine 3</system:String>
     <system:String x:Key="UE4">Unreal Engine 4</system:String>
     <system:String x:Key="Unity">Unity</system:String>
-    <system:String x:Key="VrCompatible">VR compatible</system:String>
-    <system:String x:Key="New">New</system:String>
-    <system:String x:Key="CreateProfileToolTip">Create Fix Profile</system:String>
-    <system:String x:Key="Edit">Edit</system:String>
-    <system:String x:Key="EditProfileToolTip">Edit Fix Profile</system:String>
-    <system:String x:Key="Delete">Delete</system:String>
-    <system:String x:Key="DeleteProfileToolTip">Remove Fix Profile</system:String>
-    <system:String x:Key="FoundGames">Listed games:</system:String>
+    <system:String x:Key="VrCompatible">Совместимость с VR</system:String>
+    <system:String x:Key="New">Новый</system:String>
+    <system:String x:Key="CreateProfileToolTip">Создать профиль исправления</system:String>
+    <system:String x:Key="Edit">Редактировать</system:String>
+    <system:String x:Key="EditProfileToolTip">Редактировать профиль исправления</system:String>
+    <system:String x:Key="Delete">Удалить</system:String>
+    <system:String x:Key="DeleteProfileToolTip">Удалить профиль исправления</system:String>
+    <system:String x:Key="FoundGames">Найденные игры:</system:String>
 
     <!-- Installation Tab -->
-    <system:String x:Key="NoGamesInstalled">No compatible games installed.</system:String>
-    <system:String x:Key="Play2D">Play 2D</system:String>
-    <system:String x:Key="Play3D">Play 3D</system:String>
-    <system:String x:Key="PlayVR">Play in VR</system:String>
-    <system:String x:Key="InstallFix">Install 3D Fix</system:String>
-    <system:String x:Key="InstallFixCompleted">Install completed</system:String>
-    <system:String x:Key="BackupRecoveryFailed">Backup recovery failed.</system:String>
-    <system:String x:Key="InstallFixFailed">Install failed. Check Install Path</system:String>
-    <system:String x:Key="InstallFixFailed02" xml:space="preserve">Error: Fix could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
-    <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Error: Wrapper could not be installed.&#x0d;&#x0d;Make sure 3D Fix Manager is started with admin rights and try again.</system:String>
-    <system:String x:Key="FixWrapperOutdated">This fix includes an outdated version of 3dmigoto.</system:String>
-    <system:String x:Key="DownloadFix">Download 3D Fix</system:String>
-    <system:String x:Key="UninstallFix">Uninstall 3D Fix</system:String>
-    <system:String x:Key="UninstallFixCompleted">Uninstall completed</system:String>
-    <system:String x:Key="UninstallFixFailed">Uninstall failed</system:String>
-    <system:String x:Key="InstallWrapper">Install 3D Wrapper</system:String>
-    <system:String x:Key="UninstallWrapper">Uninstall 3D Wrapper</system:String>
-    <system:String x:Key="DeleteDownload">Clear DL Cache</system:String>
-    <system:String x:Key="DeleteDownloadToolTip">Deletes downloaded files of a 3D fix from 3D Fix Manager directory.</system:String>
-    <system:String x:Key="DeleteSuccess">Success. All downloaded files deleted.</system:String>
-    <system:String x:Key="DeleteError" xml:space="preserve">Error: Not all files could be deleted. &#x0d;&#x0d;Please make sure that no file is in use.</system:String>
-    <system:String x:Key="SourceFolder">Profile Folder</system:String>
-    <system:String x:Key="SourceFolderToolTip">Opens windows explorer and shows all files related to this 3D fix profile.</system:String>
-    <system:String x:Key="VisitSteamStore">Product Page</system:String>
-    <system:String x:Key="VisitSteamStoreToolTip">Opens webbrowser to show additional information about the game.</system:String>
-    <system:String x:Key="VisitHelixMod">HelixMod Blog</system:String>
-    <system:String x:Key="VisitHelixModToolTip">Get more information about the selected fix on HelixMod Webpage.</system:String>
-    <system:String x:Key="ForceCompatibilityMode">Enable CMU</system:String>
-    <system:String x:Key="EnableFix">Enable Fix</system:String>
-    <system:String x:Key="DownloadCompleted">Download completed</system:String>
-    <system:String x:Key="Downloading">Downloading...</system:String>
-    <system:String x:Key="DownloadFailed">Download failed.</system:String>
-    <system:String x:Key="Extracting">Extracting...</system:String>
-    <system:String x:Key="ExtractionFailed">Extraction failed.</system:String>
-    <system:String x:Key="GameNotInstalled">Game not installed</system:String>
-    <system:String x:Key="OpenExplorerError">Error: Could not open path in Windows explorer. Path does not exist</system:String>
-    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">A backup for hotkeys and 3d fix configuration has been found. &#x0d;&#x0d;Do you want to restore the backup?</system:String>
-    <system:String x:Key="CreateHotkeyBackup">Do you want to create a backup of your hotkeys and 3D fix configuration before uninstall?</system:String>
-    <system:String x:Key="ThirdPartyDllError" xml:space="preserve">Warning: A third party DLL was found in the game directory having the same name like the 3D fix. &#x0d;&#x0d;DLL path: {0}&#x0d;&#x0d;Do you want to backup this file before installing the 3D fix?</system:String>
+    <system:String x:Key="NoGamesInstalled">Совместимые игры не установлены.</system:String>
+    <system:String x:Key="Play2D">Играть 2D</system:String>
+    <system:String x:Key="Play3D">Играть 3D</system:String>
+    <system:String x:Key="PlayVR">Играть в VR</system:String>
+    <system:String x:Key="InstallFix">Установить 3D Fix</system:String>
+    <system:String x:Key="InstallFixCompleted">Установка завершена</system:String>
+    <system:String x:Key="BackupRecoveryFailed">Не удалось восстановить резервную копию.</system:String>
+    <system:String x:Key="InstallFixFailed">Установить не удалось. Проверьте путь установки</system:String>
+    <system:String x:Key="InstallFixFailed02" xml:space="preserve">Ошибка: не удалось установить исправление.&#x0d;&#x0d;Убедитесь, что 3D Fix Manager запущен с правами администратора и повторите попытку.</system:String>
+    <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Ошибка: не удалось установить оболочку.&#x0d;&#x0d;Убедитесь, что 3D Fix Manager запущен с правами администратора и повторите попытку.</system:String>
+    <system:String x:Key="FixWrapperOutdated">Это исправление включает устаревшую версию 3dmigoto.</system:String>
+    <system:String x:Key="DownloadFix">Скачать 3D Fix</system:String>
+    <system:String x:Key="UninstallFix">Удалить 3D Fix</system:String>
+    <system:String x:Key="UninstallFixCompleted">Удаление завершено</system:String>
+    <system:String x:Key="UninstallFixFailed">Не удалось удалить</system:String>
+    <system:String x:Key="InstallWrapper">Установить 3D оболочку</system:String>
+    <system:String x:Key="UninstallWrapper">Удалить 3D оболочку</system:String>
+    <system:String x:Key="DeleteDownload">Очистить DL кеш</system:String>
+    <system:String x:Key="DeleteDownloadToolTip">Удаляет загруженные файлы 3D-исправления из каталога 3D Fix Manager.</system:String>
+    <system:String x:Key="DeleteSuccess">Успех. Все скачанные файлы удалены.</system:String>
+    <system:String x:Key="DeleteError" xml:space="preserve">Ошибка: не все файлы могут быть удалены. &#x0d;&#x0d;Убедитесь, что ни один файл не используется.</system:String>
+    <system:String x:Key="SourceFolder">Папка профиля</system:String>
+    <system:String x:Key="SourceFolderToolTip">Открывает проводник Windows и показывает все файлы, связанные с этим профилем исправления 3D.</system:String>
+    <system:String x:Key="VisitSteamStore">Страница продукта</system:String>
+    <system:String x:Key="VisitSteamStoreToolTip">Открывает веб-браузер для отображения дополнительной информации об игре.</system:String>
+    <system:String x:Key="VisitHelixMod">HelixMod Блог</system:String>
+    <system:String x:Key="VisitHelixModToolTip">Получите дополнительную информацию о выбранном исправлении на веб-странице HelixMod.</system:String>
+    <system:String x:Key="ForceCompatibilityMode">Включить CMU</system:String>
+    <system:String x:Key="EnableFix">Включить Fix</system:String>
+    <system:String x:Key="DownloadCompleted">Загрузка завершена</system:String>
+    <system:String x:Key="Downloading">Загрузка...</system:String>
+    <system:String x:Key="DownloadFailed">Загрузка не удалась.</system:String>
+    <system:String x:Key="Extracting">Извлечение...</system:String>
+    <system:String x:Key="ExtractionFailed">Не удалось извлечь.</system:String>
+    <system:String x:Key="GameNotInstalled">Игра не установлена</system:String>
+    <system:String x:Key="OpenExplorerError">Ошибка: не удалось открыть путь в проводнике Windows. Путь не существует</system:String>
+    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Обнаружена резервная копия для горячих клавиш и конфигурации 3d fix. &#x0d;&#x0d;Хотите восстановить резервную копию?</system:String>
+    <system:String x:Key="CreateHotkeyBackup">Вы хотите создать резервную копию своих горячих клавиш и конфигурации 3D Fix перед удалением?</system:String>
+    <system:String x:Key="ThirdPartyDllError" xml:space="preserve">Предупреждение: в каталоге игры была обнаружена сторонняя DLL с тем же именем, что и исправление 3D. &#x0d;&#x0d;DLL path: {0}&#x0d;&#x0d;Вы хотите сделать резервную копию этого файла перед установкой 3D fix?</system:String>
 
     <!--.................... New / Edit Profile Tab Begin .......................... -->
 
