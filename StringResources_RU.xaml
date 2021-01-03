@@ -197,38 +197,38 @@
     <system:String x:Key="WorksOutOfTheBox">Работает из коробки</system:String>
     <system:String x:Key="WorksOutOfTheBoxToolTip">Для установки исправления дополнительных действий не требуется. Это простая установка в один клик.</system:String>
 
-    <system:String x:Key="CloseRTSS">Close RTSS</system:String>
-    <system:String x:Key="StartRTSS">Start RTSS</system:String>
+    <system:String x:Key="CloseRTSS">Закрыть RTSS</system:String>
+    <system:String x:Key="StartRTSS">Запустить RTSS</system:String>
 
-    <system:String x:Key="StartByAppId">Start via Steam App ID</system:String>
-    <system:String x:Key="StartByGameExe">Start via Game Exe</system:String>
-    <system:String x:Key="StartByToolExe">Start via additional Exe</system:String>
+    <system:String x:Key="StartByAppId">Начать через Steam App ID</system:String>
+    <system:String x:Key="StartByGameExe">Начать через Game Exe</system:String>
+    <system:String x:Key="StartByToolExe">Начать через дополнительный Exe</system:String>
 
-    <system:String x:Key="RunNormal">Run normal</system:String>
-    <system:String x:Key="RunAsAdmin">Run as admin</system:String>
-    <system:String x:Key="ApplyGlobalSetting">Apply global Setting</system:String>
-    <system:String x:Key="OverrideGlobalSetting">Override global Setting</system:String>
+    <system:String x:Key="RunNormal">Обычный запуск</system:String>
+    <system:String x:Key="RunAsAdmin">Запуск от имени администратора</system:String>
+    <system:String x:Key="ApplyGlobalSetting">Применить глобальные настройки</system:String>
+    <system:String x:Key="OverrideGlobalSetting">Перезаписать глобальную настройку</system:String>
 
-    <system:String x:Key="CustomText">Custom Info Text</system:String>
-    <system:String x:Key="SLI">SLI Info Text</system:String>
+    <system:String x:Key="CustomText">Пользовательское Инфо</system:String>
+    <system:String x:Key="SLI">SLI Инфо</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="ChoosePath">Choose Path</system:String>
-    <system:String x:Key="PickFile">Pick File</system:String>
-    <system:String x:Key="RemoveIcon">Remove Icon</system:String>
-    <system:String x:Key="OpenUrl">Open URL</system:String>
-    <system:String x:Key="SearchUrl">Search URL</system:String>
-    <system:String x:Key="SearchAppID">Search App ID</system:String>
-    <system:String x:Key="SearchInDB">Search in DB</system:String>
-    <system:String x:Key="SearchSteamDb">Search Steam DB</system:String>
-    <system:String x:Key="ValuesFor2D">Values for 2D</system:String>
-    <system:String x:Key="ValuesFor3D">Values for 3D</system:String>
-    <system:String x:Key="Open">Open File</system:String>
-    <system:String x:Key="OpenExplorer">Open Explorer</system:String>
-    <system:String x:Key="Cancel">Cancel</system:String>
-    <system:String x:Key="Save">Save</system:String>
-    <system:String x:Key="SaveChanges">Save Changes</system:String>
-    <system:String x:Key="CreateProfile">Create Profile</system:String>
+    <system:String x:Key="ChoosePath">Выберите путь</system:String>
+    <system:String x:Key="PickFile">Выбрать файл</system:String>
+    <system:String x:Key="RemoveIcon">Удалить значок</system:String>
+    <system:String x:Key="OpenUrl">Открыть URL</system:String>
+    <system:String x:Key="SearchUrl">URL поиска</system:String>
+    <system:String x:Key="SearchAppID">Найти App ID</system:String>
+    <system:String x:Key="SearchInDB">Найти в БД</system:String>
+    <system:String x:Key="SearchSteamDb">Поиск в БД Steam</system:String>
+    <system:String x:Key="ValuesFor2D">Значения для 2D</system:String>
+    <system:String x:Key="ValuesFor3D">Значения для 3D</system:String>
+    <system:String x:Key="Open">Открыть файл</system:String>
+    <system:String x:Key="OpenExplorer">Открыть Проводник</system:String>
+    <system:String x:Key="Cancel">Отмена</system:String>
+    <system:String x:Key="Save">Сохранить</system:String>
+    <system:String x:Key="SaveChanges">Сохранить изменения</system:String>
+    <system:String x:Key="CreateProfile">Создать профиль</system:String>
     
     <!--.................... Edit Profile Tab End .......................... -->
 
@@ -236,165 +236,165 @@
     <!--.................... Hotkeys Tab Begin .......................... -->
 
     <!-- CMU Management Group-->
-    <system:String x:Key="CmuGameExe">Game Exe:</system:String>
-    <system:String x:Key="AutoPatch">Enable auto patching:</system:String>
-    <system:String x:Key="PatchDelay">Patch delay:</system:String>
-    <system:String x:Key="AutoUpdateDriver">Update driver profile:</system:String>
-    <system:String x:Key="CmuSettings">Compatibility Mode Unleashed Settings:</system:String>
-    <system:String x:Key="CmuWarning" xml:space="preserve">Show CMU warning</system:String>
-    <system:String x:Key="CmuWarningDialog" xml:space="preserve">Warning: Although not being a cheat tool CMU might be detected as such in online games. As a result your game account would be banned.
+    <system:String x:Key="CmuGameExe">Exe игры:</system:String>
+    <system:String x:Key="AutoPatch">Включить автоматическое исправление:</system:String>
+    <system:String x:Key="PatchDelay">Задержка патча:</system:String>
+    <system:String x:Key="AutoUpdateDriver">Обновить профиль драйвера:</system:String>
+    <system:String x:Key="CmuSettings">Настройки режима совместимости без ограничений:</system:String>
+    <system:String x:Key="CmuWarning" xml:space="preserve">Показать предупреждение CMU</system:String>
+    <system:String x:Key="CmuWarningDialog" xml:space="preserve">Предупреждение: CMU не является читерским инструментом, но может быть обнаружен как таковой в онлайн-играх. В результате ваш игровой аккаунт будет заблокирован.
 
-Therefore it's recommended to use CMU for singleplayer or offline games only.</system:String>
+Поэтому рекомендуется использовать CMU только для одиночных или автономных игр.</system:String>
 
     <TextBlock x:Key="CmuWarningToolTip" TextWrapping="Wrap" Width="300">
-        Warns the user that using CMU in online games might lead to a ban of the game account.
+        Предупреждает пользователя, что использование CMU в онлайн-играх может привести к блокировке игрового аккаунта.
     </TextBlock>
 
     <TextBlock x:Key="AutoUpdateDriverToolTip" TextWrapping="Wrap" Width="300">
-        This option controls whether to modify the driver profile of the game.<LineBreak/><LineBreak/>
-        If you have installed 3dmigoto this option is automatically disabled because 3dmigoto will take care of setting the driver profile for Compatibility Mode.<LineBreak/><LineBreak/>
-        When 3dmigoto is not installed CMU is used instead for adjusting the driver profile.
+        Эта опция определяет, нужно ли изменять профиль драйвера в игре.<LineBreak/><LineBreak/>
+        Если вы установили 3dmigoto, эта опция автоматически отключается, потому что 3dmigoto позаботится о настройке профиля драйвера для режима совместимости.<LineBreak/><LineBreak/>
+        Если 3dmigoto не установлен, вместо настройки профиля драйвера используется CMU.
     </TextBlock>
 
     <TextBlock x:Key="AutoPatchToolTip" TextWrapping="Wrap" Width="300">
-        Controls whether to enable CMU automatically when starting a game. The activation of CMU is done after a defined period you can adjust in the option below.<LineBreak/><LineBreak/>
-        CMU then patches the Nvidia driver and allows the CMU hotkeys to work in order increase the 3D depth beyond allowed values by pressing F11 (default key binding).<LineBreak/><LineBreak/>       
-        If you leave this option disabled you have to press CTRL + SHIFT + T ingame for enabling CMU manually.
+        Управляет включением CMU автоматически при запуске игры. Активация CMU выполняется через определенный период, который вы можете настроить в параметрах ниже.<LineBreak/><LineBreak/>
+        Затем CMU исправляет драйвер Nvidia и позволяет горячим клавишам CMU работать, чтобы увеличить глубину 3D за пределы допустимых значений, нажав F11 (привязка клавиш по умолчанию).<LineBreak/><LineBreak/>       
+        Если вы оставите эту опцию отключенной, вам нужно нажать CTRL + SHIFT + T в игре для включения CMU вручную.
     </TextBlock>
 
     <TextBlock x:Key="PatchDelayToolTip" TextWrapping="Wrap" Width="300">
-        Defines the period for automatically enabling CMU after the game was started.
+        Определяет период автоматического включения CMU после запуска игры.
     </TextBlock>
 
     <TextBlock x:Key="CmuGameExeToolTip" TextWrapping="Wrap" Width="300">
-        Name of the executable used to start the game.<LineBreak/><LineBreak/>
-        This is automatically set and should only be changed if required.
+        Имя исполняемого файла, используемого для запуска игры.<LineBreak/><LineBreak/>
+        Он устанавливается автоматически и может быть изменен только при необходимости.
     </TextBlock>
 
     <TextBlock x:Key="CmuConvergenceToolTip" TextWrapping="Wrap" Width="300">
-       Enter the convergence value you want to set when the hotkey is pressed.<LineBreak/><LineBreak/>
-       Valid values range from 0.2 and 1.0. All numbers higher or lower than this are clamped by the Nvidia driver.
+       Введите значение сходимости, которое вы хотите установить при нажатии горячей клавиши.<LineBreak/><LineBreak/>
+       Допустимые значения от 0,2 до 1,0. Все числа выше или ниже этого фиксируются драйвером Nvidia.
     </TextBlock>
 
     <TextBlock x:Key="CmuSeparationToolTip" TextWrapping="Wrap" Width="300">
-        Enter a factor to be multiplied with the current 3D depth.<LineBreak/><LineBreak/>
-        In other words with this factor you can exceed the very limited 3D depth of Compatibility Mode to improve the 3D effect.<LineBreak/><LineBreak/>
-        Example: if you choose a value of 2.2 this means that your maximum 3D depth is increased by 220%.<LineBreak/><LineBreak/>
-        You can also use the factor to lower the 3D depth (e.g. with a value of 0.2).<LineBreak/><LineBreak/>
-        This is especially useful in ego shooters where you want to aim by holding the right mouse button. A low 3D depth in this situation makes aiming more comfortable.
+        Введите коэффициент, который нужно умножить на текущую глубину 3D.<LineBreak/><LineBreak/>
+        Другими словами, с этим коэффициентом вы можете превысить очень ограниченную глубину 3D в режиме совместимости, чтобы улучшить 3D-эффект.<LineBreak/><LineBreak/>
+        Пример: если вы выбираете значение 2.2, это означает, что ваша максимальная глубина 3D увеличивается на 220%.<LineBreak/><LineBreak/>
+        Вы также можете использовать коэффициент для уменьшения глубины 3D (например, со значением 0,2).<LineBreak/><LineBreak/>
+        Это особенно полезно в шутерах от 1-го лица, когда вы хотите прицелиться, удерживая правую кнопку мыши. Малая глубина 3D в этой ситуации делает прицеливание более комфортным.
     </TextBlock>
 
-    <system:String x:Key="FixInfo">Fix Info:</system:String>
-    <system:String x:Key="Game">Game:</system:String>
-    <system:String x:Key="GameEngine">Game Engine:</system:String>
-    <system:String x:Key="FixType">Fix Type:</system:String>
-    <system:String x:Key="WrapperVersion">Wrapper Version:</system:String>
-    <system:String x:Key="IniPath">Ini Path:</system:String>
-    <system:String x:Key="IniPath02">Ini Path 2:</system:String>
-    <system:String x:Key="CreateIni">Create Ini</system:String>
-    <system:String x:Key="ResetIniToDefault">Reset Ini to Default:</system:String>
-    <system:String x:Key="DownloadDefaultIni">Download Default Ini</system:String>
-    <system:String x:Key="ManageHotkeys">Manage Hotkeys:</system:String>
-    <system:String x:Key="NoIniProvided">No ini provided by this fix</system:String>
-    <system:String x:Key="ParseError">Sorry, ini file could not be parsed"</system:String>
-    <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">Sorry, could not determine Helix Wrapper Version. &#x0d;Please click on 'Download Default Ini' to get this information</system:String>
-    <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Old Version</system:String>
-    <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Old Version</system:String>
-    <system:String x:Key="HotkeysNotSupportedMigoto">Sorry, hotkey editing not supported with this version of 3dmigoto.</system:String>
-    <system:String x:Key="HotkeysNotSupportedOpenGL">Sorry, hotkey editing not supported with this version of OpenGl Wrapper.</system:String>
+    <system:String x:Key="FixInfo">Fix Инфо:</system:String>
+    <system:String x:Key="Game">Игра:</system:String>
+    <system:String x:Key="GameEngine">Игровой движок:</system:String>
+    <system:String x:Key="FixType">Тип исправления:</system:String>
+    <system:String x:Key="WrapperVersion">Версия оболочки:</system:String>
+    <system:String x:Key="IniPath">Путь Ini:</system:String>
+    <system:String x:Key="IniPath02">Путь Ini 2:</system:String>
+    <system:String x:Key="CreateIni">Создать Ini</system:String>
+    <system:String x:Key="ResetIniToDefault">Сбросить Ini по умолчанию:</system:String>
+    <system:String x:Key="DownloadDefaultIni">Загрузить файл Ini по умолчанию</system:String>
+    <system:String x:Key="ManageHotkeys">Управление горячими клавишами:</system:String>
+    <system:String x:Key="NoIniProvided">Это исправление не содержит ini</system:String>
+    <system:String x:Key="ParseError">К сожалению, ini-файл не может быть проанализирован"</system:String>
+    <system:String x:Key="HelixVersionNotDetected" xml:space="preserve">К сожалению, не удалось определить версию Helix Wrapper. &#x0d;Пожалуйста, нажмите «Загрузить файл Ini по умолчанию», чтобы получить эту информацию.</system:String>
+    <system:String x:Key="MigotoOld">3dmigoto (DirectX 11) - Старая версия</system:String>
+    <system:String x:Key="HelixModOld">Helix Mod (DirectX 9) - Старая версия</system:String>
+    <system:String x:Key="HotkeysNotSupportedMigoto">К сожалению, редактирование горячих клавиш не поддерживается в этой версии 3dmigoto.</system:String>
+    <system:String x:Key="HotkeysNotSupportedOpenGL">К сожалению, редактирование горячих клавиш не поддерживается в этой версии OpenGl Wrapper.</system:String>
 
     <!-- Hotkey Management Group -->
-    <system:String x:Key="HotkeyManagement">Hotkey Management:</system:String>
-    <system:String x:Key="NewHotkey">New Hotkey</system:String>
-    <system:String x:Key="NewHotkeyToolTip">Creates a new hotkey. Don't forget to assign a key.</system:String>
-    <system:String x:Key="DeleteHotkey"> Remove Key</system:String>
-    <system:String x:Key="DeleteHotkeyToolTip">Removes hotkey with all corresponding 3D presets.</system:String>
-    <system:String x:Key="SelectedHotkey">Selected Hotkey:</system:String>
-    <system:String x:Key="SelectedHotkeyToolTip">Selected Hotkey for editing.</system:String>
-    <system:String x:Key="EditKeyBinding">Edit Key Binding:</system:String>
-    <system:String x:Key="KeyType">Key Type:</system:String>
-    <system:String x:Key="PressKeyToolTip">Press a key to change key binding.</system:String>
-    <system:String x:Key="ChooseInputDeviceToolTip">Choose Input Device for Key Binding.</system:String>
-    <system:String x:Key="Description">Description:</system:String>
-    <system:String x:Key="DescriptionToolTip">Short summary about the purpose of the hotkey.</system:String>
-    <system:String x:Key="ResetIniToolTip">Resets the ini to the original state.</system:String>
+    <system:String x:Key="HotkeyManagement">Управление горячими клавишами:</system:String>
+    <system:String x:Key="NewHotkey">Новая горячая клавиша</system:String>
+    <system:String x:Key="NewHotkeyToolTip">Создает новую горячую клавишу. Не забудьте назначить клавишу.</system:String>
+    <system:String x:Key="DeleteHotkey"> Удалить клавишу</system:String>
+    <system:String x:Key="DeleteHotkeyToolTip">Удаляет горячую клавишу со всеми соответствующими предустановками 3D.</system:String>
+    <system:String x:Key="SelectedHotkey">Выбранная горячая клавиша:</system:String>
+    <system:String x:Key="SelectedHotkeyToolTip">Выбранная горячая клавиша для редактирования.</system:String>
+    <system:String x:Key="EditKeyBinding">Изменить привязку клавиш:</system:String>
+    <system:String x:Key="KeyType">Тип:</system:String>
+    <system:String x:Key="PressKeyToolTip">Нажмите клавишу, чтобы изменить привязку клавиш.</system:String>
+    <system:String x:Key="ChooseInputDeviceToolTip">Выберите устройство ввода для привязки клавиш.</system:String>
+    <system:String x:Key="Description">Описание:</system:String>
+    <system:String x:Key="DescriptionToolTip">Краткое описание назначения горячей клавиши.</system:String>
+    <system:String x:Key="ResetIniToolTip">Сбрасывает ini в исходное состояние.</system:String>
     
     <!-- Preset Management Group -->
-    <system:String x:Key="PresetManagement">Preset Management:</system:String>
-    <system:String x:Key="NewPreset">New Preset</system:String>
-    <system:String x:Key="NewPresetToolTip">Creates a new 3D preset.</system:String>
-    <system:String x:Key="DefaultPreset">Default Preset:</system:String>
-    <system:String x:Key="Delay">Delay:</system:String>
-    <system:String x:Key="ReleaseDelay">Release Delay:</system:String>
-    <system:String x:Key="Transition">Transition:</system:String>
-    <system:String x:Key="ReleaseTransition">Release Transition:</system:String>
+    <system:String x:Key="PresetManagement">Управление предустановками:</system:String>
+    <system:String x:Key="NewPreset">Новый пресет</system:String>
+    <system:String x:Key="NewPresetToolTip">Создает новый 3D пресет.</system:String>
+    <system:String x:Key="DefaultPreset">Пресет по умолчанию:</system:String>
+    <system:String x:Key="Delay">Задержка:</system:String>
+    <system:String x:Key="ReleaseDelay">Выпуск задержки:</system:String>
+    <system:String x:Key="Transition">Переход:</system:String>
+    <system:String x:Key="ReleaseTransition">Выпуск перехода:</system:String>
     
     <!-- Preset Group -->   
-    <system:String x:Key="UseStereoSettings">Use Stereo Settings</system:String>
-    <system:String x:Key="UseStereoSettingsToolTip">Enable this to allow this preset to change the separation and / or convergence settings in game.</system:String>
+    <system:String x:Key="UseStereoSettings">Использовать настройки стерео</system:String>
+    <system:String x:Key="UseStereoSettingsToolTip">Включите этот параметр, чтобы этот пресет изменял настройки разделения и/или конвергенции в игре.</system:String>
     
-    <system:String x:Key="SaveStereoSettings">Save Stereo Settings in Game with F7:</system:String>
-    <system:String x:Key="SaveStereoSettingsToolTip">Enable this to allow presets to be changed while playing. Make sure you select the preset in game by pressing the hotkey button, change 3D Depth / Convergence with CTRL + F3 - F6 to your liking and press F7 to save.</system:String>
+    <system:String x:Key="SaveStereoSettings">Сохранить настройки стерео в игре с F7:</system:String>
+    <system:String x:Key="SaveStereoSettingsToolTip">Включите это, чтобы разрешить изменение предустановок во время игры. Убедитесь, что вы выбрали предустановку в игре, нажав кнопку горячей клавиши, измените 3D-глубину / конвергенцию с помощью CTRL + F3 - F6 по своему вкусу и нажмите F7 для сохранения.</system:String>
 
-    <system:String x:Key="chkStereoSeparationToolTip">Enable this to set the 3D separation. Unchecking will remove the corresponding entry from the ini file.</system:String>
-    <system:String x:Key="sliderStereoSeparationToolTip">Set 3D separation in percent.</system:String>
+    <system:String x:Key="chkStereoSeparationToolTip">Включите это, чтобы установить 3D-разделение. При снятии флажка соответствующая запись будет удалена из ini файла.</system:String>
+    <system:String x:Key="sliderStereoSeparationToolTip">Установить 3D-разделение в процентах.</system:String>
     
-    <system:String x:Key="Convergence">Convergence:</system:String>
-    <system:String x:Key="chkConvergenceToolTip">"Enable this to set the convergence. Unchecking will remove the corresponding entry from the ini file."</system:String>
-    <system:String x:Key="tbConvergenceToolTip">Set the Convergence as a floating-point number.</system:String>
+    <system:String x:Key="Convergence">Конвергенция:</system:String>
+    <system:String x:Key="chkConvergenceToolTip">"Включите это, чтобы установить сходимость. При снятии флажка соответствующая запись будет удалена из ini файла."</system:String>
+    <system:String x:Key="tbConvergenceToolTip">Установите сходимость как число с плавающей запятой.</system:String>
 
-    <system:String x:Key="chkShaderConstToolTip">Enable this to define a shader constant and set its value. Unchecking will remove the corresponding entry from the ini file</system:String>
-    <system:String x:Key="chbShaderConstToolTip">Choose a constant to be passed to the shader.</system:String>
-    <system:String x:Key="tbShaderConstToolTip">Set the constant value as a floating-point number.</system:String>
-    <system:String x:Key="NewConstant">New Constant</system:String>
-    <system:String x:Key="NewConstantToolTip">Creates a new shader constant.</system:String>
-    <system:String x:Key="DefaultConstToolTip">Type in a floating-point number</system:String>
+    <system:String x:Key="chkShaderConstToolTip">Включите это, чтобы определить константу шейдера и установить ее значение. При снятии флажка соответствующая запись будет удалена из ini файла.</system:String>
+    <system:String x:Key="chbShaderConstToolTip">Выберите константу для передачи шейдеру.</system:String>
+    <system:String x:Key="tbShaderConstToolTip">Установите постоянное значение как число с плавающей запятой.</system:String>
+    <system:String x:Key="NewConstant">Новая константа</system:String>
+    <system:String x:Key="NewConstantToolTip">Создает новую константу шейдера.</system:String>
+    <system:String x:Key="DefaultConstToolTip">Введите число с плавающей запятой</system:String>
 
-    <system:String x:Key="RemovePresetToolTip">Removes the entire preset from the ini file.</system:String>
+    <system:String x:Key="RemovePresetToolTip">Удаляет весь пресет из ini файла.</system:String>
 
     <!-- General Ini Settings group -->
-    <system:String x:Key="GeneralIniSettings">General Ini Settings:</system:String>
-    <system:String x:Key="StereoOverlay">Stereo Overlay:</system:String>
-    <system:String x:Key="EnableStereoOverlay">Stereo Overlay / Hunting Mode:</system:String>
-    <system:String x:Key="ShowHideOverlay">Show / Hide Stereo Overlay:</system:String>
-    <system:String x:Key="ShowHideOverlayToolTip">Hotkey for hiding the overlay. Note: this will not disable hunting mode.</system:String>
-    <system:String x:Key="ReloadIniFile">Reload Ini File in Game:</system:String>
-    <system:String x:Key="ReloadIniFileToolTip">Reloads the ini while playing and applies hotkey / preset changes.</system:String>
-    <system:String x:Key="DefaultValuesConstants">Default Values for Shader Constants:</system:String>
-    <system:String x:Key="EnableAlternative3dMode">Enable alternative 3D format:</system:String>
-    <system:String x:Key="EnableAlternative3dModeToolTip">Choose an alternative 3D Format for use with 3D TVs and projectors.</system:String>
-    <system:String x:Key="EnableSoftwareMouse">Enable Software Mouse Cursor</system:String>
-    <system:String x:Key="Constant">Constant</system:String>
-    <system:String x:Key="ResolutionAndRefreshRates">Resolution and refresh rates:</system:String>
-    <system:String x:Key="EnableUpscaling">Enable upscaling:</system:String>
-    <system:String x:Key="UpscalingMode">Upscaling mode:</system:String>
-    <system:String x:Key="OverrideScreenWidth">Override screen width:</system:String>
-    <system:String x:Key="OverrideScreenHeight">Override screen height:</system:String>
-    <system:String x:Key="OverrideScreenToolTip">Force override the screen resolution.</system:String>
-    <system:String x:Key="UpscalingScreenWidth">Target screen width for upscaling:</system:String>
-    <system:String x:Key="UpscalingScreenHeight">Target screen height for upscaling:</system:String>
-    <system:String x:Key="OverrideRefrehRate">Override refresh rate:</system:String>
-    <system:String x:Key="OverrideRefrehRateToolTip">Overrides refresh rate set by game.</system:String>
-    <system:String x:Key="FilterRefreshRates">Filter refresh rates</system:String>
-    <system:String x:Key="ForceFullscreen">Force fullscreen on game start:</system:String>
-    <system:String x:Key="ForceFullscreenOnKeyPress">Force fullscreen on key press:</system:String>
-    <system:String x:Key="ToggleFullscreen">Toggle fullscreen:</system:String>
-    <system:String x:Key="ForcedFullscreen">Force fullscreen</system:String>
-    <system:String x:Key="NormalFullscreen">Normal fullscreen</system:String>
-    <system:String x:Key="SoftDisabled">Soft disabled</system:String>
-    <system:String x:Key="TypeInIntegerToolTip">Type in an integer value.</system:String>
-    <system:String x:Key="TypeInCommaSeparatedListToolTip">Type in a comma separated list of refresh rates.</system:String>
+    <system:String x:Key="GeneralIniSettings">Общие настройки ini:</system:String>
+    <system:String x:Key="StereoOverlay">Стерео наложение:</system:String>
+    <system:String x:Key="EnableStereoOverlay">Стерео наложение / режим охоты:</system:String>
+    <system:String x:Key="ShowHideOverlay">Показать / скрыть стерео наложение:</system:String>
+    <system:String x:Key="ShowHideOverlayToolTip">Горячая клавиша для скрытия оверлея. Примечание: это не отключит режим охоты.</system:String>
+    <system:String x:Key="ReloadIniFile">Перезагрузить Ini-файл в игре:</system:String>
+    <system:String x:Key="ReloadIniFileToolTip">Перезагружает ini во время игры и применяет изменения горячих клавиш / предустановок.</system:String>
+    <system:String x:Key="DefaultValuesConstants">Значения по умолчанию для констант шейдера:</system:String>
+    <system:String x:Key="EnableAlternative3dMode">Включить альтернативный формат 3D:</system:String>
+    <system:String x:Key="EnableAlternative3dModeToolTip">Выберите альтернативный формат 3D для использования с 3D-телевизорами и проекторами.</system:String>
+    <system:String x:Key="EnableSoftwareMouse">Включить программный курсор мыши</system:String>
+    <system:String x:Key="Constant">Константа</system:String>
+    <system:String x:Key="ResolutionAndRefreshRates">Разрешение и частота обновления:</system:String>
+    <system:String x:Key="EnableUpscaling">Включить масштабирование:</system:String>
+    <system:String x:Key="UpscalingMode">Режим масштабирования:</system:String>
+    <system:String x:Key="OverrideScreenWidth">Изменить ширину экрана:</system:String>
+    <system:String x:Key="OverrideScreenHeight">Изменить высоту экрана:</system:String>
+    <system:String x:Key="OverrideScreenToolTip">Принудительно переопределить разрешение экрана.</system:String>
+    <system:String x:Key="UpscalingScreenWidth">Целевая ширина экрана для масштабирования:</system:String>
+    <system:String x:Key="UpscalingScreenHeight">Целевая высота экрана для масштабирования:</system:String>
+    <system:String x:Key="OverrideRefrehRate">Переопределить частоту обновления:</system:String>
+    <system:String x:Key="OverrideRefrehRateToolTip">Заменяет частоту обновления, установленную игрой.</system:String>
+    <system:String x:Key="FilterRefreshRates">Частота обновления фильтра</system:String>
+    <system:String x:Key="ForceFullscreen">Принудительно использовать полноэкранный режим при запуске игры:</system:String>
+    <system:String x:Key="ForceFullscreenOnKeyPress">Полноэкранный режим при нажатии клавиши:</system:String>
+    <system:String x:Key="ToggleFullscreen">Переключить на полный экран:</system:String>
+    <system:String x:Key="ForcedFullscreen">Принудительный полноэкранный режим</system:String>
+    <system:String x:Key="NormalFullscreen">Нормальный полноэкранный режим</system:String>
+    <system:String x:Key="SoftDisabled">Мягкое отключение</system:String>
+    <system:String x:Key="TypeInIntegerToolTip">Введите целочисленное значение.</system:String>
+    <system:String x:Key="TypeInCommaSeparatedListToolTip">Введите через запятую список частот обновления.</system:String>
 
     <!-- Driver Profile Settings group -->
-    <system:String x:Key="DriverProfileSettings">Driver Profile Settings:</system:String>
-    <system:String x:Key="Stereo3DSettings">Stereo 3D Settings:</system:String>
-    <system:String x:Key="CompatibilityModeSettings">3D Compatibility Mode Settings:</system:String>
-    <system:String x:Key="VisionReady">3D Vision Ready</system:String>
-    <system:String x:Key="VisionReadyToolTip">Changes the rating of the stereoscopic quality.</system:String>
-    <system:String x:Key="Excellent">Excellent</system:String>
-    <system:String x:Key="Good">Good</system:String>
-    <system:String x:Key="Fair">Fair</system:String>
-    <system:String x:Key="Not Recommended">Not Recommended</system:String>
+    <system:String x:Key="DriverProfileSettings">Настройки профиля драйвера:</system:String>
+    <system:String x:Key="Stereo3DSettings">Настройки стерео 3D:</system:String>
+    <system:String x:Key="CompatibilityModeSettings">Настройки режима совместимости 3D:</system:String>
+    <system:String x:Key="VisionReady">Готовность к 3D Vision</system:String>
+    <system:String x:Key="VisionReadyToolTip">Изменяет рейтинг стереоскопического качества.</system:String>
+    <system:String x:Key="Excellent">Превосходно</system:String>
+    <system:String x:Key="Good">Хорошо</system:String>
+    <system:String x:Key="Fair">Посредственный</system:String>
+    <system:String x:Key="Not Recommended">Не рекомендуется</system:String>
     
     <!--.................... Hotkeys Tab End .......................... -->
 
