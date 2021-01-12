@@ -401,103 +401,103 @@
 
     <!--.................... Drivers View Begin ....................-->
 
-    <system:String x:Key="Drivers">Drivers</system:String>
-    <system:String x:Key="Stereo3dDriver">STEREOSCOPIC 3D DRIVER:</system:String>
-    <system:String x:Key="3dDriver">3D driver:</system:String>
-    <system:String x:Key="DriverVersion">Driver version:</system:String>
-    <system:String x:Key="DriverIntegrity">Driver integrity:</system:String>
-    <system:String x:Key="IrEmitterDriver">IR emitter driver:</system:String>
-    <system:String x:Key="Stereo3d">Stereo 3D:</system:String>
-    <system:String x:Key="3dSetup">3D setup:</system:String>
-    <system:String x:Key="Details">Details:</system:String>
+    <system:String x:Key="Drivers">Драйверы</system:String>
+    <system:String x:Key="Stereo3dDriver">СТЕРЕОСКОПИЧЕСКИЙ 3D ДРАЙВЕР:</system:String>
+    <system:String x:Key="3dDriver">3D драйвер:</system:String>
+    <system:String x:Key="DriverVersion">Версия драйвера:</system:String>
+    <system:String x:Key="DriverIntegrity">Целостность драйвера:</system:String>
+    <system:String x:Key="IrEmitterDriver">Драйвер ИК-излучателя:</system:String>
+    <system:String x:Key="Stereo3d">Стерео 3D:</system:String>
+    <system:String x:Key="3dSetup">Настройка 3D:</system:String>
+    <system:String x:Key="Details">Детали:</system:String>
 
-    <system:String x:Key="GraphicsDriver">VIDEO DRIVER:</system:String>
-    <system:String x:Key="GeforceDriver">GeForce driver:</system:String>
-    <system:String x:Key="GeforceDriverType">Driver type:</system:String>
+    <system:String x:Key="GraphicsDriver">ВИДЕО ДРАЙВЕР:</system:String>
+    <system:String x:Key="GeforceDriver">GeForce драйвер:</system:String>
+    <system:String x:Key="GeforceDriverType">Тип драйвера:</system:String>
 
-    <system:String x:Key="VirtualReality">VIRTUAL REALITY:</system:String>
+    <system:String x:Key="VirtualReality">ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ:</system:String>
     <system:String x:Key="SteamVR">SteamVR:</system:String>
-    <system:String x:Key="WmrCompatibility">WMR crash fix:</system:String>
-    <system:String x:Key="Installed">Installed</system:String>
-    <system:String x:Key="NotInstalled">Not installed</system:String>
-    <system:String x:Key="Enabled">Enabled</system:String>
-    <system:String x:Key="Disabled">Disabled</system:String>
-    <system:String x:Key="InitFailed">Initialization failed</system:String>
-    <system:String x:Key="VrHealthOk">All components for VR installed and the VR headset connected to computer.</system:String>
-    <system:String x:Key="VrHealthOkDetails">SteamVR was successfully launched. Your system is VR ready.</system:String>
-    <system:String x:Key="SteamVrNotInstalled">Steam VR is not installed.</system:String>
-    <system:String x:Key="SteamVrNotInstalledDetails">Please install SteamVR to play in VR mode.</system:String>
-    <system:String x:Key="SteamVrInitializationFailed">Steam VR failed to initialize.</system:String>
-    <system:String x:Key="SteamVrInitializationFailedDetails">Please check your current SteamVR installation and restart it if necessary.</system:String>
-    <system:String x:Key="VrHeadsetNotConnected">VR headset is not connected.</system:String>
-    <system:String x:Key="VrHeadsetNotConnectedDetails">Please connect your VR headset to your computer and restart SteamVR.</system:String>
-    <system:String x:Key="WmrFixNotInstalled">Crash fix for Windows Mixed Reality is not installed.</system:String>
-    <system:String x:Key="WmrFixNotInstalledDetails">Please install the crash fix for using stereo 3D and VR at the same time.</system:String>
-    <system:String x:Key="FramerateLimiterDisabled">Framerate limiter for VR games is disabled.</system:String>
-    <system:String x:Key="FramerateLimiterDisabledDetails">Please enable the framerate limiter in VR display profile to avoid stuttering in games.</system:String>
-    <system:String x:Key="FramerateLimiterSetWrong">Framerate limit exceeds maximum possible refresh rate of your VR headset.</system:String>
-    <system:String x:Key="FramerateLimiterSetWrongDetails">Please reduce the framerate limit below the maximum possible refresh rate of your VR headset in order to avoid stuttering in games.</system:String>
-    <system:String x:Key="InstallSteamVr">Install SteamVR</system:String>
-    <system:String x:Key="InstallWmrCrashFix">Install WMR crash fix</system:String>
-    <system:String x:Key="EnableFramerateLimiter">Enable framerate limit</system:String>
-    <system:String x:Key="SetFramerateLimiter">Set framerate limit</system:String>
-    <system:String x:Key="GameStartFailedVrMissing" xml:space="preserve">Error: Failed to launch game in VR mode as one or more VR components are missing or haven't been set up. &#x0d;&#x0d;Please check VR state and install any components required.</system:String>
-    <system:String x:Key="Loading">Loading... Please wait.</system:String>
-    <system:String x:Key="LaptopMonitor">Laptop monitor</system:String>
+    <system:String x:Key="WmrCompatibility">Исправление сбоя WMR:</system:String>
+    <system:String x:Key="Installed">Установлено</system:String>
+    <system:String x:Key="NotInstalled">Не установлено</system:String>
+    <system:String x:Key="Enabled">Включено</system:String>
+    <system:String x:Key="Disabled">Отключено</system:String>
+    <system:String x:Key="InitFailed">Ошибка инициализации</system:String>
+    <system:String x:Key="VrHealthOk">Все компоненты для VR установлены, а гарнитура VR подключена к компьютеру.</system:String>
+    <system:String x:Key="VrHealthOkDetails">SteamVR успешно запущен. Ваша система готова к VR.</system:String>
+    <system:String x:Key="SteamVrNotInstalled">Steam VR не установлен.</system:String>
+    <system:String x:Key="SteamVrNotInstalledDetails">Пожалуйста, установите SteamVR, чтобы играть в режиме VR.</system:String>
+    <system:String x:Key="SteamVrInitializationFailed">Не удалось инициализировать Steam VR.</system:String>
+    <system:String x:Key="SteamVrInitializationFailedDetails">Проверьте текущую установку SteamVR и при необходимости перезапустите ее.</system:String>
+    <system:String x:Key="VrHeadsetNotConnected">Гарнитура VR не подключена.</system:String>
+    <system:String x:Key="VrHeadsetNotConnectedDetails">Подключите гарнитуру VR к компьютеру и перезапустите SteamVR.</system:String>
+    <system:String x:Key="WmrFixNotInstalled">Исправление сбоев для Windows Mixed Reality не установлено.</system:String>
+    <system:String x:Key="WmrFixNotInstalledDetails">Пожалуйста, установите исправление сбоя для одновременного использования стерео 3D и VR.</system:String>
+    <system:String x:Key="FramerateLimiterDisabled">Ограничитель частоты кадров для VR-игр отключен.</system:String>
+    <system:String x:Key="FramerateLimiterDisabledDetails">Пожалуйста, включите ограничитель частоты кадров в профиле отображения VR, чтобы избежать заикания в играх.</system:String>
+    <system:String x:Key="FramerateLimiterSetWrong">Предел частоты кадров превышает максимально возможную частоту обновления вашей VR-гарнитуры.</system:String>
+    <system:String x:Key="FramerateLimiterSetWrongDetails">Уменьшите ограничение частоты кадров ниже максимально возможной частоты обновления гарнитуры VR, чтобы избежать заикания в играх.</system:String>
+    <system:String x:Key="InstallSteamVr">Установить SteamVR</system:String>
+    <system:String x:Key="InstallWmrCrashFix">Установить исправление сбоя WMR</system:String>
+    <system:String x:Key="EnableFramerateLimiter">Включить ограничение частоты кадров</system:String>
+    <system:String x:Key="SetFramerateLimiter">Установить ограничение частоты кадров</system:String>
+    <system:String x:Key="GameStartFailedVrMissing" xml:space="preserve">Ошибка: не удалось запустить игру в режиме VR, поскольку один или несколько компонентов VR отсутствуют или не были настроены. &#x0d;&#x0d;Пожалуйста, проверьте состояние VR и установите все необходимые компоненты.</system:String>
+    <system:String x:Key="Loading">Загрузка... пожалуйста подождите.</system:String>
+    <system:String x:Key="LaptopMonitor">Монитор ноутбука</system:String>
 
-    <system:String x:Key="DetectedHardware">DETECTED HARDWARE:</system:String>
-    <system:String x:Key="ComputerType">Computer type:</system:String>
-    <system:String x:Key="GraphicsCard">Graphics card:</system:String>
-    <system:String x:Key="PrimaryDisplay">Primary display:</system:String>
-    <system:String x:Key="IrEmitter">IR emitter:</system:String>
+    <system:String x:Key="DetectedHardware">ОБНАРУЖЕННОЕ ОБОРУДОВАНИЕ:</system:String>
+    <system:String x:Key="ComputerType">Тип компьютера:</system:String>
+    <system:String x:Key="GraphicsCard">Видеокарта:</system:String>
+    <system:String x:Key="PrimaryDisplay">Основной дисплей:</system:String>
+    <system:String x:Key="IrEmitter">ИК-излучатель:</system:String>
 
-    <system:String x:Key="Connected">Connected</system:String>
-    <system:String x:Key="NotConnected">Not connected</system:String>
-    <system:String x:Key="DllVersionInvalid">DLL version invalid</system:String>
-    <system:String x:Key="DchStereoFileMissing">DCH stereo file missing</system:String>
-    <system:String x:Key="NoNvidiaCardInstalled">No Nvidia card installed</system:String>
-    <system:String x:Key="Completed">Completed</system:String>
-    <system:String x:Key="NotCompleted">Incomplete</system:String>
+    <system:String x:Key="Connected">Подключен</system:String>
+    <system:String x:Key="NotConnected">Не подключен</system:String>
+    <system:String x:Key="DllVersionInvalid">Версия DLL недействительна</system:String>
+    <system:String x:Key="DchStereoFileMissing">Отсутствует стерео файл DCH</system:String>
+    <system:String x:Key="NoNvidiaCardInstalled">Карта Nvidia не установлена</system:String>
+    <system:String x:Key="Completed">Завершено</system:String>
+    <system:String x:Key="NotCompleted">Не завершено</system:String>
 
-    <system:String x:Key="IrEmitterDriverNotInstalled">IR emitter driver is not installed.</system:String>
-    <system:String x:Key="IrEmitterDriverNotInstalledDetails">Please install the driver to make your 3D Vision glasses work with steresocopic 3D.</system:String>
+    <system:String x:Key="IrEmitterDriverNotInstalled">Драйвер ИК-излучателя не установлен.</system:String>
+    <system:String x:Key="IrEmitterDriverNotInstalledDetails">Установите драйвер, чтобы ваши очки 3D Vision работали со стереоскопическим 3D.</system:String>
     
-    <system:String x:Key="GraphicsCardNotSupported">Stereoscopic 3D is not supported on your graphics gard.</system:String>
-    <system:String x:Key="GraphicsCardNotSupportedDetails">A Nvidia graphics card is required to play games in steresocopic 3D. AMD and Intel graphics cards are not supported.</system:String>
+    <system:String x:Key="GraphicsCardNotSupported">Ваша видеокарта не поддерживает стереоскопическое 3D.</system:String>
+    <system:String x:Key="GraphicsCardNotSupportedDetails">Для игр в стереоскопическом 3D требуется видеокарта Nvidia. Видеокарты AMD и Intel не поддерживаются.</system:String>
 
-    <system:String x:Key="GeforceDriverNotInstalled">Video driver is not installed.</system:String>
-    <system:String x:Key="GeforceDriverNotInstalledDetails">Please install the Nvidia GeForce graphics driver to play games in stereosopic 3D now.</system:String>
+    <system:String x:Key="GeforceDriverNotInstalled">Видеодрайвер не установлен.</system:String>
+    <system:String x:Key="GeforceDriverNotInstalledDetails">Пожалуйста, установите графический драйвер Nvidia GeForce, чтобы играть в игры в стереоскопическом 3D прямо сейчас.</system:String>
 
-    <system:String x:Key="NativeLaptopMonitorUsed">Stereoscopic 3D is not supported for laptop monitors.</system:String>
-    <system:String x:Key="NativeLaptopMonitorUsedDetails">Please connect an external monitor and set this one as your primary monitor.</system:String>
+    <system:String x:Key="NativeLaptopMonitorUsed">Стереоскопическое 3D не поддерживается для мониторов ноутбуков.</system:String>
+    <system:String x:Key="NativeLaptopMonitorUsedDetails">Подключите внешний монитор и установите его в качестве основного монитора.</system:String>
     
-    <system:String x:Key="StereoDriverNotInstalled">3D driver is not installed.</system:String>
-    <system:String x:Key="StereoDriverNotInstalledDetails">Please install the driver to play games in stereoscopic 3D now.</system:String>
+    <system:String x:Key="StereoDriverNotInstalled">3D драйвер не установлен.</system:String>
+    <system:String x:Key="StereoDriverNotInstalledDetails">Пожалуйста, установите драйвер, чтобы играть в игры в стереоскопическом 3D прямо сейчас.</system:String>
     
-    <system:String x:Key="StereoSetupNotCompleted">3D setup is not complete.</system:String>
-    <system:String x:Key="StereoSetupNotCompletedDetails">Please finish the setup now to play games in stereoscopic 3D.</system:String>
+    <system:String x:Key="StereoSetupNotCompleted">Настройка 3D не завершена.</system:String>
+    <system:String x:Key="StereoSetupNotCompletedDetails">Завершите настройку сейчас, чтобы играть в игры в стереоскопическом 3D.</system:String>
     
-    <system:String x:Key="StereoNotEnabled">3D is not enabled in driver.</system:String>
-    <system:String x:Key="StereoNotEnabledDetails">Please enable to play games in stereoscopic 3D.</system:String>
+    <system:String x:Key="StereoNotEnabled">3D не включен в драйвере.</system:String>
+    <system:String x:Key="StereoNotEnabledDetails">Пожалуйста, разрешите играть в игры в стереоскопическом 3D.</system:String>
     
-    <system:String x:Key="StereoDriverCorrupt">3D driver is damaged.</system:String>
-    <system:String x:Key="StereoDriverCorruptDetails">Please repair to play games in stereoscopic 3D.</system:String>
+    <system:String x:Key="StereoDriverCorrupt">3D драйвер поврежден.</system:String>
+    <system:String x:Key="StereoDriverCorruptDetails">Пожалуйста, восстановите, чтобы играть в игры в стереоскопическом 3D.</system:String>
     
-    <system:String x:Key="StereoDriverOk">All stereo driver components installed.</system:String>
-    <system:String x:Key="StereoDriverOkDetails">Your system is 3D ready.</system:String>
+    <system:String x:Key="StereoDriverOk">Все компоненты стереодрайвера установлены.</system:String>
+    <system:String x:Key="StereoDriverOkDetails">Ваша система готова к 3D.</system:String>
     
-    <system:String x:Key="InstallStereoDriver">Install 3D driver</system:String>
-    <system:String x:Key="InstallIrEmitterDriver">Install IR emitter driver</system:String>
-    <system:String x:Key="RepairStereoDriver">Repair 3D driver</system:String>
-    <system:String x:Key="CompleteStereoSetup">Complete 3D setup</system:String>
-    <system:String x:Key="EnableStereo3D">Enable 3D</system:String>
+    <system:String x:Key="InstallStereoDriver">Установите 3D драйвер</system:String>
+    <system:String x:Key="InstallIrEmitterDriver">Установите драйвер ИК-излучателя</system:String>
+    <system:String x:Key="RepairStereoDriver">Восстановить 3D драйвер</system:String>
+    <system:String x:Key="CompleteStereoSetup">Завершить настройку 3D</system:String>
+    <system:String x:Key="EnableStereo3D">Включить 3D</system:String>
 
-    <system:String x:Key="ExtractingStereoDriver">Extracting 3D driver. Please wait...</system:String>
-    <system:String x:Key="InstallingStereoDriver">Installing 3D driver. Please Wait...</system:String>
-    <system:String x:Key="InstallingIrDriver">Installing IR emitter driver. Please wait...</system:String>
-    <system:String x:Key="CompletingStereoSetup">Completing Stereo 3D setup. Please wait...</system:String>
-    <system:String x:Key="LoadingStereoSettings">Loading 3D settings profile...</system:String>
-    <system:String x:Key="EnablingStereo3D">Enabling stereo 3D. Please wait...</system:String>
+    <system:String x:Key="ExtractingStereoDriver">Распаковка 3D-драйвера. пожалуйста, подождите...</system:String>
+    <system:String x:Key="InstallingStereoDriver">Установка 3D-драйвера. Пожалуйста подождите...</system:String>
+    <system:String x:Key="InstallingIrDriver">Установка драйвера ИК-излучателя. пожалуйста, подождите...</system:String>
+    <system:String x:Key="CompletingStereoSetup">Завершение настройки стерео 3D. пожалуйста, подождите...</system:String>
+    <system:String x:Key="LoadingStereoSettings">Загрузка профиля настроек 3D...</system:String>
+    <system:String x:Key="EnablingStereo3D">Включение стерео 3D. пожалуйста, подождите...</system:String>
 
     <system:String x:Key="InstallFailed">Driver install failed.</system:String>
     <system:String x:Key="StereoActivationError">Failed to enable stereo 3D. Unknown reason.</system:String>
