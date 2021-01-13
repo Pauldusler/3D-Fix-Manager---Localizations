@@ -499,33 +499,33 @@
     <system:String x:Key="LoadingStereoSettings">Загрузка профиля настроек 3D...</system:String>
     <system:String x:Key="EnablingStereo3D">Включение стерео 3D. пожалуйста, подождите...</system:String>
 
-    <system:String x:Key="InstallFailed">Driver install failed.</system:String>
-    <system:String x:Key="StereoActivationError">Failed to enable stereo 3D. Unknown reason.</system:String>
-    <system:String x:Key="StereoActivationFailed" xml:space="preserve">Error: Failed to enable stereo 3D as one or more 3D driver components are missing or haven't been set up. &#x0d;&#x0d;Please check driver state and install any components required.</system:String>
-    <system:String x:Key="StereoActivationErrorLaptop">Failed to enable stereo 3D. Please connect an external monitor to the laptop and set it as the primary display.</system:String>
-    <system:String x:Key="StereoSetupFailed">Stereo 3D Setup failed.</system:String>
-    <system:String x:Key="DownloadingDrivers">Downloading driver...</system:String>
-    <system:String x:Key="ExtractingDrivers">Extracting driver. Please wait...</system:String>
-    <system:String x:Key="InstallingDrivers">Installing drivers...</system:String>
+    <system:String x:Key="InstallFailed">Не удалось установить драйвер.</system:String>
+    <system:String x:Key="StereoActivationError">Не удалось включить стерео 3D. Неизвестная причина.</system:String>
+    <system:String x:Key="StereoActivationFailed" xml:space="preserve">Ошибка: не удалось включить стерео 3D, поскольку один или несколько компонентов драйвера 3D отсутствуют или не были настроены. &#x0d;&#x0d;Пожалуйста, проверьте состояние драйвера и установите все необходимые компоненты.</system:String>
+    <system:String x:Key="StereoActivationErrorLaptop">Не удалось включить стерео 3D. Подключите к ноутбуку внешний монитор и установите его в качестве основного дисплея.</system:String>
+    <system:String x:Key="StereoSetupFailed">Ошибка настройки стерео 3D.</system:String>
+    <system:String x:Key="DownloadingDrivers">Скачивание драйвера...</system:String>
+    <system:String x:Key="ExtractingDrivers">Распаковка драйвера. Пожалуйста, подождите...</system:String>
+    <system:String x:Key="InstallingDrivers">Установка драйвера...</system:String>
 
-    <system:String x:Key="GeforceDriverNoDx11Support">Installed video driver is not compatible to DirectX 11 games in stereoscopic 3D mode.</system:String>
-    <system:String x:Key="GeforceDriverNoDx11SupportDetails">Please install GeForce driver version 452.06 or earlier to restore full stereo 3D compatibility for all games.</system:String>
-    <system:String x:Key="InstallGeforceDriverVersion">Install Standard GeForce driver {0}</system:String>
-    <system:String x:Key="InstallDchGeforceDriverVersion">Install DCH GeForce driver {0}</system:String>
-    <system:String x:Key="OfficialNvidiaDownload">(Download from original Nvidia server)</system:String>
-    <system:String x:Key="DriverUpdateAvailable">A new GeForce driver is available.</system:String>
-    <system:String x:Key="DriverUpdateAvailableDetails">Updating the driver is optional and not required for stereoscopic 3D.</system:String>
-    <system:String x:Key="LatestDriverInstalled">The best GeForce driver for playing games in stereoscopic 3D is already installed.</system:String>
-    <system:String x:Key="LatestDriverInstalledDetails">You are notified here whenever a new GeForce driver is released.</system:String>
+    <system:String x:Key="GeforceDriverNoDx11Support">Установленный видеодрайвер несовместим с играми DirectX 11 в стереоскопическом 3D режиме.</system:String>
+    <system:String x:Key="GeforceDriverNoDx11SupportDetails">Установите драйвер GeForce версии 452.06 или более ранней, чтобы восстановить полную совместимость стерео 3D для всех игр.</system:String>
+    <system:String x:Key="InstallGeforceDriverVersion">Установите стандартный драйвер GeForce {0}</system:String>
+    <system:String x:Key="InstallDchGeforceDriverVersion">Установите драйвер DCH GeForce {0}</system:String>
+    <system:String x:Key="OfficialNvidiaDownload">(Скачать с оригинального сервера Nvidia)</system:String>
+    <system:String x:Key="DriverUpdateAvailable">Доступен новый драйвер GeForce.</system:String>
+    <system:String x:Key="DriverUpdateAvailableDetails">Обновление драйвера не является обязательным и не требуется для стереоскопического 3D.</system:String>
+    <system:String x:Key="LatestDriverInstalled">Уже установлен лучший драйвер GeForce для игр в стереоскопическом 3D.</system:String>
+    <system:String x:Key="LatestDriverInstalledDetails">Вы получите уведомление, когда выйдет новый драйвер GeForce.</system:String>
 
-    <system:String x:Key="DchDriverInstalled">DCH version of Geforce driver installed.</system:String>
-    <system:String x:Key="DchDriverInstalledDetails">Please install the "Standard" version of GeForce driver for an improved stereoscopic 3D experience.</system:String>
-    <system:String x:Key="ShowMoreInformation">Show more information</system:String>
-    <system:String x:Key="CancelDownload">Cancel download</system:String>
-    <system:String x:Key="Remaining">Remaining:</system:String>
-    <system:String x:Key="DownloadUrlInvalid">Download failed. No internet connection or server unavailable.</system:String>
-    <system:String x:Key="ExtractingGeforceDriver">Extracting GeForce driver. Please wait...</system:String>
-    <system:String x:Key="InstallingGeforceDriver">Installing GeForce driver. Please Wait...</system:String>
+    <system:String x:Key="DchDriverInstalled">Установлена версия DCH драйвера Geforce.</system:String>
+    <system:String x:Key="DchDriverInstalledDetails">Установите стандартную (не DCH) версию драйвера GeForce для улучшения стереоскопического 3D.</system:String>
+    <system:String x:Key="ShowMoreInformation">Показать дополнительную информацию</system:String>
+    <system:String x:Key="CancelDownload">Отменить скачивание</system:String>
+    <system:String x:Key="Remaining">Осталось:</system:String>
+    <system:String x:Key="DownloadUrlInvalid">Загрузка не удалась. Нет подключения к Интернету или сервер не доступен.</system:String>
+    <system:String x:Key="ExtractingGeforceDriver">Распаковка драйвера GeForce. Пожалуйста, подождите...</system:String>
+    <system:String x:Key="InstallingGeforceDriver">Установка драйвера GeForce. Пожалуйста подождите...</system:String>
 
     <!--.................... Drivers View End -->
 
@@ -533,85 +533,85 @@
     <!--.................... Application Settings Tab Begin .......................... -->
 
     <!-- General Settings group -->
-    <system:String x:Key="GeneralSettingsGroup">General Settings:</system:String>
-    <system:String x:Key="UseProgramFor">Use program for:</system:String>
-    <system:String x:Key="CheckForUpdates">Check for program updates at startup</system:String>
-    <system:String x:Key="CheckForDriverUpdates">Check for driver updates at startup</system:String>
-    <system:String x:Key="UseHwAcceleration">Enable hardware acceleration for the GUI</system:String>
-    <system:String x:Key="AllowChangesToGameConfig">Optimize game settings for Stereo 3D</system:String>
-    <system:String x:Key="EnableSteamOverlay">Enable Steam overlay</system:String>
-    <system:String x:Key="FullscreenOptimizations">Fullscreen optimizations:</system:String>
-    <system:String x:Key="ControlledByFixProfile">Controlled by Fix Profile</system:String>
-    <system:String x:Key="SteamNotDetected">Overlay DLLs / Steam not detected</system:String>
-    <system:String x:Key="PreferIconDownload">Prefer game icons from internet database</system:String>
-    <system:String x:Key="ResetAllIcons">Reset all game icons:</system:String>
-    <system:String x:Key="DoNotChangeSetting">Keep current Setting</system:String>
-    <system:String x:Key="DownloadScreenshots">Download stereoscopic screenshots</system:String>
+    <system:String x:Key="GeneralSettingsGroup">Общие Настройки:</system:String>
+    <system:String x:Key="UseProgramFor">Использовать программу для:</system:String>
+    <system:String x:Key="CheckForUpdates">Проверять обновления программы при запуске</system:String>
+    <system:String x:Key="CheckForDriverUpdates">Проверять обновления драйверов при запуске</system:String>
+    <system:String x:Key="UseHwAcceleration">Включить аппаратное ускорение для графического интерфейса</system:String>
+    <system:String x:Key="AllowChangesToGameConfig">Оптимизация настроек игры для стерео 3D</system:String>
+    <system:String x:Key="EnableSteamOverlay">Включить оверлей Steam</system:String>
+    <system:String x:Key="FullscreenOptimizations">Полноэкранная оптимизация:</system:String>
+    <system:String x:Key="ControlledByFixProfile">Контролируется Fix Profile</system:String>
+    <system:String x:Key="SteamNotDetected">Оверлейные DLL / Steam не обнаружены</system:String>
+    <system:String x:Key="PreferIconDownload">Предпочитать игровые иконки из интернет-базы данных</system:String>
+    <system:String x:Key="ResetAllIcons">Сбросить все значки игр:</system:String>
+    <system:String x:Key="DoNotChangeSetting">Сохранить текущую настройку</system:String>
+    <system:String x:Key="DownloadScreenshots">Скачать стереоскопические скриншоты</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
-    <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Settings:</system:String>
-    <system:String x:Key="ReinstallFixFromCache">Install 3D fixes from download cache if possible</system:String>
-    <system:String x:Key="ClearAllDownloadCache">Clear download cache for all fix profiles:</system:String>
-    <system:String x:Key="EnableAllFixes">Enable / disable all fixes:</system:String>
-    <system:String x:Key="DisableFixesIn2dMode">Disable 3D fixes in 2D mode:</system:String>
-    <system:String x:Key="EnableAllFixesToolTip">Enables all installed 3D fixes.</system:String>
-    <system:String x:Key="DisableAllFixesToolTip">Disables all installed 3D fixes.</system:String>
-    <system:String x:Key="SendData">Send data when user customizes a fix profile</system:String>
-    <system:String x:Key="AutoUpdate3dmigoto">Update 3dmigoto at startup</system:String>
-    <system:String x:Key="UpdateAllWrappers">Update 3dmigoto for all installed 3D fixes:</system:String>
+    <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Настройки:</system:String>
+    <system:String x:Key="ReinstallFixFromCache">Если возможно, установите исправления 3D из кеша загрузки</system:String>
+    <system:String x:Key="ClearAllDownloadCache">Очистить кеш загрузок для всех профилей исправлений:</system:String>
+    <system:String x:Key="EnableAllFixes">Включить / отключить все исправления:</system:String>
+    <system:String x:Key="DisableFixesIn2dMode">Отключить исправления 3D в режиме 2D:</system:String>
+    <system:String x:Key="EnableAllFixesToolTip">Включить все установленные исправления 3D.</system:String>
+    <system:String x:Key="DisableAllFixesToolTip">Отключить все установленные исправления 3D.</system:String>
+    <system:String x:Key="SendData">Отправлять данные, когда пользователь настраивает профиль исправления</system:String>
+    <system:String x:Key="AutoUpdate3dmigoto">Обновить 3dmigoto при запуске</system:String>
+    <system:String x:Key="UpdateAllWrappers">Обновить 3dmigoto для всех установленных исправлений 3D:</system:String>
     
     <!-- Search paths group -->
-    <system:String x:Key="SearchPathsGroup">Detecting installed Games:</system:String>
-    <system:String x:Key="EnableCachedPaths">Cache detected games for faster app start</system:String>
-    <system:String x:Key="EnableRegistrySearch">Search games in Windows registry</system:String>
-    <system:String x:Key="EnableSearchPaths">Search games in specified directories (Search paths)</system:String>
-    <system:String x:Key="PrioritizeSearchPaths">Prioritize search paths over paths from Windows registry</system:String>
-    <system:String x:Key="SearchDepth">Search depth:</system:String>
-    <system:String x:Key="SearchPaths">Search paths:</system:String>
-    <system:String x:Key="SearchGames">Search games</system:String>
-    <system:String x:Key="DetectPaths">Detect libraries</system:String>
-    <system:String x:Key="DetectPathsToolTip">Automatically detects game libraries of Steam, Uplay, Origin, Blizzard App and GOG Galaxy and adds them as search paths.</system:String>
-    <system:String x:Key="Add">Add</system:String>
-    <system:String x:Key="AddPathToolTip">Adds a search path.</system:String>
-    <system:String x:Key="Remove">Remove</system:String>
-    <system:String x:Key="RemovePathToolTip">Removes the selected search path.</system:String>
-    <system:String x:Key="ChangePathToolTip">Changes the selected search path</system:String>
+    <system:String x:Key="SearchPathsGroup">Обнаружение установленных игр:</system:String>
+    <system:String x:Key="EnableCachedPaths">Кэшировать обнаруженные игры для более быстрого запуска приложений</system:String>
+    <system:String x:Key="EnableRegistrySearch">Искать игры в реестре Windows</system:String>
+    <system:String x:Key="EnableSearchPaths">Искать игры в указанных каталогах (Пути поиска)</system:String>
+    <system:String x:Key="PrioritizeSearchPaths">Приоритет пути поиска над поиском из реестра Windows</system:String>
+    <system:String x:Key="SearchDepth">Глубина поиска:</system:String>
+    <system:String x:Key="SearchPaths">Пути поиска:</system:String>
+    <system:String x:Key="SearchGames">Искать игры</system:String>
+    <system:String x:Key="DetectPaths">Обнаружить библиотеки</system:String>
+    <system:String x:Key="DetectPathsToolTip">Автоматически обнаруживает игровые библиотеки Steam, Uplay, Origin, Blizzard App и GOG Galaxy и добавляет их в качестве путей поиска.</system:String>
+    <system:String x:Key="Add">Добавить</system:String>
+    <system:String x:Key="AddPathToolTip">Добавляет путь поиска.</system:String>
+    <system:String x:Key="Remove">Удалить</system:String>
+    <system:String x:Key="RemovePathToolTip">Удаляет выбранный путь поиска.</system:String>
+    <system:String x:Key="ChangePathToolTip">Изменяет выбранный путь поиска</system:String>
 
     <!-- RTSS settings group -->
-    <system:String x:Key="RtssSettingsGroup">RivaTuner Statistics Server Settings:</system:String>
-    <system:String x:Key="StartRTSS_Setting">Start / close RTSS depending on fix profile setting</system:String>
-    <system:String x:Key="InterruptGameLaunch">Pause game start for setting up RTSS</system:String>
-    <system:String x:Key="CloseRivaTunerIn2D">Close RTSS when starting a game in 2D mode</system:String>
-    <system:String x:Key="CloseRtssOnAppClose">Close RTSS when quitting 3D Fix Manager</system:String>
-    <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server not detected / not installed</system:String>
-    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server older than version 7.2</system:String>
+    <system:String x:Key="RtssSettingsGroup">RivaTuner Statistics Server Настройки:</system:String>
+    <system:String x:Key="StartRTSS_Setting">Запуск / закрытие RTSS в зависимости от настройки профиля исправления</system:String>
+    <system:String x:Key="InterruptGameLaunch">Приостановить запуск игры для настройки RTSS</system:String>
+    <system:String x:Key="CloseRivaTunerIn2D">Закрыть RTSS при запуске игры в 2D-режиме</system:String>
+    <system:String x:Key="CloseRtssOnAppClose">Закрыть RTSS при выходе из 3D Fix Manager</system:String>
+    <system:String x:Key="RivaTunerNotDetected">RivaTuner Statistics Server не обнаружено / не установлено</system:String>
+    <system:String x:Key="RtssScanlineSyncNotSupportedError">RivaTuner Statistics Server старше версии 7.2</system:String>
 
     <!-- Game Launcher Settings group -->
-    <system:String x:Key="GameLauncherSettings">Game Launcher Settings:</system:String>
-    <system:String x:Key="StartGamesByGameExe">Prefer starting games via game launcher exe</system:String>
-    <system:String x:Key="StartGamesBySteamAppId">Prefer starting games via Steam client (Steam app ID)</system:String>
-    <system:String x:Key="StartGamesByFixProfile">Start method is controlled by fix profile (recommended)</system:String>
+    <system:String x:Key="GameLauncherSettings">Настройки запуска игры:</system:String>
+    <system:String x:Key="StartGamesByGameExe">Предпочить запускать игры через программу запуска игр exe</system:String>
+    <system:String x:Key="StartGamesBySteamAppId">Предпочить запускать игры через клиент Steam (Steam app ID)</system:String>
+    <system:String x:Key="StartGamesByFixProfile">Способ запуска контролируется профилем исправлений (рекомендуется)</system:String>
 
     <!--Nvidia Profile Inspector Settings group -->
-    <system:String x:Key="NvidiaProfileInspectorSettings">Nvidia Profile Inspector Settings:</system:String>
-    <system:String x:Key="NeverInstallProfiles">Globally disable installation of driver profiles</system:String>
-    <system:String x:Key="ProfileInstallByFixProfile">Installation of driver profiles is controlled by fix profile</system:String>
-    <system:String x:Key="InstallProfilesSilently">Install driver profiles silently without warning messages</system:String>
-    <system:String x:Key="NoNvidiaDetected">No Nvidia driver detected / installed</system:String>
-    <system:String x:Key="Start">Start</system:String>
-    <system:String x:Key="StartProfileInspectorToolTip">Starts Nvidia Profile Inspector.</system:String>
-    <system:String x:Key="StartRtssToolTip">Starts RivaTuner Statistics Server.</system:String>
+    <system:String x:Key="NvidiaProfileInspectorSettings">Nvidia Profile Inspector Настройки:</system:String>
+    <system:String x:Key="NeverInstallProfiles">Глобально отключить установку профилей драйверов</system:String>
+    <system:String x:Key="ProfileInstallByFixProfile">Установка профилей драйверов контролируется профилем исправлений</system:String>
+    <system:String x:Key="InstallProfilesSilently">Установить профили драйверов в автоматическом режиме без предупреждений</system:String>
+    <system:String x:Key="NoNvidiaDetected">Драйвер Nvidia не обнаружен / не установлен</system:String>
+    <system:String x:Key="Start">Запуск</system:String>
+    <system:String x:Key="StartProfileInspectorToolTip">Запускает инспектор профилей Nvidia.</system:String>
+    <system:String x:Key="StartRtssToolTip">Запускает сервер статистики RivaTuner.</system:String>
 
     <!-- Stereo Refresh Rate Settings group -->
-    <system:String x:Key="StereoRefreshRateSettings">Shutter Frequency of Nvidia 3D Glasses / Stereo Refresh Rate:</system:String>
-    <system:String x:Key="GlobalStereoRefreshRate">Use refresh rate set in Nvidia driver</system:String>
-    <system:String x:Key="ProfileStereoRefreshRate">Refresh rate is controlled by fix profile</system:String>
+    <system:String x:Key="StereoRefreshRateSettings">Частота затвора очков Nvidia 3D / частота обновления стерео:</system:String>
+    <system:String x:Key="GlobalStereoRefreshRate">Использовать частоту обновления, установленную в драйвере Nvidia</system:String>
+    <system:String x:Key="ProfileStereoRefreshRate">Частота обновления контролируется профилем исправлений</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="Disable">Disable</system:String>
-    <system:String x:Key="Enable">Enable</system:String>
-    <system:String x:Key="Update">Update</system:String>
-    <system:String x:Key="Clear">Clear</system:String>
+    <system:String x:Key="Disable">Отключить</system:String>
+    <system:String x:Key="Enable">Включить</system:String>
+    <system:String x:Key="Update">Обновить</system:String>
+    <system:String x:Key="Clear">Очистить</system:String>
 
     <!--.................... General Settings Tab End .......................... -->
 
