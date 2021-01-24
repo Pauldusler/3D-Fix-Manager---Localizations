@@ -618,88 +618,88 @@
    
     <!--.................... Nvidia 3D Settings Tab Begin .......................... -->
 
-    <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D not detected</system:String>
-    <system:String x:Key="PressKeyCombination">Press a key combination on your keyboard.</system:String>
+    <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D не обнаружен</system:String>
+    <system:String x:Key="PressKeyCombination">Нажмите комбинацию клавиш на клавиатуре.</system:String>
     
     <!-- General settings group -->
-    <system:String x:Key="EnableStereoGroup">Enable / set up  3D Functionality:</system:String>
-    <system:String x:Key="EnableNvidia3D">Enable Nvidia Stereoscopic 3D</system:String>
-    <system:String x:Key="Disable3dOnClosing">Auto disable Nvidia Stereoscopic 3D when closing application</system:String>
-    <system:String x:Key="Disable3dOnGameClosing">Auto disable Nvidia Stereoscopic 3D when closing games</system:String>
-    <system:String x:Key="SetStereoTypeTo3DVision">Force 3D Vision / 3DTV Play mode</system:String>
-    <system:String x:Key="StereoEnabledOnGameLaunch">3D mode enabled on game launch</system:String>
-    <system:String x:Key="StereoWindowedModeEnabled">Enable 3D in windowed mode (DirectX 9 only)</system:String>
-    <system:String x:Key="StereoModeAlwaysEnabled">3D mode always enabled</system:String>
-    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Sets whether the display is permanently in 3D mode (3D windowed mode must be also enabled).</system:String>
-    <system:String x:Key="Nvida3dDriverOverlay">Enable Nvidia 3D driver overlay</system:String>
-    <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Apply Geforce driver modification via 3dmigoto</system:String>
-    <system:String x:Key="UseGlobalDrickerHack">Show global driver hack toggle</system:String>
-    <system:String x:Key="EnableGeforceDllHack">Enable Geforce driver modification (Windows 10 only)</system:String>
-    <system:String x:Key="ShowDriverHackDialog">Show warning dialog before modifying Geforce driver</system:String>
-    <system:String x:Key="EnableWmrFix">Enable crash fix for Windows Mixed Reality</system:String>
-    <system:String x:Key="InstallRecommendedGeforceDriver">Install recommended Geforce driver:</system:String>
+    <system:String x:Key="EnableStereoGroup">Включение / настройка функций 3D:</system:String>
+    <system:String x:Key="EnableNvidia3D">Включите Nvidia Stereoscopic 3D</system:String>
+    <system:String x:Key="Disable3dOnClosing">Автоматическое отключение Nvidia Stereoscopic 3D при закрытии приложения</system:String>
+    <system:String x:Key="Disable3dOnGameClosing">Автоматическое отключение Nvidia Stereoscopic 3D при закрытии игр</system:String>
+    <system:String x:Key="SetStereoTypeTo3DVision">Принудительный режим 3D Vision / 3DTV Play</system:String>
+    <system:String x:Key="StereoEnabledOnGameLaunch">Режим 3D включен при запуске игры</system:String>
+    <system:String x:Key="StereoWindowedModeEnabled">Включить 3D в оконном режиме (только для DirectX 9)</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabled">Режим 3D всегда включен</system:String>
+    <system:String x:Key="StereoModeAlwaysEnabledToolTip">Устанавливает, находится ли дисплей постоянно в 3D-режиме (также должен быть включен 3D-оконный режим).</system:String>
+    <system:String x:Key="Nvida3dDriverOverlay">Включить наложение драйвера Nvidia 3D</system:String>
+    <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Примените модификацию драйвера Geforce через 3dmigoto</system:String>
+    <system:String x:Key="UseGlobalDrickerHack">Показать переключатель глобального взлома драйвера</system:String>
+    <system:String x:Key="EnableGeforceDllHack">Включить модификацию драйвера Geforce (только для Windows 10)</system:String>
+    <system:String x:Key="ShowDriverHackDialog">Показать диалоговое окно с предупреждением перед изменением драйвера Geforce</system:String>
+    <system:String x:Key="EnableWmrFix">Включить исправление сбоев для Windows Mixed Reality</system:String>
+    <system:String x:Key="InstallRecommendedGeforceDriver">Установите рекомендуемый драйвер Geforce:</system:String>
 
     <!-- 3D depth / 3D Vision shutter glasses group -->
-    <system:String x:Key="Advanced3dSettingsGroup">3D Depth / 3D Vision Shutter Glasses:</system:String>
-    <system:String x:Key="StereoSeparation">3D depth:</system:String>
-    <system:String x:Key="DepthMultiplier">3D depth multiplier:</system:String>
-    <system:String x:Key="Inch">inch</system:String>
-    <system:String x:Key="StereoRefreshRate">Shutter frequency 3D glasses:</system:String>
-    <system:String x:Key="IROutput">Sync mode of IR sender:</system:String>
-    <system:String x:Key="SingleIREnvironment">Single IR Environment</system:String>
-    <system:String x:Key="MixedIREnvironment">Multi IR Environment</system:String>
-    <system:String x:Key="LanEnvironment">3D Vision LAN Environment</system:String>
+    <system:String x:Key="Advanced3dSettingsGroup">Глубина 3D / Затворные очки 3D Vision:</system:String>
+    <system:String x:Key="StereoSeparation">Глубина 3D:</system:String>
+    <system:String x:Key="DepthMultiplier">3D множитель глубины:</system:String>
+    <system:String x:Key="Inch">Дюйм</system:String>
+    <system:String x:Key="StereoRefreshRate">Частота затвора 3D очков:</system:String>
+    <system:String x:Key="IROutput">Режим синхронизации ИК излучателя:</system:String>
+    <system:String x:Key="SingleIREnvironment">Единая ИК-среда</system:String>
+    <system:String x:Key="MixedIREnvironment">Мульти ИК-среда</system:String>
+    <system:String x:Key="LanEnvironment">Среда локальной сети 3D Vision</system:String>
 
     <!-- Driver settings group -->
-    <system:String x:Key="DriverSettings2D">Optimize global Driver Profile for 2D Mode:</system:String>
-    <system:String x:Key="DriverSettings3D">Optimize global Driver Profile for 3D Mode:</system:String>
-    <system:String x:Key="MaxPreRenderedFrames">Maximum pre-rendered frames:</system:String>
-    <system:String x:Key="VerticalSync">Vertical sync:</system:String>
-    <system:String x:Key="MonitorTechnology">Monitor technology:</system:String>
-    <system:String x:Key="GsyncMode">G-Sync Mode:</system:String>
-    <system:String x:Key="PreferredRefreshRate">Preferred refresh rate:</system:String>
-    <system:String x:Key="PowerManagementMode">Power management mode:</system:String>
-    <system:String x:Key="ApplicationControlled">Application controlled</system:String>
-    <system:String x:Key="Off">Off</system:String>
-    <system:String x:Key="On">On</system:String>
-    <system:String x:Key="Fast">Fast</system:String>
-    <system:String x:Key="FixedRefreshRate">Fixed refresh rate</system:String>
+    <system:String x:Key="DriverSettings2D">Оптимизация глобального Профиля Драйвера для 2D-режима:</system:String>
+    <system:String x:Key="DriverSettings3D">Оптимизация глобального Профиля Драйвера для 3D-режима:</system:String>
+    <system:String x:Key="MaxPreRenderedFrames">Максимальное количество предварительно обработанных кадров:</system:String>
+    <system:String x:Key="VerticalSync">Вертикальная синхронизация:</system:String>
+    <system:String x:Key="MonitorTechnology">Технология монитора:</system:String>
+    <system:String x:Key="GsyncMode">Режим G-Sync:</system:String>
+    <system:String x:Key="PreferredRefreshRate">Предпочтительная частота обновления:</system:String>
+    <system:String x:Key="PowerManagementMode">Режим управления питанием:</system:String>
+    <system:String x:Key="ApplicationControlled">Контролируется приложением</system:String>
+    <system:String x:Key="Off">Выкл</system:String>
+    <system:String x:Key="On">Вкл</system:String>
+    <system:String x:Key="Fast">Быстро</system:String>
+    <system:String x:Key="FixedRefreshRate">Фиксированная частота обновления</system:String>
     <system:String x:Key="G-SYNC">G-SYNC</system:String>
     <system:String x:Key="ULMB">ULMB</system:String>
-    <system:String x:Key="FullscreenOnly">Fullscreen only</system:String>
-    <system:String x:Key="FullscreenAndWindowed">Fullscreen and windowed</system:String>
-    <system:String x:Key="HighestAvailable">Highest available</system:String>
-    <system:String x:Key="MaximumPerformance">Maximum performance</system:String>
-    <system:String x:Key="OptimalPerformance">Optimal performance</system:String>
-    <system:String x:Key="Adaptive">Adaptive</system:String>
-    <system:String x:Key="AdaptiveHalf">Adaptive (half refresh rate)</system:String>
-    <system:String x:Key="GlobalDriverProfileFile">Exported profile:</system:String>
+    <system:String x:Key="FullscreenOnly">Только полноэкранный режим</system:String>
+    <system:String x:Key="FullscreenAndWindowed">Полноэкранный и оконный</system:String>
+    <system:String x:Key="HighestAvailable">Самый высокий доступный</system:String>
+    <system:String x:Key="MaximumPerformance">Максимальная производительность</system:String>
+    <system:String x:Key="OptimalPerformance">Оптимальная производительность</system:String>
+    <system:String x:Key="Adaptive">Адаптивный</system:String>
+    <system:String x:Key="AdaptiveHalf">Адаптивный (половина частоты обновления)</system:String>
+    <system:String x:Key="GlobalDriverProfileFile">Экспортированный профиль:</system:String>
 
     <!-- General hotkeys group -->
-    <system:String x:Key="GeneralHotkeys">General Hotkeys:</system:String>
-    <system:String x:Key="StereoToggle">Show / hide stereoscopic effects:</system:String>
-    <system:String x:Key="StereoToggleToolTip">Toggles between plain 2D and stereoscopic 3D while gaming.</system:String>
-    <system:String x:Key="StereoSeparationAdjustLess">Decrease 3D depth:</system:String>
-    <system:String x:Key="StereoSeparationAdjustLessToolTip">Decreases 3D depth / separation.</system:String>
-    <system:String x:Key="StereoSeparationAdjustMore">Increase 3D depth:</system:String>
-    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Increases 3D depth / separation.</system:String>
-    <system:String x:Key="ToggleMemo">Show / hide in-game compatibility:</system:String>
-    <system:String x:Key="ToggleMemoToolTip">Shows / hides green text with compatibility information and recommended in-game settings.</system:String>
+    <system:String x:Key="GeneralHotkeys">Общие горячие клавиши:</system:String>
+    <system:String x:Key="StereoToggle">Показать / скрыть стереоскопические эффекты:</system:String>
+    <system:String x:Key="StereoToggleToolTip">Переключение между обычным 2D и стереоскопическим 3D во время игры.</system:String>
+    <system:String x:Key="StereoSeparationAdjustLess">Уменьшить глубину 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustLessToolTip">Уменьшает глубину 3D / разделение.</system:String>
+    <system:String x:Key="StereoSeparationAdjustMore">Увеличить глубину 3D:</system:String>
+    <system:String x:Key="StereoSeparationAdjustMoreToolTip">Увеличивает трехмерную глубину / разделение.</system:String>
+    <system:String x:Key="ToggleMemo">Показать / скрыть совместимость в игре:</system:String>
+    <system:String x:Key="ToggleMemoToolTip">Показывает / скрывает зеленый текст с информацией о совместимости и рекомендуемыми настройками в игре.</system:String>
 
     <!-- Advanced hotkeys group -->
-    <system:String x:Key="AdvancedHotkeys">Advanced Hotkeys:</system:String>
-    <system:String x:Key="StereoAdvancedHKConfig">Enable advanced in-game hotkeys</system:String>
-    <system:String x:Key="StereoAdvancedHKConfigToolTip">Enables advanced hotkeys for changing convergence / frustum settings and more.</system:String>
-    <system:String x:Key="StereoConvergenceAdjustLess">Decrease convergence:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Decreases the pop-out effect in games.</system:String>
-    <system:String x:Key="StereoConvergenceAdjustMore">Increase convergence:</system:String>
-    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Increases the pop-out effect in games.</system:String>
-    <system:String x:Key="WriteConfig">Save in-game changes:</system:String>
-    <system:String x:Key="WriteConfigToolTip">Saves convergence and frustum adjustments to Nvidia driver profile.</system:String>
-    <system:String x:Key="CycleFrustumAdjust">Cycle frustum adjustment:</system:String>
-    <system:String x:Key="CycleFrustumAdjustToolTip">Cycles through three different frustum adjustments.</system:String>
-    <system:String x:Key="StereoToggleMode">Toggle 3D compatibility mode:</system:String>
-    <system:String x:Key="StereoToggleModeToolTip">Toggles between compatibility mode for DirectX 11 games (Fake 3D) and Real 3D mode.</system:String>
+    <system:String x:Key="AdvancedHotkeys">Расширенные горячие клавиши:</system:String>
+    <system:String x:Key="StereoAdvancedHKConfig">Включить расширенные горячие клавиши в игре</system:String>
+    <system:String x:Key="StereoAdvancedHKConfigToolTip">Включает расширенные горячие клавиши для изменения настроек конвергенции / усечения и т. п.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLess">Уменьшить сходимость:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustLessToolTip">Уменьшает выступающий эффект в играх.</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMore">Увеличить сходимость:</system:String>
+    <system:String x:Key="StereoConvergenceAdjustMoreToolTip">Увеличивает выступающий эффект в играх.</system:String>
+    <system:String x:Key="WriteConfig">Сохранить изменения в игре:</system:String>
+    <system:String x:Key="WriteConfigToolTip">Сохраняет настройки конвергенции и усечения в профиле драйвера Nvidia.</system:String>
+    <system:String x:Key="CycleFrustumAdjust">Регулировка конуса видимости:</system:String>
+    <system:String x:Key="CycleFrustumAdjustToolTip">Циклическое переключение между тремя различными настройками конуса видимости.</system:String>
+    <system:String x:Key="StereoToggleMode">Переключить режим совместимости 3D:</system:String>
+    <system:String x:Key="StereoToggleModeToolTip">Переключение между режимом совместимости для игр DirectX 11 (Fake 3D) и режимом Real 3D.</system:String>
     
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
