@@ -702,93 +702,93 @@
     <system:String x:Key="StereoToggleModeToolTip">Переключение между режимом совместимости для игр DirectX 11 (Fake 3D) и режимом Real 3D.</system:String>
     
     <!-- Screenshots group -->
-    <system:String x:Key="ScreenshotsGroup">Screenshots:</system:String>
-    <system:String x:Key="StereoImageType">Stereo image type:</system:String>
-    <system:String x:Key="StereoImageTypeToolTip">Sets the format for stereoscopic images (JPS or PNS).</system:String>
-    <system:String x:Key="StereoImageFolder">Open Folder</system:String>
-    <system:String x:Key="StereoImageFolderToolTip">Opens location of screenshots folder in windows explorer.</system:String>
-    <system:String x:Key="SnapShotQuality">JPS quality:</system:String>
-    <system:String x:Key="SnapShotQualityToolTip">Determines image quality and file size.</system:String>
-    <system:String x:Key="SaveStereoImage">Take screenshot:</system:String>
-    <system:String x:Key="SaveStereoImageToolTip">Saves a stereoscopic screenshot on the hard drive.</system:String>
+    <system:String x:Key="ScreenshotsGroup">Скриншоты:</system:String>
+    <system:String x:Key="StereoImageType">Тип стереоизображения:</system:String>
+    <system:String x:Key="StereoImageTypeToolTip">Устанавливает формат стереоскопических изображений (JPS or PNS).</system:String>
+    <system:String x:Key="StereoImageFolder">Открыть папку</system:String>
+    <system:String x:Key="StereoImageFolderToolTip">Открывает расположение папки со скриншотами в проводнике Windows.</system:String>
+    <system:String x:Key="SnapShotQuality">Качество JPS:</system:String>
+    <system:String x:Key="SnapShotQualityToolTip">Определяет качество изображения и размер файла.</system:String>
+    <system:String x:Key="SaveStereoImage">Сделать скриншот:</system:String>
+    <system:String x:Key="SaveStereoImageToolTip">Сохраняет стереоскопический снимок экрана на жесткий диск.</system:String>
 
     <!-- LaserSight group -->
-    <system:String x:Key="LaserSightGroup">Laser Sight:</system:String>
-    <system:String x:Key="LaserSightEnabled">Enable laser sight:</system:String>
-    <system:String x:Key="LaserSightEnabledToolTip">Sets whether 3D laser sight can be enabled with a hotkey or automatically by Nvidia driver profile.</system:String>
-    <system:String x:Key="ToggleLaserSight">Toggle laser sight:</system:String>
-    <system:String x:Key="ToggleLaserSightToolTip">Enables or disables stereoscopic laser sight in-game.</system:String>
-    <system:String x:Key="LaserSightTransparency">Laser sight transparency:</system:String>
-    <system:String x:Key="LaserSightTransparencyToolTip">Controls the transparency of the laser sight.</system:String>
-    <system:String x:Key="LaserSightCrosshair">Laser sight:</system:String>
-    <system:String x:Key="LaserSightCrosshairToolTip">Sets the appearance of the laser sight.</system:String>
+    <system:String x:Key="LaserSightGroup">Лазерный прицел:</system:String>
+    <system:String x:Key="LaserSightEnabled">Включить лазерный прицел:</system:String>
+    <system:String x:Key="LaserSightEnabledToolTip">Устанавливает, можно ли включить 3D-лазерный прицел с помощью горячей клавиши или автоматически в профиле драйвера Nvidia.</system:String>
+    <system:String x:Key="ToggleLaserSight">Переключить лазерный прицел:</system:String>
+    <system:String x:Key="ToggleLaserSightToolTip">Включает или отключает стереоскопический лазерный прицел в игре.</system:String>
+    <system:String x:Key="LaserSightTransparency">Прозрачность лазерного прицела:</system:String>
+    <system:String x:Key="LaserSightTransparencyToolTip">Контролирует прозрачность лазерного прицела.</system:String>
+    <system:String x:Key="LaserSightCrosshair">Лазерный прицел:</system:String>
+    <system:String x:Key="LaserSightCrosshairToolTip">Устанавливает внешний вид лазерного прицела.</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="Load">Load</system:String>
-    <system:String x:Key="Reset">Reset</system:String>
-    <system:String x:Key="Apply">Apply</system:String>
+    <system:String x:Key="Load">Загрузить</system:String>
+    <system:String x:Key="Reset">Сбросить</system:String>
+    <system:String x:Key="Apply">Применить</system:String>
 
     <!--.................... Nvidia 3D Settings Tab End .......................... -->
 
     
     <!--.................... Display Profiles Tab Begin .......................... -->
 
-    <system:String x:Key="MonitorProfileGroup">Monitor Profile:</system:String>
-    <system:String x:Key="TVProfileGroup">TV Profile:</system:String>
-    <system:String x:Key="ProjectorProfileGroup">Projector Profile:</system:String>
-    <system:String x:Key="VrProfileGroup">VR Profile:</system:String>
-    <system:String x:Key="ProfileSettingsGroup">General Profile Settings:</system:String>
-    <system:String x:Key="LinkProfileToDisplay">Link profile to display:</system:String>
-    <system:String x:Key="DisplaySize">Display size:</system:String>
-    <system:String x:Key="RealScreenSize">Screen size:</system:String>
-    <system:String x:Key="DisplayType">3D display type:</system:String>
-    <system:String x:Key="Preferred3dFormat">3dmigoto 3D format:</system:String>
-    <system:String x:Key="GameSettings2D">Game settings for 2D mode:</system:String>
-    <system:String x:Key="GameSettings3D">Game settings for 3D mode:</system:String>
-    <system:String x:Key="GameSettingsVR">Game settings for VR mode:</system:String>
-    <system:String x:Key="FramerateLimit">Framerate limit:</system:String>
-    <system:String x:Key="DesktopSettings">Desktop settings:</system:String>
-    <system:String x:Key="GameResolution">Game resolution:</system:String>
-    <system:String x:Key="GameResolution2D">Game resolution 2D mode:</system:String>
-    <system:String x:Key="GameResolution3D">Game resolution 3D mode:</system:String>
-    <system:String x:Key="DesktopResolution2D">Desktop resolution 2D mode:</system:String>
-    <system:String x:Key="DesktopResolution2DClosing">Desktop resolution on closing:</system:String>
-    <system:String x:Key="DesktopResolution3D">Desktop resolution 3D mode:</system:String>
-    <system:String x:Key="DesktopResolutionVr">Desktop resolution:</system:String>
-    <system:String x:Key="ShowProfileSelectionOnStartup">Show profile selection dialog on application start</system:String>
-    <system:String x:Key="ShowProfileSelectionOnGameStart">Show profile selection dialog on game start</system:String>
-    <system:String x:Key="AllowDisplayProfileOverride">Allow fix profiles to override global display profiles</system:String>
-    <system:String x:Key="DefaultProfileOnStartup">Default profile on startup:</system:String>
-    <system:String x:Key="PleaseChooseProfile">Please choose a display profile:</system:String>
-    <system:String x:Key="DoNotShowProfileSelection">Do not show this dialog again</system:String>
-    <system:String x:Key="ShowProfileDialogOnGameStart">Show this dialog every time a game is started</system:String>
-    <system:String x:Key="ShowProfileDialogOnAppStart">Show this dialog every time the application is started</system:String>
+    <system:String x:Key="MonitorProfileGroup">Профиль монитора:</system:String>
+    <system:String x:Key="TVProfileGroup">ТВ Профиль:</system:String>
+    <system:String x:Key="ProjectorProfileGroup">Профиль проектора:</system:String>
+    <system:String x:Key="VrProfileGroup">VR Профиль:</system:String>
+    <system:String x:Key="ProfileSettingsGroup">Общие настройки профиля:</system:String>
+    <system:String x:Key="LinkProfileToDisplay">Ссылка профиля для отображения:</system:String>
+    <system:String x:Key="DisplaySize">Размер дисплея:</system:String>
+    <system:String x:Key="RealScreenSize">Размер экрана:</system:String>
+    <system:String x:Key="DisplayType">Тип 3D-дисплея:</system:String>
+    <system:String x:Key="Preferred3dFormat">3dmigoto 3D формат:</system:String>
+    <system:String x:Key="GameSettings2D">Настройки игры для 2D-режима:</system:String>
+    <system:String x:Key="GameSettings3D">Настройки игры для 3D-режима:</system:String>
+    <system:String x:Key="GameSettingsVR">Настройки игры для режима VR:</system:String>
+    <system:String x:Key="FramerateLimit">Ограничение частоты кадров:</system:String>
+    <system:String x:Key="DesktopSettings">Настройки рабочего стола:</system:String>
+    <system:String x:Key="GameResolution">Разрешение игры:</system:String>
+    <system:String x:Key="GameResolution2D">Разрешение игры Режим 2D:</system:String>
+    <system:String x:Key="GameResolution3D">Разрешение игры Режим 3D:</system:String>
+    <system:String x:Key="DesktopResolution2D">Разрешение рабочего стола 2D-режим:</system:String>
+    <system:String x:Key="DesktopResolution2DClosing">Разрешение рабочего стола при закрытии:</system:String>
+    <system:String x:Key="DesktopResolution3D">Разрешение рабочего стола 3D-режим:</system:String>
+    <system:String x:Key="DesktopResolutionVr">Разрешение рабочего стола:</system:String>
+    <system:String x:Key="ShowProfileSelectionOnStartup">Показывать диалог выбора профиля при запуске приложения</system:String>
+    <system:String x:Key="ShowProfileSelectionOnGameStart">Показывать диалог выбора профиля при запуске игры</system:String>
+    <system:String x:Key="AllowDisplayProfileOverride">Разрешить профилям исправлений переопределять глобальные профили отображения</system:String>
+    <system:String x:Key="DefaultProfileOnStartup">Профиль по умолчанию при запуске:</system:String>
+    <system:String x:Key="PleaseChooseProfile">Выберите профиль отображения:</system:String>
+    <system:String x:Key="DoNotShowProfileSelection">Больше не показывать это диалоговое окно</system:String>
+    <system:String x:Key="ShowProfileDialogOnGameStart">Показывать этот диалог каждый раз при запуске игры</system:String>
+    <system:String x:Key="ShowProfileDialogOnAppStart">Показывать этот диалог каждый раз при запуске приложения</system:String>
 
     <!--.................... Display Profiles Tab End .......................... -->
 
     
     <!--.................... About Tab Begin .......................... -->
 
-    <system:String x:Key="ProgramDevelopedBy">Program developed by:</system:String>
-    <system:String x:Key="FixesDevelopedBy">3D Fixes developed by:</system:String>
-    <system:String x:Key="DonationDeveloperToolTip">Send a donation to the developer of 3D Fix Manager.</system:String>
-    <system:String x:Key="DonationShaderHackersToolTip">Send a donation to the developers of 3D fixes.</system:String>
-    <system:String x:Key="ProgramVersion">Program version:</system:String>
-    <system:String x:Key="FixProfiles">Profiles version:</system:String>
-    <system:String x:Key="CheckUpdate">Check for Updates</system:String>
-    <system:String x:Key="UpdateSuccess">Update completed</system:String>
-    <system:String x:Key="UpdateFailed">Update failed</system:String>
-    <system:String x:Key="ChangeNotes">(Change Notes)</system:String>
-    <system:String x:Key="Donate">Donate</system:String>
-    <system:String x:Key="Installing">Installing...</system:String>
+    <system:String x:Key="ProgramDevelopedBy">Программа разработана:</system:String>
+    <system:String x:Key="FixesDevelopedBy">3D Исправления разработаны:</system:String>
+    <system:String x:Key="DonationDeveloperToolTip">Отправить пожертвование разработчику 3D Fix Manager.</system:String>
+    <system:String x:Key="DonationShaderHackersToolTip">Отправить пожертвование разработчикам исправлений 3D.</system:String>
+    <system:String x:Key="ProgramVersion">Версия программы:</system:String>
+    <system:String x:Key="FixProfiles">Версия профилей:</system:String>
+    <system:String x:Key="CheckUpdate">Проверить наличие обновлений</system:String>
+    <system:String x:Key="UpdateSuccess">Обновление завершено</system:String>
+    <system:String x:Key="UpdateFailed">Не удалось обновить</system:String>
+    <system:String x:Key="ChangeNotes">(Примечания к изменениям)</system:String>
+    <system:String x:Key="Donate">Пожертвовать</system:String>
+    <system:String x:Key="Installing">Установка...</system:String>
 
     <!-- Buttons -->
-    <system:String x:Key="Manual">Manual</system:String>
-    <system:String x:Key="ReportBugs">Report Bugs</system:String>
-    <system:String x:Key="UpdateSteamDb">Update Steam DB</system:String>
-    <system:String x:Key="CreateReleases">Create Releases</system:String>
-    <system:String x:Key="ReferenceDb">Fill Reference DB</system:String>
-    <system:String x:Key="GithubLanguages">GitHub Languages</system:String>
+    <system:String x:Key="Manual">Руководство</system:String>
+    <system:String x:Key="ReportBugs">Сообщить об ошибках</system:String>
+    <system:String x:Key="UpdateSteamDb">Обновить Steam DB</system:String>
+    <system:String x:Key="CreateReleases">Создать релизы</system:String>
+    <system:String x:Key="ReferenceDb">Заполнить справочную базу данных</system:String>
+    <system:String x:Key="GithubLanguages">Языки GitHub</system:String>
 
     <!--.................... About Tab End .......................... -->
 
@@ -796,9 +796,9 @@
     <!--.................... Dialog Window Begin .......................... -->
 
     <!-- Buttons-->
-    <system:String x:Key="Yes">Yes</system:String>
-    <system:String x:Key="No">No</system:String>
-    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Do you want to revert 3dmigoto to the original version which was shipped with this 3D fix? &#x0d;&#x0d;Original version: {0}&#x0d;Installed version: {1}</system:String>
+    <system:String x:Key="Yes">Да</system:String>
+    <system:String x:Key="No">Нет</system:String>
+    <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Вы хотите вернуть 3dmigoto исходную версию, которая была отправлена с этим исправлением 3D? &#x0d;&#x0d;Исходная версия: {0}&#x0d;Установленная версия: {1}</system:String>
     <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
     <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
     <system:String x:Key="InstallOpenGLwrapperx32">Install OpenGL x32</system:String>
