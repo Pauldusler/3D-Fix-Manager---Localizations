@@ -799,207 +799,207 @@
     <system:String x:Key="Yes">Да</system:String>
     <system:String x:Key="No">Нет</system:String>
     <system:String x:Key="Downgrade3dMigotoDialog" xml:space="preserve">Вы хотите вернуть 3dmigoto исходную версию, которая была отправлена с этим исправлением 3D? &#x0d;&#x0d;Исходная версия: {0}&#x0d;Установленная версия: {1}</system:String>
-    <system:String x:Key="Install3dmigotox32">Install 3dmigoto x32</system:String>
-    <system:String x:Key="Install3dmigotox64">Install 3dmigoto x64</system:String>
-    <system:String x:Key="InstallOpenGLwrapperx32">Install OpenGL x32</system:String>
-    <system:String x:Key="InstallOpenGLwrapperx64">Install OpenGL x64</system:String>
-    <system:String x:Key="InstallHelixModx32">Install HelixMod x32</system:String>
-    <system:String x:Key="InstallHelixModx64">Install HelixMod x64</system:String>
-    <system:String x:Key="QuickSetup">Quick Setup</system:String>
-    <system:String x:Key="SetupWizard">Setup Wizard</system:String>
-    <system:String x:Key="NormalFix">Regular 3D Fix</system:String>
+    <system:String x:Key="Install3dmigotox32">Установить 3dmigoto x32</system:String>
+    <system:String x:Key="Install3dmigotox64">Установить 3dmigoto x64</system:String>
+    <system:String x:Key="InstallOpenGLwrapperx32">Установить OpenGL x32</system:String>
+    <system:String x:Key="InstallOpenGLwrapperx64">Установить OpenGL x64</system:String>
+    <system:String x:Key="InstallHelixModx32">Установить HelixMod x32</system:String>
+    <system:String x:Key="InstallHelixModx64">Установить HelixMod x64</system:String>
+    <system:String x:Key="QuickSetup">Быстрая установка</system:String>
+    <system:String x:Key="SetupWizard">Мастер установки</system:String>
+    <system:String x:Key="NormalFix">Обычный 3D Fix</system:String>
     <system:String x:Key="SliFix">SLI 3D Fix</system:String>
-    <system:String x:Key="AlternativeFix">Alternative 3D Fix</system:String>
-    <system:String x:Key="DriverType">Driver type</system:String>
+    <system:String x:Key="AlternativeFix">Альтернативный 3D Fix</system:String>
+    <system:String x:Key="DriverType">Тип драйвера</system:String>
 
     <!-- Messages -->
-    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode as one or more 3D driver components are missing or haven't been set up. &#x0d;&#x0d;Please check driver state and install any components required.</system:String>
-    <system:String x:Key="GeforceDriverIncompatible" xml:space="preserve">Error: Failed to launch game in stereoscopic 3D mode as your currently installed video driver is not compatible to stereo 3D for DirectX 11 games. &#x0d;&#x0d;Info: Geforce driver version 456.38 and higher are affected by this issue. We are currently working on solving this issue and apologize for the inconvenience.</system:String>
+    <system:String x:Key="GameStartFailedStereoMissing" xml:space="preserve">Ошибка: не удалось запустить игру в стереоскопическом 3D-режиме, поскольку один или несколько компонентов 3D-драйвера отсутствуют или не были настроены. &#x0d;&#x0d;Пожалуйста, проверьте состояние драйвера и установите все необходимые компоненты.</system:String>
+    <system:String x:Key="GeforceDriverIncompatible" xml:space="preserve">Ошибка: не удалось запустить игру в режиме стереоскопического 3D, поскольку установленный вами видеодрайвер несовместим со стерео 3D для игр DirectX 11. &#x0d;&#x0d;Информация: этой проблеме подвержен драйвер Geforce версии 456.38 и выше. В настоящее время мы работаем над решением этой проблемы и приносим извинения за неудобства.</system:String>
 
-    <system:String x:Key="WizardCrashWarning" xml:space="preserve">Warning: The following programs are running: &#x0d;&#x0d;{0}&#x0d;&#x0d;These programs are known to crash the 3D Vision Setup Wizard. &#x0d;&#x0d;Please close mentioned programs and click on 'OK' to continue.</system:String>
-    <system:String x:Key="FailedToFindGeforceDriver">Error: Could not find Geforce driver in Windows driver store.</system:String>
+    <system:String x:Key="WizardCrashWarning" xml:space="preserve">Предупреждение: запущены следующие программы: &#x0d;&#x0d;{0}&#x0d;&#x0d;Известно, что эти программы вызывают сбой мастера настройки 3D Vision. &#x0d;&#x0d;Закройте указанные программы и нажмите «ОК», чтобы продолжить.</system:String>
+    <system:String x:Key="FailedToFindGeforceDriver">Ошибка: не удалось найти драйвер Geforce в магазине драйверов Windows.</system:String>
 
     <!-- DCH Warning dialog -->
-    <system:String x:Key="DchWarningHeadline">Warning: Your currently installed Geforce graphics driver is of driver type 'DCH' what is not recommended for Stereoscopic 3D.</system:String>
+    <system:String x:Key="DchWarningHeadline">Предупреждение. В настоящий момент установлен графический драйвер Geforce типа DCH, что не рекомендуется для стереоскопического 3D.</system:String>
 
-    <system:String x:Key="DchWarningDchExplanationTitle">What does the term "DCH" stand for?</system:String>
-    <system:String x:Key="DchWarningDchExplanation">DCH is a new package format for drivers introduced with Windows 10. Microsoft's long-term plan is to make this the default driver type for Windows 10 and replace installed standard drivers with DCH ones. DCH and standard drivers are basically the same drivers - only how they are packed and installed differs.</system:String>
+    <system:String x:Key="DchWarningDchExplanationTitle">Что означает термин "DCH"?</system:String>
+    <system:String x:Key="DchWarningDchExplanation">DCH - это новый формат пакетов для драйверов, представленных в Windows 10. Долгосрочный план Microsoft - сделать его типом драйвера по умолчанию для Windows 10 и заменить установленные стандартные драйверы на DCH. DCH и стандартные драйверы - это в основном одни и те же драйверы - отличается только способ их упаковки и установки.</system:String>
 
-    <system:String x:Key="DchWarningDchWhyUnrecommendedTitle">Why are DCH drivers not recommended for Stereoscopic 3D?</system:String>
-    <system:String x:Key="DchWarningDchWhyUnrecommended">For current DCH drivers Stereo 3D compatibility is restored by applying workarounds what comes at the cost of an significantly increased loading time of apps and games in 3D mode. So for the moment we do not recommend to use current DCH drivers. Instead standard drivers are the preferred ones.</system:String>
+    <system:String x:Key="DchWarningDchWhyUnrecommendedTitle">Почему драйверы DCH не рекомендуются для стереоскопического 3D?</system:String>
+    <system:String x:Key="DchWarningDchWhyUnrecommended">Для текущих драйверов DCH совместимость с стерео-3D восстанавливается путем применения обходных решений, что достигается за счет значительного увеличения времени загрузки приложений и игр в 3D-режиме. Поэтому на данный момент мы не рекомендуем использовать текущие драйверы DCH. Вместо этого предпочтительны стандартные драйверы.</system:String>
 
-    <system:String x:Key="DchWarningDchWhereToGetDefaultTitle">Where to get "Standard" Geforce drivers?</system:String>
-    <system:String x:Key="DchWarningDchWhereToGetDefault">Nvidia started to hide the standard drivers on their download page as they want to support Microsoft's plan to distribute DCH drivers on Windows 10. However latest standard drivers can be still found in section "Beta drivers and archive". For installing standard drivers manually just click the link below and make sure you selected option "Standard" for "Windows Driver Type" on the webpage.</system:String>
+    <system:String x:Key="DchWarningDchWhereToGetDefaultTitle">Где взять "Стандартные" драйверы Geforce?</system:String>
+    <system:String x:Key="DchWarningDchWhereToGetDefault">Nvidia начала скрывать стандартные драйверы на своей странице загрузки, поскольку они хотят поддержать план Microsoft по распространению драйверов DCH в Windows 10. Однако последние стандартные драйверы все еще можно найти в разделе «Бета-драйверы и архив». Чтобы установить стандартные драйверы вручную, просто нажмите на ссылку ниже и убедитесь, что вы выбрали вариант «Стандартный» для «Тип драйвера Windows» на веб-странице.</system:String>
 
-    <system:String x:Key="DchWarningDchHowToReplaceTitle">How to replace DCH drivers with Standard ones?</system:String>
-    <system:String x:Key="DchWarningDchHowToReplace">Since Nvidia driver version 441.12 it's possible to install "Standard" drivers over the "DCH" ones for switching the driver type.</system:String>
+    <system:String x:Key="DchWarningDchHowToReplaceTitle">Как заменить драйверы DCH на Стандартные?</system:String>
+    <system:String x:Key="DchWarningDchHowToReplace">Начиная с версии драйвера Nvidia 441.12, можно установить "Стандартные" драйверы вместо "DCH" для переключения типа драйвера.</system:String>
 
-    <system:String x:Key="DchWarningDchEasierWayTitle">Is there an easier way for switching to default drivers?</system:String>
-    <system:String x:Key="DchWarningDchEasierWay">Unfortunately no. If the instructions for replacing DCH drivers do not work for you there is still the option to install old the old DCH driver 425.31 from May 2019 whith still works perfectly in stereo 3D mode. You can do this automatically by just clicking on the button "Install Geforce Driver 425.31 (DCH)". Please be aware that graphics cards RTX 2070 Super / RTX 2080 Super are not supported by this driver.</system:String>
+    <system:String x:Key="DchWarningDchEasierWayTitle">Есть ли более простой способ перейти на драйверы по умолчанию?</system:String>
+    <system:String x:Key="DchWarningDchEasierWay">К сожалению нет. Если инструкции по замене драйверов DCH не работают для вас, все еще есть возможность установить старый старый драйвер DCH 425.31 с мая 2019 года, который по-прежнему отлично работает в стереорежиме 3D. Вы можете сделать это автоматически, просто нажав кнопку «Установить драйвер Geforce 425.31 (DCH)». Имейте в виду, что видеокарты RTX 2070 Super / RTX 2080 Super не поддерживаются этим драйвером.</system:String>
 
-    <system:String x:Key="DownloadDDU">Download DDU (Display Driver Uninstaller)</system:String>
-    <system:String x:Key="DownloadStandardDriver">Download Standard drivers manually</system:String>
-    <system:String x:Key="InstallDch42531">Install Geforce Driver 425.31 (DCH)</system:String>
-    <system:String x:Key="Install3DVisionDriver">Install NVidia 3D Vision Driver</system:String>
+    <system:String x:Key="DownloadDDU">Скачать DDU (Display Driver Uninstaller)</system:String>
+    <system:String x:Key="DownloadStandardDriver">Скачать стандартные драйверы вручную</system:String>
+    <system:String x:Key="InstallDch42531">Установить драйвер Geforce 425.31 (DCH)</system:String>
+    <system:String x:Key="Install3DVisionDriver">Установить драйвер NVidia 3D Vision</system:String>
 
     <!-- Recommended Driver dialog -->
-    <system:String x:Key="DriverUpdateRecommendedVersion" xml:space="preserve">Geforce graphics driver 425.31 ist the last driver officially supporting 3D Vision. Using this driver will get you the best experience as you don't have to deal with driver hacks and tricks to get stereo 3D working again on current drivers. &#x0d;&#x0d;Do you want to install Geforce driver 425.31 now?</system:String>
-    <system:String x:Key="DriverAlreadyInstalled" xml:space="preserve">Geforce graphics driver 425.31 ist already installed on your system which is the recommended driver for stereoscopic 3D. &#x0d;&#x0d;Do you want to reinstall the driver now?</system:String>
+    <system:String x:Key="DriverUpdateRecommendedVersion" xml:space="preserve">Графический драйвер Geforce 425.31 - последний драйвер, официально поддерживающий 3D Vision. Использование этого драйвера обеспечит вам наилучшие впечатления, поскольку вам не придется сталкиваться с хитростями и хитростями драйверов, чтобы снова запустить стерео 3D на текущих драйверах. &#x0d;&#x0d;Вы хотите установить драйвер Geforce 425.31 сейчас?</system:String>
+    <system:String x:Key="DriverAlreadyInstalled" xml:space="preserve">Графический драйвер Geforce 425.31 уже установлен в вашей системе и является рекомендуемым драйвером для стереоскопического 3D. &#x0d;&#x0d;Вы хотите переустановить драйвер сейчас?</system:String>
 
     <!-- Driver update dialog -->
-    <system:String x:Key="DriverUpdateHeadline">A new Geforce graphics driver is available. Do you want to update your driver?</system:String>
-    <system:String x:Key="DriverUpdateInstalledDriver">Installed driver:</system:String>
+    <system:String x:Key="DriverUpdateHeadline">Доступен новый графический драйвер Geforce. Вы хотите обновить драйвер?</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriver">Установленный драйвер:</system:String>
     <system:String x:Key="DriverUpdateInstalledDriverValue">Placeholder</system:String>
-    <system:String x:Key="DriverUpdateLatestDriver">Latest driver:</system:String>
+    <system:String x:Key="DriverUpdateLatestDriver">Последний драйвер:</system:String>
     <system:String x:Key="DriverUpdateLatestDriverValue">Placeholder</system:String>
-    <system:String x:Key="DriverUpdateInstalledDriverType" xml:space="preserve">Installed driver type:         {0}</system:String>
-    <system:String x:Key="DriverUpdateUsedWindowsVersion" xml:space="preserve">Installed Windows version:         {0}</system:String>
-    <system:String x:Key="DriverUpdateImportantInfoHeadline">Important information:</system:String>
+    <system:String x:Key="DriverUpdateInstalledDriverType" xml:space="preserve">Тип установленного драйвера:         {0}</system:String>
+    <system:String x:Key="DriverUpdateUsedWindowsVersion" xml:space="preserve">Установленная версия Windows:         {0}</system:String>
+    <system:String x:Key="DriverUpdateImportantInfoHeadline">Важная информация:</system:String>
 
     <system:String x:Key="DriverUpdateImportantInfoExplanation">
-        Nvidia officially dropped support for 3D Vision / stereoscopic 3D in May 2019 which means that the stereo 3D driver is no longer included in recent Geforce graphics drivers.
-        Although not included in the driver package 3D Vision still can be installed and still is fully functional.
-        3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+        Nvidia официально прекратила поддержку 3D Vision / стереоскопического 3D в мае 2019 года, что означает, что драйвер стерео 3D больше не включен в последние графические драйверы Geforce.
+        Хотя 3D Vision не входит в пакет драйверов, его можно установить и по-прежнему полностью функционально.
+        3D Fix Manager выполняет эту часть за вас и восстанавливает функциональность 3D Vision / стереоскопического 3D.
     </system:String>
 
     <FlowDocument x:Key="testDoku">
         <Paragraph Foreground="red">test</Paragraph>
     </FlowDocument>
 
-    <system:String x:Key="StereoDriverAlreadyInstalled">The stereoscopic 3D driver is already installed on your system. You are ready to play in VR now!</system:String>
+    <system:String x:Key="StereoDriverAlreadyInstalled">Драйвер стереоскопического 3D уже установлен в вашей системе. Теперь вы готовы играть в VR!</system:String>
 
-    <system:String x:Key="SaveProfileToRepo">Do you want to apply the profile changes to the git working copy as well?</system:String>
+    <system:String x:Key="SaveProfileToRepo">Вы хотите применить изменения профиля также к рабочей копии git??</system:String>
 
     <!-- VR Splash Dialog -->
     <FlowDocument x:Key="VrSplashDialog" FontFamily="SegeUI" FontSize="16" PagePadding="5">
-        <Paragraph Style="{DynamicResource LargeGreenTitle}">Welcome to HelixVision!</Paragraph>
+        <Paragraph Style="{DynamicResource LargeGreenTitle}">Добро пожаловать в HelixVision!</Paragraph>
 
-        <Paragraph>Thanks for joining us on an epic stereoscopic 3D adventure. We hope you enjoy it as much as we do.</Paragraph>
+        <Paragraph>Спасибо, что присоединились к нам в эпическом стереоскопическом 3D-приключении. Надеемся, вам это понравится так же, как и нам.</Paragraph>
 
-        <Paragraph>HelixVision starts with NVidia 3D Vision, which creates stereo images from any game. 
-            Those stereo images are fixed up by mods downloaded from the
-            <Hyperlink NavigateUri="http://helixmod.blogspot.com">HelixModBlog</Hyperlink>, and installed in the game directory. 
-            Game pref files are modified for optimal settings, and your video driver is modded for the game while it is running.
+        <Paragraph>HelixVision начинается с NVidia 3D Vision, которая создает стереоизображения из любой игры. 
+            Эти стереоизображения исправляются модами, загруженными с
+            <Hyperlink NavigateUri="http://helixmod.blogspot.com">HelixModBlog</Hyperlink>, и установленными в директорию игры. 
+            Файлы настроек игры изменены для оптимальных настроек, и ваш видеодрайвер модифицируется для игры, пока она запущена.
         </Paragraph>
 
-        <Paragraph Margin="0,0,0,28">As with any modding, you can expect occasional glitches and problems, especially as games, drivers, and the OS are updated.</Paragraph>
+        <Paragraph Margin="0,0,0,28">Как и в случае с любым моддингом, вы можете ожидать случайных сбоев и проблем, особенно при обновлении игр, драйверов и ОС.</Paragraph>
 
-        <Paragraph><Italic>We are here to help.</Italic> If you run into problems, please don't hesitate to ask for help on the Steam Forums.</Paragraph>
+        <Paragraph><Italic>Мы здесь, чтобы помочь.</Italic> Если у вас возникнут проблемы, не стесняйтесь обращаться за помощью на форумах Steam.</Paragraph>
 
         <Paragraph>
             <Hyperlink NavigateUri="https://steamcommunity.com/app/1127310/discussions/">Support Link: HelixVision Steam Forums</Hyperlink>
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource LargeGreenTitle}">Getting Started:</Paragraph>
+        <Paragraph Style="{DynamicResource LargeGreenTitle}">Начинаем:</Paragraph>
 
         <List MarkerStyle="Decimal">
             <ListItem>
-                <Paragraph Style="{DynamicResource ParagraphInList}">Install the NVidia 3D Vision Driver by clicking the button below.</Paragraph>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Установите драйвер NVidia 3D Vision, нажав кнопку ниже.</Paragraph>
             </ListItem>
             <ListItem>
-                <Paragraph Style="{DynamicResource ParagraphInList}">Start SteamVR. Mixed Reality or Oculus Home will start as necessary.</Paragraph>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Запустите SteamVR. Mixed Reality или Oculus Home запускаются по мере необходимости.</Paragraph>
             </ListItem>
             <ListItem>
-                <Paragraph Style="{DynamicResource ParagraphInList}">Choose a game from the list on the left. Installed games are in bold.</Paragraph>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Выберите игру из списка слева. Установленные игры выделены жирным шрифтом.</Paragraph>
             </ListItem>
             <ListItem>
-                <Paragraph Style="{DynamicResource ParagraphInList}">Click Play in VR. The game will appear in anaglyph 3D on your monitor, and be mirrored in VR.</Paragraph>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Нажмите Играть в VR. Игра будет отображаться на вашем мониторе в анаглифическом 3D и отражаться в виртуальной реальности.</Paragraph>
             </ListItem>
             <ListItem>
-                <Paragraph Style="{DynamicResource ParagraphInList}">Put on your HMD and enjoy glorius stereoscopic 3D.</Paragraph>
+                <Paragraph Style="{DynamicResource ParagraphInList}">Наденьте шлем и наслаждайтесь великолепным стереоскопическим 3D.</Paragraph>
             </ListItem>
         </List>
     </FlowDocument>
 
     <!-- Close to System Tray Warning -->
     <FlowDocument x:Key="CloseToTrayWarning">
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Info:</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Инфо:</Paragraph>
 
-        <Paragraph>The application is minimized to the system tray now and represented as an icon there. The icon is either labeled with
+        <Paragraph>Приложение теперь свернуто в системный трей и отображается там в виде значка. Значок может быть
             <Image Source="..\Images\Tray Icons\2d_icon.ico" Height="20" Width="20" VerticalAlignment="Bottom" RenderOptions.BitmapScalingMode="HighQuality"/>
-            or
+            или
             <Image Source="..\Images\Tray Icons\3d_icon.ico" Height="20" Width="20 " VerticalAlignment="Bottom" RenderOptions.BitmapScalingMode="HighQuality"/>
-            which tells whether 3D mode is currently enabled.
+            который сообщает, включен ли в данный момент режим 3D.
         </Paragraph>
 
-        <Paragraph>To close the application right click on the icon and choose
+        <Paragraph>Чтобы закрыть приложение, щелкните значок правой кнопкой мыши и выберите
             <Bold>
-                <Italic>"Close".</Italic>
+                <Italic>"Закрыть".</Italic>
             </Bold>
         </Paragraph>
 
-        <Paragraph>A left click on the icon brings the application back to the foreground.</Paragraph>
+        <Paragraph>Щелчок левой кнопкой мыши по значку возвращает приложение на передний план.</Paragraph>
     </FlowDocument>
 
-    <system:String x:Key="DriverUpdateInstallProcedure">Install notes:</system:String>
+    <system:String x:Key="DriverUpdateInstallProcedure">Примечания по установке:</system:String>
 
     <system:String x:Key="DriverUpdateInstallProcedureExplanation">
-        Just let 3D Fix Manager install the required drivers.
-        For doing so please click on the "continue" button in the install wizards whenever asked and wait until the installation is completed. That's all.
-        Don't worry if you canceled one of the setup wizards by mistake. 3D Fix Manager checks all dependencies and installs missing components automatically.
+        Просто позвольте 3D Fix Manager установить необходимые драйверы.
+        Для этого нажимайте кнопку «Продолжить» в мастерах установки всякий раз, когда вас спросят, и дождитесь завершения установки. Это все.
+        Не волнуйтесь, если вы по ошибке отменили один из мастеров настройки. 3D Fix Manager проверяет все зависимости и автоматически устанавливает недостающие компоненты.
     </system:String>
 
-    <system:String x:Key="DriverUpdateSupportedDriversHeadline">Last official 3D Vision driver:</system:String>
+    <system:String x:Key="DriverUpdateSupportedDriversHeadline">Последний официальный драйвер 3D Vision:</system:String>
 
     <system:String x:Key="DriverUpdateSupportedDriversExplanation">
-        Geforce Driver version 425.31 released on April 2019 was the last one to officially support 3D Vision. 
-        Install this one if newer drivers do not work with stereoscopic 3D despite automatic installation through 3D Fix Manager.
+        Версия драйвера Geforce 425.31, выпущенная в апреле 2019 года, была последней, официально поддерживающей 3D Vision. 
+        Установите этот, если более новые драйверы не работают со стереоскопическим 3D, несмотря на автоматическую установку через 3D Fix Manager.
     </system:String>
 
-    <system:String x:Key="StereoSetupError">Error: Failed to enable Stereoscopic 3D as 3D Vision driver is missing. &#x0d;&#x0d;Please install older version 425.31 of your graphics driver.</system:String>
-    <system:String x:Key="DriverInstallFailed">Driver install failed.</system:String>
-    <system:String x:Key="ControllerInstallFailed">Failed to install 3D controller driver.</system:String>
-    <system:String x:Key="DchFixInstallFailed">Failed to install DCH fix.</system:String>
+    <system:String x:Key="StereoSetupError">Ошибка: не удалось включить стереоскопическое 3D, так как драйвер 3D Vision отсутствует. &#x0d;&#x0d;Пожалуйста, установите старую версию 425.31 вашего графического драйвера.</system:String>
+    <system:String x:Key="DriverInstallFailed">Не удалось установить драйвер.</system:String>
+    <system:String x:Key="ControllerInstallFailed">Не удалось установить драйвер 3D-контроллера.</system:String>
+    <system:String x:Key="DchFixInstallFailed">Не удалось установить исправление DCH.</system:String>
 
     <!-- Driver update dialog simple-->
-    <system:String x:Key="DriverUpdateSimpleHeadline">Do you want to update your graphics driver to the latest version as well?</system:String>
-    <system:String x:Key="DriverUpdatePleaseChoose">Please choose</system:String>
-    <system:String x:Key="DriverUpdateSimpleYesChoice">, if you want to update your Geforce graphics driver to the latest version (recommended)</system:String>
-    <system:String x:Key="DriverUpdateSimpleNoChoice">, if you want to keep your currently installed Geforce drivers.</system:String>
-    <system:String x:Key="DriverUpdateSimpleNote">At any case stereoscopic 3D features of the driver will be restored.</system:String>
+    <system:String x:Key="DriverUpdateSimpleHeadline">Хотите ли вы также обновить графический драйвер до последней версии?</system:String>
+    <system:String x:Key="DriverUpdatePleaseChoose">Пожалуйста, выберите</system:String>
+    <system:String x:Key="DriverUpdateSimpleYesChoice">, если вы хотите обновить графический драйвер Geforce до последней версии (рекомендуется)</system:String>
+    <system:String x:Key="DriverUpdateSimpleNoChoice">, если вы хотите сохранить установленные драйверы Geforce.</system:String>
+    <system:String x:Key="DriverUpdateSimpleNote">В любом случае стереоскопические возможности 3D драйвера будут восстановлены.</system:String>
 
-    <system:String x:Key="DriverRestore2d" xml:space="preserve">For 2D mode it's recommended to undo the modification of the video driver. &#x0d;&#x0d;We highly recommend to do so as games using anti cheat software like "Easy Anticheat" might get your gaming account banned when having modified drivers installed. &#x0d;&#x0d;Do you want to restore original video drivers now?</system:String>
-    <system:String x:Key="DriverRestoreCloseApp" xml:space="preserve">Before closing the application it's recommended to undo the modification of the video driver. &#x0d;&#x0d;Restoring the original driver is required for some games which use anti cheat software like "Easy Anticheat". Such games might prevent you from starting the game or in worst case your account might get banned because of using a modified driver. &#x0d;&#x0d;Do you want to restore original video driver now?</system:String>
-    <system:String x:Key="DriverHackPlay3d" xml:space="preserve">To play this game in Stereo 3D it's necessary to install a mod to the video driver. The modification of the driver is done only for games that need it, and the modified driver is installed and loaded from the game directory only while the game is running.  &#x0d;&#x0d;The modification replaces just one instruction in the video driver which brings back full Stereo 3D compatibility to Windows 10 v. 1903 and higher, and any version of the video driver. &#x0d;&#x0d;WARNING: Please be aware that modifying driver files is forbidden by online games which use anti cheat protection software (for example "Easy AntiCheat"). To avoid getting your game account banned it's strongly advised to use the modified driver for single player games only.&#x0d;&#x0d;&#x0d;Do you want to modify the video driver for full stereo 3D support now?</system:String>
-    <system:String x:Key="DriverHack3d" xml:space="preserve">For playing in Stereo 3D mode it's necessary to install a mod to the video driver. &#x0d;&#x0d;The modification replaces just one instruction in the video driver which brings back full Stereo 3D compatibility to Windows 10 v. 1903 and higher, and any version of the video driver.  &#x0d;&#x0d;WARNING: Please be aware that modifying driver files is forbidden by online games which use anti cheat protection software (for example "Easy AntiCheat"). To avoid getting your game account banned it's strongly advised to use the modified driver for single player games only.&#x0d;&#x0d;&#x0d;Do you want to modify the video driver for full stereo 3D support now?</system:String>
-    <system:String x:Key="FallBackToLocalDriverHack" xml:space="preserve">Error: Failed to install the global driver modification to Windows driver store. &#x0d;&#x0d;Do you want to install the driver modification to your local game folder instead where it is loaded on game start? (recommended) &#x0d;&#x0d;Tip: You can switch between local or global driver modification anytime in 'Nvidia 3D Settings' tab by toggling 'Apply driver modification via 3dmigoto' option.</system:String>
-    <system:String x:Key="DriverHackErrorFixNotInstalled" xml:space="preserve">Error: The 3D fix is not installed which is required for loading the driver modification. &#x0d;&#x0d;Please install the 3D fix and try again.</system:String>
-    <system:String x:Key="GlobalDriverHackNotRecommended" xml:space="preserve">A modification to your video driver was detected which was done to achieve full compatibility for stereo 3D on Windows 10. &#x0d;&#x0d;The driver modification is still active on a global scope which affects all installed games including those who don't require the mod. It's recommended to undo the modification and install and load the modified video driver from the game directory instead. &#x0d;&#x0d;Do you want to restore the original video driver now?</system:String>
-    <system:String x:Key="GlobalDriverHackNotRecommendedNoneDx11" xml:space="preserve">A modification to your video driver was detected which was done to achieve full compatibility for stereo 3D on Windows 10. &#x0d;&#x0d;For playing this game in stereo 3D the modification is not required and undoing the mod is recommended. &#x0d;&#x0d;Do you want to undo the video driver modification now?</system:String>
-    <system:String x:Key="LocalDriverHackNotPossibleForHelixVision" xml:space="preserve">Currently it's not possible to install the mod to the video driver required to play this game on the big VR screen when running Windows 10 v.1903 or later with drivers higher than 425.31. &#x0d;&#x0d;Reverting to driver version 425.31 is sure to work. &#x0d;&#x0d;We are working on a solution and apologize for the inconvenience.</system:String>
+    <system:String x:Key="DriverRestore2d" xml:space="preserve">Для режима 2D рекомендуется отменить модификацию видеодрайвера. &#x0d;&#x0d;Мы настоятельно рекомендуем сделать это, поскольку игры, использующие античит-программное обеспечение, такое как «Easy Anticheat», могут заблокировать вашу игровую учетную запись при установке модифицированных драйверов. &#x0d;&#x0d;Хотите сейчас восстановить оригинальные видеодрайверы?</system:String>
+    <system:String x:Key="DriverRestoreCloseApp" xml:space="preserve">Перед закрытием приложения рекомендуется отменить модификацию видеодрайвера. &#x0d;&#x0d;Восстановление исходного драйвера требуется для некоторых игр, в которых используется античитерская программа, такая как «Easy Anticheat». Такие игры могут помешать вам начать игру или в худшем случае ваша учетная запись может быть заблокирована из-за использования модифицированного драйвера. &#x0d;&#x0d;Вы хотите восстановить исходный видеодрайвер сейчас?</system:String>
+    <system:String x:Key="DriverHackPlay3d" xml:space="preserve">Чтобы играть в эту игру в Stereo 3D, необходимо установить мод на видеодрайвер. Модификация драйвера выполняется только для игр, в которых он нужен, а модифицированный драйвер устанавливается и загружается из каталога игры только во время работы игры. &#x0d;&#x0d;Модификация заменяет только одну инструкцию в видеодрайвере, что возвращает полную совместимость со Stereo 3D для Windows 10 v.1903 и выше, а также для любой версии видеодрайвера. &#x0d;&#x0d;ПРЕДУПРЕЖДЕНИЕ. Имейте в виду, что изменение файлов драйверов запрещено онлайн-играми, в которых используется программное обеспечение для защиты от мошенничества (например, «Easy AntiCheat»). Чтобы избежать блокировки вашей игровой учетной записи, настоятельно рекомендуется использовать модифицированный драйвер только для одиночных игр. &#x0d;&#x0d;&#x0d;Вы хотите модифицировать видеодрайвер для полной поддержки стерео 3D сейчас?</system:String>
+    <system:String x:Key="DriverHack3d" xml:space="preserve">Для игры в режиме Stereo 3D необходимо установить мод на видеодрайвер. &#x0d;&#x0d;Модификация заменяет только одну инструкцию в видеодрайвере, что возвращает полную совместимость со Stereo 3D для Windows 10 v.1903 и выше, а также для любой версии видеодрайвера. &#x0d;&#x0d;ПРЕДУПРЕЖДЕНИЕ. Имейте в виду, что изменение файлов драйверов запрещено онлайн-играми, в которых используется программное обеспечение для защиты от мошенничества (например, «Easy AntiCheat»). Чтобы избежать блокировки вашей игровой учетной записи, настоятельно рекомендуется использовать модифицированный драйвер только для одиночных игр. &#x0d;&#x0d;&#x0d;Вы хотите модифицировать видеодрайвер для полной поддержки стерео 3D сейчас?</system:String>
+    <system:String x:Key="FallBackToLocalDriverHack" xml:space="preserve">Ошибка: не удалось установить глобальную модификацию драйвера в хранилище драйверов Windows. &#x0d;&#x0d;Вы хотите установить модификацию драйвера в локальную папку с игрой, а не туда, где она загружается при запуске игры? (рекомендуется) &#x0d;&#x0d;Совет: вы можете переключаться между локальной или глобальной модификацией драйвера в любое время на вкладке «Настройки Nvidia 3D», выбрав опцию «Применить изменение драйвера через 3dmigoto».</system:String>
+    <system:String x:Key="DriverHackErrorFixNotInstalled" xml:space="preserve">Ошибка: не установлен 3D fix, необходимый для загрузки модификации драйвера. &#x0d;&#x0d;Пожалуйста, установите 3D fix и попробуйте еще раз.</system:String>
+    <system:String x:Key="GlobalDriverHackNotRecommended" xml:space="preserve">Обнаружена модификация вашего видеодрайвера, которая была сделана для достижения полной совместимости для стерео 3D в Windows 10. &#x0d;&#x0d;Модификация драйвера по-прежнему активна в глобальном масштабе, что затрагивает все установленные игры, включая те, которым мод не нужен. Рекомендуется отменить модификацию и вместо этого установить и загрузить модифицированный видеодрайвер из каталога игры. &#x0d;&#x0d;Вы хотите восстановить исходный видеодрайвер сейчас?</system:String>
+    <system:String x:Key="GlobalDriverHackNotRecommendedNoneDx11" xml:space="preserve">Обнаружена модификация вашего видеодрайвера, которая была сделана для достижения полной совместимости для стерео 3D в Windows 10. &#x0d;&#x0d;Для игры в стерео 3D модификация не требуется и рекомендуется отменить мод. &#x0d;&#x0d;Вы хотите отменить модификацию видеодрайвера сейчас?</system:String>
+    <system:String x:Key="LocalDriverHackNotPossibleForHelixVision" xml:space="preserve">В настоящее время невозможно установить мод на видеодрайвер, необходимый для игры в эту игру на большом экране виртуальной реальности при запуске Windows 10 v.1903 или новее с драйверами выше 425.31. &#x0d;&#x0d;Возврат к версии драйвера 425.31 обязательно сработает. &#x0d;&#x0d;Мы работаем над решением и приносим извинения за неудобства.</system:String>
 
     <!-- 3D Vision driver restore dialog -->
-    <system:String x:Key="DriverRestoreHeadline">3D Vision is not installed on your system. Do you want to install the required drivers now?</system:String>
-    <system:String x:Key="StereoDependencyMissing">One or more driver components required for stereosopic 3D are missing on your system. Do you want to install them now?</system:String>
-    <system:String x:Key="StereoDriver">Stereoscopic 3D Driver:</system:String>
+    <system:String x:Key="DriverRestoreHeadline">3D Vision не установлен в вашей системе. Вы хотите установить необходимые драйверы сейчас?</system:String>
+    <system:String x:Key="StereoDependencyMissing">Один или несколько компонентов драйвера, необходимых для стереоскопического 3D, отсутствуют в вашей системе. Вы хотите установить их сейчас?</system:String>
+    <system:String x:Key="StereoDriver">Драйвер стереоскопического 3D:</system:String>
     <system:String x:Key="StereoDriverValue">Placeholder</system:String>
-    <system:String x:Key="StereoDllPatched">DLL Fix for Stereo 3D Driver:</system:String>
-    <system:String x:Key="DchDriverFixInstalled">DCH Fix for Stereo 3D Driver:</system:String>
+    <system:String x:Key="StereoDllPatched">Исправление DLL для стерео 3D драйвера:</system:String>
+    <system:String x:Key="DchDriverFixInstalled">Исправление DCH для стерео 3D драйвера:</system:String>
     <system:String x:Key="DchDriverFixInstalledValue">Placeholder</system:String>
     <system:String x:Key="StereoDllPatchedValue">Placeholder</system:String>
-    <system:String x:Key="ControllerDriver">3D Controller Driver:</system:String>
+    <system:String x:Key="ControllerDriver">Драйвер 3D-контроллера:</system:String>
     <system:String x:Key="ControllerDriverValue">Placeholder</system:String>
-    <system:String x:Key="Win10GeforceFixInstalled">DLL Fix for Geforce Driver:</system:String>
+    <system:String x:Key="Win10GeforceFixInstalled">Исправление DLL для драйвера Geforce:</system:String>
     <system:String x:Key="Win10GeforceFixInstalledValue">Placeholder</system:String>
-    <system:String x:Key="Win10GeforceFixInstallationFailed" xml:space="preserve">Error:&#x0d;&#x0d;An error occured while installing the Geforce graphics driver modification required for Stereo 3D and higher.</system:String>
-    <system:String x:Key="Win10GeforceFixInstallationCanceled" xml:space="preserve">Installation of the Geforce graphics driver modification required for Stereo 3D was canceled by the user.</system:String>
-    <system:String x:Key="Win10GeforceFixInstallationProcessKillFailed" xml:space="preserve">Error:&#x0d;&#x0d;Installation of the Geforce graphics driver modification required for Stereo 3D failed. &#x0d;&#x0d;Error cause: Not all processes could be closed which continued to block driver DLLs.</system:String>
-    <system:String x:Key="Win10GeforceFixRestoreProcessKillFailed" xml:space="preserve">Error:&#x0d;&#x0d;Geforce graphics driver couldn't be reset to original version. &#x0d;&#x0d;Error cause: Not all processes could be closed which continued to block driver DLLs.</system:String>
-    <system:String x:Key="Win10GeforceFixRestoreCanceled" xml:space="preserve">Resetting Geforce graphics driver to original state was canceled by the user.</system:String>
-    <system:String x:Key="Win10GeforceFixRestoreFailed" xml:space="preserve">Error:&#x0d;&#x0d;Geforce graphics driver couldn't be reset to original version.</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationFailed" xml:space="preserve">Ошибка:&#x0d;&#x0d;Произошла ошибка при установке модификации графического драйвера Geforce, необходимой для Stereo 3D и выше.</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationCanceled" xml:space="preserve">Установка модификации графического драйвера Geforce, необходимой для Stereo 3D, была отменена пользователем.</system:String>
+    <system:String x:Key="Win10GeforceFixInstallationProcessKillFailed" xml:space="preserve">Ошибка:&#x0d;&#x0d;Не удалось установить модификацию графического драйвера Geforce, необходимую для Stereo 3D. &#x0d;&#x0d;Причина ошибки: не все процессы могли быть закрыты, что продолжало блокировать библиотеки DLL драйверов.</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreProcessKillFailed" xml:space="preserve">Ошибка:&#x0d;&#x0d;Не удалось сбросить графический драйвер Geforce до исходной версии. &#x0d;&#x0d;Причина ошибки: не все процессы могли быть закрыты, что продолжало блокировать библиотеки DLL драйверов.</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreCanceled" xml:space="preserve">Сброс графического драйвера Geforce в исходное состояние был отменен пользователем.</system:String>
+    <system:String x:Key="Win10GeforceFixRestoreFailed" xml:space="preserve">Ошибка:&#x0d;&#x0d;Не удалось сбросить графический драйвер Geforce до исходной версии.</system:String>
 
-    <system:String x:Key="CloseBlockingProcessesForGeforceFix">For applying the modification to the Geforce graphics driver the following processes must be closed:</system:String>
-    <system:String x:Key="CloseBlockingProcessesForRestore">For restoring original version of Geforce graphics driver the following processes must be closed:</system:String>
-    <system:String x:Key="CloseProcessesConfirmation">Do you want the processes to be closed now?</system:String>
+    <system:String x:Key="CloseBlockingProcessesForGeforceFix">Для применения модификации к графическому драйверу Geforce необходимо закрыть следующие процессы:</system:String>
+    <system:String x:Key="CloseBlockingProcessesForRestore">Для восстановления исходной версии графического драйвера Geforce необходимо закрыть следующие процессы:</system:String>
+    <system:String x:Key="CloseProcessesConfirmation">Вы хотите, чтобы процессы были закрыты сейчас?</system:String>
 
-    <system:String x:Key="DriverNotRequired">Not required</system:String>
-    <system:String x:Key="DriverInstalled">Installed</system:String>
-    <system:String x:Key="DriverNotInstalled">Not installed</system:String>
+    <system:String x:Key="DriverNotRequired">Не требуется</system:String>
+    <system:String x:Key="DriverInstalled">Установлен</system:String>
+    <system:String x:Key="DriverNotInstalled">Не установлен</system:String>
 
-    <system:String x:Key="DriverRestoreImportantInfoExplanation">The 3D Vision driver is required to show games in stereoscopic 3D.
-        Unfortunately this driver isn't included in the official driver package of the Geforce drivers any more as Nvidia dropped support for 3D Vision in May 2019.
-        Despite this fact 3D Vision still can be installed and perfectly used like before.
-        3D Fix Manager does this part for you and restores 3D Vision / stereoscopic 3D functionality.
+    <system:String x:Key="DriverRestoreImportantInfoExplanation">Драйвер 3D Vision необходим для отображения игр в стереоскопическом 3D.
+        К сожалению, этот драйвер больше не входит в официальный пакет драйверов Geforce, поскольку Nvidia прекратила поддержку 3D Vision в мае 2019 года.
+        Несмотря на это, 3D Vision все еще можно установить и использовать, как и раньше.
+        3D Fix Manager выполняет эту часть за вас и восстанавливает функциональность 3D Vision / стереоскопического 3D.
     </system:String>
 
     <system:String x:Key="DoNoShowDriverUpdateMessage">Do not check for driver updates any more</system:String>
