@@ -1002,52 +1002,52 @@
         3D Fix Manager выполняет эту часть за вас и восстанавливает функциональность 3D Vision / стереоскопического 3D.
     </system:String>
 
-    <system:String x:Key="DoNoShowDriverUpdateMessage">Do not check for driver updates any more</system:String>
+    <system:String x:Key="DoNoShowDriverUpdateMessage">Больше не проверять наличие обновлений драйверов</system:String>
 
-    <system:String x:Key="SearchGamesResult" xml:space="preserve">Search for installed games completed.&#x0d;&#x0d;Found games: {0}</system:String>
-    <system:String x:Key="FixInstallWarning" xml:space="preserve">The installation of the 3D fix is not recommended for this game.&#x0d;&#x0d;Do you want to install the fix anyway?</system:String>
-    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">The installation of the 3D wrapper is not recommended for this game.&#x0d;&#x0d;Do you want to install the wrapper anyway?</system:String>
-    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">An alternative 3D fix is available for this game. &#x0d;&#x0d;Information about the alternative 3D fix:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to download?</system:String>
-    <system:String x:Key="SliFixDialog" xml:space="preserve">An alternative 3D fix is available for this game which is optimized for SLI systems.&#x0d;&#x0d;&#x0d;Which version of the 3D fix do you want to install?</system:String>
-    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">A universal 3D fix is available for {0}.&#x0d;&#x0d;Do you want to add it to the fix profile?</system:String>
-    <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Error: Path could not be opened.</system:String>
-    <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Error: Registry path could not be found.</system:String>
-    <system:String x:Key="WeblinkInvalid" xml:space="preserve">Error: Helix Post could not be downloaded.&#x0d;&#x0d;The link to the blog is not valid.</system:String>
-    <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Error: Helix Post could not be downloaded. &#x0d;&#x0d;Please provide a weblink to the Helix Blog first.</system:String>
-    <system:String x:Key="ViewerNotFound" xml:space="preserve">Error: 3D Vision Photo Viewer was not found.</system:String>
-    <system:String x:Key="HelixPostError" xml:space="preserve">Error: Helix Post could not be downloaded.</system:String>
-    <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">For best results you should set target resolution for upscaling to the native resolution of your display. &#x0d;&#x0d;Do you want to set native resolution now?&#x0d;&#x0d;Detected native resolution: </system:String>
-    <system:String x:Key="Install3dmigoto02">Install 3dmigoto:</system:String>
-    <system:String x:Key="InstallOpenGLwrapper">Install OpenGL Wrapper:</system:String>
-    <system:String x:Key="InstallHelixMod02">Install HelixMod:</system:String>
-    <system:String x:Key="RemoveProfile">Remove Fix Profile?</system:String>
-    <system:String x:Key="RemoveRepoProfile">Do you want to remove the profile from the git working copy as well?</system:String>
+    <system:String x:Key="SearchGamesResult" xml:space="preserve">Поиск установленных игр завершен.&#x0d;&#x0d;Найденные игры: {0}</system:String>
+    <system:String x:Key="FixInstallWarning" xml:space="preserve">Не рекомендуется устанавливать 3D Fix для этой игры.&#x0d;&#x0d;Вы все равно хотите установить исправление?</system:String>
+    <system:String x:Key="WrapperInstallWarning" xml:space="preserve">Не рекомендуется устанавливать 3D-оболочку для этой игры.&#x0d;&#x0d;Вы все равно хотите установить оболочку?</system:String>
+    <system:String x:Key="AlternativeFixDialog" xml:space="preserve">Для этой игры доступно альтернативное 3D-исправление. &#x0d;&#x0d;Информация об альтернативном исправлении 3D:  &#x0d;&#x0d;{0}  &#x0d;&#x0d;&#x0d;Какую версию 3D-исправления вы хотите загрузить?</system:String>
+    <system:String x:Key="SliFixDialog" xml:space="preserve">Для этой игры доступно альтернативное 3D-исправление, оптимизированное для систем SLI.&#x0d;&#x0d;&#x0d;Какую версию 3D-исправления вы хотите установить?</system:String>
+    <system:String x:Key="AddUniversalFixDialog" xml:space="preserve">Универсальное 3D-исправление доступно для {0}.&#x0d;&#x0d;Вы хотите добавить его в профиль исправления?</system:String>
+    <system:String x:Key="ErrorOpeningConfigPath" xml:space="preserve">Ошибка: не удалось открыть путь.</system:String>
+    <system:String x:Key="ErrorOpeningRegistryPath" xml:space="preserve">Ошибка: не удалось найти путь к реестру.</system:String>
+    <system:String x:Key="WeblinkInvalid" xml:space="preserve">Ошибка: не удалось загрузить Helix Post.&#x0d;&#x0d;Ссылка на блог недействительна.</system:String>
+    <system:String x:Key="WeblinkNotProvided" xml:space="preserve">Ошибка: не удалось загрузить Helix Post. &#x0d;&#x0d;Пожалуйста, сначала дайте ссылку на блог Helix.</system:String>
+    <system:String x:Key="ViewerNotFound" xml:space="preserve">Ошибка: 3D Vision Photo Viewer не найден.</system:String>
+    <system:String x:Key="HelixPostError" xml:space="preserve">Ошибка: не удалось загрузить Helix Post.</system:String>
+    <system:String x:Key="NativeResolutionUpscaling"  xml:space="preserve">Для достижения наилучших результатов вы должны установить целевое разрешение для апскейлинга до исходного разрешения вашего дисплея. &#x0d;&#x0d;Вы хотите установить собственное разрешение сейчас?&#x0d;&#x0d;Обнаружено собственное разрешение: </system:String>
+    <system:String x:Key="Install3dmigoto02">Установить 3dmigoto:</system:String>
+    <system:String x:Key="InstallOpenGLwrapper">Установить оболочку OpenGL:</system:String>
+    <system:String x:Key="InstallHelixMod02">Установить HelixMod:</system:String>
+    <system:String x:Key="RemoveProfile">Удалить профиль исправления?</system:String>
+    <system:String x:Key="RemoveRepoProfile">Вы также хотите удалить профиль из рабочей копии git?</system:String>
 
-    <system:String x:Key="IniReset" xml:space="preserve">All ini settings were reseted to default values. &#x0d;&#x0d;Don't forget to save changes.</system:String>
-    <system:String x:Key="EnableStereoWarning" xml:space="preserve">For viewing this stereo image Nvidia Stereoscopic 3D has to be enabled.
+    <system:String x:Key="IniReset" xml:space="preserve">Все настройки ini были сброшены до значений по умолчанию. &#x0d;&#x0d;Не забывайте сохранять изменения.</system:String>
+    <system:String x:Key="EnableStereoWarning" xml:space="preserve">Для просмотра этого стереоизображения необходимо включить Nvidia Stereoscopic 3D.
 
-Do you want to enable it now and continue?
+Вы хотите включить его сейчас и продолжить?
   
-Note: Monitor desktop refresh rate should be set to 120 Hz in order to use this feature.
+Примечание. Чтобы использовать эту функцию, необходимо установить частоту обновления монитора на рабочем столе на 120 Гц.
         
-Tip: In "Nvidia 3D Settings" tab you'll find an option for automatically switching to 120 Hz (see "Desktop refresh rate 3D mode")</system:String>
+Совет: на вкладке «Настройки Nvidia 3D» вы найдете параметр для автоматического переключения на 120 Гц (см. «3D-режим с частотой обновления рабочего стола»)</system:String>
     
-    <system:String x:Key="GameTitleEmpty">Error: Game Title must not be empty</system:String>
-    <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Note: You haven't set a Steam App ID for this profile yet which is required for starting Steam games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
-    <system:String x:Key="GameExeNotSet" xml:space="preserve">Note: You haven't set a Game Exe for the profile yet. This is generally required for starting games. &#x0d;&#x0d;Do you want to detect this automatically now?</system:String>
-    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Do you want to automatically add a game icon from TheGamesDB.com?</system:String>
-    <system:String x:Key="WrapperChoice" xml:space="preserve">Choose a 3D wrapper you want to install.
+    <system:String x:Key="GameTitleEmpty">Ошибка: название игры не должно быть пустым</system:String>
+    <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Примечание: вы еще не установили идентификатор приложения Steam для этого профиля, который необходим для запуска игр Steam. &#x0d;&#x0d;Хотели бы вы, чтобы это определялось автоматически?</system:String>
+    <system:String x:Key="GameExeNotSet" xml:space="preserve">Примечание. Вы еще не установили Game Exe для профиля. Обычно это требуется для запуска игр. &#x0d;&#x0d;Хотели бы вы, чтобы это определялось автоматически?</system:String>
+    <system:String x:Key="GamesDbIconDectection" xml:space="preserve">Хотите ли вы автоматически добавлять иконку игры с TheGamesDB.com?</system:String>
+    <system:String x:Key="WrapperChoice" xml:space="preserve">Выберите 3D-оболочку, которую хотите установить.
                                          
-Installing a wrapper unlocks some features like stereo hotkeys, SideBySide / TaB output mode, compatibility mode support and automatic driver profile installation.
+Установка оболочки разблокирует некоторые функции, такие как стереофонические горячие клавиши, режим вывода SideBySide / TaB, поддержку режима совместимости и автоматическую установку профиля драйвера.
         
-Notes: 
+Примечания: 
         
-- Install HelixMod for DirectX 9 games
-- Install OpenGL Wrapper for OpenGL games
-- Install 3dmigoto for DirectX 11 games
-- Make sure you choose the correct version (32 bit or 64 bit)
-  If a game launcher exe was added to the fix profile this information is automatically detected
-- Only the raw wrapper is installed (no shader fixes)</system:String>
+- Установите HelixMod для игр DirectX 9
+- Установите оболочку OpenGL для игр OpenGL
+- Установите 3dmigoto для игр DirectX 11
+- Убедитесь, что вы выбрали правильную версию (32-разрядную или 64-разрядную)
+  Если в профиль исправления был добавлен exe-файл программы запуска игры, эта информация определяется автоматически
+- Установлена только необработанная оболочка (без исправлений шейдеров)</system:String>
 
     <system:String x:Key="ErrorGameAlreadyExists">Error: Profile with the same title already exists.</system:String>
     <system:String x:Key="GameIconFileNotFound">Error: Game Icon File was not found.</system:String>
