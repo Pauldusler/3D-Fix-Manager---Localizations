@@ -699,7 +699,7 @@
     <system:String x:Key="CycleFrustumAdjust">Регулировка конуса видимости:</system:String>
     <system:String x:Key="CycleFrustumAdjustToolTip">Циклическое переключение между тремя различными настройками конуса видимости.</system:String>
     <system:String x:Key="StereoToggleMode">Переключить режим совместимости 3D:</system:String>
-    <system:String x:Key="StereoToggleModeToolTip">Переключение между режимом совместимости для игр DirectX 11 (Fake 3D) и режимом Real 3D.</system:String>
+    <system:String x:Key="StereoToggleModeToolTip">Переключение между режимом совместимости (CMU) для игр DirectX 11 (Fake 3D) и режимом Real 3D.</system:String>
     
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Скриншоты:</system:String>
@@ -1246,57 +1246,57 @@ Markus Gündert (Pauldusler)</system:String>
        Еще одно преимущество Режима совместимости заключается в том, что ему требуется меньшая производительность для плавного игрового процесса в 3D.<LineBreak/><LineBreak/>
        Однако по сравнению с традиционным 3D этот режим страдает от 3D-артефактов, таких как ореолы вокруг объектов, а глубина 3D по умолчанию более ограничена.<LineBreak/><LineBreak/>
        <Bold>Важная информация:</Bold> Нажмите <Bold>F11</Bold> или <Bold>F12</Bold> (конфигурация по умолчанию) в игре, чтобы «раскрыть» CMU для превышения максимальной глубины 3D и улучшения 3D-эффекта.<LineBreak/><LineBreak/>
-       Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить Режим совместимости.
+       Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить Режим совместимости без ограничений.
     </TextBlock>
     
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
-        Enables / disables the 3D fix manually.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Enabling / disabling 3D fixes is also automatically done when clicking on <Italic><Bold>"Play 2D"</Bold></Italic> or <Italic><Bold>"Play 3D"</Bold></Italic> buttons.
+        Включение / отключение исправления 3D вручную.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Включение / отключение исправлений 3D также выполняется автоматически при нажатии на <Italic><Bold>"Играть 2D"</Bold></Italic> или <Italic><Bold>"Играть 3D"</Bold></Italic> кнопки.
     </TextBlock>
 
     <TextBlock x:Key="InstallFixTooltip" TextWrapping="Wrap" Width="300">
-        <Bold>Left click:</Bold> Installs / uninstalls the 3D fix.<LineBreak/><LineBreak/>
-        <Bold>Right click:</Bold> Resets 3dmigoto to the original version of the 3D fix if it was updated. Use this if updating 3dmigoto broke the fix.
+        <Bold>Left click:</Bold> Устанавливает / удаляет исправление 3D.<LineBreak/><LineBreak/>
+        <Bold>Правая кнопка мыши:</Bold> Сбрасывает 3dmigoto к исходной версии исправления 3D, если оно было обновлено. Используйте это, если обновление 3dmigoto сломало исправление 3D.
     </TextBlock>
 
     <!-- New / Edit Profile Tab ToolTips -->
     <TextBlock x:Key="GameTitleToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>Game title</Bold> has to be the same as listed in steam library or under installed programs in <Italic>"windows control panel / programs and features"</Italic><LineBreak/><LineBreak/>
-        Check the list on the right side to see all installed programs 3D Fix Manager has detected from Windows registry. Select a program for applying its name as a game title.
+        <Bold>Название игры</Bold> должно быть таким же, как указано в библиотеке Steam или в установленных программах в <Italic>"панель управления Windows / программы и компоненты"</Italic><LineBreak/><LineBreak/>
+        Проверьте список справа, чтобы увидеть все установленные программы, которые 3D Fix Manager обнаружил в реестре Windows. Выберите программу для использования ее названия в качестве названия игры.
     </TextBlock>
 
     <TextBlock x:Key="RelativeInstallPathToolTip" TextWrapping="Wrap" Width="300">
-        Relative path to the subfolder of the game directory where the 3D Vision fix will be copied to.<LineBreak/><LineBreak/>
-        In most cases the correct install path is where the game exe is located for starting the game.<LineBreak/><LineBreak/>
-        <Bold>For example: </Bold> when the absolute path of the game exe is <Italic>"c:\gameTitle\bin\game.exe"</Italic> then the resulting relative install path is <Italic>"bin"</Italic><LineBreak/><LineBreak/>
-        Leave this field empty if the fix shall be installed to the root folder of the game.<LineBreak/><LineBreak/>
-        <Bold>Important: </Bold> The relative Install Path is also needed to find the game executable if it is located in a subdirectory of the game. In this case you have to fill out this field even if you don't intend to install a 3D fix at all.      
+        Относительный путь к подпапке каталога с игрой, куда будет скопировано исправление 3D Vision.<LineBreak/><LineBreak/>
+        В большинстве случаев правильный путь установки - это место, где находится исполняемый файл игры для запуска игры.<LineBreak/><LineBreak/>
+        <Bold>Например: </Bold> когда абсолютный путь к исполняемому файлу игры <Italic>"c:\gameTitle\bin\game.exe"</Italic> тогда полученный относительный путь установки будет <Italic>"bin"</Italic><LineBreak/><LineBreak/>
+        Оставьте это поле пустым, если исправление будет устанавливаться в корневую папку игры.<LineBreak/><LineBreak/>
+        <Bold>Важно: </Bold> Относительный путь установки также необходим для поиска исполняемого файла игры, если он находится в подкаталоге игры. В этом случае вам необходимо заполнить это поле, даже если вы вообще не собираетесь устанавливать 3D-исправление.      
     </TextBlock>
 
     <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
-        Fill in the name of the Install - / root Folder of the game (only the folder name not the path).<LineBreak/><LineBreak/>
-        This information is important for detecting the game via search paths.
+        Введите имя установочной / корневой папки игры (только имя папки, а не путь).<LineBreak/><LineBreak/>
+        Эта информация важна для обнаружения игры с помощью путей поиска.
     </TextBlock>
 
     <TextBlock x:Key="CustomRootPathToolTip" TextWrapping="Wrap" Width="300">
-        Only fill in this field if an installed game is not automatically detected by 3D Fix Manager.<LineBreak/><LineBreak/>
-        Choose the absolute path to the root folder of the game.<LineBreak/><LineBreak/>
-        Note: the 'Relative Install Path' must be still set if you want to install the fix in a subfolder of the game.
+        Заполняйте это поле только в том случае, если установленная игра не определяется автоматически 3D Fix Manager.<LineBreak/><LineBreak/>
+        Выберите абсолютный путь к корневой папке игры.<LineBreak/><LineBreak/>
+        Примечание: «Относительный путь установки» должен быть по-прежнему установлен, если вы хотите установить исправление во вложенную папку игры.
     </TextBlock>
 
     <TextBlock x:Key="RelativeGameIniPathToolTip" TextWrapping="Wrap" Width="500">
-        Type in the relative path to a <Bold>configuration file</Bold> of the game (e.g. an .ini or .cfg file) which shall be automatically edited based on the defined values for 2D or 3D mode. The relative path must be set starting from the <Bold>root path of the game</Bold> or <Bold>user folder</Bold> in <Italic>C:\Users\USERNAME</Italic> - both directories are searched for the specified configuration file.<LineBreak/><LineBreak/>
-        Main purpose of this feature is to automatically edit graphics settings when starting the game (e.g. deactivation of <Bold>motion blur</Bold> or <Bold>depth of field</Bold> which is unwanted for stereo 3d mode).<LineBreak/><LineBreak/>
-        Generally all config files can be edited which include a listing of key/value - pairs - this might look like this in a file: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
-        Have a look at the fix profile for game <Italic><Bold>"Outlast"</Bold></Italic> to see a sample about how to edit a configuration file.<LineBreak/><LineBreak/>
-        Click on <Italic><Bold>"Values for 2D"</Bold></Italic> button for defining key-value pairs for the configuration file. These will be set when starting the game in 2D mode or uninstalling the fix.<LineBreak/><LineBreak/>
-        The same applies when clicking on <Italic><Bold>"Values for 3D"</Bold></Italic> button. The keys defined there will be set when starting the game in 3D mode or when installing the fix.
+        Введите относительный путь к <Bold>файлу конфигурации</Bold> игры (например, файлу .ini или .cfg) ,который будет автоматически редактироваться на основе определенных значений для режима 2D или 3D. Относительный путь должен быть установлен начиная с <Bold>корневого пути игры</Bold> или <Bold>папки пользователя</Bold> в <Italic>C:\Users\USERNAME</Italic> - в обоих каталогах выполняется поиск указанного файла конфигурации.<LineBreak/><LineBreak/>
+        Основная цель этой функции - автоматическое редактирование настроек графики при запуске игры (например, отключение <Bold>размытия в движении</Bold> или <Bold>глубины резкости</Bold> ,что нежелательно для стереорежима 3D).<LineBreak/><LineBreak/>
+        Как правило, все конфигурационные файлы могут быть отредактированы, включая список пар ключ/значение - это может выглядеть следующим образом в файле: <Italic><Bold>MotionBlur = Off</Bold></Italic>.<LineBreak/><LineBreak/>
+        Взгляните на профиль исправления для игры <Italic><Bold>"Outlast"</Bold></Italic> чтобы увидеть пример того, как редактировать файл конфигурации.<LineBreak/><LineBreak/>
+        Нажмите на <Italic><Bold>"Значения для 2D"</Bold></Italic> кнопка для определения пар ключ-значение для файла конфигурации. Они будут установлены при запуске игры в 2D-режиме или удалении исправления.<LineBreak/><LineBreak/>
+        То же самое происходит при нажатии на <Italic><Bold>"Значения для 3D"</Bold></Italic> кнопки. Определенные там ключи будут установлены при запуске игры в 3D-режиме или при установке исправления.
     </TextBlock>
 
     <TextBlock x:Key="HelixPostUpdatedToolTip" TextWrapping="Wrap" Width="300">
-       Saves the date when the helix post was last updated.<LineBreak/><LineBreak/>
-       The timestamp is necessary for detecting if there is an updated helix post available online.<LineBreak/><LineBreak/>
-       You should not set this date manually as this is done automatically.
+       Сохраняет дату последнего обновления helix post.<LineBreak/><LineBreak/>
+       Временная метка необходима для определения, есть ли в Интернете обновленный helix пост.<LineBreak/><LineBreak/>
+       Не следует устанавливать эту дату вручную, так как это делается автоматически.
     </TextBlock>
 
     <TextBlock x:Key="AllowHelixPostUpdateToolTip" TextWrapping="Wrap" Width="300">
