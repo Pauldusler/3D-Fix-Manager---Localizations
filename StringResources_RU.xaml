@@ -1049,105 +1049,105 @@
   Если в профиль исправления был добавлен exe-файл программы запуска игры, эта информация определяется автоматически
 - Установлена только необработанная оболочка (без исправлений шейдеров)</system:String>
 
-    <system:String x:Key="ErrorGameAlreadyExists">Error: Profile with the same title already exists.</system:String>
-    <system:String x:Key="GameIconFileNotFound">Error: Game Icon File was not found.</system:String>
-    <system:String x:Key="InstallPathNotRelative">Error: install path is not a relative path.</system:String>
-    <system:String x:Key="IniPathNotRelative">Error: game ini path is not a relative path.</system:String>
-    <system:String x:Key="AdditionalIniPathNotRelative">Error: additional game ini path is not a relative path.</system:String>
-    <system:String x:Key="ChangesSaved">Changes successfully saved.</system:String>
-    <system:String x:Key="ErrorSavingProfile">Error: Something went wrong when saving changes to the profile.</system:String>
-    <system:String x:Key="FixProfileCreated">Fix Profile successfully created.</system:String>
-    <system:String x:Key="IconResetSuccessfull" xml:space="preserve">All icons were successfully reseted and downloaded in the background.&#x0d;&#x0d;Note: All old icons have been moved to a backup folder inside of the individual profile folders for restoring them if needed.</system:String>
-    <system:String x:Key="ServerNotAvailable" xml:space="preserve">Server not available. &#x0d;&#x0d;Please try again later.</system:String>
-    <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">New Fix Profiles available. Do you want to update?</system:String>
-    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">A newer 3D fix is available for the game "{0}".&#x0d;&#x0d;Do you want to update to the latest version now?&#x0d;&#x0d;Note: During this procedure the old fix is automatically uninstalled before the new one is downloaded and installed. Customized hotkeys are kept.</system:String>
-    <system:String x:Key="NoUpdates" xml:space="preserve">No program updates available.&#x0d;&#x0d;Fix profiles up to date.</system:String>
-    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">A new Version of 3D Fix Manager ist available. Do you want to update?</system:String>
-    <system:String x:Key="BugReportTo" xml:space="preserve">If you want to report bugs or have ideas for new features please send an e-mail to: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
-    <system:String x:Key="NoChangeNotesFound">Sorry, no Change Notes found.</system:String>
-    <system:String x:Key="ChangeNotesManager">Change Notes 3D Fix Manager:</system:String>
-    <system:String x:Key="ChangeNotesProfiles">Change Notes Fix Profiles:</system:String>
-    <system:String x:Key="WarningRootPath">Warning: choosing a root path of your hard drive may result in very long loading times.</system:String>
-    <system:String x:Key="WarningSearchDepth" xml:space="preserve">Warning: a high search depth number may result in very long loading times.&#x0d;&#x0d;Try to keep the number as low as possible (not higher than 2).</system:String>
-    <system:String x:Key="ErrorNotNumber">Error: Input is not a number.</system:String>
-    <system:String x:Key="RTSSPauseMessage" xml:space="preserve">Game launch paused - please make changes to RivaTuner Statistics Server settings if required.
-RTSS eliminates micro stuttering, reduces input lag and improves frametimes in 3D mode.
+    <system:String x:Key="ErrorGameAlreadyExists">Ошибка: профиль с таким названием уже существует.</system:String>
+    <system:String x:Key="GameIconFileNotFound">Ошибка: файл значка игры не найден.</system:String>
+    <system:String x:Key="InstallPathNotRelative">Ошибка: путь установки не является относительным.</system:String>
+    <system:String x:Key="IniPathNotRelative">Ошибка: путь к ini-файлу игры не является относительным.</system:String>
+    <system:String x:Key="AdditionalIniPathNotRelative">Ошибка: путь к дополнительному файлу ini не является относительным.</system:String>
+    <system:String x:Key="ChangesSaved">Изменения успешно сохранены.</system:String>
+    <system:String x:Key="ErrorSavingProfile">Ошибка: что-то пошло не так при сохранении изменений в профиле.</system:String>
+    <system:String x:Key="FixProfileCreated">Профиль исправления успешно создан.</system:String>
+    <system:String x:Key="IconResetSuccessfull" xml:space="preserve">Все значки были успешно сброшены и загружены в фоновом режиме.&#x0d;&#x0d;Примечание: все старые значки были перемещены в резервную папку внутри отдельных папок профиля для их восстановления при необходимости.</system:String>
+    <system:String x:Key="ServerNotAvailable" xml:space="preserve">Сервер недоступен. &#x0d;&#x0d;Пожалуйста, повторите попытку позже.</system:String>
+    <system:String x:Key="FixUpdatesAvailable" xml:space="preserve">Доступны новые профили исправлений. Вы хотите обновить?</system:String>
+    <system:String x:Key="FixUpdateAvailable" xml:space="preserve">Для игры доступно более новое 3D-исправление "{0}".&#x0d;&#x0d;Вы хотите обновиться до последней версии сейчас?&#x0d;&#x0d;Примечание. Во время этой процедуры старое исправление автоматически удаляется перед загрузкой и установкой нового. Сохраняются индивидуальные горячие клавиши.</system:String>
+    <system:String x:Key="NoUpdates" xml:space="preserve">Нет доступных обновлений программы.&#x0d;&#x0d;Профили исправлений обновлены.</system:String>
+    <system:String x:Key="ProgramUpdateAvailable" xml:space="preserve">Доступна новая версия 3D Fix Manager. Вы хотите обновить?</system:String>
+    <system:String x:Key="BugReportTo" xml:space="preserve">Если вы хотите сообщить об ошибках или у вас есть идеи для новых функций, отправьте e-mail по адресу: &#x0d;&#x0d;duselpaul86@gmx.de</system:String>
+    <system:String x:Key="NoChangeNotesFound">Извините, примечания к выпуску не найдены.</system:String>
+    <system:String x:Key="ChangeNotesManager">Изменения 3D Fix Manager:</system:String>
+    <system:String x:Key="ChangeNotesProfiles">Изменения Fix Profiles:</system:String>
+    <system:String x:Key="WarningRootPath">Предупреждение: выбор корневого пути вашего жесткого диска может привести к очень долгому времени загрузки.</system:String>
+    <system:String x:Key="WarningSearchDepth" xml:space="preserve">Предупреждение: большое значение глубины поиска может привести к очень долгому времени загрузки.&#x0d;&#x0d;Постарайтесь, чтобы число было как можно меньше (не выше чем 2).</system:String>
+    <system:String x:Key="ErrorNotNumber">Ошибка: Введено не число.</system:String>
+    <system:String x:Key="RTSSPauseMessage" xml:space="preserve">Запуск игры приостановлен - при необходимости измените настройки сервера статистики RivaTuner.
+RTSS устраняет микро-заикания, уменьшает задержку ввода и улучшает время кадров в 3D-режиме.
 
-Recommended Settings for RivaTuner Statistics Server 6.6.0:
+Рекомендуемые настройки для сервера статистики RivaTuner 6.6.0:
         
 - Custom Direct3D support: off
 - Framerate limit: 60
 
-When game crashes or frame limiter does not kick in then enable Custom Direct3D support.
+Когда игра вылетает или ограничитель кадров не срабатывает, включите опцию Custom Direct3D support.
 
-For perfect results you have to enable Vsync in game and graphics card must hold steady 60 fps.
+Для идеальных результатов вы должны включить Vsync в игре, а видеокарта должна стабильно поддерживать 60 кадров в секунду.
 
-Click on 'OK' when you're done making changes.</system:String>
-    <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">It's recommended to install the 3D fix before starting this game. &#x0d;&#x0d;Do you want to install the fix now?</system:String>
-    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">It's recommended to restore the original driver profile "{0}" when uninstalling the fix.&#x0d;&#x0d;Do you want to reset the driver profile now?</system:String>
-    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">It's recommended to restore the original driver profile when uninstalling the fix. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
-    <system:String x:Key="MessageProfile2D" xml:space="preserve">It's recommended to use the default driver profile "{0}" for playing in 2D mode.&#x0d;&#x0d;Do you want to reset the driver profile to the original state now? &#x0d;&#x0d;If you already have reset the profile you can skip this step by choosing "No".</system:String>
-    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">It's recommended to use the default driver profile for playing in 2D mode. For doing this the currently assigned profile "{0}" has to be swapped with driver profile "{1}".&#x0d;&#x0d;Do you want to swap profiles now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
-    <system:String x:Key="MessageProfile3D" xml:space="preserve">The installation of the driver profile "{0}" is needed to make the fix work properly.&#x0d;&#x0d;Do you want to install it via Nvidia Profile Inspector now? &#x0d;&#x0d;If you have already installed the profile you can skip this step by choosing "No".</system:String>
-    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">It's required to swap the currently assigned driver profile "{0}" with the profile "{1}" to make the fix work properly.&#x0d;&#x0d;Do you want to swap profiles via Nvidia Profile Inspector now? &#x0d;&#x0d;If profiles have already been swapped you can skip this step by chosing "No".</system:String>
-    <system:String x:Key="ErrorGameLaunch">Error: Game could not be launched.</system:String>
-    <system:String x:Key="ErrorOpenWebsite">Error: Website could not be opened.</system:String>
-    <system:String x:Key="ReferenceDataDbSuccess">Reference data successfully written in DB.</system:String>
-    <system:String x:Key="DbNoRights">Error: No rights to access DB.</system:String>
-    <system:String x:Key="WarningPositiveNumber">Warning: Input must be a positive number.</system:String>
-    <system:String x:Key="ErrorInputNotANumber">Error: Input is not a number.</system:String>
-    <system:String x:Key="ErrorLicenceNotice">Sorry, no license file found.</system:String>
-    <system:String x:Key="UpdateMigoto" xml:space="preserve">Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version:&#x09;</system:String>
-    <system:String x:Key="LatestVersion" xml:space="preserve">Latest version:&#x09;</system:String>
-    <system:String x:Key="MigotoUpdateSuccess">3DMigoto was successfully updated.</system:String>
-    <system:String x:Key="MigotoUpdateFailed">Error: 3dmigoto could not be updated.</system:String>
-    <system:String x:Key="ErrorEnablingCM">Error when enabling / disabling Compatiblity Mode.</system:String>
-    <system:String x:Key="UpdateMigoto02" xml:space="preserve">This feature is only available for 3dmigoto versions higher than 1.2.48. &#x0d;&#x0d;Do you want to update 3dmigoto to the latest version? &#x0d;&#x0d;Installed version: &#x09;</system:String>
-    <system:String x:Key="UpdateMigotoDueTo3dFormat" xml:space="preserve">In the current active display profile you have chosen a 3D format which is only supported in 3dmigoto version 1.2.65 or higher thus requiring an update of the 3D wrapper. &#x0d;&#x0d;Do you want to update 3dmigoto for enabling this 3D format now?&#x0d;&#x0d;Installed version: &#x09;</system:String>
-    <system:String x:Key="DonateMessage" xml:space="preserve">If you want to support this project you can donate to this PayPal account: duselpaul86@gmx.de
+Нажмите "ОК", когда закончите вносить изменения.</system:String>
+    <system:String x:Key="DownloadFixBeforeGameStart" xml:space="preserve">Перед запуском игры рекомендуется установить 3D fix. &#x0d;&#x0d;Вы хотите установить исправление сейчас?</system:String>
+    <system:String x:Key="MessageRestore2DProfile" xml:space="preserve">Рекомендуется восстановить исходный профиль драйвера "{0}" при удалении исправления.&#x0d;&#x0d;Вы хотите сейчас сбросить профиль драйвера?</system:String>
+    <system:String x:Key="MessageRestore2DProfileSwap" xml:space="preserve">При удалении исправления рекомендуется восстановить исходный профиль драйвера. Для этого назначенный в данный момент профиль "{0}" должен быть заменен профилем драйвера "{1}".&#x0d;&#x0d;Вы хотите поменять профили сейчас? &#x0d;&#x0d;Если профили уже поменяны местами, вы можете пропустить этот шаг, выбрав "Нет".</system:String>
+    <system:String x:Key="MessageProfile2D" xml:space="preserve">Рекомендуется использовать профиль драйвера по умолчанию "{0}" для игры в 2D-режиме.&#x0d;&#x0d;Вы хотите сейчас вернуть профиль драйвера в исходное состояние? &#x0d;&#x0d;Если вы уже сбросили профиль, вы можете пропустить этот шаг, выбрав "Нет".</system:String>
+    <system:String x:Key="MessageProfile2DSwap" xml:space="preserve">Для игры в 2D-режиме рекомендуется использовать профиль драйвера по умолчанию. Для этого назначенный в данный момент профиль "{0}" должен быть заменен профилем драйвера "{1}".&#x0d;&#x0d;Вы хотите поменять профили сейчас? &#x0d;&#x0d;Если профили уже поменяны местами, вы можете пропустить этот шаг, выбрав "Нет".</system:String>
+    <system:String x:Key="MessageProfile3D" xml:space="preserve">Установка профиля драйвера "{0}" необходима для правильной работы исправления.&#x0d;&#x0d;Вы хотите установить его через Nvidia Profile Inspector сейчас? &#x0d;&#x0d;Если профиль уже установлен, вы можете пропустить этот шаг, выбрав "Нет".</system:String>
+    <system:String x:Key="MessageProfile3DSwap" xml:space="preserve">Требуется поменять местами текущий назначенный профиль драйвера"{0}" с профилем "{1}" чтобы исправление работало правильно.&#x0d;&#x0d;Вы хотите поменять местами профили через Nvidia Profile Inspector сейчас? &#x0d;&#x0d;Если профили уже поменяны местами, вы можете пропустить этот шаг, выбрав "Нет".</system:String>
+    <system:String x:Key="ErrorGameLaunch">Ошибка: не удалось запустить игру.</system:String>
+    <system:String x:Key="ErrorOpenWebsite">Ошибка: не удалось открыть веб-сайт.</system:String>
+    <system:String x:Key="ReferenceDataDbSuccess">Справочные данные успешно записаны в БД.</system:String>
+    <system:String x:Key="DbNoRights">Ошибка: нет прав на доступ к БД.</system:String>
+    <system:String x:Key="WarningPositiveNumber">Предупреждение: введите положительное число.</system:String>
+    <system:String x:Key="ErrorInputNotANumber">Ошибка: Введено не число.</system:String>
+    <system:String x:Key="ErrorLicenceNotice">Извините, файл лицензии не найден.</system:String>
+    <system:String x:Key="UpdateMigoto" xml:space="preserve">Хотите обновить 3dmigoto до последней версии? &#x0d;&#x0d;Установленная версия:&#x09;</system:String>
+    <system:String x:Key="LatestVersion" xml:space="preserve">Последняя версия:&#x09;</system:String>
+    <system:String x:Key="MigotoUpdateSuccess">3DMigoto успешно обновлен.</system:String>
+    <system:String x:Key="MigotoUpdateFailed">Ошибка: не удалось обновить 3dmigoto.</system:String>
+    <system:String x:Key="ErrorEnablingCM">Ошибка при включении / отключении режима совместимости.</system:String>
+    <system:String x:Key="UpdateMigoto02" xml:space="preserve">Эта функция доступна только для версий 3dmigoto выше, чем 1.2.48. &#x0d;&#x0d;Хотите обновить 3dmigoto до последней версии? &#x0d;&#x0d;Установленная версия: &#x09;</system:String>
+    <system:String x:Key="UpdateMigotoDueTo3dFormat" xml:space="preserve">В текущем активном профиле отображения вы выбрали формат 3D, который поддерживается только в 3dmigoto версии 1.2.65 или выше, поэтому требуется обновление оболочки 3D. &#x0d;&#x0d;Вы хотите обновить 3dmigoto для включения этого 3D-формата сейчас?&#x0d;&#x0d;Установленная версия: &#x09;</system:String>
+    <system:String x:Key="DonateMessage" xml:space="preserve">Если вы хотите поддержать этот проект, вы можете сделать пожертвование на этот счет PayPal: duselpaul86@gmx.de
 
-By clicking on the button below your webbrowser will open PayPal-website where you can easily send a donation. 
+Нажав на кнопку ниже, ваш веб-браузер откроет веб-сайт PayPal, где вы можете легко отправить пожертвование. 
         
-Please help to keep 3D gaming alive.
+Пожалуйста, помогите сохранить 3D-игры живыми.
         
-Thanks,
+Спасибо,
 Markus Gündert (Pauldusler)</system:String>
-    <system:String x:Key="DonateShaderHackers01">3D fixes downloaded and installed by 3D Fix Manager are developed by some very talented shaderhackers from HelixMod Team.</system:String>
-    <system:String x:Key="DonateShaderHackers02">HelixMod is the reason why 3D gaming is still alive today. If you want to support them donations are very appreciated.</system:String>
-    <system:String x:Key="DonateShaderHackers03">Here is a list of PayPal and Patreon accounts of the individual shaderhackers you can donate to:</system:String>
-    <system:String x:Key="Thanks">Thank you very much,</system:String>
-    <system:String x:Key="YourHelixModTeam">Your HelixMod Team</system:String>
-    <system:String x:Key="YourHelixModTeam02">Your HelixMod Team</system:String>
-    <system:String x:Key="OpenPaypal">Open PayPal</system:String>
-    <system:String x:Key="OpenPaypalToolTip">Opens PayPal website in webbrowser where you can send a donation.</system:String>
+    <system:String x:Key="DonateShaderHackers01">3D-исправления, загружаемые и устанавливаемые 3D Fix Manager, разработаны очень талантливыми шейдер-хакерами из HelixMod Team.</system:String>
+    <system:String x:Key="DonateShaderHackers02">HelixMod - это причина, по которой 3D-игры все еще живы. Если вы хотите поддержать их, пожертвования приветствуются.</system:String>
+    <system:String x:Key="DonateShaderHackers03">Вот список учетных записей PayPal и Patreon отдельных шейдер-хакеров, которым вы можете пожертвовать:</system:String>
+    <system:String x:Key="Thanks">Большое спасибо,</system:String>
+    <system:String x:Key="YourHelixModTeam">Ваша команда HelixMod</system:String>
+    <system:String x:Key="YourHelixModTeam02">Ваша команда HelixMod</system:String>
+    <system:String x:Key="OpenPaypal">Перейти в PayPal</system:String>
+    <system:String x:Key="OpenPaypalToolTip">Откройте веб-сайт PayPal в веб-браузере, где вы можете отправить пожертвование.</system:String>
 
     <!-- Nvidia 3D Vision announcement - Start -->
-    <system:String x:Key="Announcement_L1">Dear 3D Vision fans,</system:String>
-    <system:String x:Key="Announcement_L2">we have sad news for you. On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
-    <system:String x:Key="Announcement_L3">This means that all graphics drivers released after March 2019 don't support 3D Vision any more.</system:String>
-    <system:String x:Key="Announcement_L4">Driver branch 418 will be the last one to support stereoscopic 3D.</system:String>
+    <system:String x:Key="Announcement_L1">Уважаемые поклонники 3D Vision,</system:String>
+    <system:String x:Key="Announcement_L2">у нас для вас печальные новости. 8 марта 2019 года Nvidia официально объявила о прекращении поддержки 3D Vision.</system:String>
+    <system:String x:Key="Announcement_L3">Это означает, что все графические драйверы, выпущенные после марта 2019 года, больше не поддерживают 3D Vision.</system:String>
+    <system:String x:Key="Announcement_L4">418-я ветвь драйверов будет последней, поддерживающей стереоскопическое 3D.</system:String>
 
-    <system:String x:Key="Announcement_L5">What does the announcement mean for us 3D gamers?</system:String>
-    <system:String x:Key="Announcement_L6">We are forced to stick with Geforce drivers of branch 418 or older (v.419.35 still works as it still belongs to branch 418)</system:String>
-    <system:String x:Key="Announcement_L7">We should not update Windows 10 beyond v.1809 (October Update 2018). New feature updates for Win 10 might break the stereo 3D driver.</system:String>
-    <system:String x:Key="Announcement_L8">We have to take good care of our 3D Vision hardware as in the future it will be hard to get a replacement for defective devices</system:String>
+    <system:String x:Key="Announcement_L5">Что означает это объявление для нас, 3D-геймеров?</system:String>
+    <system:String x:Key="Announcement_L6">Мы вынуждены использовать драйверы Geforce ветки 418 или старше (версия 419.35 все еще работает, поскольку она все еще принадлежит ветке 418)</system:String>
+    <system:String x:Key="Announcement_L7">Мы не должны обновлять Windows 10 после версии 1809 (октябрьское обновление 2018). Новые обновления функций для Win 10 могут сломать драйвер стерео 3D.</system:String>
+    <system:String x:Key="Announcement_L8">Мы должны хорошо заботиться о нашем оборудовании 3D Vision, так как в будущем будет сложно получить замену неисправным устройствам.</system:String>
 
-    <system:String x:Key="Announcement_L9">What does this mean for 3D Fix Manager?</system:String>
-    <system:String x:Key="Announcement_L10">Nothing. Support for 3D Fix Manager will be continued</system:String>
-    <system:String x:Key="Announcement_L11">3D Fix Manager warns you if you've already installed a Geforce driver beyond driver branch 418</system:String>
-    <system:String x:Key="Announcement_L12">In this case 3D Fix Manager provides download links to the last known driver version which was still compatible to 3D Vision</system:String>
+    <system:String x:Key="Announcement_L9">Что это значит для 3D Fix Manager?</system:String>
+    <system:String x:Key="Announcement_L10">Ничего. Поддержка 3D Fix Manager будет продолжена</system:String>
+    <system:String x:Key="Announcement_L11">3D Fix Manager предупредит вас, если вы уже установили драйвер Geforce за пределами ветки драйвера 418</system:String>
+    <system:String x:Key="Announcement_L12">В этом случае 3D Fix Manager предоставляет ссылки для загрузки последней известной версии драйвера, которая все еще была совместима с 3D Vision</system:String>
 
-    <system:String x:Key="Announcement_L13">What does this mean for the development of new 3D fixes?</system:String>
-    <system:String x:Key="Announcement_L14">It's very likely that the development of new 3D fixes is continued as long as Shaderhackers have their 3D Vision hardware still working</system:String>
+    <system:String x:Key="Announcement_L13">Что это означает для разработки новых исправлений 3D?</system:String>
+    <system:String x:Key="Announcement_L14">Весьма вероятно, что разработка новых исправлений 3D будет продолжаться до тех пор, пока у шейдерхакеров все еще работает оборудование 3D Vision</system:String>
 
-    <system:String x:Key="Announcement_L15">What does this mean for the future of stereo 3D?</system:String>
-    <system:String x:Key="Announcement_L16">Currently our great community developers are discussing about developing an indepentent 3D solution not requiring the 3D Vision driver any more</system:String>
-    <system:String x:Key="Announcement_L17">Chances are not bad as there are already a lot of features implemented into 3dmigoto which are required to achieve this goal</system:String>
-    <system:String x:Key="Announcement_L18">But: At the time of writing no promises can be made!</system:String>
+    <system:String x:Key="Announcement_L15">Что это означает для будущего стерео 3D?</system:String>
+    <system:String x:Key="Announcement_L16">В настоящее время наше замечательное сообщество разработчиков обсуждает возможность разработки независимого 3D-решения, больше не требующего драйвера 3D Vision</system:String>
+    <system:String x:Key="Announcement_L17">Шансы неплохие, так как в 3dmigoto уже реализовано множество функций, которые необходимы для достижения этой цели.</system:String>
+    <system:String x:Key="Announcement_L18">Но: на момент написания никаких обещаний давать нельзя!</system:String>
 
-    <system:String x:Key="Announcement_L19">Official announcement from Nvidia:</system:String>
-    <system:String x:Key="Announcement_L20">For additional info we have opened a topic in Geforce forum:</system:String>
-    <system:String x:Key="Announcement_DoNotShow">Do not show this dialog again</system:String>
+    <system:String x:Key="Announcement_L19">Официальный анонс от Nvidia:</system:String>
+    <system:String x:Key="Announcement_L20">Для дополнительной информации мы открыли тему на форуме Geforce:</system:String>
+    <system:String x:Key="Announcement_DoNotShow">Больше не показывать это диалоговое окно</system:String>
     <!-- Nvidia 3D Vision announcement - End -->
 
     <!-- Nvidia driver check - Start -->
