@@ -1151,53 +1151,51 @@ Markus Gündert (Pauldusler)</system:String>
     <!-- Nvidia 3D Vision announcement - End -->
 
     <!-- Nvidia driver check - Start -->
-    <system:String x:Key="Drivercheck_1">Warning: Your Nvidia graphics driver ist not compatible to 3D Vision.</system:String>
-    <system:String x:Key="Drivercheck_2">On March 08, 2019 Nvidia officially announced the end of support for 3D Vision.</system:String>
-    <system:String x:Key="Drivercheck_3">To make 3D Vision work you have to install an older graphics driver.</system:String>
-    <system:String x:Key="Drivercheck_4">Below you find download links for the last Geforce driver which was known to work with 3D Vision:</system:String>
-    <system:String x:Key="Drivercheck_5">Please keep in mind that this driver might not work properly with future versions of Windows 10.  
-                                         The driver was released at the time of Windows 10 v.1809 (October update 2018) so it's not recommended to use a more recent Windows version.
-    </system:String>
+    <system:String x:Key="Drivercheck_1">Предупреждение: ваш графический драйвер Nvidia несовместим с 3D Vision.</system:String>
+    <system:String x:Key="Drivercheck_2">8 марта 2019 года Nvidia официально объявила о прекращении поддержки 3D Vision.</system:String>
+    <system:String x:Key="Drivercheck_3">Для работы 3D Vision вам необходимо установить более старый графический драйвер.</system:String>
+    <system:String x:Key="Drivercheck_4">Ниже вы найдете ссылки для загрузки последнего драйвера Geforce, который, как известно, работает с 3D Vision:</system:String>
+    <system:String x:Key="Drivercheck_5">Помните, что этот драйвер может некорректно работать с будущими версиями Windows 10. Драйвер был выпущен во время выпуска Windows 10 v.1809 (октябрьское обновление 2018 г.), поэтому не рекомендуется использовать более новую версию Windows.</system:String>
     <!-- Nvidia driver check - End -->
 
-    <system:String x:Key="ReleaseBuildSucces">Succes: Release files were successfully built.</system:String>
-    <system:String x:Key="ReleaseBuildFailed">Error: Release process failed.</system:String>
-    <system:String x:Key="DuplicateKeyError" xml:space="preserve">Error: This hotkey already exists. &#x0d;&#x0d;Please choose another key.</system:String>
-    <system:String x:Key="FolderNotExistsError">Error: Folder does not exist.</system:String>
-    <system:String x:Key="SettingsAppliedSuccess">Settings successfully applied</system:String>
-    <system:String x:Key="SettingsAppliedFailed">Error: failed to apply settings.</system:String>
-    <system:String x:Key="ProfileLoadedSuccess" xml:space="preserve">Profile successfully loaded.&#x0d;&#x0d;Please click on 'Apply' for writing imported values to Windows Registry.</system:String>
-    <system:String x:Key="ProfileLoadedSuccess02">Profile successfully loaded.</system:String>
-    <system:String x:Key="ProfileLoadedError">Error: Profile could not be loaded.</system:String>
-    <system:String x:Key="ProfileSavedSuccess">Profile successfully saved.</system:String>
-    <system:String x:Key="ProfileSavedError">Error: Profile could not be saved.</system:String>
-    <system:String x:Key="ValidUrlError">Error: You must supply a valid Url.</system:String>
-    <system:String x:Key="MultiRowHyperlinkError">Error: Multi row selections not allowed for Hyperlinks.</system:String>
-    <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">This will update all installed 3dmigoto fixes to the latest version of the wrapper.&#x0d;&#x0d;Do you want to proceed?</system:String>
-    <system:String x:Key="AllUpdatesInstalled">Success! 3Dmigoto was updated for {0} games.</system:String>
-    <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto is already up to date for all games. No updates required.</system:String>
-    <system:String x:Key="TypeTitleError">Error: Please type in a game title first.</system:String>
-    <system:String x:Key="FoundSteamDbData">Found Steam DB data:</system:String>
+    <system:String x:Key="ReleaseBuildSucces">Успех: файлы выпуска были успешно созданы.</system:String>
+    <system:String x:Key="ReleaseBuildFailed">Ошибка: процесс выпуска завершился неудачно.</system:String>
+    <system:String x:Key="DuplicateKeyError" xml:space="preserve">Ошибка: эта горячая клавиша уже существует. &#x0d;&#x0d;Пожалуйста, выберите другую.</system:String>
+    <system:String x:Key="FolderNotExistsError">Ошибка: папка не существует.</system:String>
+    <system:String x:Key="SettingsAppliedSuccess">Настройки успешно применены</system:String>
+    <system:String x:Key="SettingsAppliedFailed">Ошибка: не удалось применить настройки.</system:String>
+    <system:String x:Key="ProfileLoadedSuccess" xml:space="preserve">Профиль успешно загружен.&#x0d;&#x0d;Нажмите "Применить", чтобы записать импортированные значения в реестр Windows.</system:String>
+    <system:String x:Key="ProfileLoadedSuccess02">Профиль успешно загружен.</system:String>
+    <system:String x:Key="ProfileLoadedError">Ошибка: не удалось загрузить профиль.</system:String>
+    <system:String x:Key="ProfileSavedSuccess">Профиль успешно сохранен.</system:String>
+    <system:String x:Key="ProfileSavedError">Ошибка: не удалось сохранить профиль.</system:String>
+    <system:String x:Key="ValidUrlError">Ошибка: необходимо указать действительный URL.</system:String>
+    <system:String x:Key="MultiRowHyperlinkError">Ошибка: для гиперссылок нельзя выбирать несколько строк.</system:String>
+    <system:String x:Key="UpdateAllWrappersMessage" xml:space="preserve">Это обновит все установленные исправления 3dmigoto до последней версии оболочки.&#x0d;&#x0d;Вы хотите продолжить?</system:String>
+    <system:String x:Key="AllUpdatesInstalled">Успех! 3Dmigoto обновлен для {0} игр.</system:String>
+    <system:String x:Key="MigotoAlreadyUpdated">3Dmigoto уже обновлен для всех игр. Никаких обновлений не требуется.</system:String>
+    <system:String x:Key="TypeTitleError">Ошибка: сначала введите название игры.</system:String>
+    <system:String x:Key="FoundSteamDbData">Найдены данные Steam DB:</system:String>
     <system:String x:Key="GameExe">Game exe:</system:String>
-    <system:String x:Key="RelativeGameExePath">Relative Game Exe path:</system:String>
-    <system:String x:Key="ApplyData">Do you want to apply this data to the fix profile?</system:String>
-    <system:String x:Key="NotFoundInDb">No matching game found in Steam Database</system:String>
-    <system:String x:Key="NoSteamAppId">Error: You must provide a valid SteamApp ID.</system:String>
-    <system:String x:Key="NotFoundInTheGamesDb">No matching game found in TheGamesDb Database.</system:String>
-    <system:String x:Key="IconUrlNotFound">Icon URL has not been found.</system:String>
-    <system:String x:Key="WarningMigotoUpdate01">Warning: Updating 3dmigoto for</system:String>
-    <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">is known to break the fix.&#x0d;&#x0d;Do you want to update the wrapper for this game anyway?</system:String>
-    <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Error occured when making changes to game ini files.&#x0d;&#x0d;Please make sure that the files are not set to 'read only'.</system:String>
-    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Warning: Installation of Watch_Dogs2 fix can take up to 10 minutes. &#x0d;&#x0d;Do you want to proceed?</system:String>
-    <system:String x:Key="ErrorInstallingMinecraft">Error occured when installing Minecraft fix. Fix could not be installed.</system:String>
-    <system:String x:Key="ErrorDeleting2DNip">Error: .nip file for 2D mode could not be deleted.</system:String>
-    <system:String x:Key="ErrorDeleting3DNip">Error: .nip file for 3D mode could not be deleted.</system:String>
-    <system:String x:Key="ErrorEnablingSteamOverlay">Error: Steam overlay could not be enabled / disabled.</system:String>
-    <system:String x:Key="ErrorJavaNotDetected" xml:space="preserve">Error: Java install location could not be detected. Please make sure to have Java correctly installed.&#x0d;&#x0d;Do you want to go to the download page for Java now?</system:String>
-    <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Error: Optifine for Minecraft could not be detected. You have to install this first to proceed installing the 3D fix.\n\nDo you want to go to the download page for Optifine now?</system:String>
-    <system:String x:Key="ErrorDetectingBitVersion">Error: Could not detect if Java 64 bit or 32 bit is installed</system:String>
-    <system:String x:Key="ErrorInstallingMinecraftFix">Error occured when installing Minecraft fix.</system:String>
-    <system:String x:Key="ErrorRenamingHitmanFolder">Error: Hitman folder could not be renamed. Please make sure that the folder is closed in Windows Explorer and try again.</system:String>
+    <system:String x:Key="RelativeGameExePath">Относительный путь к Game Exe:</system:String>
+    <system:String x:Key="ApplyData">Вы хотите применить эти данные к профилю исправления?</system:String>
+    <system:String x:Key="NotFoundInDb">В базе данных Steam не найдено ни одной подходящей игры</system:String>
+    <system:String x:Key="NoSteamAppId">Ошибка: необходимо указать действующий идентификатор SteamApp.</system:String>
+    <system:String x:Key="NotFoundInTheGamesDb">Соответствующей игры в базе данных TheGamesDb не найдено.</system:String>
+    <system:String x:Key="IconUrlNotFound">URL значка не найден.</system:String>
+    <system:String x:Key="WarningMigotoUpdate01">Предупреждение: известно, что обновление 3dmigoto для</system:String>
+    <system:String x:Key="WarningMigotoUpdate02" xml:space="preserve">уничтожает исправление.&#x0d;&#x0d;Вы все равно хотите обновить обертку для этой игры?</system:String>
+    <system:String x:Key="ErrorIniReadOnly" xml:space="preserve">Произошла ошибка при внесении изменений в ini-файлы игры.&#x0d;&#x0d;Убедитесь, что файлы не настроены "только для чтения".</system:String>
+    <system:String x:Key="WarningWatchDogs2" xml:space="preserve">Предупреждение: установка исправления Watch_Dogs2 может занять до 10 минут. &#x0d;&#x0d;Вы хотите продолжить?</system:String>
+    <system:String x:Key="ErrorInstallingMinecraft">При установке исправления Minecraft произошла ошибка. Исправить не удалось.</system:String>
+    <system:String x:Key="ErrorDeleting2DNip">Ошибка: файл .nip для 2D-режима не может быть удален.</system:String>
+    <system:String x:Key="ErrorDeleting3DNip">Ошибка: файл .nip для 3D-режима не может быть удален.</system:String>
+    <system:String x:Key="ErrorEnablingSteamOverlay">Ошибка: оверлей Steam не может быть включен / отключен.</system:String>
+    <system:String x:Key="ErrorJavaNotDetected" xml:space="preserve">Ошибка: не удалось определить место установки Java. Убедитесь, что Java правильно установлена.&#x0d;&#x0d;Вы хотите сейчас перейти на страницу загрузки Java?</system:String>
+    <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Ошибка: не удалось обнаружить Optifine для Minecraft. Вы должны сначала установить его, чтобы продолжить установку 3D fix.\n\nВы хотите сейчас перейти на страницу загрузки Optifine?</system:String>
+    <system:String x:Key="ErrorDetectingBitVersion">Ошибка: не удалось определить, установлена ли Java 64-разрядная или 32-разрядная</system:String>
+    <system:String x:Key="ErrorInstallingMinecraftFix">Ошибка при установке исправления Minecraft.</system:String>
+    <system:String x:Key="ErrorRenamingHitmanFolder">Ошибка: не удалось переименовать папку Hitman. Убедитесь, что папка закрыта в проводнике Windows, и повторите попытку.</system:String>
 
     <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Do you want to keep custom profiles? &#x0d;&#x0d;Choose 'Yes' if you have edited some profiles and want to keep their changes.&#x0d;&#x0d;Choose 'No' to override all old profile settings.</system:String>
     <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">A new 3dmigoto update is available for one or several installed 3D fixes.&#x0d;&#x0d;Do you want to update now?</system:String>
