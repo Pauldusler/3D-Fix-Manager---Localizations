@@ -1241,12 +1241,12 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
-       Enables <Bold>Compatibility Mode Unleashed</Bold> (shortly CMU).<LineBreak/><LineBreak/>    
-       CMU is only available in DirectX 11 games and makes those games playable in stereo 3D even if they aren't fixed for 3D yet.<LineBreak/><LineBreak/>
-       Another advantage of CMU is that it requires less performance for having a smooth gaming experience in 3D.<LineBreak/><LineBreak/>
-       However compared to traditional 3D this mode suffers from 3D artefacts like halos around objects and 3D depth is more limited by default.<LineBreak/><LineBreak/>
-       <Bold>Important information:</Bold> Press <Bold>F11</Bold> or <Bold>F12</Bold> (default configuration) ingame to "unleash" CMU for exceeding maximum 3D depth and improving the 3D effect.<LineBreak/><LineBreak/>
-       Additionally in tab <Bold>"3D Fix"</Bold> you have options to configure CMU.
+       Позволяет <Bold>Compatibility Mode Unleashed</Bold> (сокращенно CMU).<LineBreak/><LineBreak/>    
+       CMU доступен только в играх DirectX 11 и позволяет играть в эти игры в стерео 3D, даже если они еще не исправлены для 3D.<LineBreak/><LineBreak/>
+       Еще одно преимущество CMU заключается в том, что ему требуется меньшая производительность для плавного игрового процесса в 3D.<LineBreak/><LineBreak/>
+       Однако по сравнению с традиционным 3D этот режим страдает от 3D-артефактов, таких как ореолы вокруг объектов, а глубина 3D по умолчанию более ограничена.<LineBreak/><LineBreak/>
+       <Bold>Важная информация:</Bold> Нажмите <Bold>F11</Bold> или <Bold>F12</Bold> (конфигурация по умолчанию) в игре, чтобы «раскрыть» CMU для превышения максимальной глубины 3D и улучшения 3D-эффекта.<LineBreak/><LineBreak/>
+       Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить CMU.
     </TextBlock>
     
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
