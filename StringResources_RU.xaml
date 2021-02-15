@@ -1197,35 +1197,35 @@ Markus Gündert (Pauldusler)</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Ошибка при установке исправления Minecraft.</system:String>
     <system:String x:Key="ErrorRenamingHitmanFolder">Ошибка: не удалось переименовать папку Hitman. Убедитесь, что папка закрыта в проводнике Windows, и повторите попытку.</system:String>
 
-    <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Do you want to keep custom profiles? &#x0d;&#x0d;Choose 'Yes' if you have edited some profiles and want to keep their changes.&#x0d;&#x0d;Choose 'No' to override all old profile settings.</system:String>
-    <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">A new 3dmigoto update is available for one or several installed 3D fixes.&#x0d;&#x0d;Do you want to update now?</system:String>
-    <system:String x:Key="BindHotkeyError" xml:space="preserve">Error: One or more hotkeys have no key binding. &#x0d;&#x0d;Please set the keys and try again.</system:String>
-    <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Download complete! &#x0d;&#x0d;3D Fix Manager will restart now for installing the update.</system:String>
-    <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision is not set up on your machine. &#x0d;&#x0d;Option 1: Click on 'Setup Wizard' for launching default Nvidia 3D Vision Setup Wizard. &#x0d;&#x0d;Option 2: Click on 'Quick Setup' for quickly enabling 3D Vision by modifying Windows Registry values.&#x0d;&#x0d;</system:String>
-    <system:String x:Key="VisionSetupComplete" xml:space="preserve">3D Vision Setup Wizard succesfully passed! &#x0d;&#x0d;Do you want to load a backup profile for restoring hotkeys and other Stereo 3D related settings?</system:String>
-    <system:String x:Key="LoadStereoProfile" xml:space="preserve">Do you want to load a backuped profile for your Stereo 3D settings?</system:String>
-    <system:String x:Key="WindowsRegistryWriteError">Error: failed to write loaded settings profile to Windows Registry.</system:String>
-    <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Default setup wizard successfully skipped and 3D Vision enabled. &#x0d;&#x0d;Do you want to load a backup profile for restoring hotkeys and other stereo 3D related settings?</system:String>
-    <system:String x:Key="QuickSetupError">Error while enabling Nvidia stereosopic 3D. Please try to use default setup wizard instead.</system:String>
+    <system:String x:Key="KeepCustomProfiles" xml:space="preserve">Вы хотите сохранить индивидуальные профили? &#x0d;&#x0d;Выберите «Да», если вы редактировали несколько профилей и хотите сохранить их изменения.&#x0d;&#x0d;Выберите «Нет», чтобы отменить все старые настройки профилей.</system:String>
+    <system:String x:Key="MigotoUpdateAvailable" xml:space="preserve">Доступно новое обновление 3dmigoto для одного или нескольких установленных исправлений 3D.&#x0d;&#x0d;Вы хотите обновить сейчас?</system:String>
+    <system:String x:Key="BindHotkeyError" xml:space="preserve">Ошибка: одна или несколько горячих клавиш не привязаны к клавишам. &#x0d;&#x0d;Пожалуйста, установите клавиши и попробуйте еще раз.</system:String>
+    <system:String x:Key="DownloadProgramComplete" xml:space="preserve">Загрузка завершена! &#x0d;&#x0d;3D Fix Manager будет перезапущен для установки обновления.</system:String>
+    <system:String x:Key="VisionNotSetup" xml:space="preserve">3D Vision не настроен на вашем компьютере. &#x0d;&#x0d;Вариант 1. Нажмите «Мастер установки», чтобы запустить мастер установки Nvidia 3D Vision по умолчанию. &#x0d;&#x0d;Вариант 2. Нажмите «Быстрая установка», чтобы быстро включить 3D Vision, изменив значения реестра Windows.&#x0d;&#x0d;</system:String>
+    <system:String x:Key="VisionSetupComplete" xml:space="preserve">Мастер настройки 3D Vision успешно пройден! &#x0d;&#x0d;Вы хотите загрузить резервную копию профиля для восстановления горячих клавиш и других настроек, связанных со Stereo 3D?</system:String>
+    <system:String x:Key="LoadStereoProfile" xml:space="preserve">Вы хотите загрузить резервную копию профиля для настроек Stereo 3D?</system:String>
+    <system:String x:Key="WindowsRegistryWriteError">Ошибка: не удалось записать загруженный профиль настроек в реестр Windows.</system:String>
+    <system:String x:Key="DefaultWizardSkipped" xml:space="preserve">Мастер настройки по умолчанию успешно пропущен и 3D Vision включен. &#x0d;&#x0d;Вы хотите загрузить резервную копию профиля для восстановления горячих клавиш и других настроек, связанных со стерео 3D?</system:String>
+    <system:String x:Key="QuickSetupError">Ошибка при включении Nvidia Stereosopic 3D. Попробуйте вместо этого использовать мастер настройки по умолчанию.</system:String>
 
-    <system:String x:Key="ForceAnaglyphError">Error: 3D Vision Discover (Anaglyph 3D) could not be forced.</system:String>
-    <system:String x:Key="Force3dVisionError">Error: 3D Vision / Generic CRT (Active 3D) could not be forced.</system:String>
-    <system:String x:Key="Force3dtvPlayError">Error: 3DTV Play could not be forced.</system:String>
-    <system:String x:Key="ForceCheckerboard">Error: Checkerboard (Active 3D) could not be forced.</system:String>
-    <system:String x:Key="ForceReversedCheckerboard">Error: Reversed Checkerboard (Active 3D) could not be forced.</system:String>
-    <system:String x:Key="ForceLineInterlacingError">Error: LineInterlacing (Passive 3D) could not be forced.</system:String>
-    <system:String x:Key="ForceReversedLineInterlacingError">Error: Reversed LineInterlacing (Passive 3D) could not be forced.</system:String>
+    <system:String x:Key="ForceAnaglyphError">Ошибка: не удалось принудительно запустить3D Vision Discover (Anaglyph 3D).</system:String>
+    <system:String x:Key="Force3dVisionError">Ошибка: не удалось принудительно запустить 3D Vision / Generic CRT (Active 3D).</system:String>
+    <system:String x:Key="Force3dtvPlayError">Ошибка: не удалось принудительно запустить воспроизведение 3DTV.</system:String>
+    <system:String x:Key="ForceCheckerboard">Ошибка: не удалось принудительно запустить Checkerboard (Active 3D).</system:String>
+    <system:String x:Key="ForceReversedCheckerboard">Ошибка: не удалось принудительно запустить Reversed Checkerboard (Active 3D).</system:String>
+    <system:String x:Key="ForceLineInterlacingError">Ошибка: не удалось принудительно запустить LineInterlacing (Passive 3D).</system:String>
+    <system:String x:Key="ForceReversedLineInterlacingError">Ошибка: не удалось принудительно запустить Reversed LineInterlacing (Passive 3D).</system:String>
      
-    <system:String x:Key="DepthHackError">Error: Depth hack could not be applied / removed.</system:String>
-    <system:String x:Key="WritePermissionError">Error: Write permission for 'System' user could not bet set for Stereo3D key in Windows registry.</system:String>
-    <system:String x:Key="AllFixesDisabled">Success! All installed 3D fixes have been disabled and are no longer active when starting a game next time.</system:String>
-    <system:String x:Key="AllFixesEnabled">Success! All installed 3D fixes have been enabled.</system:String>
-    <system:String x:Key="EnableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be enabled.</system:String>
-    <system:String x:Key="DisableNvidia3dDriverOverlayError">Error: 3D driver overlay could not be disabled.</system:String>
-    <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully enabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
-    <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">The 3D driver overlay was successfully disabled. &#x0d;&#x0d;Please reboot your system for the changes to take effect.</system:String>
+    <system:String x:Key="DepthHackError">Ошибка: не удалось применить / удалить взлом глубины.</system:String>
+    <system:String x:Key="WritePermissionError">Ошибка: не удалось установить разрешение на запись для пользователя «Система» для ключа Stereo 3D в реестре Windows.</system:String>
+    <system:String x:Key="AllFixesDisabled">Успех! Все установленные 3D-исправления отключены и больше не будут активны при следующем запуске игры.</system:String>
+    <system:String x:Key="AllFixesEnabled">Успех! Все установленные исправления 3D были включены.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlayError">Ошибка: не удалось включить наложение драйвера 3D.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlayError">Ошибка: не удалось отключить наложение драйвера 3D.</system:String>
+    <system:String x:Key="EnableNvidia3dDriverOverlaySuccess" xml:space="preserve">Оверлей 3D-драйвера был успешно включен. &#x0d;&#x0d;Пожалуйста, перезагрузите вашу систему, чтобы изменения вступили в силу.</system:String>
+    <system:String x:Key="DisableNvidia3dDriverOverlaySuccess" xml:space="preserve">Наложение 3D-драйвера было успешно отключено. &#x0d;&#x0d;Пожалуйста, перезагрузите вашу систему, чтобы изменения вступили в силу.</system:String>
 
-    <system:String x:Key="SwitchTo3dVisionWarning" xml:space="preserve">Warning: you are switching to 3D Vision mode. &#x0d;&#x0d;This mode is only suited for playing with supported 3D monitors.&#x0d;&#x0d;Please choose "VR" from the list if you want to play in Virtual Reality mode on the big screen.</system:String>
+    <system:String x:Key="SwitchTo3dVisionWarning" xml:space="preserve">Предупреждение: вы переходите в режим 3D Vision. &#x0d;&#x0d;Этот режим подходит только для игры на поддерживаемых 3D-мониторах.&#x0d;&#x0d;Пожалуйста, выберите «VR» из списка, если вы хотите играть в режиме виртуальной реальности на большом экране.</system:String>
 
 
     <!--....................  Dialog Window End .......................... -->
@@ -1235,9 +1235,9 @@ Markus Gündert (Pauldusler)</system:String>
 
     <!-- Installation Tab ToolTips -->
     <TextBlock x:Key="ForceCMToolTip" TextWrapping="Wrap" Width="300">
-        Forces DirectX 11 games to start in Compatibility Mode (also known as Fake 3D) by automatically modifying the driver profile.<LineBreak/><LineBreak/>
-        When Compatibility Mode does not look right then go to <Italic><Bold>"Hotkey"</Bold></Italic> tab and choose another value for 
-        <Italic><Bold>2DDHUDSettings"</Bold></Italic> in section <Italic><Bold>"Driver Profile Settings</Bold></Italic>.
+        Заставляет игры DirectX 11 запускаться в режиме совместимости (также известном как Fake 3D) за счет автоматического изменения профиля драйвера.<LineBreak/><LineBreak/>
+        Если режим совместимости выглядит неправильно, перейдите на <Italic><Bold>"Hotkeys"</Bold></Italic> вкладку и выберите другое значение для 
+        <Italic><Bold>"2DDHUDSettings"</Bold></Italic> в разделе <Italic><Bold>"Настройки профиля драйвера"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
