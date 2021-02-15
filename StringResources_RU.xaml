@@ -1243,10 +1243,10 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="EnableCmuToolTip" TextWrapping="Wrap" Width="300">
        Позволяет <Bold>Compatibility Mode Unleashed</Bold> (сокращенно CMU).<LineBreak/><LineBreak/>    
        CMU доступен только в играх DirectX 11 и позволяет играть в эти игры в стерео 3D, даже если они еще не исправлены для 3D.<LineBreak/><LineBreak/>
-       Еще одно преимущество CMU заключается в том, что ему требуется меньшая производительность для плавного игрового процесса в 3D.<LineBreak/><LineBreak/>
+       Еще одно преимущество Режима совместимости заключается в том, что ему требуется меньшая производительность для плавного игрового процесса в 3D.<LineBreak/><LineBreak/>
        Однако по сравнению с традиционным 3D этот режим страдает от 3D-артефактов, таких как ореолы вокруг объектов, а глубина 3D по умолчанию более ограничена.<LineBreak/><LineBreak/>
        <Bold>Важная информация:</Bold> Нажмите <Bold>F11</Bold> или <Bold>F12</Bold> (конфигурация по умолчанию) в игре, чтобы «раскрыть» CMU для превышения максимальной глубины 3D и улучшения 3D-эффекта.<LineBreak/><LineBreak/>
-       Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить CMU.
+       Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить Режим совместимости.
     </TextBlock>
     
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
