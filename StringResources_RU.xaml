@@ -1192,7 +1192,7 @@ Markus Gündert (Pauldusler)</system:String>
     <system:String x:Key="ErrorDeleting3DNip">Ошибка: файл .nip для 3D-режима не может быть удален.</system:String>
     <system:String x:Key="ErrorEnablingSteamOverlay">Ошибка: оверлей Steam не может быть включен / отключен.</system:String>
     <system:String x:Key="ErrorJavaNotDetected" xml:space="preserve">Ошибка: не удалось определить место установки Java. Убедитесь, что Java правильно установлена.&#x0d;&#x0d;Вы хотите сейчас перейти на страницу загрузки Java?</system:String>
-    <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Ошибка: не удалось обнаружить Optifine для Minecraft. Вы должны сначала установить его, чтобы продолжить установку 3D fix.\n\nВы хотите сейчас перейти на страницу загрузки Optifine?</system:String>
+    <system:String x:Key="ErrorOptifineNotDetected" xml:space="preserve">Ошибка: не удалось обнаружить Optifine для Minecraft. Вы должны сначала установить его, чтобы продолжить установку 3D fix.&#x0d;&#x0d;Вы хотите сейчас перейти на страницу загрузки Optifine?</system:String>
     <system:String x:Key="ErrorDetectingBitVersion">Ошибка: не удалось определить, установлена ли Java 64-разрядная или 32-разрядная</system:String>
     <system:String x:Key="ErrorInstallingMinecraftFix">Ошибка при установке исправления Minecraft.</system:String>
     <system:String x:Key="ErrorRenamingHitmanFolder">Ошибка: не удалось переименовать папку Hitman. Убедитесь, что папка закрыта в проводнике Windows, и повторите попытку.</system:String>
@@ -1300,102 +1300,102 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="AllowHelixPostUpdateToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether the info text of the profile shall be updated as soon as the blog post was edited on <Italic>helixmod.blogspot.com.</Italic>
+        Устанавливает, будет ли обновляться информационный текст профиля, как только сообщение в блоге было отредактировано на <Italic>helixmod.blogspot.com.</Italic>
     </TextBlock>
 
     <TextBlock x:Key="InfoAlternativeUrlToolTip" TextWrapping="Wrap" Width="300">
-        When there is an alternative 3D fix available for the game you can provide additional information about this fix.<LineBreak/><LineBreak/>
-       <Bold>Custom Info Text:</Bold> Shows an info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix. The individual text can be entered in the text field.<LineBreak/><LineBreak/>
-       <Bold>SLI Info Text:</Bold> Shows a predefined info text when installing the 3D fix which informs the user about the existence of an alternative 3D fix which is optimized for SLI systems.
+        Если для игры доступно альтернативное 3D-исправление, вы можете предоставить дополнительную информацию об этом исправлении.<LineBreak/><LineBreak/>
+       <Bold>Пользовательское Инфо:</Bold> Отображает информационный текст при установке 3D-исправления, который информирует пользователя о существовании альтернативного 3D-исправления. Отдельный текст можно ввести в текстовое поле.<LineBreak/><LineBreak/>
+       <Bold>SLI Инфо текст:</Bold> Отображает предварительно определенный информационный текст при установке исправления 3D, который информирует пользователя о существовании альтернативного исправления 3D, оптимизированного для систем SLI.
     </TextBlock>
 
     <TextBlock x:Key="DownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
-        Direct download link to the 3D Vision fix.
+        Прямая ссылка для скачивания исправления 3D Vision.
     </TextBlock>
 
     <TextBlock x:Key="AdditionalDownloadLinkFixToolTip" TextWrapping="Wrap" Width="300">
-        Provide an additional download link if the 3D Vision fix was splitted into several download links.
+        Предоставьте дополнительную ссылку для загрузки, если исправление 3D Vision было разделено на несколько ссылок для загрузки.
     </TextBlock>
 
     <TextBlock x:Key="Allow3dFixInstallationToolTip" TextWrapping="Wrap" Width="300">
-        Set this to <Italic><Bold>"No"</Bold></Italic> to warn the user from installing the 3D fix or 3D wrapper.<LineBreak/><LineBreak/>
-        By doing so the user is informed that the installation of the fix isn't required any more but can still be done if desired.
+        Установите это на <Italic><Bold>"Нет"</Bold></Italic> чтобы предупредить пользователя об установке 3D исправления или 3D оболочки.<LineBreak/><LineBreak/>
+        Таким образом, пользователь информируется о том, что установка исправления больше не требуется, но может быть выполнена при желании.
     </TextBlock>
 
     <TextBlock x:Key="Allow3dMigotoUpdateToolTip" TextWrapping="Wrap" Width="300">
-        Set this option to <Italic><Bold>"No"</Bold></Italic> if a new 3dmigoto version isn't compatible to an existing 3D fix. By doing so the user will be warned before updating the wrapper.
+        Установить эту опцию на <Italic><Bold>"Нет"</Bold></Italic> если новая версия 3dmigoto несовместима с существующим исправлением 3D. При этом пользователь будет предупрежден перед обновлением оболочки.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateOverrideToolTip" TextWrapping="Wrap" Width="300">
-        Set this option 100 Hz if your PC is not strong enough to hold steady 120 frames per second while playing in Stereo 3D. <LineBreak /><LineBreak />
-        When setting this to 100 Hz only 100 fps are required for smooth gameplay.<LineBreak /><LineBreak />
-        This option only takes effect if you enabled <Italic><Bold>Refresh rate is controlled by fix profile</Bold></Italic> in <Italic><Bold>General Settings</Bold></Italic> tab.<LineBreak /><LineBreak />
-        <Bold>Note:</Bold> When reducing refresh rate your Nvidia 3D glasses also work at a reduced shutter frequency. 100 Hz could be perceived as a flickering for some people.
+        Установите этот параметр на 100 Гц, если ваш компьютер недостаточно мощный, чтобы стабильно удерживать 120 кадров в секунду при воспроизведении в стерео 3D. <LineBreak /><LineBreak />
+        При настройке на 100 Гц для плавного игрового процесса требуется всего 100 fps.<LineBreak /><LineBreak />
+        Этот параметр действует только в том случае, если вы включили <Italic><Bold>Частота обновления контролируется профилем исправлений</Bold></Italic> во <Italic><Bold>вкладке</Bold></Italic> Общие Настройки.<LineBreak /><LineBreak />
+        <Bold>Примечание:</Bold> При уменьшении частоты обновления ваши 3D-очки Nvidia также работают с уменьшенной частотой срабатывания затвора. 100 Гц могут восприниматься некоторыми людьми как мерцание.
     </TextBlock>
 
     <TextBlock x:Key="renderApiToolTip" TextWrapping="Wrap" Width="300">
-        Choose the render API which is used by the game and save this data to the fix profile.<LineBreak /><LineBreak />
-        By entering this information the correct 3D wrapper can be installed automatically when you click on button <Italic><Bold>Install 3D Wrapper</Bold></Italic> in <Italic><Bold>Installation</Bold></Italic> tab. <Bold>3Dmigoto</Bold> is installed when the game uses DirectX 11 or <Bold>Helixmod</Bold> if it utilizes DirectX 9.<LineBreak /><LineBreak />
-        <Bold>Note:</Bold> Installing a raw wrapper is especially interesting if a game is already 3D Vision Ready and does not need a 3D fix at all. By using the wrapper you can unlock features like hotkeys support for quickly changing separation / convergence in cut scences or for choosing other 3D formats like Side-By-Side for TVs and projectors.
+        Выберите API рендеринга, который используется в игре, и сохраните эти данные в профиле исправления.<LineBreak /><LineBreak />
+        Введя эту информацию, правильная 3D-оболочка может быть установлена автоматически при нажатии кнопки <Italic><Bold>Install 3D Оболочка</Bold></Italic> во <Italic><Bold>вкладке</Bold></Italic> Установка. <Bold>3Dmigoto</Bold> устанавливается, когда игра использует DirectX 11 или <Bold>Helixmod</Bold> если она использует DirectX 9.<LineBreak /><LineBreak />
+        <Bold>Примечание:</Bold> Установка необработанной оболочки особенно интересна, если игра уже поддерживает 3D Vision и вообще не требует исправления 3D. Используя оболочку, вы можете разблокировать такие функции, как поддержка горячих клавиш для быстрого изменения разделения / конвергенции в катсценах или для выбора других 3D-форматов, таких как Side-By-Side для телевизоров и проекторов.
     </TextBlock>
 
     <TextBlock x:Key="ProductPageUrlToolTip" TextWrapping="Wrap" Width="300">
-        You can provide a link to an online shop with informationen to the game which is called if you click on button <Italic><Bold>Product Page</Bold></Italic> in <Italic><Bold>"Installation"</Bold></Italic> tab. This field is an alternative if a game is not available on Steam store.
+        Вы можете предоставить ссылку на интернет-магазин с информацией об игре, которая вызывается при нажатии на кнопку <Italic><Bold>Страница продукта</Bold></Italic> во <Italic><Bold>вкладке</Bold></Italic> Установка. Это поле является альтернативой, если игра недоступна в магазине Steam.
     </TextBlock>
 
     <TextBlock x:Key="CmFlagToolTip" TextWrapping="Wrap" Width="300">
-       Add a hex value for compatibility mode flag (2DDHUDSettings). This value is set in 3dmigoto's ini file when you force CM mode in Installation or Hotkeys tab.
+       Добавьте hex значение для флага режима совместимости (2DDHUDSettings). Это значение устанавливается в ini-файле 3dmigoto, когда вы запускаете режим CM на вкладке «Установка» или «Горячие клавиши».
     </TextBlock>
 
     <TextBlock x:Key="FixArchiveExtractorToolTip" TextWrapping="Wrap" Width="300">
-       A fix is automatically extracted after downloading. Choose here whether to use built-in SharpCompress or 7-zip for file extractions.
+       Исправление автоматически извлекается после загрузки. Выберите здесь, использовать ли встроенный SharpCompress или 7-zip для извлечения файлов.
     </TextBlock>
 
     <TextBlock x:Key="WebLinkHelixToolTip" TextWrapping="Wrap" Width="300">
-        Insert the link to the helix blog <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> where the 3D fix was taken from.<LineBreak/><LineBreak/>
-        After that click on button <Bold><Italic>Blogger API</Italic></Bold> for automatically inserting info text of the fix, download link and further essential information to the fix profile.<LineBreak/><LineBreak/>
-        If no helix blog exists to a specifc 3D fix then please insert the link to the thread in Geforce forum instead where the fix was taken from. However consider that you cannot automatically get the info text and download link to the fix in this case.<LineBreak/><LineBreak/>
-        Further more the stated link can be opened in web browser by clicking on button <Bold><Italic>Helixmod Blog</Italic></Bold> in tab <Bold><Italic>Installation</Italic></Bold>.
+        Вставьте ссылку на блог helix <Bold><Italic>(http://helixmod.blogspot.com/...)</Italic></Bold> откуда был взят 3D fix.<LineBreak/><LineBreak/>
+        После этого нажмите кнопку <Bold><Italic>Blogger API</Italic></Bold> для автоматической вставки информационного текста исправления, ссылки для скачивания и другой важной информации в профиль исправления.<LineBreak/><LineBreak/>
+        Если для конкретного исправления 3D не существует блога helix, вставьте ссылку на ветку форума Geforce вместо того, откуда было взято исправление. Однако учтите, что в этом случае вы не сможете автоматически получить информационный текст и ссылку для загрузки исправления.<LineBreak/><LineBreak/>
+        Кроме того, указанную ссылку можно открыть в веб-браузере, нажав кнопку <Bold><Italic>Блог Helixmod</Italic></Bold> во вкладке <Bold><Italic>Установка</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="GameEngineToolTip" TextWrapping="Wrap" Width="300">
-        By pressing the button <Bold><Italic>Detect Engine</Italic></Bold> you can automatically detect the game engine used by the individual game. When doing so Wikipedia and PC Gaming Wiki Webpages are searched for this information.<LineBreak/><LineBreak/>    
-        If game engine detection fails you can alternatively press buttons <Bold><Italic>Wikipedia</Italic></Bold> und <Bold><Italic>PC Gaming Wiki</Italic></Bold> for accessing the webpages for looking for the information manually.<LineBreak/><LineBreak/>      
-        In case of <Bold>Frostbite 3</Bold> / <Bold>Unity 5</Bold> / <Bold>Unreal Engine 4</Bold> and <Bold>Telltale Engine</Bold> universal 3D fixes are available which can be automatically added to the fix profile.<LineBreak/><LineBreak/>  
-        <Bold>Note:</Bold> For improving automatic detection of game engines you should first enter the Steam App ID. You do so by clicking on the button above called <Bold><Italic>Search Steam DB</Italic></Bold> next to <Bold><Italic>Game Title</Italic></Bold>.
+        Нажав кнопку <Bold><Italic>Обнаружить движок</Italic></Bold> вы можете автоматически определять игровой движок, используемый отдельной игрой. При этом выполняется поиск этой информации на веб-страницах Wikipedia и PC Gaming Wiki.<LineBreak/><LineBreak/>    
+        Если обнаружение игрового движка не удается, вы также можете нажать кнопки <Bold><Italic>Wikipedia</Italic></Bold> и <Bold><Italic>PC Gaming Wiki</Italic></Bold> для доступа к веб-страницам для поиска информации вручную.<LineBreak/><LineBreak/>      
+        В случае <Bold>Frostbite 3</Bold> / <Bold>Unity 5</Bold> / <Bold>Unreal Engine 4</Bold> и <Bold>Telltale Engine</Bold> доступны универсальные 3D-исправления, которые можно автоматически добавлять в профиль исправления.<LineBreak/><LineBreak/>  
+        <Bold>Примечание:</Bold> Чтобы улучшить автоматическое обнаружение игровых движков, вы должны сначала ввести Steam App ID. Для этого нажмите кнопку, указанную выше <Bold><Italic>Поиск в Steam DB</Italic></Bold> рядом с <Bold><Italic>Названием игры</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="IconPathToolTip" TextWrapping="Wrap" Width="300">
-        You can supply an optional icon for the game which will be displayed on the <Italic><Bold>"Installation"</Bold></Italic> tab.<LineBreak/><LineBreak/>
-        Recommended resolution is 128x128 pixel.<LineBreak/><LineBreak/>
-        For removing an active icon withing the profile folder click on <Italic><Bold>"Remove Icon"</Bold></Italic> and then on <Italic><Bold>"Save"</Bold></Italic>. 
-        A backup of the old icon is automatically created in a backup folder within the profile folder.
+        Вы можете указать дополнительный значок для игры, который будет отображаться на <Italic><Bold>вкладке</Bold></Italic> Установка.<LineBreak/><LineBreak/>
+        Рекомендуемое разрешение 128x128 пикселей.<LineBreak/><LineBreak/>
+        Чтобы удалить активный значок в папке профиля, нажмите <Italic><Bold>"Удалить значок"</Bold></Italic> а затем <Italic><Bold>"Сохранить"</Bold></Italic>. 
+        Резервная копия старого значка автоматически создается в папке резервного копирования в папке профиля.
     </TextBlock>
 
     <TextBlock x:Key="IconUrlToolTip" TextWrapping="Wrap" Width="300">
-        Provide an URL for automatically downloading a game icon if 3D Fix Manager was not able to find a local one for the game.<LineBreak/><LineBreak/>
-        For easy use just select <Italic><Bold>"TheGamesDb Icon"</Bold></Italic> from the list and click on <Italic><Bold>"Search URL"</Bold></Italic>.<LineBreak/><LineBreak/>
-        If you want to download a new icon but an old one already exists then additionally click on on the upper button <Italic><Bold>"Remove Icon"</Bold></Italic>. Don't forget to save changes.
+        Укажите URL-адрес для автоматической загрузки значка игры, если 3D Fix Manager не смог найти локальный значок для игры.<LineBreak/><LineBreak/>
+        Для удобства использования просто выберите <Italic><Bold>"TheGamesDb Icon"</Bold></Italic> из списка и нажмите <Italic><Bold>"Поиск URL"</Bold></Italic>.<LineBreak/><LineBreak/>
+        Если вы хотите загрузить новый значок, но старый уже существует, то дополнительно нажмите на верхнюю кнопку <Italic><Bold>"Удалить значок"</Bold></Italic>. Не забывайте сохранять изменения.
     </TextBlock>
 
     <TextBlock x:Key="Profile2DModeToolTip" TextWrapping="Wrap" Width="300">
-        Choose a .nip file for Nvidia Profile Inspector in order to restore the original state of a driver profile for 2D mode.<LineBreak/><LineBreak/>
-        This profile will be automatically imported in Nivida Inspector when you start a game in 2D mode or uninstall a fix.<LineBreak/><LineBreak/>
-        In addition you can set if you want to be notified before installing a driver profile <Italic><Bold>"Install with Dialog"</Bold></Italic> or not <Italic><Bold>"Silent Installation"</Bold></Italic>. 
-        To make this work please enable <Italic><Bold>"Installation of driver profiles is controlled by fix profile"</Bold></Italic> in <Italic><Bold>"Settings"</Bold></Italic> tab.
+        Выберите файл .nip для Nvidia Profile Inspector, чтобы восстановить исходное состояние профиля драйвера для 2D-режима.<LineBreak/><LineBreak/>
+        Этот профиль будет автоматически импортирован в Nvidia Inspector, когда вы запустите игру в 2D-режиме или удалите исправление.<LineBreak/><LineBreak/>
+        Кроме того, вы можете указать, хотите ли вы получать уведомление перед установкой профиля драйвера <Italic><Bold>"Установить с диалоговым окном"</Bold></Italic> или нет <Italic><Bold>"Тихая установка"</Bold></Italic>. 
+        Чтобы это работало, включите <Italic><Bold>"Установка профилей драйверов контролируется профилем исправления"</Bold></Italic> во <Italic><Bold>вкладке</Bold></Italic> Настройки.
     </TextBlock>
 
     <TextBlock x:Key="Profile3DModeToolTip" TextWrapping="Wrap" Width="300">
-        Choose a .nip file for Nvidia Profile Inspector in orderset a customized driver profile for 3D mode.<LineBreak/><LineBreak/>
-        This profile will be automatically imported in Nivida Inspector when you start a game in 3D mode.<LineBreak/><LineBreak/>
-        In addition you can set if you want to be notified before installing a driver profile <Italic><Bold>"Install with Dialog"</Bold></Italic> or not <Italic><Bold>"Silent Installation"</Bold></Italic>. 
-        To make this work please enable <Italic><Bold>"Installation of driver profiles is controlled by fix profile"</Bold></Italic> in <Italic><Bold>"Settings"</Bold></Italic> tab.
+        Выберите файл .nip для Nvidia Profile Inspector, чтобы установить индивидуальный профиль драйвера для 3D-режима.<LineBreak/><LineBreak/>
+        Этот профиль будет автоматически импортирован в Nvidia Inspector при запуске игры в 3D-режиме.<LineBreak/><LineBreak/>
+        Кроме того, вы можете указать, хотите ли вы получать уведомление перед установкой профиля драйвера <Italic><Bold>"Установить с диалоговым окном"</Bold></Italic> или нет <Italic><Bold>"Тихая установка"</Bold></Italic>. 
+        Чтобы это работало, включите <Italic><Bold>"Установка профилей драйверов контролируется профилем исправления"</Bold></Italic> во <Italic><Bold>вкладке</Bold></Italic> Настройки.
     </TextBlock>
 
     <TextBlock x:Key="FixStateToolTip" TextWrapping="Wrap" Width="300">
-        This information will be displayed with an icon on Installation tab.<LineBreak/><LineBreak/>
-        Choose whether the fix works out of the box after installing via 3D Fix Manager or if the user has to do some extra steps for completing installation.<LineBreak/><LineBreak/>
-        You can provide additional information in the field on the right side. This will be displayed as a tooltip for the icon.
+        Эта информация будет отображаться со значком на вкладке «Установка».<LineBreak/><LineBreak/>
+        Выберите, будет ли исправление работать сразу после установки с помощью 3D Fix Manager или пользователю необходимо выполнить дополнительные действия для завершения установки.<LineBreak/><LineBreak/>
+        Вы можете указать дополнительную информацию в поле справа. Это будет отображаться как всплывающая подсказка для значка.
     </TextBlock>
 
     <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
