@@ -1474,133 +1474,133 @@ Markus Gündert (Pauldusler)</system:String>
     
     <!-- Hotkeys Tab ToolTips -->
     <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
-        Hunting mode is primarily made for shaderhackers. It enables them for searching broken shaders in stereo 3D mode and repairing them.<LineBreak/><LineBreak/>
-        For the end-users hunting mode is interesting for showing an overlay with the current the current 3D depth and convergence. With this the user can finetune 3D hotkeys.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Disables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>
-        <Bold>On:</Bold> Enables hunting mode and stereo 3D overlay.<LineBreak/><LineBreak/>     
-        <Bold>Soft disabled:</Bold> Hunting mode as well as the stereo 3D overlay aren't completely disabled. By pressing key "0" (default key) you can show the overlay ingame.
+        Режим охоты в первую очередь предназначен для шейдер-хакеров. Это позволяет им искать сломанные шейдеры в стерео 3D режиме и восстанавливать их.<LineBreak/><LineBreak/>
+        Для конечных пользователей режим охоты интересен тем, что показывает наложение с текущей глубиной 3D и сходимостью. С его помощью пользователь может точно настроить горячие клавиши 3D.<LineBreak/><LineBreak/>
+        <Bold>Выкл:</Bold> Отключить режим охоты и наложение стерео 3D.<LineBreak/><LineBreak/>
+        <Bold>Вкл:</Bold> Включить режим охоты и наложение стерео 3D.<LineBreak/><LineBreak/>     
+        <Bold>Мягкое отключение:</Bold> Режим охоты, а также наложение стерео 3D отключены не полностью. Нажав кнопку "0" (клавиша по умолчанию) вы можете показать оверлей в игре.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeMigotoToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+        Выберите тип горячей клавиши. Общим для всех типов является то, что они включают предустановку 3D при нажатии клавиши. Предустановка указывает, какие настройки 3D должны быть перезаписаны (например, разделение 3D, конвергенция или константы шейдера).<LineBreak/><LineBreak/>
+        Индивидуальный тип горячей клавиши определяет, что должно происходить при отпускании клавиши или ее многократном нажатии. В зависимости от типа можно сделать ставку на различные предустановки 3D или восстановить исходные настройки 3D.<LineBreak/><LineBreak/>  
+        <Bold>Цикл:</Bold> Позволяет добавить столько 3D предустановок, сколько вам нужно, и включает ту, которая будет следующей в строке после каждого нажатия клавиши. При достижении последней предустановки следующее нажатие клавиши снова запускает первую предустановку.<LineBreak/><LineBreak/>
+        <Bold>Держать:</Bold> Позволяет добавить ровно одну предустановку 3D и делает ее активной, пока удерживается клавиша. После отпускания кнопки предустановка 3D отключается, и восстанавливаются исходные настройки 3D.<LineBreak/><LineBreak/>
+        <Bold>Переключать:</Bold> Позволяет добавить ровно одну предустановку 3D и включает ее при нажатии клавиши. После повторного нажатия предустановка 3D отключается и восстанавливаются исходные настройки 3D.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeHelixToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Cycle:</Bold> Allows to add as many 3D presets as you like and enables the one which is next in line after each keystroke. When reaching the last preset the next keystroke would trigger the first preset again.<LineBreak/><LineBreak/>
-        <Bold>Hold:</Bold> Allows to add a maximum number of two 3D presets and sets the first one active as long as the key is held down. After releasing they the second preset is enabled or if that one doesn't exist the original 3D settings are restored.
+        Выберите тип горячей клавиши. Общим для всех типов является то, что они включают предустановку 3D при нажатии клавиши. Предустановка указывает, какие настройки 3D должны быть перезаписаны (например, разделение 3D, конвергенция или константы шейдера).<LineBreak/><LineBreak/>
+        Индивидуальный тип горячей клавиши определяет, что должно происходить при отпускании клавиши или ее многократном нажатии. В зависимости от типа можно сделать ставку на различные предустановки 3D или восстановить исходные настройки 3D.<LineBreak/><LineBreak/>  
+        <Bold>Цикл:</Bold> Позволяет добавить столько 3D предустановок, сколько вам нужно, и включает ту, которая будет следующей в строке после каждого нажатия клавиши. При достижении последней предустановки следующее нажатие клавиши снова запускает первую предустановку.<LineBreak/><LineBreak/>
+        <Bold>Держать:</Bold> Позволяет добавить не более двух предустановок 3D и устанавливает первую из них активной, пока удерживается клавиша. После отпускания кнопки включается второй пресет или если он не существует, восстанавливаются исходные настройки 3D.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.
+        Выберите тип горячей клавиши. Общим для всех типов является то, что они включают предустановку 3D при нажатии клавиши. Предустановка указывает, какие настройки 3D должны быть перезаписаны (например, разделение 3D, конвергенция или константы шейдера).<LineBreak/><LineBreak/>
+        Индивидуальный тип горячей клавиши определяет, что должно происходить при отпускании клавиши или ее многократном нажатии. В зависимости от типа можно сделать ставку на различные предустановки 3D или восстановить исходные настройки 3D.<LineBreak/><LineBreak/>  
+        <Bold>Держать:</Bold> Позволяет добавить ровно одну предустановку 3D и делает ее активной, пока удерживается клавиша. После отпускания кнопки предустановка 3D отключается, и восстанавливаются исходные настройки 3D.<LineBreak/><LineBreak/>
+        <Bold>Переключать:</Bold> Позволяет добавить ровно одну предустановку 3D и включает ее при нажатии клавиши. После повторного нажатия предустановка 3D отключается и восстанавливаются исходные настройки 3D.
     </TextBlock>
 
     <TextBlock x:Key="KeyTypeOpenGlNewVersionToolTip" TextWrapping="Wrap" Width="300">
-        Choose a hotkey type. All types hve in common that they enable a 3D preset when pressing the key. The preset specifies which 3D settings are meant to be overwritten (e.g. 3D separation, convergence or shader constants).<LineBreak/><LineBreak/>
-        The individual hotkey type controls what is supposed to happen when releasing the key or pressing it several times. Depending on the type different 3D presets can bet set active or original 3D settings can be restored.<LineBreak/><LineBreak/>  
-        <Bold>Hold:</Bold> Allows to add exactly one 3D preset and sets it active as long as the key is held down. After releasing the key the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>Toggle:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. After pressing it once again the 3D preset is being disabled and the original 3D settings are restored.<LineBreak/><LineBreak/>
-        <Bold>One-Time:</Bold> Allows to add exactly one 3D preset and enables it when pressing the key. In contrast to the other hotkey types previous 3D settings cannot be restored.
+        Выберите тип горячей клавиши. Общим для всех типов является то, что они включают предустановку 3D при нажатии клавиши. Предустановка указывает, какие настройки 3D должны быть перезаписаны (например, разделение 3D, конвергенция или константы шейдера).<LineBreak/><LineBreak/>
+        Индивидуальный тип горячей клавиши определяет, что должно происходить при отпускании клавиши или ее многократном нажатии. В зависимости от типа можно сделать ставку на различные предустановки 3D или восстановить исходные настройки 3D.<LineBreak/><LineBreak/>  
+        <Bold>Держать:</Bold> Позволяет добавить ровно одну предустановку 3D и делает ее активной, пока удерживается клавиша. После отпускания кнопки предустановка 3D отключается, и восстанавливаются исходные настройки 3D.<LineBreak/><LineBreak/>
+        <Bold>Переключать:</Bold> Позволяет добавить ровно одну предустановку 3D и включает ее при нажатии клавиши. После повторного нажатия предустановка 3D отключается и восстанавливаются исходные настройки 3D.<LineBreak/><LineBreak/>
+        <Bold>Один раз:</Bold> Позволяет добавить ровно одну предустановку 3D и включает ее при нажатии клавиши. В отличие от других типов горячих клавиш предыдущие настройки 3D не могут быть восстановлены.
     </TextBlock>
 
     <TextBlock x:Key="DefaultPresetToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled you can define a default preset which is active wenn the game is launched.
+        Когда опция включена, вы можете определить предустановку по умолчанию, которая будет активна при запуске игры.
     </TextBlock>
 
     <TextBlock x:Key="cbDefaultPresetToolTip" TextWrapping="Wrap" Width="300">
-        This is the active preset when launching the game.
+        Это активная предустановка при запуске игры.
     </TextBlock>
 
     <TextBlock x:Key="DelayToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled you can define a duration a key has to be held down until the respective 3D preset is activated.
+        Когда опция включена, вы можете определить продолжительность нажатия клавиши до тех пор, пока не будет активирована соответствующая предустановка 3D.
     </TextBlock>
 
     <TextBlock x:Key="DelayMsToolTip" TextWrapping="Wrap" Width="300">
-        Time in [ms] a key has to be held down until the 3D preset is activated.
+        Продолжительность в [мс], в течение которой клавишу необходимо удерживать до активации предустановки 3D.
     </TextBlock>
 
     <TextBlock x:Key="ReleaseDelayToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled you can define a duration which has to be elapsed after releasing a key until the original stereo 3D settings are restored which were valid before pressing the key.
+        Когда опция включена, вы можете определить время, которое должно пройти после отпускания клавиши до тех пор, пока не будут восстановлены исходные настройки стерео 3D, которые были действительны до нажатия клавиши.
     </TextBlock>
 
     <TextBlock x:Key="ReleaseDelayMsToolTip" TextWrapping="Wrap" Width="300">
-        Time in [ms] until the original stereo 3D settings are restored after releasing a key.
+        Время в [мс] до восстановления исходных настроек стерео 3D после отпускания клавиши.
     </TextBlock>
 
     <TextBlock x:Key="TransitionToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled 3D presets are cross-faded with a soft transition. Type and duration of the transition can be defined by the user.
+        Когда опция включена, для предустановок 3D используется анимированный переход. Тип и продолжительность перехода могут быть определены пользователем.
     </TextBlock>
 
     <TextBlock x:Key="TransitionMsToolTip" TextWrapping="Wrap" Width="300">
-        Time in [ms] a transition takes place between 3D presets.
+        Продолжительность в [мс], с которой происходит анимированный переход между предустановками 3D.
     </TextBlock>
 
     <TextBlock x:Key="ReleaseTransitionToolTip" TextWrapping="Wrap" Width="300">
-        When option is enabled the original stereo 3D settings are restored with a soft transition. Type and duration of the transition can be defined by the user.
+        Когда опция включена, исходные настройки стерео 3D восстанавливаются с анимированным переходом. Тип и продолжительность перехода могут быть определены пользователем.
     </TextBlock>
 
     <TextBlock x:Key="ReleaseTransitionMsToolTip" TextWrapping="Wrap" Width="300">
-        Time in [ms] a transition takes place for restoring the original stereo 3D settings after releasing the key.
+        Продолжительность в [мс], с которой происходит анимированный переход к исходным настройкам стерео 3D после отпускания кнопки.
     </TextBlock>
 
     <TextBlock x:Key="TransitionTypeToolTip" TextWrapping="Wrap" Width="300">
-        Transition type which is used for cross-fading between 3D presets.
+        Определяет тип анимации, которая используется для плавного перехода между предустановками 3D.
     </TextBlock>
 
     <TextBlock x:Key="StereoProfileToolTip" TextWrapping="Wrap" Width="300">
-        This setting is required to enable a lot of stereo related code in the driver as well as allowing the convergence to be saved.<LineBreak/><LineBreak/>
-        If you are customising a profile you should always set this to <Italic><Bold>"Yes"</Bold></Italic>.
+        Этот параметр необходим не только для активации значительной части трехмерного кода стерео в драйвере, но и для сохранения сходимости.<LineBreak/><LineBreak/>
+        Если вы настраиваете профиль, вы всегда должны устанавливать для него значение <Italic><Bold>"Да"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="StereoFlagsDX10ToolTip" TextWrapping="Wrap" Width="300">
-        This setting enables stereo compute shaders, which is required to fix a lot of 'one eye' type rendering issues in many DX11 games<LineBreak/><LineBreak/>
-        Set this option to 0x00004000 to fix this issue.
+        Этот параметр включает шейдеры для стерео вычислений и гарантирует исправление ошибок рендеринга, которые заметны в том факте, что объекты появляются только в одном глазу во многих играх DirectX 11.<LineBreak/><LineBreak/>
+        Установите для этого параметра значение 0x00004000, чтобы решить проблему.
     </TextBlock>
 
     <TextBlock x:Key="StereoConvergenceToolTip" TextWrapping="Wrap" Width="300">
-        This sets the default convergence in the profile.<LineBreak/><LineBreak/>
-        Note that 3DMigoto will happily override the default value from the driver, but will only override the user's custom convergence if it has another reason to update the profile, such as a change to another setting (adding a version tag to the Comments setting would be one way to force an update).
+        Это устанавливает сходимость по умолчанию в профиле.<LineBreak/><LineBreak/>
+        Обратите внимание, что 3DMigoto без колебаний переопределит значение по умолчанию в драйвере, но переопределит настраиваемую конвергенцию пользователя только в том случае, если у него есть другая причина для обновления профиля, например изменение другого параметра (добавление тега версии в параметр комментариев будет одним способ принудительного обновления).
     </TextBlock>
 
     <TextBlock x:Key="CommentsToolTip" TextWrapping="Wrap" Width="300">
-        This changes the green text that the driver displays and is a good place to put any reminders to display to the user or just take some credit.
+        Это изменяет зеленый текст, который отображает драйвер, и является хорошим местом для размещения любых напоминаний, отображаемых для пользователя, или просто для получения кредита.
     </TextBlock>
 
     <TextBlock x:Key="StereoMemoEnabledToolTip" TextWrapping="Wrap" Width="300">
-        If you have added some comments, you probably want to force the green text to show up when the game is next run by setting this option to <Italic><Bold>"Yes"</Bold></Italic><LineBreak/><LineBreak/>
-        Note that like convergence, 3DMigoto will only override a user setting here if something else has also been updated (such as Comments), so this will usually only show up the first time a user runs the game after installing the fix (be sure to enable StereoProfile).
+        Если вы добавили комментарии, вы, вероятно, хотите, чтобы зеленый текст отображался при следующем запуске игры, установите этот параметр в <Italic><Bold>"Да"</Bold></Italic><LineBreak/><LineBreak/>
+        Обратите внимание, что 3DMigoto, как и конвергенция, перезаписывает пользовательские настройки только в том случае, если что-то еще было обновлено (например, комментарии). Таким образом, комментарий будет отображаться только при первом запуске игры после установки исправления (обязательно активируйте StereoProfile).
     </TextBlock>
 
     <TextBlock x:Key="2DDHUDSettingsToolTip" TextWrapping="Wrap" Width="300">
-        This setting forces the game to support compatibility mode if not already provided in the driver profile.<LineBreak/><LineBreak/>
-        The hex value controls the compatibility mode settings - overall 3D strength, heuristics to pin the HUD at screen depth and rating.<LineBreak/><LineBreak/>
-        You should set this option either to 0x10000002 or 0x10000102. Of course you are free to try other values.
+        Этот параметр заставляет игру поддерживать режим совместимости, если он еще не указан в профиле драйвера.<LineBreak/><LineBreak/>
+        Hex значение контролирует настройки режима совместимости - общую 3D-силу, эвристику для перемещения HUD в глубину экрана и рейтинг.<LineBreak/><LineBreak/>
+        Вы должны установить для этого параметра значение 0x10000002 или 0x10000102. Конечно, вы также можете попробовать другие значения.
     </TextBlock>
 
     <TextBlock x:Key="2DDConvergenceToolTip" TextWrapping="Wrap" Width="300">
-        This sets the default convergence when in compatibility mode.
+        Это устанавливает сходимость по умолчанию в режиме совместимости.
     </TextBlock>
 
     <TextBlock x:Key="Disable2DDToolTip" TextWrapping="Wrap" Width="300">
-        Disable compatibility mode to make sure users are seeing the real deal.<LineBreak/><LineBreak/>
-        Like convergence, 3DMigoto will respect the users custom settings here.
+        Отключите режим совместимости, чтобы убедиться, что пользователь использует настоящий 3D-режим.<LineBreak/><LineBreak/>
+        Как и в случае с конвергенцией, 3DMigoto на этом этапе принимает во внимание пользовательские настройки.
     </TextBlock>
 
     <TextBlock x:Key="TwoDDNotesToolTip"  TextWrapping="Wrap" Width="300">
-        Put a reminder in the green text of compatibility mode that they are not seeing the real deal.
+        Добавьте здесь напоминание в зеленый текст, что пользователь находится в режиме совместимости, а не в правильном 3D-режиме.
     </TextBlock>
 
     <TextBlock x:Key="EnableStereoOverlayToolTip" TextWrapping="Wrap" Width="300">
-        Enables an ingame overlay for displaying the current convergence / seperation values. This also enables hunting mode for shader fixing.<LineBreak/><LineBreak/>
-        Don't forget to uncheck this option after you have finished editing the hotkeys for achieving a better gaming performance.
+        Включает оверлей в игре для отображения текущих значений схождения / разделения. Это также включает режим охоты для исправления шейдеров.<LineBreak/><LineBreak/>
+        Не забудьте снять этот флажок после того, как закончите редактировать горячие клавиши для достижения лучшей игровой производительности.
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
