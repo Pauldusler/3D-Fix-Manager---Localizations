@@ -1789,11 +1789,11 @@ Markus Gündert (Pauldusler)</system:String>
 
     <!-- Refresh rates and resolution ToolTips -->
     <TextBlock x:Key="EnableUpscalingToolTip" TextWrapping="Wrap" Width="300">
-        Upscaling is useful if you want to play with a resolution which is lower than the native one of your monitor.<LineBreak/><LineBreak/>           
-        This feature performs upscaling to your native resolution for achieving a sharper image quality - specifically useful for 4K 3D TVs or for DSR.<LineBreak/><LineBreak/>   
-        Please consider that this is still an experimental feature and only works for a few games (like The Witcher 3 for example). When the mouse cursor does not work correctly please set upscaling to <Italic><Bold>"Force fullscreen" </Bold></Italic> or enable Software Mouse Cursor.<LineBreak/><LineBreak/>
-        <Bold>Normal fullscreen:</Bold> Enables upscaling and allows the game to disable and enable fullscreen mode.<LineBreak/><LineBreak/>
-        <Bold>Force fullscreen:</Bold> Enables upscaling and always forces fullscreen. Try this if you get issues with the mouse cursor.
+        Апскейлинг полезен, если вы хотите играть с разрешением ниже, чем исходное разрешение вашего монитора.<LineBreak/><LineBreak/>           
+        Эта функция выполняет масштабирование до вашего собственного разрешения для достижения более четкого качества изображения - особенно полезно для телевизоров 4K 3D или для DSR.<LineBreak/><LineBreak/>   
+        Учтите, что это все еще экспериментальная функция и работает только в некоторых играх (например, в The Witcher 3). Если курсор мыши работает неправильно, настройте масштабирование на <Italic><Bold>"Принудительно полноэкранный режим" </Bold></Italic> или включите программный курсор мыши.<LineBreak/><LineBreak/>
+        <Bold>Нормальный полноэкранный режим:</Bold> Включает апскейлинг и позволяет игре отключать и включать полноэкранный режим.<LineBreak/><LineBreak/>
+        <Bold>Принудительно полноэкранный режим:</Bold> Включает масштабирование и всегда включает полноэкранный режим. Попробуйте это, если у вас проблемы с курсором мыши.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
