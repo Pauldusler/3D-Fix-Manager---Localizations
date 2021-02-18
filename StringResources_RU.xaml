@@ -1604,186 +1604,186 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
-        Renders the mouse cursor in software and should be used if you want to be able to adjust the stereo depth of the mouse or in conjunction with alternative 3D output formats like side-by-side.
+        Отображает курсор мыши в программном обеспечении и предлагает возможность регулировки глубины 3D-изображения мыши.<LineBreak/><LineBreak/>Рекомендуется использовать эту опцию в сочетании с альтернативными 3D-форматами, такими как Side-by-Side.
     </TextBlock>
 
     
     <!-- General Settings Tab ToolTips -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
-        Automatic check for application or fix updates when the application is started.
+        При запуске программы проверяет наличие новых обновлений для программы или профилей исправлений.
     </TextBlock>
 
     <TextBlock x:Key="CheckForDriverUpdatesToolTip" TextWrapping="Wrap" Width="300">
-        Automatic check for Geforce driver updates when the application is started.
+        Автоматическая проверка обновлений драйверов Geforce при запуске приложения.
     </TextBlock>
 
     <TextBlock x:Key="UseHwAccelerationToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether to render the graphical user interface of the program with the GPU.<LineBreak/><LineBreak/>
-        Enabling hardware acceleration improves responsiveness of the application.<LineBreak/><LineBreak/>
-        Disable this option if you experience any abrupt crashes of the program. 
+        Устанавливает, следует ли отображать графический пользовательский интерфейс программы с помощью графического процессора.<LineBreak/><LineBreak/>
+        Включение аппаратного ускорения улучшает отзывчивость приложения.<LineBreak/><LineBreak/>
+        Отключите эту опцию, если у вас возникнут резкие сбои, вылеты в работе программы. 
     </TextBlock>
 
     <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
-        This allows 3D Fix Manager to automatically optimize graphics settings / configurations of the games when launching it.<LineBreak/><LineBreak/>
-        This is necessary for making the 3D fixes and stereo 3D mode work and look correctly.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This option should be only turned off if you prefer to configure the games manually.
+        Позволяет 3D Fix Manager автоматически оптимизировать необходимые настройки графики или конфигурацию игры при запуске игры.<LineBreak/><LineBreak/>
+        Это необходимо для того, чтобы исправления 3D и стереорежим 3D работали и выглядели правильно.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Этот параметр следует отключать только в том случае, если вы предпочитаете настраивать игры вручную.
     </TextBlock>
 
     <TextBlock x:Key="FullscreenOptimizationsToolTip" TextWrapping="Wrap" Width="300">
-       Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
-       Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
-       <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
-       You can either disable fullscreen optimizations globally or only for specific games. If you chose the latter you can control this in the individual fix profile.
+       Полноэкранная оптимизация - это функция, представленная в Windows 10 и включенная по умолчанию с момента обновления Windows 1803 (апрельское обновление 2018 г).<LineBreak/><LineBreak/>
+       Цель этой функции - имитировать безрамочный полноэкранный режим, который предлагает те же преимущества производительности, что и эксклюзивный полноэкранный режим.<LineBreak/><LineBreak/>
+       <Bold>Важно:</Bold> Вам следует отключить полноэкранную оптимизацию, если вы столкнетесь с такими проблемами, как неработающий 3D, неправильное масштабирование SLI или заикание во время игры.<LineBreak/><LineBreak/>
+       Вы можете отключить полноэкранную оптимизацию глобально или только для определенных игр. Если вы выбрали последнее, вы можете контролировать это в индивидуальном профиле исправления.
     </TextBlock>
 
     <TextBlock x:Key="FullscreenOptimizationsProfileToolTip" TextWrapping="Wrap" Width="300">
-       Fullscreen optimizations is a feature introduced with Windows 10 and enabled by default since Windows update 1803 (April Update 2018).<LineBreak/><LineBreak/>
-       Purpose of this feature is to have a borderless fullscreen mode which offers the same performance advantages like those of the exclusive fullscreen mode.<LineBreak/><LineBreak/>
-       <Bold>Important:</Bold> You should disable fullscreen optimizations if you encounter issues like 3D not working, SLI scaling incorrect or stuttering when gaming.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This setting is only active if you previously set <Bold><Italic>Fullscreen Optimizations</Italic></Bold> in tab <Bold><Italic>Application Settings</Italic></Bold> to <Italic>"Controlled by Fix Profile"</Italic>.
+       Полноэкранная оптимизация - это функция, представленная в Windows 10 и включенная по умолчанию с момента обновления Windows 1803 (апрельское обновление 2018 г).<LineBreak/><LineBreak/>
+       Цель этой функции - имитировать безрамочный полноэкранный режим, который предлагает те же преимущества производительности, что и эксклюзивный полноэкранный режим.<LineBreak/><LineBreak/>
+       <Bold>Важно:</Bold> Вам следует отключить полноэкранную оптимизацию, если вы столкнетесь с такими проблемами, как неработающий 3D, неправильное масштабирование SLI или заикание во время игры.<LineBreak/><LineBreak/>
+       <Bold>Примечание:</Bold> Этот параметр активен, только если вы ранее установили <Bold><Italic>Полноэкранную Оптимизацию</Italic></Bold> во вкладке <Bold><Italic>Настройки Приложения</Italic></Bold> на <Italic>"Контролируется профилем исправления"</Italic>.
     </TextBlock>
 
     <TextBlock x:Key="DisableFixIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables the 3D fix automatically when starting a game in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This setting is only active if you previously set <Italic><Bold>"Disable 3D fixes in 2D mode"</Bold></Italic> in tab <Italic><Bold>Application Settings</Bold></Italic> to <Italic><Bold>"Controlled by fix profile"</Bold></Italic>.
+       Отключает автоматическое исправление 3D при запуске игры в режиме 2D.<LineBreak/><LineBreak/>
+       Установите эту опцию на <Bold><Italic>Нет</Italic></Bold> если вы хотите использовать 3dmigoto в качестве инструмента моддинга для 2D-режима.<LineBreak/><LineBreak/>
+       <Bold>Примечание:</Bold> Этот параметр активен, только если вы ранее установили <Italic><Bold>"Отключить исправления 3D в режиме 2D"</Bold></Italic> во вкладке <Italic><Bold>Настройки Приложения</Bold></Italic> на <Italic><Bold>"Контролируется профилем исправления"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="DisableFixesIn2dModeToolTip" TextWrapping="Wrap" Width="300">
-       Disables 3D fixes automatically when starting games in 2D mode.<LineBreak/><LineBreak/>
-       Set this option to <Bold><Italic>No</Italic></Bold> if you want to use 3dmigoto as a modding tool for 2D mode.
+       Отключает автоматическое исправление 3D при запуске игры в режиме 2D.<LineBreak/><LineBreak/>
+       Установите эту опцию на <Bold><Italic>Нет</Italic></Bold> если вы хотите использовать 3dmigoto в качестве инструмента моддинга для 2D-режима.
     </TextBlock>
 
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
-        Disable Steam overlay if you experience crashes while starting games.
+        Отключите оверлей Steam, если у вас возникают сбои при запуске игр.
     </TextBlock>
     
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
-        When the user customizes a fix profile in 'Edit Profil' tab and clicks on <Italic><Bold>"Save"</Bold></Italic> button the changes are detected and sent to a MySQL server.<LineBreak/><LineBreak/>
-        This feature helps the author of 3D Fix Manager to add missing data to fix profiles or to correct them.
+        Когда пользователь настраивает профиль исправления на вкладке «Редактировать профиль» и нажимает <Italic><Bold>"Сохранить"</Bold></Italic> изменения, внесенные пользователем сохраняются и отправляются на сервер MySQL.<LineBreak/><LineBreak/>
+        Эта функция помогает автору 3D Fix Manager собирать недостающие данные профиля или исправлять неправильные.
     </TextBlock>
     
     <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
-        Updates 3dmigoto of all installed 3D fixes automatically as soon as 3D Fix Manager is being started.
-         <Bold>Note:</Bold> 3dmigoto is a software wrapper which means that it enables shader hackers to repair stereoscopic effects in games. It's recommended to use the latest version of the wrapper.
+        Обновляет 3dmigoto всех установленных 3D-исправлений автоматически при запуске 3D Fix Manager.
+         <Bold>Примечание:</Bold> 3dmigoto - это так называемая программная оболочка, которая позволяет исправлять неисправные стереоскопические эффекты в компьютерных играх. Желательно всегда использовать последнюю версию обертки.
     </TextBlock>
     
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
-        Reinstalls 3D fixes without redownloading them. For achieving this downloaded files are kept in the directory of 3D Fix Manager and used for reinstalling 3D fixes.<LineBreak/><LineBreak/>
-        If you want to delete downloaded files to free up space on your harddrive just go to <Italic><Bold>"Installation" </Bold></Italic> tab and click on <Italic><Bold>"Clear cache"</Bold></Italic>.
+        Этот параметр позволяет установить удаленные исправления 3D без необходимости их повторной загрузки. Загруженные файлы хранятся в каталоге 3D Fix Manager и используются для переустановки исправления.<LineBreak/><LineBreak/>
+        Если вы хотите удалить загруженные файлы, чтобы освободить место на жестком диске, просто перейдите в <Italic><Bold>"Установка"</Bold></Italic> вкладку и нажмите <Italic><Bold>"Очистить кэш"</Bold></Italic>.
     </TextBlock>
     
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
-        Enable this for redownloading all icons from TheGamesDB or Steam DB.<LineBreak/><LineBreak/>
-        Old icons are not lost by saving them in backup folders inside of the individual profile folders.
+        Включите это для повторной загрузки всех иконок из TheGamesDB или Steam DB.<LineBreak/><LineBreak/>
+        Старые значки не теряются, так как ранее они сохранялись в резервной папке в соответствующей папке профиля.
     </TextBlock>
 
     <TextBlock x:Key="DownloadScreenshotsToolTip" TextWrapping="Wrap" Width="300">
-        Downloads and displays stereoscopic 3D screenshots included in the info text of the 3D fixes.<LineBreak/><LineBreak/>
-        Disable this option if GUI freezes while downloading the images.
+        Загружает и отображает стереоскопические 3D-скриншоты, включенные в информационный текст 3D-исправления.<LineBreak/><LineBreak/>
+        Отключите эту опцию, если графический интерфейс зависает при загрузке изображений.
     </TextBlock>
 
     <TextBlock x:Key="ClearAllDownladCacheToolTip" TextWrapping="Wrap" Width="300">
-        Deletes all downloaded 3D fixes which were temporarily cached to the directory of 3D Fix Manager.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> This feature does not delete any installed 3D fixes, it just frees up some disk space in the directory of the application.
+        Этот параметр приводит к удалению всех загруженных 3D-исправлений, которые были кэшированы в папке загрузки 3D Fix Manager.<LineBreak/><LineBreak/>
+       <Bold>Примечание:</Bold> Эта функция не удаляет никакие установленные 3D-исправления, она просто освобождает место на диске в каталоге приложения.
     </TextBlock>
 
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
-        Enable this if you always want to download icons from the internet even if local icons have been already found via Windows Registry.
+        Включите это, если вы всегда хотите загружать значки из Интернета, даже если локальные значки уже были найдены через реестр Windows.
     </TextBlock>
     
     <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
-        Updates 3dmigoto of all installed fixes to the latest version.<LineBreak/><LineBreak/>
-        Newer versions of 3dmigoto can have a better performance / stability and unlock new features like SideBySide support.
+        Обновляет 3dmigoto всех установленных исправлений до последней версии.<LineBreak/><LineBreak/>
+        Новые версии 3dmigoto могут иметь лучшую производительность / стабильность и открывать новые функции, такие как поддержка SideBySide.
     </TextBlock>
 
     <TextBlock x:Key="EnableCachedPathsToolTip" TextWrapping="Wrap" Width="300">
-        When enabling this feature all game paths will be cached to the files of the individual fix profiles. As a result the start of the application is being accelerated if lots of games and programs are installed on the computer.<LineBreak/><LineBreak/>
-        It's recommended to leave this feature disabled unless app start takes too long on your machine.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind when starting the application installed games won't be searched actively any more in Windows Registry and via Search paths. Instead all information is taken from the cache.
-        Side effect of this is that newly installed games aren't detected automatically any more. Please refresh the game list (refresh button) in this case or click on button <Bold><Italic>Search games</Italic></Bold> below. The cache is rebuilt automatically then.
+        При включении этой функции все игровые пути будут кэшироваться в файлы отдельных профилей исправлений. В результате запуск приложения ускоряется, если на компьютере установлено много игр и программ.<LineBreak/><LineBreak/>
+        Рекомендуется оставить эту функцию отключенной, если запуск приложения на вашем компьютере не занимает слишком много времени.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Имейте в виду, что при запуске приложения установленные игры больше не будут активно искаться в реестре Windows и через пути поиска. Вместо этого вся информация берется из кеша.
+        Побочным эффектом этого является то, что недавно установленные игры больше не обнаруживаются автоматически. В этом случае обновите список игр (кнопка обновления) или нажмите кнопку <Bold><Italic>Искать игры</Italic></Bold> ниже. Кеш перестроится автоматически.
     </TextBlock>
 
     <TextBlock x:Key="EnableRegistrySearchToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by searching a specific location in Windows Registry for the presence of Registry keys with the same name as the individual fix profiles.<LineBreak/><LineBreak/>
-        These Registry keys contain the information where the game is installed.
+        Распознает установленные игры путем поиска в определенной точке реестра Windows разделов реестра, имена которых совпадают с именами отдельных профилей исправлений.<LineBreak/><LineBreak/>
+        Эти ключи реестра содержат информацию о том, где установлена игра.
     </TextBlock>
     
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        Detects installed games by looking for folders on your hard drive with the same name as the individual fix profiles. <LineBreak/><LineBreak/>
-        You can specify which directories to search by defining search paths (see below). Searching is automatically canceled if the maximum search depth is reached.<LineBreak/><LineBreak/>
-        For successfully detecting installed games the game exe has to be found in the folders as well. This avoids tagging games as installed although the game folder is empty.
+        Обнаруживает установленные игры, ища на жестком диске папки с тем же именем, что и отдельные профили исправлений. <LineBreak/><LineBreak/>
+        Вы можете указать каталоги для поиска, задав пути поиска (см. Ниже). Поиск автоматически останавливается, когда достигается максимальная глубина поиска.<LineBreak/><LineBreak/>
+        Чтобы успешно отметить игру как установленную, также необходимо, чтобы в папках находился exe-файл игры. Это предотвратит непреднамеренное распознавание пустых папок как установленных игр.
     </TextBlock>
     
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
-        When a game is both found by search paths and windows registry then install location found by search path is applied.
+        Когда игра найдена и по пути поиска, и по реестру Windows, применяется место установки, найденное по пути поиска.
     </TextBlock>
 
     <TextBlock x:Key="PathsToolTip" TextWrapping="Wrap" Width="300">
-      Paths which are traversed recursively for finding games.
+      Пути для рекурсивного поиска установленных игр.
     </TextBlock>
 
     <TextBlock x:Key="SearchGamesToolTip" TextWrapping="Wrap" Width="300">
-       Triggers a search for finding installed games and updates the list.
+       Запускает поиск установленных игр и обновляет список.
     </TextBlock>
 
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
-       Sets the maximal depth of subdirectories the application traverses for finding a game.
+       Устанавливает максимальную глубину подкаталогов, по которым приложение проходит для поиска игры.
     </TextBlock>
     
     <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
-       When user starts a game RivaTuner Statistics Server is opened or closed depending on the setting in the individual fix profile.
+       Когда пользователь запускает игру, сервер статистики RivaTuner открывается или закрывается в зависимости от настройки в индивидуальном профиле исправления.
     </TextBlock>
     
     <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
-        Gives the user the opportunity to set up RTSS before game starts. Please make sure fps limiter is set to 60 fps for smooth gameplay / reduced input lag.
+        Дает пользователю возможность настроить RTSS до начала игры. Убедитесь, что ограничитель частоты кадров установлен на 60 кадров в секунду для плавного игрового процесса / уменьшения задержки ввода.
     </TextBlock>
     
     <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
-       Always closes RTSS when a game is started in 2D mode no matter what is defined in fix profile.
+       Всегда закрывает RTSS, когда игра запускается в 2D-режиме, независимо от того, что определено в профиле исправления.
     </TextBlock>
     
     <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
-        Never closes a running instance of RTSS if a game is started in 2D mode no matter what is defined in fix profile.
+        Никогда не закрывает работающий экземпляр RTSS, если игра запущена в 2D-режиме, независимо от того, что определено в профиле исправления.
     </TextBlock>
     
     <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
-        Automatically closes a running instance of RTSS if the user quits 3D Fix Manager.
+        Автоматически закрывает работающий экземпляр RTSS, если пользователь выходит из 3D Fix Manager.
     </TextBlock>
     
     <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
-        Globally set if games should be started directly with the game exe and not via Steam client.<LineBreak/><LineBreak/>
-        When no Game Launcher Exe is defined in fix profile the game is still started via Steam if available.
+        Установите глобально, должны ли игры запускаться напрямую через exe-файл игры, а не через клиент Steam.<LineBreak/><LineBreak/>
+        Если в профиле исправлений не указан Game Launcher Exe, игра по-прежнему запускается через Steam, если доступно.
     </TextBlock>
     
     <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
-        Globally set if games should be started via Steam client by calling the Steam App ID.<LineBreak/><LineBreak/>
-        If the game is not installed on steam or steam itself is not detected the game is started via Game Launcher Exe instead.
+        Установите глобально, должны ли игры запускаться через клиент Steam, вызвав Steam App ID.<LineBreak/><LineBreak/>
+        Если игра не установлена в Steam или сам Steam не определяется, игра запускается через Game Launcher Exe.
     </TextBlock>
     
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        Set here if the start type of a game should be controlled individually by the fix profile. This is the recommended option for deciding if the game should be started by directly calling the game exe or indirectly by calling Steam client.<LineBreak/><LineBreak/>
-        Steam games should only be started directly via game exe when you want to bypass a game launcher window for example. You can control this behaviour by editing the individual fix profile.
+        Установите, следует ли индивидуально управлять типом запуска игры с помощью профиля исправления. Этот параметр используется, чтобы иметь возможность контролировать, следует ли запускать игру через exe-файл игры или клиент Steam.<LineBreak/><LineBreak/>
+        Игры Steam следует запускать напрямую через game exe, например, если вы хотите обойти окно запуска игры. Вы можете контролировать это поведение, редактируя индивидуальный профиль исправления.
     </TextBlock>
     
     <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
-       Globally disables installation of driver profiles for all games.
+       Глобально отключает установку профилей драйверов для всех игр.
     </TextBlock>
     
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
-        When enabling this option user can control in individual fix profiles whether to install driver profiles.
+        При включении этой опции пользователь может указать в отдельных профилях исправлений, устанавливать ли профили драйверов.
     </TextBlock>
 
     <TextBlock x:Key="InstallProfilesSilentlyToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option 3D Fix Manager is generally allowed to install driver profiles without showing a warning dialog.
+        При включении этой опции 3D Fix Manager обычно позволяет устанавливать профили драйверов без отображения диалогового окна с предупреждением.
     </TextBlock>
 
     <TextBlock x:Key="GlobalStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option stereo refresh rate and shutter frequency of Nvidia 3D glasses are left untouched and controlled by the settings in Nvidia driver.
+        При включении этой опции частота обновления стерео и частота затвора 3D-очков Nvidia остаются нетронутыми и контролируются настройками в драйвере Nvidia.
     </TextBlock>
 
     <TextBlock x:Key="ProfileStereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        By enabling this option you can control stereo refresh rate and shutter frequency of Nvidia 3D glasses individually per game.
+        Включив эту опцию, вы можете управлять частотой обновления стерео и частотой затвора 3D-очков Nvidia индивидуально для каждой игры.
     </TextBlock>
 
 
