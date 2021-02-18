@@ -1399,76 +1399,76 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="VrCompatibilityToolTip" TextWrapping="Wrap" Width="300">
-        Tags a game to be compatible to Virtual Reality mode.<LineBreak/><LineBreak/>
-        Allows to filter the list of games by VR compatibility. To do please set the filter to <Italic><Bold>"VR compatible"</Bold></Italic>.
+        Отмечает игру как совместимую с режимом Виртуальной Реальности.<LineBreak/><LineBreak/>
+        Позволяет фильтровать список игр по совместимости с VR. Для этого установите фильтр на <Italic><Bold>"VR совместимый"</Bold></Italic>.
     </TextBlock>
 
     <TextBlock x:Key="Uses3DDirectToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether the game uses NVidia 3D Direct Mode to create stereo images.
+        Устанавливает, использует ли игра режим NVidia 3D Direct для создания стереоизображений.
     </TextBlock>
 
     <TextBlock x:Key="VrRequiresSwCursorToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether Software mouse cursor shall be used for the game. (Only available for DirectX 11 games.)<LineBreak/><LineBreak/>
+        Устанавливает, следует ли использовать программный курсор мыши в игре. (Доступно только для игр DirectX 11.)<LineBreak/><LineBreak/>
         
-        This option option should be enabled if the mouse cursor is not visible in VR mode.
+        Эта опция должна быть включена, если курсор мыши не виден в режиме VR.
     </TextBlock>
 
     <TextBlock x:Key="RequiresSwCursorToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether Software mouse cursor is used for the game. (Only available for DirectX 11 games.)<LineBreak/><LineBreak/>
+        Устанавливает, используется ли программный курсор мыши в игре. (Доступно только для игр DirectX 11.)<LineBreak/><LineBreak/>
         
-       This option should be enabled if the mouse cursor is visible on one eye only when using Side by Side or Top/Bottom format.<LineBreak/><LineBreak/>
+       Эту опцию следует включить, если курсор мыши виден только одним глазом при использовании форматов Side by Side or Top/Bottom.<LineBreak/><LineBreak/>
         
-       In HelixVision VR mode software mouse cursor should be enabled if you don't see the mouse cursor on the virtual screen at all.
+       В режиме HelixVision VR программный курсор мыши должен быть включен, если вы вообще не видите курсор мыши на виртуальном экране.
     </TextBlock>
 
     <TextBlock x:Key="MultiplayerOnlineWarningToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether to show a warning before installing the driver modification for online games.<LineBreak/><LineBreak/>
-        The warning indicates that multiplayer games typically use an anti cheat mechanism that might forbid to do any changes to the video driver.
+        Устанавливает, показывать ли предупреждение перед установкой модификации драйвера для онлайн-игр.<LineBreak/><LineBreak/>
+        Предупреждение указывает на то, что в многопользовательских играх обычно используется античит-механизм, который может запрещать вносить какие-либо изменения в видеодрайвер.
     </TextBlock>
 
     <TextBlock x:Key="OptimizedConvergenceValueToolTip" TextWrapping="Wrap" Width="300">
-        Sets the convergence value which is applied to the driver profile on game launch.<LineBreak/><LineBreak/>
-        The value is optimized to achieve the best possible 3D effect on the virtual screen.
+        Устанавливает значение сходимости, которое применяется к профилю драйвера при запуске игры.<LineBreak/><LineBreak/>
+        Значение оптимизировано для достижения наилучшего 3D-эффекта на виртуальном экране.
     </TextBlock>
 
     <TextBlock x:Key="MaxConvergenceValueToolTip" TextWrapping="Wrap" Width="300">
-        Sets the maximum convergence value which is still appropriate for playing in VR.
+        Устанавливает максимальное значение сходимости, которое все еще подходит для игры в VR.
     </TextBlock>
 
     <TextBlock x:Key="SteamAppIDToolTip" TextWrapping="Wrap" Width="300">
-        Steam App ID is required for launching Steam games and visiting the Steam Store.
+        Steam App ID необходим для запуска игр Steam и посещения магазина Steam.
     </TextBlock>
 
     <TextBlock x:Key="EpicAppIDToolTip" TextWrapping="Wrap" Width="300">
-        Epic App ID is required for launching Epic Store games.
+        Epic App ID необходим для запуска игр Epic Store.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherExeToolTip" TextWrapping="Wrap" Width="300">
-        Name of the executable which is used to launch the game.<LineBreak/><LineBreak/>
+        Имя исполняемого файла, который используется для запуска игры.<LineBreak/><LineBreak/>
         
-        <Bold>Important:</Bold> This field must be set or otherwise the game cannot found on your hard disk.<LineBreak/><LineBreak/>
-        If the executable is located in a subdirectory of the game you have to supply the relative path to the executable as well by filling out the separate field <Italic><Bold>Relative Install Path</Bold></Italic> above.
+        <Bold>Важно:</Bold> Это поле должно быть установлено, иначе игра не может быть найдена на вашем жестком диске.<LineBreak/><LineBreak/>
+        Если исполняемый файл находится в подкаталоге игры, вы также должны указать относительный путь к исполняемому файлу, заполнив отдельное поле <Italic><Bold>Относительный путь установки</Bold></Italic> выше.
     </TextBlock>
 
     <TextBlock x:Key="ToolExeToolTip" TextWrapping="Wrap" Width="300">
-        Fill in the name of an exe file located in the game directory or an absolute path for starting an arbitrary program before launching the game. This feature is used by the profiles Far Cry 2, F.E.A.R. and INSIDE where it is required to call another exe file.<LineBreak/><LineBreak/>
-        Additionally you can set if the game exe should be passed as a start parameter to the tool and if the game start should wait for tool exit. Also you can set if you want to create the tool exe by copying the game exe and renaming it.
+        Перед запуском игры введите имя exe-файла, расположенного в каталоге игры, или абсолютный путь для запуска произвольной программы. Эта функция используется профилями Far Cry 2, F.E.A.R. и INSIDE, где требуется вызвать другой exe-файл.<LineBreak/><LineBreak/>
+        Кроме того, вы можете указать, следует ли передавать исполняемый файл игры в качестве стартового параметра в инструмент, и если запуск игры должен ждать выхода инструмента. Также вы можете указать, хотите ли вы создать исполняемый файл, скопировав исполняемый файл игры и переименовав его.
     </TextBlock>
 
     <TextBlock x:Key="GameLauncherOptionsToolTip" TextWrapping="Wrap" Width="300">
-        If needed set arguments for Game Launcher Exe here (see fix profile for game <Italic><Bold>"Superhot"</Bold></Italic> if you need an example.)<LineBreak/><LineBreak/>
-        Additionally you can decide whether to start the game with admin rights (needed for game <Italic><Bold>"Doom"</Bold></Italic> for example) or how to start games (directly via game exe or indirectly by Steam App ID).
+        При необходимости укажите здесь аргументы для Game Launcher Exe (см. Профиль исправления для игры <Italic><Bold>"Superhot"</Bold></Italic> если вам нужен пример.)<LineBreak/><LineBreak/>
+        Кроме того, вы можете решить, запускать ли игру с правами администратора (необходимо, для игры <Italic><Bold>"Doom"</Bold></Italic> например) или как запускать игры (напрямую через exe игры или косвенно через Steam App ID).
     </TextBlock>
 
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
-        By using this option you can modify the content of an Exe file in order to make it work correctly in stereo 3D mode. This is only required for some "LEGO" games so far.<LineBreak/><LineBreak/>
-        To do this the exe file is read as a binary data and searched for a string you can define in the field on the right side. Then the found string is replaced by another string you can set in the provided field.<LineBreak/><LineBreak/>
-        For safety reasons the original file is backuped in the game directory before the modified file is saved. 
+        Используя эту опцию, вы можете изменить содержимое Exe-файла, чтобы он правильно работал в стереорежиме 3D. Пока это требуется только для некоторых игр LEGO.<LineBreak/><LineBreak/>
+        Для этого exe-файл читается как двоичные данные и ищется строка, которую вы можете определить в поле справа. Затем найденная строка заменяется другой строкой, которую вы можете указать в указанном поле.<LineBreak/><LineBreak/>
+        Из соображений безопасности исходный файл создается в каталоге игры перед сохранением измененного файла. 
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
-        Provide a description about the 3D Vision fix.<LineBreak/><LineBreak/>
-        You can copy the text from the helixmod website or write an own description.
+        Опишите исправление 3D Vision.<LineBreak/><LineBreak/>
+        Вы можете скопировать текст с сайта helixmod или написать собственное описание.
     </TextBlock>
 
     
