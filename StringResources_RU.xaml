@@ -1902,103 +1902,103 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
-        Set the synchronisation method for your 3D Vision IR sender (3D Vision pyramid).<LineBreak/><LineBreak/>
-        <Bold>Single IR Environment:</Bold> Choose this if you don't use any other IR senders like remote controls in your environment. This is the default setting recommended by Nvidia.<LineBreak/><LineBreak/>
-        <Bold>Multi IR Environment:</Bold> Choose this if you use several IR devices in your environment like remote controls. This ensures that IR devices don't interfere with each other.<LineBreak/><LineBreak/>
-        <Bold>3D Vision LAN Environment:</Bold> Choose this if you have a LAN environment with several 3D Vision IR senders and further IR devices like remote controls. This ensures that IR devices don't interfere with each other.
+        Выберите здесь метод синхронизации для вашего инфракрасного передатчика 3D Vision (пирамида 3D Vision).<LineBreak/><LineBreak/>
+        <Bold>Один ИК-эмиттер:</Bold> Выберите это, если вы не используете какие-либо другие ИК-передатчики, такие как пульты дистанционного управления в своей среде. Это настройка по умолчанию, рекомендованна Nvidia.<LineBreak/><LineBreak/>
+        <Bold>Мульти ИК-среда:</Bold> Выберите это, если вы используете несколько ИК-устройств в своей среде, например, пульты дистанционного управления. Это гарантирует, что ИК-устройства не помешают друг другу.<LineBreak/><LineBreak/>
+        <Bold>Среда локальной сети 3D Vision:</Bold> Выберите этот вариант, если у вас есть среда LAN с несколькими ИК-передатчиками 3D Vision и другими ИК-устройствами, такими как пульты дистанционного управления. Это гарантирует, что ИК-устройства не помешают друг другу.
     </TextBlock>
 
     <TextBlock x:Key="StereoRefreshRateToolTip" TextWrapping="Wrap" Width="300">
-        3D Vision shutter glasses can be run at different shutter frequencies ranging from 100 Hz to 120 Hz.<LineBreak/><LineBreak/>
-        Set here to run monitor and shutter glasses with the specified frequenzy while gaming. Decreasing frequency to 100 Hz is useful if your computer is only strong enough to hold 100 fps in-game.
+        Очки с затвором 3D Vision могут работать с разными частотами затвора от 100 до 120 Гц.<LineBreak/><LineBreak/>
+        Установите частоту, с которой должны работать монитор и очки с затвором во время игры. Желательно установить частоту на 100 Гц, если производительности вашего ПК достаточно только для 100 FPS в игре.
     </TextBlock>
 
     <TextBlock x:Key="ExportedDriverProfileToolTip" TextWrapping="Wrap" Width="300">
-        If you were unable to find specific driver settings in the GUI you can still set them via a profile file which was previously exported via Nvidia Profile Inspector. Please choose a .nip file for doing so.<LineBreak/><LineBreak/> 
-        <Bold>Note:</Bold> 3D Fix Manager loads the exported profile (.nip file) first and after that it sets the driver settings defined by the GUI. So the driver settings of the GUI have a higher priority than the exported profile.
+        Если вам не удалось найти определенные настройки драйвера в графическом интерфейсе, вы все равно можете установить их с помощью файла профиля, который ранее был экспортирован через Nvidia Profile Inspector. Для этого выберите файл .nip.<LineBreak/><LineBreak/> 
+        <Bold>Примечание:</Bold> 3D Fix Manager сначала загружает экспортированный профиль (файл .nip), а затем устанавливает параметры драйвера, определенные графическим интерфейсом пользователя. Таким образом, настройки драйвера графического интерфейса имеют более высокий приоритет, чем экспортированный профиль.
     </TextBlock>
 
     <!-- Display Profiles ToolTips -->
 
     <TextBlock x:Key="ChangeDisplayProfileToolTip" TextWrapping="Wrap" Width="300">
-        Choose the display profile to be switched to active.<LineBreak/><LineBreak/>  
-        <Bold>Note:</Bold> You can configure each profile in tab <Bold><Italic>>"Display Profiles"</Italic></Bold> to your likings.
+        Выберите профиль отображения, который нужно переключить на активный.<LineBreak/><LineBreak/>  
+        <Bold>Примечание:</Bold> Вы можете настроить каждый профиль на вкладке <Bold><Italic>"Профили отображения"</Italic></Bold> по своему вкусу.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileDialogOnGameStartToolTip" TextWrapping="Wrap" Width="300">
-        If you disable this option the dialog window won't be shown any more the next time you start a game.<LineBreak/><LineBreak/>       
-        <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold><Italic>Display Profiles</Italic></Bold>.
+        Если вы отключите эту опцию, диалоговое окно больше не будет отображаться при следующем запуске игры.<LineBreak/><LineBreak/>       
+        <Bold>Примечание:</Bold> Вы можете повторно включить диалоговое окно на вкладке <Bold><Italic>"Профили отображения"</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileDialogOnAppStartToolTip" TextWrapping="Wrap" Width="300">
-        If you disable this option the dialog window won't be shown any more while starting 3D Fix Manager.<LineBreak/><LineBreak/>       
-        <Bold>Note:</Bold> You can re-enable the dialog window in tab <Bold><Italic>Display Profiles</Italic></Bold>.
+        Если вы отключите эту опцию, диалоговое окно больше не будет отображаться при запуске 3D Fix Manager.<LineBreak/><LineBreak/>       
+        <Bold>Примечание:</Bold> Вы можете повторно включить диалоговое окно на вкладке <Bold><Italic>"Профили отображения"</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip" TextWrapping="Wrap" Width="300">
-        Please select a display device from the list which shall be linked to this display profile. When doing so this display profile is automatically chosen when starting a game on the display device.<LineBreak/><LineBreak/>
-       <Bold>Note:</Bold> It's highly recommended that you link all the display profiles you use to a display device to eliminate the need for choosing the display profile manually when launching a game. Instead the correct display profile is detected automatically then.
+        Выберите устройство отображения из соседнего списка, которое должно быть связано с этим профилем экрана. Это автоматически выберет этот профиль экрана, когда вы запустите игру на этом устройстве отображения.<LineBreak/><LineBreak/>
+       <Bold>Примечание:</Bold> Настоятельно рекомендуется связать все профили экрана, используемые с устройством отображения, поскольку это означает, что ручной выбор правильного профиля экрана при запуске игры больше не требуется. Вместо этого правильный профиль экрана определяется автоматически.
     </TextBlock>
 
     <TextBlock x:Key="DisplayNameToolTip02" TextWrapping="Wrap" Width="300">
-        Choose the display device to be linked to the display profile.
+        Здесь вы выбираете устройство отображения, которое будет связано с этим профилем экрана.
     </TextBlock>
 
     <TextBlock x:Key="MonitorSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your monitor in inches.<LineBreak/><LineBreak/>
-        This value is written to the Windows Registry as soon as you launch a game for achieving the correct adjustable maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By doing this you can increase maximum 3D depth for all display devices equally.
+        Пожалуйста, установите фактический размер вашего монитора в дюймах.<LineBreak/><LineBreak/>
+        Это значение записывается в реестр Windows при запуске игры, чтобы установить правильную максимальную регулируемую глубину 3D.<LineBreak/><LineBreak/>
+        Если вы считаете, что максимальная глубина 3D недостаточно высока, перейдите на вкладку <Bold><Italic>Настройки 3D Nvidia</Italic></Bold> и установите параметр «Множитель глубины 3D». Таким образом вы можете в равной степени увеличить максимальную глубину 3D для всех устройств отображения.
     </TextBlock>
 
     <TextBlock x:Key="ScreenSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your projector screen in inches.<LineBreak/><LineBreak/>
-        This value is written to the Windows Registry as soon as you launch a game for achieving the correct adjustable maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By doing this you can increase maximum 3D depth for all display devices equally.
+        Пожалуйста, установите фактический размер экрана вашего проектора в дюймах.<LineBreak/><LineBreak/>
+        Это значение записывается в реестр Windows при запуске игры, чтобы установить правильную максимальную регулируемую глубину 3D.<LineBreak/><LineBreak/>
+        Если вы считаете, что максимальная глубина 3D недостаточно высока, перейдите на вкладку <Bold><Italic>Настройки 3D Nvidia</Italic></Bold> и установите параметр «Множитель глубины 3D». Таким образом вы можете в равной степени увеличить максимальную глубину 3D для всех устройств отображения.
     </TextBlock>
 
     <TextBlock x:Key="TvSizeToolTip" TextWrapping="Wrap" Width="300">
-        Please set the actual size of your TV in inches.<LineBreak/><LineBreak/>
-        This value is written to the Windows Registry as soon as you launch a game for achieving the correct adjustable maximum 3D depth.<LineBreak/><LineBreak/>
-        If you think that the maximum 3D depth is not high enough for you go to <Bold><Italic>Nvidia 3D Settings</Italic></Bold> tab and set the 3D Depth Multiplier. By doing this you can increase maximum 3D depth for all display devices equally.
+        Пожалуйста, установите фактический размер вашего телевизора в дюймах.<LineBreak/><LineBreak/>
+        Это значение записывается в реестр Windows при запуске игры, чтобы установить правильную максимальную регулируемую глубину 3D.<LineBreak/><LineBreak/>
+        Если вы считаете, что максимальная глубина 3D недостаточно высока, перейдите на вкладку <Bold><Italic>Настройки 3D Nvidia</Italic></Bold> и установите параметр «Множитель глубины 3D». Таким образом вы можете в равной степени увеличить максимальную глубину 3D для всех устройств отображения.
     </TextBlock>
 
     <TextBlock x:Key="DisplayTypeToolTip" TextWrapping="Wrap" Width="300">
-        Please choose the supported 3D technology of your display device.<LineBreak/><LineBreak/>
-        Selecting this is especially useful if you have a passive monitor / TV which only supports reversed line interlacing. The Nvidia Control Panel does not offer any option for this.<LineBreak/><LineBreak/>
-        Furthermore this option makes sure that the correct 3D technology is always set no matter if this setting would be lost by updating the graphics driver.
+        Выберите поддерживаемую технологию 3D вашего устройства отображения.<LineBreak/><LineBreak/>
+        Выбор этого особенно полезен, если у вас есть пассивный монитор / телевизор, который поддерживает только обратное чередование строк. Панель управления Nvidia не предлагает никаких опций для этого.<LineBreak/><LineBreak/>
+        Кроме того, делая свой выбор, вы гарантируете, что соответствующая технология 3D всегда установлена для устройства отображения, без потери этой настройки при обновлении драйвера видеокарты.
     </TextBlock>
 
     <TextBlock x:Key="Preferred3dFormatToolTip" TextWrapping="Wrap" Width="320">
-        Please choose your preferred 3D format.<LineBreak/><LineBreak/>
-        Consider that the 3D format can only be set for DirectX 11 games. Furthermore the 3dmigoto software wrapper / the 3D fix has to be installed for the individual game.
+        Пожалуйста, выберите предпочитаемый формат 3D.<LineBreak/><LineBreak/>
+        Обратите внимание, что формат 3D можно установить только для игр DirectX 11. Кроме того, для соответствующей игры должна быть установлена программная оболочка 3dmigoto или 3D.
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit2dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For G-Sync monitors set the framerate just below the maximum refresh rate to prevent vertical sync getting active which would increase input lag.<LineBreak/><LineBreak/>
-        For example when using a 144 Hz monitor you should set the fps limit to 142 (2 fps difference).
+        Ограничивает частоту кадров указанным значением при воспроизведении в 2D-режиме.<LineBreak/><LineBreak/>
+        <Bold>Рекомендация:</Bold> Для мониторов G-Sync установите частоту кадров чуть ниже максимальной частоты обновления, чтобы предотвратить активацию вертикальной синхронизации, которая увеличила бы задержку ввода.<LineBreak/><LineBreak/>
+        Например, при использовании монитора 144 Гц вы должны установить ограничение кадра в секунду на 142 (разница в 2 кадра в секунду).
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimit3dToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in 3D mode. By limiting the framerate you can significantly reduce input lag.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D Vision certified monitors or Generic CRT display devices you should set framerate to <Bold>"1/2 Stereo Refresh Rate"</Bold>. By doing so the framerate limit cam be detected automatically in dependency of the refresh rate of the display. Typically a fps limit of 60 fps results.<LineBreak/><LineBreak/>        
-        When using 3DTV Play or passive 3D you should set the framerate limit to 60.
+        Ограничивает частоту кадров до указанного значения при воспроизведении в 3D-режиме. Ограничивая частоту кадров, вы можете значительно уменьшить задержку ввода.<LineBreak/><LineBreak/>
+        <Bold>Рекомендация:</Bold> Для сертифицированных мониторов 3D Vision или устройств отображения Generic CRT необходимо установить частоту кадров равной <Bold>"1/2 частоты обновления стерео"</Bold>. Таким образом, предел частоты кадров определяется автоматически в зависимости от частоты обновления дисплея. Обычно результат составляет 60 кадров в секунду.<LineBreak/><LineBreak/>        
+        При использовании 3DTV Play или пассивного 3D вы должны установить ограничение частоты кадров на 60.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineSyncToolTip" TextWrapping="Wrap" Width="600">
-        Scanline Sync is a new feature of RivaTuner Statistics Server which does have a similar effect like Vertical Sync on. As well as Vertical Sync, Scanline Sync prevents tearing and makes sure you get a steady clear image. You should use this feature when your display does not support G-Sync or Freesync.<LineBreak/><LineBreak/>
-        Advantage over Vertical Sync on is the ultra low input lag. Disadvantage however is that Scanline Sync does not work with all games and all refresh rates properly so far.<LineBreak/><LineBreak/>
-        Scanline Sync works by limiting the framerate to the refresh rate of your display with a tearline located in a fixed position. This tearline can be moved down via the scanline index until the line is hidden in vertical blanking interval.<LineBreak/><LineBreak/> 
-        <Bold>Note:</Bold> So far it's known that Scanline Sync works best in 2D mode for resolution with 60 hz refresh rate. When using higher refresh rates intermittent tearing can occur or the tearline can be out of control. This depends on the individual game or the game engine it uses.<LineBreak/><LineBreak/> 
-        <Bold>Important:</Bold> Vertical Sync has to be switched off ingame in order to make Scanline Sync work. Additionally Vertical Sync has to be disabled in the global driver profile as well. Turning off Vertical Sync in global driver profile is done automatically by 3D Fix Manager.<LineBreak/><LineBreak/>
-        <Bold>Recommended:</Bold> For 3D mode the best thing is to enable Scanline Sync in the individual fix profile only. By doing so you only use this feature when it actually works for the game. Additionally Scanline Sync should be turned off in the global driver profile then.<LineBreak/><LineBreak/>
-        For 2D mode and non-G-Sync / -Freesync devices you can try to enable Scanline-Sync on a global basis as the chances are higher that Scanline Sync works for that mode. For games where it does not work disable Scanline Sync in the individual fix profile then.
+        Scanline Sync - это новая функция сервера статистики RivaTuner, которая имеет такой же эффект, как и вертикальная синхронизация. Так же, как и вертикальная синхронизация, функция Scanline Sync предотвращает разрыв изображения и обеспечивает стабильное четкое изображение. Вам следует использовать эту функцию, если ваш дисплей не поддерживает G-Sync или Freesync.<LineBreak/><LineBreak/>
+        Преимуществом перед вертикальной синхронизацией является сверхнизкая задержка на входе. Однако недостатком является то, что Scanline Sync пока работает не со всеми играми и не со всеми частотами обновления должным образом.<LineBreak/><LineBreak/>
+        Принцип работы Scanline Sync состоит в том, чтобы ограничить частоту кадров частотой обновления экрана и зафиксировать линию, на которой изображение разрывается в фиксированном положении. Затем эту "линию разрыва" можно сдвинуть вниз с помощью индекса строки сканирования, пока она окончательно не исчезнет в интервале вертикального гашения и больше не будет видна зрителю.<LineBreak/><LineBreak/> 
+        <Bold>Примечание:</Bold> Согласно предыдущим знаниям, Scanline Sync лучше всего работает в 2D-режиме при разрешениях с частотой обновления 60 Гц. При более высоких частотах обновления изображение может иногда порваться или разрывная линия больше не поддается контролю. Это, в частности, зависит от соответствующей игры или движка.<LineBreak/><LineBreak/> 
+        <Bold>Важно:</Bold> Вертикальная синхронизация должна быть отключена в игре, чтобы функция Scanline Sync работала. Кроме того, вертикальная синхронизация также должна быть отключена в глобальном профиле драйвера. Отключение вертикальной синхронизации в глобальном профиле драйвера выполняется автоматически с помощью 3D Fix Manager.<LineBreak/><LineBreak/>
+        <Bold>Рекомендация:</Bold> Для режима 3D лучше всего включить Scanline Sync только в отдельном профиле исправления. Поступая таким образом, вы используете эту функцию только тогда, когда она действительно работает в игре. Кроме того, необходимо отключить Scanline Sync в глобальном профиле драйвера.<LineBreak/><LineBreak/>
+        Для 2D-режима и устройств, не поддерживающих G-Sync / -Freesync, вы можете попытаться включить Scanline Sync на глобальном уровне, поскольку шансы, что Scanline Sync работает для этого режима, выше. Для игр, в которых это не работает, отключите Scanline Sync в индивидуальном профиле исправления.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineModeToolTip" TextWrapping="Wrap" Width="600">
-        <Bold>x:</Bold> Limits the framerate to refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 2D mode.<LineBreak/><LineBreak/>
-        <Bold>x2</Bold> Limits the framerate to double refresh rate of the display with 2 tearlines located in fixed positions. Both tearlines can be moved down and one of them hidden in vertical blanking invertcal.<LineBreak/><LineBreak/>
-        <Bold>x/2:</Bold> Limits the framerate to half refresh rate of the display with a tearline located in a fixed position. Typically you should choose this option for 3D mode.
+        <Bold>x:</Bold> Ограничивает частоту кадров частотой обновления дисплея, при этом линия разрыва находится в фиксированном положении. Обычно вам следует выбирать этот вариант для 2D-режима.<LineBreak/><LineBreak/>
+        <Bold>x2</Bold> Ограничивает частоту кадров до двойной частоты обновления дисплея с двумя линиями разрыва, расположенными в фиксированных положениях. Обе линии отрыва могут быть перемещены вниз, а одна из них скрыта с помощью индекса строки развертки.<LineBreak/><LineBreak/>
+        <Bold>x/2:</Bold> Ограничивает частоту кадров до половины частоты обновления дисплея с разрывом, расположенным в фиксированном положении. Обычно вам следует выбирать этот вариант для режима 3D.
     </TextBlock>
 
     <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
