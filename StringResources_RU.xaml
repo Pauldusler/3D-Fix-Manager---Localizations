@@ -2002,87 +2002,87 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="ScanlineIndexToolTip" TextWrapping="Wrap" Width="600">
-        This option moves the tearline. Positive numbers move the thearline downwards and negative upwards.<LineBreak/><LineBreak/>
-        <Bold>Off:</Bold> Disables ScanlineSync and re-enables Vertical Sync when the user has set so in <Bold>Nvidia 3D Settings</Bold> tab.<LineBreak/><LineBreak/>
-        <Bold>Auto: </Bold> The tearling is automatically moved downwards by the correct value until it's hidden in the vertical blanking interval. For detecting the correct value you have to set the desired game resolution first.
+        Эта опция перемещает линию разрыва. Положительные числа перемещают линию вниз, а отрицательные - вверх.<LineBreak/><LineBreak/>
+        <Bold>Выкл:</Bold> Деактивирует Scanline Sync и повторно активирует вертикальную синхронизацию, если это было указано пользователем на <Bold>Настройки Nvidia 3D</Bold> вкладке.<LineBreak/><LineBreak/>
+        <Bold>Авто: </Bold> В зависимости от выбранного разрешения игры линия разрыва автоматически сдвигается вниз на нужную величину, чтобы скрыть ее в интервале вертикального гашения. Пожалуйста, установите желаемое разрешение игры заранее, чтобы значение можно было определить правильно.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 2D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Запускает игру с желаемым разрешением в 2D-режиме.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Эта функция пока поддерживается не во всех играх. Вы можете распознать поддерживаемые игры по ключевому слову <Bold><Italic>Разрешение: по профилю отображения</Italic></Bold> когда вы наводите указатель мыши на значок информации на вкладке <Bold><Italic>Установка</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="GameResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> This feature is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Installation</Italic></Bold> Tab.
+        Запускает игру с желаемым разрешением в 3D режиме.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Эта функция пока поддерживается не во всех играх. Вы можете распознать поддерживаемые игры по ключевому слову <Bold><Italic>Разрешение: по профилю отображения</Italic></Bold> когда вы наводите указатель мыши на значок информации на вкладке <Bold><Italic>Установка</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="GameResolutionVrToolTip" TextWrapping="Wrap" Width="300">
-        Starts the game with the desired resolution in 3D mode.<LineBreak/><LineBreak/>
-        1920x1080 is the recommended resolution for HelixVision as it gives a good balance between picture quality and performance. We do advice to not set the resolution any higher than 1920x1080 as this might affect game performance while image quality is not noticably improved any more.<LineBreak/><LineBreak/>
+        Запускает игру с желаемым разрешением в 3D режиме.<LineBreak/><LineBreak/>
+        Разрешение 1920x1080 рекомендуется для HelixVision, поскольку оно обеспечивает хороший баланс между качеством изображения и производительностью. Мы советуем не устанавливать разрешение выше 1920x1080, так как это может повлиять на производительность игры, а качество изображения заметно не улучшится.<LineBreak/><LineBreak/>
         
-        <Bold>Note:</Bold> Setting the desired resolution automatically is not supported for all games. You can see if a game is supported by looking for the <Bold><Italic>Resolution: By Display Profile</Italic></Bold> text included in the info icon in <Bold><Italic>Play</Italic></Bold> Tab.
+        <Bold>Примечание:</Bold> Эта функция пока поддерживается не во всех играх. Вы можете распознать поддерживаемые игры по ключевому слову <Bold><Italic>Разрешение: по профилю отображения</Italic></Bold> когда вы наводите указатель мыши на значок информации на вкладке <Bold><Italic>Играть</Italic></Bold>.
     </TextBlock>
 
     <TextBlock x:Key="FramerateLimitVrToolTip" TextWrapping="Wrap" Width="300">
-        Limits the framerate to the specified value when playing in VR mode. <LineBreak/><LineBreak/>
+        Ограничивает частоту кадров указанным значением при игре в режиме VR. <LineBreak/><LineBreak/>
         
-        We recommend to keep the predefined value <Italic><Bold>Half Display Frequency</Bold></Italic>. 
-        Depending on your headset the framerate is typically limited to either 40 fps or 45 fps then. 
-        Using a framerate limit makes the game run at a constant framerate which greatly removes stuttering and ensures you'll get the smoothest gaming experience possible.<LineBreak/><LineBreak/>
+        Мы рекомендуем оставить предустановленное значение <Italic><Bold>Половина частоты отображения</Bold></Italic>. 
+        В зависимости от вашей гарнитуры частота кадров обычно ограничена 40 или 45 кадрами в секунду. 
+        Использование ограничения частоты кадров позволяет игре работать с постоянной частотой кадров, что значительно устраняет заикание и гарантирует, что вы получите максимально плавный игровой процесс.<LineBreak/><LineBreak/>
         
-        <Bold>Warning:</Bold> Limiting the framerate to any other values than <Italic><Bold>Half Display Frequency</Bold></Italic> might cause stuttering in game. Removing the framerate limiter is strictly not recommended as this leads to a heavy performance loss for the VR application.<LineBreak/><LineBreak/>
+        <Bold>Предупреждение:</Bold> Ограничение частоты кадров любыми другими значениями, кроме <Italic><Bold>Половина частоты отображения</Bold></Italic> может вызвать заикание в игре. Категорически не рекомендуется удалять ограничитель частоты кадров, так как это приводит к серьезной потере производительности приложения VR.<LineBreak/><LineBreak/>
 
-        <Bold>Note:</Bold> If you have a very powerfull PC you might want to set the framerate limit to <Italic><Bold>Full Display Frequency</Bold></Italic>. This means that the ingame frame rate is synced to the refresh rate of your VR headset.
-        Assuming your PC is fast enough to hold the high framerate you will get an ultra smooth gaming experience. Unfortunately even high-end PCs cannot achieve those framerates for most current games so this feature is much more interesting for older games.
+        <Bold>Примечание:</Bold> Если у вас очень мощный компьютер, вы можете установить ограничение частоты кадров на <Italic><Bold>Полная частота отображения</Bold></Italic>. Это означает, что частота кадров в игре синхронизируется с частотой обновления вашей VR-гарнитуры.
+        Предполагая, что ваш компьютер достаточно быстр, чтобы поддерживать высокую частоту кадров, вы получите ультра плавный игровой процесс. К сожалению, даже высокопроизводительные ПК не могут достичь такой частоты кадров для большинства современных игр, поэтому эта функция намного интереснее для старых игр.
     </TextBlock>
 
     <TextBlock x:Key="VrScreenSizeToolTip" TextWrapping="Wrap" Width="300">
-       Size of the virtual screen in inches.<LineBreak/><LineBreak/>
+       Размер виртуального экрана в дюймах.<LineBreak/><LineBreak/>
        
-       The value specifies how strong the 3D depth is perceived to the human eye when setting 3D depth to the maximum possible value of 100% ingame. Smaller values for the screen size lead to a stronger perceived effect while larger values decrease it.<LineBreak/><LineBreak/>
-       For HelixVision a value of 80 inches is optimal as even a 3D depth value of 100% is still comfortable for the eyes.<LineBreak/><LineBreak/>
+       Значение определяет, насколько сильно 3D-глубина воспринимается человеческим глазом при установке 3D-глубины на максимально возможное значение 100% в игре. Меньшие значения размера экрана приводят к более сильному воспринимаемому эффекту, а большие значения уменьшают его.<LineBreak/><LineBreak/>
+       Для HelixVision значение 80 дюймов является оптимальным, поскольку даже значение глубины 3D в 100% по-прежнему комфортно для глаз.<LineBreak/><LineBreak/>
         
-       We recommend to keep the predefined value unless you scale your virtual screen to different sizes while playing.
+       Мы рекомендуем сохранить предустановленное значение, если вы не масштабируете виртуальный экран до разных размеров во время игры.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolutionVrToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop rate to the desired resolution when starting a game in VR mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
-        Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+        Устанавливает желаемое разрешение рабочего стола при запуске игры в режиме VR или при включении стерео 3D.<LineBreak/><LineBreak/>
+        Используя эту опцию, вы можете сопоставить разрешение рабочего стола и частоту обновления с текущими настройками разрешения игры. Преимущество этого заключается в том, что вы можете быстрее свернуть игру, поскольку устройству отображения не нужно менять частоту.<LineBreak/><LineBreak/>
+        Кроме того, эта функция полезна для пользователей Windows 10, у которых при закрытии игры появляется черный экран. Это связано с тем, что в Windows 10 возникают проблемы с переключением обратно на другие частоты при включенном стереорежиме 3D.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution2DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the desired resolution when starting a game in 2D mode or when disabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.
-        Whenever possible set different values for 2D desktop refresh rate and 3d desktop refresh rate for avoiding the Windows 10 blackscreen bug.
+        Устанавливает желаемое разрешение рабочего стола при запуске игры в режиме 2D или при отключении стерео 3D.<LineBreak/><LineBreak/>
+        Используя эту опцию, вы можете сопоставить разрешение рабочего стола и частоту обновления с текущими настройками разрешения игры. Преимущество этого заключается в том, что вы можете быстрее свернуть игру, поскольку устройству отображения не нужно менять частоту.
+        По возможности устанавливайте разные значения для частоты обновления рабочего стола 2D и частоты обновления рабочего стола 3D, чтобы избежать ошибки черного экрана в Windows 10.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolution3DToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop rate to the desired resolution when starting a game in 3D mode or when enabling stereo 3D.<LineBreak/><LineBreak/>
-        By using this option you can match the desktop resolution and refresh rate to the current resolution settings of the game. Advantage of this is that you can minimize the game more quickly as the display device does not have to change frequencies.<LineBreak/><LineBreak/>
-        Furthermore this feature is useful for Windows 10 users who experience a black screen when closing a game. This is because Windows 10 has issues changing back to other frequencies when stereo 3D mode is on.
+        Устанавливает желаемое разрешение рабочего стола при запуске игры в режиме 3D или при включении стерео 3D.<LineBreak/><LineBreak/>
+        Используя эту опцию, вы можете сопоставить разрешение рабочего стола и частоту обновления с текущими настройками разрешения игры. Преимущество этого заключается в том, что вы можете быстрее свернуть игру, поскольку устройству отображения не нужно менять частоту.<LineBreak/><LineBreak/>
+        Кроме того, эта функция полезна для пользователей Windows 10, у которых при закрытии игры появляется черный экран. Это связано с тем, что в Windows 10 возникают проблемы с переключением обратно на другие частоты при включенном стереорежиме 3D.
     </TextBlock>
 
     <TextBlock x:Key="DesktopResolutionOnClosingToolTip" TextWrapping="Wrap" Width="300">
-        Sets the desktop to the specified resolution when closing the application.
+        Устанавливает рабочий стол на указанное разрешение при закрытии приложения.
     </TextBlock>
 
     <TextBlock x:Key="DefaultProfileOnStartupToolTip" TextWrapping="Wrap" Width="300">
-        Choose a display profile which shall be active when starting the application.
+        Выберите профиль отображения, который будет активен при запуске приложения.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileSelectionOnStartupToolTip" TextWrapping="Wrap" Width="300">
-        Set if a dialog window shall be opened when starting the application where you can choose the active display profile.
+        Установите, должно ли открываться диалоговое окно при запуске приложения, в котором вы можете выбрать активный профиль отображения.
     </TextBlock>
 
     <TextBlock x:Key="ShowProfileSelectionOnGameStartToolTip" TextWrapping="Wrap" Width="300">
-        Sets if a dialog window shall appear on game start where you can choose the active display profile.
+        Устанавливает, должно ли появляться диалоговое окно при запуске игры, в котором вы можете выбрать активный профиль отображения.
     </TextBlock>
 
     <TextBlock x:Key="AllowDisplayProfileOverrideToolTip" TextWrapping="Wrap" Width="300">
-        When disabling this option the fix profiles aren't allowed to modify game- and desktop resolution any more.<LineBreak/><LineBreak/>
-        Resolution is controlled soley by the global display profiles then if the user has set any option there.
+        При отключении этой опции профили исправлений больше не могут изменять разрешение игры и рабочего стола.<LineBreak/><LineBreak/>
+        Затем управление осуществляется исключительно через глобальные профили экрана при условии, что пользователь произвел там настройки.
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
