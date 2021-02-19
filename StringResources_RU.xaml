@@ -1797,108 +1797,108 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="UpscalingModeToolTip" TextWrapping="Wrap" Width="300">
-         <Bold>0:</Bold> 3Dmigoto creates a texture and pushes it as the back buffer for the game. Seems to work with only few games but everything seems to run a bit smoother.<LineBreak/><LineBreak/>
-         <Bold>1:</Bold> 3Dmigoto creates a second swap chain and pushes the game to use it. Seems to work with most games.
+         <Bold>0:</Bold> 3Dmigoto создает текстуру и использует ее как задний буфер для игры. Кажется, работает только с несколькими играми, но кажется, все работает немного плавнее.<LineBreak/><LineBreak/>
+         <Bold>1:</Bold> 3Dmigoto создает вторую цепочку обмена и подталкивает игру к ее использованию. Кажется, работает с большинством игр.
     </TextBlock>
 
     <TextBlock x:Key="UpscalingScreenToolTip" TextWrapping="Wrap" Width="300">        
-        If upscaling is on, then you MUST specify the resolution the game will be upscaled to.<LineBreak/><LineBreak/>
-        To achieve the best visual result use the native resolution of your tv or monitor.
+        Если масштабирование включено, вы ДОЛЖНЫ указать разрешение, до которого будет масштабироваться игра.<LineBreak/><LineBreak/>
+        Для достижения наилучшего визуального результата используйте собственное разрешение вашего телевизора или монитора.
     </TextBlock>
 
     <TextBlock x:Key="FilterRefreshRatesToolTip" TextWrapping="Wrap" Width="300">
-        Filters available video modes to those providing given refresh rates. Some games don't explicitely set the refresh rate, but use the video mode.<LineBreak/><LineBreak/>
-        Use this if setting <Italic><Bold>"Override refresh rate"</Bold></Italic> doesn't work.
+        Отфильтровывает доступные видеорежимы до тех, которые обеспечивают заданную частоту обновления. В некоторых играх явно не устанавливается частота обновления, но используется режим видео.<LineBreak/><LineBreak/>
+        Используйте это, если установка <Italic><Bold>"Переопределить частоту обновления"</Bold></Italic> не работает.
     </TextBlock>
 
     <TextBlock x:Key="ForceFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        <Bold>1:</Bold> Forces creation of full screen devices and swap chains.<LineBreak/><LineBreak/>
-        <Bold>2:</Bold> Will also disable SetWindowPos which might help in some games.
+        <Bold>1:</Bold> Принудительное создание полноэкранных устройств и цепочек обмена.<LineBreak/><LineBreak/>
+        <Bold>2:</Bold> Также отключит SetWindowPos, который может помочь в некоторых играх.
     </TextBlock>
 
     <TextBlock x:Key="ToggleFullscreenToolTip" TextWrapping="Wrap" Width="300">
-        To switch out of a Unity game without it crashing:<LineBreak/><LineBreak/>
-        Enable this option, Press F7, Alt+Enter, Alt+Tab
+        Чтобы выйти из игры Unity без сбоев:<LineBreak/><LineBreak/>
+        Включите эту опцию, Нажмите F7, Alt+Enter, Alt+Tab
     </TextBlock>
 
     <TextBlock x:Key="ForceFullscreenOnKeyPressToolTip" TextWrapping="Wrap" Width="300">
-        This attempts to force exclusive full screen when this key is pressed and may be useful in games where <Italic><Bold>Force fullscreen on game start</Bold></Italic> doesn't work or has undesirable side effects.
+        При нажатии клавиши выполняется попытка принудительного включения эксклюзивного полноэкранного режима, что может быть полезно в играх где <Italic><Bold>Принудительно использовать полноэкранный режим при запуске игры</Bold></Italic> не работает или имеет нежелательные побочные эффекты.
     </TextBlock>
 
     <!-- Nvidia 3D Settings Tab ToolTips -->
     <TextBlock x:Key="EnableNvidia3DToolTip" TextWrapping="Wrap" Width="300">
-        Enables / disables <Bold> Nvidia Stereoscopic 3D</Bold> manually.<LineBreak/><LineBreak/>
-        This is the same feature which can be also found in Nvidia Control Panel under <Italic><Bold>"Set up stereoscopic 3D"</Bold></Italic>.
+        Включает / отключает <Bold> Nvidia Stereoscopic 3D</Bold> вручную.<LineBreak/><LineBreak/>
+        Это та же функция, которую также можно найти в Панели управления Nvidia в разделе <Italic><Bold>"Установить стереоскопический режим 3D"</Bold></Italic>.
     </TextBlock>
      
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
-         Disables Nvidia Stereoscopic 3D when closing 3D Fix Manager.
+         Отключает Nvidia Stereoscopic 3D при закрытии 3D Fix Manager.
     </TextBlock>
 
     <TextBlock x:Key="Disable3dOnGameClosingToolTip" TextWrapping="Wrap" Width="300">
-        Disables Nvidia Stereoscopic 3D when closing a running game.
+        Отключает Nvidia Stereoscopic 3D при закрытии запущенной игры.
     </TextBlock>
 
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
-        Automatically sets 3D output mode to 3D Vision / 3DTV Play instead of 3D Vision Discover (anaglyph) when enabling Nvidia Stereoscopic 3D or starting a game in 3D mode.
+        Автоматически устанавливает для режима вывода 3D значение 3D Vision / 3DTV Play вместо 3D Vision Discover (анаглиф) при включении Nvidia Stereoscopic 3D или запуске игры в режиме 3D.
     </TextBlock>
     
     <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
-        Sets wether games start in 3D mode when Nvidia Stereoscopic 3D is enabled. Otherwise you have to press CTRL + T.<LineBreak/><LineBreak/>
-        Technically this option sets windows registry entry <Italic><Bold>"StereoDefaultOn"</Bold></Italic> to 0 or 1.
+        Устанавливает запуск игр в режиме 3D при включении Nvidia Stereoscopic 3D. В противном случае вам нужно нажать CTRL + T.<LineBreak/><LineBreak/>
+        Технически этот параметр устанавливает в реестре Windows <Italic><Bold>"StereoDefaultOn"</Bold></Italic> значение 0 или 1.
     </TextBlock>
     
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
-        Sets whether 3D Vision can activate 3D mode for windowed applications.<LineBreak/><LineBreak/>
-        Technically this option sets windows registry entry <Italic><Bold>"EnableWindowedMode"</Bold></Italic> to 0 or 5.
+        Устанавливает, может ли 3D Vision активировать режим 3D для оконных приложений.<LineBreak/><LineBreak/>
+        Технически этот параметр устанавливает в реестре Windows <Italic><Bold>"EnableWindowedMode"</Bold></Italic> значение 0 или 5.
     </TextBlock>
 
     <TextBlock x:Key="Nvidia3dDriverOverlayToolTip" TextWrapping="Wrap" Width="300">
-        With this option you can completely switch off the overlay which is typcially active when playing in stereo 3D mode.<LineBreak/><LineBreak/>
-        By disabling the overlay both the graphical representation for the 3D depth as well as the info box with the green text aren't shown in games any more.<LineBreak/><LineBreak/>
-        Further more you generally won't see the red warning text <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> any more.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> Keep in mind that you need to restart your system after disabling or re-enabling the overlay. In addition the changes are undone after updating the graphics driver.
+        С помощью этой опции вы можете полностью отключить оверлей, который обычно активен при воспроизведении в стереорежиме 3D.<LineBreak/><LineBreak/>
+        При отключении наложения ни графическое представление глубины 3D, ни информационное окно с зеленым текстом больше не отображаются в играх.<LineBreak/><LineBreak/>
+        Кроме того, красный предупреждающий текст <Italic><Bold>"Warning: attempt to run Stereoscopic in non-stereo display mode"</Bold></Italic> обычно не отображается.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Имейте в виду, что вам необходимо перезагрузить систему после отключения или повторного включения оверлея. Кроме того, изменения отменяются после обновления графического драйвера.
     </TextBlock>
 
     <TextBlock x:Key="EnableGeforceDllHackToolTip" TextWrapping="Wrap" Width="300">
-        Applies / undos a modification for Geforce driver on Windows 10 v. 1903 or higher.<LineBreak/><LineBreak/>
-        This is required for playing DirectX 11 titles in stereoscopic 3D and latest Geforce drivers.
+        Изменяет или отменяет драйвер видеокарты в Windows 10 v.1903 или выше.<LineBreak/><LineBreak/>
+        Требуется для воспроизведения игр DirectX 11 в стереоскопическом 3D с использованием последних драйверов Geforce.
     </TextBlock>
 
     <TextBlock x:Key="DriverStoreToolTip" TextWrapping="Wrap" Width="300">
-        Searches for the location of the Geforce driver in Windows Driver Store and opens the path in Windows explorer.<LineBreak/><LineBreak/>
-        This helps to manually check if rights for the Geforce folder have been successfully granted for admin user group.
+        Ищет местоположение драйвера Geforce в Магазине драйверов Windows и открывает путь в проводнике Windows.<LineBreak/><LineBreak/>
+        Это помогает вручную проверить, были ли права на папку Geforce успешно предоставлены группе пользователей admin.
     </TextBlock>
 
     <TextBlock x:Key="ShowDriverHackDialogToolTip" TextWrapping="Wrap" Width="300">
-        Shows a warning dialog before applying / undoing the Geforce graphics driver modification.<LineBreak/><LineBreak/>
-        With this dialog the user can decide whether to start or cancel the process of modifying drivers.
+        Показывает диалоговое окно с предупреждением перед применением / отменой модификации графического драйвера Geforce.<LineBreak/><LineBreak/>
+        В этом диалоговом окне пользователь может решить, начать или отменить процесс изменения драйверов.
     </TextBlock>
 
     <TextBlock x:Key="EnableWmrFixToolTip" TextWrapping="Wrap" Width="300">
-        Fixes a crash which occurs when trying to use 3D Vision and Windows Mixed Reality at the same time.<LineBreak/><LineBreak/>
-        Don't enable this option if you do not have a Windows Mixed Reality headset.
+        Исправлен сбой, возникающий при попытке использовать 3D Vision и Windows Mixed Reality одновременно.<LineBreak/><LineBreak/>
+        Не включайте этот параметр, если у вас нет гарнитуры Windows Mixed Reality.
     </TextBlock>
 
     <TextBlock x:Key="SwapInterleavePatternToolTip" TextWrapping="Wrap" Width="300">
-        Reverses interleave pattern for <Bold>passive 3D displays</Bold>.<LineBreak/><LineBreak/>
-        This fixes the issue when left and right eyes are swapped.<LineBreak/><LineBreak/>
-        Technically this option sets the windows registry entries <Italic><Bold>"InterleavePattern0"</Bold></Italic> and <Italic><Bold>"InterleavePattern1"</Bold></Italic> to <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
-        <Bold>Note:</Bold> In order to prevent the Nvidia driver to override these entries they will be protected from write access for a duration of 120 seconds while starting the game in 3D mode. Once this period elapses or the application is closed write access will be automatically granted again.
+        Инвертирует метод чересстрочной развертки для <Bold>пассивных 3D-экранов</Bold>.<LineBreak/><LineBreak/>
+        Это устраняет проблему, когда левый и правый глаза меняются местами.<LineBreak/><LineBreak/>
+        Технически этот параметр устанавливает в реестре Windows <Italic><Bold>"InterleavePattern0"</Bold></Italic> и <Italic><Bold>"InterleavePattern1"</Bold></Italic> значение <Italic><Bold>0xff00ff00</Bold></Italic>.<LineBreak/><LineBreak/>
+        <Bold>Примечание:</Bold> Чтобы драйвер Nvidia не перезаписал эти значения, они будут защищены от записи в течение 120 секунд при запуске игры в 3D-режиме. По истечении этого периода или закрытии приложения доступ на запись будет снова автоматически предоставлен.
     </TextBlock>
 
     <TextBlock x:Key="DepthMultiplierToolTip" TextWrapping="Wrap" Width="300">
-        Enable this option if you want to exceed the maximum possible value for the 3D depth (this procedure is also known as depth hack). This feature is especially useful for projectors as the maximum 3D depth is often too low for them.<LineBreak/><LineBreak/>
-        Depth hack is active as soon as you set the multiplier to a value higher than 1. For example if you set it to 2 you can achieve a 3D depth which is twice as high.<LineBreak/><LineBreak/>
-        With regard to this example this effectively means if you set 3D depth to 100% while gaming this will actually correspond a depth of 200% because multiplier was set to 2. Similarily 80% 3D depth will correspond 160% and so on.<LineBreak/><LineBreak/>
-        When using the depth hack you make the Nvidia driver think that you play with a smaller display size as it is actually. You can see the display size which was detected by the driver below. The smaller the inch value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
-        3D depth hack is applied to all display profiles so you can increase the maximum 3D depth for all display devices equally.
+        Включите эту опцию, если вы хотите превысить максимально возможное значение глубины 3D (эта процедура также известна как взлом глубины). Эта функция особенно полезна для проекторов, поскольку максимальная глубина 3D для них зачастую слишком мала.<LineBreak/><LineBreak/>
+        Взлом глубины активируется, как только вы устанавливаете множитель на значение выше 1. Например, если вы установите его на 2, вы можете достичь глубины 3D, которая будет вдвое выше.<LineBreak/><LineBreak/>
+        Что касается этого примера, это фактически означает, что если вы установите глубину 3D на 100% во время игры, это фактически будет соответствовать глубине 200%, потому что множитель был установлен на 2. Точно так же глубина 3D 80% будет соответствовать 160% и так далее.<LineBreak/><LineBreak/>
+        При использовании хака глубины вы заставляете драйвер Nvidia думать, что вы играете с меньшим размером дисплея, как это есть на самом деле. Вы можете увидеть размер дисплея, который был определен драйвером ниже. Чем меньше значение в дюймах, тем больше максимальная глубина 3D.<LineBreak/><LineBreak/>
+        Взлом глубины 3D применяется ко всем профилям дисплея, поэтому вы можете одинаково увеличить максимальную глубину 3D для всех устройств отображения.
     </TextBlock>
     
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
-        This is the size of the monitor which is passed to the Nvidia driver. The smaller the value the greater the maximum 3D depth.<LineBreak/><LineBreak/>
-        For achieving the best 3D depth for projectors it's recommended to type in the size of the projection screen.<LineBreak/><LineBreak/>
-        Adjust the maximum 3D depth via 3D depth multiplier or the value in inch. Both depend on another.
+        Это размер монитора, который передается драйверу Nvidia. Чем меньше значение, тем больше максимальная глубина 3D.<LineBreak/><LineBreak/>
+        Для достижения наилучшей глубины 3D для проекторов рекомендуется указать размер проекционного экрана.<LineBreak/><LineBreak/>
+        Установите максимальную глубину 3D с помощью множителя глубины или значения в дюймах. Оба зависят друг от друга.
     </TextBlock>
 
     <TextBlock x:Key="IROutputToolTip" TextWrapping="Wrap" Width="300">
