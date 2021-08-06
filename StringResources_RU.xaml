@@ -21,7 +21,7 @@
     <system:String x:Key="Show">Показать</system:String>
     <system:String x:Key="Enable3D">Включить 3D</system:String>
     <system:String x:Key="Disable3D">Отключить 3D</system:String>
-    <system:String x:Key="EnableDriverMod">Включить мод драйвера</system:String>
+    <system:String x:Key="EnableDriverMod">Включить мод драйвера</system:String> 
     <system:String x:Key="DisableDriverMod">Отключить мод драйвера</system:String>
     <system:String x:Key="NoMatchFound">Не найдено совпадений для</system:String>
 
@@ -75,6 +75,7 @@
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Ошибка: не удалось установить оболочку.&#x0d;&#x0d;Убедитесь, что 3D Fix Manager запущен с правами администратора и повторите попытку.</system:String>
     <system:String x:Key="FixWrapperOutdated">Это исправление включает устаревшую версию 3dmigoto.</system:String>
     <system:String x:Key="DownloadFix">Скачать 3D Fix</system:String>
+    <system:String x:Key="UpdateAvailable">Update available</system:String>
     <system:String x:Key="UninstallFix">Удалить 3D Fix</system:String>
     <system:String x:Key="UninstallFixCompleted">Удаление завершено</system:String>
     <system:String x:Key="UninstallFixFailed">Не удалось удалить</system:String>
@@ -229,10 +230,10 @@
     <system:String x:Key="Save">Сохранить</system:String>
     <system:String x:Key="SaveChanges">Сохранить изменения</system:String>
     <system:String x:Key="CreateProfile">Создать профиль</system:String>
-    
+
     <!--.................... Edit Profile Tab End .......................... -->
 
-    
+
     <!--.................... Hotkeys Tab Begin .......................... -->
 
     <!-- CMU Management Group-->
@@ -307,7 +308,7 @@
     <system:String x:Key="HotkeyManagement">Управление горячими клавишами:</system:String>
     <system:String x:Key="NewHotkey">Новая горячая клавиша</system:String>
     <system:String x:Key="NewHotkeyToolTip">Создает новую горячую клавишу. Не забудьте назначить клавишу.</system:String>
-    <system:String x:Key="DeleteHotkey"> Удалить клавишу</system:String>
+    <system:String x:Key="DeleteHotkey">Удалить клавишу</system:String>
     <system:String x:Key="DeleteHotkeyToolTip">Удаляет горячую клавишу со всеми соответствующими предустановками 3D.</system:String>
     <system:String x:Key="SelectedHotkey">Выбранная горячая клавиша:</system:String>
     <system:String x:Key="SelectedHotkeyToolTip">Выбранная горячая клавиша для редактирования.</system:String>
@@ -318,7 +319,7 @@
     <system:String x:Key="Description">Описание:</system:String>
     <system:String x:Key="DescriptionToolTip">Краткое описание назначения горячей клавиши.</system:String>
     <system:String x:Key="ResetIniToolTip">Сбрасывает ini в исходное состояние.</system:String>
-    
+
     <!-- Preset Management Group -->
     <system:String x:Key="PresetManagement">Управление предустановками:</system:String>
     <system:String x:Key="NewPreset">Новый пресет</system:String>
@@ -328,17 +329,17 @@
     <system:String x:Key="ReleaseDelay">Выпуск задержки:</system:String>
     <system:String x:Key="Transition">Переход:</system:String>
     <system:String x:Key="ReleaseTransition">Выпуск перехода:</system:String>
-    
-    <!-- Preset Group -->   
+
+    <!-- Preset Group -->
     <system:String x:Key="UseStereoSettings">Использовать настройки стерео</system:String>
     <system:String x:Key="UseStereoSettingsToolTip">Включите этот параметр, чтобы этот пресет изменял настройки разделения и/или конвергенции в игре.</system:String>
-    
+
     <system:String x:Key="SaveStereoSettings">Сохранить настройки стерео в игре с F7:</system:String>
     <system:String x:Key="SaveStereoSettingsToolTip">Включите это, чтобы разрешить изменение предустановок во время игры. Убедитесь, что вы выбрали предустановку в игре, нажав кнопку горячей клавиши, измените 3D-глубину / конвергенцию с помощью CTRL + F3 - F6 по своему вкусу и нажмите F7 для сохранения.</system:String>
 
     <system:String x:Key="chkStereoSeparationToolTip">Включите это, чтобы установить 3D-разделение. При снятии флажка соответствующая запись будет удалена из ini файла.</system:String>
     <system:String x:Key="sliderStereoSeparationToolTip">Установить 3D-разделение в процентах.</system:String>
-    
+
     <system:String x:Key="Convergence">Конвергенция:</system:String>
     <system:String x:Key="chkConvergenceToolTip">"Включите это, чтобы установить сходимость. При снятии флажка соответствующая запись будет удалена из ini файла."</system:String>
     <system:String x:Key="tbConvergenceToolTip">Установите сходимость как число с плавающей запятой.</system:String>
@@ -395,7 +396,7 @@
     <system:String x:Key="Good">Хорошо</system:String>
     <system:String x:Key="Fair">Посредственный</system:String>
     <system:String x:Key="Not Recommended">Не рекомендуется</system:String>
-    
+
     <!--.................... Hotkeys Tab End .......................... -->
 
 
@@ -461,7 +462,7 @@
 
     <system:String x:Key="IrEmitterDriverNotInstalled">Драйвер ИК-излучателя не установлен.</system:String>
     <system:String x:Key="IrEmitterDriverNotInstalledDetails">Установите драйвер, чтобы ваши очки 3D Vision работали со стереоскопическим 3D.</system:String>
-    
+
     <system:String x:Key="GraphicsCardNotSupported">Ваша видеокарта не поддерживает стереоскопическое 3D.</system:String>
     <system:String x:Key="GraphicsCardNotSupportedDetails">Для игр в стереоскопическом 3D требуется видеокарта Nvidia. Видеокарты AMD и Intel не поддерживаются.</system:String>
 
@@ -470,22 +471,22 @@
 
     <system:String x:Key="NativeLaptopMonitorUsed">Стереоскопическое 3D не поддерживается для мониторов ноутбуков.</system:String>
     <system:String x:Key="NativeLaptopMonitorUsedDetails">Подключите внешний монитор и установите его в качестве основного монитора.</system:String>
-    
+
     <system:String x:Key="StereoDriverNotInstalled">3D драйвер не установлен.</system:String>
     <system:String x:Key="StereoDriverNotInstalledDetails">Пожалуйста, установите драйвер, чтобы играть в игры в стереоскопическом 3D прямо сейчас.</system:String>
-    
+
     <system:String x:Key="StereoSetupNotCompleted">Настройка 3D не завершена.</system:String>
     <system:String x:Key="StereoSetupNotCompletedDetails">Завершите настройку сейчас, чтобы играть в игры в стереоскопическом 3D.</system:String>
-    
+
     <system:String x:Key="StereoNotEnabled">3D не включен в драйвере.</system:String>
     <system:String x:Key="StereoNotEnabledDetails">Пожалуйста, разрешите играть в игры в стереоскопическом 3D.</system:String>
-    
+
     <system:String x:Key="StereoDriverCorrupt">3D драйвер поврежден.</system:String>
     <system:String x:Key="StereoDriverCorruptDetails">Пожалуйста, восстановите, чтобы играть в игры в стереоскопическом 3D.</system:String>
-    
+
     <system:String x:Key="StereoDriverOk">Все компоненты стереодрайвера установлены.</system:String>
     <system:String x:Key="StereoDriverOkDetails">Ваша система готова к 3D.</system:String>
-    
+
     <system:String x:Key="InstallStereoDriver">Установите 3D драйвер</system:String>
     <system:String x:Key="InstallIrEmitterDriver">Установите драйвер ИК-излучателя</system:String>
     <system:String x:Key="RepairStereoDriver">Восстановить 3D драйвер</system:String>
@@ -536,6 +537,7 @@
     <system:String x:Key="GeneralSettingsGroup">Общие Настройки:</system:String>
     <system:String x:Key="UseProgramFor">Использовать программу для:</system:String>
     <system:String x:Key="CheckForUpdates">Проверять обновления программы при запуске</system:String>
+    <system:String x:Key="StartAppMinimized">Start application minimized</system:String>
     <system:String x:Key="CheckForDriverUpdates">Проверять обновления драйверов при запуске</system:String>
     <system:String x:Key="UseHwAcceleration">Включить аппаратное ускорение для графического интерфейса</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Оптимизация настроек игры для стерео 3D</system:String>
@@ -547,6 +549,7 @@
     <system:String x:Key="ResetAllIcons">Сбросить все значки игр:</system:String>
     <system:String x:Key="DoNotChangeSetting">Сохранить текущую настройку</system:String>
     <system:String x:Key="DownloadScreenshots">Скачать стереоскопические скриншоты</system:String>
+    <system:String x:Key="ShowImportantFixInfo">Show important 3D fix info</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Настройки:</system:String>
@@ -559,7 +562,7 @@
     <system:String x:Key="SendData">Отправлять данные, когда пользователь настраивает профиль исправления</system:String>
     <system:String x:Key="AutoUpdate3dmigoto">Обновить 3dmigoto при запуске</system:String>
     <system:String x:Key="UpdateAllWrappers">Обновить 3dmigoto для всех установленных исправлений 3D:</system:String>
-    
+
     <!-- Search paths group -->
     <system:String x:Key="SearchPathsGroup">Обнаружение установленных игр:</system:String>
     <system:String x:Key="EnableCachedPaths">Кэшировать обнаруженные игры для более быстрого запуска приложений</system:String>
@@ -615,12 +618,12 @@
 
     <!--.................... General Settings Tab End .......................... -->
 
-   
+
     <!--.................... Nvidia 3D Settings Tab Begin .......................... -->
 
     <system:String x:Key="NvidiaNotDetected">Nvidia Stereoscopic 3D не обнаружен</system:String>
     <system:String x:Key="PressKeyCombination">Нажмите комбинацию клавиш на клавиатуре.</system:String>
-    
+
     <!-- General settings group -->
     <system:String x:Key="EnableStereoGroup">Включение / настройка функций 3D:</system:String>
     <system:String x:Key="EnableNvidia3D">Включите Nvidia Stereoscopic 3D</system:String>
@@ -634,6 +637,7 @@
     <system:String x:Key="Nvida3dDriverOverlay">Включить наложение драйвера Nvidia 3D</system:String>
     <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Примените модификацию драйвера Geforce через 3dmigoto</system:String>
     <system:String x:Key="UseGlobalDrickerHack">Показать переключатель глобального взлома драйвера</system:String>
+    <system:String x:Key="RestartDisplayDriver">Restart display driver when enabling 3D</system:String>
     <system:String x:Key="EnableGeforceDllHack">Включить модификацию драйвера Geforce (только для Windows 10)</system:String>
     <system:String x:Key="ShowDriverHackDialog">Показать диалоговое окно с предупреждением перед изменением драйвера Geforce</system:String>
     <system:String x:Key="EnableWmrFix">Включить исправление сбоев для Windows Mixed Reality</system:String>
@@ -700,7 +704,7 @@
     <system:String x:Key="CycleFrustumAdjustToolTip">Циклическое переключение между тремя различными настройками конуса видимости.</system:String>
     <system:String x:Key="StereoToggleMode">Переключить режим совместимости 3D:</system:String>
     <system:String x:Key="StereoToggleModeToolTip">Переключение между режимом совместимости (CMU) для игр DirectX 11 (Fake 3D) и режимом Real 3D.</system:String>
-    
+
     <!-- Screenshots group -->
     <system:String x:Key="ScreenshotsGroup">Скриншоты:</system:String>
     <system:String x:Key="StereoImageType">Тип стереоизображения:</system:String>
@@ -730,7 +734,7 @@
 
     <!--.................... Nvidia 3D Settings Tab End .......................... -->
 
-    
+
     <!--.................... Display Profiles Tab Begin .......................... -->
 
     <system:String x:Key="MonitorProfileGroup">Профиль монитора:</system:String>
@@ -766,7 +770,7 @@
 
     <!--.................... Display Profiles Tab End .......................... -->
 
-    
+
     <!--.................... About Tab Begin .......................... -->
 
     <system:String x:Key="ProgramDevelopedBy">Программа разработана:</system:String>
@@ -784,6 +788,7 @@
 
     <!-- Buttons -->
     <system:String x:Key="Manual">Руководство</system:String>
+    <system:String x:Key="Faq">FAQ</system:String>
     <system:String x:Key="ReportBugs">Сообщить об ошибках</system:String>
     <system:String x:Key="UpdateSteamDb">Обновить Steam DB</system:String>
     <system:String x:Key="CreateReleases">Создать релизы</system:String>
@@ -878,13 +883,15 @@
 
         <Paragraph>HelixVision начинается с NVidia 3D Vision, которая создает стереоизображения из любой игры. 
             Эти стереоизображения исправляются модами, загруженными с
-            <Hyperlink NavigateUri="http://helixmod.blogspot.com">HelixModBlog</Hyperlink>, и установленными в директорию игры. 
+            <Hyperlink NavigateUri="http://helixmod.blogspot.com">HelixModBlog</Hyperlink> , и установленными в директорию игры. 
             Файлы настроек игры изменены для оптимальных настроек, и ваш видеодрайвер модифицируется для игры, пока она запущена.
         </Paragraph>
 
         <Paragraph Margin="0,0,0,28">Как и в случае с любым моддингом, вы можете ожидать случайных сбоев и проблем, особенно при обновлении игр, драйверов и ОС.</Paragraph>
 
-        <Paragraph><Italic>Мы здесь, чтобы помочь.</Italic> Если у вас возникнут проблемы, не стесняйтесь обращаться за помощью на форумах Steam.</Paragraph>
+        <Paragraph>
+            <Italic>Мы здесь, чтобы помочь.</Italic> Если у вас возникнут проблемы, не стесняйтесь обращаться за помощью на форумах Steam.
+        </Paragraph>
 
         <Paragraph>
             <Hyperlink NavigateUri="https://steamcommunity.com/app/1127310/discussions/">Support Link: HelixVision Steam Forums</Hyperlink>
@@ -929,6 +936,69 @@
         </Paragraph>
 
         <Paragraph>Щелчок левой кнопкой мыши по значку возвращает приложение на передний план.</Paragraph>
+    </FlowDocument>
+
+    <!-- Important Info -->
+    <FlowDocument x:Key="ShowImportantFaq">
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Important FAQ:</Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why is it important to launch games via "Play 3D" button?</Paragraph>
+        <Paragraph>
+            A click on the button does not only start the game it also checks whether all driver components are correctly installed. 
+            It configures the game to use optimized settings and ensures that the driver profile is configured properly. 
+            Most importantly it installs a modification to the video driver which prevents the game to crash on startup.
+            Do not launch games manually through Steam, Origin, Uplay and &amp; or you'll likely run into issues. 
+            To mention some of them: crash or blackscreen on game start, stereo 3D not working, red warning texts...
+            Always use the "Play 3D" button to start the game.
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why do DirectX 11 games crash when launched directly through Steam, Origin &amp; Co?</Paragraph>
+        <Paragraph>
+            The crash happens because Nvidia sabotaged their own video driver for any version beyond 425.31. This happened in May 2019 shortly after Nvidia announced the end of support for 3D Vision.
+            What they did was to add a lock to their driver forbidding usage of stereosopic 3D on Windows 10 v.1903 and higher. 
+            This caused games to crash on launch when stereoscopic 3D was enabled in the driver. 
+            The issue happened for DirectX 11 games only - DirectX 9 games were not affected by this and still fully worked.
+            After some months of research forum user "Schwing" found a solution to fix the crash. 
+            He developed a driver modification which got automatically installed by 3D Fix Manager when hitting the "Play 3D" button.
+            That's why pressing the button is important. It ensures that the crash fix is installed and working correctly.
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">How to install the driver modification / crash fix globally for all games?</Paragraph>
+        <Paragraph>
+            By default 3D Fix Manager installs the driver modification for the currently selected game only which also means that the modified driver is only active while the game is running. 
+            This is the recommended procedure as the original driver is kept untouched.
+            To install the driver modification on a global scope go to
+            <Bold>
+                <Italic>"Nvidia 3D Settings"</Italic>
+            </Bold> tab and tick the option:
+            <Bold>
+                <Italic>"Show global driver hack toggle"</Italic>
+            </Bold> .
+            Now a second toggle appears directly below the 3D icon on the top right of the window.
+            Turning this on directly affects the original GeForce driver files which causes the hack to be active for all games.
+            We do not recommend to leave the global driver modification on permanently because modified driver files can get you banned in Multiplayer games.
+            Only use the global driver hack if you know what you are doing.
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why to stay on old GeForce drivers v.452.06?</Paragraph>
+        <Paragraph>
+            Because Nvidia partially removed stereoscopic 3D support for any driver beyond 452.06. This happened on October 2020 shortly before they released the new RTX 3000 series graphics cards. 
+            Once more: only DirectX 11 mode was affected by this. This time however Nvidia finished their work: they ultimately wiped stereosopic 3D support for DirectX 11 from the video driver.
+            
+            In short words: If you use latest graphics drivers you'll lose stereoscopic 3D support for all games using DirectX 11.
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Does stereoscopic 3D still work on RTX 3000 series?</Paragraph>
+        <Paragraph>
+            Unfortunately GeForce driver version 452.06 cannot be installed on these graphics cards. 
+            The conclusion: no stereoscopic 3D support for games using DirectX 11 on these graphics cards.
+            DirectX 9, Vulkan and OpenGL games still fully work on these graphics cards though.
+        </Paragraph>
+
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Any fix on the horizon for the DirectX 11 issue?</Paragraph>
+        <Paragraph>
+            Currently there is nothing on the horizon to bring back stereoscopic 3D support to DirectX 11 and latest graphics drivers.
+        </Paragraph>
     </FlowDocument>
 
     <system:String x:Key="DriverUpdateInstallProcedure">Примечания по установке:</system:String>
@@ -1027,11 +1097,8 @@
     <system:String x:Key="EnableStereoWarning" xml:space="preserve">Для просмотра этого стереоизображения необходимо включить Nvidia Stereoscopic 3D.
 
 Вы хотите включить его сейчас и продолжить?
-  
-Примечание. Чтобы использовать эту функцию, необходимо установить частоту обновления монитора на рабочем столе на 120 Гц.
-        
-Совет: на вкладке «Настройки Nvidia 3D» вы найдете параметр для автоматического переключения на 120 Гц (см. «3D-режим с частотой обновления рабочего стола»)</system:String>
-    
+</system:String>
+
     <system:String x:Key="GameTitleEmpty">Ошибка: название игры не должно быть пустым</system:String>
     <system:String x:Key="SteamAppIdNotSet" xml:space="preserve">Примечание: вы еще не установили идентификатор приложения Steam для этого профиля, который необходим для запуска игр Steam. &#x0d;&#x0d;Хотели бы вы, чтобы это определялось автоматически?</system:String>
     <system:String x:Key="GameExeNotSet" xml:space="preserve">Примечание. Вы еще не установили Game Exe для профиля. Обычно это требуется для запуска игр. &#x0d;&#x0d;Хотели бы вы, чтобы это определялось автоматически?</system:String>
@@ -1215,7 +1282,7 @@ Markus Gündert (Pauldusler)</system:String>
     <system:String x:Key="ForceReversedCheckerboard">Ошибка: не удалось принудительно запустить Reversed Checkerboard (Active 3D).</system:String>
     <system:String x:Key="ForceLineInterlacingError">Ошибка: не удалось принудительно запустить LineInterlacing (Passive 3D).</system:String>
     <system:String x:Key="ForceReversedLineInterlacingError">Ошибка: не удалось принудительно запустить Reversed LineInterlacing (Passive 3D).</system:String>
-     
+
     <system:String x:Key="DepthHackError">Ошибка: не удалось применить / удалить взлом глубины.</system:String>
     <system:String x:Key="WritePermissionError">Ошибка: не удалось установить разрешение на запись для пользователя «Система» для ключа Stereo 3D в реестре Windows.</system:String>
     <system:String x:Key="AllFixesDisabled">Успех! Все установленные 3D-исправления отключены и больше не будут активны при следующем запуске игры.</system:String>
@@ -1248,7 +1315,7 @@ Markus Gündert (Pauldusler)</system:String>
        <Bold>Важная информация:</Bold> Нажмите <Bold>F11</Bold> или <Bold>F12</Bold> (конфигурация по умолчанию) в игре, чтобы «раскрыть» CMU для превышения максимальной глубины 3D и улучшения 3D-эффекта.<LineBreak/><LineBreak/>
        Дополнительно во вкладке <Bold>"3D Fix"</Bold> у вас есть возможность настроить Режим совместимости без ограничений.
     </TextBlock>
-    
+
     <TextBlock x:Key="EnableFixToolTip" TextWrapping="Wrap" Width="300">
         Включение / отключение исправления 3D вручную.<LineBreak/><LineBreak/>
         <Bold>Примечание:</Bold> Включение / отключение исправлений 3D также выполняется автоматически при нажатии на <Italic><Bold>"Играть 2D"</Bold></Italic> или <Italic><Bold>"Играть 3D"</Bold></Italic> кнопки.
@@ -1270,7 +1337,7 @@ Markus Gündert (Pauldusler)</system:String>
         В большинстве случаев правильный путь установки - это место, где находится исполняемый файл игры для запуска игры.<LineBreak/><LineBreak/>
         <Bold>Например: </Bold> когда абсолютный путь к исполняемому файлу игры <Italic>"c:\gameTitle\bin\game.exe"</Italic> тогда полученный относительный путь установки будет <Italic>"bin"</Italic><LineBreak/><LineBreak/>
         Оставьте это поле пустым, если исправление будет устанавливаться в корневую папку игры.<LineBreak/><LineBreak/>
-        <Bold>Важно: </Bold> Относительный путь установки также необходим для поиска исполняемого файла игры, если он находится в подкаталоге игры. В этом случае вам необходимо заполнить это поле, даже если вы вообще не собираетесь устанавливать 3D-исправление.      
+        <Bold>Важно: </Bold> Относительный путь установки также необходим для поиска исполняемого файла игры, если он находится в подкаталоге игры. В этом случае вам необходимо заполнить это поле, даже если вы вообще не собираетесь устанавливать 3D-исправление.
     </TextBlock>
 
     <TextBlock x:Key="GameDirNameToolTip" TextWrapping="Wrap" Width="300">
@@ -1463,7 +1530,7 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="ModifyExeSearchStringToolTip" TextWrapping="Wrap" Width="300">
         Используя эту опцию, вы можете изменить содержимое Exe-файла, чтобы он правильно работал в стереорежиме 3D. Пока это требуется только для некоторых игр LEGO.<LineBreak/><LineBreak/>
         Для этого exe-файл читается как двоичные данные и ищется строка, которую вы можете определить в поле справа. Затем найденная строка заменяется другой строкой, которую вы можете указать в указанном поле.<LineBreak/><LineBreak/>
-        Из соображений безопасности исходный файл создается в каталоге игры перед сохранением измененного файла. 
+        Из соображений безопасности исходный файл создается в каталоге игры перед сохранением измененного файла.
     </TextBlock>
 
     <TextBlock x:Key="FixDescriptionToolTip" TextWrapping="Wrap" Width="300">
@@ -1471,7 +1538,7 @@ Markus Gündert (Pauldusler)</system:String>
         Вы можете скопировать текст с сайта helixmod или написать собственное описание.
     </TextBlock>
 
-    
+
     <!-- Hotkeys Tab ToolTips -->
     <TextBlock x:Key="HuntingModeToolTip" TextWrapping="Wrap" Width="300">
         Режим охоты в первую очередь предназначен для шейдер-хакеров. Это позволяет им искать сломанные шейдеры в стерео 3D режиме и восстанавливать их.<LineBreak/><LineBreak/>
@@ -1603,11 +1670,21 @@ Markus Gündert (Pauldusler)</system:String>
         Не забудьте снять этот флажок после того, как закончите редактировать горячие клавиши для достижения лучшей игровой производительности.
     </TextBlock>
 
+    <TextBlock x:Key="RestartDisplayDriverToolTip" TextWrapping="Wrap" Width="300">
+        Restarts the display driver when stereo 3D is enabled. This prevents a blackscreen which might occur under certain conditions when enabling 3D.<LineBreak/><LineBreak/>
+        Please enable this option only when you experience this issue.
+    </TextBlock>
+
+    <TextBlock x:Key="ShowGlobalDriverHackToggleToolTip" TextWrapping="Wrap" Width="300">
+        Shows a button for enabling the driver modification globally. The driver modifications restores stereo 3D compatibility for games using DirectX 11 and Windows 10 version beyond 1809 + GeForce driver version higher than 425.31.<LineBreak/><LineBreak/>
+        Only enable this option if for some reason the "<Bold><Italic>"Play 3D"</Italic></Bold> button is not available for a certain game. Please consider that modifying the video driver might cause a permanent ban on multiplayer games.
+    </TextBlock>
+
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
         Отображает курсор мыши в программном обеспечении и предлагает возможность регулировки глубины 3D-изображения мыши.<LineBreak/><LineBreak/>Рекомендуется использовать эту опцию в сочетании с альтернативными 3D-форматами, такими как Side-by-Side.
     </TextBlock>
 
-    
+
     <!-- General Settings Tab ToolTips -->
     <TextBlock x:Key="CheckForUpdatesToolTip" TextWrapping="Wrap" Width="300">
         При запуске программы проверяет наличие новых обновлений для программы или профилей исправлений.
@@ -1620,7 +1697,7 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="UseHwAccelerationToolTip" TextWrapping="Wrap" Width="300">
         Устанавливает, следует ли отображать графический пользовательский интерфейс программы с помощью графического процессора.<LineBreak/><LineBreak/>
         Включение аппаратного ускорения улучшает отзывчивость приложения.<LineBreak/><LineBreak/>
-        Отключите эту опцию, если у вас возникнут резкие сбои, вылеты в работе программы. 
+        Отключите эту опцию, если у вас возникнут резкие сбои, вылеты в работе программы.
     </TextBlock>
 
     <TextBlock x:Key="AllowChangesToGameConfigToolTip" TextWrapping="Wrap" Width="300">
@@ -1657,22 +1734,22 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="EnableSteamOverlayToolTip" TextWrapping="Wrap" Width="300">
         Отключите оверлей Steam, если у вас возникают сбои при запуске игр.
     </TextBlock>
-    
+
     <TextBlock x:Key="SendDataToolTip" TextWrapping="Wrap" Width="300">
         Когда пользователь настраивает профиль исправления на вкладке «Редактировать профиль» и нажимает <Italic><Bold>"Сохранить"</Bold></Italic> изменения, внесенные пользователем сохраняются и отправляются на сервер MySQL.<LineBreak/><LineBreak/>
         Эта функция помогает автору 3D Fix Manager собирать недостающие данные профиля или исправлять неправильные.
     </TextBlock>
-    
+
     <TextBlock x:Key="AutoUpdate3dmigotoToolTip" TextWrapping="Wrap" Width="300">
         Обновляет 3dmigoto всех установленных 3D-исправлений автоматически при запуске 3D Fix Manager.
          <Bold>Примечание:</Bold> 3dmigoto - это так называемая программная оболочка, которая позволяет исправлять неисправные стереоскопические эффекты в компьютерных играх. Желательно всегда использовать последнюю версию обертки.
     </TextBlock>
-    
+
     <TextBlock x:Key="ReinstallFixFromCacheToolTip" TextWrapping="Wrap" Width="300">
         Этот параметр позволяет установить удаленные исправления 3D без необходимости их повторной загрузки. Загруженные файлы хранятся в каталоге 3D Fix Manager и используются для переустановки исправления.<LineBreak/><LineBreak/>
         Если вы хотите удалить загруженные файлы, чтобы освободить место на жестком диске, просто перейдите в <Italic><Bold>"Установка"</Bold></Italic> вкладку и нажмите <Italic><Bold>"Очистить кэш"</Bold></Italic>.
     </TextBlock>
-    
+
     <TextBlock x:Key="ResetAllIconsToolTip" TextWrapping="Wrap" Width="300">
         Включите это для повторной загрузки всех иконок из TheGamesDB или Steam DB.<LineBreak/><LineBreak/>
         Старые значки не теряются, так как ранее они сохранялись в резервной папке в соответствующей папке профиля.
@@ -1691,7 +1768,7 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="PreferIconDownloadToolTip" TextWrapping="Wrap" Width="300">
         Включите это, если вы всегда хотите загружать значки из Интернета, даже если локальные значки уже были найдены через реестр Windows.
     </TextBlock>
-    
+
     <TextBlock x:Key="UpdateAllWrappersToolTip" TextWrapping="Wrap" Width="300">
         Обновляет 3dmigoto всех установленных исправлений до последней версии.<LineBreak/><LineBreak/>
         Новые версии 3dmigoto могут иметь лучшую производительность / стабильность и открывать новые функции, такие как поддержка SideBySide.
@@ -1708,13 +1785,13 @@ Markus Gündert (Pauldusler)</system:String>
         Распознает установленные игры путем поиска в определенной точке реестра Windows разделов реестра, имена которых совпадают с именами отдельных профилей исправлений.<LineBreak/><LineBreak/>
         Эти ключи реестра содержат информацию о том, где установлена игра.
     </TextBlock>
-    
+
     <TextBlock x:Key="EnableSearchPathsToolTip" TextWrapping="Wrap" Width="300">
         Обнаруживает установленные игры, ища на жестком диске папки с тем же именем, что и отдельные профили исправлений. <LineBreak/><LineBreak/>
         Вы можете указать каталоги для поиска, задав пути поиска (см. Ниже). Поиск автоматически останавливается, когда достигается максимальная глубина поиска.<LineBreak/><LineBreak/>
         Чтобы успешно отметить игру как установленную, также необходимо, чтобы в папках находился exe-файл игры. Это предотвратит непреднамеренное распознавание пустых папок как установленных игр.
     </TextBlock>
-    
+
     <TextBlock x:Key="PrioritizeSearchPathsToolTip" TextWrapping="Wrap" Width="300">
         Когда игра найдена и по пути поиска, и по реестру Windows, применяется место установки, найденное по пути поиска.
     </TextBlock>
@@ -1730,46 +1807,46 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="SearchDepthToolTip" TextWrapping="Wrap" Width="300">
        Устанавливает максимальную глубину подкаталогов, по которым приложение проходит для поиска игры.
     </TextBlock>
-    
+
     <TextBlock x:Key="StartRTSS_SettingToolTip" TextWrapping="Wrap" Width="300">
        Когда пользователь запускает игру, сервер статистики RivaTuner открывается или закрывается в зависимости от настройки в индивидуальном профиле исправления.
     </TextBlock>
-    
+
     <TextBlock x:Key="InterruptGameLaunchToolTip" TextWrapping="Wrap" Width="300">
         Дает пользователю возможность настроить RTSS до начала игры. Убедитесь, что ограничитель частоты кадров установлен на 60 кадров в секунду для плавного игрового процесса / уменьшения задержки ввода.
     </TextBlock>
-    
+
     <TextBlock x:Key="CloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
        Всегда закрывает RTSS, когда игра запускается в 2D-режиме, независимо от того, что определено в профиле исправления.
     </TextBlock>
-    
+
     <TextBlock x:Key="NeverCloseRivaTunerIn2DToolTip" TextWrapping="Wrap" Width="300">
         Никогда не закрывает работающий экземпляр RTSS, если игра запущена в 2D-режиме, независимо от того, что определено в профиле исправления.
     </TextBlock>
-    
+
     <TextBlock x:Key="CloseRtssOnAppCloseToolTip" TextWrapping="Wrap" Width="300">
         Автоматически закрывает работающий экземпляр RTSS, если пользователь выходит из 3D Fix Manager.
     </TextBlock>
-    
+
     <TextBlock x:Key="StartGamesByGameExeToolTip" TextWrapping="Wrap" Width="300">
         Установите глобально, должны ли игры запускаться напрямую через exe-файл игры, а не через клиент Steam.<LineBreak/><LineBreak/>
         Если в профиле исправлений не указан Game Launcher Exe, игра по-прежнему запускается через Steam, если доступно.
     </TextBlock>
-    
+
     <TextBlock x:Key="StartGamesBySteamAppIdToolTip" TextWrapping="Wrap" Width="300">
         Установите глобально, должны ли игры запускаться через клиент Steam, вызвав Steam App ID.<LineBreak/><LineBreak/>
         Если игра не установлена в Steam или сам Steam не определяется, игра запускается через Game Launcher Exe.
     </TextBlock>
-    
+
     <TextBlock x:Key="StartGamesByFixProfileToolTip" TextWrapping="Wrap" Width="300">
         Установите, следует ли индивидуально управлять типом запуска игры с помощью профиля исправления. Этот параметр используется, чтобы иметь возможность контролировать, следует ли запускать игру через exe-файл игры или клиент Steam.<LineBreak/><LineBreak/>
         Игры Steam следует запускать напрямую через game exe, например, если вы хотите обойти окно запуска игры. Вы можете контролировать это поведение, редактируя индивидуальный профиль исправления.
     </TextBlock>
-    
+
     <TextBlock x:Key="NeverInstallProfilesToolTip" TextWrapping="Wrap" Width="300">
        Глобально отключает установку профилей драйверов для всех игр.
     </TextBlock>
-    
+
     <TextBlock x:Key="ProfileInstallByFixProfileToolTip" TextWrapping="Wrap" Width="300">
         При включении этой опции пользователь может указать в отдельных профилях исправлений, устанавливать ли профили драйверов.
     </TextBlock>
@@ -1830,7 +1907,7 @@ Markus Gündert (Pauldusler)</system:String>
         Включает / отключает <Bold> Nvidia Stereoscopic 3D</Bold> вручную.<LineBreak/><LineBreak/>
         Это та же функция, которую также можно найти в Панели управления Nvidia в разделе <Italic><Bold>"Установить стереоскопический режим 3D"</Bold></Italic>.
     </TextBlock>
-     
+
     <TextBlock x:Key="Disable3dOnClosingToolTip" TextWrapping="Wrap" Width="300">
          Отключает Nvidia Stereoscopic 3D при закрытии 3D Fix Manager.
     </TextBlock>
@@ -1842,12 +1919,12 @@ Markus Gündert (Pauldusler)</system:String>
     <TextBlock x:Key="SetStereoTypeTo3DVisionToolTip" TextWrapping="Wrap" Width="300">
         Автоматически устанавливает для режима вывода 3D значение 3D Vision / 3DTV Play вместо 3D Vision Discover (анаглиф) при включении Nvidia Stereoscopic 3D или запуске игры в режиме 3D.
     </TextBlock>
-    
+
     <TextBlock x:Key="StereoEnabledOnGameLaunchToolTip" TextWrapping="Wrap" Width="300">
         Устанавливает запуск игр в режиме 3D при включении Nvidia Stereoscopic 3D. В противном случае вам нужно нажать CTRL + T.<LineBreak/><LineBreak/>
         Технически этот параметр устанавливает в реестре Windows <Italic><Bold>"StereoDefaultOn"</Bold></Italic> значение 0 или 1.
     </TextBlock>
-    
+
     <TextBlock x:Key="StereoWindowedModeEnabledToolTip" TextWrapping="Wrap" Width="300">
         Устанавливает, может ли 3D Vision активировать режим 3D для оконных приложений.<LineBreak/><LineBreak/>
         Технически этот параметр устанавливает в реестре Windows <Italic><Bold>"EnableWindowedMode"</Bold></Italic> значение 0 или 5.
@@ -1894,7 +1971,7 @@ Markus Gündert (Pauldusler)</system:String>
         При использовании хака глубины вы заставляете драйвер Nvidia думать, что вы играете с меньшим размером дисплея, как это есть на самом деле. Вы можете увидеть размер дисплея, который был определен драйвером ниже. Чем меньше значение в дюймах, тем больше максимальная глубина 3D.<LineBreak/><LineBreak/>
         Взлом глубины 3D применяется ко всем профилям дисплея, поэтому вы можете одинаково увеличить максимальную глубину 3D для всех устройств отображения.
     </TextBlock>
-    
+
     <TextBlock x:Key="OverrideMonitorSizeTooltip" TextWrapping="Wrap" Width="300">
         Это размер монитора, который передается драйверу Nvidia. Чем меньше значение, тем больше максимальная глубина 3D.<LineBreak/><LineBreak/>
         Для достижения наилучшей глубины 3D для проекторов рекомендуется указать размер проекционного экрана.<LineBreak/><LineBreak/>
@@ -2086,5 +2163,5 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <!-- XAML formated ToolTips End -->
-              
+
 </ResourceDictionary>
