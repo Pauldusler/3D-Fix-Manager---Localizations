@@ -75,7 +75,7 @@
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Ошибка: не удалось установить оболочку.&#x0d;&#x0d;Убедитесь, что 3D Fix Manager запущен с правами администратора и повторите попытку.</system:String>
     <system:String x:Key="FixWrapperOutdated">Это исправление включает устаревшую версию 3dmigoto.</system:String>
     <system:String x:Key="DownloadFix">Скачать 3D Fix</system:String>
-    <system:String x:Key="UpdateAvailable">Update available</system:String>
+    <system:String x:Key="UpdateAvailable">Доступно обновление</system:String>
     <system:String x:Key="UninstallFix">Удалить 3D Fix</system:String>
     <system:String x:Key="UninstallFixCompleted">Удаление завершено</system:String>
     <system:String x:Key="UninstallFixFailed">Не удалось удалить</system:String>
@@ -537,7 +537,7 @@
     <system:String x:Key="GeneralSettingsGroup">Общие Настройки:</system:String>
     <system:String x:Key="UseProgramFor">Использовать программу для:</system:String>
     <system:String x:Key="CheckForUpdates">Проверять обновления программы при запуске</system:String>
-    <system:String x:Key="StartAppMinimized">Start application minimized</system:String>
+    <system:String x:Key="StartAppMinimized">Запуск приложения в свернутом режиме</system:String>
     <system:String x:Key="CheckForDriverUpdates">Проверять обновления драйверов при запуске</system:String>
     <system:String x:Key="UseHwAcceleration">Включить аппаратное ускорение для графического интерфейса</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Оптимизация настроек игры для стерео 3D</system:String>
@@ -549,7 +549,7 @@
     <system:String x:Key="ResetAllIcons">Сбросить все значки игр:</system:String>
     <system:String x:Key="DoNotChangeSetting">Сохранить текущую настройку</system:String>
     <system:String x:Key="DownloadScreenshots">Скачать стереоскопические скриншоты</system:String>
-    <system:String x:Key="ShowImportantFixInfo">Show important 3D fix info</system:String>
+    <system:String x:Key="ShowImportantFixInfo">Показать важную информацию об исправлении 3D</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Настройки:</system:String>
@@ -637,7 +637,7 @@
     <system:String x:Key="Nvida3dDriverOverlay">Включить наложение драйвера Nvidia 3D</system:String>
     <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Примените модификацию драйвера Geforce через 3dmigoto</system:String>
     <system:String x:Key="UseGlobalDrickerHack">Показать переключатель глобального взлома драйвера</system:String>
-    <system:String x:Key="RestartDisplayDriver">Restart display driver when enabling 3D</system:String>
+    <system:String x:Key="RestartDisplayDriver">Перезапустить драйвер дисплея при включении 3D</system:String>
     <system:String x:Key="EnableGeforceDllHack">Включить модификацию драйвера Geforce (только для Windows 10)</system:String>
     <system:String x:Key="ShowDriverHackDialog">Показать диалоговое окно с предупреждением перед изменением драйвера Geforce</system:String>
     <system:String x:Key="EnableWmrFix">Включить исправление сбоев для Windows Mixed Reality</system:String>
@@ -940,34 +940,34 @@
 
     <!-- Important Info -->
     <FlowDocument x:Key="ShowImportantFaq">
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Important FAQ:</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Важный FAQ:</Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why is it important to launch games via "Play 3D" button?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Почему так важно запускать игры с помощью кнопки «Играть в 3D»?</Paragraph>
         <Paragraph>
-            A click on the button does not only start the game it also checks whether all driver components are correctly installed. 
-            It configures the game to use optimized settings and ensures that the driver profile is configured properly. 
-            Most importantly it installs a modification to the video driver which prevents the game to crash on startup.
-            Do not launch games manually through Steam, Origin, Uplay and &amp; or you'll likely run into issues. 
-            To mention some of them: crash or blackscreen on game start, stereo 3D not working, red warning texts...
-            Always use the "Play 3D" button to start the game.
+            Щелчок по кнопке не только запускает игру, но и проверяет, правильно ли установлены все компоненты драйвера. 
+            Это настраивает игру для использования оптимизированных параметров и обеспечивает правильную настройку профиля драйвера. 
+            Самое главное, это устанавливает модификацию видеодрайвера, которая предотвращает сбой игры при запуске.
+            Не запускайте игры вручную через Steam, Origin, Uplay и т. п.; или вы, вероятно, столкнетесь с проблемами. 
+            Чтобы упомянуть некоторые из них: сбой или черный экран при запуске игры, стерео 3D не работает, красные предупреждающие сообщения...
+            Всегда используйте кнопку «Играть в 3D», чтобы начать игру.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why do DirectX 11 games crash when launched directly through Steam, Origin &amp; Co?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Почему игры DirectX 11 дают сбой при запуске напрямую через Steam, Origin и т. п.?</Paragraph>
         <Paragraph>
-            The crash happens because Nvidia sabotaged their own video driver for any version beyond 425.31. This happened in May 2019 shortly after Nvidia announced the end of support for 3D Vision.
-            What they did was to add a lock to their driver forbidding usage of stereosopic 3D on Windows 10 v.1903 and higher. 
-            This caused games to crash on launch when stereoscopic 3D was enabled in the driver. 
-            The issue happened for DirectX 11 games only - DirectX 9 games were not affected by this and still fully worked.
-            After some months of research forum user "Schwing" found a solution to fix the crash. 
-            He developed a driver modification which got automatically installed by 3D Fix Manager when hitting the "Play 3D" button.
-            That's why pressing the button is important. It ensures that the crash fix is installed and working correctly.
+            Сбой происходит из-за того, что Nvidia саботировала свой собственный видеодрайвер для любой версии, превышающей 425.31. Это произошло в мае 2019 года, вскоре после того, как Nvidia объявила о прекращении поддержки 3D Vision.
+            Что они сделали, так это добавили в свой драйвер блокировку, запрещающую использование стереоскопического 3D в Windows 10 v.1903 и выше. 
+            Это приводило к сбою игр при запуске, когда в драйвере было включено стереоскопическое 3D. 
+            Проблема возникла только для игр DirectX 11 - игры с DirectX 9 не были затронуты этим и по-прежнему полностью работали.
+            После нескольких месяцев исследований пользователь форума "Schwing" нашел решение для устранения сбоя. 
+            Он разработал модификацию драйвера, которая автоматически устанавливается 3D Fix Manager при нажатии кнопки «Играть в 3D».
+            Вот почему так важно нажать на кнопку. Это гарантирует, что исправление сбоя установлено и работает правильно.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">How to install the driver modification / crash fix globally for all games?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Как установить модификацию драйвера/исправление сбоя глобально для всех игр?</Paragraph>
         <Paragraph>
-            By default 3D Fix Manager installs the driver modification for the currently selected game only which also means that the modified driver is only active while the game is running. 
-            This is the recommended procedure as the original driver is kept untouched.
-            To install the driver modification on a global scope go to
+            По умолчанию 3D Fix Manager устанавливает модификацию драйвера только для выбранной в данный момент игры, что также означает, что модифицированный драйвер активен только во время работы игры.
+            Это рекомендуемая процедура, поскольку исходный драйвер остается нетронутым.
+            Чтобы установить модификацию драйвера в глобальном масштабе, перейдите по ссылке
             <Bold>
                 <Italic>"Nvidia 3D Settings"</Italic>
             </Bold> tab and tick the option:
