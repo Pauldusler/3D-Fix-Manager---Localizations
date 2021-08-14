@@ -967,37 +967,37 @@
         <Paragraph>
             По умолчанию 3D Fix Manager устанавливает модификацию драйвера только для выбранной в данный момент игры, что также означает, что модифицированный драйвер активен только во время работы игры.
             Это рекомендуемая процедура, поскольку исходный драйвер остается нетронутым.
-            Чтобы установить модификацию драйвера в глобальном масштабе, перейдите по ссылке
+            Чтобы установить модификацию драйвера в глобальном масштабе, перейдите на вкладку
             <Bold>
-                <Italic>"Nvidia 3D Settings"</Italic>
-            </Bold> tab and tick the option:
+                <Italic>"Настройки Nvidia 3D"</Italic>
+            </Bold> и отметьте опцию:
             <Bold>
-                <Italic>"Show global driver hack toggle"</Italic>
+                <Italic>"Показать переключатель глобального взлома драйвера"</Italic>
             </Bold> .
-            Now a second toggle appears directly below the 3D icon on the top right of the window.
-            Turning this on directly affects the original GeForce driver files which causes the hack to be active for all games.
-            We do not recommend to leave the global driver modification on permanently because modified driver files can get you banned in Multiplayer games.
-            Only use the global driver hack if you know what you are doing.
+            Теперь второй переключатель появляется прямо под значком 3D в правом верхнем углу окна.
+            Включение этого параметра напрямую влияет на исходные файлы драйверов GeForce, что приводит к активизации взлома для всех игр.
+            Мы не рекомендуем оставлять глобальную модификацию драйвера постоянно включенной, потому что измененные файлы драйверов могут привести к бану в многопользовательских играх.
+            Используйте глобальный взлом драйверов, только если знаете, что делаете.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why to stay on old GeForce drivers v.452.06?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Зачем останавливаться на старых драйверах GeForce v.452.06?</Paragraph>
         <Paragraph>
-            Because Nvidia partially removed stereoscopic 3D support for any driver beyond 452.06. This happened on October 2020 shortly before they released the new RTX 3000 series graphics cards. 
-            Once more: only DirectX 11 mode was affected by this. This time however Nvidia finished their work: they ultimately wiped stereosopic 3D support for DirectX 11 from the video driver.
+            Поскольку Nvidia частично удалила поддержку стереоскопического 3D для всех драйверов за пределами 452.06. Это произошло в октябре 2020 года, незадолго до того, как были выпущены новые видеокарты серии RTX 3000.
+            Еще раз: это повлияло только на режим DirectX 11. Однако на этот раз Nvidia завершила свою работу: в конечном итоге они удалили поддержку стереоскопического 3D для DirectX 11 из видеодрайвера.
             
-            In short words: If you use latest graphics drivers you'll lose stereoscopic 3D support for all games using DirectX 11.
+            Вкратце: если вы используете последние графические драйверы, вы потеряете поддержку стереоскопического 3D для всех игр, использующих DirectX 11.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Does stereoscopic 3D still work on RTX 3000 series?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Стереоскопическое 3D все еще работает на RTX 3000?</Paragraph>
         <Paragraph>
-            Unfortunately GeForce driver version 452.06 cannot be installed on these graphics cards. 
-            The conclusion: no stereoscopic 3D support for games using DirectX 11 on these graphics cards.
-            DirectX 9, Vulkan and OpenGL games still fully work on these graphics cards though.
+            К сожалению, драйвер GeForce версии 452.06 не может быть установлен на эти видеокарты. 
+            Вывод: на этих видеокартах отсутствует поддержка стереоскопического 3D для игр с DirectX 11.
+            Игры DirectX 9, Vulkan и OpenGL по-прежнему полностью работают на этих видеокартах.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Any fix on the horizon for the DirectX 11 issue?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Возможно исправление проблемы с DirectX 11 на горизонте?</Paragraph>
         <Paragraph>
-            Currently there is nothing on the horizon to bring back stereoscopic 3D support to DirectX 11 and latest graphics drivers.
+            В настоящее время нет ничего, что могло бы вернуть поддержку стереоскопического 3D в DirectX 11 и последние графические драйверы.
         </Paragraph>
     </FlowDocument>
 
@@ -1671,13 +1671,13 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="RestartDisplayDriverToolTip" TextWrapping="Wrap" Width="300">
-        Restarts the display driver when stereo 3D is enabled. This prevents a blackscreen which might occur under certain conditions when enabling 3D.<LineBreak/><LineBreak/>
-        Please enable this option only when you experience this issue.
+        Перезапускает драйвер дисплея при включении стерео 3D. Это предотвращает появление черного экрана, который может возникнуть при определенных условиях при включении 3D.<LineBreak/><LineBreak/>
+        Пожалуйста, включайте эту опцию, только если вы столкнулись с этой проблемой.
     </TextBlock>
 
     <TextBlock x:Key="ShowGlobalDriverHackToggleToolTip" TextWrapping="Wrap" Width="300">
-        Shows a button for enabling the driver modification globally. The driver modifications restores stereo 3D compatibility for games using DirectX 11 and Windows 10 version beyond 1809 + GeForce driver version higher than 425.31.<LineBreak/><LineBreak/>
-        Only enable this option if for some reason the "<Bold><Italic>"Play 3D"</Italic></Bold> button is not available for a certain game. Please consider that modifying the video driver might cause a permanent ban on multiplayer games.
+        Показывает кнопку для включения модификации драйвера глобально. Модификации драйвера восстанавливают совместимость стерео 3D для игр, использующих DirectX 11 и Windows 10 версии выше 1809 + драйвер GeForce версии выше 425.31.<LineBreak/><LineBreak/>
+        Включайте эту опцию, только если по какой-то причине кнопка "<Bold><Italic>"Играть в 3D"</Italic></Bold> недоступна для определенной игры. Учтите, что изменение видеодрайвера может привести к постоянному запрету на многопользовательские игры.
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
