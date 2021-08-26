@@ -35,7 +35,7 @@
     <system:String x:Key="Profile">Профиль</system:String>
     <system:String x:Key="Settings">Настройки</system:String>
     <system:String x:Key="About">О программе</system:String>
-    <system:String x:Key="GeneralSettings">Настройки приложения</system:String>
+    <system:String x:Key="GeneralSettings">Настройки Приложения</system:String>
     <system:String x:Key="Nvidia3DSettings">Настройки Nvidia 3D</system:String>
     <system:String x:Key="DisplayProfiles">Профили Дисплея</system:String>
 
@@ -64,8 +64,8 @@
 
     <!-- Installation Tab -->
     <system:String x:Key="NoGamesInstalled">Совместимые игры не установлены.</system:String>
-    <system:String x:Key="Play2D">Играть 2D</system:String>
-    <system:String x:Key="Play3D">Играть 3D</system:String>
+    <system:String x:Key="Play2D">Играть в 2D</system:String>
+    <system:String x:Key="Play3D">Играть в 3D</system:String>
     <system:String x:Key="PlayVR">Играть в VR</system:String>
     <system:String x:Key="InstallFix">Установить 3D Fix</system:String>
     <system:String x:Key="InstallFixCompleted">Установка завершена</system:String>
@@ -75,7 +75,7 @@
     <system:String x:Key="InstallWrapperFailed" xml:space="preserve">Ошибка: не удалось установить оболочку.&#x0d;&#x0d;Убедитесь, что 3D Fix Manager запущен с правами администратора и повторите попытку.</system:String>
     <system:String x:Key="FixWrapperOutdated">Это исправление включает устаревшую версию 3dmigoto.</system:String>
     <system:String x:Key="DownloadFix">Скачать 3D Fix</system:String>
-    <system:String x:Key="UpdateAvailable">Update available</system:String>
+    <system:String x:Key="UpdateAvailable">Доступно обновление</system:String>
     <system:String x:Key="UninstallFix">Удалить 3D Fix</system:String>
     <system:String x:Key="UninstallFixCompleted">Удаление завершено</system:String>
     <system:String x:Key="UninstallFixFailed">Не удалось удалить</system:String>
@@ -92,7 +92,7 @@
     <system:String x:Key="VisitHelixMod">HelixMod Блог</system:String>
     <system:String x:Key="VisitHelixModToolTip">Получите дополнительную информацию о выбранном исправлении на веб-странице HelixMod.</system:String>
     <system:String x:Key="ForceCompatibilityMode">Включить CMU</system:String>
-    <system:String x:Key="EnableFix">Включить Fix</system:String>
+    <system:String x:Key="EnableFix">Включить 3D Fix</system:String>
     <system:String x:Key="DownloadCompleted">Загрузка завершена</system:String>
     <system:String x:Key="Downloading">Загрузка...</system:String>
     <system:String x:Key="DownloadFailed">Загрузка не удалась.</system:String>
@@ -100,9 +100,9 @@
     <system:String x:Key="ExtractionFailed">Не удалось извлечь.</system:String>
     <system:String x:Key="GameNotInstalled">Игра не установлена</system:String>
     <system:String x:Key="OpenExplorerError">Ошибка: не удалось открыть путь в проводнике Windows. Путь не существует</system:String>
-    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Обнаружена резервная копия для горячих клавиш и конфигурации 3d fix. &#x0d;&#x0d;Хотите восстановить резервную копию?</system:String>
+    <system:String x:Key="HotkeyBackupFound" xml:space="preserve">Обнаружена резервная копия для горячих клавиш и конфигурации 3D Fix. &#x0d;&#x0d;Хотите восстановить резервную копию?</system:String>
     <system:String x:Key="CreateHotkeyBackup">Вы хотите создать резервную копию своих горячих клавиш и конфигурации 3D Fix перед удалением?</system:String>
-    <system:String x:Key="ThirdPartyDllError" xml:space="preserve">Предупреждение: в каталоге игры была обнаружена сторонняя DLL с тем же именем, что и исправление 3D. &#x0d;&#x0d;DLL path: {0}&#x0d;&#x0d;Вы хотите сделать резервную копию этого файла перед установкой 3D fix?</system:String>
+    <system:String x:Key="ThirdPartyDllError" xml:space="preserve">Предупреждение: в каталоге игры была обнаружена сторонняя DLL с тем же именем, что и 3D Fix. &#x0d;&#x0d;DLL path: {0}&#x0d;&#x0d;Вы хотите сделать резервную копию этого файла перед установкой 3D Fix?</system:String>
 
     <!--.................... New / Edit Profile Tab Begin .......................... -->
 
@@ -122,7 +122,7 @@
     <system:String x:Key="OverrideTVProfileGroup">Переопределить профиль ТВ:</system:String>
     <system:String x:Key="OverrideProjectorProfileGroup">Переопределить профиль проектора:</system:String>
     <system:String x:Key="GameIconSettingsGroup">Значок игры:</system:String>
-    <system:String x:Key="DriverSettingsGroup">Настройки / Профили драйвера для инспектора профилей Nvidia:</system:String>
+    <system:String x:Key="DriverSettingsGroup">Настройки / Профили драйвера для Nvidia Inspector Profile:</system:String>
     <system:String x:Key="GameLaunchSettingsGroup">Запуск игры:</system:String>
     <system:String x:Key="MiscSettingsGroup">Прочие настройки:</system:String>
     <system:String x:Key="FixDescriptionSettingsGroup">Описание 3D Fix / Helix Blog:</system:String>
@@ -214,7 +214,7 @@
     <system:String x:Key="SLI">SLI Инфо</system:String>
 
     <!-- Buttons-->
-    <system:String x:Key="ChoosePath">Выберите путь</system:String>
+    <system:String x:Key="ChoosePath">Выбрать путь</system:String>
     <system:String x:Key="PickFile">Выбрать файл</system:String>
     <system:String x:Key="RemoveIcon">Удалить значок</system:String>
     <system:String x:Key="OpenUrl">Открыть URL</system:String>
@@ -241,7 +241,7 @@
     <system:String x:Key="AutoPatch">Включить автоматическое исправление:</system:String>
     <system:String x:Key="PatchDelay">Задержка патча:</system:String>
     <system:String x:Key="AutoUpdateDriver">Обновить профиль драйвера:</system:String>
-    <system:String x:Key="CmuSettings">Настройки режима совместимости без ограничений:</system:String>
+    <system:String x:Key="CmuSettings">Настройки режима совместимости (CMU):</system:String>
     <system:String x:Key="CmuWarning" xml:space="preserve">Показать предупреждение CMU</system:String>
     <system:String x:Key="CmuWarningDialog" xml:space="preserve">Предупреждение: CMU не является читерским инструментом, но может быть обнаружен как таковой в онлайн-играх. В результате ваш игровой аккаунт будет заблокирован.
 
@@ -326,9 +326,9 @@
     <system:String x:Key="NewPresetToolTip">Создает новый 3D пресет.</system:String>
     <system:String x:Key="DefaultPreset">Пресет по умолчанию:</system:String>
     <system:String x:Key="Delay">Задержка:</system:String>
-    <system:String x:Key="ReleaseDelay">Выпуск задержки:</system:String>
+    <system:String x:Key="ReleaseDelay">Обратная задержка:</system:String>
     <system:String x:Key="Transition">Переход:</system:String>
-    <system:String x:Key="ReleaseTransition">Выпуск перехода:</system:String>
+    <system:String x:Key="ReleaseTransition">Обратный переход:</system:String>
 
     <!-- Preset Group -->
     <system:String x:Key="UseStereoSettings">Использовать настройки стерео</system:String>
@@ -537,7 +537,7 @@
     <system:String x:Key="GeneralSettingsGroup">Общие Настройки:</system:String>
     <system:String x:Key="UseProgramFor">Использовать программу для:</system:String>
     <system:String x:Key="CheckForUpdates">Проверять обновления программы при запуске</system:String>
-    <system:String x:Key="StartAppMinimized">Start application minimized</system:String>
+    <system:String x:Key="StartAppMinimized">Запуск приложения в свернутом режиме</system:String>
     <system:String x:Key="CheckForDriverUpdates">Проверять обновления драйверов при запуске</system:String>
     <system:String x:Key="UseHwAcceleration">Включить аппаратное ускорение для графического интерфейса</system:String>
     <system:String x:Key="AllowChangesToGameConfig">Оптимизация настроек игры для стерео 3D</system:String>
@@ -549,7 +549,7 @@
     <system:String x:Key="ResetAllIcons">Сбросить все значки игр:</system:String>
     <system:String x:Key="DoNotChangeSetting">Сохранить текущую настройку</system:String>
     <system:String x:Key="DownloadScreenshots">Скачать стереоскопические скриншоты</system:String>
-    <system:String x:Key="ShowImportantFixInfo">Show important 3D fix info</system:String>
+    <system:String x:Key="ShowImportantFixInfo">Показать важную информацию об исправлении 3D</system:String>
 
     <!-- 3D Fix / 3dmigoto settings group -->
     <system:String x:Key="FixAnd3dmigotoSettings">3D Fix / 3dmigoto Настройки:</system:String>
@@ -637,7 +637,7 @@
     <system:String x:Key="Nvida3dDriverOverlay">Включить наложение драйвера Nvidia 3D</system:String>
     <system:String x:Key="LoadGeforceDllHackWith3dmigoto">Примените модификацию драйвера Geforce через 3dmigoto</system:String>
     <system:String x:Key="UseGlobalDrickerHack">Показать переключатель глобального взлома драйвера</system:String>
-    <system:String x:Key="RestartDisplayDriver">Restart display driver when enabling 3D</system:String>
+    <system:String x:Key="RestartDisplayDriver">Перезапустить драйвер дисплея при включении 3D</system:String>
     <system:String x:Key="EnableGeforceDllHack">Включить модификацию драйвера Geforce (только для Windows 10)</system:String>
     <system:String x:Key="ShowDriverHackDialog">Показать диалоговое окно с предупреждением перед изменением драйвера Geforce</system:String>
     <system:String x:Key="EnableWmrFix">Включить исправление сбоев для Windows Mixed Reality</system:String>
@@ -940,64 +940,64 @@
 
     <!-- Important Info -->
     <FlowDocument x:Key="ShowImportantFaq">
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Important FAQ:</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Важный FAQ:</Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why is it important to launch games via "Play 3D" button?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Почему так важно запускать игры с помощью кнопки «Играть в 3D»?</Paragraph>
         <Paragraph>
-            A click on the button does not only start the game it also checks whether all driver components are correctly installed. 
-            It configures the game to use optimized settings and ensures that the driver profile is configured properly. 
-            Most importantly it installs a modification to the video driver which prevents the game to crash on startup.
-            Do not launch games manually through Steam, Origin, Uplay and &amp; or you'll likely run into issues. 
-            To mention some of them: crash or blackscreen on game start, stereo 3D not working, red warning texts...
-            Always use the "Play 3D" button to start the game.
+            Щелчок по кнопке не только запускает игру, но и проверяет, правильно ли установлены все компоненты драйвера. 
+            Это настраивает игру для использования оптимизированных параметров и обеспечивает правильную настройку профиля драйвера. 
+            Самое главное, это устанавливает модификацию видеодрайвера, которая предотвращает сбой игры при запуске.
+            Не запускайте игры вручную через Steam, Origin, Uplay и т. п.; или вы, вероятно, столкнетесь с проблемами. 
+            Чтобы упомянуть некоторые из них: сбой или черный экран при запуске игры, стерео 3D не работает, красные предупреждающие сообщения...
+            Всегда используйте кнопку «Играть в 3D», чтобы начать игру.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why do DirectX 11 games crash when launched directly through Steam, Origin &amp; Co?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Почему игры DirectX 11 дают сбой при запуске напрямую через Steam, Origin и т. п.?</Paragraph>
         <Paragraph>
-            The crash happens because Nvidia sabotaged their own video driver for any version beyond 425.31. This happened in May 2019 shortly after Nvidia announced the end of support for 3D Vision.
-            What they did was to add a lock to their driver forbidding usage of stereosopic 3D on Windows 10 v.1903 and higher. 
-            This caused games to crash on launch when stereoscopic 3D was enabled in the driver. 
-            The issue happened for DirectX 11 games only - DirectX 9 games were not affected by this and still fully worked.
-            After some months of research forum user "Schwing" found a solution to fix the crash. 
-            He developed a driver modification which got automatically installed by 3D Fix Manager when hitting the "Play 3D" button.
-            That's why pressing the button is important. It ensures that the crash fix is installed and working correctly.
+            Сбой происходит из-за того, что Nvidia саботировала свой собственный видеодрайвер для любой версии, превышающей 425.31. Это произошло в мае 2019 года, вскоре после того, как Nvidia объявила о прекращении поддержки 3D Vision.
+            Что они сделали, так это добавили в свой драйвер блокировку, запрещающую использование стереоскопического 3D в Windows 10 v.1903 и выше. 
+            Это приводило к сбою игр при запуске, когда в драйвере было включено стереоскопическое 3D. 
+            Проблема возникла только для игр DirectX 11 - игры с DirectX 9 не были затронуты этим и по-прежнему полностью работали.
+            После нескольких месяцев исследований пользователь форума "Schwing" нашел решение для устранения сбоя. 
+            Он разработал модификацию драйвера, которая автоматически устанавливается 3D Fix Manager при нажатии кнопки «Играть в 3D».
+            Вот почему так важно нажать на кнопку. Это гарантирует, что исправление сбоя установлено и работает правильно.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">How to install the driver modification / crash fix globally for all games?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Как установить модификацию драйвера/исправление сбоя глобально для всех игр?</Paragraph>
         <Paragraph>
-            By default 3D Fix Manager installs the driver modification for the currently selected game only which also means that the modified driver is only active while the game is running. 
-            This is the recommended procedure as the original driver is kept untouched.
-            To install the driver modification on a global scope go to
+            По умолчанию 3D Fix Manager устанавливает модификацию драйвера только для выбранной в данный момент игры, что также означает, что модифицированный драйвер активен только во время работы игры.
+            Это рекомендуемая процедура, поскольку исходный драйвер остается нетронутым.
+            Чтобы установить модификацию драйвера в глобальном масштабе, перейдите на вкладку
             <Bold>
-                <Italic>"Nvidia 3D Settings"</Italic>
-            </Bold> tab and tick the option:
+                <Italic>"Настройки Nvidia 3D"</Italic>
+            </Bold> и отметьте опцию:
             <Bold>
-                <Italic>"Show global driver hack toggle"</Italic>
+                <Italic>"Показать переключатель глобального взлома драйвера"</Italic>
             </Bold> .
-            Now a second toggle appears directly below the 3D icon on the top right of the window.
-            Turning this on directly affects the original GeForce driver files which causes the hack to be active for all games.
-            We do not recommend to leave the global driver modification on permanently because modified driver files can get you banned in Multiplayer games.
-            Only use the global driver hack if you know what you are doing.
+            Теперь второй переключатель появляется прямо под значком 3D в правом верхнем углу окна.
+            Включение этого параметра напрямую влияет на исходные файлы драйверов GeForce, что приводит к активизации взлома для всех игр.
+            Мы не рекомендуем оставлять глобальную модификацию драйвера постоянно включенной, потому что измененные файлы драйверов могут привести к бану в многопользовательских играх.
+            Используйте глобальный взлом драйверов, только если знаете, что делаете.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Why to stay on old GeForce drivers v.452.06?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Зачем останавливаться на старых драйверах GeForce v.452.06?</Paragraph>
         <Paragraph>
-            Because Nvidia partially removed stereoscopic 3D support for any driver beyond 452.06. This happened on October 2020 shortly before they released the new RTX 3000 series graphics cards. 
-            Once more: only DirectX 11 mode was affected by this. This time however Nvidia finished their work: they ultimately wiped stereosopic 3D support for DirectX 11 from the video driver.
+            Поскольку Nvidia частично удалила поддержку стереоскопического 3D для всех драйверов за пределами 452.06. Это произошло в октябре 2020 года, незадолго до того, как были выпущены новые видеокарты серии RTX 3000.
+            Еще раз: это повлияло только на режим DirectX 11. Однако на этот раз Nvidia завершила свою работу: в конечном итоге они удалили поддержку стереоскопического 3D для DirectX 11 из видеодрайвера.
             
-            In short words: If you use latest graphics drivers you'll lose stereoscopic 3D support for all games using DirectX 11.
+            Вкратце: если вы используете последние графические драйверы, вы потеряете поддержку стереоскопического 3D для всех игр, использующих DirectX 11.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Does stereoscopic 3D still work on RTX 3000 series?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Стереоскопическое 3D все еще работает на RTX 3000?</Paragraph>
         <Paragraph>
-            Unfortunately GeForce driver version 452.06 cannot be installed on these graphics cards. 
-            The conclusion: no stereoscopic 3D support for games using DirectX 11 on these graphics cards.
-            DirectX 9, Vulkan and OpenGL games still fully work on these graphics cards though.
+            К сожалению, драйвер GeForce версии 452.06 не может быть установлен на эти видеокарты. 
+            Вывод: на этих видеокартах отсутствует поддержка стереоскопического 3D для игр с DirectX 11.
+            Игры DirectX 9, Vulkan и OpenGL по-прежнему полностью работают на этих видеокартах.
         </Paragraph>
 
-        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Any fix on the horizon for the DirectX 11 issue?</Paragraph>
+        <Paragraph Style="{DynamicResource SemiLargeGreenTitle}">Возможно исправление проблемы с DirectX 11 на горизонте?</Paragraph>
         <Paragraph>
-            Currently there is nothing on the horizon to bring back stereoscopic 3D support to DirectX 11 and latest graphics drivers.
+            В настоящее время нет ничего, что могло бы вернуть поддержку стереоскопического 3D в DirectX 11 и последние графические драйверы.
         </Paragraph>
     </FlowDocument>
 
@@ -1671,13 +1671,13 @@ Markus Gündert (Pauldusler)</system:String>
     </TextBlock>
 
     <TextBlock x:Key="RestartDisplayDriverToolTip" TextWrapping="Wrap" Width="300">
-        Restarts the display driver when stereo 3D is enabled. This prevents a blackscreen which might occur under certain conditions when enabling 3D.<LineBreak/><LineBreak/>
-        Please enable this option only when you experience this issue.
+        Перезапускает драйвер дисплея при включении стерео 3D. Это предотвращает появление черного экрана, который может возникнуть при определенных условиях при включении 3D.<LineBreak/><LineBreak/>
+        Пожалуйста, включайте эту опцию, только если вы столкнулись с этой проблемой.
     </TextBlock>
 
     <TextBlock x:Key="ShowGlobalDriverHackToggleToolTip" TextWrapping="Wrap" Width="300">
-        Shows a button for enabling the driver modification globally. The driver modifications restores stereo 3D compatibility for games using DirectX 11 and Windows 10 version beyond 1809 + GeForce driver version higher than 425.31.<LineBreak/><LineBreak/>
-        Only enable this option if for some reason the "<Bold><Italic>"Play 3D"</Italic></Bold> button is not available for a certain game. Please consider that modifying the video driver might cause a permanent ban on multiplayer games.
+        Показывает кнопку для включения модификации драйвера глобально. Модификации драйвера восстанавливают совместимость стерео 3D для игр, использующих DirectX 11 и Windows 10 версии выше 1809 + драйвер GeForce версии выше 425.31.<LineBreak/><LineBreak/>
+        Включайте эту опцию, только если по какой-то причине кнопка "<Bold><Italic>"Играть в 3D"</Italic></Bold> недоступна для определенной игры. Учтите, что изменение видеодрайвера может привести к постоянному запрету на многопользовательские игры.
     </TextBlock>
 
     <TextBlock x:Key="EnableSoftwareMouseToolTip" TextWrapping="Wrap" Width="300">
